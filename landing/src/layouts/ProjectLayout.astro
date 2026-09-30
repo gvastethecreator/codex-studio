@@ -1,0 +1,195 @@
+---
+import "../styles/kit-cascade.css";
+import { renderHeaderHtml } from "../../kit/engine.mjs";
+import { accentRootCss } from "../../kit/accent.mjs";
+import KitSection from "../components/sections/KitSection.astro";
+
+const { view } = Astro.props;
+const frameQuery = Astro.url.searchParams.get("frame");
+const windowFrame = frameQuery === "window" || (frameQuery !== "full" && view.frameVariant === "window");
+const headerHtml = renderHeaderHtml(view);
+const sections = (view.sections as string[]) ?? [];
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html
+  lang="en"
+  data-theme={view.brand.theme}
+  data-theme-default={view.brand.theme}
+  data-accent-tinted={view.brand.tinted ? "true" : undefined}
+  data-template={view.templateThemeCss ? "on" : undefined}
+  data-shade={view.shadeVariant ?? "mist"}
+  data-frame={windowFrame ? "window" : "full"}
+  data-panel-align={view.panelAlign ?? undefined}
+  data-column={view.columnVariant ?? undefined}
+  data-accent-cycle={view.brand.accentCycleJson || undefined}
+  data-paper-dark={view.themeColorDark ?? "#000000"}
+  data-paper-light={view.themeColorLight ?? "#eee8dc"}
+  style={view.templateStyle || undefined}
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content={view.colorScheme} />
+    <meta name="theme-color" content={view.themeColor} />
+    <style is:inline set:html={view.pageColorCss ?? `${accentRootCss(view.brand.accentStyle ?? `--accent:${view.brand.accent}`)}\n${view.templateThemeCss ?? ""}`} />
+    <script is:inline>
+      try {
+        var cycle = JSON.parse(document.documentElement.getAttribute("data-accent-cycle") || "[]");
+        var accent = localStorage.getItem("gvaste-accent:" + location.pathname);
+        if (accent && cycle.indexOf(accent) > 0) {
+          var h = accent.replace("#", "");
+          var rgb = [0, 2, 4].map(function (at) { return parseInt(h.slice(at, at + 2), 16); });
+          var gray = Math.max.apply(null, rgb) - Math.min.apply(null, rgb) < 10;
+          var mixes = [12, 22, 34, 48, 62, 100, 82, 64, 48];
+          var grays = [0.97, 0.92, 0.87, 0.81, 0.73, 0.63, 0.54, 0.42, 0.3];
+          var style = document.documentElement.style;
+          style.setProperty("--accent", accent);
+          for (var step = 1; step <= 9; step += 1) {
+            style.setProperty(
+              "--accent-" + step,
+              gray
+                ? "oklch(" + grays[step - 1] + " 0 0)"
+                : step === 6
+                  ? accent
+                  : "color-mix(in oklch," + accent + " " + mixes[step - 1] + "%," + (step < 6 ? "white" : "black") + ")",
+            );
+          }
+        }
+      } catch (error) {}
+      try {
+        var stored = localStorage.getItem("gvaste-theme:" + location.pathname);
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+          var scheme = document.querySelector('meta[name="color-scheme"]');
+          var paint = document.querySelector('meta[name="theme-color"]');
+          if (scheme) scheme.setAttribute("content", stored);
+          if (paint) {
+            var paper = document.documentElement.getAttribute(
+              stored === "light" ? "data-paper-light" : "data-paper-dark",
+            );
+            paint.setAttribute("content", paper || (stored === "light" ? "#eee8dc" : "#000000"));
+          }
+        }
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.classList.add("js-motion");
+          window.setTimeout(function () {
+            if (!document.documentElement.hasAttribute("data-app")) {
+              document.documentElement.classList.remove("js-motion");
+            }
+          }, 2500);
+        }
+      } catch (error) {}
+    </script>
+    <meta name="description" content={view.project.description} />
+    <title>{view.pageTitle}</title>
+    {
+      view.project.url && (
+        <>
+          <link rel="canonical" href={view.project.url} />
+          <meta property="og:url" content={view.project.url} />
+        </>
+      )
+    }
+    <meta property="og:title" content={view.project.name} />
+    <meta property="og:description" content={view.project.description} />
+    <meta property="og:type" content="website" />
+    {view.project.ogImage && <meta property="og:image" content={view.project.ogImage} />}
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Geist+Mono:wght@100..900&display=swap"
+    />
+    {view.fontStylesheet && <link rel="stylesheet" href={view.fontStylesheet} />}
+  </head>
+  <body>
+    <div class="veil" aria-hidden="true"></div>
+    <a class="skip" href="#main">Skip to content</a>
+    {
+      windowFrame ? (
+        <div class="page-frame">
+          <Fragment set:html={headerHtml} />
+          <div class="site-nav-backdrop" data-nav-backdrop hidden />
+          <div class="page-frame__scroll">
+            <div class="column">
+              <main id="main">
+                {
+                  sections.map((id, index) => (
+                    <KitSection id={id} view={view} isLast={index === sections.length - 1} />
+                  ))
+                }
+              </main>
+            </div>
+          </div>
+          <button type="button" class="to-top" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14" />
+              <path d="M5 12l7 -7l7 7" />
+            </svg>
+          </button>
+        </div>
+      ) : (
+        <>
+          <Fragment set:html={headerHtml} />
+          <div class="site-nav-backdrop" data-nav-backdrop hidden />
+          <div class="column">
+            <main id="main">
+              {
+                sections.map((id, index) => (
+                  <KitSection id={id} view={view} isLast={index === sections.length - 1} />
+                ))
+              }
+            </main>
+          </div>
+          <button type="button" class="to-top" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14" />
+              <path d="M5 12l7 -7l7 7" />
+            </svg>
+          </button>
+        </>
+      )
+    }
+    <script is:inline>
+      (function () {
+        var requested = new URLSearchParams(location.search).get("frame");
+        if (requested !== "window" && requested !== "full") return;
+        var root = document.documentElement;
+        if (root.getAttribute("data-frame") === requested) return;
+        root.setAttribute("data-frame", requested);
+        if (requested === "window") {
+          var frame = document.createElement("div");
+          var scroll = document.createElement("div");
+          frame.className = "page-frame";
+          scroll.className = "page-frame__scroll";
+          var head = document.querySelector(".site-head");
+          var backdrop = document.querySelector(".site-nav-backdrop");
+          var column = document.querySelector(".column");
+          var top = document.querySelector(".to-top");
+          var skip = document.querySelector("a.skip");
+          if (skip) skip.after(frame);
+          else document.body.append(frame);
+          if (head) frame.append(head);
+          if (backdrop) frame.append(backdrop);
+          frame.append(scroll);
+          if (column) scroll.append(column);
+          if (top) frame.append(top);
+          return;
+        }
+        var box = document.querySelector(".page-frame");
+        var scroller = document.querySelector(".page-frame__scroll");
+        if (!box) return;
+        var parent = box.parentNode;
+        if (scroller) {
+          while (scroller.firstChild) parent.insertBefore(scroller.firstChild, box);
+        }
+        while (box.firstChild) parent.insertBefore(box.firstChild, box);
+        box.remove();
+      })();
+    </script>
+    <script src={`${base}vendor/runtime-loader.js`} defer></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+/* Shared surface: the only card treatment in the kit. */
+
+.surface {
+  background-color: var(--surface);
+  background-image: var(--noise);
+  background-size: 180px 180px;
+  background-repeat: repeat;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .surface {
+    transition:
+      transform var(--duration) var(--ease),
+      box-shadow var(--duration) var(--ease);
+  }
+}

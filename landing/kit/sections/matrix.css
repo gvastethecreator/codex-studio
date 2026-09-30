@@ -1,0 +1,106 @@
+/* Matrix: status tokens with a color dot per state. */
+
+.matrix {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0 24px;
+  min-height: 0;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.status-table th,
+.status-table td {
+  padding: 10px 12px 10px 8px;
+  border-bottom: 1px solid rgb(201 201 201 / 0.12);
+  text-align: start;
+  vertical-align: top;
+}
+
+.status-table thead th {
+  color: var(--muted);
+  font: 600 0.7rem / 1.3 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 841px) {
+  .status-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--paper);
+  }
+}
+
+@media (hover: hover) {
+  .status-table tbody tr:hover th,
+  .status-table tbody tr:hover td {
+    background: rgb(201 201 201 / 0.05);
+  }
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 0 9px 0 8px;
+  border: 1px solid rgb(201 201 201 / 0.22);
+  border-radius: 999px;
+  font: 600 0.72rem / 1 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+}
+
+.status-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.status-pill[data-status="active"],
+.status-pill[data-status="live"] {
+  border-color: rgb(127 201 127 / 0.45);
+}
+
+.status-pill[data-status="active"]::before,
+.status-pill[data-status="live"]::before {
+  background: #7fc97f;
+}
+
+.status-pill[data-status="prepared"] {
+  border-color: rgb(201 201 201 / 0.35);
+}
+
+.status-pill[data-status="prepared"]::before {
+  background: #c9c9c9;
+}
+
+.status-pill[data-status="blocked"],
+.status-pill[data-status="held"] {
+  border-color: rgb(217 140 122 / 0.45);
+}
+
+.status-pill[data-status="blocked"]::before,
+.status-pill[data-status="held"]::before {
+  background: #d98c7a;
+}
+
+@media (max-width: 840px) {
+  .status-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+main > .stack-panel.matrix {
+  overflow: auto;
+}

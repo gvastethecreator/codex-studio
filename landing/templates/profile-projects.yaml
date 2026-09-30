@@ -1,0 +1,33 @@
+schema: gvaste-pages/template/v1
+name: Profile Projects
+extends: default
+
+tokens:
+  color:
+    paper: "#101014"
+    surface: "#1a1a22"
+    ink: "#ece8f0"
+    muted: "#8a8494"
+    accent: "#c4b8d4"
+  layout:
+    maxWidth: 1180
+  shape:
+    radius: 10
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#f0eef2"
+        surface: "#e4e0e8"
+        ink: "#1c1820"
+        muted: "#5c5664"
+        accent: "#4a3c5c"
+
+chrome:
+  shade:
+    variant: grain
+
+sections:
+  profile:
+    variant: projects

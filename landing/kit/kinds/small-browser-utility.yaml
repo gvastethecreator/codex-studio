@@ -1,0 +1,11 @@
+id: small-browser-utility
+label: Small utility
+defaultComposition: compact
+compositions:
+  compact:
+    semanticPlan:
+      - { id: hero, variant: showcase }
+      - { id: playground, variant: scenario }
+      - { id: about, variant: compact-cards }
+      - { id: github }
+      - { id: closing }

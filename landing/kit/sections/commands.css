@@ -1,0 +1,1985 @@
+/* Commands: physical board plus a dense key table. */
+
+@property --spot-x {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+@property --spot-y {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+@property --spot-mx {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 100%;
+}
+
+@property --spot-my {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 100%;
+}
+
+@property --tty-fill {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+.commands {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0 24px;
+  min-height: 0;
+}
+
+.commands-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  flex: 0 0 auto;
+  padding: 8px 12px 4px;
+}
+
+@media (min-width: 880px) {
+  .commands.has-keyboard,
+  main > .stack-panel.commands.has-keyboard:last-child {
+    display: grid;
+    grid-template-columns: minmax(22rem, 1fr) minmax(16rem, 22rem);
+    grid-template-rows: auto minmax(0, 1fr) auto auto;
+    grid-template-areas:
+      "head head"
+      "board list"
+      "source source"
+      "foot foot";
+    column-gap: 28px;
+    align-items: start;
+  }
+
+  .commands.has-keyboard .section-head {
+    grid-area: head;
+  }
+
+  .commands.has-keyboard .keyboard {
+    grid-area: board;
+    align-self: start;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .commands.has-keyboard .commands-list {
+    grid-area: list;
+    overflow: auto;
+    max-height: 100%;
+    padding: 8px 8px 12px;
+  }
+
+  .commands.has-keyboard .section-source {
+    grid-area: source;
+  }
+
+  .commands.has-keyboard > .site-footer {
+    grid-area: foot;
+  }
+}
+
+.commands-filter {
+  box-sizing: border-box;
+  flex: none;
+  width: 100%;
+  min-height: 40px;
+  margin: 0;
+  padding: 0 14px;
+  border: 1px solid rgb(201 201 201 / 0.22);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 0.9rem / 1.3 var(--text);
+}
+
+.commands-filter::placeholder {
+  color: var(--muted);
+}
+
+.commands.has-keyboard {
+  --key-base: #2c2c2c;
+  --key-light: #3a3a3a;
+  --key-mid: #1e1e1e;
+  --key-dark: #121212;
+  --key-side: #181818;
+  --key-well: #0c0c0c;
+  --key-sculpt: #242424;
+  --key-ink: rgb(201 201 201 / 0.86);
+  --mod-base: #1a1a1a;
+  --mod-light: #262626;
+  --mod-mid: #101010;
+  --mod-dark: #080808;
+  --mod-side: #0e0e0e;
+  --mod-well: #050505;
+  --mod-sculpt: #141414;
+  --mod-ink: rgb(201 201 201 / 0.72);
+}
+
+:root[data-theme="light"] .commands.has-keyboard {
+  --key-base: #d4d2ce;
+  --key-light: #dedcd8;
+  --key-mid: #b8b6b2;
+  --key-dark: #9c9a96;
+  --key-side: #a8a6a2;
+  --key-well: #8a8884;
+  --key-sculpt: #b0aea9;
+  --key-ink: rgb(20 20 20 / 0.78);
+  --mod-base: #5a5a5a;
+  --mod-light: #656565;
+  --mod-mid: #484848;
+  --mod-dark: #3a3a3a;
+  --mod-side: #424242;
+  --mod-well: #2e2e2e;
+  --mod-sculpt: #4a4a4a;
+  --mod-ink: rgb(245 245 245 / 0.82);
+}
+
+.commands.has-keyboard .section-head:not(:has(.lede)):not(:has(.kicker)) h2 {
+  color: var(--muted);
+  font: 600 0.78rem / 1.3 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+.keyboard {
+  width: 100%;
+  min-width: 0;
+  container-type: inline-size;
+}
+
+.keyboard__board {
+  --kb-cols: 15.43;
+  --kb-gap: 0;
+  --u: 28px;
+  --u: clamp(11px, 100cqi / (var(--kb-cols) + 1.5), 40px);
+  --kb-row-h: var(--u);
+  --spot-x: 0%;
+  --spot-y: 0%;
+  --spot-mx: 100%;
+  --spot-my: 100%;
+  position: relative;
+  isolation: isolate;
+  box-sizing: content-box;
+  width: calc(var(--u) * var(--kb-cols));
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 0.25em;
+  border: 11px solid transparent;
+  border-radius: 4px;
+  background-color: #0a0a0a;
+  background-image:
+    radial-gradient(circle at 50% 38%, #141414, #0a0a0a 72%),
+    radial-gradient(
+      48% 46% at var(--spot-x) var(--spot-y),
+      #383838 0%,
+      #222222 38%,
+      transparent 86%
+    ),
+    radial-gradient(
+      48% 46% at var(--spot-mx) var(--spot-my),
+      #383838 0%,
+      #222222 38%,
+      transparent 86%
+    ),
+    linear-gradient(#141414, #141414);
+  background-origin: padding-box, border-box, border-box, border-box;
+  background-clip: padding-box, border-box, border-box, border-box;
+  box-shadow:
+    inset 0 1rem 1rem rgb(0 0 0 / 0.55),
+    0 2rem 3rem -0.5rem rgb(0 0 0 / 0.55);
+  font-size: 0;
+}
+
+:root[data-theme="light"] .keyboard__board {
+  background-image:
+    radial-gradient(circle at 50% 38%, #1f1f1f, #141414 72%),
+    radial-gradient(
+      48% 46% at var(--spot-x) var(--spot-y),
+      #444444 0%,
+      #2a2a2a 38%,
+      transparent 86%
+    ),
+    radial-gradient(
+      48% 46% at var(--spot-mx) var(--spot-my),
+      #444444 0%,
+      #2a2a2a 38%,
+      transparent 86%
+    ),
+    linear-gradient(#1c1c1c, #1c1c1c);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keyboard__board {
+    animation: kb-rim 84s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+  }
+
+  .keyboard.is-playing .keyboard__board {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes kb-rim {
+  0% {
+    --spot-x: 0%;
+    --spot-y: 0%;
+    --spot-mx: 100%;
+    --spot-my: 100%;
+  }
+
+  100% {
+    --spot-x: 100%;
+    --spot-y: 0%;
+    --spot-mx: 0%;
+    --spot-my: 100%;
+  }
+}
+
+.keyboard__row {
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--u) * var(--kb-cols));
+  height: var(--kb-row-h, var(--u));
+  max-width: 100%;
+  padding-top: 1px;
+  margin-bottom: 2px;
+}
+
+.keyboard[data-layout] .keyboard__board {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: calc(var(--u) * var(--kb-gap, 0));
+}
+
+.keyboard[data-layout] .keyboard__stage {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.keyboard[data-layout] .keyboard__body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: calc(var(--u) * var(--kb-gap, 0));
+}
+
+.keyboard[data-layout] .keyboard__alpha {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.keyboard[data-layout] .keyboard__row {
+  justify-content: flex-start;
+  width: auto;
+  max-width: none;
+}
+
+.keyboard[data-layout="60"] .keyboard__row,
+.keyboard[data-layout="60"] .keyboard__cluster:only-child {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.keyboard__cluster {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.keyboard__gap {
+  flex: none;
+  width: calc(var(--u) * var(--kb-gap, 0.45));
+  height: 100%;
+}
+
+.keyboard[data-exploded] .keyboard__fn .keyboard__row {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.keyboard[data-layout]:not([data-exploded]) .keyboard__fn .keyboard__row {
+  width: auto;
+  justify-content: flex-start;
+}
+
+.keyboard__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: none;
+}
+
+.keyboard__nav-island {
+  display: grid;
+  grid-template-columns: repeat(3, var(--u));
+  grid-template-rows: repeat(2, var(--kb-row-h, var(--u)));
+}
+
+.keyboard__arrows--pc {
+  display: grid;
+  grid-template-columns: repeat(3, var(--u));
+  grid-template-rows: repeat(2, var(--kb-row-h, var(--u)));
+  width: calc(var(--u) * 3);
+  align-self: end;
+}
+
+.keyboard__row:has(> .keyboard__arrows--pc) {
+  height: calc(var(--kb-row-h, var(--u)) * 2 + 2px);
+  align-items: end;
+}
+
+.keyboard__row:has(> .keyboard__arrows--pc) .keyboard__cluster {
+  height: var(--kb-row-h, var(--u));
+  align-self: end;
+}
+
+.keyboard__arrows--pc kbd.kb-key[data-key="up"] {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.keyboard__arrows--pc kbd.kb-key[data-key="left"] {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.keyboard__arrows--pc kbd.kb-key[data-key="down"] {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.keyboard__arrows--pc kbd.kb-key[data-key="right"] {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.keyboard__numpad {
+  display: grid;
+  flex: none;
+  grid-template-columns: repeat(4, var(--u));
+  grid-template-rows: repeat(5, var(--kb-row-h, var(--u)));
+  grid-template-areas:
+    "nl div mul sub"
+    "n7 n8 n9 add"
+    "n4 n5 n6 add"
+    "n1 n2 n3 ent"
+    "n0 n0 dot ent";
+  column-gap: 0;
+  row-gap: 2px;
+  padding-top: 1px;
+  align-self: end;
+}
+
+.keyboard[data-layout]:not(.keyboard--mac):not(.keyboard--terminal) .keyboard__numpad kbd.kb-key[data-area="add"],
+.keyboard[data-layout]:not(.keyboard--mac):not(.keyboard--terminal) .keyboard__numpad kbd.kb-key[data-area="ent"] {
+  height: auto;
+}
+
+.keyboard[data-layout]:not(.keyboard--mac):not(.keyboard--terminal) .keyboard__numpad kbd.kb-key[data-area="n0"] {
+  width: auto;
+}
+
+.keyboard kbd.kb-key {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: var(--u);
+  height: var(--u);
+  padding: 0;
+  border: 3px solid var(--key-mid);
+  border-top: 2px solid var(--key-light);
+  border-bottom: 6px solid var(--key-dark);
+  border-radius: 3px;
+  background-color: var(--key-base);
+  box-shadow:
+    0 -0.125em 0 -0.063em var(--key-dark),
+    0 0.125em 0 -0.063em rgb(0 0 0 / 0.5);
+  color: var(--key-ink);
+  font: 500 calc(var(--u) * 0.38) / 1 var(--mono);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  text-transform: none;
+  vertical-align: middle;
+  user-select: none;
+  outline: 0;
+  touch-action: manipulation;
+}
+
+.keyboard kbd.kb-key::before {
+  content: "";
+  position: absolute;
+  inset: 0 -1px -1px;
+  border-radius: 4px;
+  border-left: 1px solid var(--key-side);
+  border-right: 1px solid var(--key-side);
+  border-bottom: 1px solid var(--key-well);
+  background-image: linear-gradient(
+    to right,
+    var(--key-base),
+    var(--key-sculpt) 5%,
+    transparent 40%,
+    transparent 60%,
+    var(--key-sculpt) 95%,
+    var(--key-base)
+  );
+  box-shadow: 0 4px 4px -3px rgb(0 0 0 / 0.15);
+}
+
+.keyboard kbd.kb-key::after {
+  position: relative;
+  z-index: 1;
+  display: block;
+  content: attr(data-key);
+  font-weight: 550;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.keyboard kbd.kb-key[data-alt]::after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 0.05em;
+  font-size: 0.5em;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  white-space: pre;
+  content: attr(data-alt) "\A" attr(data-key);
+  text-transform: none;
+}
+
+.keyboard kbd.kb-mod {
+  border-color: var(--mod-mid);
+  border-top-color: var(--mod-light);
+  border-bottom-color: var(--mod-dark);
+  background-color: var(--mod-base);
+  box-shadow:
+    0 -0.125em 0 -0.063em var(--mod-dark),
+    0 0.125em 0 -0.063em rgb(0 0 0 / 0.5);
+  color: var(--mod-ink);
+}
+
+.keyboard kbd.kb-mod::before {
+  border-left-color: var(--mod-side);
+  border-right-color: var(--mod-side);
+  border-bottom-color: var(--mod-well);
+  background-image: linear-gradient(
+    to right,
+    var(--mod-base),
+    var(--mod-sculpt) 5%,
+    transparent 40%,
+    transparent 60%,
+    var(--mod-sculpt) 95%,
+    var(--mod-base)
+  );
+}
+
+.keyboard kbd.kb-mod::after {
+  font-size: 0.48em;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: none;
+}
+
+.keyboard kbd.kb-key svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: calc(var(--u) * 0.42);
+  height: calc(var(--u) * 0.42);
+  pointer-events: none;
+}
+
+.keyboard kbd.kb-key[data-key="tab"]::after {
+  content: "Tab";
+}
+
+.keyboard kbd.kb-key[data-key="caps"]::after {
+  content: "Caps";
+}
+
+.keyboard kbd.kb-key[data-key="enter"]::after {
+  content: "Enter";
+}
+
+.keyboard kbd.kb-key[data-key="backspace"]::after {
+  content: "Backspace";
+}
+
+.keyboard kbd.kb-key[data-key="lshift"]::after,
+.keyboard kbd.kb-key[data-key="rshift"]::after {
+  content: "Shift";
+}
+
+.keyboard kbd.kb-key[data-key="lctrl"]::after,
+.keyboard kbd.kb-key[data-key="rctrl"]::after {
+  content: "Ctrl";
+}
+
+.keyboard kbd.kb-key[data-key="lwin"]::after,
+.keyboard kbd.kb-key[data-key="rwin"]::after {
+  content: none;
+}
+
+.keyboard kbd.kb-key[data-key="lalt"]::after,
+.keyboard kbd.kb-key[data-key="ralt"]::after {
+  content: "Alt";
+}
+
+.keyboard kbd.kb-key[data-key="rctx"]::after {
+  content: "\2630";
+}
+
+.keyboard kbd.kb-key[data-key="space"]::after {
+  content: none;
+}
+
+.keyboard kbd.kb-key[data-key="escape"]::after {
+  content: "Esc";
+}
+
+.keyboard kbd.kb-key[data-key="insert"]::after {
+  content: "Ins";
+}
+
+.keyboard kbd.kb-key[data-key="home"]::after {
+  content: "Home";
+}
+
+.keyboard kbd.kb-key[data-key="end"]::after {
+  content: "End";
+}
+
+.keyboard kbd.kb-key[data-key="pageup"]::after {
+  content: "PgUp";
+}
+
+.keyboard kbd.kb-key[data-key="pagedown"]::after {
+  content: "PgDn";
+}
+
+.keyboard kbd.kb-key[data-key="delete"]::after {
+  content: "Del";
+}
+
+.keyboard kbd.kb-key[data-key="printscreen"]::after {
+  content: "PrtSc";
+}
+
+.keyboard kbd.kb-key[data-key="scrolllock"]::after {
+  content: "ScrLk";
+}
+
+.keyboard kbd.kb-key[data-key="pause"]::after {
+  content: "Pause";
+}
+
+.keyboard kbd.kb-key[data-key="numlock"]::after {
+  content: "Num";
+}
+
+.keyboard kbd.kb-key[data-key="fn"]::after {
+  content: "Fn";
+}
+
+.keyboard kbd.kb-key[data-key="up"]::after {
+  content: "\2191";
+}
+
+.keyboard kbd.kb-key[data-key="down"]::after {
+  content: "\2193";
+}
+
+.keyboard kbd.kb-key[data-key="left"]::after {
+  content: "\2190";
+}
+
+.keyboard kbd.kb-key[data-key="right"]::after {
+  content: "\2192";
+}
+
+.keyboard kbd.kb-key[data-key="npdiv"]::after {
+  content: "/";
+}
+
+.keyboard kbd.kb-key[data-key="npmul"]::after {
+  content: "*";
+}
+
+.keyboard kbd.kb-key[data-key="npsub"]::after {
+  content: "-";
+}
+
+.keyboard kbd.kb-key[data-key="npadd"]::after {
+  content: "+";
+}
+
+.keyboard kbd.kb-key[data-key="npenter"]::after {
+  content: "Ent";
+}
+
+.keyboard kbd.kb-key[data-key="npdot"]::after {
+  content: ".";
+}
+
+.keyboard kbd.kb-key[data-key="np0"]::after {
+  content: "0";
+}
+
+.keyboard kbd.kb-key[data-key="np1"]::after {
+  content: "1";
+}
+
+.keyboard kbd.kb-key[data-key="np2"]::after {
+  content: "2";
+}
+
+.keyboard kbd.kb-key[data-key="np3"]::after {
+  content: "3";
+}
+
+.keyboard kbd.kb-key[data-key="np4"]::after {
+  content: "4";
+}
+
+.keyboard kbd.kb-key[data-key="np5"]::after {
+  content: "5";
+}
+
+.keyboard kbd.kb-key[data-key="np6"]::after {
+  content: "6";
+}
+
+.keyboard kbd.kb-key[data-key="np7"]::after {
+  content: "7";
+}
+
+.keyboard kbd.kb-key[data-key="np8"]::after {
+  content: "8";
+}
+
+.keyboard kbd.kb-key[data-key="np9"]::after {
+  content: "9";
+}
+
+.keyboard kbd.kb-fn::after {
+  font-size: 0.42em;
+  letter-spacing: 0.02em;
+}
+
+.keyboard kbd.kb-key[data-key="tab"],
+.keyboard kbd.kb-key[data-key="\\"] {
+  width: calc(var(--u) * 1.5);
+}
+
+.keyboard kbd.kb-key[data-key="caps"] {
+  width: calc(var(--u) * 1.75);
+}
+
+.keyboard kbd.kb-key[data-key="backspace"] {
+  width: calc(var(--u) * 2);
+}
+
+.keyboard kbd.kb-key[data-key="enter"] {
+  width: calc(var(--u) * 2.25);
+}
+
+.keyboard kbd.kb-key[data-key="lshift"] {
+  width: calc(var(--u) * 2.25);
+}
+
+.keyboard kbd.kb-key[data-key="rshift"] {
+  width: calc(var(--u) * 2.75);
+}
+
+.keyboard kbd.kb-key[data-key="lctrl"],
+.keyboard kbd.kb-key[data-key="rctrl"],
+.keyboard kbd.kb-key[data-key="lalt"],
+.keyboard kbd.kb-key[data-key="ralt"],
+.keyboard kbd.kb-key[data-key="lwin"],
+.keyboard kbd.kb-key[data-key="rwin"],
+.keyboard kbd.kb-key[data-key="rctx"] {
+  width: calc(var(--u) * 1.25);
+}
+
+.keyboard kbd.kb-key[data-key="space"] {
+  width: calc(var(--u) * 6.25);
+}
+
+.keyboard[data-layout]:not(.keyboard--mac):not(.keyboard--terminal) kbd.kb-key[data-key] {
+  width: calc(var(--u) * var(--kw, 1));
+  height: var(--kb-row-h, var(--u));
+}
+
+.keyboard__board::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: inherit;
+  background: rgb(0 0 0 / 0.32);
+  opacity: 0;
+}
+
+:root[data-theme="light"] .keyboard__board::after {
+  background: rgb(12 12 12 / 0.18);
+}
+
+.keyboard.is-playing .keyboard__board::after {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keyboard__board::after {
+    transition: opacity 120ms var(--ease);
+  }
+}
+
+.keyboard.is-playing kbd.kb-key:is(.is-lit, .is-hovering, :hover, :active, .is-down) {
+  z-index: 3;
+}
+
+.keyboard:not(.is-playing) kbd.kb-key.is-bound:not(.kb-mod) {
+  --key-ink: rgb(201 201 201 / 0.95);
+}
+
+:root[data-theme="light"] .keyboard:not(.is-playing) kbd.kb-key.is-bound:not(.kb-mod) {
+  --key-ink: rgb(16 16 16 / 0.9);
+}
+
+.keyboard kbd.kb-key.is-lit {
+  z-index: 1;
+  opacity: 1;
+  --key-base: #e8e6e2;
+  --key-light: #f4f3f0;
+  --key-mid: #cfcbc6;
+  --key-dark: #b4b0ab;
+  --key-side: #c4c0bb;
+  --key-well: #a8a49f;
+  --key-sculpt: #d4d0cb;
+  --key-ink: rgb(16 16 16 / 0.9);
+  --mod-base: #e8e6e2;
+  --mod-light: #f4f3f0;
+  --mod-mid: #cfcbc6;
+  --mod-dark: #b4b0ab;
+  --mod-side: #c4c0bb;
+  --mod-well: #a8a49f;
+  --mod-sculpt: #d4d0cb;
+  --mod-ink: rgb(16 16 16 / 0.9);
+  color: var(--key-ink);
+  background-color: var(--key-base);
+  border-color: var(--key-mid);
+  border-top-color: var(--key-light);
+  border-bottom-color: var(--key-dark);
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.22),
+    0 -0.08em 0 -0.063em var(--key-dark),
+    0 0.08em 0 -0.063em rgb(0 0 0 / 0.35);
+}
+
+.keyboard kbd.kb-mod.is-lit {
+  color: var(--mod-ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keyboard:not(.has-gsap-keys) kbd.kb-key {
+    transition: transform 120ms var(--ease);
+  }
+
+  .keyboard kbd.kb-key.is-down,
+  .keyboard kbd.kb-key:active {
+    transform: translateY(calc(var(--u) * 0.085));
+    border-bottom-width: 1px;
+    box-shadow:
+      inset 0 2px 5px rgb(0 0 0 / 0.32),
+      0 1px 0 rgb(0 0 0 / 0.28);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  @media (prefers-reduced-motion: no-preference) {
+    .keyboard kbd.kb-key:is(:hover, .is-hovering) {
+      transform: translateY(calc(var(--u) * 0.085));
+      border-bottom-width: 1px;
+      box-shadow:
+        inset 0 2px 5px rgb(0 0 0 / 0.32),
+        0 1px 0 rgb(0 0 0 / 0.28);
+    }
+  }
+}
+
+@media (forced-colors: active) {
+  .keyboard kbd.kb-key.is-bound {
+    outline: 1px solid ButtonText;
+  }
+
+  .keyboard kbd.kb-key.is-lit {
+    outline: 2px solid Highlight;
+    transform: none;
+  }
+
+  .keyboard kbd.kb-key:is(:hover, .is-hovering),
+  .keyboard kbd.kb-key:active,
+  .keyboard kbd.kb-key.is-down {
+    transform: none;
+    border-bottom-width: 6px;
+    box-shadow: none;
+  }
+}
+
+.key-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.key-table th,
+.key-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgb(201 201 201 / 0.12);
+  text-align: start;
+  vertical-align: top;
+}
+
+.key-table thead th {
+  color: var(--muted);
+  font: 600 0.7rem / 1.3 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.commands.has-keyboard .key-table tbody tr[data-keys] {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .commands.has-keyboard .key-table tbody tr[data-keys] th,
+  .commands.has-keyboard .key-table tbody tr[data-keys] td {
+    transition: background-color 100ms var(--ease);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .commands.has-keyboard .key-table tbody tr[data-keys]:hover th,
+  .commands.has-keyboard .key-table tbody tr[data-keys]:hover td {
+    background: color-mix(in srgb, var(--ink) 6%, transparent);
+  }
+}
+
+.commands.has-keyboard .key-table tbody tr.is-hot th,
+.commands.has-keyboard .key-table tbody tr.is-hot td {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+}
+
+.commands.has-keyboard .key-table tbody tr[data-keys]:hover th:first-child,
+.commands.has-keyboard .key-table tbody tr.is-hot th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.commands.has-keyboard .key-table tbody tr[data-keys]:hover td:last-child,
+.commands.has-keyboard .key-table tbody tr.is-hot td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.commands.has-keyboard .key-table tbody tr.is-hot .keycaps kbd.kb-key {
+  --key-base: #e8e6e2;
+  --key-light: #f4f3f0;
+  --key-mid: #cfcbc6;
+  --key-dark: #b4b0ab;
+  --key-side: #c4c0bb;
+  --key-well: #a8a49f;
+  --key-sculpt: #d4d0cb;
+  --key-ink: rgb(16 16 16 / 0.9);
+  --mod-base: #e8e6e2;
+  --mod-light: #f4f3f0;
+  --mod-mid: #cfcbc6;
+  --mod-dark: #b4b0ab;
+  --mod-side: #c4c0bb;
+  --mod-well: #a8a49f;
+  --mod-sculpt: #d4d0cb;
+  --mod-ink: rgb(16 16 16 / 0.9);
+  color: var(--key-ink);
+  background-color: var(--key-base);
+  border-color: var(--key-mid);
+  border-top-color: var(--key-light);
+  border-bottom-color: var(--key-dark);
+}
+
+.keycaps {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.key-table kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  min-height: 24px;
+  padding: 2px 7px;
+  border: 1px solid rgb(201 201 201 / 0.28);
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow:
+    0 1px 0 rgb(0 0 0 / 0.35),
+    inset 0 1px 0 rgb(255 255 255 / 0.06);
+  color: var(--ink);
+  font: 600 0.78rem / 1.2 var(--mono);
+}
+
+.commands.has-keyboard .keycaps kbd.kb-key {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 1.7em;
+  height: 1.75em;
+  padding: 0 0.42em;
+  border: 2px solid var(--key-mid);
+  border-top: 1px solid var(--key-light);
+  border-bottom: 3px solid var(--key-dark);
+  border-radius: 3px;
+  background-color: var(--key-base);
+  box-shadow:
+    0 -0.08em 0 -0.04em var(--key-dark),
+    0 0.08em 0 -0.04em rgb(0 0 0 / 0.45);
+  color: var(--key-ink);
+  font: 550 0.68rem / 1 var(--mono);
+  letter-spacing: 0.04em;
+}
+
+.commands.has-keyboard .keycaps kbd.kb-mod {
+  border-color: var(--mod-mid);
+  border-top-color: var(--mod-light);
+  border-bottom-color: var(--mod-dark);
+  background-color: var(--mod-base);
+  box-shadow:
+    0 -0.08em 0 -0.04em var(--mod-dark),
+    0 0.08em 0 -0.04em rgb(0 0 0 / 0.45);
+  color: var(--mod-ink);
+}
+
+.commands.has-keyboard .keycaps kbd.kb-key::before {
+  content: "";
+  position: absolute;
+  inset: 0 -1px -1px;
+  z-index: 0;
+  border-radius: 3px;
+  border-left: 1px solid var(--key-side);
+  border-right: 1px solid var(--key-side);
+  border-bottom: 1px solid var(--key-well);
+  background-image: linear-gradient(
+    to right,
+    var(--key-base),
+    var(--key-sculpt) 5%,
+    transparent 40%,
+    transparent 60%,
+    var(--key-sculpt) 95%,
+    var(--key-base)
+  );
+  pointer-events: none;
+}
+
+.commands.has-keyboard .keycaps kbd.kb-mod::before {
+  border-left-color: var(--mod-side);
+  border-right-color: var(--mod-side);
+  border-bottom-color: var(--mod-well);
+  background-image: linear-gradient(
+    to right,
+    var(--mod-base),
+    var(--mod-sculpt) 5%,
+    transparent 40%,
+    transparent 60%,
+    var(--mod-sculpt) 95%,
+    var(--mod-base)
+  );
+}
+
+.commands.has-keyboard .keycaps kbd.kb-key::after {
+  content: none;
+}
+
+.commands.has-keyboard .keycaps kbd.kb-key span {
+  position: relative;
+  z-index: 1;
+}
+
+.key-sep {
+  padding: 0 1px;
+  color: var(--muted);
+  font: 0.78rem / 1 var(--mono);
+}
+
+@media (max-width: 840px) {
+  .key-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+main > .stack-panel.commands {
+  overflow: auto;
+}
+
+/* Mac board: same data-keyboard contract, chassis and keys from a laptop deck. */
+.keyboard.keyboard--mac {
+  --mac-gap: clamp(4px, 0.85cqi, 7px);
+  --mac-chassis: #171717;
+  --mac-chassis-border: #262626;
+  --mac-key: #262626;
+  --mac-key-ink: rgb(245 245 245 / 0.88);
+  --mac-key-muted: rgb(245 245 245 / 0.48);
+  --mac-press: rgb(0 0 0 / 0.28);
+}
+
+:root[data-theme="light"] .keyboard.keyboard--mac {
+  --mac-chassis: #e5e5e5;
+  --mac-chassis-border: #d4d4d4;
+  --mac-key: #ffffff;
+  --mac-key-ink: rgb(23 23 23 / 0.88);
+  --mac-key-muted: rgb(23 23 23 / 0.42);
+  --mac-press: rgb(0 0 0 / 0.08);
+}
+
+.keyboard.keyboard--mac .keyboard__board {
+  --u: unset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mac-gap);
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: clamp(8px, 1.5cqi, 14px);
+  border: 1px solid var(--mac-chassis-border);
+  border-radius: 1.5rem;
+  background-color: var(--mac-chassis);
+  background-image: none;
+  background-origin: unset;
+  background-clip: unset;
+  box-shadow:
+    0 24px 48px -16px rgb(0 0 0 / 0.55),
+    0 1px 0 rgb(255 255 255 / 0.04) inset;
+  font-size: inherit;
+  animation: none;
+}
+
+.keyboard.keyboard--mac[data-layout] .keyboard__board {
+  flex-direction: row;
+  align-items: stretch;
+  max-width: min(84rem, 100%);
+}
+
+.keyboard.keyboard--mac[data-layout="60"] .keyboard__board {
+  max-width: 48rem;
+}
+
+.keyboard.keyboard--mac[data-layout="75"] .keyboard__board,
+.keyboard.keyboard--mac[data-layout="75-exploded"] .keyboard__board {
+  max-width: 56rem;
+}
+
+.keyboard.keyboard--mac[data-layout] .keyboard__stage,
+.keyboard.keyboard--mac[data-layout] .keyboard__alpha {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mac-gap);
+  width: 100%;
+}
+
+.keyboard.keyboard--mac[data-layout] .keyboard__body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: var(--mac-gap);
+  width: 100%;
+}
+
+.keyboard.keyboard--mac[data-layout] .keyboard__row {
+  width: 100%;
+}
+
+.keyboard.keyboard--mac[data-layout] .keyboard__cluster {
+  display: flex;
+  gap: var(--mac-gap);
+  min-width: 0;
+}
+
+.keyboard.keyboard--mac[data-layout] .keyboard__gap {
+  width: calc(var(--mac-gap) * 2);
+}
+
+.keyboard.keyboard--mac .keyboard__nav {
+  gap: var(--mac-gap);
+}
+
+.keyboard.keyboard--mac .keyboard__nav-island {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--mac-gap);
+  width: clamp(7rem, 22cqi, 11rem);
+}
+
+.keyboard.keyboard--mac .keyboard__arrows--pc {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--mac-gap);
+  width: clamp(7rem, 22cqi, 11rem);
+}
+
+.keyboard.keyboard--mac .keyboard__numpad {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: var(--mac-gap);
+  width: clamp(9rem, 28cqi, 14rem);
+  padding: 0;
+}
+
+.keyboard.keyboard--mac .keyboard__numpad kbd.kb-key[data-key] {
+  flex: none;
+  width: auto;
+  aspect-ratio: auto;
+}
+
+:root[data-theme="light"] .keyboard.keyboard--mac .keyboard__board {
+  background-image: none;
+  box-shadow:
+    0 24px 48px -18px rgb(0 0 0 / 0.22),
+    0 1px 0 rgb(255 255 255 / 0.7) inset;
+}
+
+.keyboard.keyboard--mac .keyboard__row {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  gap: var(--mac-gap);
+  margin: 0;
+  padding: 0;
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key] {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex: var(--kw, 1);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 0;
+  height: auto;
+  aspect-ratio: var(--kw, 1) / 1;
+  padding: 0.12em 0.08em;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: var(--mac-key);
+  box-shadow:
+    inset 0 -2px 1px rgb(0 0 0 / 0.4),
+    inset 0 1px 1px rgb(255 255 255 / 0.06),
+    0 1px 1px rgb(0 0 0 / 0.45);
+  color: var(--mac-key-ink);
+  font: 500 clamp(0.55rem, 1.7cqi, 0.95rem) / 1 var(--text);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+:root[data-theme="light"] .keyboard.keyboard--mac kbd.kb-key[data-key] {
+  box-shadow:
+    inset 0 -2px 1px rgb(0 0 0 / 0.05),
+    inset 0 1px 1px rgb(255 255 255 / 1),
+    0 1px 1px rgb(0 0 0 / 0.1);
+}
+
+.keyboard.keyboard--mac kbd.kb-key.kb-wide[data-key] {
+  aspect-ratio: auto;
+}
+
+.keyboard.keyboard--mac kbd.kb-key::before,
+.keyboard.keyboard--mac kbd.kb-key::after,
+.keyboard.keyboard--mac kbd.kb-key[data-key]::after,
+.keyboard.keyboard--mac kbd.kb-key[data-alt]::after,
+.keyboard.keyboard--mac kbd.kb-mod::before,
+.keyboard.keyboard--mac kbd.kb-mod::after {
+  content: none;
+  display: none;
+}
+
+.keyboard.keyboard--mac kbd.kb-key svg {
+  position: static;
+  width: 0.85em;
+  height: 0.85em;
+}
+
+.keyboard.keyboard--mac kbd.kb-fn {
+  justify-content: space-between;
+  padding: 0.32em 0.2em 0.24em;
+}
+
+.keyboard.keyboard--mac kbd.kb-fn .kb-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95em;
+}
+
+.keyboard.keyboard--mac kbd.kb-fn .kb-fn-id {
+  font: 500 clamp(0.38rem, 1.05cqi, 0.55rem) / 1 var(--text);
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+}
+
+.keyboard.keyboard--mac .kb-shift,
+.keyboard.keyboard--mac .kb-main {
+  display: block;
+  line-height: 1;
+}
+
+.keyboard.keyboard--mac kbd.kb-key:has(.kb-shift) {
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.06em;
+  padding: 0.7em 0.34em 0.64em;
+}
+
+.keyboard.keyboard--mac .kb-shift {
+  font-size: 0.52em;
+  font-weight: 400;
+  color: var(--mac-key-muted);
+}
+
+.keyboard.keyboard--mac .kb-main {
+  font-size: 0.92em;
+  font-weight: 550;
+}
+
+.keyboard.keyboard--mac kbd.kb-key:has(.kb-shift) .kb-main {
+  font-size: 0.8em;
+}
+
+.keyboard.keyboard--mac .kb-label {
+  font-size: 0.62em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key="escape"] .kb-label,
+.keyboard.keyboard--mac kbd.kb-key[data-key="tab"] .kb-label,
+.keyboard.keyboard--mac kbd.kb-key[data-key="caps"] .kb-label,
+.keyboard.keyboard--mac kbd.kb-key[data-key="lshift"] .kb-label {
+  align-self: flex-start;
+  padding-left: 0.45em;
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key="delete"] .kb-label,
+.keyboard.keyboard--mac kbd.kb-key[data-key="return"] .kb-label,
+.keyboard.keyboard--mac kbd.kb-key[data-key="rshift"] .kb-label {
+  align-self: flex-end;
+  padding-right: 0.45em;
+}
+
+.keyboard.keyboard--mac kbd.kb-stack {
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.36em 0.48em 0.34em;
+}
+
+.keyboard.keyboard--mac kbd.kb-stack .kb-icon {
+  position: absolute;
+  top: 0.36em;
+  left: 0.4em;
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key="rcmd"] .kb-icon,
+.keyboard.keyboard--mac kbd.kb-key[data-key="ropt"] .kb-icon {
+  left: auto;
+  right: 0.4em;
+}
+
+.keyboard.keyboard--mac kbd.kb-stack .kb-label {
+  font-size: clamp(0.38rem, 1.05cqi, 0.55rem);
+  font-weight: 500;
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key="lcmd"] .kb-label,
+.keyboard.keyboard--mac kbd.kb-key[data-key="rcmd"] .kb-label {
+  font-weight: 700;
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key="caps"] {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.35em 0.45em;
+}
+
+.keyboard.keyboard--mac .kb-led {
+  position: absolute;
+  top: 0.38em;
+  left: 0.45em;
+  width: 0.28em;
+  height: 0.28em;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.2);
+}
+
+:root[data-theme="light"] .keyboard.keyboard--mac .kb-led {
+  background: rgb(0 0 0 / 0.2);
+}
+
+.keyboard.keyboard--mac kbd.kb-key[data-key="caps"].is-lit .kb-led,
+.keyboard.keyboard--mac kbd.kb-key[data-key="caps"].is-down .kb-led,
+.keyboard.keyboard--mac kbd.kb-key[data-key="caps"]:active .kb-led {
+  background: #22c55e;
+}
+
+.keyboard.keyboard--mac .keyboard__arrows {
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  gap: var(--mac-gap);
+  min-width: 0;
+}
+
+.keyboard.keyboard--mac .keyboard__arrows > kbd.kb-key[data-key] {
+  flex: none;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.keyboard.keyboard--mac .keyboard__arrows-mid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mac-gap);
+  height: 100%;
+  min-height: 0;
+}
+
+.keyboard.keyboard--mac kbd.kb-half[data-key] {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+  border-radius: 4px;
+}
+
+.keyboard.keyboard--mac .keyboard__board::after {
+  background: rgb(0 0 0 / 0.28);
+}
+
+:root[data-theme="light"] .keyboard.keyboard--mac .keyboard__board::after {
+  background: rgb(255 255 255 / 0.28);
+}
+
+.keyboard.keyboard--mac kbd.kb-key.is-lit[data-key],
+.keyboard.keyboard--mac kbd.kb-key.is-down[data-key],
+.keyboard.keyboard--mac kbd.kb-key[data-key]:active {
+  z-index: 1;
+  transform: translateY(1px) scale(0.98);
+  box-shadow: none;
+  background-color: color-mix(in srgb, var(--mac-key) 82%, #fff);
+}
+
+:root[data-theme="light"] .keyboard.keyboard--mac kbd.kb-key.is-lit[data-key],
+:root[data-theme="light"] .keyboard.keyboard--mac kbd.kb-key.is-down[data-key],
+:root[data-theme="light"] .keyboard.keyboard--mac kbd.kb-key[data-key]:active {
+  background-color: #f4f4f5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keyboard:not(.has-gsap-keys).keyboard--mac kbd.kb-key[data-key] {
+    transition: transform 100ms var(--ease);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  @media (prefers-reduced-motion: no-preference) {
+    .keyboard.keyboard--mac kbd.kb-key[data-key]:is(:hover, .is-hovering) {
+      transform: translateY(1px) scale(0.98);
+      box-shadow: none;
+    }
+  }
+}
+
+@media (forced-colors: active) {
+  .keyboard.keyboard--mac kbd.kb-key[data-key]:is(:hover, .is-hovering),
+  .keyboard.keyboard--mac kbd.kb-key[data-key]:active,
+  .keyboard.keyboard--mac kbd.kb-key.is-down[data-key] {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Shared cell geometry for the TUI board. */
+.keyboard.keyboard--terminal {
+  --board-gap: clamp(3px, 0.7cqi, 6px);
+}
+
+.keyboard.keyboard--terminal .keyboard__board {
+  --u: unset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--board-gap);
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: none;
+  background-origin: unset;
+  background-clip: unset;
+  box-shadow: none;
+  font-size: inherit;
+  animation: none;
+}
+
+.keyboard.keyboard--terminal .keyboard__row {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  gap: var(--board-gap);
+  margin: 0;
+  padding: 0;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key[data-key] {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex: var(--kw, 1);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 0;
+  height: auto;
+  aspect-ratio: var(--kw, 1) / 1;
+  padding: 0.1em 0.06em;
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key.kb-wide[data-key] {
+  aspect-ratio: auto;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key::before,
+.keyboard.keyboard--terminal kbd.kb-key::after,
+.keyboard.keyboard--terminal kbd.kb-key[data-key]::after,
+.keyboard.keyboard--terminal kbd.kb-key[data-alt]::after,
+.keyboard.keyboard--terminal kbd.kb-mod::before,
+.keyboard.keyboard--terminal kbd.kb-mod::after {
+  content: none;
+  display: none;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key[data-key]:has(.kb-shift) {
+  justify-content: space-between;
+  padding: 0.18em 0.08em;
+}
+
+.keyboard.keyboard--terminal .keyboard__arrows {
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  gap: var(--board-gap);
+  min-width: 0;
+}
+
+.keyboard.keyboard--terminal .keyboard__arrows > kbd.kb-key[data-key] {
+  flex: none;
+  width: 100%;
+  aspect-ratio: 1 / var(--tty-face, 1.28);
+}
+
+.keyboard.keyboard--terminal .keyboard__arrows-mid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--board-gap);
+  height: 100%;
+  min-height: 0;
+}
+
+.keyboard.keyboard--terminal kbd.kb-half[data-key] {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
+@font-face {
+  font-family: "Departure Mono";
+  src: url("../fonts/departure-mono/DepartureMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Terminal: physical PC layout drawn as TUI cells in ink on paper. */
+.commands.has-terminal-keyboard {
+  --tty-font: "Departure Mono", var(--mono);
+  --tty-frame: color-mix(in srgb, var(--ink) 32%, transparent);
+  --tty-line: color-mix(in srgb, var(--tty-frame) 5%, transparent);
+  --tty-alpha: color-mix(in srgb, var(--ink) 16%, var(--paper));
+  --tty-mod: color-mix(in srgb, var(--ink) 7%, var(--paper));
+  --tty-chassis: color-mix(in srgb, var(--ink) 3%, var(--paper));
+}
+
+:root[data-theme="light"] .commands.has-terminal-keyboard {
+  --tty-frame: color-mix(in srgb, var(--ink) 28%, transparent);
+  --tty-line: color-mix(in srgb, var(--tty-frame) 5%, transparent);
+  --tty-alpha: color-mix(in srgb, var(--ink) 18%, var(--paper));
+  --tty-mod: color-mix(in srgb, var(--ink) 32%, var(--paper));
+  --tty-chassis: color-mix(in srgb, var(--ink) 6%, var(--paper));
+}
+
+.keyboard.keyboard--terminal {
+  --board-gap: clamp(4px, 0.85cqi, 7px);
+  --tty-face: 1.36;
+  font-family: var(--tty-font);
+  font-size: 11px;
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: 0;
+  line-height: 1;
+  -webkit-font-smoothing: none;
+}
+
+.keyboard.keyboard--terminal .keyboard__board {
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: clamp(8px, 1.4cqi, 12px);
+  border: 1px solid var(--tty-frame);
+  background-color: var(--tty-chassis);
+  animation: none;
+}
+
+.keyboard.keyboard--terminal[data-layout] .keyboard__board {
+  flex-direction: row;
+  align-items: stretch;
+  max-width: min(72rem, 100%);
+}
+
+.keyboard.keyboard--terminal[data-layout="40"] .keyboard__board,
+.keyboard.keyboard--terminal[data-layout="50"] .keyboard__board,
+.keyboard.keyboard--terminal[data-layout="60"] .keyboard__board {
+  max-width: 56rem;
+}
+
+.keyboard.keyboard--terminal[data-layout] .keyboard__stage,
+.keyboard.keyboard--terminal[data-layout] .keyboard__alpha {
+  display: flex;
+  flex-direction: column;
+  gap: var(--board-gap);
+  width: 100%;
+  min-width: 0;
+}
+
+.keyboard.keyboard--terminal[data-layout] .keyboard__body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: var(--board-gap);
+  width: 100%;
+}
+
+.keyboard.keyboard--terminal[data-layout] .keyboard__row {
+  width: 100%;
+  height: auto;
+}
+
+.keyboard.keyboard--terminal[data-layout] .keyboard__cluster {
+  display: flex;
+  gap: var(--board-gap);
+  min-width: 0;
+  flex: 1;
+}
+
+.keyboard.keyboard--terminal[data-layout] .keyboard__gap {
+  width: calc(var(--board-gap) * 2);
+}
+
+.keyboard.keyboard--terminal .keyboard__nav-island {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--board-gap);
+  width: clamp(6.5rem, 20cqi, 10rem);
+}
+
+.keyboard.keyboard--terminal .keyboard__arrows--pc {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--board-gap);
+  width: clamp(6.5rem, 20cqi, 10rem);
+}
+
+.keyboard.keyboard--terminal .keyboard__numpad {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: var(--board-gap);
+  width: clamp(8rem, 24cqi, 13rem);
+  padding: 0;
+  row-gap: var(--board-gap);
+}
+
+.keyboard.keyboard--terminal .keyboard__numpad kbd.kb-key[data-key],
+.keyboard.keyboard--terminal .keyboard__nav-island kbd.kb-key[data-key],
+.keyboard.keyboard--terminal .keyboard__arrows--pc kbd.kb-key[data-key] {
+  flex: none;
+  width: auto;
+  height: auto;
+  aspect-ratio: auto;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key[data-key] {
+  --tty-fill: 0%;
+  overflow: hidden;
+  isolation: isolate;
+  aspect-ratio: var(--kw, 1) / var(--tty-face, 1.28);
+  padding: 0.16em 0.08em;
+  border: 1px solid var(--tty-line);
+  border-radius: 2px;
+  background-color: var(--tty-alpha);
+  background-image: linear-gradient(var(--ink), var(--ink));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% var(--tty-fill);
+  box-shadow: none;
+  color: var(--ink);
+  font-family: var(--tty-font);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.keyboard.keyboard--terminal kbd.kb-mod[data-key],
+.keyboard.keyboard--terminal kbd.kb-fn[data-key],
+.keyboard.keyboard--terminal kbd.kb-key[data-key="space"],
+.keyboard.keyboard--terminal .keyboard__arrows kbd.kb-key[data-key] {
+  background-color: var(--tty-mod);
+}
+
+.keyboard.keyboard--terminal .kb-shift,
+.keyboard.keyboard--terminal .kb-main,
+.keyboard.keyboard--terminal .kb-label {
+  display: block;
+  line-height: 1;
+  overflow: visible;
+}
+
+.keyboard.keyboard--terminal .kb-shift {
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.55;
+}
+
+.keyboard.keyboard--terminal .kb-main {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key[data-key]:has(.kb-shift) {
+  justify-content: center;
+  gap: 0.15em;
+  padding: 0.22em 0.08em;
+}
+
+.keyboard.keyboard--terminal kbd.kb-key[data-key]:has(.kb-shift) .kb-main {
+  font-size: 16px;
+}
+
+.keyboard.keyboard--terminal .keyboard__arrows .kb-main {
+  font-size: 11px;
+}
+
+.keyboard.keyboard--terminal .kb-label {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.keyboard.keyboard--terminal .keyboard__board::after {
+  background: rgb(0 0 0 / 0.36);
+}
+
+.keyboard.keyboard--terminal kbd.kb-key.is-lit[data-key],
+.keyboard.keyboard--terminal kbd.kb-key.is-down[data-key],
+.keyboard.keyboard--terminal kbd.kb-key[data-key]:active {
+  z-index: 1;
+  --tty-fill: 100%;
+  transform: translateY(1px);
+  border-color: var(--ink);
+  box-shadow: none;
+  color: var(--paper);
+}
+
+/* Tactile PC board: high-profile Windows keys with a spherical dish and F/J bars. */
+.keyboard.keyboard--schematic {
+  --kb-row-h: calc(var(--u) * 1.18);
+}
+
+.keyboard.keyboard--schematic .keyboard__row {
+  height: var(--kb-row-h);
+  margin-bottom: 3px;
+}
+
+.keyboard.keyboard--schematic kbd.kb-key {
+  height: var(--kb-row-h);
+  border-radius: 8px;
+  border-bottom-width: 9px;
+}
+
+.keyboard.keyboard--schematic kbd.kb-key::before {
+  border-radius: 7px;
+}
+
+.keyboard.keyboard--schematic .kb-dish {
+  position: absolute;
+  z-index: 0;
+  inset: 3px 3px 8px;
+  overflow: hidden;
+  border-radius: 6px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0.12),
+    transparent 48%,
+    rgb(255 255 255 / 0.05)
+  );
+}
+
+.keyboard.keyboard--schematic .kb-dish::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 140%;
+  aspect-ratio: 1 / 1;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 82%, rgb(255 255 255 / 0.12), transparent 36%);
+  box-shadow:
+    inset 0 4px 12px rgb(0 0 0 / 0.26),
+    inset 0 -2px 6px rgb(255 255 255 / 0.1);
+}
+
+.keyboard.keyboard--schematic kbd.kb-mod .kb-dish {
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0.22),
+    transparent 48%,
+    rgb(255 255 255 / 0.04)
+  );
+}
+
+.keyboard.keyboard--schematic kbd.kb-mod .kb-dish::before {
+  background: radial-gradient(circle at 50% 82%, rgb(255 255 255 / 0.06), transparent 36%);
+  box-shadow:
+    inset 0 4px 12px rgb(0 0 0 / 0.38),
+    inset 0 -2px 6px rgb(255 255 255 / 0.05);
+}
+
+:root[data-theme="light"] .keyboard.keyboard--schematic .kb-dish {
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0.1),
+    transparent 48%,
+    rgb(255 255 255 / 0.12)
+  );
+}
+
+:root[data-theme="light"] .keyboard.keyboard--schematic .kb-dish::before {
+  background: radial-gradient(circle at 50% 82%, rgb(255 255 255 / 0.2), transparent 38%);
+  box-shadow:
+    inset 0 4px 12px rgb(0 0 0 / 0.16),
+    inset 0 -2px 6px rgb(255 255 255 / 0.18);
+}
+
+.keyboard.keyboard--schematic kbd.kb-key::after,
+.keyboard.keyboard--schematic kbd.kb-key svg {
+  translate: 0 -1px;
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.28),
+    rgb(0 0 0 / 0.72) 32%,
+    #000 68%
+  );
+  mask-image: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.28),
+    rgb(0 0 0 / 0.72) 32%,
+    #000 68%
+  );
+}
+
+.keyboard.keyboard--schematic kbd.kb-key[data-alt]::after {
+  padding-top: 0.12em;
+  line-height: 1.15;
+}
+
+.keyboard.keyboard--schematic .kb-home {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 28%;
+  width: 0.58em;
+  height: 0.18em;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0.42), rgb(0 0 0 / 0.2));
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 0.4),
+    inset 0 1px 0 rgb(255 255 255 / 0.45);
+  translate: -50% 0;
+  pointer-events: none;
+}
+
+:root[data-theme="light"] .keyboard.keyboard--schematic .kb-home {
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0.9), rgb(0 0 0 / 0.12));
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 0.2),
+    inset 0 1px 0 rgb(255 255 255 / 0.95);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keyboard:not(.has-gsap-keys).keyboard--terminal kbd.kb-key[data-key] {
+    transition: transform 120ms var(--ease);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .keyboard.keyboard--terminal kbd.kb-key[data-key]:is(:hover, .is-hovering) {
+    --tty-fill: 100%;
+    border-color: var(--ink);
+    color: var(--paper);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .keyboard.keyboard--terminal kbd.kb-key[data-key]:is(:hover, .is-hovering) {
+      transform: translateY(1px);
+      border-bottom-width: 1px;
+      box-shadow: none;
+    }
+  }
+}
+
+.commands.has-terminal-keyboard .keycaps kbd.kb-key {
+  min-width: 1.7em;
+  height: 1.55em;
+  padding: 0 0.4em;
+  border-bottom-width: 1px;
+  box-shadow: none;
+  font-family: var(--mono);
+}
+
+.commands.has-terminal-keyboard .keycaps kbd.kb-key::before {
+  content: none;
+}
+
+.commands.has-terminal-keyboard .keycaps kbd.kb-key {
+  --tty-fill: 0%;
+  border: 1px solid var(--tty-line);
+  border-radius: 2px;
+  background-color: var(--tty-alpha);
+  background-image: linear-gradient(var(--ink), var(--ink));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% var(--tty-fill);
+  color: var(--ink);
+  font-family: var(--tty-font);
+  font-size: 11px;
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: 0;
+  line-height: 1;
+  -webkit-font-smoothing: none;
+}
+
+.commands.has-terminal-keyboard .keycaps kbd.kb-mod {
+  background-color: var(--tty-mod);
+}
+
+.commands.has-schematic-keyboard .keycaps kbd.kb-key {
+  border-radius: 5px;
+}
+
+.commands.has-terminal-keyboard .key-table tbody tr.is-hot .keycaps kbd.kb-key {
+  --tty-fill: 100%;
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .keyboard:not(.has-gsap-keys) kbd.kb-key,
+  .keyboard:not(.has-gsap-keys).keyboard--mac kbd.kb-key[data-key],
+  .keyboard:not(.has-gsap-keys).keyboard--terminal kbd.kb-key[data-key],
+  .keyboard:not(.has-gsap-keys).keyboard--schematic kbd.kb-key[data-key] {
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+  }
+
+  .keyboard:not(.has-gsap-keys) kbd.kb-key:is(:hover, :active, .is-down, .is-lit, .is-hovering),
+  .keyboard:not(.has-gsap-keys).keyboard--mac kbd.kb-key[data-key]:is(:hover, :active, .is-down, .is-lit, .is-hovering),
+  .keyboard:not(.has-gsap-keys).keyboard--terminal kbd.kb-key[data-key]:is(:hover, :active, .is-down, .is-lit, .is-hovering),
+  .keyboard:not(.has-gsap-keys).keyboard--schematic kbd.kb-key[data-key]:is(:hover, :active, .is-down, .is-lit, .is-hovering) {
+    transition-delay: 0s;
+    transition-duration: 0.12s;
+  }
+}
+
+.keyboard.has-gsap-keys kbd.kb-key:is(:hover, .is-hovering, :active, .is-down, .is-lit),
+.keyboard.has-gsap-keys.keyboard--mac kbd.kb-key[data-key]:is(:hover, .is-hovering, :active, .is-down, .is-lit),
+.keyboard.has-gsap-keys.keyboard--terminal kbd.kb-key[data-key]:is(:hover, .is-hovering, :active, .is-down, .is-lit),
+.keyboard.has-gsap-keys.keyboard--schematic kbd.kb-key[data-key]:is(:hover, .is-hovering, :active, .is-down, .is-lit) {
+  transform: none;
+}
+
+.keyboard.has-gsap-keys.keyboard--terminal kbd.kb-key[data-key]:is(:hover, .is-hovering, :active, .is-down, .is-lit) {
+  --tty-fill: 0%;
+}
+
+@media (forced-colors: active) {
+  .keyboard.keyboard--terminal kbd.kb-key[data-key]:is(:hover, .is-hovering),
+  .keyboard.keyboard--terminal kbd.kb-key[data-key]:active,
+  .keyboard.keyboard--terminal kbd.kb-key.is-down[data-key] {
+    transform: none;
+    box-shadow: none;
+  }
+}

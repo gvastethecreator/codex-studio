@@ -1,0 +1,13 @@
+id: plugin-extension
+label: Plugin
+defaultComposition: host-effect
+compositions:
+  host-effect:
+    semanticPlan:
+      - { id: hero, variant: product }
+      - { id: comparison, variant: before-after }
+      - { id: about, variant: result-backed }
+      - { id: setup, variant: environment }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

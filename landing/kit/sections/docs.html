@@ -1,0 +1,48 @@
+<section class="docs" id="docs" data-docs aria-labelledby="docs-title">
+  <div class="docs-workbench">
+    <button type="button" class="docs-backdrop" data-docs-tree-toggle aria-label="Close documentation"></button>
+    <aside class="docs-tree" data-docs-tree>
+      <div class="docs-tree__head">
+        <h2 id="docs-title" class="docs-tree__label">Documentation</h2>
+        <p class="docs-tree__meta">{{docs.count}}</p>
+      </div>
+      <div class="docs-scroll-shell">
+        <nav class="docs-tree__nav" id="docs-tree-nav" data-docs-scroll aria-labelledby="docs-title">
+          <div class="docs-tree__track">
+            <div class="docs-tree__shade" aria-hidden="true"></div>
+            {{{docs.treeHtml}}}
+          </div>
+        </nav>
+        <div class="docs-scroll" data-docs-rail aria-hidden="true"><i class="docs-scroll__thumb"></i></div>
+      </div>
+    </aside>
+    <div class="docs-reader">
+      <header class="docs-reader__bar">
+        <button type="button" class="docs-reader__files" data-docs-tree-toggle aria-expanded="false" aria-controls="docs-tree-nav">
+          Documentation
+        </button>
+        <p class="docs-reader__path" data-docs-path aria-live="polite">{{docs.firstPath}}</p>
+        {{#if docs.firstHref}}
+        <a class="docs-reader__open" data-docs-open href="{{docs.firstHref}}" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/></svg>
+          <span class="docs-reader__open-label">Source</span>
+        </a>
+        {{else}}
+        <a class="docs-reader__open is-empty" data-docs-open hidden target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/></svg>
+          <span class="docs-reader__open-label">Source</span>
+        </a>
+        {{/if}}
+      </header>
+      <div class="docs-scroll-shell">
+        <div class="docs-reader__scroll" data-docs-scroll data-docs-pages>
+          {{{docs.pagesHtml}}}
+        </div>
+        <div class="docs-scroll" data-docs-rail-page aria-hidden="true"><i class="docs-scroll__thumb"></i></div>
+      </div>
+    </div>
+  </div>
+  {{#if docs.source}}
+  <p class="section-source">From <a href="{{docs.source.href}}">{{docs.source.label}}</a></p>
+  {{/if}}
+</section>

@@ -1,0 +1,20 @@
+/* Signal-adaptive GitHub desk. Loaded after generated section CSS on purpose. */
+.github .github-tags::before,
+.github .github-stack::before {
+  flex: 1 0 100%;
+  margin: 0 0 2px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.github .github-tags::before { content: "Topics"; }
+.github .github-stack::before { content: "Built with"; }
+
+.github .github-tree,
+.github .github-list {
+  scrollbar-width: thin;
+}

@@ -1,0 +1,109 @@
+<section class="code-proof code-proof--{{code.variant}}" id="code" aria-labelledby="code-title">
+  <header class="section-head code-proof__head">
+    {{#if code.kicker}}
+    <p class="kicker">{{code.kicker}}</p>
+    {{/if}}
+    <h2 id="code-title">{{{code.titleHtml}}}</h2>
+    {{#if code.lede}}
+    <p class="lede">{{code.lede}}</p>
+    {{/if}}
+  </header>
+
+  {{#if code.hasSingle}}
+  <div class="code-proof__single{{#if code.hasResult}} code-proof__single--split{{/if}}">
+    <article class="workbench">
+      <header class="workbench-bar">
+        <p class="workbench-file">{{code.primary.file}}</p>
+        <span class="workbench-lang">{{code.primary.langLabel}}</span>
+        <button class="workbench-copy" type="button" data-copy="{{code.primary.code}}" aria-label="Copy source">
+          <span class="workbench-copy__stack" aria-hidden="true">
+            <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          </span>
+        </button>
+      </header>
+      <div class="workbench-stage">
+        <pre class="workbench-source"><code>{{{code.primary.highlighted}}}</code></pre>
+        {{#if code.primary.note}}
+        <p class="workbench-note">{{code.primary.note}}</p>
+        {{/if}}
+      </div>
+    </article>
+    {{#if code.hasResult}}
+    <figure class="code-proof__result chrome-frame">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <img src="{{code.result.src}}" alt="{{code.result.alt}}" decoding="async">
+      </span>
+      {{#if code.result.caption}}<figcaption>{{code.result.caption}}</figcaption>{{/if}}
+    </figure>
+    {{/if}}
+  </div>
+  {{/if}}
+
+  {{#if code.hasTabs}}
+  <div class="workbench workbench--tabs" data-proof-tabs>
+    <header class="workbench-bar">
+      <div class="workbench-tabs" role="tablist" aria-label="Code alternatives">
+        {{#each code.items}}
+        <button
+          class="workbench-tab{{#if first}} is-on{{/if}}"
+          type="button"
+          role="tab"
+          id="{{tabId}}"
+          aria-selected="{{selected}}"
+          aria-controls="{{panelId}}"
+          tabindex="{{tabIndex}}"
+        >{{label}}</button>
+        {{/each}}
+      </div>
+    </header>
+    <div class="workbench-stage">
+      {{#each code.items}}
+      <article class="workbench-panel" role="tabpanel" id="{{panelId}}" aria-labelledby="{{tabId}}"{{#if hidden}} hidden{{/if}}>
+        <div class="workbench-meta">
+          <p class="workbench-file">{{file}}</p>
+          <span class="workbench-lang">{{langLabel}}</span>
+          <button class="workbench-copy" type="button" data-copy="{{code}}" aria-label="Copy source">
+            <span class="workbench-copy__stack" aria-hidden="true">
+              <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+              <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+          </button>
+        </div>
+        <pre class="workbench-source"><code>{{{highlighted}}}</code></pre>
+        {{#if note}}<p class="workbench-note">{{note}}</p>{{/if}}
+      </article>
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if code.hasSteps}}
+  <div class="code-proof__steps" role="list">
+    {{#each code.items}}
+    <article class="workbench" role="listitem">
+      <header class="workbench-bar">
+        <span class="code-proof__step-number">{{n}}</span>
+        {{#if title}}<strong class="code-proof__step-title">{{title}}</strong>{{/if}}
+        <span class="workbench-file">{{file}}</span>
+        <button class="workbench-copy" type="button" data-copy="{{code}}" aria-label="Copy source">
+          <span class="workbench-copy__stack" aria-hidden="true">
+            <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          </span>
+        </button>
+      </header>
+      <div class="workbench-stage">
+        <pre class="workbench-source"><code>{{{highlighted}}}</code></pre>
+        {{#if note}}<p class="workbench-note">{{note}}</p>{{/if}}
+      </div>
+    </article>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{#if code.source}}
+  <p class="section-source">From <a href="{{code.source.href}}">{{code.source.label}}</a></p>
+  {{/if}}
+</section>

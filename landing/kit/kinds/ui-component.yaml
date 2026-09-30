@@ -1,0 +1,13 @@
+id: ui-component
+label: UI component
+defaultComposition: live-code
+compositions:
+  live-code:
+    semanticPlan:
+      - { id: hero, variant: showcase }
+      - { id: playground, variant: scenario }
+      - { id: code, variant: split }
+      - { id: about, variant: code-backed }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

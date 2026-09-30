@@ -1,0 +1,220 @@
+/* FAQ: numbered accordion. One reading at a time. */
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0 24px;
+  min-height: 0;
+}
+
+.faq .lede {
+  --type-measure-max: 36rem;
+  max-width: var(--type-measure, var(--type-measure-max));
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgb(201 201 201 / 0.16);
+}
+
+.faq-item {
+  border-bottom: 1px solid rgb(201 201 201 / 0.12);
+  scroll-margin-top: calc(var(--header) + 16px);
+}
+
+.faq-item__q {
+  appearance: none;
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr) 1.25rem;
+  gap: 12px;
+  align-items: start;
+  width: 100%;
+  margin: 0;
+  padding: 14px 0;
+  border: 0;
+  background: transparent;
+  list-style: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  color: var(--ink);
+  font: 500 clamp(1.02rem, 2vw, 1.22rem) / 1.35 var(--display);
+  letter-spacing: -0.03em;
+  text-align: start;
+}
+
+.faq-item__q::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item__q::marker {
+  content: "";
+}
+
+@media (max-width: 640px) {
+  .faq-item__q {
+    min-height: var(--hit);
+    padding: 16px 0;
+  }
+}
+
+.faq-item__n {
+  color: var(--muted);
+  font: 600 0.75rem / 1 var(--mono);
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.4em;
+}
+
+.faq-item.is-open .faq-item__n,
+.faq-item[open] .faq-item__n {
+  color: var(--ink);
+}
+
+.faq-list.is-enhanced .faq-item[open]:not(.is-open) .faq-item__n {
+  color: var(--muted);
+}
+
+.faq-item__ask {
+  min-width: 0;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+.faq-item__mark {
+  display: grid;
+  width: 16px;
+  height: 16px;
+  justify-self: end;
+  margin-top: 0.22em;
+  color: var(--muted);
+}
+
+.faq-item__mark svg {
+  grid-area: 1 / 1;
+  display: block;
+}
+
+.faq-item__minus {
+  opacity: 0;
+  transform: scale(0.25);
+}
+
+.faq-item.is-open .faq-item__mark,
+.faq-item[open] .faq-item__mark {
+  color: var(--ink);
+}
+
+.faq-item.is-open .faq-item__plus,
+.faq-item[open] .faq-item__plus {
+  opacity: 0;
+  transform: scale(0.25);
+}
+
+.faq-item.is-open .faq-item__minus,
+.faq-item[open] .faq-item__minus {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.faq-list.is-enhanced .faq-item[open]:not(.is-open) .faq-item__plus {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.faq-list.is-enhanced .faq-item[open]:not(.is-open) .faq-item__minus {
+  opacity: 0;
+  transform: scale(0.25);
+}
+
+.faq-list.is-enhanced .faq-item[open]:not(.is-open) .faq-item__mark {
+  color: var(--muted);
+}
+
+.faq-item__body {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+.faq-item.is-open .faq-item__body,
+.faq-item[open] .faq-item__body {
+  grid-template-rows: 1fr;
+}
+
+.faq-list.is-enhanced .faq-item[open] .faq-item__body {
+  grid-template-rows: 0fr;
+}
+
+.faq-list.is-enhanced .faq-item.is-open .faq-item__body {
+  grid-template-rows: 1fr;
+}
+
+.faq-item__inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.faq-item__answer {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr) 1.25rem;
+  gap: 12px;
+  padding: 0 0 16px;
+}
+
+.faq-item__answer > * {
+  grid-column: 2;
+  min-width: 0;
+}
+
+.faq-item__answer p {
+  margin: 0;
+  padding-block-start: 2px;
+  padding-inline-start: 14px;
+  border-inline-start: 2px solid var(--ink);
+  color: var(--muted);
+  font: 400 1.02rem / 1.5 var(--text);
+  max-width: 38rem;
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .faq-item__body {
+    transition: grid-template-rows var(--duration-view) var(--ease);
+  }
+
+  .faq-item__n,
+  .faq-item__ask,
+  .faq-item__mark {
+    transition:
+      color var(--duration) var(--ease),
+      opacity var(--duration) var(--ease);
+  }
+
+  .faq-item__mark svg {
+    transition:
+      opacity 160ms var(--ease),
+      transform 160ms var(--ease);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .faq-item__q:hover .faq-item__n,
+  .faq-item__q:hover .faq-item__mark {
+    color: var(--ink);
+  }
+
+  .faq-item__q:hover .faq-item__ask {
+    color: var(--ink);
+  }
+}
+
+.faq-item__q:active .faq-item__mark {
+  transform: scale(0.96);
+}
+
+main > .stack-panel.faq {
+  overflow: auto;
+}

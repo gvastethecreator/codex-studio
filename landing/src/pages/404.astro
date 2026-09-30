@@ -1,0 +1,11 @@
+---
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
+const home = import.meta.env.BASE_URL.replace(/\/?$/, "/") || "/";
+const html = readFileSync(resolve(process.cwd(), "kit", "404.html"), "utf8")
+  .replaceAll('href="/"', `href="${home}"`)
+  .replaceAll('href="/favicon.svg"', `href="${home}favicon.svg"`);
+---
+
+<Fragment set:html={html} />

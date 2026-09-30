@@ -1,0 +1,38 @@
+schema: gvaste-pages/template/v1
+name: Profile Folio
+extends: default
+
+tokens:
+  color:
+    paper: "#12100c"
+    surface: "#1c1812"
+    ink: "#f2ead8"
+    muted: "#a8947c"
+    accent: "#d8c4a0"
+  typography:
+    display: Newsreader
+    text: Arimo
+    mono: Geist Mono
+    scale: 1.06
+  layout:
+    maxWidth: 1180
+  shape:
+    radius: 2
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#f4ead8"
+        surface: "#e7dcc6"
+        ink: "#1a140e"
+        muted: "#6a5a48"
+        accent: "#5c4630"
+
+chrome:
+  shade:
+    variant: veil
+
+sections:
+  profile:
+    variant: folio

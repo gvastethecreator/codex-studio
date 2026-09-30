@@ -1,0 +1,97 @@
+<section class="setup setup--{{setup.variant}}" id="setup" aria-labelledby="setup-title">
+  <header class="section-head setup__head"{{#if setup.isScript}} data-mascot-spot="under-start" data-mascot-size="230" data-mascot-mood="sleepy" data-mascot-pose="cozy"{{/if}}>
+    {{#if setup.kicker}}
+    <p class="kicker">{{setup.kicker}}</p>
+    {{/if}}
+    <h2 id="setup-title">{{{setup.titleHtml}}}</h2>
+    {{#if setup.lede}}
+    <p class="lede">{{setup.lede}}</p>
+    {{/if}}
+  </header>
+
+  {{#if setup.hasConfig}}
+  <article class="workbench">
+    <header class="workbench-bar">
+      <p class="workbench-file">{{setup.config.file}}</p>
+      <span class="workbench-lang">{{setup.config.langLabel}}</span>
+      <button class="workbench-copy" type="button" data-copy="{{setup.config.code}}" aria-label="Copy config">
+        <span class="workbench-copy__stack" aria-hidden="true">
+          <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+          <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+        </span>
+      </button>
+    </header>
+    <div class="workbench-stage">
+      <pre class="workbench-source"><code>{{{setup.config.highlighted}}}</code></pre>
+      {{#if setup.config.note}}<p class="workbench-note">{{setup.config.note}}</p>{{/if}}
+    </div>
+  </article>
+  {{/if}}
+
+  {{#if setup.hasItems}}
+  <ol class="setup__items" data-count="{{setup.itemCount}}">
+    {{#each setup.items}}
+    <li class="setup__item surface">
+      <span class="setup__number" aria-hidden="true">{{n}}</span>
+      <div class="setup__item-copy">
+        <h3>{{title}}</h3>
+        {{#if body}}<p>{{body}}</p>{{/if}}
+        {{#if value}}<code class="setup__value">{{value}}</code>{{/if}}
+        {{#if command}}
+        <div class="setup__command">
+          <span aria-hidden="true">$</span>
+          <code>{{command}}</code>
+          <button class="workbench-copy" type="button" data-copy="{{command}}" aria-label="Copy command">
+            <span class="workbench-copy__stack" aria-hidden="true">
+              <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1 2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+              <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+          </button>
+        </div>
+        {{/if}}
+      </div>
+    </li>
+    {{/each}}
+  </ol>
+  {{/if}}
+
+  {{#if setup.isScript}}
+  <article class="workbench setup__script" aria-label="Setup commands">
+    <header class="workbench-bar">
+      <p class="workbench-file">terminal</p>
+      <button class="workbench-copy" type="button" data-copy="{{setup.scriptText}}" aria-label="Copy all commands">
+        <span class="workbench-copy__stack" aria-hidden="true">
+          <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+          <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+        </span>
+      </button>
+    </header>
+    <pre class="setup__lines"><code>{{#each setup.items}}<span class="setup__line">{{command}}</span>{{/each}}</code></pre>
+    {{#if setup.verification}}
+    <p class="setup__after"><span class="setup__after-dot" aria-hidden="true"></span>{{setup.verification}}</p>
+    {{/if}}
+  </article>
+  {{/if}}
+
+  {{#if setup.showVerification}}
+  <aside class="setup__verification surface">
+    <strong>Verify</strong>
+    <span>{{setup.verification}}</span>
+  </aside>
+  {{/if}}
+
+  {{#if setup.hasNotes}}
+  <ul class="setup__notes">
+    {{#each setup.notes}}
+    <li class="setup__note surface">
+      <h3>{{title}}</h3>
+      <p>{{body}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+
+  {{#if setup.source}}
+  <p class="section-source">From <a href="{{setup.source.href}}">{{setup.source.label}}</a></p>
+  {{/if}}
+</section>

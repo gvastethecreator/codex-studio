@@ -1,0 +1,31 @@
+schema: gvaste-pages/template/v1
+name: Profile Standard
+extends: default
+
+tokens:
+  color:
+    paper: "#05070a"
+    surface: "#10151c"
+    ink: "#d7dee6"
+    muted: "#7f8b98"
+    accent: "#9bb4c8"
+  layout:
+    maxWidth: 1440
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#eef1f4"
+        surface: "#e2e7ec"
+        ink: "#152028"
+        muted: "#5a6873"
+        accent: "#2a4a66"
+
+chrome:
+  shade:
+    variant: liquid
+
+sections:
+  profile:
+    variant: standard

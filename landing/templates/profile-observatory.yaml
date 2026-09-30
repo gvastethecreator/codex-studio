@@ -1,0 +1,33 @@
+schema: gvaste-pages/template/v1
+name: Profile Observatory
+extends: default
+
+tokens:
+  color:
+    paper: "#071018"
+    surface: "#0f1c28"
+    ink: "#d7e6f0"
+    muted: "#7a93a4"
+    accent: "#7eb6d0"
+  typography:
+    mono: IBM Plex Mono
+  layout:
+    maxWidth: 1280
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#e8eef3"
+        surface: "#dce4eb"
+        ink: "#10202c"
+        muted: "#4e6574"
+        accent: "#1f5a78"
+
+chrome:
+  shade:
+    variant: flow
+
+sections:
+  profile:
+    variant: observatory

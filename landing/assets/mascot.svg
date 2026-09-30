@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="116 380 1048 812" overflow="visible" fill="none" aria-hidden="true" focusable="false">
+<title id="mascot-title">Cozy, una pequeña taza llena de ideas</title>
+<desc id="mascot-desc">Personaje vectorial articulado. Una taza de café negra, sonriente, con lápiz, libreta y dos formas de vapor.</desc>
+<defs>
+ <linearGradient id="ink-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c2d2b"/><stop offset=".55" stop-color="#252624"/><stop offset="1" stop-color="#20211f"/></linearGradient>
+ <linearGradient id="ink-limb" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#2c2d2b"/><stop offset="1" stop-color="#242523"/></linearGradient>
+ <linearGradient id="ink-gold" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="var(--wb-accent)"/><stop offset="1" stop-color="color-mix(in srgb, var(--wb-accent) 85%, #3b2820)"/></linearGradient>
+ <linearGradient id="ink-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="color-mix(in srgb, var(--wb-accent) 40%, #fff7e9)"/><stop offset="1" stop-color="color-mix(in srgb, var(--wb-accent) 65%, #fff7e9)"/></linearGradient>
+ <linearGradient id="ink-cream" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="#fff7e9"/><stop offset="1" stop-color="#ffedcf"/></linearGradient>
+ <radialGradient id="floor-grad"><stop stop-color="#6b5140" stop-opacity=".17"/><stop offset="1" stop-color="#6b5140" stop-opacity="0"/></radialGradient>
+ <filter id="sign-mono" color-interpolation-filters="sRGB"><feFlood flood-color="var(--mascot-sign-ink, #0a0812)"/><feComposite in2="SourceAlpha" operator="in"/></filter>
+ <clipPath id="coffee-clip"><ellipse cx="643" cy="485" rx="264" ry="57"/></clipPath>
+</defs>
+<g data-part="shadow"><ellipse id="floor-shadow" cx="640" cy="1181" rx="300" ry="34" fill="url(#floor-grad)"/></g>
+<g id="impact-fx" pointer-events="none"><ellipse id="impact-ring" cx="640" cy="1180" rx="220" ry="24" stroke="var(--wb-accent)" stroke-width="3" opacity="0"/></g>
+<g id="dust" pointer-events="none"><circle cx="470" cy="1158" r="30" fill="url(#ink-cream)" opacity="0"/><circle cx="530" cy="1170" r="22" fill="url(#ink-cream)" opacity="0"/><circle cx="585" cy="1164" r="16" fill="url(#ink-cream)" opacity="0"/><circle cx="700" cy="1164" r="16" fill="url(#ink-cream)" opacity="0"/><circle cx="755" cy="1170" r="22" fill="url(#ink-cream)" opacity="0"/><circle cx="815" cy="1158" r="30" fill="url(#ink-cream)" opacity="0"/></g>
+<g id="framing"><g id="world">
+ <g id="limb-leg-left"><g id="leg-left-shell" data-part="leg-left"><path id="leg-left" d="M553 927Q540 1000 508 1092" stroke="url(#ink-limb)" stroke-width="67" stroke-linecap="round"/></g><g data-part="foot-left"><g id="foot-left" transform="translate(494 1114)"><path d="M-93 26C-98-11-61-53-15-53C36-59 73-29 73 9C73 42 51 50 8 52C-42 55-86 57-93 26Z" fill="url(#ink-limb)"/></g></g></g>
+ <g id="limb-leg-right"><g id="leg-right-shell" data-part="leg-right"><path id="leg-right" d="M719 930Q740 1000 768 1093" stroke="url(#ink-limb)" stroke-width="67" stroke-linecap="round"/></g><g data-part="foot-right"><g id="foot-right" transform="translate(784 1114)"><path d="M-73 10C-74-27-35-56 10-53C61-52 98-14 96 21C95 52 60 57 17 53C-39 50-74 41-73 10Z" fill="url(#ink-limb)"/></g></g></g>
+ <g id="upper"><g id="torso">
+  <g data-part="handle"><path d="M930 535C1027 492 1133 525 1124 650C1119 745 1044 817 944 828L930 761C1006 780 1062 665 1036 610C1018 574 971 580 929 606Z" fill="url(#ink-limb)"/></g>
+  <g data-part="body"><path d="M332 484C332 369 953 366 954 484C955 677 934 840 865 920C811 981 712 980 640 979C554 978 463 960 411 905C350 840 334 657 332 484Z" fill="url(#ink-body)"/></g>
+  <g data-part="rim"><ellipse cx="643" cy="485" rx="264" ry="57" fill="url(#ink-cream)"/></g>
+  <g data-part="coffee"><g clip-path="url(#coffee-clip)"><ellipse cx="644" cy="508" rx="245" ry="47" fill="url(#ink-gold)"/></g></g>
+  <g data-part="eye-left"><g id="eye-left"><circle cx="503" cy="678" r="29" fill="url(#ink-cream)"/></g></g>
+  <g data-part="eye-right"><g id="eye-right"><circle cx="768" cy="678" r="29" fill="url(#ink-cream)"/></g></g>
+  <g data-part="mouth"><g id="mouth"><path id="smile" d="M581 727C576 715 588 706 597 717C621 747 659 746 683 717C691 706 704 716 699 727C679 767 610 767 581 727Z" fill="url(#ink-cream)"/><path id="laugh" d="M590 718Q640 731 691 718Q691 791 642 793Q591 789 590 718Z" fill="url(#ink-cream)" opacity="0"/><path id="brow" d="M478 621Q499 613 519 624" stroke="url(#ink-cream)" stroke-width="8" stroke-linecap="round" opacity="0"/><path id="brow-right" d="M793 621Q772 613 752 624" stroke="url(#ink-cream)" stroke-width="8" stroke-linecap="round" opacity="0"/><ellipse id="mouth-o" cx="640" cy="738" rx="21" ry="25" fill="url(#ink-cream)" opacity="0"/></g></g>
+  <g data-part="eyes-happy"><path id="eye-left-happy" d="M474 690Q503 648 532 690" stroke="url(#ink-cream)" stroke-width="15" stroke-linecap="round" opacity="0"/><path id="eye-right-happy" d="M739 690Q768 648 797 690" stroke="url(#ink-cream)" stroke-width="15" stroke-linecap="round" opacity="0"/></g>
+  <g data-part="blush" opacity="0"><ellipse cx="450" cy="744" rx="36" ry="17" fill="var(--wb-accent)" opacity=".55"/><ellipse cx="822" cy="744" rx="36" ry="17" fill="var(--wb-accent)" opacity=".55"/></g>
+  <g data-part="steam-a"><g id="steam-a"><path d="M634.5 61.0Q627.0 58.0 623.0 58.5Q619.0 59.0 618.0 60.0Q617.0 61.0 617.0 63.5Q617.0 66.0 622.0 73.0Q627.0 80.0 629.5 86.0Q632.0 92.0 633.5 98.0Q635.0 104.0 635.0 115.5Q635.0 127.0 632.5 135.5Q630.0 144.0 627.5 149.5Q625.0 155.0 615.5 167.5Q606.0 180.0 594.0 191.0Q582.0 202.0 565.0 219.5Q548.0 237.0 540.5 249.5Q533.0 262.0 530.0 273.0Q527.0 284.0 527.0 294.5Q527.0 305.0 528.0 310.0Q529.0 315.0 531.0 320.5Q533.0 326.0 538.0 334.5Q543.0 343.0 547.0 348.0Q551.0 353.0 558.0 359.5Q565.0 366.0 573.5 371.5Q582.0 377.0 590.0 380.5Q598.0 384.0 602.0 384.0Q606.0 384.0 607.0 383.0Q608.0 382.0 608.0 379.5Q608.0 377.0 604.0 370.5Q600.0 364.0 597.5 355.0Q595.0 346.0 595.0 335.5Q595.0 325.0 597.5 316.0Q600.0 307.0 604.0 299.5Q608.0 292.0 614.0 284.0Q620.0 276.0 642.0 254.5Q664.0 233.0 669.0 227.0Q674.0 221.0 678.0 214.5Q682.0 208.0 686.5 198.0Q691.0 188.0 693.5 175.0Q696.0 162.0 696.0 154.5Q696.0 147.0 694.5 138.0Q693.0 129.0 690.5 121.5Q688.0 114.0 683.5 106.0Q679.0 98.0 674.5 92.0Q670.0 86.0 663.5 80.0Q657.0 74.0 649.5 69.0Q642.0 64.0 634.5 61.0Z" fill="url(#ink-gold)"/></g></g>
+  <g data-part="steam-b"><g id="steam-b"><path d="M757.0 176.0Q748.0 170.0 744.5 170.0Q741.0 170.0 740.0 171.5Q739.0 173.0 739.0 175.0Q739.0 177.0 741.5 184.0Q744.0 191.0 744.0 199.0Q744.0 207.0 740.5 216.0Q737.0 225.0 729.5 234.5Q722.0 244.0 706.0 258.0Q690.0 272.0 683.0 279.5Q676.0 287.0 672.5 292.0Q669.0 297.0 666.5 302.0Q664.0 307.0 662.5 312.0Q661.0 317.0 661.0 326.5Q661.0 336.0 662.0 340.0Q663.0 344.0 666.0 350.5Q669.0 357.0 675.5 365.0Q682.0 373.0 687.0 377.0Q692.0 381.0 696.5 383.0Q701.0 385.0 703.0 385.0Q705.0 385.0 706.5 383.5Q708.0 382.0 708.0 380.5Q708.0 379.0 705.5 373.5Q703.0 368.0 703.0 361.5Q703.0 355.0 706.0 347.5Q709.0 340.0 717.5 330.5Q726.0 321.0 738.5 311.5Q751.0 302.0 762.0 291.5Q773.0 281.0 777.5 274.5Q782.0 268.0 785.5 258.5Q789.0 249.0 789.5 237.5Q790.0 226.0 786.5 215.0Q783.0 204.0 779.0 198.0Q775.0 192.0 770.5 187.0Q766.0 182.0 757.0 176.0Z" fill="url(#ink-gold)"/></g></g>
+  <g id="limb-right">
+  <g data-part="arm-right"><path id="arm-right" d="M915 796C1030 869 966 951 906 911" stroke="url(#ink-limb)" stroke-width="75" stroke-linecap="round"/></g>
+  <g id="book-carrier" transform="translate(868 848) rotate(18)">
+   <g data-part="notebook"><g id="notebook"><rect x="-86" y="-86" width="144" height="210" rx="19" fill="var(--wb-accent)"/><rect x="-74" y="-86" width="143" height="210" rx="19" fill="url(#ink-paper)"/><path d="M-57-85V123" stroke="#797064" stroke-width="7"/><path d="M-41-66H45" stroke="#fff0d8" stroke-width="3" stroke-opacity=".16" stroke-linecap="round"/><g id="ink-drawing" stroke="#7b654e" stroke-width="4.3" stroke-linecap="round" stroke-linejoin="round" opacity="0"><path d="M-30-27Q-12-56 8-30T47-28" pathLength="100"/><path d="M-28-6H43" pathLength="100"/><path d="M-28 12H22" pathLength="100"/></g></g></g>
+   <g data-part="hand-right"><path d="M39-8C81-9 100 26 80 58C61 88 19 102-13 87C-50 70-49 37-23 25C-36 12-28-6-11-8C7-11 25 3 39-8Z" fill="url(#ink-limb)"/></g>
+  </g>
+  </g>
+  <g id="limb-left">
+  <g data-part="arm-left"><path id="arm-left" d="M362 773C252 792 204 740 244 673" stroke="url(#ink-limb)" stroke-width="72" stroke-linecap="round"/></g>
+  <g id="pencil-carrier" transform="translate(244 673) rotate(-12)">
+   <g data-part="pencil"><g id="pencil"><path d="M-22-174L-4-227Q0-238 6-227L22-174Z" fill="#252624"/><path d="M-22-174Q0-182 22-174L24-137Q0-147-24-137Z" fill="url(#ink-cream)"/><path d="M-24-137Q0-147 24-137V81Q24 99 4 100H-4Q-24 99-24 81Z" fill="url(#ink-gold)"/><path d="M16-136V78Q17 89 8 92" stroke="#f8d0a0" stroke-width="2" stroke-opacity=".15" stroke-linecap="round"/></g></g>
+   <g id="sign" opacity="0"><rect x="-14" y="-150" width="28" height="162" rx="12" fill="#8a6a4f"/><rect x="-222" y="-578" width="444" height="444" rx="104" fill="#000" opacity=".24"/><rect id="sign-plate" x="-222" y="-596" width="444" height="444" rx="104" fill="var(--mascot-sign-plate, #f4f1fb)" stroke="var(--mascot-sign-rim, #2c2d2b)" stroke-width="18"/><image id="sign-logo" x="-146" y="-520" width="292" height="292" preserveAspectRatio="xMidYMid meet" href=""/></g>
+   <g data-part="hand-left"><ellipse cx="26" cy="-19" rx="22" ry="38" fill="url(#ink-limb)"/><ellipse cx="-20" cy="-9" rx="42" ry="49" transform="rotate(25 -20 -9)" fill="url(#ink-limb)"/></g>
+   <g data-part="sparks"><g id="pencil-sparks" stroke="url(#ink-gold)" stroke-width="16" stroke-linecap="round"><path id="ray-a" d="M-66-251L-96-274"/><path id="ray-b" d="M-33-284L-38-324"/><path id="ray-c" d="M-87-204L-125-202"/></g></g>
+  </g>
+  </g>
+ </g></g>
+</g></g>
+<g id="confetti" pointer-events="none"></g>
+<g id="guides" pointer-events="none" stroke="#b88d62" stroke-width="1.6" stroke-dasharray="4 7" fill="none" opacity="0"></g>
+<g id="selection" pointer-events="none" opacity="0"><rect id="selection-box" rx="8" fill="#cd945b" fill-opacity=".06" stroke="#b78756" stroke-width="2" stroke-dasharray="8 6"/></g>
+</svg>

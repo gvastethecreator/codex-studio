@@ -1,0 +1,217 @@
+schema: gvaste-pages/v1
+preset: app
+
+project:
+  name: Cozy Studio
+  tagline: your ideas, freshly brewed
+  description: A free image studio that runs on your computer and makes images with the subscription you already have.
+  url: https://cozy.gvaste.dev/
+  repo: https://github.com/gvastethecreator/cozy-studio
+  license: MIT
+  sponsor: https://github.com/sponsors/gvastethecreator
+  stack: Bun · React · local API
+  ogImage: assets/social.jpg
+
+brand:
+  initials: CS
+  mascot: assets/mascot.svg
+  accent: "#8b6cff"
+  # The Cozy Studio app's accent palettes, starting from the page's violet.
+  accentCycle: ["#8b6cff", "#fcb247", "#737373", "#f43f5e", "#f97316", "#f59e0b", "#22c55e", "#06b6d4", "#3b82f6"]
+  theme: dark
+
+sections: [hero, about, showcase, preview, screens, setup, skill, closing]
+
+hero:
+  title: Your ideas, freshly brewed.
+  accent: freshly brewed.
+  lede: Make images with the subscription you already pay for. ChatGPT, Grok or Antigravity. No API keys.
+  actions:
+    - { label: Get Cozy Studio, href: "#setup", primary: true }
+    - { label: GitHub, href: "https://github.com/gvastethecreator/cozy-studio" }
+  stage: deck
+  gallery:
+    - src: assets/deck/cat-reynold-brown.webp
+      alt: "A giant black cat attacks a city in a painted fifties sci-fi movie poster"
+      caption: b-movie poster
+      file: Pictures/Cozy Studio/2026-09-29_reynold-brown_giant-black-cat-taller-than-skyscrapers.png
+    - src: assets/deck/cat-tadanori-yokoo.webp
+      alt: "A giant black cat over a city in a psychedelic Japanese pop poster"
+      caption: pop theater poster
+      file: Pictures/Cozy Studio/2026-09-29_tadanori-yokoo_giant-black-cat-taller-than-skyscrapers.png
+    - src: assets/deck/cat-ironbow-thermal-imaging.webp
+      alt: "A giant black cat seen through a thermal camera, glowing over the city"
+      caption: thermal camera
+      file: Pictures/Cozy Studio/2026-09-29_ironbow-thermal-imaging_giant-black-cat-taller-than-skyscrapers.png
+    - src: assets/deck/cat-harry-clarke.webp
+      alt: "A giant black cat and a city as a jewel-toned stained glass window"
+      caption: stained glass
+      file: Pictures/Cozy Studio/2026-09-29_harry-clarke_giant-black-cat-taller-than-skyscrapers.png
+    - src: assets/deck/cat-stenberg-brothers.webp
+      alt: "A giant black cat in a Soviet constructivist film poster"
+      caption: constructivist poster
+      file: Pictures/Cozy Studio/2026-09-29_stenberg-brothers_giant-black-cat-taller-than-skyscrapers.png
+    - src: assets/deck/cat-visionary-apocalypse-woodcut.webp
+      alt: "A giant black cat over a city as an old apocalypse woodcut"
+      caption: woodcut
+      file: Pictures/Cozy Studio/2026-09-29_visionary-apocalypse-woodcut_giant-black-cat-taller-than-skyscrapers.png
+
+about:
+  variant: logo-cards
+  navLabel: Providers
+  kicker: Providers
+  title: Your subscription does the work.
+  lede: Sign in once and Cozy Studio uses the plan you already pay for. Google works too, with an API key.
+  capabilities:
+    - { title: ChatGPT, body: "Sign in from Settings. Uses your plan’s allowance.", logo: assets/providers/chatgpt.svg, mono: true, fact: recommended, tint: "#ff9466", fx: rosette }
+    - { title: Codex, body: "Through the Codex app. Uses your Codex allowance.", logo: assets/providers/codex.svg, mono: true, tint: "#6975fd", fx: prompt }
+    - { title: Grok, body: Sign in with xAI or your Grok Build login., logo: assets/providers/grok.svg, mono: true, tint: "#c3cad6", fx: horizon }
+    - { title: Antigravity, body: "Nano Banana, through your Antigravity login.", logo: assets/providers/antigravity.svg, tint: "#4c8dff", fx: lift }
+
+showcase:
+  variant: marquee
+  navLabel: Styles
+  kicker: Styles
+  rows: 3
+  title: A hundred styles, ready to go.
+  lede: Essentials comes installed. Pick one, or mix up to five.
+  images:
+    - { src: assets/styles/sp00-001.webp, alt: "Studio Headshot style sample", caption: "Studio Headshot" }
+    - { src: assets/styles/sp00-003.webp, alt: "Kodak Portra 400 style sample", caption: "Kodak Portra 400" }
+    - { src: assets/styles/sp00-006.webp, alt: "Film Noir style sample", caption: "Film Noir" }
+    - { src: assets/styles/sp00-008.webp, alt: "80s Sci-Fi style sample", caption: "80s Sci-Fi" }
+    - { src: assets/styles/sp00-011.webp, alt: "Feature Animation Path Tracer style sample", caption: "Feature Animation Path Tracer" }
+    - { src: assets/styles/sp00-013.webp, alt: "Isometric 3D style sample", caption: "Isometric 3D" }
+    - { src: assets/styles/sp00-016.webp, alt: "Watercolor Storybook style sample", caption: "Watercolor Storybook" }
+    - { src: assets/styles/sp00-018.webp, alt: "Art Deco Poster style sample", caption: "Art Deco Poster" }
+    - { src: assets/styles/sp00-021.webp, alt: "Oil Painting (Classic) style sample", caption: "Oil Painting (Classic)" }
+    - { src: assets/styles/sp00-023.webp, alt: "Impressionist Oil style sample", caption: "Impressionist Oil" }
+    - { src: assets/styles/sp00-026.webp, alt: "Digital Painting style sample", caption: "Digital Painting" }
+    - { src: assets/styles/sp00-028.webp, alt: "Vector Art (Flat) style sample", caption: "Vector Art (Flat)" }
+    - { src: assets/styles/sp00-031.webp, alt: "Vincent van Gogh style sample", caption: "Vincent van Gogh" }
+    - { src: assets/styles/sp00-033.webp, alt: "Joseph Cornell style sample", caption: "Joseph Cornell" }
+    - { src: assets/styles/sp00-036.webp, alt: "Stained Glass style sample", caption: "Stained Glass" }
+    - { src: assets/styles/sp00-038.webp, alt: "Gothic Jewel style sample", caption: "Gothic Jewel" }
+    - { src: assets/styles/sp00-041.webp, alt: "Barbarian Oil Cover Painting style sample", caption: "Barbarian Oil Cover Painting" }
+    - { src: assets/styles/sp00-043.webp, alt: "Illuminated Monster Codex style sample", caption: "Illuminated Monster Codex" }
+    - { src: assets/styles/sp00-046.webp, alt: "Rusalka Moonlit Lake Illustration style sample", caption: "Rusalka Moonlit Lake Illustration" }
+    - { src: assets/styles/sp00-048.webp, alt: "Vagabond style sample", caption: "Vagabond" }
+    - { src: assets/styles/sp00-051.webp, alt: "Makoto Shinkai 5cm style sample", caption: "Makoto Shinkai 5cm" }
+    - { src: assets/styles/sp00-053.webp, alt: "Satoshi Kon style sample", caption: "Satoshi Kon" }
+    - { src: assets/styles/sp00-056.webp, alt: "Akira style sample", caption: "Akira" }
+    - { src: assets/styles/sp00-058.webp, alt: "Saul Bass style sample", caption: "Saul Bass" }
+    - { src: assets/styles/sp00-061.webp, alt: "Hugo Pratt style sample", caption: "Hugo Pratt" }
+    - { src: assets/styles/sp00-063.webp, alt: "Ori and the Blind Forest 2015 style sample", caption: "Ori and the Blind Forest 2015" }
+    - { src: assets/styles/sp00-066.webp, alt: "Steampunk style sample", caption: "Steampunk" }
+    - { src: assets/styles/sp00-068.webp, alt: "Satpunk style sample", caption: "Satpunk" }
+    - { src: assets/styles/sp00-071.webp, alt: "Art Deco style sample", caption: "Art Deco" }
+    - { src: assets/styles/sp00-073.webp, alt: "Static-Grass Scenic Layout style sample", caption: "Static-Grass Scenic Layout" }
+    - { src: assets/styles/sp00-076.webp, alt: "Ethereal Fantasy style sample", caption: "Ethereal Fantasy" }
+    - { src: assets/styles/sp00-078.webp, alt: "Balloon Art style sample", caption: "Balloon Art" }
+    - { src: assets/styles/sp00-081.webp, alt: "Dieter Rams style sample", caption: "Dieter Rams" }
+    - { src: assets/styles/sp00-083.webp, alt: "Leonetto Cappiello style sample", caption: "Leonetto Cappiello" }
+    - { src: assets/styles/sp00-086.webp, alt: "Blind Box Art Toy style sample", caption: "Blind Box Art Toy" }
+    - { src: assets/styles/sp00-088.webp, alt: "Fire & Magma style sample", caption: "Fire & Magma" }
+    - { src: assets/styles/sp00-091.webp, alt: "Flung-Ink Splash style sample", caption: "Flung-Ink Splash" }
+    - { src: assets/styles/sp00-093.webp, alt: "Stencil Duotone style sample", caption: "Stencil Duotone" }
+    - { src: assets/styles/sp00-096.webp, alt: "Opaque Planes style sample", caption: "Opaque Planes" }
+    - { src: assets/styles/sp00-098.webp, alt: "Fire-Lookout Tower Vigil style sample", caption: "Fire-Lookout Tower Vigil" }
+
+preview:
+  variant: walkthrough
+  navLabel: How it works
+  kicker: How it works
+  title: Three steps. That’s it.
+  image: { src: assets/create.webp, light: assets/create-light.webp, alt: Cozy Studio with a paper collage style, a prompt and the finished picture }
+  steps:
+    - { title: Pick a style, body: "Film, paint, anime, print, pixel art.", x: 13, y: 15, radius: 11 }
+    - { title: Say what you want, body: Plain words. Add a picture if you like., x: 13, y: 43, radius: 11 }
+    - { title: Keep it, body: It lands in Pictures/Cozy Studio as a PNG., x: 62, y: 46, radius: 26 }
+
+skill:
+  variant: handoff
+  navLabel: Agents
+  kicker: Agent-ready
+  title: Or let your agent brew it.
+  accent: brew it.
+  lede: Ask your coding agent for Cozy Studio. It follows the repo’s own guide, starts the app and makes pictures with it. You only sign in.
+  prompt: Set up Cozy Studio from github.com/gvastethecreator/cozy-studio, then make me a giant black cat over a city as a stained glass window.
+  agents: [Codex, Claude Code, Cursor, any coding agent]
+  steps:
+    - { kind: read, text: Reads AGENTS.md and the setup skill }
+    - { kind: run, text: bun install }
+    - { kind: run, text: bun run studio:init }
+    - { kind: run, text: bun run dev }
+    - { kind: you, text: Sign in to ChatGPT in Settings }
+    - { kind: make, text: Makes the picture with ChatGPT }
+  result:
+    src: assets/deck/cat-harry-clarke.webp
+    alt: A giant black cat and a city as a jewel-toned stained glass window
+    caption: Pictures/Cozy Studio/2026-09-29_harry-clarke_giant-black-cat-taller-than-skyscrapers.png
+
+screens:
+  navLabel: Screens
+  kicker: Inside the app
+  title: A look inside.
+  lede: Create, browse the styles, keep your library, choose where the files go.
+  head: true
+  images:
+    - { src: assets/create.webp, light: assets/create-light.webp, alt: "Create: a paper collage style, a prompt and the finished picture", caption: Create }
+    - { src: assets/screens/styles.webp, light: assets/screens/styles-light.webp, alt: "Style explorer: collections of styles by what they are for", caption: Style explorer }
+    - { src: assets/screens/library.webp, light: assets/screens/library-light.webp, alt: "Library: every picture in the workspace", caption: Library }
+    - { src: assets/screens/output.webp, light: assets/screens/output-light.webp, alt: "Settings: where pictures are saved and how they are named", caption: Output settings }
+
+setup:
+  variant: script
+  navLabel: Install
+  kicker: Install
+  title: Make a cup. Install it.
+  lede: Free and open source. You need Bun and a browser.
+  items:
+    - command: "git clone https://github.com/gvastethecreator/cozy-studio"
+    - command: cd cozy-studio
+    - command: bun install
+    - command: "bun run studio:onboard --setup"
+    - command: "bun run studio:init"
+    - command: bun run dev
+  verification: open localhost:17222 and sign in
+
+closing:
+  text: Go create something.
+  accent: something.
+  lede: Free and open source. It runs on your computer.
+  action: { label: Get Cozy Studio, href: "#setup" }
+  secondary: { label: Star on GitHub, href: "https://github.com/gvastethecreator/cozy-studio" }
+  images:
+    - assets/styles/sp00-001.webp
+    - assets/styles/sp00-003.webp
+    - assets/styles/sp00-006.webp
+    - assets/styles/sp00-008.webp
+    - assets/styles/sp00-011.webp
+    - assets/styles/sp00-013.webp
+    - assets/styles/sp00-016.webp
+    - assets/styles/sp00-018.webp
+    - assets/styles/sp00-021.webp
+    - assets/styles/sp00-023.webp
+    - assets/styles/sp00-026.webp
+    - assets/styles/sp00-028.webp
+    - assets/styles/sp00-031.webp
+    - assets/styles/sp00-033.webp
+    - assets/styles/sp00-036.webp
+    - assets/styles/sp00-038.webp
+    - assets/styles/sp00-041.webp
+    - assets/styles/sp00-043.webp
+    - assets/styles/sp00-046.webp
+    - assets/styles/sp00-048.webp
+    - assets/styles/sp00-051.webp
+    - assets/styles/sp00-053.webp
+    - assets/styles/sp00-056.webp
+    - assets/styles/sp00-058.webp
+    - assets/styles/sp00-061.webp
+    - assets/styles/sp00-063.webp
+    - assets/styles/sp00-066.webp
+    - assets/styles/sp00-068.webp
+    - assets/styles/sp00-071.webp
+    - assets/styles/sp00-073.webp
+    - assets/styles/sp00-076.webp
+    - assets/styles/sp00-078.webp

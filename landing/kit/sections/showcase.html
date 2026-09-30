@@ -1,0 +1,25 @@
+<section class="showcase showcase--{{showcase.variant}}" id="showcase" aria-labelledby="showcase-title">
+  <header class="section-head showcase__head" data-mascot-spot="bottom-end" data-mascot-size="180" data-mascot-mood="focused" data-mascot-pose="draw" data-mascot-look="[data-marquee]">
+    {{#if showcase.kicker}}
+    <p class="kicker">{{showcase.kicker}}</p>
+    {{/if}}
+    <h2 id="showcase-title">{{{showcase.titleHtml}}}</h2>
+    {{#if showcase.lede}}
+    <p class="lede">{{showcase.lede}}</p>
+    {{/if}}
+  </header>
+  <div class="showcase__marquee" data-marquee data-rows="{{showcase.rowCount}}">
+    {{#each showcase.rows}}
+    <ul class="marquee__row" data-direction="{{direction}}" data-duration="{{duration}}">
+      {{#each items}}
+      <li class="marquee__card">
+        <img src="{{src}}" alt="{{alt}}" decoding="async" loading="lazy" draggable="false">
+        {{#if caption}}
+        <span>{{caption}}</span>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+    {{/each}}
+  </div>
+</section>

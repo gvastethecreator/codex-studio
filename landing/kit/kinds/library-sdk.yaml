@@ -1,0 +1,14 @@
+id: library-sdk
+label: Library
+mapsFromPresets: [library]
+defaultComposition: snippet
+compositions:
+  snippet:
+    v1SectionIds: [hero, docs, links, closing]
+    semanticPlan:
+      - { id: hero, variant: developer }
+      - { id: code, variant: snippet }
+      - { id: about, variant: compact-cards }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

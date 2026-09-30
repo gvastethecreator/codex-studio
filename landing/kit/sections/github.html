@@ -1,0 +1,119 @@
+<section class="github" id="github" aria-label="GitHub" aria-busy="true" data-github-owner="{{github.owner}}" data-github-name="{{github.name}}" data-github-releases="{{github.releaseLimit}}" data-github-commits="{{github.commitLimit}}" data-github-stack="{{github.stackAttr}}" data-github-topics="{{github.showTopics}}">
+  <p class="github-status" data-github="status" hidden></p>
+  <div class="github-desk">
+    <div class="github-main">
+      <div class="github-id">
+        <div class="github-id__headline">
+          <a class="github-id__repo" href="{{github.href}}">
+            <span class="github-id__path">
+              <svg class="github-id__mark" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+              </svg>
+              <span class="github-id__owner">{{github.owner}}</span>
+              <span class="github-id__slash" aria-hidden="true">/</span>
+              <strong>{{github.name}}</strong>
+            </span>
+          </a>
+          {{#if github.showStars}}
+          <a class="github-pill" data-stat="stars" href="{{github.starsHref}}" aria-label="Stars" hidden>
+            <span class="github-pill__mark" aria-hidden="true">{{{github.starIconHtml}}}</span>
+            <span class="github-pill__label"><strong data-github-stat="stars">—</strong></span>
+          </a>
+          {{/if}}
+          <span class="github-id__go" aria-hidden="true">→</span>
+        </div>
+        <p class="github-id__desc" data-github="description" hidden></p>
+      </div>
+      {{#if github.showReleases}}
+      <div class="github-releases">
+        <h3><a href="{{github.releasesHref}}">Releases</a></h3>
+        <div data-github="releases"></div>
+      </div>
+      {{/if}}
+      <div class="github-sponsors">
+        <h3><a href="{{github.sponsorsHref}}">Sponsors</a></h3>
+        <div class="github-people__band" data-github="sponsors-featured" hidden>
+          <p class="github-people__kicker">Featured sponsors</p>
+          <ul class="github-people github-people--featured"></ul>
+        </div>
+        <div class="github-people__band" data-github="sponsors-grid" hidden>
+          <p class="github-people__kicker">Sponsors</p>
+          <ul class="github-people github-people--grid"></ul>
+        </div>
+        <p class="github-people__empty" data-github="sponsors-empty" hidden>
+          No public sponsors yet.
+          <a href="{{github.sponsorsHref}}">Become a sponsor</a>
+        </p>
+      </div>
+      <div class="github-foot">
+        <ul class="github-stack" data-github="stack" hidden></ul>
+        <ul class="github-tags" data-github="tags" hidden></ul>
+      </div>
+    </div>
+    {{#if github.showAside}}
+    <aside class="github-aside" aria-label="Repository activity">
+      {{#if github.showBadges}}
+      <div class="github-aside__badges">
+        {{#if github.showActivity}}
+        <ul class="github-activity__meta">
+          <li class="github-pill" data-github-pill="total" hidden>
+            <span class="github-pill__mark" aria-hidden="true">{{{github.commitIconHtml}}}</span>
+            <span class="github-pill__label"><strong data-github="activity-total">—</strong> commits</span>
+          </li>
+          <li class="github-pill" data-github-pill="span" hidden>
+            <span class="github-pill__mark" aria-hidden="true">{{{github.spanIconHtml}}}</span>
+            <span class="github-pill__label"><strong data-github="activity-span">—</strong> <span data-github="activity-unit">days</span></span>
+          </li>
+        </ul>
+        {{/if}}
+        {{#if github.showMeters}}
+        <ul class="github-meters">
+          {{#if github.showIssues}}
+          <li data-stat="issues">
+            <a class="github-pill" href="{{github.issuesHref}}">
+              <span class="github-pill__mark" aria-hidden="true">{{{github.issueItem.iconHtml}}}</span>
+              <span class="github-pill__label"><strong data-github-stat="issues">—</strong> issues</span>
+            </a>
+          </li>
+          {{/if}}
+          {{#if github.showLastCommit}}
+          <li data-stat="freshness" hidden>
+            <a class="github-pill" href="{{github.commitsHref}}">
+              <span class="github-pill__mark" aria-hidden="true">{{{github.freshnessIconHtml}}}</span>
+              <span class="github-pill__label"><strong data-github="freshness">—</strong> last commit</span>
+            </a>
+          </li>
+          {{/if}}
+        </ul>
+        {{/if}}
+      </div>
+      {{/if}}
+      {{#if github.showActivity}}
+      <div class="github-activity">
+        <div class="github-activity__plot" data-github="spark" hidden></div>
+        <div class="github-activity__tip" data-github="spark-tip" hidden></div>
+      </div>
+      {{/if}}
+      {{#if github.showCommits}}
+      <div class="github-aside__commits">
+        <h3><a href="{{github.commitsHref}}">Recent commits</a></h3>
+        <ol class="github-tree" data-github="commits"></ol>
+      </div>
+      {{/if}}
+      <div class="github-contributors" hidden>
+        <h3><a href="{{github.contributorsHref}}">Contributors</a></h3>
+        <ul class="github-faces" data-github="contributors"></ul>
+      </div>
+    </aside>
+    {{/if}}
+  </div>
+  {{#if github.changelog}}
+  <p class="section-source">Changelog <a href="{{github.changelog.href}}">{{github.changelog.label}}</a></p>
+  {{/if}}
+  {{#if github.source}}
+  <p class="section-source">From <a href="{{github.source.href}}">{{github.source.label}}</a></p>
+  {{/if}}
+  {{#if github.hasBootstrap}}
+  <script type="application/json" data-github-bootstrap>{{{github.bootstrapJson}}}</script>
+  {{/if}}
+</section>

@@ -1,0 +1,105 @@
+<section class="skill{{#if skill.isHandoff}} skill--handoff{{/if}}" id="skill" aria-labelledby="skill-title">
+  {{#if skill.isHandoff}}
+  <div class="handoff">
+    <header class="section-head handoff__head" data-mascot-spot="under-start" data-mascot-size="150" data-mascot-mood="focused" data-mascot-pose="point" data-mascot-look=".handoff__window">
+      {{#if skill.kicker}}
+      <p class="kicker">{{skill.kicker}}</p>
+      {{/if}}
+      <h2 id="skill-title">{{{skill.titleHtml}}}</h2>
+      {{#if skill.lede}}
+      <p class="lede">{{skill.lede}}</p>
+      {{/if}}
+      <div class="handoff__prompt">
+        <p class="handoff__label">{{skill.promptLabel}}</p>
+        <div class="handoff__prompt-box">
+          <p class="handoff__prompt-text">{{skill.prompt}}</p>
+          <button class="button handoff__copy" type="button" data-copy="{{skill.prompt}}">
+            <span data-copy-label>Copy</span>
+          </button>
+        </div>
+      </div>
+      {{#if skill.hasAgents}}
+      <p class="handoff__agents"><span class="handoff__agents-label">Works with</span>{{#each skill.agents}}<span class="handoff__agent">{{this}}</span>{{/each}}</p>
+      {{/if}}
+    </header>
+    <div class="handoff__window" data-handoff>
+      <div class="handoff__bar" aria-hidden="true"><span class="handoff__dots"></span><span>agent</span></div>
+      <ol class="handoff__log" aria-label="What the agent does">
+        <li class="handoff__ask">
+          <span class="handoff__who">you</span>
+          <p data-handoff-type>{{skill.prompt}}</p>
+        </li>
+        {{#each skill.steps}}
+        <li class="handoff__step handoff__step--{{kind}}" data-handoff-step>
+          <span class="handoff__icon" aria-hidden="true"></span>
+          {{#if isRun}}<code class="handoff__text">{{text}}</code>{{else}}<span class="handoff__text">{{text}}</span>{{/if}}
+          {{#if isYou}}<span class="handoff__you">you</span>{{/if}}
+        </li>
+        {{/each}}
+        {{#if skill.hasResult}}
+        <li class="handoff__result" data-handoff-step>
+          <button class="handoff__zoom" type="button" data-zoom aria-label="Open the picture">
+            <img src="{{skill.result.src}}" alt="{{skill.result.alt}}" decoding="async" loading="lazy">
+          </button>
+          {{#if skill.resultCaption}}<span class="handoff__file"><span class="handoff__saved">Saved</span>{{skill.resultCaption}}</span>{{/if}}
+        </li>
+        {{/if}}
+      </ol>
+    </div>
+  </div>
+  {{else}}
+  <header class="section-head">
+    {{#if skill.kicker}}
+    <p class="kicker">{{skill.kicker}}</p>
+    {{/if}}
+    <h2 id="skill-title">{{{skill.titleHtml}}}</h2>
+    {{#if skill.lede}}
+    <p class="lede">{{skill.lede}}</p>
+    {{/if}}
+  </header>
+  <div class="skill-layout">
+    <div class="skill-card surface">
+      {{#if skill.trigger}}
+      <p class="skill-trigger">
+        <span class="skill-trigger__label">Trigger</span>
+        <span class="skill-trigger__chip">{{skill.trigger}}</span>
+      </p>
+      {{/if}}
+      <div class="command-slab command-slab--tight">
+        <code>{{{skill.commandHtml}}}</code>
+        <button class="button" type="button" data-copy="{{skill.command}}">
+          <span data-copy-label>Copy</span>
+        </button>
+      </div>
+      {{#if skill.hostTabs}}
+      <ul class="skill-hosts" aria-label="Agent hosts">
+        {{#each skill.hostTabs}}
+        <li>
+          <strong>{{label}}</strong>
+          <code>{{path}}</code>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </div>
+    {{#if skill.hasUses}}
+    <ul class="skill-uses" aria-label="When to use it">
+      {{#each skill.uses}}
+      <li>
+        {{#if title}}
+        <strong>{{title}}</strong>
+        {{/if}}
+        <p>{{body}}</p>
+      </li>
+      {{/each}}
+    </ul>
+    {{/if}}
+  </div>
+  {{#if skill.hint}}
+  <p class="install-hint">{{skill.hint}}</p>
+  {{/if}}
+  {{#if skill.source}}
+  <p class="section-source">From <a href="{{skill.source.href}}">{{skill.source.label}}</a></p>
+  {{/if}}
+  {{/if}}
+</section>

@@ -1,0 +1,753 @@
+/* About: two to four features. The active one opens a figure below. */
+
+.about {
+  --about-lit: var(--ink);
+  --about-line: rgb(201 201 201 / 0.16);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-height: 0;
+  padding: 28px 0 24px;
+}
+
+:root[data-theme="light"] .about {
+  --about-lit: var(--ink);
+  --about-line: rgb(42 42 42 / 0.12);
+}
+
+.about-head h2 {
+  text-wrap: balance;
+}
+
+.about-head .lede {
+  --type-measure-max: 36rem;
+  max-width: var(--type-measure, var(--type-measure-max));
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.about-features__index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.about-features__index[data-count="3"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-features__index > li {
+  min-width: 0;
+  display: flex;
+}
+
+.about-features__tab {
+  appearance: none;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 4px 12px;
+  width: 100%;
+  margin: 0;
+  padding: 14px 14px 16px;
+  border: 1px solid var(--about-line);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.about-features__tab.is-on {
+  border-color: var(--ink);
+  color: var(--about-lit);
+  background: var(--surface);
+}
+
+.about-features__icon {
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px;
+  color: var(--muted);
+}
+
+.about-features__tab.is-on .about-features__icon {
+  color: var(--ink);
+}
+
+.about-features__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.about-features__tab strong {
+  font: 500 clamp(1.05rem, 2vw, 1.32rem) / 1.25 var(--display);
+  letter-spacing: -0.03em;
+  color: inherit;
+}
+
+.about-features__tab.is-on strong {
+  font-style: italic;
+}
+
+.about-features__tab p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.about-features__stage {
+  min-width: 0;
+  max-height: min(28rem, 46vh);
+  overflow: hidden;
+  border: 1px solid var(--about-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.about-features__panel {
+  min-width: 0;
+}
+
+.about-features__panel[data-kind="html"] {
+  padding: 18px 20px 20px;
+}
+
+.about-features__panel[data-kind="image"] {
+  padding: 0;
+  background: var(--paper);
+}
+
+.about-features__media {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(28rem, 46vh);
+  object-fit: contain;
+  outline: 1px solid oklch(1 0 0 / 0.1);
+}
+
+:root[data-theme="light"] .about-features__media {
+  outline-color: oklch(0 0 0 / 0.1);
+}
+
+.about-features__html {
+  min-width: 0;
+}
+
+.about-features__html > :first-child {
+  margin-top: 0;
+}
+
+.about-features__html > :last-child {
+  margin-bottom: 0;
+}
+
+.about-features__html img {
+  outline: 1px solid oklch(1 0 0 / 0.1);
+}
+
+:root[data-theme="light"] .about-features__html img {
+  outline-color: oklch(0 0 0 / 0.1);
+}
+
+.about-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.about-figure__kicker {
+  margin: 0;
+  color: var(--muted);
+  font: 600 0.72rem / 1.3 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-figure__code {
+  margin: 0;
+  padding: 14px 16px;
+  overflow: auto;
+  border: 1px solid var(--about-line);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 0.82rem / 1.45 var(--mono);
+  white-space: pre;
+}
+
+.about-figure__path,
+.about-figure__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.about-figure__path li,
+.about-figure__list li {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 8.5rem) minmax(0, 1fr);
+  gap: 12px 16px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--about-line);
+}
+
+.about-figure__path li:first-child,
+.about-figure__list li:first-child {
+  padding-top: 0;
+}
+
+.about-figure__path li:last-child,
+.about-figure__list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.about-figure__path strong,
+.about-figure__list strong {
+  font: 600 0.82rem / 1.35 var(--mono);
+  letter-spacing: -0.02em;
+}
+
+.about-figure__path span,
+.about-figure__list span,
+.about-figure__note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+@media (max-width: 720px) {
+  .about-features__index[data-count="3"],
+  .about-features__index[data-count="4"] {
+    grid-template-columns: 1fr;
+  }
+
+  .about-figure__path li,
+  .about-figure__list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-features__index {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-features__tab {
+    transition:
+      border-color var(--duration) var(--ease),
+      color var(--duration) var(--ease),
+      background-color var(--duration) var(--ease),
+      transform var(--duration) var(--ease);
+  }
+
+  .about-features__icon {
+    transition: color var(--duration) var(--ease);
+  }
+
+  .about-features__stage {
+    transition: opacity var(--duration) var(--ease);
+  }
+
+  .about-features__stage.is-swap {
+    opacity: 0;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-features__tab:hover {
+    color: var(--ink);
+    border-color: rgb(201 201 201 / 0.42);
+  }
+
+  .about-features__tab:hover .about-features__icon {
+    color: var(--ink);
+  }
+
+  :root[data-theme="light"] .about-features__tab:hover {
+    border-color: rgb(42 42 42 / 0.28);
+  }
+
+  .about-asides__chip:hover {
+    border-color: rgb(201 201 201 / 0.42);
+  }
+}
+
+.about-features__tab:active,
+.about-path__step:active,
+.about-asides__chip:active {
+  transform: scale(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-features__tab:active,
+  .about-path__step:active,
+  .about-asides__chip:active {
+    transform: none;
+  }
+}
+
+.about-path__track {
+  position: relative;
+}
+
+.about-path__index {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0;
+  row-gap: 10px;
+}
+
+.about-path__index li {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.about-path__index li:not(:last-child)::after {
+  content: "·";
+  color: var(--muted);
+  margin: 0 0.7em;
+  pointer-events: none;
+}
+
+.about-path__step {
+  appearance: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4em;
+  margin: 0;
+  padding: 4px 0 6px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: 500 clamp(1.05rem, 2.1vw, 1.35rem) / 1.25 var(--display);
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  text-align: left;
+}
+
+.about-path__step.is-on {
+  color: var(--about-lit);
+  font-style: italic;
+}
+
+.about-path__n {
+  color: var(--ink);
+  font: 600 0.68rem / 1 var(--mono);
+  letter-spacing: 0.08em;
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.about-path__step.is-on .about-path__n {
+  opacity: 1;
+}
+
+.about-path__ink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 2px;
+  width: 24px;
+  background: var(--ink);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-path__said {
+  margin-top: 6px;
+  padding: 2px 0 0 14px;
+  border-left: 2px solid var(--ink);
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  min-height: 2.4em;
+  max-width: 38rem;
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-path__said,
+  .about-asides__said {
+    transition: opacity var(--duration) var(--ease);
+  }
+
+  .about-path__said.is-swap,
+  .about-asides__said.is-swap {
+    opacity: 0;
+  }
+
+  .about-path__step {
+    transition: color var(--duration) var(--ease);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-path__step:hover {
+    color: var(--ink);
+  }
+}
+
+.about-asides {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-asides__index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-asides__chip {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 7px 12px 7px 10px;
+  border: 1px solid rgb(201 201 201 / 0.18);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: italic 0.88rem / 1.3 var(--text);
+  cursor: pointer;
+}
+
+.about-asides__mark {
+  display: inline-grid;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  color: var(--muted);
+}
+
+.about-asides__mark svg {
+  grid-area: 1 / 1;
+  display: block;
+}
+
+.about-asides__minus {
+  opacity: 0;
+  transform: scale(0.25);
+}
+
+.about-asides__chip.is-on {
+  border-color: var(--ink);
+}
+
+.about-asides__chip.is-on .about-asides__mark {
+  color: var(--ink);
+}
+
+.about-asides__chip.is-on .about-asides__plus {
+  opacity: 0;
+  transform: scale(0.25);
+}
+
+.about-asides__chip.is-on .about-asides__minus {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.about-asides__said {
+  margin: 0;
+  padding: 0 0 0 14px;
+  border-left: 2px solid var(--ink);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  max-width: 38rem;
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-asides__mark svg {
+    transition:
+      opacity 160ms var(--ease),
+      transform 160ms var(--ease);
+  }
+
+  .about-asides__chip {
+    transition:
+      border-color var(--duration) var(--ease),
+      color var(--duration) var(--ease);
+  }
+}
+
+/* Capability logos (about.logo-cards, or any card with a logo). */
+.about-capability__logo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 22px;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+}
+
+.about-capability__logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.about-capability__mono {
+  width: 36px;
+  height: 36px;
+  background: currentColor;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.about-capability__mark {
+  display: none;
+}
+
+/* about.logo-cards: one card per service, each with its mark, a soft light that follows
+   the pointer, and a large faint copy of the logo in the corner. */
+.about-capabilities--logo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* The heading stays at the top of the panel; the cards take the middle of the space below. */
+.about--logo-cards {
+  padding-top: clamp(40px, 8vh, 80px);
+  padding-bottom: clamp(24px, 9vh, 120px);
+}
+
+.about--logo-cards .about-capabilities--logo-cards .about-capability {
+  min-height: clamp(280px, 38vh, 380px);
+}
+
+.about--logo-cards .about-capabilities--logo-cards {
+  margin-block: auto;
+}
+
+.about-capabilities--logo-cards .about-capability {
+  --mx: 50%;
+  --my: 0%;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ink) 11%, transparent);
+  border-radius: calc(var(--radius) + 2px);
+  background:
+    radial-gradient(130% 80% at 0% 0%, color-mix(in srgb, var(--ink) 6%, transparent), transparent 62%),
+    var(--surface);
+  transform-style: preserve-3d;
+  transition: border-color var(--duration) var(--ease);
+}
+
+.about-capabilities--logo-cards .about-capability::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(420px circle at var(--mx) var(--my), color-mix(in srgb, var(--cap-tint, var(--ink)) 22%, transparent), transparent 62%);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+}
+
+/* Each card may run its own shader (data-card-shade) under a veil that keeps the words clear. */
+.about-capability__shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  opacity: 0.5;
+  transition: opacity 0.5s var(--ease);
+  pointer-events: none;
+}
+
+.about-capabilities--logo-cards .about-capability::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, color-mix(in srgb, var(--surface) 94%, transparent) 26%, color-mix(in srgb, var(--surface) 40%, transparent) 62%, transparent);
+  pointer-events: none;
+}
+
+.about-capabilities--logo-cards .about-capability:hover .about-capability__shade {
+  opacity: 1;
+}
+
+.about-capability__fx {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0.85;
+  transition: opacity 0.5s var(--ease);
+  pointer-events: none;
+}
+
+.about-capabilities--logo-cards .about-capability:hover .about-capability__fx {
+  opacity: 1;
+}
+
+/* A scene keeps the words' corner calm by itself; its veil only settles the foot of the card,
+   so a light theme does not wash the scene out. */
+.about-capabilities--logo-cards .about-capability:has(.about-capability__fx)::after {
+  background: linear-gradient(to top, color-mix(in srgb, var(--surface) 72%, transparent) 12%, transparent 46%);
+}
+
+/* Every body keeps room for three lines, so the titles line up across a row of cards. */
+.about-capabilities--logo-cards .about-capability__copy p {
+  min-height: 3lh;
+}
+
+/* A card with its own scene does not also need the large faint logo. */
+.about-capability:has(.about-capability__fx) .about-capability__mark {
+  display: none;
+}
+
+.about-capabilities--logo-cards .about-capability:hover {
+  border-color: color-mix(in srgb, var(--cap-tint, var(--ink)) 60%, transparent);
+  box-shadow: 0 24px 60px -30px color-mix(in srgb, var(--cap-tint, var(--ink)) 70%, transparent);
+}
+
+.about-capabilities--logo-cards .about-capability:hover::before {
+  opacity: 1;
+}
+
+.about-capabilities--logo-cards .about-capability.is-marked {
+  border-color: color-mix(in srgb, var(--cap-tint, var(--ink)) 40%, transparent);
+  background:
+    radial-gradient(130% 90% at 0% 0%, color-mix(in srgb, var(--ink) 11%, transparent), transparent 64%),
+    var(--surface);
+}
+
+.about-capabilities--logo-cards .about-capability__logo {
+  width: 76px;
+  height: 76px;
+  margin-bottom: auto;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: calc(var(--radius) + 4px);
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--ink) 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--paper) 60%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, #fff 10%, transparent),
+    0 16px 30px -16px color-mix(in srgb, var(--cap-tint, #000) 60%, transparent);
+}
+
+.about-capabilities--logo-cards .about-capability__logo img,
+.about-capabilities--logo-cards .about-capability__logo .about-capability__mono {
+  width: 40px;
+  height: 40px;
+}
+
+.about-capabilities--logo-cards .about-capability__mark {
+  position: absolute;
+  z-index: -1;
+  right: -38px;
+  bottom: -46px;
+  display: block;
+  width: 210px;
+  height: 210px;
+  color: var(--ink);
+  opacity: 0.05;
+  transform: rotate(-14deg);
+  pointer-events: none;
+}
+
+.about-capabilities--logo-cards img.about-capability__mark {
+  filter: grayscale(1) brightness(2);
+}
+
+.about-capabilities--logo-cards .about-capability__copy {
+  margin-top: 36px;
+}
+
+.about-capabilities--logo-cards .about-capability h3 {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.about-capabilities--logo-cards .about-capability p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.about-capabilities--logo-cards .about-capability__fact {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  margin: 0;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cap-tint, var(--ink)) 24%, transparent);
+  color: color-mix(in srgb, var(--cap-tint, var(--ink)) 40%, #fff);
+  font: 600 0.72rem / 1 var(--text);
+  letter-spacing: 0.02em;
+}
+
+:root[data-theme="light"] .about-capabilities--logo-cards .about-capability__fact {
+  background: color-mix(in srgb, var(--cap-tint, var(--ink)) 18%, transparent);
+  color: color-mix(in srgb, var(--cap-tint, var(--ink)) 45%, var(--ink));
+}
+
+@media (max-width: 840px) {
+  .about-capabilities--logo-cards .about-capability {
+    min-height: 0;
+  }
+
+  .about-capabilities--logo-cards .about-capability__logo {
+    margin-bottom: 0;
+  }
+
+  .about-capabilities--logo-cards .about-capability__copy {
+    margin-top: 22px;
+  }
+}

@@ -1,0 +1,29 @@
+schema: gvaste-pages/template/v1
+name: Soft Product
+extends: default
+
+tokens:
+  color:
+    paper: "#1a1814"
+    surface: "#26221c"
+    ink: "#ebe4d6"
+    muted: "#9a9284"
+    accent: "#d8c4a0"
+  typography:
+    scale: 1.02
+  shape:
+    radius: 16
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#eee8dc"
+        surface: "#e7e1d4"
+        ink: "#2a2a2a"
+        muted: "#6a6a6a"
+        accent: "#3d3d3d"
+
+chrome:
+  shade:
+    variant: grain

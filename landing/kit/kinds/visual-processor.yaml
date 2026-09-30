@@ -1,0 +1,13 @@
+id: visual-processor
+label: Visual processor
+defaultComposition: result-first
+compositions:
+  result-first:
+    semanticPlan:
+      - { id: hero, variant: result }
+      - { id: comparison, variant: before-after }
+      - { id: preview, variant: gallery }
+      - { id: about, variant: result-backed }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

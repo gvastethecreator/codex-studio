@@ -1,0 +1,13 @@
+id: configuration-tool
+label: Configuration tool
+defaultComposition: config-result
+compositions:
+  config-result:
+    semanticPlan:
+      - { id: hero, variant: product }
+      - { id: comparison, variant: configuration }
+      - { id: about, variant: result-backed }
+      - { id: setup, variant: config }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

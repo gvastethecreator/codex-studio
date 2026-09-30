@@ -1,0 +1,32 @@
+schema: gvaste-pages/template/v1
+name: Terminal
+extends: default
+
+tokens:
+  color:
+    paper: "#03150c"
+    surface: "#062315"
+    ink: "#b6f5c8"
+    muted: "#5d9a70"
+    accent: "#3dff8b"
+  typography:
+    display: Geist Mono
+    text: Geist Mono
+    mono: Geist Mono
+  shape:
+    radius: 0
+    borderWidth: 1
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#e7f3ea"
+        surface: "#d5eadb"
+        ink: "#0d2b18"
+        muted: "#3d6b4a"
+        accent: "#0b7a38"
+
+chrome:
+  shade:
+    variant: speckle

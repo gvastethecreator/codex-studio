@@ -1,0 +1,270 @@
+/* Scroll-to-top button */
+
+.to-top {
+  position: fixed;
+  right: calc(16px + var(--safe-right));
+  bottom: calc(16px + var(--safe-bottom));
+  z-index: 60;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(201 201 201 / 0.18);
+  border-radius: 999px;
+  background: rgb(10 10 10 / 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .to-top {
+    transition:
+      opacity var(--duration-view) var(--ease),
+      transform var(--duration-view) var(--ease),
+      background-color var(--duration) var(--ease),
+      border-color var(--duration) var(--ease);
+  }
+}
+
+.to-top:hover {
+  background: rgb(28 28 28 / 0.85);
+  border-color: rgb(201 201 201 / 0.4);
+}
+
+/* Image lightbox opened from the carousel */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  pointer-events: none;
+}
+
+.lightbox.is-open,
+.lightbox.is-closing {
+  display: block;
+  pointer-events: auto;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.78);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+}
+
+.lightbox__stage {
+  display: contents;
+}
+
+.lightbox__frame {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #0b0d12;
+  box-shadow:
+    0 40px 90px -20px rgb(0 0 0 / 0.7),
+    0 10px 28px -12px rgb(0 0 0 / 0.55);
+}
+
+.lightbox__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lightbox__caption {
+  position: fixed;
+  z-index: 2;
+  margin: 0;
+  color: rgb(201 201 201 / 0.85);
+  font: 0.78rem / 1.4 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+}
+
+.lightbox__counter {
+  position: absolute;
+  top: max(16px, env(safe-area-inset-top));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: rgb(201 201 201 / 0.8);
+  font: 0.75rem / 1 var(--mono);
+  letter-spacing: 0.08em;
+  opacity: 0;
+}
+
+.lightbox__close,
+.lightbox__nav {
+  position: absolute;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: none;
+  color: rgb(255 255 255 / 0.7);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.lightbox__close:hover,
+.lightbox__nav:hover {
+  color: #fff;
+}
+
+.lightbox__close {
+  top: max(16px, env(safe-area-inset-top));
+  right: 20px;
+  opacity: 0;
+}
+
+.lightbox__close:active,
+.lightbox__nav:active {
+  transform: scale(0.92);
+}
+
+.lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 56px;
+}
+
+.lightbox__nav:active {
+  transform: translateY(-50%) scale(0.92);
+}
+
+.lightbox__nav--prev {
+  left: max(12px, env(safe-area-inset-left));
+}
+
+.lightbox__nav--prev:hover {
+  transform: translateY(-50%) translateX(-3px);
+}
+
+.lightbox__nav--next {
+  right: max(12px, env(safe-area-inset-right));
+}
+
+.lightbox__nav--next:hover {
+  transform: translateY(-50%) translateX(3px);
+}
+
+.lightbox__close:focus-visible,
+.lightbox__nav:focus-visible {
+  outline-color: rgb(255 255 255 / 0.12);
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .lightbox {
+    padding: 12px;
+  }
+
+  .lightbox__caption {
+    text-align: center;
+  }
+}
+
+/* Theme wipe: old screen clips away downward, new theme sits underneath. */
+
+@keyframes wipe-out-down {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(100% 0 0 0);
+  }
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+  mix-blend-mode: normal;
+  animation: 0.85s cubic-bezier(0.25, 1, 0.3, 1) wipe-out-down both;
+}
+
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+.theme-wipe {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--paper);
+}
+
+.theme-wipe__shot {
+  position: relative;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* Pre-hide until GSAP owns the nodes. No transform here: a CSS offset
+   would become the gsap.from() end state and leave items shifted. */
+@media (prefers-reduced-motion: no-preference) {
+  html.js-motion:not(.is-motion-ready) .hero .hero-brand,
+  html.js-motion:not(.is-motion-ready) .hero h1,
+  html.js-motion:not(.is-motion-ready) .hero .lede,
+  html.js-motion:not(.is-motion-ready) .hero .actions .button,
+  html.js-motion:not(.is-motion-ready) .hero .hero-command,
+  html.js-motion:not(.is-motion-ready) .hero .hero-stage,
+  html.js-motion:not(.is-motion-ready) .split > .section-head,
+  html.js-motion:not(.is-motion-ready) .install-hint,
+  html.js-motion:not(.is-motion-ready) .closing__inner,
+  html.js-motion:not(.is-motion-ready) .screens-copy,
+  html.js-motion:not(.is-motion-ready) .screens-media,
+  html.js-motion:not(.is-motion-ready) .screens-caption,
+  html.js-motion:not(.is-motion-ready) .screens-bar,
+  html.js-motion:not(.is-motion-ready) .screens-thumbs,
+  html.js-motion:not(.is-motion-ready) .screens-image,
+  html.js-motion:not(.is-motion-ready) .docs-tree,
+  html.js-motion:not(.is-motion-ready) .docs-reader {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* CSS transform transitions fight GSAP's inline transforms. */
+.is-entering {
+  transition: none !important;
+  will-change: transform, opacity;
+}

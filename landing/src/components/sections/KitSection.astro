@@ -1,0 +1,14 @@
+---
+import {
+  injectFooterHtml,
+  renderFooterHtml,
+  renderSectionHtml,
+} from "../../../kit/engine.mjs";
+
+const { view, id, isLast = false } = Astro.props;
+const html = isLast
+  ? injectFooterHtml(renderSectionHtml(id, view), renderFooterHtml(view))
+  : renderSectionHtml(id, view);
+---
+
+<Fragment set:html={html} />

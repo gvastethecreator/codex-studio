@@ -1,0 +1,91 @@
+/* Shared command slab: one real command plus a copy button.
+   Used by the skill section and hero command actions. */
+
+.command-slab {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 16px;
+  border-top: 1px solid rgb(201 201 201 / 0.22);
+  border-bottom: 1px solid rgb(201 201 201 / 0.22);
+}
+
+.command-slab code {
+  display: block;
+  overflow-x: auto;
+  color: var(--ink);
+  font: 0.95rem / 1.5 var(--mono);
+  white-space: pre;
+}
+
+.command-slab--tight {
+  padding: 10px 0;
+  border: 0;
+}
+
+.command-slab--terminal {
+  padding: 16px 18px;
+  border: 1px solid rgb(201 201 201 / 0.14);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.command-slab--inline {
+  display: inline-grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-height: var(--hit);
+  width: max-content;
+  max-width: 100%;
+  min-width: 0;
+  flex: 0 0 auto;
+  padding: 0 6px 0 16px;
+  gap: 8px;
+  border: 1px solid rgb(201 201 201 / 0.14);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.command-slab--inline code {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
+  font-size: 0.84rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .command-slab--inline {
+    min-height: 48px;
+    padding-inline: 14px 6px;
+  }
+
+  .command-slab--inline code {
+    font-size: 0.8rem;
+  }
+}
+
+.command-slab--inline code::-webkit-scrollbar {
+  height: 6px;
+}
+
+.command-slab--inline code::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: var(--muted);
+}
+
+.command-prompt {
+  color: var(--ink);
+  font-weight: 600;
+  user-select: none;
+}
+
+.install-hint {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

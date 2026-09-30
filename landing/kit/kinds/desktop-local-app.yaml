@@ -1,0 +1,15 @@
+id: desktop-local-app
+label: Desktop app
+mapsFromPresets: [app]
+defaultComposition: product
+compositions:
+  product:
+    v1SectionIds: [hero, demo, screens, docs, links, closing]
+    semanticPlan:
+      - { id: hero, variant: product }
+      - { id: preview, variant: window }
+      - { id: about, variant: visual-cards }
+      - { id: download, variant: platforms }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

@@ -1,0 +1,73 @@
+<section class="comparison comparison--{{comparison.variant}}" id="comparison" aria-labelledby="comparison-title">
+  <header class="section-head comparison__head">
+    {{#if comparison.kicker}}
+    <p class="kicker">{{comparison.kicker}}</p>
+    {{/if}}
+    <h2 id="comparison-title">{{{comparison.titleHtml}}}</h2>
+    {{#if comparison.lede}}
+    <p class="lede">{{comparison.lede}}</p>
+    {{/if}}
+  </header>
+
+  {{#if comparison.hasSlider}}
+  <div class="comparison__slider" data-compare-slider>
+    <div class="comparison__slider-stage chrome-frame">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <img class="comparison__slider-before" src="{{comparison.left.image.src}}" alt="{{comparison.left.image.alt}}" decoding="async">
+        <img class="comparison__slider-after" src="{{comparison.right.image.src}}" alt="{{comparison.right.image.alt}}" decoding="async">
+        <span class="comparison__label comparison__label--before">{{comparison.left.label}}</span>
+        <span class="comparison__label comparison__label--after">{{comparison.right.label}}</span>
+        <button
+          type="button"
+          class="workbench-compare-handle"
+          data-compare-handle
+          role="slider"
+          aria-label="Compare {{comparison.left.label}} and {{comparison.right.label}}"
+          aria-valuemin="8"
+          aria-valuemax="92"
+          aria-valuenow="50"
+        ></button>
+      </span>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if comparison.hasPair}}
+  <div class="comparison__pair">
+    <figure class="comparison__side comparison__side--left chrome-frame">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <div class="comparison__label">{{comparison.left.label}}</div>
+        {{#if comparison.left.config}}
+        <pre class="comparison__config"><code>{{comparison.left.config}}</code></pre>
+        {{/if}}
+        <img src="{{comparison.left.image.src}}" alt="{{comparison.left.image.alt}}" decoding="async">
+      </span>
+      {{#if comparison.left.note}}<figcaption>{{comparison.left.note}}</figcaption>{{/if}}
+    </figure>
+
+    <figure class="comparison__side comparison__side--right chrome-frame">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <div class="comparison__label">{{comparison.right.label}}</div>
+        {{#if comparison.right.config}}
+        <pre class="comparison__config"><code>{{comparison.right.config}}</code></pre>
+        {{/if}}
+        <img src="{{comparison.right.image.src}}" alt="{{comparison.right.image.alt}}" decoding="async">
+      </span>
+      {{#if comparison.right.note}}<figcaption>{{comparison.right.note}}</figcaption>{{/if}}
+    </figure>
+  </div>
+  {{/if}}
+
+  {{#if comparison.provenance.note}}
+  <p class="comparison__provenance">{{comparison.provenance.note}}</p>
+  {{/if}}
+  {{#if comparison.provenance.source}}
+  <p class="section-source">Evidence: <a href="{{comparison.provenance.source.href}}">{{comparison.provenance.source.label}}</a></p>
+  {{/if}}
+  {{#if comparison.source}}
+  <p class="section-source">From <a href="{{comparison.source.href}}">{{comparison.source.label}}</a></p>
+  {{/if}}
+</section>

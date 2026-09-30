@@ -1,0 +1,31 @@
+<section class="closing{{#if closing.hasWall}} closing--finale{{/if}}" aria-label="Closing">
+  {{#if closing.hasWall}}
+  <div class="closing__wall" aria-hidden="true">
+    <div class="closing__tilt">
+      <div class="closing__plane" data-closing-wall>
+        {{#each closing.images}}
+        <img src="{{this}}" alt="" loading="lazy" decoding="async" draggable="false">
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  {{/if}}
+  <div class="closing__inner">
+    {{#if closing.hasWall}}
+    <p class="closing__text" data-mascot-spot="top-end" data-mascot-size="180" data-mascot-mood="laugh" data-mascot-pose="cheer">{{{closing.textHtml}}}</p>
+    {{else}}
+    <p class="closing__text" data-mascot-spot="end" data-mascot-size="200" data-mascot-mood="laugh" data-mascot-pose="cheer">{{{closing.textHtml}}}</p>
+    {{/if}}
+    {{#if closing.lede}}
+    <p class="closing__lede">{{closing.lede}}</p>
+    {{/if}}
+    <div class="closing__actions">
+      {{#if closing.action}}
+      <a class="button primary closing__cta" href="{{closing.action.href}}">{{closing.action.label}}</a>
+      {{/if}}
+      {{#if closing.secondary}}
+      <a class="button closing__cta" href="{{closing.secondary.href}}">{{closing.secondary.label}}</a>
+      {{/if}}
+    </div>
+  </div>
+</section>

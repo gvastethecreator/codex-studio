@@ -1,0 +1,195 @@
+/* Semantic About variants: capability/value evidence without replacing the v1 default. */
+
+.about-capabilities {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.about-capability {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgb(201 201 201 / 0.14);
+  border-radius: 14px;
+}
+
+.about-capability__copy {
+  padding: 20px;
+}
+
+.about-capability__copy h3 {
+  margin: 0;
+  font-size: clamp(1rem, 1.4vw, 1.16rem);
+  line-height: 1.25;
+}
+
+.about-capability__copy p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.52;
+}
+
+.about-capability__fact {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 5px 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, rgb(201 201 201 / 0.12));
+  border-radius: 999px;
+  color: var(--ink);
+  font: 0.76rem/1.2 var(--mono);
+}
+
+.about-capability__media {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  border-top: 1px solid rgb(201 201 201 / 0.1);
+  background: var(--surface);
+}
+
+.about-capability__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+.about-capability__media--result img {
+  object-fit: contain;
+}
+
+.about-capability__code {
+  margin: 0;
+  padding: 16px 18px 18px;
+  overflow: auto;
+  border-top: 1px solid rgb(201 201 201 / 0.1);
+  background: rgb(0 0 0 / 0.18);
+  color: var(--ink);
+  font: 0.8rem/1.55 var(--mono);
+  tab-size: 2;
+}
+
+.about-capability__code code {
+  display: block;
+  min-width: max-content;
+}
+
+.about-capabilities--compact-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-capabilities--compact-cards .about-capability {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-capabilities--compact-cards .about-capability__copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100%;
+}
+
+.about-capabilities--compact-cards .about-capability__fact {
+  margin-top: auto;
+}
+
+.about-capabilities--visual-cards,
+.about-capabilities--code-backed,
+.about-capabilities--result-backed {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.about-capabilities--visual-cards .about-capability,
+.about-capabilities--code-backed .about-capability,
+.about-capabilities--result-backed .about-capability {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-capabilities--visual-cards .about-capability__media,
+.about-capabilities--result-backed .about-capability__media,
+.about-capabilities--code-backed .about-capability__code {
+  margin-top: auto;
+}
+
+.about-capabilities--alternating-feature {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+.about-capabilities--alternating-feature .about-capability {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 1.2fr);
+  align-items: stretch;
+}
+
+.about-capabilities--alternating-feature .about-capability:nth-child(even) .about-capability__copy {
+  order: 2;
+}
+
+.about-capabilities--alternating-feature .about-capability:nth-child(even) .about-capability__media {
+  order: 1;
+  border-top: 0;
+  border-right: 1px solid rgb(201 201 201 / 0.1);
+}
+
+.about-capabilities--alternating-feature .about-capability:nth-child(odd) .about-capability__media {
+  border-top: 0;
+  border-left: 1px solid rgb(201 201 201 / 0.1);
+}
+
+.about-capabilities--alternating-feature .about-capability__media img {
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .about-capabilities--compact-cards,
+  .about-capabilities--visual-cards,
+  .about-capabilities--code-backed,
+  .about-capabilities--result-backed {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-capabilities--compact-cards[data-count="3"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .about-capabilities--compact-cards,
+  .about-capabilities--visual-cards,
+  .about-capabilities--code-backed,
+  .about-capabilities--result-backed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-capabilities--alternating-feature .about-capability {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-capabilities--alternating-feature .about-capability__copy,
+  .about-capabilities--alternating-feature .about-capability:nth-child(even) .about-capability__copy,
+  .about-capabilities--alternating-feature .about-capability__media,
+  .about-capabilities--alternating-feature .about-capability:nth-child(even) .about-capability__media {
+    order: initial;
+  }
+
+  .about-capabilities--alternating-feature .about-capability__media,
+  .about-capabilities--alternating-feature .about-capability:nth-child(even) .about-capability__media,
+  .about-capabilities--alternating-feature .about-capability:nth-child(odd) .about-capability__media {
+    border-right: 0;
+    border-left: 0;
+    border-top: 1px solid rgb(201 201 201 / 0.1);
+  }
+
+  .about-capabilities--alternating-feature .about-capability__media img {
+    min-height: 0;
+    height: auto;
+  }
+}

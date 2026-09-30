@@ -1,0 +1,12 @@
+id: web-app
+label: Web app
+defaultComposition: try
+compositions:
+  try:
+    semanticPlan:
+      - { id: hero, variant: product }
+      - { id: playground, variant: scenario }
+      - { id: about, variant: compact-cards }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

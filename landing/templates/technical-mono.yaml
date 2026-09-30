@@ -1,0 +1,33 @@
+schema: gvaste-pages/template/v1
+name: Technical Mono
+extends: default
+
+tokens:
+  color:
+    paper: "#0b0d10"
+    surface: "#14181d"
+    ink: "#d7e0ea"
+    muted: "#7f8b98"
+    accent: "#9bd4c8"
+  typography:
+    display: Geist Mono
+    text: Geist Mono
+    mono: Geist Mono
+    scale: 0.98
+  shape:
+    radius: 2
+    borderWidth: 1
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#e8eef2"
+        surface: "#dce4eb"
+        ink: "#152028"
+        muted: "#5a6873"
+        accent: "#1f7a6e"
+
+chrome:
+  shade:
+    variant: liquid

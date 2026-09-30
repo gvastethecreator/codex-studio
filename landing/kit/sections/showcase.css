@@ -1,0 +1,101 @@
+/* showcase.marquee — endless rows of cards that run edge to edge.
+   Rows size from the panel height, so two to four rows fit one screen. The marquee keeps
+   room above and below each row so a lifted card is never cut. */
+.showcase {
+  --marquee-gap: 14px;
+  --marquee-rows: 2;
+  --marquee-card: clamp(112px, calc((100svh - var(--chrome-top) - 300px) / var(--marquee-rows) - var(--marquee-gap)), 240px);
+  /* The rows run past the column and fade out a card and a half beyond its edge. */
+  --marquee-fade: calc(var(--marquee-card) * 0.8 * 1.5 + var(--marquee-gap));
+  container-type: inline-size;
+}
+
+.showcase__head {
+  margin-bottom: clamp(18px, 3.5vh, 36px);
+}
+
+.showcase__head .lede {
+  margin-top: 12px;
+}
+
+.showcase:has([data-rows="3"]) {
+  --marquee-rows: 3;
+}
+
+.showcase:has([data-rows="4"]) {
+  --marquee-rows: 4;
+}
+
+.showcase__marquee {
+  display: grid;
+  gap: var(--marquee-gap);
+  margin-inline: calc(50% - 50vw);
+  margin-block: -18px;
+  padding-block: 18px;
+  mask-image: linear-gradient(
+    90deg,
+    transparent calc(50% - 50cqw - var(--marquee-fade)),
+    #000 calc(50% - 50cqw),
+    #000 calc(50% + 50cqw),
+    transparent calc(50% + 50cqw + var(--marquee-fade))
+  );
+}
+
+.marquee__row {
+  position: relative;
+  display: flex;
+  gap: var(--marquee-gap);
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+}
+
+.marquee__row:hover {
+  z-index: 2;
+}
+
+.marquee__card {
+  position: relative;
+  flex: none;
+  height: var(--marquee-card);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: calc(var(--radius) + 2px);
+  background: var(--surface);
+  box-shadow: 0 14px 28px -14px rgb(0 0 0 / 0.8);
+}
+
+.marquee__card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marquee__card span {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 22px 10px 8px;
+  overflow: hidden;
+  background: linear-gradient(transparent, rgb(0 0 0 / 0.78));
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.showcase__marquee.is-static {
+  overflow-x: auto;
+  mask-image: none;
+}
+
+@media (max-width: 840px) {
+  .showcase {
+    --marquee-card: 132px;
+  }
+}

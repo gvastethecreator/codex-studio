@@ -1,0 +1,412 @@
+<section class="profile profile--{{profile.variant}}" id="profile" data-profile-variant="{{profile.variant}}" data-profile-login="{{profile.login}}" data-profile-noun="{{profile.noun}}">
+{{#if profile.isStandard}}
+  <div class="standard-dashboard">
+    <aside class="standard-profile" aria-labelledby="profile-name">
+      <div class="standard-profile__identity">
+        <span class="standard-source-badge is-{{profile.sourceKind}}"><i aria-hidden="true"></i>{{profile.sourceLabel}}</span>
+        <img src="{{profile.avatarUrl}}" alt="" width="148" height="148">
+        <h1 id="profile-name">
+          {{profile.name}}
+          <a href="{{profile.url}}" rel="noreferrer" aria-label="Open {{profile.login}} on GitHub">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17L17 7"/></svg>
+          </a>
+        </h1>
+        <p class="standard-profile__handle">@{{profile.login}}</p>
+        {{#if profile.bio}}<p class="standard-profile__bio">{{profile.bio}}</p>{{/if}}
+      </div>
+      <section class="standard-profile__social" aria-label="Public profile facts">
+        <div><strong>{{profile.followersLabel}}</strong><span>Followers</span></div>
+        <div><strong>{{profile.followingLabel}}</strong><span>Following</span></div>
+        <div><strong>{{#if profile.yearsOnGitHub}}{{profile.yearsOnGitHub}}{{/if}}{{#if profile.yearsOnGitHub}}{{else}}—{{/if}}</strong><span>Years on GitHub</span></div>
+      </section>
+      <div class="standard-profile__details">
+        <dl class="standard-facts">
+          {{#if profile.company}}<div><dt>Company</dt><dd>{{profile.company}}</dd></div>{{/if}}
+          {{#if profile.websiteUrl}}<div><dt>Website</dt><dd><a href="{{profile.websiteUrl}}" rel="noreferrer">{{profile.websiteLabel}}</a></dd></div>{{/if}}
+          {{#if profile.location}}<div><dt>Location</dt><dd>{{profile.location}}</dd></div>{{/if}}
+          {{#if profile.joinedLabel}}<div><dt>Joined</dt><dd>{{profile.joinedLabel}}</dd></div>{{/if}}
+        </dl>
+        {{#if profile.hasLinks}}
+        <section class="standard-links" aria-labelledby="profile-links-title">
+          <h2 id="profile-links-title">Links &amp; support</h2>
+          <ul>
+            {{#each profile.profileLinks}}
+            <li class="{{#if kind}}is-{{kind}}{{/if}}"><a href="{{url}}" rel="noreferrer"><strong>{{label}}</strong><small>{{provider}}</small></a></li>
+            {{/each}}
+          </ul>
+        </section>
+        {{/if}}
+        <section class="standard-data-scope" aria-labelledby="profile-scope-title">
+          <h2 id="profile-scope-title">Data scope</h2>
+          <dl>
+            <div><dt>Source</dt><dd>{{profile.sourceLabel}}</dd></div>
+            <div><dt>Generated</dt><dd>{{profile.generatedLabel}}</dd></div>
+            <div><dt>Repositories</dt><dd>{{profile.repoCoverage}}</dd></div>
+          </dl>
+        </section>
+        <section class="standard-languages" aria-labelledby="profile-languages-title">
+          <h2 id="profile-languages-title">Languages <span>bytes · {{profile.languageScope}}</span></h2>
+          {{#if profile.hasLanguages}}
+          <div class="standard-languages__bar" aria-hidden="true">
+            {{#each profile.languagesVisible}}<span style="width: {{width}}; background-color: {{color}}"></span>{{/each}}
+          </div>
+          <ul>
+            {{#each profile.languagesVisible}}<li><i style="background-color: {{color}}"></i><span>{{name}}</span><strong>{{share}}%</strong></li>{{/each}}
+            {{#if profile.hasLanguageOther}}<li><i class="is-other"></i><span>Other</span><strong>{{profile.languagesOther}}%</strong></li>{{/if}}
+          </ul>
+          {{/if}}
+          {{#if profile.hasLanguages}}{{else}}<p class="standard-inline-empty">Language bytes unavailable.</p>{{/if}}
+        </section>
+      </div>
+    </aside>
+    <div class="standard-content">
+      <section class="standard-overview" aria-labelledby="profile-overview-title">
+        <header class="standard-section-header">
+          <div>
+            <p>{{#if profile.isContributionCalendar}}Contribution calendar{{/if}}{{#if profile.isContributionCalendar}}{{else}}Repository updates only{{/if}}</p>
+            <h2 id="profile-overview-title">{{profile.activeYear.heading}}</h2>
+          </div>
+          {{#if profile.streakLabel}}<span class="standard-streak">{{profile.streakLabel}}</span>{{/if}}
+          {{#if profile.streakLabel}}{{else}}<span class="standard-coverage">{{profile.coverageLabel}}</span>{{/if}}
+        </header>
+        <div class="standard-evidence-grid">
+          <div class="standard-calendar" data-profile-years>
+            <div class="standard-calendar__toolbar">
+              <div class="standard-year-switch" role="group" aria-label="Activity year">
+                <span>Activity</span>
+                {{#each profile.years}}
+                <button type="button" data-profile-year="{{year}}" class="{{#if active}}is-active{{/if}}" aria-pressed="{{#if active}}true{{/if}}{{#if active}}{{else}}false{{/if}}">{{year}}</button>
+                {{/each}}
+              </div>
+              <div class="standard-legend" role="img" aria-label="Activity intensity legend"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
+            </div>
+            {{#each profile.years}}
+            <div class="profile-year-panel{{#if active}} is-active{{/if}}" data-profile-year-panel="{{year}}">
+              <div class="standard-calendar__heading"><strong>{{totalLabel}}</strong><span>{{calendarLabel}}</span></div>
+              {{#if profile.isContributionCalendar}}{{else}}<p class="standard-calendar__disclosure">Cells are repository update dates. Contribution totals are unavailable from this source.</p>{{/if}}
+              <section class="standard-heatmap-scroll" tabindex="0" aria-label="Scrollable activity calendar">
+                <div class="standard-heatmap" style="width: {{heatmapWidth}}">
+                  <div class="standard-heatmap__months" aria-hidden="true">{{#each months}}<span style="left: {{left}}">{{label}}</span>{{/each}}</div>
+                  <div class="standard-heatmap__row-labels" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div>
+                  <div class="standard-heatmap__weeks">
+                    {{#each weeks}}
+                    <div class="standard-heatmap__week">
+                      {{#each days}}
+                      <span class="{{#if outside}}is-outside{{/if}}" data-level="{{level}}" title="{{date}}: {{count}}" role="img" aria-label="{{date}}: {{count}}"></span>
+                      {{/each}}
+                    </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </section>
+            </div>
+            {{/each}}
+          </div>
+          <aside class="standard-activity-feed" aria-labelledby="profile-feed-title">
+            <header><p>Recent window</p><h3 id="profile-feed-title">Public events</h3></header>
+            {{#if profile.hasActivity}}
+            <ol>
+              {{#each profile.recentActivity}}
+              <li><i aria-hidden="true"></i><div><span>{{label}}</span><a href="{{url}}" rel="noreferrer">{{shortRepository}}</a><small>{{occurredLabel}}</small></div></li>
+              {{/each}}
+            </ol>
+            {{/if}}
+            {{#if profile.hasActivity}}{{else}}<p class="standard-inline-empty">No recent public events.</p>{{/if}}
+          </aside>
+        </div>
+        <div class="standard-summary">
+          {{#each profile.summary}}<article><strong>{{value}}</strong><span>{{label}}</span><small>{{detail}}</small></article>{{/each}}
+        </div>
+        <section class="standard-work-evidence" aria-labelledby="profile-metrics-title">
+          <header><div><p>Scope</p><h3 id="profile-metrics-title">Metrics</h3></div></header>
+          <dl>{{#each profile.workEvidence}}<div><dt>{{label}}</dt><dd>{{value}}</dd><small>{{detail}}</small></div>{{/each}}</dl>
+        </section>
+      </section>
+      <section class="standard-repositories" aria-labelledby="profile-repos-title">
+        <header class="standard-section-header">
+          <div><p>By stars and recent update</p><h2 id="profile-repos-title">Repositories</h2></div>
+          <a href="{{profile.url}}?tab=repositories" rel="noreferrer">All on GitHub</a>
+        </header>
+        <div class="standard-repositories__list">
+          {{#each profile.listedRepositories}}
+          <a href="{{url}}" rel="noreferrer">
+            <div><strong>{{name}}</strong><p>{{description}}</p></div>
+            <ul>
+              {{#if language}}<li><i style="background-color: {{languageColor}}"></i>{{language}}</li>{{/if}}
+              <li>{{starsLabel}} stars</li>
+              <li>{{forksLabel}} forks</li>
+              <li>{{updatedLabel}}</li>
+            </ul>
+          </a>
+          {{/each}}
+        </div>
+      </section>
+      <footer class="standard-footer"><p>{{profile.sourceLabel}} · {{profile.generatedLabel}}</p></footer>
+    </div>
+  </div>
+{{/if}}
+
+{{#if profile.isFolio}}
+  <div class="folio">
+    <header class="folio__masthead">
+      <img class="folio__avatar" src="{{profile.avatarUrl}}" alt="" width="92" height="92">
+      <div class="folio__titleblock">
+        <p class="eyebrow">Character folio</p>
+        <h1>{{profile.name}}</h1>
+        <p class="folio__handle"><a href="{{profile.url}}" rel="noreferrer">@{{profile.login}}</a></p>
+        <p class="folio__descriptor">Joined {{profile.joinedLabel}} · public repositories</p>
+      </div>
+    </header>
+    <section class="folio__section folio__section--identity" aria-labelledby="folio-identity-title">
+      <header class="folio__heading"><span class="folio__numeral" aria-hidden="true">I</span><h2 id="folio-identity-title">Identity</h2><p>Public profile fields</p></header>
+      <div class="folio__identity-grid">
+        <dl class="folio__facts">{{#each profile.identityFacts}}<div><dt>{{label}}</dt><dd>{{value}}</dd></div>{{/each}}</dl>
+        {{#if profile.hasLinks}}
+        <ul class="folio__links" aria-label="Public links and support">
+          {{#each profile.profileLinks}}<li><a href="{{url}}" rel="noreferrer"><span><strong>{{label}}</strong><small>{{provider}}</small></span></a></li>{{/each}}
+        </ul>
+        {{/if}}
+        <dl class="folio__scope">{{#each profile.scopeFacts}}<div><dt>{{label}}</dt><dd>{{value}}</dd></div>{{/each}}</dl>
+      </div>
+    </section>
+    <section class="folio__section folio__section--record" aria-labelledby="folio-record-title">
+      <header class="folio__heading"><span class="folio__numeral" aria-hidden="true">II</span><h2 id="folio-record-title">Service record</h2><p>{{#if profile.hasRoleEvidence}}Roles in the contribution window{{/if}}{{#if profile.hasRoleEvidence}}{{else}}Public repository metrics{{/if}}</p></header>
+      {{#if profile.hasRoleEvidence}}{{else}}<p class="folio__note">Contribution roles are not publicly verifiable from this source; the public repository record is shown instead.</p>{{/if}}
+      <dl class="folio__stats">{{#each profile.serviceStats}}<div><dt>{{label}}</dt><dd>{{value}}</dd><small>{{detail}}</small></div>{{/each}}</dl>
+    </section>
+    <section class="folio__section folio__section--trail" aria-labelledby="folio-trail-title">
+      <header class="folio__heading"><span class="folio__numeral" aria-hidden="true">III</span><h2 id="folio-trail-title">{{#if profile.isContributionCalendar}}Contribution trail{{/if}}{{#if profile.isContributionCalendar}}{{else}}Repository updates{{/if}}</h2><p>{{profile.coverageLabel}}</p></header>
+      <p class="folio__note">{{profile.folioTotal}} {{profile.noun}} across {{profile.folioWeekCount}} weeks. {{profile.folioActiveWeeks}} weeks active.</p>
+      {{#if profile.folioWeeks}}
+      <div class="folio-trail" role="img" aria-label="Weekly {{profile.noun}} across the coverage window">
+        {{#each profile.folioWeeks}}<span style="height: {{height}}" title="{{start}}: {{count}}" {{#if count}}{{else}}data-empty="true"{{/if}}></span>{{/each}}
+      </div>
+      {{/if}}
+      <dl class="folio-terrain__summary">
+        <div><dt>{{profile.folioTrailNoun}}</dt><dd>{{profile.folioTotal}}</dd></div>
+        <div><dt>Weeks active</dt><dd>{{profile.folioActiveWeeksLabel}}</dd></div>
+        <div><dt>Weekly average</dt><dd>{{profile.folioWeeklyAverage}}</dd></div>
+      </dl>
+    </section>
+    <section class="folio__section folio__section--mix" aria-labelledby="folio-mix-title">
+      <header class="folio__heading"><span class="folio__numeral" aria-hidden="true">IV</span><h2 id="folio-mix-title">Code mix</h2><p>Language bytes · {{profile.languageScope}}</p></header>
+      {{#if profile.hasLanguages}}
+      <div class="folio-mix__bar" aria-hidden="true">{{#each profile.languagesVisible}}<span style="width: {{width}}; background-color: {{color}}"></span>{{/each}}</div>
+      <dl class="folio-mix__list">{{#each profile.languagesVisible}}<div><dt><i style="background-color: {{color}}" aria-hidden="true"></i>{{name}}</dt><dd>{{share}}%</dd></div>{{/each}}</dl>
+      <p class="folio-mix__total"><span>Public bytes</span><strong>{{profile.publicBytesLabel}}</strong></p>
+      {{/if}}
+      {{#if profile.hasLanguages}}{{else}}<p class="folio__note">Language bytes are not publicly verifiable from this source.</p>{{/if}}
+    </section>
+    <section class="folio__section folio__section--repos" aria-labelledby="folio-repos-title">
+      <header class="folio__heading"><span class="folio__numeral" aria-hidden="true">V</span><h2 id="folio-repos-title">Public repositories</h2><p>{{profile.repoCoverage}}</p></header>
+      <ul class="folio-repos">
+        {{#each profile.listedRepositories}}
+        <li class="folio-repo">
+          <div class="folio-repo__head"><h3><a href="{{url}}" rel="noreferrer">{{name}}</a></h3><span>{{role}}</span></div>
+          <p>{{description}}</p>
+          <ul>
+            {{#if language}}<li>{{language}}</li>{{/if}}
+            <li>{{starsLabel}} stars</li>
+            <li>{{forksLabel}} forks</li>
+            <li>Updated {{updatedLabel}}</li>
+          </ul>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    <footer class="folio__footer"><p>{{profile.sourceLabel}} · {{profile.generatedLabel}}</p></footer>
+  </div>
+{{/if}}
+
+{{#if profile.isObservatory}}
+  <div class="observatory">
+    <aside class="observatory-identity" aria-labelledby="observatory-profile-title">
+      <div class="observatory-identity__portrait">
+        <img src="{{profile.avatarUrl}}" alt="" width="160" height="160">
+        <span>{{profile.sourceLabel}}</span>
+      </div>
+      <header><p>@{{profile.login}}</p><h1 id="observatory-profile-title">{{profile.name}}</h1>{{#if profile.bio}}<p>{{profile.bio}}</p>{{/if}}</header>
+      <dl class="observatory-identity__facts">
+        <div><dt>Public repositories</dt><dd>{{profile.repoCoverage}}</dd></div>
+        <div><dt>Followers</dt><dd>{{profile.followersLabel}}</dd></div>
+        <div><dt>Following</dt><dd>{{profile.followingLabel}}</dd></div>
+      </dl>
+      <footer><span>{{profile.sourceLabel}}<small>{{profile.generatedLabel}}</small></span></footer>
+    </aside>
+    <div class="observatory-story" data-profile-years>
+      <header class="observatory-thesis">
+        <div><p>Period</p><h2>{{profile.activeYear.thesis}}</h2></div>
+        <div class="observatory-period" role="group" aria-label="Select activity year">
+          {{#each profile.years}}<button type="button" data-profile-year="{{year}}" aria-pressed="{{#if active}}true{{/if}}{{#if active}}{{else}}false{{/if}}">{{year}}</button>{{/each}}
+        </div>
+        <p class="observatory-thesis__method">{{#if profile.isContributionCalendar}}Verified GitHub contribution calendar.{{/if}}{{#if profile.isContributionCalendar}}{{else}}Public repository update dates; GitHub contribution totals are not available from this source.{{/if}}</p>
+      </header>
+      {{#each profile.years}}
+      <div class="profile-year-panel{{#if active}} is-active{{/if}}" data-profile-year-panel="{{year}}">
+        <section class="observatory-section observatory-rhythm" aria-labelledby="observatory-rhythm-title-{{year}}">
+          <header class="observatory-section__header"><div><p>Rhythm</p><h2 id="observatory-rhythm-title-{{year}}">Activity over time</h2></div><dl><div><dt>{{profile.noun}}</dt><dd>{{totalLabel}}</dd></div><div><dt>Active days</dt><dd>{{activeDays}}</dd></div></dl></header>
+          <div class="observatory-chart">
+            <svg viewBox="0 0 {{geometry.width}} {{geometry.height}}" role="img" preserveAspectRatio="none">
+              <title>Daily {{profile.noun}} in {{year}}</title>
+              <defs>
+                <linearGradient id="observatory-area-{{year}}" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="currentColor" stop-opacity="0.42"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+              <path class="observatory-chart__area" d="{{geometry.area}}" style="fill: url(#observatory-area-{{year}})"></path>
+              <path class="observatory-chart__line" d="{{geometry.line}}"></path>
+            </svg>
+          </div>
+          <details class="observatory-table"><summary>Read {{year}} as a monthly table</summary>
+            <table><thead><tr><th>Month</th><th>{{profile.noun}}</th><th>Active days</th></tr></thead>
+            <tbody>{{#each monthsTable}}<tr><th>{{label}}</th><td>{{count}}</td><td>{{activeDays}}</td></tr>{{/each}}</tbody></table>
+          </details>
+        </section>
+      </div>
+      {{/each}}
+      <section class="observatory-section observatory-repositories" aria-labelledby="observatory-repositories-title">
+        <header class="observatory-section__header"><div><p>Repositories</p><h2 id="observatory-repositories-title">Public repositories</h2></div></header>
+        <div class="observatory-repositories__filters" data-profile-filter="repos">
+          <label>Search<input type="search" data-profile-search placeholder="Name, topic, description"></label>
+          <label>Language<select data-profile-language><option value="all">All languages</option>{{#each profile.repoLanguages}}<option value="{{this}}">{{this}}</option>{{/each}}</select></label>
+          <label>Order<select data-profile-sort><option value="stars">Stars</option><option value="updated">Updated</option><option value="name">Name</option></select></label>
+        </div>
+        <ol data-profile-repo-list>
+          {{#each profile.allRepositories}}
+          <li data-name="{{name}}" data-language="{{language}}" data-stars="{{stars}}" data-updated="{{updatedAt}}" data-haystack="{{name}} {{description}}">
+            <a href="{{url}}" rel="noreferrer"><strong>{{name}}</strong><p>{{description}}</p><ul>{{#if language}}<li>{{language}}</li>{{/if}}<li>{{starsLabel}}</li><li>{{updatedLabel}}</li></ul></a>
+          </li>
+          {{/each}}
+        </ol>
+      </section>
+      <section class="observatory-section observatory-collaboration" aria-labelledby="observatory-collaboration-title">
+        <header class="observatory-section__header"><div><p>Collaboration</p><h2 id="observatory-collaboration-title">Recent counts</h2></div></header>
+        <dl>{{#each profile.collaboration}}<div><dt>{{label}}</dt><dd>{{value}}</dd></div>{{/each}}</dl>
+      </section>
+    </div>
+  </div>
+{{/if}}
+
+{{#if profile.isHeatmap}}
+  <div class="daily-map">
+    <header class="daily-map__hero">
+      <div><p>Heatmap · {{profile.login}}</p><h1>Daily counts</h1></div>
+      <div class="daily-map__total"><span>{{profile.heatmap.from}} — {{profile.heatmap.to}}</span><strong>{{profile.heatmap.total}}</strong><small>{{profile.noun}}</small></div>
+    </header>
+    <section class="daily-map__summary" aria-label="Calendar summary">
+      <div><span>Active days</span><strong>{{profile.heatmap.activeDays}}</strong></div>
+      <div><span>Best day</span><strong>{{#if profile.heatmapBest}}{{profile.heatmapBest.count}}{{/if}}</strong><small>{{#if profile.heatmapBest}}{{profile.heatmapBest.date}}{{/if}}</small></div>
+      <div><span>Longest streak</span><strong>{{profile.heatmap.longestStreak}}</strong><small>UTC days</small></div>
+    </section>
+    {{#if profile.isContributionCalendar}}{{else}}<p class="daily-map__disclosure">No contribution totals here. Cells are public repository update dates only.</p>{{/if}}
+    <section class="daily-map__calendar" aria-labelledby="daily-map-title">
+      <header>
+        <div><p>Last 365 days</p><h2 id="daily-map-title">Calendar</h2></div>
+        <div class="daily-map__legend" role="img" aria-label="Activity intensity legend"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
+      </header>
+      <div class="daily-grid-scroll">
+        <div class="daily-grid" style="width: {{profile.heatmap.gridWidth}}" role="grid" aria-label="Daily {{profile.noun}}" data-profile-heatmap>
+          <div class="daily-grid__months" aria-hidden="true">{{#each profile.heatmap.months}}<span style="left: {{left}}">{{label}}</span>{{/each}}</div>
+          <div class="daily-grid__weekdays" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div>
+          <div class="daily-grid__weeks">
+            {{#each profile.heatmap.weeks}}
+            <div class="daily-grid__week" role="row">
+              {{#each days}}
+              <button type="button" role="gridcell" data-date="{{date}}" data-level="{{level}}" data-count="{{count}}" data-week="{{week}}" data-weekday="{{weekdayLabel}}" class="{{#if inWindow}}{{else}}is-outside{{/if}}" {{#if inWindow}}{{else}}disabled{{/if}}>{{#if inWindow}}{{count}}{{/if}}</button>
+              {{/each}}
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <p class="daily-map__keyboard">Arrow up/down: day · left/right: week · Home/End: coverage bounds</p>
+    </section>
+    <section class="daily-map__detail" aria-labelledby="daily-detail-title" aria-live="polite" data-profile-day-detail>
+      <header><p>Selected day</p><h2 id="daily-detail-title">{{#if profile.heatmapBest}}{{profile.heatmapBest.date}}{{/if}}</h2></header>
+      <div class="daily-map__count"><strong data-profile-day-count>{{#if profile.heatmapBest}}{{profile.heatmapBest.count}}{{/if}}</strong><span>{{profile.noun}}</span></div>
+      <dl>
+        <div><dt>Weekday</dt><dd data-profile-day-weekday>{{#if profile.heatmapBest}}{{profile.heatmapBest.weekdayLabel}}{{/if}}</dd></div>
+        <div><dt>Week</dt><dd data-profile-day-week>{{#if profile.heatmapBest}}{{profile.heatmapBest.week}}{{/if}}</dd></div>
+      </dl>
+    </section>
+  </div>
+{{/if}}
+
+{{#if profile.isOrbit}}
+  <div class="orbit">
+    <header class="orbit-hero">
+      <div><p>Orbit · {{profile.login}}</p><h1>Year terrain</h1></div>
+      <dl><div><dt>Signal</dt><dd>{{profile.noun}}</dd></div><div><dt>Projection</dt><dd>date × intensity · SVG survey</dd></div></dl>
+    </header>
+    <section class="orbit-controls" aria-label="Terrain controls" data-profile-years>
+      <div class="orbit-years" role="group" aria-label="Year">
+        {{#each profile.years}}<button type="button" data-profile-year="{{year}}" aria-pressed="{{#if active}}true{{/if}}{{#if active}}{{else}}false{{/if}}">{{year}}</button>{{/each}}
+      </div>
+      <p>SVG · semantic fallback. Height uses log scale so one peak does not flatten the year.</p>
+    </section>
+    {{#each profile.years}}
+    <div class="profile-year-panel{{#if active}} is-active{{/if}}" data-profile-year-panel="{{year}}">
+      <section class="orbit-field" aria-labelledby="orbit-field-title-{{year}}">
+        <div class="orbit-field__stage">
+          <header><p>Field · {{year}}</p><h2 id="orbit-field-title-{{year}}">UTC dates · SVG survey</h2></header>
+          <div class="orbit-survey">
+            <svg viewBox="0 0 {{orbit.surveyWidth}} {{orbit.surveyHeight}}" role="img">
+              <title>{{year}} contribution terrain survey</title>
+              {{#each orbit.points}}<rect x="{{surveyX}}" y="{{surveyY}}" width="9" height="9" rx="1" fill="{{color}}" data-level="{{level}}" transform="translate(-4.5 -4.5)"></rect>{{/each}}
+            </svg>
+          </div>
+        </div>
+        <aside class="orbit-inspector">
+          <p>Visible total</p>
+          <strong>{{orbit.total}}</strong>
+          <span>{{profile.noun}}</span>
+          <dl>
+            <div><dt>Active dates</dt><dd>{{orbit.activeDays}}</dd></div>
+            <div><dt>Peak</dt><dd>{{orbit.maximum}}</dd></div>
+          </dl>
+          <small>{{#if profile.isContributionCalendar}}Verified calendar signal.{{/if}}{{#if profile.isContributionCalendar}}{{else}}Public repository update dates; not a contribution claim.{{/if}}</small>
+        </aside>
+      </section>
+    </div>
+    {{/each}}
+  </div>
+{{/if}}
+
+{{#if profile.isProjects}}
+  <div class="projects">
+    <header class="projects__hero">
+      <div>
+        <p>Projects · {{profile.login}}</p>
+        <h1>Public repositories</h1>
+        <p class="projects__lede">{{#if profile.isContributionCalendar}}Listed public repositories from the reviewed snapshot.{{/if}}{{#if profile.isContributionCalendar}}{{else}}Public repository list. Day log counts repository updates, not contributions.{{/if}}</p>
+      </div>
+    </header>
+    <dl class="projects__stats">{{#each profile.projectStats}}<div><dt>{{label}}</dt><dd>{{value}}</dd></div>{{/each}}</dl>
+    <section class="projects__catalog" aria-labelledby="projects-catalog-title">
+      <header><div><p>List</p><h2 id="projects-catalog-title">Repositories</h2></div></header>
+      <div class="projects__filters" data-profile-filter="repos">
+        <label>Search<input type="search" data-profile-search placeholder="Name, topic, description"></label>
+        <label>Language<select data-profile-language><option value="all">All languages</option>{{#each profile.repoLanguages}}<option value="{{this}}">{{this}}</option>{{/each}}</select></label>
+        <label>Order<select data-profile-sort><option value="stars">Stars</option><option value="updated">Updated</option><option value="name">Name</option></select></label>
+      </div>
+      <ol class="projects__list" data-profile-repo-list>
+        {{#each profile.allRepositories}}
+        <li data-name="{{name}}" data-language="{{language}}" data-stars="{{stars}}" data-updated="{{updatedAt}}" data-haystack="{{name}} {{description}}">
+          <div>
+            <a href="{{url}}" rel="noreferrer"><strong>{{name}}</strong></a>
+            <p>{{description}}</p>
+            <ul>{{#if language}}<li>{{language}}</li>{{/if}}<li>{{starsLabel}}</li><li>{{updatedLabel}}</li></ul>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </section>
+  </div>
+{{/if}}
+
+  <details class="profile-methodology">
+    <summary>Methodology</summary>
+    <ul>{{#each profile.methodology}}<li>{{this}}</li>{{/each}}</ul>
+  </details>
+</section>

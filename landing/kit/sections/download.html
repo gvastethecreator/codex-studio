@@ -1,0 +1,30 @@
+<section class="download" id="download" aria-labelledby="download-title">
+  <header class="section-head">
+    {{#if download.kicker}}
+    <p class="kicker">{{download.kicker}}</p>
+    {{/if}}
+    <h2 id="download-title">{{{download.titleHtml}}}</h2>
+    {{#if download.lede}}
+    <p class="lede">{{download.lede}}</p>
+    {{/if}}
+  </header>
+  <ul class="download-cards">
+    {{#each download.items}}
+    <li>
+      <a class="download-card" href="{{href}}" data-platform="{{platformKey}}">
+        <span class="download-card__icon" aria-hidden="true">{{{glyphHtml}}}</span>
+        <span class="download-card__meta">
+          <strong>{{platform}}</strong>
+          {{#if meta}}
+          <span>{{meta}}</span>
+          {{/if}}
+        </span>
+        <span class="download-card__go">{{label}}</span>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+  {{#if download.source}}
+  <p class="section-source">From <a href="{{download.source.href}}">{{download.source.label}}</a></p>
+  {{/if}}
+</section>

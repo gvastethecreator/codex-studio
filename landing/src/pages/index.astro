@@ -1,0 +1,8 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+import { loadSite } from "../core/site";
+
+const view = loadSite();
+---
+
+<ProjectLayout view={view} />

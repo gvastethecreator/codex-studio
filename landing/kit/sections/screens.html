@@ -1,0 +1,82 @@
+<section class="screens{{#if screens.isHeaded}} screens--headed{{/if}}" id="screens" aria-labelledby="screens-title">
+  <div class="screens-copy">
+    {{#if screens.kicker}}
+    <p class="kicker">{{screens.kicker}}</p>
+    {{/if}}
+    <h2 id="screens-title">{{{screens.titleHtml}}}</h2>
+    {{#if screens.lede}}
+    <p class="lede">{{screens.lede}}</p>
+    {{/if}}
+    {{#if screens.image.href}}
+    <a href="{{screens.image.href}}">Open the full-size image</a>
+    {{/if}}
+  </div>
+  {{#if screens.hasCarousel}}
+  <div class="screens-media{{#if screens.hasBar}} has-thumbs{{/if}}">
+    <div class="depth-carousel" data-carousel tabindex="0" role="group" aria-roledescription="carousel" aria-label="{{screens.carouselLabel}}">
+      {{#if screens.glowSrc}}
+      <div class="depth-carousel__glow" aria-hidden="true">
+        <img src="{{screens.glowSrc}}" alt="" decoding="async" draggable="false">
+      </div>
+      {{/if}}
+      <div class="depth-carousel__stage">
+        {{#each screens.images}}
+        <div class="depth-carousel__card chrome-frame" data-index="{{index}}" aria-roledescription="slide" aria-label="{{n}} of {{count}}">
+          <span class="chrome-frame__ring" aria-hidden="true"></span>
+          <div class="chrome-frame__face">
+            <img class="depth-carousel__img" src="{{src}}" alt="{{alt}}"{{#if caption}} data-caption="{{caption}}"{{/if}}{{#if light}} data-light-src="{{light}}"{{/if}} decoding="async" draggable="false">
+            <span class="depth-carousel__tint" aria-hidden="true"></span>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="screens-bar">
+      {{#if screens.hasBar}}
+      <div class="screens-thumbs" data-carousel-thumbs role="group" aria-label="Other stills">
+        {{#each screens.images}}
+        <button type="button" class="screens-thumbs__btn chrome-frame{{#if first}} is-active{{/if}}" data-thumb="{{index}}" aria-label="{{alt}}"{{#if first}} hidden{{/if}}>
+          <span class="chrome-frame__ring" aria-hidden="true"></span>
+          <span class="chrome-frame__face">
+            <img src="{{src}}" alt=""{{#if light}} data-light-src="{{light}}"{{/if}} decoding="async" draggable="false">
+          </span>
+        </button>
+        {{/each}}
+      </div>
+      {{/if}}
+      <p class="screens-caption" data-carousel-caption>{{screens.captionInitial}}</p>
+    </div>
+  </div>
+  {{/if}}
+  {{#if screens.image.src}}
+  {{#if screens.image.href}}
+  <a class="screens-image chrome-frame" href="{{screens.image.href}}" aria-label="{{screens.image.alt}}">
+    <span class="chrome-frame__ring" aria-hidden="true"></span>
+    <span class="chrome-frame__face surface">
+      <img src="{{screens.image.src}}" alt="{{screens.image.alt}}" decoding="async">
+    </span>
+  </a>
+  {{/if}}
+  {{#if screens.image.plain}}
+  <div class="screens-image chrome-frame">
+    <span class="chrome-frame__ring" aria-hidden="true"></span>
+    <span class="chrome-frame__face surface">
+      <img src="{{screens.image.src}}" alt="{{screens.image.alt}}" decoding="async">
+    </span>
+  </div>
+  {{/if}}
+  {{/if}}
+  {{#if screens.source}}
+  <p class="section-source">From <a href="{{screens.source.href}}">{{screens.source.label}}</a></p>
+  {{/if}}
+  {{#if screens.more}}
+  <nav class="screens-index" aria-label="More screens">
+    {{#each screens.more}}
+    <a class="surface" href="{{href}}">
+      <b>{{title}}</b>
+      <span>{{note}}</span>
+    </a>
+    {{/each}}
+  </nav>
+  {{/if}}
+</section>

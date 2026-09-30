@@ -1,0 +1,86 @@
+/* Trust: local vs network, two panes with glyphs and a central divider. */
+
+.trust {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0 24px;
+  min-height: 0;
+}
+
+.trust-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid rgb(201 201 201 / 0.18);
+}
+
+.trust-pane {
+  padding: 18px 24px 4px 0;
+}
+
+.trust-pane + .trust-pane {
+  padding-left: 24px;
+  padding-right: 0;
+  border-left: 1px solid rgb(201 201 201 / 0.16);
+}
+
+.trust-pane h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font: 600 0.78rem / 1.3 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.trust-pane__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgb(201 201 201 / 0.18);
+  border-radius: 50%;
+}
+
+.trust-pane--local .trust-pane__icon {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.trust-pane--network .trust-pane__icon {
+  color: var(--muted);
+}
+
+.trust-pane ul {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: var(--ink);
+}
+
+.trust-pane--local li::marker {
+  color: var(--ink);
+}
+
+.trust-pane li + li {
+  margin-top: 6px;
+}
+
+@media (max-width: 840px) {
+  .trust-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trust-pane + .trust-pane {
+    padding: 16px 0 0;
+    border-left: 0;
+    border-top: 1px solid rgb(201 201 201 / 0.16);
+  }
+}
+
+main > .stack-panel.trust {
+  overflow: auto;
+}

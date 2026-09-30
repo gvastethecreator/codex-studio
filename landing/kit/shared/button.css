@@ -1,0 +1,54 @@
+/* Shared button. */
+
+.button {
+  min-height: var(--hit);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--surface);
+  background-image: var(--noise);
+  background-size: 180px 180px;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 620;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .button {
+    transition:
+      transform var(--duration) var(--ease),
+      box-shadow var(--duration) var(--ease),
+      background-color var(--duration) var(--ease),
+      color var(--duration) var(--ease);
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .button:active {
+    transform: scale(0.96);
+  }
+}
+
+/* tokens.color.actionStyle sets --action-bg/--action-fg (accent-policy.ts); ink on paper otherwise. */
+.button.primary {
+  background-color: var(--action-bg, var(--ink));
+  background-image: none;
+  color: var(--action-fg, var(--paper));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button:hover,
+  .button:active {
+    transform: none;
+  }
+}

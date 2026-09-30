@@ -1,0 +1,324 @@
+/* skill.handoff: hand the project to a coding agent. The prompt to copy sits on the left; on
+   the right, a window where the agent reads the repo guide, runs the setup, waits for the one
+   step that needs the reader, and ends on the picture it made. Without motion every step
+   shows as done; the runtime adds .is-live and plays the run while the panel is up. */
+
+.skill--handoff {
+  padding: clamp(20px, 5vh, 56px) 0;
+}
+
+.handoff {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.handoff__head .lede {
+  --type-measure-max: 30rem;
+}
+
+.handoff__prompt {
+  margin-top: clamp(22px, 4vh, 36px);
+}
+
+.handoff__label {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font: 600 0.72rem / 1.3 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.handoff__prompt-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 14px 14px 18px;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: calc(var(--radius) + 2px);
+  background: var(--surface);
+}
+
+.handoff__prompt-text {
+  flex: 1;
+  padding-top: 5px;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.handoff__copy {
+  flex: none;
+  min-height: 34px;
+  padding-inline: 14px;
+  font-size: 0.82rem;
+}
+
+.handoff__agents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.handoff__agents-label {
+  margin-inline-end: 4px;
+}
+
+.handoff__agent {
+  padding: 6px 11px;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: 999px;
+  color: var(--ink);
+  font: 500 0.8rem / 1 var(--text);
+}
+
+/* The agent's window. */
+.handoff__window {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: calc(var(--radius) + 4px);
+  background: var(--surface);
+  box-shadow: 0 40px 80px -48px rgb(0 0 0 / 0.7);
+}
+
+.handoff__bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 40px;
+  padding-inline: 16px;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 9%, transparent);
+  color: var(--muted);
+  font: 500 0.74rem / 1 var(--mono);
+}
+
+.handoff__dots {
+  flex: none;
+  width: 38px;
+  height: 10px;
+  background:
+    radial-gradient(circle at 5px 5px, color-mix(in srgb, var(--ink) 26%, transparent) 4px, transparent 4.6px),
+    radial-gradient(circle at 19px 5px, color-mix(in srgb, var(--ink) 26%, transparent) 4px, transparent 4.6px),
+    radial-gradient(circle at 33px 5px, color-mix(in srgb, var(--ink) 26%, transparent) 4px, transparent 4.6px);
+}
+
+.handoff__log {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin: 0;
+  padding: 18px 20px 20px;
+  list-style: none;
+}
+
+.handoff__ask {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 6px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+}
+
+.handoff__who {
+  flex: none;
+  margin-top: 2px;
+  padding: 4px 7px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 600 0.66rem / 1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Two lines reserved so typing the prompt does not move the list. */
+.handoff__ask p {
+  min-height: 2.9em;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.handoff__step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  transition: opacity 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.handoff__text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+code.handoff__text {
+  font: 0.84rem / 1.4 var(--mono);
+  color: inherit;
+}
+
+.handoff__step--read .handoff__text,
+.handoff__step--make .handoff__text {
+  color: color-mix(in srgb, var(--ink) 82%, var(--muted));
+}
+
+/* Done: a filled circle with a tick. */
+.handoff__icon {
+  position: relative;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  background: var(--ink);
+  transition: background-color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.handoff__icon::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--surface);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: opacity 0.2s var(--ease);
+}
+
+.handoff__you {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  color: var(--ink);
+  font: 600 0.66rem / 1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* The picture the run made, whole; a click opens it in the viewer. */
+.handoff__result {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+  transition: opacity 0.5s var(--ease), transform 0.6s var(--ease);
+}
+
+.handoff__zoom {
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--radius) - 2px);
+  background: none;
+  cursor: zoom-in;
+}
+
+.handoff__zoom img {
+  display: block;
+  width: auto;
+  height: clamp(150px, 24vh, 230px);
+  max-width: 100%;
+  border-radius: inherit;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.handoff__zoom:hover img,
+.handoff__zoom:focus-visible img {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px -18px rgb(0 0 0 / 0.7);
+}
+
+.handoff__file {
+  min-width: 0;
+  padding-bottom: 4px;
+  color: var(--muted);
+  font: 0.76rem / 1.5 var(--mono);
+  overflow-wrap: anywhere;
+}
+
+.handoff__saved {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+  font: 600 0.66rem / 1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Live run: steps wait dimmed, the current one spins, the reader's step pulses. */
+.handoff__window.is-live .handoff__step:not(.is-running, .is-done) {
+  opacity: 0.34;
+}
+
+.handoff__window.is-live .handoff__step:not(.is-done) .handoff__icon {
+  border-color: color-mix(in srgb, var(--ink) 34%, transparent);
+  background: transparent;
+}
+
+.handoff__window.is-live .handoff__step:not(.is-done) .handoff__icon::after {
+  opacity: 0;
+}
+
+.handoff__window.is-live .handoff__step.is-running .handoff__icon {
+  border-color: color-mix(in srgb, var(--ink) 18%, transparent);
+  border-top-color: var(--ink);
+  animation: handoff-spin 0.8s linear infinite;
+}
+
+.handoff__window.is-live .handoff__step--you.is-running .handoff__icon {
+  border-color: var(--accent);
+  animation: handoff-wait 1.1s var(--ease) infinite;
+}
+
+.handoff__window.is-live .handoff__result:not(.is-done) {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+}
+
+@keyframes handoff-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes handoff-wait {
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+}
+
+@media (max-width: 840px) {
+  .handoff {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .handoff__prompt-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .handoff__window.is-live .handoff__step.is-running .handoff__icon {
+    animation: none;
+  }
+}

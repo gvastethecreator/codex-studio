@@ -1,0 +1,47 @@
+<section class="faq" id="faq" {{#if faq.title}}aria-labelledby="faq-title"{{/if}}{{#if faq.ariaLabel}} aria-label="{{faq.ariaLabel}}"{{/if}}>
+  {{#if faq.title}}
+  <header class="section-head">
+    {{#if faq.kicker}}
+    <p class="kicker">{{faq.kicker}}</p>
+    {{/if}}
+    <h2 id="faq-title">{{{faq.titleHtml}}}</h2>
+    {{#if faq.lede}}
+    <p class="lede">{{faq.lede}}</p>
+    {{/if}}
+  </header>
+  {{/if}}
+  <div class="faq-list" data-faq data-faq-exclusive="{{faq.exclusiveAttr}}">
+    {{#each faq.items}}
+    <details
+      class="faq-item{{#if open}} is-open{{/if}}"
+      id="faq-{{slug}}"
+      data-faq-item
+      data-faq-slug="{{slug}}"
+      {{#if faq.exclusive}}name="faq"{{/if}}
+      {{#if open}}open{{/if}}
+    >
+      <summary class="faq-item__q" aria-expanded="{{expanded}}" aria-controls="{{panelId}}">
+        <span class="faq-item__n" aria-hidden="true">{{n}}</span>
+        <span class="faq-item__ask" id="{{headingId}}">{{question}}</span>
+        <span class="faq-item__mark" aria-hidden="true">
+          <svg class="faq-item__plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          <svg class="faq-item__minus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+        </span>
+      </summary>
+      <div class="faq-item__body" id="{{panelId}}" role="region" aria-labelledby="{{headingId}}">
+        <div class="faq-item__inner">
+          <div class="faq-item__answer">
+            <p>{{answer}}</p>
+          </div>
+        </div>
+      </div>
+    </details>
+    {{/each}}
+  </div>
+  {{#if faq.source}}
+  <p class="section-source">From <a href="{{faq.source.href}}">{{faq.source.label}}</a></p>
+  {{/if}}
+  {{#if faq.jsonLd}}
+  <script type="application/ld+json">{{{faq.jsonLd}}}</script>
+  {{/if}}
+</section>

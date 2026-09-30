@@ -1,0 +1,32 @@
+<section class="links" id="links" aria-labelledby="links-title">
+  <header class="section-head">
+    {{#if links.kicker}}
+    <p class="kicker">{{links.kicker}}</p>
+    {{/if}}
+    <h2 id="links-title">{{{links.titleHtml}}}</h2>
+    {{#if links.lede}}
+    <p class="lede">{{links.lede}}</p>
+    {{/if}}
+  </header>
+  <ul class="links-dir">
+    {{#each links.items}}
+    <li>
+      <a href="{{href}}">
+        <span class="links-dir__mark" aria-hidden="true">
+          {{#if faviconSrc}}
+          <img class="links-dir__favicon" src="{{faviconSrc}}" alt="" width="18" height="18" onerror="this.hidden=true;this.nextElementSibling.classList.remove('is-fallback')">
+          {{/if}}
+          <span class="links-dir__tabler{{#if faviconSrc}} is-fallback{{/if}}">{{{tablerSvg}}}</span>
+        </span>
+        <strong>{{label}}</strong>
+        {{#if note}}
+        <span>{{note}}</span>
+        {{/if}}
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+  {{#if links.source}}
+  <p class="section-source">From <a href="{{links.source.href}}">{{links.source.label}}</a></p>
+  {{/if}}
+</section>

@@ -1,0 +1,11 @@
+id: github-user
+label: Profile
+mapsFromPresets: [profile]
+defaultComposition: identity
+compositions:
+  identity:
+    v1SectionIds: [profile, links, closing]
+    semanticPlan:
+      - { id: profile, variant: standard }
+      - { id: links }
+      - { id: closing }

@@ -1,0 +1,319 @@
+/* Shared depth carousel: 3D coverflow driven by app.js.
+   Used by hero.gallery and screens.images. */
+
+.depth-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  perspective: var(--dc-perspective, 1400px);
+  perspective-origin: 50% 50%;
+  touch-action: pan-y;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+.depth-carousel:active {
+  cursor: grabbing;
+}
+
+.depth-carousel:focus-visible {
+  outline: 2px solid rgb(255 255 255 / 0.12);
+  outline-offset: -2px;
+  border-radius: 12px;
+}
+
+.depth-carousel__stage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: visible;
+  transform-style: preserve-3d;
+}
+
+.depth-carousel__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  transform-origin: center center;
+  overflow: hidden;
+  background: #0b0d12;
+  box-shadow:
+    0 30px 60px -20px rgba(0, 0, 0, 0.65),
+    0 8px 20px -10px rgba(0, 0, 0, 0.5);
+  will-change: transform, opacity;
+  cursor: zoom-in;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.depth-carousel__card .chrome-frame__face {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0b0d12;
+}
+
+.depth-carousel__glow {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  width: var(--dc-glow-w, 170%);
+  height: var(--dc-glow-h, 220%);
+  max-width: none;
+  max-height: none;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  isolation: isolate;
+  opacity: 0.9;
+  mask-image:
+    radial-gradient(
+      ellipse 78% 72% at 50% 62%,
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.7) 30%,
+      rgb(0 0 0 / 0.28) 52%,
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgb(0 0 0 / 0.12) 8%,
+      rgb(0 0 0 / 0.55) 20%,
+      #000 34%,
+      #000 100%
+    );
+  mask-composite: intersect;
+  -webkit-mask-image:
+    radial-gradient(
+      ellipse 78% 72% at 50% 62%,
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.7) 30%,
+      rgb(0 0 0 / 0.28) 52%,
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgb(0 0 0 / 0.12) 8%,
+      rgb(0 0 0 / 0.55) 20%,
+      #000 34%,
+      #000 100%
+    );
+  -webkit-mask-composite: source-in;
+}
+
+html[data-accent-tinted] .depth-carousel__glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: var(--accent-6, var(--accent));
+  opacity: 0.25;
+  mix-blend-mode: color;
+}
+
+.depth-carousel__glow img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  transform-origin: center center;
+  filter: blur(48px) saturate(2.2) brightness(1.65) opacity(0.78);
+}
+
+.depth-carousel__glow::after {
+  content: "";
+  position: absolute;
+  inset: -12%;
+  z-index: 3;
+  pointer-events: none;
+  background-image: var(--noise);
+  background-size: 120px 120px;
+  background-repeat: repeat;
+  opacity: 1;
+  mix-blend-mode: overlay;
+  filter: contrast(14) brightness(1.35);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .depth-carousel__glow::after {
+    animation: veil-grain 1.6s steps(4) infinite;
+  }
+}
+
+.depth-carousel__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.depth-carousel__tint {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.depth-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3000;
+  width: 36px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: none;
+  color: rgb(255 255 255 / 0.55);
+  cursor: pointer;
+  padding: 0;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.depth-carousel__arrow:hover {
+  color: #fff;
+}
+
+.depth-carousel__arrow--prev {
+  left: calc(50% - var(--dc-arrow-offset, 230px));
+}
+
+.depth-carousel__arrow--prev:hover {
+  transform: translateY(-50%) translateX(-3px);
+}
+
+.depth-carousel__arrow--next {
+  right: calc(50% - var(--dc-arrow-offset, 230px));
+}
+
+.depth-carousel__arrow--next:hover {
+  transform: translateY(-50%) translateX(3px);
+}
+
+.depth-carousel__arrow:focus-visible {
+  outline-color: rgb(255 255 255 / 0.12);
+  border-radius: 8px;
+}
+
+.depth-carousel__dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(14, 16, 22, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.depth-carousel__dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.32);
+  cursor: pointer;
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.depth-carousel__dot.is-active {
+  width: 20px;
+  background: #fff;
+}
+
+/* Kit integration: carousel cells get an explicit height inside the page grid. */
+
+.screens-media .depth-carousel,
+.hero .depth-carousel {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+}
+
+.screens-media:has(.screens-bar) .depth-carousel,
+.hero .screens-media:has(.screens-bar) .depth-carousel {
+  height: 100%;
+  min-height: 180px;
+  max-height: 100%;
+}
+
+.screens-media .depth-carousel__stage {
+  overflow: visible;
+}
+
+@media (max-width: 840px) {
+  .screens:has(.screens-media) {
+    min-height: 70svh;
+  }
+
+  .screens-media,
+  .screens .depth-carousel,
+  .hero .screens-media,
+  .hero .depth-carousel {
+    min-height: 220px;
+  }
+
+  .screens-media .depth-carousel,
+  .hero .screens-media .depth-carousel {
+    height: min(70svh, max(220px, 52vw));
+    max-height: 70svh;
+  }
+}
+
+/* Progressive enhancement: without JS only the first card is visible. */
+
+.depth-carousel:not(.is-ready) .depth-carousel__card {
+  display: none;
+}
+
+.depth-carousel:not(.is-ready) .depth-carousel__card:first-child {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .depth-carousel__card {
+    will-change: auto;
+  }
+  .depth-carousel__arrow,
+  .depth-carousel__dot {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce), (forced-colors: active) {
+  .depth-carousel__glow {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+schema: gvaste-pages/template/v1
+name: Profile Heatmap
+extends: default
+
+tokens:
+  color:
+    paper: "#0d1117"
+    surface: "#161b22"
+    ink: "#e6edf3"
+    muted: "#8b949e"
+    accent: "#3fb950"
+  typography:
+    display: Geist Mono
+    text: Arimo
+    mono: Geist Mono
+  layout:
+    maxWidth: 1280
+  shape:
+    radius: 6
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#f6f8fa"
+        surface: "#eaeef2"
+        ink: "#1f2328"
+        muted: "#656d76"
+        accent: "#1a7f37"
+
+chrome:
+  shade:
+    variant: flow
+
+sections:
+  profile:
+    variant: heatmap

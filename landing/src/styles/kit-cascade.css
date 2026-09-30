@@ -1,0 +1,44 @@
+/* Single entry point for the kit design system.
+   Order: tokens -> base -> chrome -> shared -> sections (registry order) -> effects. */
+@import "../../kit/tokens.css";
+@import "../../kit/palette.css";
+@import "../../kit/base.css";
+@import "../../kit/chrome/chrome.css";
+@import "../../kit/shared/typography.css";
+@import "../../kit/shared/surface.css";
+@import "../../kit/shared/button.css";
+@import "../../kit/shared/command-slab.css";
+@import "../../kit/shared/depth-carousel.css";
+@import "../../kit/shared/workbench.css";
+@import "../../kit/sections/hero.css";
+@import "../../kit/sections/about.css";
+@import "../../kit/sections/about-semantic.css";
+@import "../../kit/sections/github.css";
+@import "../../kit/sections/screens.css";
+@import "../../kit/sections/demo.css";
+@import "../../kit/sections/docs.css";
+@import "../../kit/sections/download.css";
+@import "../../kit/sections/commands.css";
+@import "../../kit/sections/matrix.css";
+@import "../../kit/sections/faq.css";
+@import "../../kit/sections/trust.css";
+@import "../../kit/sections/skill.css";
+@import "../../kit/sections/skill-handoff.css";
+@import "../../kit/sections/links.css";
+@import "../../kit/sections/closing.css";
+/* Semantic v2 prototypes are additive and remain outside the v1 section enum. */
+@import "../../kit/sections/preview.css";
+@import "../../kit/sections/showcase.css";
+@import "../../kit/sections/playground.css";
+@import "../../kit/sections/terminal.css";
+@import "../../kit/sections/code.css";
+@import "../../kit/sections/comparison.css";
+@import "../../kit/sections/setup.css";
+@import "../../kit/sections/profile.css";
+@import "../../kit/sections/profile-standard.css";
+@import "../../kit/sections/profile-folio.css";
+@import "../../kit/sections/profile-observatory.css";
+@import "../../kit/sections/profile-heatmap.css";
+@import "../../kit/sections/profile-orbit.css";
+@import "../../kit/sections/profile-projects.css";
+@import "../../kit/effects.css";

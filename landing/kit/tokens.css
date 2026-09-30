@@ -1,0 +1,109 @@
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #000000;
+  --surface: #111111;
+  --ink: #c9c9c9;
+  --muted: #8a8a8a;
+  --accent: #c9c9c9;
+  --focus: color-mix(in srgb, var(--ink) 12%, transparent);
+  --max: 1080px;
+  --display: "Arimo", "Segoe UI Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text: "Arimo", "Segoe UI Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+  --radius: 12px;
+  --header: 48px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --chrome-top: calc(var(--header) + var(--safe-top));
+  --hit: 48px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --duration: 180ms;
+  --duration-view: 280ms;
+  --shadow: 0 1px 1px rgb(0 0 0 / 0.45), 0 2px 8px rgb(0 0 0 / 0.28);
+  --shadow-hover: 0 1px 2px rgb(0 0 0 / 0.5), 0 6px 14px rgb(0 0 0 / 0.32);
+  --noise: url("noise.svg");
+  --column-bg: color-mix(in srgb, var(--paper) 90%, transparent);
+  --column-border: rgb(128 128 128 / 0.05);
+  --column-border-width: 2px;
+  --panel-inline: clamp(16px, 3vw, 28px);
+  --column-pad: calc(clamp(20px, 4vw, 48px) - var(--panel-inline));
+  --head-bg: color-mix(in srgb, var(--paper) 55%, transparent);
+  --head-shadow: 0 1px 1px rgb(0 0 0 / 0.35);
+  --pill-fill: #111111;
+  --pill-ring-bright: #ffffff;
+  --pill-ring-idle: rgb(255 255 255 / 0.36);
+  --pill-ring-hi: #c4c4c4;
+  --pill-ring-mid: #7a7a7a;
+  --pill-ring-lo: #2a2a2a;
+  --pill-ring-dim: #101010;
+  --pill-ring-hi-idle: rgb(255 255 255 / 0.18);
+  --pill-ring-mid-idle: rgb(255 255 255 / 0.1);
+  --pill-ring-lo-idle: rgb(255 255 255 / 0.05);
+  --pill-ring-dim-idle: rgb(255 255 255 / 0.02);
+  --pill-shimmer: rgb(255 255 255 / 0.16);
+  --pill-face-shine: rgb(255 255 255 / 0.14);
+  --pill-face-shade: rgb(0 0 0 / 0.28);
+  --chrome-hover-ring: rgb(255 255 255 / 0.5);
+  --chrome-hover-hi: rgb(255 255 255 / 0.26);
+  --chrome-hover-mid: rgb(255 255 255 / 0.14);
+  --chrome-hover-lo: rgb(255 255 255 / 0.07);
+  --chrome-hover-dim: rgb(255 255 255 / 0.03);
+  --split-fill: #161616;
+  --split-line: rgb(201 201 201 / 0.14);
+  --split-hover: #222222;
+  --stack-shadow: 0 -2px 8px rgb(0 0 0 / 0.22);
+  --stack-dim: rgb(0 0 0 / 0.72);
+  --mesh:
+    radial-gradient(ellipse 74% 58% at 10% 14%, #0a0a0a 0%, transparent 64%),
+    radial-gradient(ellipse 60% 74% at 92% 86%, #080808 0%, transparent 60%),
+    radial-gradient(ellipse 44% 38% at 68% 30%, #060606 0%, transparent 54%),
+    radial-gradient(ellipse 50% 42% at 24% 82%, #050505 0%, transparent 56%),
+    radial-gradient(ellipse 34% 30% at 50% 48%, #070707 0%, transparent 52%);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --paper: #eee8dc;
+  --surface: #e7e1d4;
+  --ink: #2a2a2a;
+  --muted: #6a6a6a;
+  --column-bg: color-mix(in srgb, var(--paper) 90%, transparent);
+  --column-border: rgb(42 42 42 / 0.05);
+  --head-bg: color-mix(in srgb, var(--paper) 60%, transparent);
+  --head-shadow: 0 1px 1px rgb(42 42 42 / 0.12);
+  --pill-fill: #e7e1d4;
+  --pill-ring-bright: #ffffff;
+  --pill-ring-idle: rgb(42 42 42 / 0.26);
+  --pill-ring-hi: #d2ccc0;
+  --pill-ring-mid: #8f897c;
+  --pill-ring-lo: #3a372f;
+  --pill-ring-dim: #1a1814;
+  --pill-ring-hi-idle: rgb(42 42 42 / 0.16);
+  --pill-ring-mid-idle: rgb(42 42 42 / 0.1);
+  --pill-ring-lo-idle: rgb(42 42 42 / 0.05);
+  --pill-ring-dim-idle: rgb(42 42 42 / 0.02);
+  --pill-shimmer: rgb(255 255 255 / 0.4);
+  --pill-face-shine: rgb(255 255 255 / 0.42);
+  --pill-face-shade: rgb(42 42 42 / 0.12);
+  --chrome-hover-ring: rgb(42 42 42 / 0.38);
+  --chrome-hover-hi: rgb(42 42 42 / 0.22);
+  --chrome-hover-mid: rgb(42 42 42 / 0.12);
+  --chrome-hover-lo: rgb(42 42 42 / 0.06);
+  --chrome-hover-dim: rgb(42 42 42 / 0.03);
+  --split-fill: #ddd6c7;
+  --split-line: rgb(42 42 42 / 0.12);
+  --split-hover: #d0c8b6;
+  --shadow: 0 1px 1px rgb(0 0 0 / 0.08), 0 2px 8px rgb(0 0 0 / 0.06);
+  --shadow-hover: 0 1px 2px rgb(0 0 0 / 0.1), 0 6px 14px rgb(0 0 0 / 0.08);
+  --stack-shadow: 0 -2px 8px rgb(42 42 42 / 0.06);
+  --stack-dim: rgb(42 42 42 / 0.16);
+  --mesh:
+    radial-gradient(ellipse 78% 62% at 10% 14%, #e0d8c8 0%, transparent 62%),
+    radial-gradient(ellipse 64% 78% at 92% 86%, #e4dccb 0%, transparent 58%),
+    radial-gradient(ellipse 46% 40% at 68% 30%, #e8e0d0 0%, transparent 52%),
+    radial-gradient(ellipse 52% 44% at 24% 82%, #ddd4c2 0%, transparent 54%),
+    radial-gradient(ellipse 36% 32% at 50% 48%, #e6dece 0%, transparent 50%);
+}

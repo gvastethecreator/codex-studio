@@ -1,0 +1,13 @@
+id: monitoring-dashboard
+label: Monitoring
+defaultComposition: coverage
+compositions:
+  coverage:
+    semanticPlan:
+      - { id: hero, variant: product }
+      - { id: preview, variant: window }
+      - { id: matrix, variant: coverage }
+      - { id: trust, variant: data-integrity }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

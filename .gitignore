@@ -137,3 +137,13 @@ Desktop.ini
 # Local reference material, never versioned (pack_25 source sheets, UI design handoff)
 /Codex_Studio_Fichas_Completas_*/
 /cozy-studio-handoff/
+
+# Landing page engine output and caches (landing/ is built by the Pages workflow).
+landing/node_modules/
+landing/dist/
+landing/dist-local/
+landing/dist-astro/
+landing/.astro/
+landing/.cache/
+landing/public/
+landing/src/studio/generated/

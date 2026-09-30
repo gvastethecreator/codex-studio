@@ -1,0 +1,36 @@
+<section class="commands{{#if commands.hasKeyboard}} has-keyboard{{/if}}{{#if commands.keyboardClass}} {{commands.keyboardClass}}{{/if}}" id="commands" aria-labelledby="commands-title">
+  <header class="section-head">
+    {{#if commands.kicker}}
+    <p class="kicker">{{commands.kicker}}</p>
+    {{/if}}
+    <h2 id="commands-title">{{{commands.titleHtml}}}</h2>
+    {{#if commands.lede}}
+    <p class="lede">{{commands.lede}}</p>
+    {{/if}}
+  </header>
+  {{#if commands.keyboardHtml}}
+  {{{commands.keyboardHtml}}}
+  {{/if}}
+  <div class="commands-list">
+    <table class="key-table">
+      <caption class="visually-hidden">Commands and shortcuts</caption>
+      <thead>
+        <tr>
+          <th scope="col">Input</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each commands.items}}
+        <tr{{#if keysAttr}} data-keys="{{keysAttr}}"{{/if}}>
+          <th scope="row"><span class="keycaps">{{{keysHtml}}}</span></th>
+          <td>{{action}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{#if commands.source}}
+  <p class="section-source">From <a href="{{commands.source.href}}">{{commands.source.label}}</a></p>
+  {{/if}}
+</section>

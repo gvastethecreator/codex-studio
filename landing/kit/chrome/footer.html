@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <a class="made-by" href="{{madeBy.url}}">
+    <span class="made-by__ring" aria-hidden="true"></span>
+    <span class="made-by__face">
+      <img class="made-by__avatar" src="{{madeBy.avatar}}" alt="" width="32" height="32" loading="lazy" decoding="async">
+      made by<em class="made-by__name">{{madeBy.name}}</em>
+    </span>
+  </a>
+  {{#if project.sponsor}}
+  <a class="footer-sponsor" href="{{project.sponsor}}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"/>
+    </svg>
+    support this project
+  </a>
+  {{/if}}
+</footer>

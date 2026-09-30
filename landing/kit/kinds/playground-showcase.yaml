@@ -1,0 +1,14 @@
+id: playground-showcase
+label: Playground
+mapsFromPresets: [playground]
+defaultComposition: live
+compositions:
+  live:
+    v1SectionIds: [hero, demo, docs, links, closing]
+    semanticPlan:
+      - { id: hero, variant: showcase }
+      - { id: playground, variant: scenario }
+      - { id: about, variant: compact-cards }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

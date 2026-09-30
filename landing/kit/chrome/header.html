@@ -1,0 +1,97 @@
+<header class="site-head">
+  <div class="site-header">
+    <div class="site-leading">
+      {{#if brand.hasAccentCycle}}
+      <div class="brand brand--cycle">
+        <button class="brand-cycle" type="button" data-accent-cycle aria-label="Change accent colour" title="Change accent colour">
+          <span class="brand-cycle__mark">
+            {{#if brand.tablerSvg}}
+            <span class="brand-mark brand-mark--tabler" aria-hidden="true">{{{brand.tablerSvg}}}</span>
+            {{/if}}
+            {{#if brand.hasMark}}
+            <span class="brand-mark" aria-hidden="true">{{brand.initials}}</span>
+            {{/if}}
+            {{#if brand.showIcon}}
+            <img class="brand-mark" src="{{brand.icon}}" alt="" width="26" height="26">
+            {{/if}}
+            {{#if brand.hasMascot}}
+            <span class="brand-mark brand-mark--mascot" data-mascot="mini" aria-hidden="true">{{{brand.mascotSvg}}}</span>
+            {{/if}}
+          </span>
+        </button>
+        <a class="brand-name" href="#main">{{project.name}}</a>
+      </div>
+      {{else}}
+      <a class="brand" href="#main">
+        {{#if brand.tablerSvg}}
+        <span class="brand-mark brand-mark--tabler" aria-hidden="true">{{{brand.tablerSvg}}}</span>
+        {{/if}}
+        {{#if brand.hasMark}}
+        <span class="brand-mark" aria-hidden="true">{{brand.initials}}</span>
+        {{/if}}
+        {{#if brand.showIcon}}
+        <img class="brand-mark" src="{{brand.icon}}" alt="" width="26" height="26">
+        {{/if}}
+        {{#if brand.hasMascot}}
+        <span class="brand-mark brand-mark--mascot" data-mascot="mini" aria-hidden="true">{{{brand.mascotSvg}}}</span>
+        {{/if}}
+        {{project.name}}
+      </a>
+      {{/if}}
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        {{#each nav}}
+        <a href="{{href}}"{{#if anchor}} data-nav-anchor{{/if}}>{{label}}</a>
+        {{/each}}
+        {{#if header.links}}
+        {{#each header.links}}
+        <a class="header-link-nav" href="{{href}}">{{label}}</a>
+        {{/each}}
+        {{/if}}
+      </nav>
+    </div>
+    <div class="site-tools">
+      {{#if header.links}}
+      <nav class="header-links" aria-label="Kit">
+        {{#each header.links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/each}}
+      </nav>
+      {{/if}}
+      <button type="button" class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__icon nav-toggle__open" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16"/>
+            <path d="M4 12h16"/>
+            <path d="M4 18h16"/>
+          </svg>
+        </span>
+        <span class="nav-toggle__icon nav-toggle__close" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6l-12 12"/>
+            <path d="M6 6l12 12"/>
+          </svg>
+        </span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <a class="button primary repo-btn" href="{{project.repo}}">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+        </svg>
+        <span class="repo-btn__label">repository</span>
+      </a>
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Use light theme">
+        <span class="theme-toggle__icon theme-toggle__sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/>
+            <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/>
+          </svg>
+        </span>
+        <span class="theme-toggle__icon theme-toggle__moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>

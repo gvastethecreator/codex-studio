@@ -1,0 +1,52 @@
+<section class="playground playground--{{playground.variant}}" id="playground" aria-labelledby="playground-title">
+  <header class="section-head playground__head">
+    {{#if playground.kicker}}
+    <p class="kicker">{{playground.kicker}}</p>
+    {{/if}}
+    <h2 id="playground-title">{{{playground.titleHtml}}}</h2>
+    {{#if playground.lede}}
+    <p class="lede">{{playground.lede}}</p>
+    {{/if}}
+  </header>
+
+  {{#if playground.isScenario}}
+  <div class="workbench playground-workbench" data-proof-tabs>
+    <header class="workbench-bar">
+      <div class="workbench-tabs" role="tablist" aria-label="Scenarios">
+        {{#each playground.scenarios}}
+        <button
+          class="workbench-tab{{#if first}} is-on{{/if}}"
+          type="button"
+          role="tab"
+          id="{{tabId}}"
+          aria-selected="{{selected}}"
+          aria-controls="{{panelId}}"
+          tabindex="{{tabIndex}}"
+        >{{title}}</button>
+        {{/each}}
+      </div>
+    </header>
+    <div class="workbench-stage">
+      {{#each playground.scenarios}}
+      <article class="playground-panel" role="tabpanel" id="{{panelId}}" aria-labelledby="{{tabId}}"{{#if hidden}} hidden{{/if}}>
+        <figure class="playground-panel__proof chrome-frame">
+          <span class="chrome-frame__ring" aria-hidden="true"></span>
+          <span class="chrome-frame__face surface">
+            <img src="{{image.src}}" alt="{{image.alt}}" decoding="async">
+          </span>
+        </figure>
+        <div class="playground-panel__caption">
+          <p>{{body}}</p>
+          {{#if note}}<small>{{note}}</small>{{/if}}
+          {{#if image.caption}}<span>{{image.caption}}</span>{{/if}}
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if playground.source}}
+  <p class="section-source">From <a href="{{playground.source.href}}">{{playground.source.label}}</a></p>
+  {{/if}}
+</section>

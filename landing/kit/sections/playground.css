@@ -1,0 +1,79 @@
+/* Playground scenario: kit-native curated interaction without repository code execution. */
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: 0;
+  padding: 30px 0 28px;
+}
+
+.playground__head {
+  max-width: 58rem;
+}
+
+.playground-workbench {
+  min-height: 22rem;
+}
+
+.playground-panel {
+  display: grid;
+  grid-template-rows: minmax(12rem, 1fr) auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+.playground-panel__proof {
+  display: block;
+  min-width: 0;
+  margin: 12px;
+  padding: 2px;
+}
+
+.playground-panel__proof .chrome-frame__face {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-height: 12rem;
+}
+
+.playground-panel__proof img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background: var(--surface);
+}
+
+.playground-panel__caption {
+  padding: 12px 14px 14px;
+  border-top: 2px solid var(--workbench-seam, rgb(201 201 201 / 0.1));
+  color: var(--muted);
+  font: 0.88rem / 1.5 var(--text);
+}
+
+.playground-panel__caption p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.playground-panel__caption small,
+.playground-panel__caption span {
+  display: block;
+  margin-top: 8px;
+  font: 0.78rem / 1.45 var(--text);
+}
+
+@media (max-width: 760px) {
+  .playground {
+    padding: 26px 0 34px;
+  }
+
+  .playground-workbench {
+    min-height: 0;
+  }
+
+  .playground-panel__proof {
+    margin: 10px;
+  }
+}

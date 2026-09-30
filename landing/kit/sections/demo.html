@@ -1,0 +1,157 @@
+<section class="demo" id="demo" data-demo aria-labelledby="demo-title">
+  <h2 id="demo-title" class="visually-hidden">{{demo.accessibleTitle}}</h2>
+  <div class="demo-workbench" data-mode="preview">
+    <header class="demo-bar">
+      <div class="demo-modes" role="radiogroup" aria-label="Workbench layout">
+        <span class="demo-modes__shade" aria-hidden="true"></span>
+        <button type="button" class="demo-mode" data-demo-mode="split" aria-checked="false" role="radio">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z"/><path d="M12 4v16"/></svg>
+          <span class="visually-hidden">Split</span>
+        </button>
+        <button type="button" class="demo-mode is-active" data-demo-mode="preview" aria-checked="true" role="radio">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5z"/><path d="M7 20h10"/><path d="M9 16v4"/><path d="M15 16v4"/></svg>
+          <span class="visually-hidden">Preview</span>
+        </button>
+        <button type="button" class="demo-mode" data-demo-mode="source" aria-checked="false" role="radio">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8l-4 4l4 4"/><path d="M17 8l4 4l-4 4"/><path d="M14 4l-4 16"/></svg>
+          <span class="visually-hidden">Source</span>
+        </button>
+        <button type="button" class="demo-mode" data-demo-mode="prompt" aria-checked="false" role="radio">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9l3 3l-3 3"/><path d="M13 15h3"/><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7l-4 4V6z"/></svg>
+          <span class="visually-hidden">Prompt</span>
+        </button>
+        <button type="button" class="demo-mode" data-demo-mode="compare" aria-checked="false" role="radio">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6a1 1 0 0 1 1-1h5v14H5a1 1 0 0 1-1-1V6z"/><path d="M14 5h5a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-5V5z"/><path d="M12 3v18"/></svg>
+          <span class="visually-hidden">Compare</span>
+        </button>
+        <button type="button" class="demo-mode" data-demo-mode="playground" aria-checked="false" role="radio">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M6 4v4"/><path d="M6 12v8"/><path d="M10 16a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M12 4v10"/><path d="M12 18v2"/><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M18 4v1"/><path d="M18 9v11"/></svg>
+          <span class="visually-hidden">Playground</span>
+        </button>
+      </div>
+      <div class="demo-samples{{#if demo.hasManyViews}} has-tabs{{/if}}" role="radiogroup" aria-label="Samples">
+        {{#each demo.views}}
+        <input type="radio" name="demo-view" id="demo-view-{{index}}" {{#if first}}checked{{/if}}>
+        {{/each}}
+        {{#if demo.hasManyViews}}
+        {{#each demo.views}}
+        <label for="demo-view-{{index}}">{{label}}</label>
+        {{/each}}
+        {{/if}}
+      </div>
+      <p class="demo-bar__file" data-demo-file>{{demo.firstFile}}</p>
+      <button class="demo-copy" type="button" data-copy="{{demo.firstCode}}" aria-label="Copy source">
+        <span class="demo-copy__stack" aria-hidden="true">
+          <svg class="demo-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+          <svg class="demo-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+        </span>
+      </button>
+    </header>
+    <div class="demo-stage">
+      {{#each demo.views}}
+      <article class="demo-panel{{#if hasSource}} has-source{{/if}}{{#if hasPreview}} has-preview{{/if}}{{#if live}} is-live{{/if}}{{#if first}} is-active{{/if}}" data-view="{{index}}" data-lang="{{lang}}" data-preview-kind="{{previewKind}}" data-file="{{file}}" aria-labelledby="demo-panel-{{index}}">
+        <h3 id="demo-panel-{{index}}" class="visually-hidden">{{title}}</h3>
+        {{#if css}}
+        <script type="text/plain" hidden data-demo-css>{{css}}</script>
+        {{/if}}
+        {{#if preview}}
+        <script type="text/plain" hidden data-demo-preview>{{preview}}</script>
+        {{/if}}
+        <textarea hidden data-demo-prompt>{{promptText}}</textarea>
+        <div class="demo-panes" style="--compare: 42%">
+          {{#if hasPreview}}
+          <div class="demo-preview" role="region" aria-label="Preview of {{label}}">
+            <div class="demo-preview__stage" data-kind="{{previewKind}}" data-device="desktop" data-demo-scroll>
+              {{#if isImage}}
+              <img src="{{imageSrc}}" alt="{{imageAlt}}">
+              {{/if}}
+              {{#if live}}
+              <iframe class="demo-preview__frame" sandbox="allow-scripts allow-same-origin" srcdoc="{{previewSrcdoc}}" title="Live preview of {{label}}" tabindex="-1" loading="lazy" referrerpolicy="no-referrer"></iframe>
+              <div class="demo-preview__origin" hidden>
+                <iframe sandbox="allow-scripts allow-same-origin" srcdoc="{{previewSrcdoc}}" title="Original preview of {{label}}" tabindex="-1" loading="lazy" referrerpolicy="no-referrer"></iframe>
+              </div>
+              <span class="demo-compare__tag demo-compare__tag--a" aria-hidden="true">Original</span>
+              <span class="demo-compare__tag demo-compare__tag--b" aria-hidden="true">Live</span>
+              {{/if}}
+              {{#if isReading}}
+              <div class="demo-reading">
+                <p class="demo-reading__title">{{title}}</p>
+                {{#if body}}
+                <p>{{body}}</p>
+                {{/if}}
+              </div>
+              {{/if}}
+            </div>
+          </div>
+          {{/if}}
+          {{#if hasSource}}
+          <div class="demo-source" role="region" aria-label="Source for {{label}}">
+            <div class="demo-scroll-shell">
+              <div class="demo-editor{{#if live}} is-live{{/if}}">
+                <pre class="demo-code" data-demo-scroll {{#if live}}aria-hidden="true"{{else}}tabindex="0"{{/if}}><code>{{{codeHighlighted}}}</code></pre>
+                {{#if live}}
+                <textarea class="demo-input" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off" wrap="off" aria-label="Source for {{label}}">{{code}}</textarea>
+                {{/if}}
+              </div>
+              <div class="demo-scroll demo-scroll--y" data-demo-rail aria-hidden="true"><i class="demo-scroll__thumb"></i></div>
+              <div class="demo-scroll demo-scroll--x" data-demo-rail-x aria-hidden="true"><i class="demo-scroll__thumb"></i></div>
+            </div>
+          </div>
+          {{/if}}
+          <aside class="demo-aside">
+            <div class="demo-prompt" role="region" aria-label="Prompt for {{label}}">
+              <div class="demo-scroll-shell">
+                <div class="demo-prompt__body" data-demo-scroll>
+                  <div class="demo-prompt__sheet">
+                    {{#if promptLeadHtml}}
+                    <div class="demo-prompt__lead">{{{promptLeadHtml}}}</div>
+                    {{/if}}
+                    {{#if hasSource}}
+                    <figure class="demo-prompt__fence">
+                      <figcaption>{{langLabel}}</figcaption>
+                      <pre class="demo-prompt__code"><code>{{{codeHighlighted}}}</code></pre>
+                    </figure>
+                    {{/if}}
+                  </div>
+                </div>
+                <div class="demo-scroll demo-scroll--y" data-demo-rail aria-hidden="true"><i class="demo-scroll__thumb"></i></div>
+              </div>
+            </div>
+            {{#if live}}
+            <div class="demo-play" role="region" aria-label="Playground controls">
+              <div class="demo-scroll-shell">
+                <div class="demo-play__body" data-demo-scroll>
+                  <div class="demo-play__group">
+                    <p class="demo-play__label">Device</p>
+                    <div class="demo-play__devices" role="radiogroup" aria-label="Preview width">
+                      <button type="button" class="demo-device" data-device="mobile" aria-pressed="false" aria-label="Mobile">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5z"/><path d="M11 4h2"/><path d="M12 17v.01"/></svg>
+                      </button>
+                      <button type="button" class="demo-device" data-device="tablet" aria-pressed="false" aria-label="Tablet">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4z"/><path d="M11 17a1 1 0 1 0 2 0a1 1 0 0 0-2 0"/></svg>
+                      </button>
+                      <button type="button" class="demo-device is-active" data-device="desktop" aria-pressed="true" aria-label="Desktop">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5z"/><path d="M7 20h10"/><path d="M9 16v4"/><path d="M15 16v4"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                  <label class="demo-play__row">
+                    <span>Scale</span>
+                    <input type="range" data-knob="scale" min="70" max="140" value="100" step="1">
+                    <output data-knob-out="scale">100%</output>
+                  </label>
+                  <div class="demo-play__dyn" data-demo-knobs></div>
+                  <button type="button" class="demo-play__reset" data-demo-reset>Reset</button>
+                </div>
+                <div class="demo-scroll demo-scroll--y" data-demo-rail aria-hidden="true"><i class="demo-scroll__thumb"></i></div>
+              </div>
+            </div>
+            {{/if}}
+          </aside>
+          <button type="button" class="demo-compare-handle" data-demo-compare hidden role="slider" aria-label="Compare original and live" aria-valuemin="8" aria-valuemax="92" aria-valuenow="42" tabindex="-1"></button>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </div>
+</section>

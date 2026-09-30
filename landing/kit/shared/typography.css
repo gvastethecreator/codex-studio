@@ -1,0 +1,57 @@
+/* Shared type primitives: kicker, lede, section head, source line. */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.kicker {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font: 600 0.72rem / 1.3 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.45;
+  max-width: var(--type-measure, var(--type-measure-max, none));
+}
+
+.section-head {
+  min-width: 0;
+}
+
+.section-head h2,
+.about-head h2,
+.screens-copy h2 {
+  max-width: var(--type-measure, none);
+  text-wrap: balance;
+}
+
+.section-head .lede,
+.about-head .lede {
+  margin-top: 14px;
+}
+
+.section-source {
+  margin-top: 16px;
+  color: var(--muted);
+  font: 0.72rem / 1.4 var(--mono);
+  letter-spacing: 0.04em;
+}
+
+.section-source a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(201 201 201 / 0.28);
+}

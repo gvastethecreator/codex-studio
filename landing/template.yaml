@@ -1,0 +1,34 @@
+schema: gvaste-pages/template/v1
+name: Cozy Night
+extends: default
+
+tokens:
+  color:
+    paper: "#030206"
+    surface: "#0b0911"
+    ink: "#ece8f5"
+    muted: "#a39db8"
+    accent: "#8b6cff"
+    backdrop: "#08060f"
+    accentSource: template
+    actionStyle: accent
+  typography:
+    display: General Sans
+    text: General Sans
+    mono: Geist Mono
+    stylesheet: https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap
+  shape:
+    radius: 8
+    borderWidth: 0
+  layout:
+    maxWidth: 1180
+
+chrome:
+  header:
+    variant: sticky
+  shade:
+    variant: grain
+  panels:
+    align: center
+  column:
+    variant: seamless

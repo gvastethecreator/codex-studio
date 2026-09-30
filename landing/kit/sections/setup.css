@@ -1,0 +1,306 @@
+/* Setup: post-install preparation before the first useful task. */
+
+.setup {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: 0;
+  padding: 30px 0 28px;
+}
+
+.setup__head {
+  max-width: 58rem;
+}
+
+.setup__items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.setup__items[data-count="3"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.setup__item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgb(201 201 201 / 0.14);
+  border-radius: 12px;
+}
+
+.setup__number {
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 36%, transparent);
+  border-radius: 999px;
+  color: var(--accent);
+  font: 650 0.76rem/1 var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.setup__item-copy {
+  min-width: 0;
+}
+
+.setup__item h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.setup__item p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.setup__value {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 10px;
+  padding: 5px 8px;
+  overflow-wrap: anywhere;
+  border: 1px solid rgb(201 201 201 / 0.12);
+  border-radius: 6px;
+  background: rgb(0 0 0 / 0.16);
+  color: var(--ink);
+  font: 0.8rem/1.4 var(--mono);
+}
+
+.setup__command {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 4px 4px 4px 10px;
+  overflow-x: auto;
+  border-radius: 7px;
+  background: rgb(0 0 0 / 0.22);
+  color: var(--ink);
+  font: 0.78rem/1.45 var(--mono);
+}
+
+.setup__command > span {
+  color: var(--accent);
+  user-select: none;
+}
+
+.setup__command code {
+  flex: 1;
+  min-width: 0;
+}
+
+.setup__command .workbench-copy {
+  margin-left: 0;
+}
+
+.setup__verification {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, rgb(201 201 201 / 0.12));
+  border-radius: 10px;
+}
+
+.setup__verification strong {
+  color: var(--accent);
+  font: 650 0.76rem/1.2 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.setup__verification span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.setup__notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.setup__note {
+  min-width: 0;
+  padding: 16px 18px;
+  border: 1px solid rgb(201 201 201 / 0.14);
+  border-radius: 12px;
+}
+
+.setup__note h3 {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.setup__note p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.setup--config .setup__items,
+.setup--environment .setup__items,
+.setup--accounts .setup__items {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 920px) {
+  .setup--config .setup__items,
+  .setup--environment .setup__items,
+  .setup--accounts .setup__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .setup__items[data-count="3"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .setup {
+    padding: 26px 0 34px;
+  }
+
+  .setup__items,
+  .setup--config .setup__items,
+  .setup--environment .setup__items,
+  .setup--accounts .setup__items,
+  .setup__items[data-count="3"],
+  .setup__notes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .setup__verification {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* setup.script: the whole install as one terminal beside the heading. Both columns share
+   one height: the heading starts level with the terminal, and a mascot that stands under
+   the heading (data-mascot-spot="under-start") lands level with the terminal's bottom edge. */
+.setup--script {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 32px clamp(40px, 6vw, 88px);
+  align-items: stretch;
+}
+
+.setup--script .setup__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: none;
+}
+
+.setup--script .setup__head h2 {
+  margin-top: -0.12em;
+}
+
+.setup__script .workbench-bar {
+  gap: 14px;
+  padding-left: 16px;
+}
+
+/* Three quiet window dots. */
+.setup__script .workbench-bar::before {
+  content: "";
+  flex: none;
+  width: 38px;
+  height: 10px;
+  background:
+    radial-gradient(circle at 5px 5px, color-mix(in srgb, var(--ink) 26%, transparent) 4px, transparent 4.6px),
+    radial-gradient(circle at 19px 5px, color-mix(in srgb, var(--ink) 26%, transparent) 4px, transparent 4.6px),
+    radial-gradient(circle at 33px 5px, color-mix(in srgb, var(--ink) 26%, transparent) 4px, transparent 4.6px);
+}
+
+.setup__script .workbench-copy {
+  margin-left: auto;
+}
+
+.setup__lines {
+  margin: 0;
+  padding: 24px 28px;
+  overflow-x: auto;
+  font: 400 0.9rem / 2.05 var(--mono);
+}
+
+.setup__lines code {
+  display: block;
+  font: inherit;
+  white-space: normal;
+}
+
+.setup__line {
+  display: block;
+  white-space: pre;
+}
+
+.setup__line::before {
+  content: "$ ";
+  color: var(--accent);
+}
+
+/* What to do once the commands have run sits at the foot of the terminal, so a terminal
+   stretched to the heading's height ends on it instead of on empty space. */
+.setup__script {
+  grid-template-rows: auto auto 1fr;
+}
+
+.setup__after {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: end;
+  margin: 0;
+  padding: 14px 28px;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 9%, transparent);
+  color: var(--muted);
+  font: 0.84rem / 1.4 var(--mono);
+}
+
+.setup__after-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+@media (max-width: 840px) {
+  .setup--script {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .setup__lines {
+    padding: 16px;
+    font-size: 0.72rem;
+  }
+
+  .setup__after {
+    padding: 12px 16px;
+    font-size: 0.72rem;
+  }
+
+  .setup__line {
+    padding-left: 2ch;
+    text-indent: -2ch;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+}

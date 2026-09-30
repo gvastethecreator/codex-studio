@@ -1,0 +1,136 @@
+<section class="preview preview--{{preview.variant}}" id="preview" aria-labelledby="preview-title">
+  {{#if preview.hasHeader}}
+  <header class="section-head preview__head">
+    {{#if preview.kicker}}
+    <p class="kicker">{{preview.kicker}}</p>
+    {{/if}}
+    <h2 id="preview-title">{{{preview.titleHtml}}}</h2>
+    {{#if preview.lede}}
+    <p class="lede">{{preview.lede}}</p>
+    {{/if}}
+  </header>
+  {{/if}}
+
+  {{#if preview.hasAnnotated}}
+  <div class="preview__annotated">
+    <figure class="preview__frame chrome-frame">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <img src="{{preview.primary.src}}" alt="{{preview.primary.alt}}" decoding="async"{{#if preview.primary.hasLight}} class="theme-dark-only"{{/if}}>{{#if preview.primary.hasLight}}<img class="theme-light-only" src="{{preview.primary.light}}" alt="{{preview.primary.alt}}" decoding="async">{{/if}}
+        {{#each preview.annotations}}
+        <span class="preview__pin" style="left: {{x}}%; top: {{y}}%"><span>{{n}}</span>{{label}}</span>
+        {{/each}}
+      </span>
+    </figure>
+    <ol class="preview__legend">
+      {{#each preview.annotations}}
+      <li><span>{{n}}</span>{{label}}</li>
+      {{/each}}
+    </ol>
+  </div>
+  {{/if}}
+
+  {{#if preview.hasWalkthrough}}
+  <div class="preview__walkthrough" data-walkthrough>
+    <ol class="walkthrough__steps" data-count="{{preview.stepCount}}" data-mascot-spot="top-end" data-mascot-size="114" data-mascot-mood="happy" data-mascot-pose="point" data-mascot-look="[data-spot]">
+      {{#each preview.steps}}
+      <li class="walkthrough__step{{#if active}} is-active{{/if}}" data-step data-x="{{x}}" data-y="{{y}}" data-radius="{{radius}}">
+        <span class="walkthrough__n">{{n}}</span>
+        <h3>{{title}}</h3>
+        {{#if body}}
+        <p>{{body}}</p>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ol>
+    <div class="walkthrough__stage">
+      <figure class="walkthrough__screen">
+        <img src="{{preview.primary.src}}" alt="{{preview.primary.alt}}" decoding="async"{{#if preview.primary.hasLight}} class="theme-dark-only"{{/if}}>{{#if preview.primary.hasLight}}<img class="theme-light-only" src="{{preview.primary.light}}" alt="{{preview.primary.alt}}" decoding="async">{{/if}}
+        <span class="walkthrough__spot" data-spot aria-hidden="true"></span>
+      </figure>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if preview.hasSingle}}
+  <div class="preview__single{{#if preview.isWindow}} preview__single--window{{/if}}{{#if preview.isDevice}} preview__single--device{{/if}}">
+    {{#if preview.primary.linked}}
+    <a class="preview__frame chrome-frame" href="{{preview.primary.href}}" aria-label="{{preview.primary.alt}}">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <img src="{{preview.primary.src}}" alt="{{preview.primary.alt}}" decoding="async"{{#if preview.primary.hasLight}} class="theme-dark-only"{{/if}}>{{#if preview.primary.hasLight}}<img class="theme-light-only" src="{{preview.primary.light}}" alt="{{preview.primary.alt}}" decoding="async">{{/if}}
+      </span>
+    </a>
+    {{/if}}
+    {{#if preview.primary.plain}}
+    <div class="preview__frame chrome-frame">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <img src="{{preview.primary.src}}" alt="{{preview.primary.alt}}" decoding="async"{{#if preview.primary.hasLight}} class="theme-dark-only"{{/if}}>{{#if preview.primary.hasLight}}<img class="theme-light-only" src="{{preview.primary.light}}" alt="{{preview.primary.alt}}" decoding="async">{{/if}}
+      </span>
+    </div>
+    {{/if}}
+    {{#if preview.primary.caption}}
+    <p class="preview__caption">{{preview.primary.caption}}</p>
+    {{/if}}
+  </div>
+  {{/if}}
+
+  {{#if preview.hasCarousel}}
+  <div class="preview__carousel screens-media{{#if preview.hasBar}} has-thumbs{{/if}}">
+    <div class="depth-carousel" data-carousel tabindex="0" role="group" aria-roledescription="carousel" aria-label="{{preview.carouselLabel}}">
+      {{#if preview.glowSrc}}
+      <div class="depth-carousel__glow" aria-hidden="true">
+        <img src="{{preview.glowSrc}}" alt="" decoding="async" draggable="false">
+      </div>
+      {{/if}}
+      <div class="depth-carousel__stage">
+        {{#each preview.images}}
+        <div class="depth-carousel__card chrome-frame" data-index="{{index}}" aria-roledescription="slide" aria-label="{{n}} of {{count}}">
+          <span class="chrome-frame__ring" aria-hidden="true"></span>
+          <div class="chrome-frame__face">
+            <img class="depth-carousel__img" src="{{src}}" alt="{{alt}}"{{#if caption}} data-caption="{{caption}}"{{/if}} decoding="async" draggable="false">
+            <span class="depth-carousel__tint" aria-hidden="true"></span>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="screens-bar">
+      {{#if preview.hasBar}}
+      <div class="screens-thumbs" data-carousel-thumbs role="group" aria-label="Other stills">
+        {{#each preview.images}}
+        <button type="button" class="screens-thumbs__btn chrome-frame{{#if first}} is-active{{/if}}" data-thumb="{{index}}" aria-label="{{alt}}"{{#if first}} hidden{{/if}}>
+          <span class="chrome-frame__ring" aria-hidden="true"></span>
+          <span class="chrome-frame__face">
+            <img src="{{src}}" alt="" decoding="async" draggable="false">
+          </span>
+        </button>
+        {{/each}}
+      </div>
+      {{/if}}
+      <p class="screens-caption" data-carousel-caption>{{preview.captionInitial}}</p>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if preview.hasGrid}}
+  <div class="preview__grid" role="list">
+    {{#each preview.images}}
+    <figure class="preview__item chrome-frame" role="listitem">
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <span class="chrome-frame__face surface">
+        <img src="{{src}}" alt="{{alt}}" decoding="async">
+      </span>
+      {{#if caption}}
+      <figcaption>{{caption}}</figcaption>
+      {{/if}}
+    </figure>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{#if preview.source}}
+  <p class="section-source">From <a href="{{preview.source.href}}">{{preview.source.label}}</a></p>
+  {{/if}}
+</section>

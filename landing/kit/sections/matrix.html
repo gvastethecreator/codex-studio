@@ -1,0 +1,33 @@
+<section class="matrix" id="matrix" aria-labelledby="matrix-title">
+  <header class="section-head">
+    {{#if matrix.kicker}}
+    <p class="kicker">{{matrix.kicker}}</p>
+    {{/if}}
+    <h2 id="matrix-title">{{{matrix.titleHtml}}}</h2>
+    {{#if matrix.lede}}
+    <p class="lede">{{matrix.lede}}</p>
+    {{/if}}
+  </header>
+  <table class="status-table">
+    <caption class="visually-hidden">Status matrix</caption>
+    <thead>
+      <tr>
+        {{#each matrix.columns}}
+        <th scope="col">{{this}}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#each matrix.rows}}
+      <tr>
+        <th scope="row">{{name}}</th>
+        <td><span class="status-pill" data-status="{{statusKey}}">{{status}}</span></td>
+        <td>{{note}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{#if matrix.source}}
+  <p class="section-source">From <a href="{{matrix.source.href}}">{{matrix.source.label}}</a></p>
+  {{/if}}
+</section>

@@ -1,0 +1,38 @@
+schema: gvaste-pages/template/v1
+name: Editorial Dark
+extends: default
+
+tokens:
+  color:
+    paper: "#050505"
+    surface: "#0a0a0a"
+    ink: "#eeeeee"
+    muted: "#929292"
+    accent: "#d9d9d9"
+  typography:
+    display: Arimo
+    text: Arimo
+    mono: Geist Mono
+    scale: 1.05
+  layout:
+    maxWidth: 1180
+  shape:
+    radius: 10
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#f3efe6"
+        surface: "#e9e3d8"
+        ink: "#1c1c1c"
+        muted: "#5f5f5f"
+        accent: "#2c2c2c"
+
+chrome:
+  shade:
+    variant: veil
+
+sections:
+  hero:
+    variant: editorial

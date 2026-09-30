@@ -1,0 +1,29 @@
+void main() {
+  vec2 frag = gl_FragCoord.xy;
+  vec2 st = shadeSpace(shadeCoord(), uSpread, uDetail);
+  float t = uTime * 0.42;
+  float k = clamp(uWarp, 0.0, 1.0);
+  st += vec2(fbm(st + t * 1.15) - 0.5, fbm(st * 1.15 - t * 0.9 + 3.2) - 0.5) * (0.18 + k * 0.4);
+  vec2 drift = vec2(sin(uSeed * 1.7 + t * 0.55), cos(uSeed * 1.13 - t * 0.42)) * 1.8;
+  vec2 p = st * 1.7 + drift;
+  vec2 warp = vec2(fbm(p + t * 1.05), fbm(p + 6.8 - t * 0.82));
+  vec2 q = p + warp * (1.25 + k * 0.55);
+  float mist = smoothstep(0.18, 0.82, fbm(q));
+  float spark = fbm(st * 11.0 + vec2(t * 3.2, -t * 2.4) + uSeed);
+  mist = mix(mist, smoothstep(0.28, 0.84, spark), 0.38 + k * 0.35);
+  float spin = t * 1.15 + uSeed;
+  vec2 blob = vec2(cos(spin), sin(spin)) * (0.38 + k * 0.18);
+  vec2 blob2 = vec2(cos(-spin * 0.72 + 1.4), sin(-spin * 0.68)) * 0.26;
+  float sheen = pow(max(0.0, 1.0 - length(st - blob) * 1.35), 2.8);
+  float sheen2 = pow(max(0.0, 1.0 - length(st - blob2) * 1.65), 3.4);
+  float rim = smoothstep(0.1, 0.95, length(st) * 1.18);
+  float grain = filmGrain(frag, uTime, uSeed);
+  vec3 col = mix(uSurface, uPaper, rim * 0.3 + mist * 0.18);
+  col = mix(col, uAccent, clamp(uTint, 0.0, 1.0) * 0.42);
+  col = mix(col, mix(uMuted, uAccent, 0.45), 0.1 + 0.32 * mist);
+  col += uAccent * (sheen * 0.34 + sheen2 * 0.18) * mix(1.0, 0.55, uLight);
+  col = mix(col, col * mix(0.76, 0.9, uLight), rim * 0.5);
+  col += grain * 0.018;
+  col = shadeMix(uSurface, col, uContrast);
+  fragColor = vec4(col * uAlpha, uAlpha);
+}

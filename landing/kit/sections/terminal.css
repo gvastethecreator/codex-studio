@@ -1,0 +1,119 @@
+/* Terminal: command-driven usage and evidence-backed output. */
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: 0;
+  padding: 30px 0 28px;
+}
+
+.terminal__head {
+  max-width: 58rem;
+}
+
+.terminal__entries {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+.terminal__command-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px 18px;
+  font: 0.92rem/1.55 var(--mono);
+}
+
+.terminal__prompt {
+  color: var(--accent);
+  user-select: none;
+}
+
+.terminal__step {
+  min-width: 2.25em;
+  color: var(--muted);
+  font: 600 0.68rem / 1 var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.terminal__command {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font: inherit;
+}
+
+.workbench--terminal .terminal__command {
+  color: inherit;
+}
+
+:root[data-theme="light"] .workbench--terminal .terminal__meta {
+  color: color-mix(in srgb, #eee8dc 70%, transparent);
+}
+
+:root[data-theme="light"] .workbench--terminal .terminal__meta strong {
+  color: #eee8dc;
+}
+
+.terminal__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  padding: 0 18px 14px;
+  color: var(--muted);
+  font: 0.82rem/1.4 var(--text);
+}
+
+.terminal__meta strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.terminal__output {
+  margin: 0;
+  padding: 16px 18px 18px;
+  overflow-x: auto;
+  border-top: 2px solid var(--workbench-seam, rgb(201 201 201 / 0.1));
+  background: rgb(0 0 0 / 0.24);
+  color: color-mix(in srgb, var(--ink) 82%, var(--muted));
+  font: 0.84rem/1.55 var(--mono);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+:root[data-theme="light"] .workbench--terminal .terminal__output {
+  background: rgb(0 0 0 / 0.28);
+  color: #eee8dc;
+}
+
+.terminal--task-list .terminal__entries,
+.terminal--steps .terminal__entries {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.terminal--session .workbench--terminal {
+  border-color: color-mix(in srgb, var(--accent) 22%, var(--workbench-seam, rgb(201 201 201 / 0.14)));
+}
+
+@media (max-width: 760px) {
+  .terminal {
+    padding: 26px 0 34px;
+  }
+
+  .terminal--task-list .terminal__entries,
+  .terminal--steps .terminal__entries {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .terminal__command-row {
+    padding: 14px;
+    font-size: 0.84rem;
+  }
+
+  .terminal__meta,
+  .terminal__output {
+    padding-inline: 14px;
+  }
+}

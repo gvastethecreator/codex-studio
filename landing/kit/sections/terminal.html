@@ -1,0 +1,93 @@
+<section class="terminal terminal--{{terminal.variant}}" id="terminal" aria-labelledby="terminal-title">
+  {{#if terminal.hasHeader}}
+  <header class="section-head terminal__head">
+    {{#if terminal.kicker}}
+    <p class="kicker">{{terminal.kicker}}</p>
+    {{/if}}
+    <h2 id="terminal-title">{{{terminal.titleHtml}}}</h2>
+    {{#if terminal.lede}}
+    <p class="lede">{{terminal.lede}}</p>
+    {{/if}}
+  </header>
+  {{/if}}
+
+  {{#if terminal.isTabs}}
+  <div class="workbench workbench--terminal workbench--tabs" data-proof-tabs>
+    <header class="workbench-bar">
+      <div class="workbench-tabs" role="tablist" aria-label="Command alternatives">
+        {{#each terminal.items}}
+        <button
+          class="workbench-tab{{#if first}} is-on{{/if}}"
+          type="button"
+          role="tab"
+          id="{{tabId}}"
+          aria-selected="{{selected}}"
+          aria-controls="{{panelId}}"
+          tabindex="{{tabIndex}}"
+        >{{label}}</button>
+        {{/each}}
+      </div>
+    </header>
+    <div class="workbench-stage">
+      {{#each terminal.items}}
+      <article class="workbench-panel terminal__panel" role="tabpanel" id="{{panelId}}" aria-labelledby="{{tabId}}"{{#if hidden}} hidden{{/if}}>
+        <div class="workbench-meta">
+          <button class="workbench-copy" type="button" data-copy="{{command}}" aria-label="Copy command">
+            <span class="workbench-copy__stack" aria-hidden="true">
+              <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+              <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+          </button>
+        </div>
+        <div class="terminal__command-row">
+          <span class="terminal__prompt" aria-hidden="true">$</span>
+          <code class="terminal__command">{{command}}</code>
+        </div>
+        {{#if hasOutput}}
+        <pre class="terminal__output" aria-label="Command output"><code>{{output}}</code></pre>
+        {{/if}}
+      </article>
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if terminal.hasList}}
+  <div class="terminal__entries" role="list">
+    {{#each terminal.items}}
+    <article class="workbench workbench--terminal" role="listitem">
+      <header class="workbench-bar">
+        {{#if terminal.isSteps}}
+        <span class="terminal__step" aria-hidden="true">{{n}}</span>
+        {{/if}}
+        <span class="terminal__prompt" aria-hidden="true">$</span>
+        <button class="workbench-copy" type="button" data-copy="{{command}}" aria-label="Copy command">
+          <span class="workbench-copy__stack" aria-hidden="true">
+            <svg class="workbench-copy__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="workbench-copy__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          </span>
+        </button>
+      </header>
+      <div class="workbench-stage">
+        <div class="terminal__command-row">
+          <code class="terminal__command">{{command}}</code>
+        </div>
+        {{#if hasMeta}}
+        <div class="terminal__meta">
+          {{#if label}}<strong>{{label}}</strong>{{/if}}
+          {{#if note}}<span>{{note}}</span>{{/if}}
+        </div>
+        {{/if}}
+        {{#if hasOutput}}
+        <pre class="terminal__output" aria-label="Command output"><code>{{output}}</code></pre>
+        {{/if}}
+      </div>
+    </article>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{#if terminal.source}}
+  <p class="section-source">From <a href="{{terminal.source.href}}">{{terminal.source.label}}</a></p>
+  {{/if}}
+</section>

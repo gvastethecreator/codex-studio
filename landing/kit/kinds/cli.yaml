@@ -1,0 +1,21 @@
+id: cli
+label: CLI
+mapsFromPresets: [cli]
+defaultComposition: terminal-first
+compositions:
+  terminal-first:
+    v1SectionIds: [hero, commands, docs, links, closing]
+    semanticPlan:
+      - { id: hero, variant: developer }
+      - { id: terminal, variant: session }
+      - { id: about, variant: compact-cards }
+      - { id: download, variant: package }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }
+  compact:
+    semanticPlan:
+      - { id: hero, variant: developer }
+      - { id: terminal, variant: command }
+      - { id: docs }
+      - { id: closing }

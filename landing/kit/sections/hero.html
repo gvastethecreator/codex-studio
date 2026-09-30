@@ -1,0 +1,146 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <div class="hero-brand">
+      {{#if brand.icon}}
+      <span class="hero-icon hero-icon--file">
+        <img src="{{brand.icon}}" alt="" width="36" height="36">
+      </span>
+      {{/if}}
+      {{#if brand.tablerSvg}}
+      <span class="hero-icon hero-icon--tabler" aria-hidden="true">{{{brand.tablerSvg}}}</span>
+      {{/if}}
+      {{#if brand.hasMark}}
+      <span class="hero-icon hero-icon--mark" aria-hidden="true">{{brand.initials}}</span>
+      {{/if}}
+      {{#if hero.mascotSvg}}
+      <span class="hero-mascot" data-mascot="host" data-mascot-spot="fill" data-mascot-mood="happy" aria-hidden="true">{{{hero.mascotSvg}}}</span>
+      {{/if}}
+      <p class="hero-name">{{project.name}}</p>
+    </div>
+    <h1 id="hero-title">{{{hero.titleHtml}}}</h1>
+    {{#if hero.lede}}
+    <p class="lede">{{hero.lede}}</p>
+    {{/if}}
+    {{#if hero.actions}}
+    <div class="actions">
+      {{#each hero.actions}}
+      {{#if isCommand}}
+      <div class="hero-command command-slab command-slab--inline">
+        <div class="hero-command__field">
+          <code><span class="command-prompt" aria-hidden="true">$</span> {{command}}</code>
+        </div>
+        <button class="hero-copy-btn" type="button" data-copy="{{command}}" aria-label="Copy command">
+          <span class="hero-copy-btn__stack" aria-hidden="true">
+            <svg class="hero-copy-btn__glyph" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"/><path d="M5 15h-1a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="hero-copy-btn__ok" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          </span>
+        </button>
+        <span class="hero-copy-toast" role="status" data-copy-toast></span>
+      </div>
+      {{/if}}
+      {{#if isLink}}
+      <a class="button{{#if primary}} primary{{/if}}" href="{{href}}">{{label}}</a>
+      {{/if}}
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+  {{#if hero.hasStage}}
+  <div class="hero-stage">
+    {{#if hero.hasGallery}}
+    <div class="screens-media">
+      <div class="depth-carousel" data-carousel tabindex="0" role="group" aria-roledescription="carousel" aria-label="{{hero.carouselLabel}}">
+          {{#if hero.glowSrc}}
+          <div class="depth-carousel__glow" aria-hidden="true">
+            <img src="{{hero.glowSrc}}" alt="" decoding="async" draggable="false">
+          </div>
+          {{/if}}
+          <div class="depth-carousel__stage">
+          {{#each hero.gallery}}
+          <div class="depth-carousel__card chrome-frame" data-index="{{index}}" aria-roledescription="slide" aria-label="{{n}} of {{count}}">
+            <span class="chrome-frame__ring" aria-hidden="true"></span>
+            <div class="chrome-frame__face">
+              <img class="depth-carousel__img" src="{{src}}" alt="{{alt}}"{{#if caption}} data-caption="{{caption}}"{{/if}} decoding="async" draggable="false">
+              <span class="depth-carousel__tint" aria-hidden="true"></span>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="screens-bar">
+        <p class="screens-caption" data-carousel-caption>{{hero.captionInitial}}</p>
+      </div>
+    </div>
+    {{/if}}
+    {{#if hero.hasDeck}}
+    <figure class="deck" data-deck aria-roledescription="carousel" aria-label="{{hero.carouselLabel}}">
+      <div class="deck__stack" data-deck-stack tabindex="0">
+        {{#each hero.deck}}
+        <article class="deck__card" data-deck-card data-file="{{file}}" aria-roledescription="slide" aria-label="{{n}} of {{count}}">
+          <img src="{{src}}" alt="{{alt}}" decoding="async" draggable="false">
+          {{#if caption}}
+          <span class="deck__label">{{caption}}</span>
+          {{/if}}
+        </article>
+        {{/each}}
+      </div>
+      <div class="deck__controls">
+        <button class="deck__btn" type="button" data-deck-prev aria-label="Previous">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <p class="deck__file" data-deck-file aria-live="polite"></p>
+        <button class="deck__btn" type="button" data-deck-next aria-label="Next">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      {{#if hero.deckNote}}
+      <figcaption class="deck__note">{{hero.deckNote}}</figcaption>
+      {{/if}}
+    </figure>
+    {{/if}}
+    {{#if hero.hasExamples}}
+    <ul class="hero-examples">
+      {{#each hero.examples}}
+      <li>
+        {{#if isLink}}
+        <a class="hero-example" href="{{href}}">
+        {{/if}}
+        {{#if plain}}
+        <div class="hero-example">
+        {{/if}}
+          {{#if src}}
+          <img src="{{src}}" alt="{{alt}}" decoding="async">
+          {{/if}}
+          <span class="hero-example-name">{{name}}</span>
+          {{#if body}}
+          <span class="hero-example-body">{{body}}</span>
+          {{/if}}
+        {{#if isLink}}
+        </a>
+        {{/if}}
+        {{#if plain}}
+        </div>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+    {{/if}}
+    {{#if hero.hasArtifact}}
+    <figure class="artifact chrome-frame" data-tilt>
+      <span class="chrome-frame__ring" aria-hidden="true"></span>
+      <div class="chrome-frame__face surface">
+        <img src="{{hero.artifact.src}}" alt="{{hero.artifact.alt}}" decoding="async">
+        {{#if hero.artifact.caption}}
+        <figcaption>
+          <span>{{hero.artifact.caption}}</span>
+          {{#if hero.artifact.meta}}
+          <span>{{hero.artifact.meta}}</span>
+          {{/if}}
+        </figcaption>
+        {{/if}}
+      </div>
+    </figure>
+    {{/if}}
+  </div>
+  {{/if}}
+</section>

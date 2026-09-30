@@ -1,0 +1,38 @@
+schema: gvaste-pages/template/v1
+name: Profile Orbit
+extends: default
+
+tokens:
+  color:
+    paper: "#020504"
+    surface: "#0c1b12"
+    ink: "#dfe8e1"
+    muted: "#647168"
+    accent: "#57e56c"
+  typography:
+    display: Inter
+    text: Inter
+    mono: Geist Mono
+  layout:
+    maxWidth: 1440
+  shape:
+    radius: 0
+    borderWidth: 1
+
+themes:
+  light:
+    tokens:
+      color:
+        paper: "#e7f3ea"
+        surface: "#d5eadb"
+        ink: "#0d2b18"
+        muted: "#3d6b4a"
+        accent: "#0b7a38"
+
+chrome:
+  shade:
+    variant: speckle
+
+sections:
+  profile:
+    variant: orbit

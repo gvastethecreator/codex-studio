@@ -1,0 +1,107 @@
+/* Links: directory rows with favicon or typed Tabler mark. */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0 24px;
+  min-height: 0;
+}
+
+.links-dir {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgb(201 201 201 / 0.16);
+}
+
+:root[data-theme="light"] .links-dir {
+  border-top-color: rgb(42 42 42 / 0.12);
+}
+
+:root[data-theme="light"] .links-dir a {
+  border-bottom-color: rgb(42 42 42 / 0.1);
+}
+
+.links-dir a {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgb(201 201 201 / 0.12);
+  text-decoration: none;
+}
+
+.links-dir strong {
+  font-size: 1.08rem;
+}
+
+.links-dir a > span:not(.links-dir__mark) {
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-align: end;
+}
+
+.links-dir__mark {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  color: var(--muted);
+}
+
+.links-dir__mark > * {
+  grid-area: 1 / 1;
+}
+
+.links-dir__favicon {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+.links-dir__tabler {
+  display: inline-flex;
+}
+
+.links-dir__tabler.is-fallback {
+  display: none;
+}
+
+.links-dir__favicon[src=""] + .links-dir__tabler,
+.links-dir a:has(.links-dir__favicon:not([src])) .links-dir__tabler {
+  display: inline-flex;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .links-dir a {
+    transition: color var(--duration) var(--ease);
+  }
+
+  .links-dir a:hover strong {
+    color: var(--ink);
+  }
+
+  .links-dir a:hover .links-dir__mark {
+    color: var(--ink);
+  }
+}
+
+@media (max-width: 840px) {
+  .links-dir a {
+    grid-template-columns: 28px minmax(0, 1fr);
+    min-height: 48px;
+  }
+
+  .links-dir a > span:not(.links-dir__mark) {
+    grid-column: 2;
+    text-align: start;
+  }
+}
+
+main > .stack-panel.links {
+  overflow: auto;
+}

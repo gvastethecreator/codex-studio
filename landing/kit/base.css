@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scrollbar-color: var(--muted) var(--paper);
+  scrollbar-width: thin;
+  scroll-padding-top: var(--chrome-top);
+  /* Browser scroll anchoring fights GSAP ScrollTo / snap and drifts. */
+  overflow-anchor: none;
+  overflow-x: clip;
+  scroll-behavior: auto;
+}
+
+/* Fallback only when GSAP does not own the scroller. */
+html:not(.gsap-scroll) {
+  scroll-snap-type: y proximity;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.veil {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: var(--paper);
+  background-image: var(--mesh);
+}
+
+.veil::after {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  background-image: var(--noise);
+  background-size: 180px 180px;
+  background-repeat: repeat;
+  opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .veil::after {
+    animation: veil-grain 1.6s steps(4) infinite;
+  }
+}
+
+@keyframes veil-grain {
+  0% { transform: translate3d(0, 0, 0); }
+  25% { transform: translate3d(-18px, 10px, 0); }
+  50% { transform: translate3d(14px, -16px, 0); }
+  75% { transform: translate3d(-8px, -12px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.column {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  min-height: 100dvh;
+  margin-inline: auto;
+  padding-inline-start: calc(var(--column-pad) + var(--safe-left));
+  padding-inline-end: calc(var(--column-pad) + var(--safe-right));
+  overflow: clip;
+  background: var(--column-bg);
+  border-inline: var(--column-border-width) solid var(--column-border);
+}
+
+/* An image with a light-mode twin: only the one that fits the page theme shows. */
+.theme-light-only {
+  display: none !important;
+}
+
+:root[data-theme="light"] .theme-light-only {
+  display: block !important;
+}
+
+:root[data-theme="light"] .theme-dark-only {
+  display: none !important;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: -2px;
+  }
+}
+
+::selection {
+  background: rgb(201 201 201 / 0.18);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3,
+p {
+  text-wrap: pretty;
+}
+
+/* Tight tracking also narrows the spaces; word-spacing gives them back. */
+h1,
+h2 {
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  word-spacing: 0.06em;
+}
+
+h1 {
+  margin: 0;
+  --type-size-min: 2.2rem;
+  --type-size-max: 3.9rem;
+  font-size: var(--type-size, clamp(var(--type-size-min), 4.6vw, var(--type-size-max)));
+  line-height: 1.02;
+}
+
+h2 {
+  margin: 0;
+  --type-size-min: 1.65rem;
+  --type-size-max: 2.35rem;
+  font-size: var(--type-size, clamp(var(--type-size-min), 2.9vw, var(--type-size-max)));
+  line-height: 1.08;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+}
+
+p {
+  margin: 0;
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: calc(12px + var(--safe-left));
+  top: calc(12px + var(--safe-top));
+  z-index: 80;
+  padding: 8px 12px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  text-decoration: none;
+  transform: translateY(-160%);
+}
+
+.skip:focus {
+  transform: none;
+  top: calc(var(--chrome-top) + 12px);
+  z-index: 80;
+}
+
+@media (max-width: 840px) {
+  :root,
+  :root[data-theme="dark"],
+  :root[data-theme="light"] {
+    --header: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root,
+  :root[data-theme="dark"],
+  :root[data-theme="light"] {
+    --panel-inline: 16px;
+  }
+
+  h1 {
+    --type-size-min: 1.7rem;
+    --type-size-max: 2.4rem;
+    font-size: var(--type-size, clamp(var(--type-size-min), 8vw, var(--type-size-max)));
+  }
+
+  h2 {
+    --type-size-min: 1.4rem;
+    --type-size-max: 1.9rem;
+    font-size: var(--type-size, clamp(var(--type-size-min), 5.6vw, var(--type-size-max)));
+  }
+}
+
+/* Window frame: the veil stays full-bleed. Header and scroll live in the box. */
+html[data-frame="window"] {
+  height: 100%;
+  overflow: hidden;
+  scroll-snap-type: none;
+}
+
+html[data-frame="window"] body {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+html[data-frame="window"] .page-frame {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+  min-height: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--column-bg);
+  box-shadow: var(--shadow);
+}
+
+html[data-frame="window"] .page-frame__scroll {
+  container-type: size;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  scroll-padding-top: 0;
+}
+
+html[data-frame="window"] .column {
+  max-width: none;
+  min-height: 0;
+  border-inline: 0;
+}
+
+@media (max-width: 840px) {
+  html[data-frame="window"] .page-frame {
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+  }
+}

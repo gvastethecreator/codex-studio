@@ -1,0 +1,142 @@
+/* Closing: one big statement and one real action. */
+
+.closing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 0 0;
+}
+
+.closing__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 40px 0 28px;
+  border-top: 1px solid rgb(201 201 201 / 0.22);
+}
+
+.closing__text {
+  margin: 0;
+  --type-measure-max: 22ch;
+  max-width: var(--type-measure, var(--type-measure-max));
+  color: var(--ink);
+  font: 650 clamp(1.7rem, 3.4vw, 2.7rem) / 1.15 var(--display);
+  letter-spacing: -0.02em;
+}
+
+.closing__cta {
+  flex: none;
+}
+
+@media (max-width: 840px) {
+  .closing__inner {
+    padding: 32px 0 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .closing__text {
+    --type-measure-max: none;
+    max-width: var(--type-measure, none);
+  }
+
+  .closing__cta .button {
+    min-height: 48px;
+    width: 100%;
+  }
+}
+
+.closing__lede {
+  margin: -12px 0 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.closing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* closing.images: the last words over a tilted wall of pictures that drifts slowly.
+   The wall stays inside the panel and fades to the page colour around the text. */
+.closing--finale {
+  isolation: isolate;
+}
+
+.closing--finale .closing__inner {
+  margin-top: auto;
+  align-items: center;
+  gap: 26px;
+  padding: 0;
+  border-top: 0;
+  text-align: center;
+}
+
+.closing--finale .closing__text {
+  --type-measure-max: none;
+  width: fit-content;
+  max-width: 100%;
+  font: 650 clamp(2.6rem, 7vw, 6rem) / 1 var(--display);
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.closing--finale .closing__lede {
+  margin-top: -8px;
+}
+
+.closing--finale .closing__actions {
+  justify-content: center;
+}
+
+.closing__wall {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  perspective: 1400px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 72% 68% at 50% 44%, #000 42%, transparent 100%);
+}
+
+.closing__wall::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 58% 50% at 50% 45%,
+    color-mix(in srgb, var(--paper) 94%, transparent) 22%,
+    color-mix(in srgb, var(--paper) 52%, transparent) 68%,
+    var(--paper) 100%
+  );
+}
+
+.closing__tilt {
+  position: absolute;
+  inset: -34% -22% -20%;
+  transform: rotateX(24deg) rotateZ(-8deg);
+  transform-origin: 50% 40%;
+}
+
+.closing__plane {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 16px;
+  will-change: transform;
+}
+
+.closing__plane img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: calc(var(--radius) + 2px);
+  opacity: 0.55;
+}
+
+@media (max-width: 840px) {
+  .closing__plane {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

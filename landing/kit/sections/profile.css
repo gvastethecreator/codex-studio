@@ -1,0 +1,149 @@
+/* Profile pages are document-length Gitbound views inside the kit column.
+   They must not inherit sticky 100svh stack clipping or missing SPA tokens. */
+
+.profile {
+  --canvas: var(--paper);
+  --green: color-mix(in srgb, var(--accent) 78%, white);
+  --green-strong: var(--accent);
+  --green-deep: color-mix(in srgb, var(--accent) 42%, black);
+  --green-faint: color-mix(in srgb, var(--accent) 22%, black);
+  --brass: #ad9360;
+  --edge: color-mix(in srgb, var(--ink) 18%, transparent);
+  --edge-strong: color-mix(in srgb, var(--ink) 32%, transparent);
+  --view-max: 100%;
+  --view-gutter: 0px;
+  --view-margin-top: 8px;
+  --view-margin-bottom: 40px;
+  --view-ink: var(--ink);
+  --view-title: var(--ink);
+  --view-eyebrow: var(--accent);
+  --view-line: var(--edge);
+  --view-line-strong: var(--edge-strong);
+  --view-title-size: clamp(1.45rem, 2.2vw, 2rem);
+  --view-section-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  --view-eyebrow-font: 600 0.58rem / 1.2 var(--mono);
+  --hm-green: var(--green-strong);
+  --hm-line: var(--edge);
+  --hm-muted: var(--muted);
+  --obs-green: var(--green-strong);
+  --obs-ink: var(--paper);
+  --obs-line: var(--edge);
+  --obs-muted: var(--muted);
+  --obs-paper: var(--ink);
+  --orbit-green: var(--green-strong);
+  --orbit-ink: var(--paper);
+  --orbit-line: var(--edge);
+  --orbit-muted: var(--muted);
+  container-type: inline-size;
+  container-name: profile;
+  min-width: 0;
+  color: var(--view-ink);
+}
+
+main > .stack-panel.profile,
+main > .stack-panel.profile:last-child {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: auto;
+  z-index: 1;
+  height: auto;
+  max-height: none;
+  min-height: calc(100svh - var(--chrome-top));
+  overflow: auto;
+  overflow-x: clip;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--ink) 28%, transparent) transparent;
+}
+
+main > .stack-panel.profile::-webkit-scrollbar {
+  width: 8px;
+}
+
+main > .stack-panel.profile::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--ink) 28%, transparent);
+}
+
+.profile h1,
+.profile h2,
+.profile h3 {
+  font-family: var(--display);
+}
+
+.profile svg {
+  max-width: none;
+}
+
+.profile button {
+  font: inherit;
+  color: inherit;
+}
+
+.profile .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.profile [hidden] {
+  display: none !important;
+}
+
+.profile-year-panel {
+  display: none;
+}
+
+.profile-year-panel.is-active {
+  display: block;
+}
+
+.profile .standard-dashboard,
+.profile .folio,
+.profile .observatory,
+.profile .daily-map,
+.profile .orbit,
+.profile .projects {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.profile-methodology {
+  width: 100%;
+  margin: 8px 0 28px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.profile-methodology summary {
+  cursor: pointer;
+  color: var(--ink);
+  font: 600 0.68rem / 1.3 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.profile-methodology ul {
+  margin: 10px 0 0;
+  padding: 0 0 0 1.1em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile--orbit *,
+  .profile--orbit .orbit-survey svg,
+  .profile--heatmap *,
+  .profile--observatory *,
+  .profile--folio *,
+  .profile--projects * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

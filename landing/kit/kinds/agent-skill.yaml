@@ -1,0 +1,14 @@
+id: agent-skill
+label: Skill
+mapsFromPresets: [skill]
+defaultComposition: contract
+compositions:
+  contract:
+    v1SectionIds: [hero, skill, docs, links, closing]
+    semanticPlan:
+      - { id: hero, variant: developer }
+      - { id: skill, variant: contract }
+      - { id: terminal, variant: command }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

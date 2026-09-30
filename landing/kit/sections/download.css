@@ -1,0 +1,102 @@
+/* Download: platform cards with Tabler glyphs. */
+
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0 24px;
+  min-height: 0;
+}
+
+.download-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 14px;
+}
+
+.download-card {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 6px 18px;
+  min-height: 128px;
+  padding: 22px;
+  border: 1px solid rgb(201 201 201 / 0.14);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+:root[data-theme="light"] .download-card {
+  border-color: rgb(42 42 42 / 0.12);
+}
+
+.download-card__icon {
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.download-card__icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.download-card__meta {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.download-card__meta span,
+.download-card__go {
+  color: var(--muted);
+  font: 0.8rem / 1.4 var(--mono);
+}
+
+.download-card__go {
+  grid-column: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .download-card {
+    transition: border-color var(--duration) var(--ease);
+  }
+}
+
+.download-card:active {
+  transform: scale(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .download-card:active {
+    transform: none;
+  }
+}
+
+.download-card:hover {
+  border-color: rgb(201 201 201 / 0.35);
+}
+
+.download-card:hover strong {
+  color: var(--ink);
+}
+
+@media (max-width: 840px) {
+  .download-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+main > .stack-panel.download {
+  overflow: auto;
+}

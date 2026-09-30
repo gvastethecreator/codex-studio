@@ -1,0 +1,353 @@
+/* Preview: non-interactive product and output proof. */
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: 0;
+  padding: 30px 0 28px;
+}
+
+.preview__head {
+  max-width: 58rem;
+}
+
+.preview__single,
+.preview__carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.preview__frame,
+.preview__item {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.preview__frame .chrome-frame__face,
+.preview__item .chrome-frame__face {
+  display: block;
+  overflow: hidden;
+}
+
+.preview__frame img,
+.preview__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.preview__single--window .preview__frame {
+  max-width: 78rem;
+  margin-inline: auto;
+}
+
+.preview__single--device {
+  display: grid;
+  place-items: center;
+  padding: 22px 18px;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 50% 0, color-mix(in srgb, var(--accent) 10%, transparent), transparent 46%),
+    var(--paper);
+}
+
+.preview__single--device .preview__frame {
+  width: min(100%, 390px);
+  max-width: 390px;
+  margin-inline: auto;
+  border-radius: 18px;
+  box-shadow:
+    0 18px 40px color-mix(in srgb, var(--ink) 16%, transparent),
+    0 0 0 10px color-mix(in srgb, var(--surface) 72%, transparent);
+}
+
+.preview__single--device .chrome-frame__face {
+  padding: 0;
+  background: var(--paper);
+}
+
+.preview__annotated {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.preview__annotated .preview__frame .chrome-frame__face {
+  position: relative;
+}
+
+.preview__pin {
+  position: absolute;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transform: translate(-50%, -120%);
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.72);
+  color: #fff;
+  font: 650 0.72rem/1.2 var(--text);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.preview__pin span,
+.preview__legend span {
+  display: inline-grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #0b0d12;
+  font: 700 0.68rem/1 var(--mono);
+}
+
+.preview__legend {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font: 0.88rem/1.4 var(--text);
+}
+
+.preview__legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 760px) {
+  .preview__pin {
+    display: none;
+  }
+}
+
+.preview__single--window .chrome-frame__face {
+  padding: 8px 8px 10px;
+  background: var(--surface);
+}
+
+.preview__single--window img {
+  border-radius: 6px;
+  outline: 1px solid oklch(1 0 0 / 0.1);
+}
+
+:root[data-theme="light"] .preview__single--window img {
+  outline-color: oklch(0 0 0 / 0.1);
+}
+
+.preview__carousel.screens-media {
+  min-height: min(52vh, 560px);
+}
+
+.preview__caption {
+  margin: 0;
+  color: var(--muted);
+  font: 0.82rem/1.45 var(--text);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.preview__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.preview__item {
+  margin: 0;
+}
+
+.preview__item .chrome-frame__face {
+  height: 100%;
+}
+
+.preview__item img {
+  height: 100%;
+  min-height: 220px;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.preview--result-grid .preview__item img {
+  object-fit: contain;
+  background: var(--surface);
+}
+
+.preview__item figcaption {
+  padding: 10px 4px 2px;
+  color: var(--muted);
+  font: 0.82rem/1.4 var(--text);
+}
+
+@media (max-width: 760px) {
+  .preview {
+    padding: 26px 0 34px;
+  }
+
+  .preview__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .preview__item img {
+    min-height: 0;
+    max-height: none;
+  }
+
+  .preview__carousel.screens-media {
+    min-height: 420px;
+  }
+}
+
+/* preview.walkthrough — a row of steps right above one large screen; a spotlight walks the
+   screen. The screen takes the height the panel has left and keeps its 16:9 frame; the whole
+   block then sits in the middle of the panel. */
+.preview:has(.preview__walkthrough) {
+  gap: clamp(16px, 2.6vh, 28px);
+}
+
+.preview__walkthrough {
+  --walk-reserve: 250px;
+  display: grid;
+  gap: 12px;
+}
+
+/* A kicker above the heading takes one more line from the screen. */
+.preview:has(.preview__head .kicker) .preview__walkthrough {
+  --walk-reserve: 284px;
+}
+
+.walkthrough__steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.walkthrough__step {
+  position: relative;
+  padding: 14px 18px 16px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+  border-radius: var(--radius);
+  opacity: 0.62;
+  transition:
+    opacity var(--duration-view) var(--ease),
+    background-color var(--duration-view) var(--ease),
+    border-color var(--duration-view) var(--ease);
+}
+
+/* A thin bar fills along the active step while it waits for the next one. */
+.walkthrough__step::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+.walkthrough__step.is-active,
+.is-static .walkthrough__step {
+  opacity: 1;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--surface);
+}
+
+.walkthrough__step.is-active::after {
+  animation: walkthrough-wait var(--step-wait, 3.2s) linear forwards;
+}
+
+.is-held .walkthrough__step.is-active::after {
+  animation-play-state: paused;
+}
+
+@keyframes walkthrough-wait {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.walkthrough__n {
+  color: var(--accent);
+  font: 400 0.72rem/1 var(--mono);
+}
+
+.walkthrough__step h3 {
+  margin: 8px 0 0;
+  font-size: 1.05rem;
+}
+
+.walkthrough__step p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.walkthrough__stage {
+  display: grid;
+  place-items: center;
+}
+
+.walkthrough__screen {
+  position: relative;
+  width: min(100%, calc((100svh - var(--chrome-top) - var(--walk-reserve)) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: calc(var(--radius) + 2px);
+  box-shadow: 0 40px 80px rgb(0 0 0 / 0.5);
+}
+
+.walkthrough__screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.walkthrough__spot {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--sx, 50%) var(--sy, 50%),
+    transparent 0 var(--sr, 18%),
+    color-mix(in srgb, var(--paper) 62%, transparent) calc(var(--sr, 18%) + 3%)
+  );
+}
+
+.is-static .walkthrough__spot {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walkthrough__step.is-active::after {
+    animation: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .walkthrough__steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .walkthrough__screen {
+    width: 100%;
+  }
+}

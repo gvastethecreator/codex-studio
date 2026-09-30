@@ -1,0 +1,12 @@
+id: developer-utility
+label: Developer utility
+defaultComposition: strongest-proof
+compositions:
+  strongest-proof:
+    semanticPlan:
+      - { id: hero, variant: developer }
+      - { id: terminal, variant: session }
+      - { id: about, variant: compact-cards }
+      - { id: docs }
+      - { id: github }
+      - { id: closing }

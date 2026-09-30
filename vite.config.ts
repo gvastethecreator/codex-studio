@@ -68,6 +68,7 @@ export default defineConfig({
     },
     ignorePatterns: [
       'dist/**',
+      'landing/**',
       'generated/**',
       'logs/**',
       'output/**',

@@ -1,0 +1,151 @@
+<section class="about{{#if about.isSemantic}} about--semantic about--{{about.variant}}{{/if}}" id="about" aria-labelledby="about-title">
+  <header class="about-head">
+    {{#if about.kicker}}
+    <p class="kicker">{{about.kicker}}</p>
+    {{/if}}
+    <h2 id="about-title">{{{about.titleHtml}}}</h2>
+    {{#if about.lede}}
+    <p class="lede">{{about.lede}}</p>
+    {{/if}}
+  </header>
+
+  {{#if about.isSemantic}}
+  <div class="about-capabilities about-capabilities--{{about.variant}}" data-count="{{about.capabilityCount}}" data-mascot-spot="top-end" data-mascot-size="156" data-mascot-mood="wink" data-mascot-pose="wave">
+    {{#each about.capabilities}}
+    <article class="about-capability surface{{#if fact}} is-marked{{/if}}" data-card{{#if cardStyle}} style="{{cardStyle}}"{{/if}}{{#if logo}} data-mascot-hop="top-center" data-mascot-size="138" data-mascot-mood="laugh" data-mascot-pose="sign" data-mascot-logo="{{logo}}"{{#if logoMono}} data-mascot-logo-mono{{/if}}{{#if tint}} data-mascot-tint="{{tint}}"{{/if}}{{/if}}>
+      {{#if shade}}
+      <span class="about-capability__shade" data-card-shade="{{shade}}"{{#if shadeStyle}} style="{{shadeStyle}}"{{/if}} aria-hidden="true"></span>
+      {{/if}}
+      {{#if fx}}
+      <canvas class="about-capability__fx" data-card-fx="{{fx}}" aria-hidden="true"></canvas>
+      {{/if}}
+      {{#if logoMono}}
+      <span class="about-capability__logo" aria-hidden="true"><span class="about-capability__mono" style="-webkit-mask-image: url('{{logo}}'); mask-image: url('{{logo}}')"></span></span>
+      <span class="about-capability__mark about-capability__mono" aria-hidden="true" style="-webkit-mask-image: url('{{logo}}'); mask-image: url('{{logo}}')"></span>
+      {{/if}}
+      {{#if logoImage}}
+      <span class="about-capability__logo" aria-hidden="true"><img src="{{logo}}" alt="" decoding="async"></span>
+      <img class="about-capability__mark" src="{{logo}}" alt="" aria-hidden="true" decoding="async">
+      {{/if}}
+      <div class="about-capability__copy">
+        <h3>{{title}}</h3>
+        <p>{{body}}</p>
+        {{#if fact}}<span class="about-capability__fact">{{fact}}</span>{{/if}}
+      </div>
+      {{#if image}}
+      <div class="about-capability__media">
+        <img src="{{image.src}}" alt="{{image.alt}}" decoding="async">
+      </div>
+      {{/if}}
+      {{#if result}}
+      <div class="about-capability__media about-capability__media--result">
+        <img src="{{result.src}}" alt="{{result.alt}}" decoding="async">
+      </div>
+      {{/if}}
+      {{#if code}}
+      <pre class="about-capability__code"><code>{{{code.highlighted}}}</code></pre>
+      {{/if}}
+    </article>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{#if about.hasFeatures}}
+  <div class="about-features" data-about-features>
+    <ul class="about-features__index" role="tablist" aria-label="Features" data-count="{{about.featureCount}}">
+      {{#each about.features}}
+      <li role="presentation">
+        <button
+          class="about-features__tab{{#if on}} is-on{{/if}}"
+          type="button"
+          role="tab"
+          id="{{tabId}}"
+          aria-selected="{{selected}}"
+          aria-controls="{{panelId}}"
+          tabindex="{{tabIndex}}"
+          data-about-feature
+        >
+          <span class="about-features__icon" aria-hidden="true">{{{tablerSvg}}}</span>
+          <strong>{{title}}</strong>
+          <p>{{body}}</p>
+        </button>
+      </li>
+      {{/each}}
+    </ul>
+    <div class="about-features__stage">
+      {{#each about.features}}
+      <div
+        class="about-features__panel{{#if on}} is-on{{/if}}"
+        role="tabpanel"
+        id="{{panelId}}"
+        aria-labelledby="{{tabId}}"
+        tabindex="0"
+        data-kind="{{kind}}"
+        {{#if hidden}}hidden{{/if}}
+        {{#if hidden}}inert{{/if}}
+      >
+        {{#if hasImage}}
+        <img class="about-features__media" src="{{image.src}}" alt="{{image.alt}}" decoding="async">
+        {{/if}}
+        {{#if hasHtml}}
+        <div class="about-features__html">{{{html}}}</div>
+        {{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
+  {{#if about.hasSteps}}
+  <div class="about-path" data-about-path>
+    <div class="about-path__track">
+      <ol class="about-path__index" aria-label="How it works">
+        {{#each about.steps}}
+        <li>
+          <button
+            class="about-path__step{{#if on}} is-on{{/if}}"
+            type="button"
+            data-about-step
+            aria-expanded="{{expanded}}"
+            aria-controls="about-said"
+          >
+            <span class="about-path__n" aria-hidden="true">{{n}}</span>
+            {{title}}
+          </button>
+          <span hidden aria-hidden="true" data-about-body>{{body}}</span>
+        </li>
+        {{/each}}
+      </ol>
+      <span class="about-path__ink" data-about-ink aria-hidden="true"></span>
+    </div>
+    <p class="about-path__said" id="about-said" role="region" aria-live="polite" data-about-said>{{about.said}}</p>
+  </div>
+  {{/if}}
+  {{#if about.hasNotes}}
+  <div class="about-asides" data-about-asides>
+    <ul class="about-asides__index" aria-label="Limits">
+      {{#each about.notes}}
+      <li>
+        <button
+          class="about-asides__chip"
+          type="button"
+          data-about-note
+          aria-expanded="false"
+          aria-controls="about-aside-said"
+        >
+          <span class="about-asides__mark" aria-hidden="true">
+            <svg class="about-asides__plus" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+            <svg class="about-asides__minus" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+          </span>
+          {{title}}
+        </button>
+        <span hidden aria-hidden="true" data-about-body>{{body}}</span>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="about-asides__said" id="about-aside-said" hidden data-about-aside-said></p>
+  </div>
+  {{/if}}
+  {{#if about.source}}
+  <p class="section-source">From <a href="{{about.source.href}}">{{about.source.label}}</a></p>
+  {{/if}}
+</section>

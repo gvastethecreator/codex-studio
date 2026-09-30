@@ -3,3 +3,6 @@ docs/codemap/codemap.html
 docs/codemap/codemap.json
 docs/codemap/codemap.md
 docs/codemap/codemap.lock
+
+# Landing page engine copied from gh-pages-template; it keeps that repository's own style.
+landing/
