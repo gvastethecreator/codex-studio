@@ -1,4 +1,4 @@
-import { IconPalette as Palette } from '@tabler/icons-react';
+import { Palette } from 'iconoir-react';
 import { useDefaultStylePack } from '../../hooks/useDefaultStylePack';
 import { openStudioSettings } from '../../lib/studioSettingsDomains';
 
@@ -17,7 +17,12 @@ export function NoStylePacksNotice({ compact = false }: { compact?: boolean }) {
       role="status"
       className={`flex flex-wrap items-center gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] ${compact ? 'p-2.5' : 'p-4'}`}
     >
-      <Palette size={compact ? 16 : 20} aria-hidden="true" className="shrink-0" />
+      <Palette
+        width={compact ? 16 : 20}
+        height={compact ? 16 : 20}
+        aria-hidden="true"
+        className="shrink-0"
+      />
       <div className="min-w-0 flex-1">
         <strong className="block text-sm">No style packs yet</strong>
         <p className="text-xs text-[color:var(--wb-muted)]">{message}</p>

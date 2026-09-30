@@ -1,4 +1,4 @@
-import { IconChevronLeft as ChevronLeft } from '@tabler/icons-react';
+import { NavArrowLeft as ChevronLeft } from 'iconoir-react';
 import React from 'react';
 
 import type { StyleTabId } from './styleTabRouting';
@@ -51,7 +51,7 @@ export function StyleRecipeNavigationPanel({
             aria-label="Hide style map"
             data-tooltip="Hide style map"
           >
-            <ChevronLeft size={14} />
+            <ChevronLeft width={14} height={14} />
           </button>
         </div>
         <div className="min-h-0 flex-1 overflow-y-auto p-2 custom-scrollbar">

@@ -2,24 +2,24 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { createPortal } from 'react-dom';
 import { useToastUi } from '../contexts/GlobalContext';
 import {
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconX as X,
-  IconDownload as Download,
-  IconCirclePlus as PlusCircle,
-  IconRefresh as RefreshCw,
-  IconTrash as Trash2,
-  IconMaximize as Maximize2,
-  IconMinimize as Minimize2,
-  IconClipboardList as ClipboardList,
-  IconHistory as History,
-  IconCheck as Check,
-  IconHeart as Heart,
-  IconLayoutBoardSplit as SplitSquareHorizontal,
-  IconPlus as Plus,
-  IconMinus as Minus,
-  IconCopy as Copy,
-} from '@tabler/icons-react';
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  Xmark as X,
+  Download,
+  PlusCircle,
+  Refresh as RefreshCw,
+  Trash as Trash2,
+  Expand as Maximize2,
+  Collapse as Minimize2,
+  List as ClipboardList,
+  Clock as History,
+  Check,
+  Heart,
+  ViewColumns2 as SplitSquareHorizontal,
+  Plus,
+  Minus,
+  Copy,
+} from 'iconoir-react';
 import { AnimatePresence, MotionDiv, type Variants } from '../lib/gsapMotion';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import ActionButton from './ui/ActionButton';
@@ -280,7 +280,7 @@ const CarouselImageItem: React.FC<{
               onDoubleClick={(event) => event.stopPropagation()}
             >
               <ActionButton
-                icon={<Minus size={16} />}
+                icon={<Minus width={16} height={16} />}
                 label="Zoom out"
                 onClick={() => updateZoom(target.current.scale / 1.25)}
               />
@@ -294,7 +294,7 @@ const CarouselImageItem: React.FC<{
                 {Math.round(uiScale * 100)}%
               </button>
               <ActionButton
-                icon={<Plus size={16} />}
+                icon={<Plus width={16} height={16} />}
                 label="Zoom in"
                 onClick={() => updateZoom(target.current.scale * 1.25)}
               />
@@ -451,7 +451,7 @@ function CarouselBottomBar({
                 className={`relative flex items-center justify-center rounded-[var(--wb-radius)] p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-[color:var(--wb-ink)] shadow-lg' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
                 data-tooltip="Hold to Compare with Original"
               >
-                <SplitSquareHorizontal size={16} />
+                <SplitSquareHorizontal width={16} height={16} />
                 <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal ml-2 hidden lg:inline">
                   Compare
                 </span>
@@ -462,7 +462,13 @@ function CarouselBottomBar({
           <div className="flex shrink-0 items-center gap-1 rounded-[var(--wb-radius)] bg-white/3 p-1">
             <ActionButton
               onClick={() => onToggleFavorite(currentImage.id)}
-              icon={<Heart size={16} fill={currentImage?.isFavorite ? 'currentColor' : 'none'} />}
+              icon={
+                <Heart
+                  width={16}
+                  height={16}
+                  fill={currentImage?.isFavorite ? 'currentColor' : 'none'}
+                />
+              }
               label={currentImage?.isFavorite ? 'Unpin from top' : 'Pin to top'}
               isActive={currentImage?.isFavorite}
             />
@@ -470,16 +476,16 @@ function CarouselBottomBar({
               onClick={onCopyPrompt}
               icon={
                 copiedPrompt ? (
-                  <Check size={16} className="text-green-500" />
+                  <Check width={16} height={16} className="text-green-500" />
                 ) : (
-                  <ClipboardList size={16} />
+                  <ClipboardList width={16} height={16} />
                 )
               }
               label="Copy Prompt"
             />
             <ActionButton
               onClick={() => onLoadConfig(currentImage.config)}
-              icon={<History size={16} />}
+              icon={<History width={16} height={16} />}
               label="Reuse settings"
             />
           </div>
@@ -487,24 +493,28 @@ function CarouselBottomBar({
           <div className="relative flex shrink-0 items-center gap-1 rounded-[var(--wb-radius)] bg-white/3 p-1">
             <ActionButton
               onClick={() => onAddToContext(currentImage)}
-              icon={<PlusCircle size={16} />}
+              icon={<PlusCircle width={16} height={16} />}
               label="Use as reference"
             />
             <div className="relative">
-              <ActionButton onClick={onDownload} icon={<Download size={16} />} label="Download" />
+              <ActionButton
+                onClick={onDownload}
+                icon={<Download width={16} height={16} />}
+                label="Download"
+              />
             </div>
           </div>
 
           <div className="flex shrink-0 items-center gap-1 rounded-[var(--wb-radius)] bg-white/3 p-1">
             <ActionButton
               onClick={() => onRegenerate(currentImage.config)}
-              icon={<RefreshCw size={16} />}
+              icon={<RefreshCw width={16} height={16} />}
               label="Generate variation"
               variant="primary"
             />
             <ActionButton
               onClick={() => onDelete(currentImage.id)}
-              icon={<Trash2 size={16} />}
+              icon={<Trash2 width={16} height={16} />}
               label="Move to trash"
               variant="danger"
             />
@@ -584,7 +594,7 @@ function CarouselTopBar({
               />
               {img.isFavorite && (
                 <div className="absolute top-1 right-1">
-                  <Heart size={8} className="text-accent-400 fill-accent-400" />
+                  <Heart width={8} height={8} className="text-accent-400 fill-accent-400" />
                 </div>
               )}
             </button>
@@ -607,7 +617,11 @@ function CarouselTopBar({
             data-tooltip={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
             className="min-h-8 min-w-8 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-1.5 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
           >
-            {isFullscreen ? <Minimize2 size={15} /> : <Maximize2 size={15} />}
+            {isFullscreen ? (
+              <Minimize2 width={15} height={15} />
+            ) : (
+              <Maximize2 width={15} height={15} />
+            )}
           </button>
           <button
             type="button"
@@ -616,7 +630,7 @@ function CarouselTopBar({
             data-tooltip="Close"
             className="min-h-8 min-w-8 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-1.5 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
           >
-            <X size={15} />
+            <X width={15} height={15} />
           </button>
         </div>
       </div>
@@ -860,7 +874,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         actions={
           <>
             <ActionButton
-              icon={<Copy size={16} />}
+              icon={<Copy width={16} height={16} />}
               label="Copy image"
               onClick={() => {
                 void copyImageToClipboard(currentImage.src).then(
@@ -870,18 +884,18 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }}
             />
             <ActionButton
-              icon={<Download size={16} />}
+              icon={<Download width={16} height={16} />}
               label="Download image"
               onClick={handleDownloadClick}
             />
             <ActionButton
-              icon={<Heart size={16} />}
+              icon={<Heart width={16} height={16} />}
               label={currentImage.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
               isActive={currentImage.isFavorite}
               onClick={() => onToggleFavorite(currentImage.id)}
             />
             <ActionButton
-              icon={<PlusCircle size={16} />}
+              icon={<PlusCircle width={16} height={16} />}
               label="Use as reference"
               onClick={() => onAddToContext(currentImage)}
             />
@@ -915,7 +929,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               aria-label="Previous image"
               className="studio-ghost-control absolute left-4 z-50 size-10 bg-[color:var(--wb-panel)] disabled:opacity-0 group cursor-pointer"
             >
-              <ChevronLeft size={40} className="group-hover:-translate-x-1 transition-transform" />
+              <ChevronLeft
+                width={40}
+                height={40}
+                className="group-hover:-translate-x-1 transition-transform"
+              />
             </button>
             <button
               type="button"
@@ -927,7 +945,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               aria-label="Next image"
               className="studio-ghost-control absolute right-4 z-50 size-10 bg-[color:var(--wb-panel)] disabled:opacity-0 group cursor-pointer"
             >
-              <ChevronRight size={40} className="group-hover:translate-x-1 transition-transform" />
+              <ChevronRight
+                width={40}
+                height={40}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </button>
           </>
         )}

@@ -2,17 +2,17 @@ import { getGenerationRequirement } from '../../packages/shared/src/generationRe
 import { getRecipeStringParam } from '../../lib/recipeIdentity';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
-  IconGrid3x3 as Grid3X3,
-  IconPalette as Palette,
-  IconPaint as PaintBucket,
-  IconEye as Eye,
-  IconSeparatorHorizontal as SeparatorHorizontal,
-  IconHash as Hash,
-  IconLineScan as ScanLine,
-  IconEdit as Edit3,
-  IconX as X,
-  IconChevronLeft as ChevronLeft,
-} from '@tabler/icons-react';
+  ViewGrid as Grid3X3,
+  Palette,
+  FillColor as PaintBucket,
+  Eye,
+  ExpandLines as SeparatorHorizontal,
+  Hashtag as Hash,
+  ScanBarcode as ScanLine,
+  EditPencil as Edit3,
+  Xmark as X,
+  NavArrowLeft as ChevronLeft,
+} from 'iconoir-react';
 import type { ImageGenerationConfig, AspectRatio } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -112,7 +112,7 @@ function SpritesheetSidebar({
         style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
       >
         <div className="h-14 border-b border-[color:var(--wb-line)] flex items-center px-5 gap-2 bg-white/[0.02]">
-          <Hash size={14} className="text-emerald-500" />
+          <Hash width={14} height={14} className="text-emerald-500" />
           <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
             Edit Cells
           </span>
@@ -122,7 +122,7 @@ function SpritesheetSidebar({
             onClick={onClose}
             className="ml-auto text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]"
           >
-            <X size={14} />
+            <X width={14} height={14} />
           </button>
         </div>
         <div className="flex-1 overflow-y-auto p-3 space-y-2 custom-scrollbar">
@@ -166,7 +166,7 @@ function SpritesheetSidebar({
           style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
           aria-label="Open cell editor"
         >
-          <ChevronLeft size={16} />
+          <ChevronLeft width={16} height={16} />
         </button>
       )}
     </>
@@ -278,21 +278,21 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         </div>
         <ControlDropdown
           title="Perspective"
-          icon={<Eye size={14} />}
+          icon={<Eye width={14} height={14} />}
           label={params.view}
           options={CONTROL_OPTIONS.view}
           onSelect={(v) => setParams((p) => ({ ...p, view: v }))}
         />
         <ControlDropdown
           title="Render Style"
-          icon={<Palette size={14} />}
+          icon={<Palette width={14} height={14} />}
           label={params.style}
           options={CONTROL_OPTIONS.style}
           onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
         />
         <ControlDropdown
           title="Layout"
-          icon={<Grid3X3 size={14} />}
+          icon={<Grid3X3 width={14} height={14} />}
           label={params.grid}
           options={CONTROL_OPTIONS.grid}
           onSelect={(v) => setParams((p) => ({ ...p, grid: v }))}
@@ -303,7 +303,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         >
           <ControlDropdown
             title="Background"
-            icon={<PaintBucket size={14} />}
+            icon={<PaintBucket width={14} height={14} />}
             label={params.background}
             options={CONTROL_OPTIONS.background}
             onSelect={(v) => setParams((p) => ({ ...p, background: v }))}
@@ -324,7 +324,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         </fieldset>
         <ControlDropdown
           title="Separation"
-          icon={<SeparatorHorizontal size={14} />}
+          icon={<SeparatorHorizontal width={14} height={14} />}
           label={params.dividers}
           options={CONTROL_OPTIONS.dividers}
           onSelect={(v) => setParams((p) => ({ ...p, dividers: v }))}
@@ -437,7 +437,8 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                     )}
                     {hoveredCell === i && !cellPrompts[i] && (
                       <Edit3
-                        size={12}
+                        width={12}
+                        height={12}
                         className={isLightBg ? 'text-black/30' : 'text-[color:var(--wb-ink)]/30'}
                       />
                     )}
@@ -448,7 +449,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           </div>
 
           <div className="absolute bottom-2 left-2 right-2 justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] border border-[color:var(--wb-line)] px-3 py-2 rounded-[var(--wb-radius)] flex items-center gap-3 shadow-lg pointer-events-none sm:left-auto sm:right-auto sm:justify-start sm:px-4">
-            <ScanLine size={16} className="text-[color:var(--wb-success)]" />
+            <ScanLine width={16} height={16} className="text-[color:var(--wb-success)]" />
             <div className="flex flex-col">
               <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
                 {config.aspectRatio} Canvas

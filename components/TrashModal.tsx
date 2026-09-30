@@ -2,12 +2,12 @@ import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
-  IconTrash as Trash2,
-  IconRotate as RotateCcw,
-  IconX as X,
-  IconTrash as Trash,
-  IconAlertCircle as AlertCircle,
-} from '@tabler/icons-react';
+  Trash as Trash2,
+  RefreshCircle as RotateCcw,
+  Xmark as X,
+  Trash,
+  WarningCircle as AlertCircle,
+} from 'iconoir-react';
 import type { ArchivedImageGroup } from '../lib/studioCatalogTrashView';
 
 interface TrashModalProps {
@@ -57,7 +57,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           <div className="flex shrink-0 items-start justify-between gap-3 border-b border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 sm:items-center sm:p-6">
             <div className="flex min-w-0 items-center gap-3">
               <div className="rounded-[var(--wb-radius)] bg-red-500/10 p-2.5 text-[color:var(--wb-danger)]">
-                <Trash2 size={20} />
+                <Trash2 width={20} height={20} />
               </div>
               <div className="min-w-0">
                 <h2 className="truncate text-base font-semibold tracking-normal text-[color:var(--wb-ink)] sm:text-lg">
@@ -77,7 +77,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     onClick={onRestoreAll}
                     className="flex items-center gap-2 rounded-[var(--wb-radius)] bg-accent-500/10 px-3 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-400 transition-colors hover:bg-accent-500/20 sm:px-4 cursor-pointer"
                   >
-                    <RotateCcw size={14} />
+                    <RotateCcw width={14} height={14} />
                     <span>Restore All</span>
                   </button>
                   <button
@@ -85,7 +85,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     onClick={onEmpty}
                     className="flex items-center gap-2 rounded-[var(--wb-radius)] bg-red-500/10 px-3 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] transition-colors hover:bg-red-500/20 sm:px-4 cursor-pointer"
                   >
-                    <Trash size={14} />
+                    <Trash width={14} height={14} />
                     <span>Delete permanently</span>
                   </button>
                 </>
@@ -96,7 +96,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                 onClick={onClose}
                 className="p-2 rounded-[var(--wb-radius)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] transition-colors cursor-pointer"
               >
-                <X size={20} />
+                <X width={20} height={20} />
               </button>
             </div>
           </div>
@@ -106,7 +106,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
             {trash.length === 0 ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-20">
                 <div className="size-16 rounded-full bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] flex items-center justify-center text-[color:var(--wb-dim)] mb-4">
-                  <Trash2 size={32} />
+                  <Trash2 width={32} height={32} />
                 </div>
                 <h3 className="text-[color:var(--wb-muted)] font-bold tracking-normal text-sm mb-1">
                   Archive is empty
@@ -163,7 +163,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                       className="flex h-11 w-full items-center justify-center rounded-[var(--wb-radius)] bg-accent-500/10 p-3 text-accent-400 transition-[color,background-color,transform] hover:bg-accent-500 hover:text-[color:var(--wb-ink)] active:scale-90 sm:w-auto cursor-pointer"
                       data-tooltip="Restore image group"
                     >
-                      <RotateCcw size={18} />
+                      <RotateCcw width={18} height={18} />
                     </button>
                   </div>
                 ))}
@@ -173,7 +173,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
 
           {/* Footer */}
           <div className="p-4 bg-[color:var(--wb-well)] border-t border-[color:var(--wb-line)] flex items-center gap-3">
-            <AlertCircle size={14} className="text-[color:var(--wb-dim)]" />
+            <AlertCircle width={14} height={14} className="text-[color:var(--wb-dim)]" />
             <p className="text-[length:var(--wbp-label)] text-[color:var(--wb-dim)] font-bold tracking-normal">
               Restore images to return them to their workspace. Deleting permanently removes them.
             </p>

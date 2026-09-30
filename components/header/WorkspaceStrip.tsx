@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  IconClock as Clock,
-  IconDatabase as Database,
-  IconDotsVertical as DotsVertical,
-  IconFolder as Folder,
-  IconPhoto as Photo,
-  IconPlus as Plus,
-  IconTrash as Trash2,
-} from '@tabler/icons-react';
+  Clock,
+  Database,
+  MoreVert as DotsVertical,
+  Folder,
+  MediaImage as Photo,
+  Plus,
+  Trash as Trash2,
+} from 'iconoir-react';
 import { isDefaultWorkspace } from '../../lib/workspaceLifecycle';
 import type { Workspace } from '../../types';
 import Tooltip from '../Tooltip';
@@ -345,7 +345,7 @@ export function WorkspaceStrip({
                     : 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] opacity-75 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] hover:opacity-100'
                 }`}
               >
-                <DotsVertical size={15} />
+                <DotsVertical width={15} height={15} />
               </button>
             </Tooltip>
             {editingWorkspaceId === workspace.id && (
@@ -402,7 +402,11 @@ export function WorkspaceStrip({
                 </div>
                 <div className="space-y-1 py-2 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)]">
                   <div className="flex items-start gap-2 rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
-                    <Folder size={13} className="mt-0.5 shrink-0 text-[color:var(--wb-muted)]" />
+                    <Folder
+                      width={13}
+                      height={13}
+                      className="mt-0.5 shrink-0 text-[color:var(--wb-muted)]"
+                    />
                     <div className="min-w-0 flex-1">
                       <div className="font-semibold tracking-normal text-[color:var(--wb-muted)]">
                         Location
@@ -418,7 +422,7 @@ export function WorkspaceStrip({
                   <div className="grid grid-cols-2 gap-1">
                     <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
                       <div className="flex items-center gap-1.5 font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                        <Photo size={12} />
+                        <Photo width={12} height={12} />
                         Images
                       </div>
                       <div className="mt-1 text-[color:var(--wb-ink)] tabular-nums">
@@ -427,14 +431,14 @@ export function WorkspaceStrip({
                     </div>
                     <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
                       <div className="flex items-center gap-1.5 font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                        <Database size={12} />
+                        <Database width={12} height={12} />
                         Storage
                       </div>
                       <div className="mt-1 truncate text-[color:var(--wb-ink)]">{storageLabel}</div>
                     </div>
                     <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
                       <div className="flex items-center gap-1.5 font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                        <Clock size={12} />
+                        <Clock width={12} height={12} />
                         Updated
                       </div>
                       <div className="mt-1 text-[color:var(--wb-ink)]">{updatedLabel}</div>
@@ -471,7 +475,7 @@ export function WorkspaceStrip({
                   }}
                   className="flex w-full items-center gap-2 rounded-[var(--wb-radius)] px-2 py-1.5 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] transition-colors hover:bg-red-500/10 hover:text-[color:var(--wb-danger)] disabled:cursor-not-allowed disabled:text-[color:var(--wb-danger)] disabled:hover:bg-transparent"
                 >
-                  <Trash2 size={13} />
+                  <Trash2 width={13} height={13} />
                   <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
                 </button>
               </DemandMountedGsapDropdown>
@@ -490,7 +494,7 @@ export function WorkspaceStrip({
           aria-label="Create workspace"
           className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-dim)] transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-[color:var(--wb-ink)] ${isCompact ? 'w-full' : ''}`}
         >
-          <Plus size={16} />
+          <Plus width={16} height={16} />
         </button>
       </Tooltip>
     </div>

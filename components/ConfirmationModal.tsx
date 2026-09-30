@@ -2,11 +2,11 @@ import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
-  IconAlertTriangle as AlertTriangle,
-  IconRotate as RotateCcw,
-  IconShieldExclamation as ShieldAlert,
-  IconX as X,
-} from '@tabler/icons-react';
+  WarningTriangle as AlertTriangle,
+  RefreshCircle as RotateCcw,
+  ShieldAlert,
+  Xmark as X,
+} from 'iconoir-react';
 
 import type { ConfirmationTone } from '../hooks/useStudioActionConfirmations';
 
@@ -28,19 +28,19 @@ const TONE_STYLES: Record<
   { icon: React.ReactNode; shell: string; button: string }
 > = {
   danger: {
-    icon: <ShieldAlert size={18} />,
+    icon: <ShieldAlert width={18} height={18} />,
     shell: 'bg-rose-500/10 text-[color:var(--wb-danger)] border border-rose-500/2',
     button:
       'bg-rose-500/15 text-[color:var(--wb-danger)] border border-rose-500/2 hover:bg-rose-500/20 hover:border-rose-400/2',
   },
   warning: {
-    icon: <AlertTriangle size={18} />,
+    icon: <AlertTriangle width={18} height={18} />,
     shell: 'bg-amber-500/10 text-[color:var(--wb-warning)] border border-amber-500/2',
     button:
       'bg-amber-500/15 text-[color:var(--wb-warning)] border border-amber-500/2 hover:bg-amber-500/20 hover:border-amber-400/2',
   },
   accent: {
-    icon: <RotateCcw size={18} />,
+    icon: <RotateCcw width={18} height={18} />,
     shell: 'bg-accent-500/10 text-accent-300 border border-accent-500/2',
     button:
       'bg-accent-500/15 text-accent-100 border border-accent-500/2 hover:bg-accent-500/20 hover:border-accent-400/2',
@@ -108,7 +108,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
               onClick={onClose}
               className="rounded-[var(--wb-radius)] p-2 text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
-              <X size={18} />
+              <X width={18} height={18} />
             </button>
           </div>
 

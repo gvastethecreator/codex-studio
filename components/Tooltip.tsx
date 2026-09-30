@@ -77,7 +77,13 @@ export function ControlTooltips() {
       const control = target?.closest<HTMLElement>(
         '[data-tooltip], button, [role="button"][aria-label], input[aria-label], select[aria-label]',
       );
-      setAnchor(control && !control.closest('.tooltip, [role="tooltip"]') ? control : null);
+      setAnchor(
+        control &&
+          !control.hasAttribute('data-tooltip-off') &&
+          !control.closest('.tooltip, [role="tooltip"]')
+          ? control
+          : null,
+      );
     };
     const leave = () => setAnchor(null);
     const key = (event: KeyboardEvent) => {

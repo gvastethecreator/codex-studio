@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconArrowRight } from '@tabler/icons-react';
+import { ArrowRight } from 'iconoir-react';
 import type { RecipeAliasId } from '../../lib/recipeAliases';
 import type { RecipeCatalogDisplayEntry } from '../../lib/recipeCatalog';
 import { RECIPE_CARD_IMAGES } from '../../lib/recipeCardCatalog';
@@ -114,8 +114,9 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
                     {recipe.description}
                   </span>
                 </span>
-                <IconArrowRight
-                  size={16}
+                <ArrowRight
+                  width={16}
+                  height={16}
                   className={
                     isCompact
                       ? 'create-workflow-option-arrow'

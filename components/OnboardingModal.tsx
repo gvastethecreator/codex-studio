@@ -4,21 +4,21 @@ import { CozyMascot, CozyLoader } from './CozyMascot';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
-  IconArrowRight as ArrowRight,
-  IconCircleCheck as CheckCircle2,
-  IconAlertCircle as CircleAlert,
-  IconCircleDashed as CircleDashed,
-  IconClipboard as Clipboard,
-  IconClipboardCheck as ClipboardCheck,
-  IconFolder as Folder,
-  IconPalette as Palette,
-  IconPhoto as ImageIcon,
-  IconPlayerPlay as Play,
-  IconRefresh as RefreshCw,
-  IconSparkles as Sparkles,
-  IconTerminal as Terminal,
-  IconX as X,
-} from '@tabler/icons-react';
+  ArrowRight,
+  CheckCircle as CheckCircle2,
+  WarningCircle as CircleAlert,
+  Circle as CircleDashed,
+  PasteClipboard as Clipboard,
+  ClipboardCheck,
+  Folder,
+  Palette,
+  MediaImage,
+  Play,
+  Refresh as RefreshCw,
+  Sparks as Sparkles,
+  Terminal,
+  Xmark as X,
+} from 'iconoir-react';
 import {
   buildCozyStudioSetupPrompt,
   COZY_STUDIO_SETUP_SKILL_PATH,
@@ -144,7 +144,7 @@ function CheckRow({
       </div>
       <div className={`flex items-center gap-2 pt-1 text-sm  ${toneClass}`}>
         <span className="hidden sm:inline">{status}</span>
-        <StatusIcon size={16} />
+        <StatusIcon width={16} height={16} />
       </div>
     </div>
   );
@@ -193,7 +193,7 @@ function ImagesFolderRow({ isOpen }: { isOpen: boolean }) {
         className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] text-[color:var(--wb-ink)]"
         aria-hidden="true"
       >
-        <Folder size={18} />
+        <Folder width={18} height={18} />
       </span>
       <div className="min-w-0 flex-1">
         <h3>Images folder</h3>
@@ -301,7 +301,7 @@ function StylePacksRow({ isOpen, onOpen }: { isOpen: boolean; onOpen: () => void
         className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] text-[color:var(--wb-ink)]"
         aria-hidden="true"
       >
-        <Palette size={18} />
+        <Palette width={18} height={18} />
       </span>
       <div className="min-w-0 flex-1">
         <h3>Style packs</h3>
@@ -350,7 +350,7 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
           onClick={copyPrompt}
           className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-blue-400/2 bg-blue-500/12 px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-blue-500/20 xl:h-9 xl:px-2.5"
         >
-          <CopyIcon size={15} />
+          <CopyIcon width={15} height={15} />
           {copyState === 'copied' ? 'Copied' : copyState === 'failed' ? 'Failed' : 'Copy'}
         </button>
       </div>
@@ -407,7 +407,7 @@ function CopyCommandButton({ command, label }: { command: string; label: string 
           {command}
         </span>
       </span>
-      <CopyIcon size={15} className="shrink-0 text-[color:var(--wb-ink)]" />
+      <CopyIcon width={15} height={15} className="shrink-0 text-[color:var(--wb-ink)]" />
     </button>
   );
 }
@@ -568,7 +568,7 @@ function CodexRuntimeRepairCard({
           onClick={onRefresh}
           className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] xl:h-9"
         >
-          <RefreshCw size={14} />
+          <RefreshCw width={14} height={14} />
           Refresh
         </button>
       </div>
@@ -649,9 +649,10 @@ function OnboardingLogPanel({ lines }: { lines: OnboardingLogLine[] }) {
 }
 
 function checkIcon(id: OnboardingCheck['id']) {
-  if (id === 'studio_library' || id === 'bootstrap_config') return <Folder size={18} />;
+  if (id === 'studio_library' || id === 'bootstrap_config')
+    return <Folder width={18} height={18} />;
   if (id === 'chatgpt_login') return <ProviderBrandMark providerId="chatgpt" size="sm" />;
-  return <Terminal size={18} />;
+  return <Terminal width={18} height={18} />;
 }
 
 function checkTone(ready: boolean, backendReachable: boolean): CheckTone {
@@ -905,7 +906,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   disabled={isChecking}
                   className="hidden h-10 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-60 sm:inline-flex"
                 >
-                  {isChecking ? <CozyLoader size={18} /> : <RefreshCw size={14} />}
+                  {isChecking ? <CozyLoader size={18} /> : <RefreshCw width={14} height={14} />}
                   Refresh
                 </button>
                 <button
@@ -914,7 +915,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   className="grid size-10 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                   aria-label="Close onboarding"
                 >
-                  <X size={18} />
+                  <X width={18} height={18} />
                 </button>
               </div>
             </header>
@@ -937,7 +938,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     {
                       title: 'Pick a workflow',
                       detail: 'Create, restyle, or work on a character.',
-                      Icon: ImageIcon,
+                      Icon: MediaImage,
                     },
                     {
                       title: 'Add your idea',
@@ -958,7 +959,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       transition={{ duration: 0.16, delay: index * 0.06 }}
                     >
                       <span className="onboarding-step-marker">
-                        <Icon size={20} />
+                        <Icon width={20} height={20} />
                         <span>{index + 1}</span>
                       </span>
                       <h3>{title}</h3>
@@ -1032,7 +1033,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         ) : (
                           <>
                             <CheckRow
-                              icon={<Folder size={18} />}
+                              icon={<Folder width={18} height={18} />}
                               title="Studio Library"
                               detail={
                                 libraryReady
@@ -1044,7 +1045,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                               tone={libraryTone}
                             />
                             <CheckRow
-                              icon={<Sparkles size={18} />}
+                              icon={<Sparkles width={18} height={18} />}
                               title="ChatGPT Codex login"
                               detail={sessionDetail}
                               meta={localCodexSession?.authLabel}
@@ -1052,7 +1053,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                               tone={sessionTone}
                             />
                             <CheckRow
-                              icon={<Terminal size={18} />}
+                              icon={<Terminal width={18} height={18} />}
                               title="app-server connection"
                               detail={appServerDetail}
                               meta={appServerReady ? health?.appServer.wsUrl : apiBase}
@@ -1127,7 +1128,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                           : primaryAction?.type === 'codex_login'
                             ? primaryAction.label
                             : (primaryAction?.label ?? (isReady ? 'Open Studio' : 'Got it'))}
-                      <ArrowRight size={17} />
+                      <ArrowRight width={17} height={17} />
                     </button>
                   )}
                   {!isReady && (
@@ -1157,7 +1158,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       disabled={isStartingAppServer}
                       className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-blue-500/2 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-[color:var(--wb-ink)] transition-colors hover:bg-blue-500/18 disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
                     >
-                      <Play size={16} />
+                      <Play width={16} height={16} />
                       {isStartingAppServer ? 'Starting' : 'Start app-server'}
                     </button>
                   ) : null}
@@ -1168,7 +1169,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   </p>
                 ) : (
                   <div className="hidden items-center gap-2 text-sm text-[color:var(--wb-muted)] md:flex">
-                    <Folder size={15} />
+                    <Folder width={15} height={15} />
                     Files stay on this device.
                   </div>
                 )}

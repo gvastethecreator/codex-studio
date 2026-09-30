@@ -1,9 +1,5 @@
 import { CozyLoader as LoaderCircle } from '../CozyMascot';
-import {
-  IconDatabase as Database,
-  IconPhoto as FileImage,
-  IconRefresh as RefreshCw,
-} from '@tabler/icons-react';
+import { Database, MediaImage as FileImage, Refresh as RefreshCw } from 'iconoir-react';
 import { useMemo, useState } from 'react';
 import { ConfirmationModal } from '../ConfirmationModal';
 import type {
@@ -113,7 +109,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           {isLoadingAudit ? (
             <LoaderCircle size={13} className="animate-spin" />
           ) : (
-            <RefreshCw size={13} />
+            <RefreshCw width={13} height={13} />
           )}
           Audit
         </button>
@@ -163,7 +159,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
       <div className="mt-3 grid gap-2 md:grid-cols-3">
         <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
           <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-            <Database size={14} className="text-[color:var(--wb-muted)]" />
+            <Database width={14} height={14} className="text-[color:var(--wb-muted)]" />
             Payloads
           </div>
           <p className="mb-3 text-xs text-[color:var(--wb-muted)]">
@@ -193,7 +189,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
 
         <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
           <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-            <FileImage size={14} className="text-[color:var(--wb-muted)]" />
+            <FileImage width={14} height={14} className="text-[color:var(--wb-muted)]" />
             Thumbnails
           </div>
           <p className="mb-3 text-xs text-[color:var(--wb-muted)]">
@@ -226,7 +222,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
 
         <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
           <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-            <RefreshCw size={14} className="text-[color:var(--wb-muted)]" />
+            <RefreshCw width={14} height={14} className="text-[color:var(--wb-muted)]" />
             Tooling Logs
           </div>
           <button

@@ -1,9 +1,5 @@
 import { CozyLoader as LoaderCircle } from '../CozyMascot';
-import {
-  IconPhoto as FileImage,
-  IconFolderPlus as FolderPlus,
-  IconUpload as Upload,
-} from '@tabler/icons-react';
+import { MediaImage as FileImage, FolderPlus, Upload } from 'iconoir-react';
 import { useEffect, useState } from 'react';
 import type {
   ExternalOutputSourceCandidate,
@@ -112,7 +108,7 @@ export function SettingsOutputSourcesPanel({
         {isLoadingOutputSources ? (
           <LoaderCircle size={16} className="animate-spin text-[color:var(--wb-muted)]" />
         ) : (
-          <FolderPlus size={16} className="text-[color:var(--wb-muted)]" />
+          <FolderPlus width={16} height={16} className="text-[color:var(--wb-muted)]" />
         )}
       </div>
 
@@ -151,7 +147,7 @@ export function SettingsOutputSourcesPanel({
                     {isScanning ? (
                       <LoaderCircle size={13} className="animate-spin" />
                     ) : (
-                      <FileImage size={13} />
+                      <FileImage width={13} height={13} />
                     )}
                     Scan
                   </button>
@@ -164,7 +160,7 @@ export function SettingsOutputSourcesPanel({
                     {isImporting ? (
                       <LoaderCircle size={13} className="animate-spin" />
                     ) : (
-                      <Upload size={13} />
+                      <Upload width={13} height={13} />
                     )}
                     Import {selected.length || ''}
                   </button>

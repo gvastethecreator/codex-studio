@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { IconX as X } from '@tabler/icons-react';
+import { Xmark as X } from 'iconoir-react';
 
 import { useDialogFocus } from '../../hooks/useDialogFocus';
 
@@ -61,7 +61,7 @@ export const CreatePromptExpandDialog: React.FC<CreatePromptExpandDialogProps> =
             tabIndex={-1}
             aria-label="Cancel expanded prompt"
           >
-            <X size={16} aria-hidden="true" />
+            <X width={16} height={16} aria-hidden="true" />
           </button>
         </div>
         <div className="create-dialog-body">

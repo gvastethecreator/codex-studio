@@ -1,5 +1,5 @@
 import { CozyLoader as LoaderCircle } from '../CozyMascot';
-import { IconRefresh as RefreshCw } from '@tabler/icons-react';
+import { Refresh as RefreshCw } from 'iconoir-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { ExtensionManifest } from '../../packages/shared/src/extensions';
 import { WORKFLOW_MODULES, type WorkflowModuleId } from '../../packages/shared/src/workflowModules';
@@ -407,7 +407,11 @@ export function SettingsExtensionsPanel() {
           onClick={() => void refresh()}
           disabled={loading}
         >
-          {loading ? <LoaderCircle size={13} className="animate-spin" /> : <RefreshCw size={13} />}
+          {loading ? (
+            <LoaderCircle size={13} className="animate-spin" />
+          ) : (
+            <RefreshCw width={13} height={13} />
+          )}
           Check again
         </button>
       </div>

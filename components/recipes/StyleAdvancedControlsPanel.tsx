@@ -1,4 +1,4 @@
-import { IconCheck as Check } from '@tabler/icons-react';
+import { Check } from 'iconoir-react';
 import React from 'react';
 import { getStyleRuntimePresetDisplayName, type StyleRuntimePreset } from './stylesData';
 import {
@@ -84,7 +84,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                       : 'border-[color:var(--wb-line)] bg-white/7 text-[color:var(--wb-muted)]'
                   }`}
                 >
-                  <Check size={11} />
+                  <Check width={11} height={11} />
                   {enabled ? 'On' : 'Off'}
                 </button>
               </div>

@@ -1,9 +1,9 @@
 import { CatalogCardBackdrop } from '../CatalogCardBackdrop';
 import {
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconStack as Layers,
-} from '@tabler/icons-react';
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  MultiplePages as Layers,
+} from 'iconoir-react';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   STYLE_COLLECTION_FAMILIES,
@@ -757,7 +757,7 @@ function StyleSourcePacksSection({
         data-style-source-packs-summary
         className="flex items-center gap-2 px-3 py-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]"
       >
-        <Layers size={16} />
+        <Layers width={16} height={16} />
         Source Packs
         <span className="ml-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.035] px-2 py-1 text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
           {STYLE_RUNTIME_PACK_SUMMARIES.length}
@@ -848,7 +848,7 @@ function StyleNavigationPanel({
             aria-label="Hide style map"
             data-tooltip="Hide style map"
           >
-            <ChevronLeft size={14} />
+            <ChevronLeft width={14} height={14} />
           </button>
         </div>
         <div className="min-h-0 flex-1 overflow-y-auto p-2 custom-scrollbar">
@@ -1095,7 +1095,7 @@ export function StyleCollectionsLandingSurface({
               aria-label="Show style map"
               data-tooltip="Show style map"
             >
-              <ChevronRight size={14} />
+              <ChevronRight width={14} height={14} />
             </button>
           </aside>
         )}

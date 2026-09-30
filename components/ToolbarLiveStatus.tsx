@@ -1,4 +1,4 @@
-import { IconSend as Send } from '@tabler/icons-react';
+import { SendDiagonal as Send } from 'iconoir-react';
 import React, { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 
 const SCRAMBLE_CHARACTERS =
@@ -133,7 +133,7 @@ export function GenerationElapsedStatus({
   return (
     <>
       <div className="relative z-10 flex items-center gap-2" data-generation-elapsed-status>
-        <Send size={14} className="text-accent-200" />
+        <Send width={14} height={14} className="text-accent-200" />
         <span className="text-white">QUEUE</span>
         <span className="hidden w-12 text-right text-[length:var(--wbp-label)] tabular-nums text-accent-300/80 sm:inline">
           {elapsedTime}s

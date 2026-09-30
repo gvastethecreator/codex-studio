@@ -1,5 +1,4 @@
 import { CozyLoader as Loader2 } from './CozyMascot';
-import { CatalogCardBackdrop } from './CatalogCardBackdrop';
 import React, { useRef, useState, useMemo, useSyncExternalStore } from 'react';
 import type {
   GeneratedImageWithConfig,
@@ -7,24 +6,24 @@ import type {
   StudioGenerationPlaceholder,
 } from '../types';
 import {
-  IconDownload as Download,
-  IconCirclePlus as PlusCircle,
-  IconRefresh as RefreshCw,
-  IconTrash as Trash2,
-  IconCheck as Check,
-  IconClipboardList as ClipboardList,
-  IconHistory as History,
-  IconHeart as Heart,
-  IconPhotoOff as ImageOff,
-  IconPhoto as Photo,
-  IconArrowsSort as ArrowUpDown,
-  IconLayoutCards as LayoutCards,
-  IconLayoutCollage as LayoutCollage,
-  IconLayoutGrid as LayoutGrid,
-  IconLayoutList as LayoutList,
-  IconSquareCheck as CheckSquare,
-  IconSquare as Square,
-} from '@tabler/icons-react';
+  Download,
+  PlusCircle,
+  Refresh as RefreshCw,
+  Trash as Trash2,
+  Check,
+  List as ClipboardList,
+  Clock as History,
+  Heart,
+  MediaImageXmark as ImageOff,
+  MediaImage as Photo,
+  Sort as ArrowUpDown,
+  ViewGrid as LayoutCards,
+  ViewGrid as LayoutCollage,
+  ViewGrid as LayoutGrid,
+  List as LayoutList,
+  CheckSquare,
+  Square,
+} from 'iconoir-react';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import Tooltip from './Tooltip';
@@ -49,6 +48,8 @@ import {
   estimateImageGridItemHeight,
   estimateImageGridListItemHeight,
   filterImageGridImages,
+  IMAGE_GRID_CAPTION_HEIGHT,
+  isWideImageGridFrame,
   resolveImageGridColumnCount,
   resolveImageGridAspectRatio,
   resolveImageGridIntrinsicSize,
@@ -144,7 +145,9 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const [isActionSurfaceActive, setIsActionSurfaceActive] = useState(false);
     const [isActionSurfaceFocused, setIsActionSurfaceFocused] = useState(false);
     const [isActionMenuOpen, setIsActionMenuOpen] = useState(false);
-    const [isActionPanelExpanded, setIsActionPanelExpanded] = useState(false);
+    const [isCoarsePointer] = useState(
+      () => typeof window !== 'undefined' && !!window.matchMedia?.('(hover: none)').matches,
+    );
     const timeoutRef = useRef<number | null>(null);
     const primaryImageSrc = image.thumbnail || image.src;
     const [failedSrc, setFailedSrc] = useState<string | null>(null);
@@ -154,16 +157,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const imageIntrinsicSize = resolveImageGridIntrinsicSize(image);
     const shouldMountActions = shouldMountCatalogCardActions({
       alwaysShowActions,
-      isActionSurfaceActive:
-        isActionSurfaceActive ||
-        isActionSurfaceFocused ||
-        isActionMenuOpen ||
-        isActionPanelExpanded,
+      isActionSurfaceActive: isActionSurfaceActive || isActionSurfaceFocused || isActionMenuOpen,
       isSelected,
     });
     const isGridView = viewMode === 'grid';
     const isListView = viewMode === 'list';
-    const isCardView = viewMode === 'cards';
     const frameAspectRatio = isGridView || isListView ? '1 / 1' : imageAspectRatio;
     const listThumbnailSize = Math.max(88, Math.min(136, Math.round(thumbnailSize * 0.66)));
     const promptText = image.config.prompt?.trim() || 'Untitled image';
@@ -273,7 +271,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           style={frameStyle}
           aria-label="Image unavailable"
         >
-          <ImageOff size={20} aria-hidden="true" />
+          <ImageOff width={20} height={20} aria-hidden="true" />
         </div>
       ) : (
         <span className={frameClassName} style={frameStyle}>
@@ -302,28 +300,40 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       </div>
     );
 
-    const visibleActionGroup = (
+    const renderActionGroup = (compact: boolean) => (
       <div className="library-card-actions catalog-hover-actions">
         <CompactActionButton
           onClick={() => onAddToContext(image)}
-          icon={<PlusCircle size={14} />}
+          icon={<PlusCircle width={14} height={14} />}
           label="Use as reference"
           variant="primary"
         />
-        <CompactActionButton
-          onClick={handleCopyPrompt}
-          icon={copiedPrompt ? <Check size={14} /> : <ClipboardList size={14} />}
-          label={copiedPrompt ? 'Prompt copied' : 'Copy prompt'}
-        />
-        <CompactActionButton
-          onClick={handleDownload}
-          icon={<Download size={14} />}
-          label="Download"
-        />
+        {compact ? null : (
+          <>
+            <CompactActionButton
+              onClick={handleCopyPrompt}
+              icon={
+                copiedPrompt ? (
+                  <Check width={14} height={14} />
+                ) : (
+                  <ClipboardList width={14} height={14} />
+                )
+              }
+              label={copiedPrompt ? 'Prompt copied' : 'Copy prompt'}
+            />
+            <CompactActionButton
+              onClick={handleDownload}
+              icon={<Download width={14} height={14} />}
+              label="Download"
+            />
+          </>
+        )}
         {
           <CompactActionButton
             onClick={() => onToggleFavorite(image.id)}
-            icon={<Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} />}
+            icon={
+              <Heart width={14} height={14} fill={image.isFavorite ? 'currentColor' : 'none'} />
+            }
             label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
             isActive={image.isFavorite}
           />
@@ -331,7 +341,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         {
           <CompactActionButton
             onClick={handleSelectClick}
-            icon={<Check size={14} />}
+            icon={<Check width={14} height={14} />}
             label={isSelected ? 'Deselect' : 'Select'}
             isActive={isSelected}
           />
@@ -351,14 +361,29 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             •••
           </summary>
           <div>
+            {compact ? (
+              <>
+                <button type="button" onClick={handleCopyPrompt}>
+                  {copiedPrompt ? (
+                    <Check width={14} height={14} />
+                  ) : (
+                    <ClipboardList width={14} height={14} />
+                  )}{' '}
+                  {copiedPrompt ? 'Prompt copied' : 'Copy prompt'}
+                </button>
+                <button type="button" onClick={handleDownload}>
+                  <Download width={14} height={14} /> Download
+                </button>
+              </>
+            ) : null}
             <button type="button" onClick={() => void withFullConfig(onLoadConfig)}>
-              <History size={14} /> Load configuration
+              <History width={14} height={14} /> Load configuration
             </button>
             <button type="button" onClick={() => void withFullConfig(onRegenerate)}>
-              <RefreshCw size={14} /> Regenerate
+              <RefreshCw width={14} height={14} /> Regenerate
             </button>
             <button type="button" className="is-danger" onClick={() => onDelete(image.id)}>
-              <Trash2 size={14} /> Move to trash
+              <Trash2 width={14} height={14} /> Move to trash
             </button>
           </div>
         </details>
@@ -399,49 +424,15 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               <span className="mt-2 block">{metadataLine}</span>
             </span>
           </button>
-          <div className="flex shrink-0 justify-end sm:max-w-[17.25rem]">{visibleActionGroup}</div>
+          <div className="flex shrink-0 justify-end sm:max-w-[17.25rem]">
+            {renderActionGroup(false)}
+          </div>
         </div>
       );
     }
 
-    if (isCardView) {
-      return (
-        <div
-          ref={itemRef}
-          onMouseEnter={() => setIsActionSurfaceActive(true)}
-          onMouseLeave={() => setIsActionSurfaceActive(false)}
-          onFocusCapture={handleFocusCapture}
-          onBlurCapture={handleBlurCapture}
-          className={`catalog-art-card relative group min-w-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow]
-          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-panel)]/85'}
-        `}
-          style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 460px' }}
-        >
-          <button
-            type="button"
-            onClick={handleImageClick}
-            aria-label={`Open image preview: ${image.config.prompt?.slice(0, 80) || image.id}`}
-            className="relative block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
-          >
-            {renderImageFrame({
-              frameClassName:
-                'block w-full overflow-hidden rounded-t-xl bg-[color:var(--wb-panel)] ring-1 ring-inset ring-white/10',
-            })}
-            <div
-              className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
-            />
-          </button>
-          <CatalogCardBackdrop
-            label={promptText}
-            title={<span>{promptText}</span>}
-            onExpandedChange={setIsActionPanelExpanded}
-          >
-            {metadataLine}
-            {visibleActionGroup}
-          </CatalogCardBackdrop>
-        </div>
-      );
-    }
+    const isMosaicView = viewMode === 'mosaic';
+    const toolbarPlacement = isWideImageGridFrame(image, viewMode) ? 'caption' : 'image';
 
     return (
       <div
@@ -450,44 +441,48 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         onMouseLeave={() => setIsActionSurfaceActive(false)}
         onFocusCapture={handleFocusCapture}
         onBlurCapture={handleBlurCapture}
-        className={`catalog-art-card masonry-item relative group overflow-hidden rounded-[var(--wb-radius)] cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
-        ${viewMode === 'mosaic' ? 'mb-4' : ''}
-        ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
-        animate-in fade-in-0 zoom-in-95
+        data-toolbar={toolbarPlacement}
+        className={`catalog-art-card library-card group relative flex min-w-0 flex-col rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left shadow-lg shadow-black/25 transition-[border-color,box-shadow]
+        ${isMosaicView ? 'masonry-item mb-4' : ''}
+        ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'hover:border-[color:var(--wb-border)]'}
       `}
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 420px' }}
+        style={{
+          contentVisibility: isActionMenuOpen ? 'visible' : 'auto',
+          ['--library-caption-height' as string]: `${IMAGE_GRID_CAPTION_HEIGHT}px`,
+          containIntrinsicSize: '320px 420px',
+        }}
       >
-        <button
-          type="button"
-          onClick={handleImageClick}
-          aria-label={`Open image preview: ${image.config.prompt?.slice(0, 80) || image.id}`}
-          className="block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
+        <div className="relative overflow-hidden rounded-t-[var(--wb-radius)]">
+          <button
+            type="button"
+            onClick={handleImageClick}
+            aria-label={`Open image preview: ${image.config.prompt?.slice(0, 80) || image.id}`}
+            data-tooltip-off
+            className="block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
+          >
+            {renderImageFrame({
+              frameClassName:
+                'block w-full overflow-hidden bg-[color:var(--wb-well)] ring-1 ring-inset ring-white/10',
+              imageClassName: 'block h-full w-full cursor-pointer object-contain',
+            })}
+          </button>
+          {isSelected ? (
+            <span className="catalog-selected-mark" aria-label="Selected">
+              <Check width={14} height={14} />
+            </span>
+          ) : null}
+        </div>
+        <div className="library-card-toolbar">
+          {shouldMountActions || isCoarsePointer ? renderActionGroup(true) : null}
+        </div>
+        <div
+          className="library-card-caption"
+          style={{ height: IMAGE_GRID_CAPTION_HEIGHT }}
+          data-tooltip={promptText}
         >
-          {renderImageFrame({
-            frameClassName:
-              'block w-full overflow-hidden rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)]',
-          })}
-
-          <div
-            className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
-          ></div>
-        </button>
-
-        {isSelected ? (
-          <span className="catalog-selected-mark" aria-label="Selected">
-            <Check size={14} />
-          </span>
-        ) : null}
-        <CatalogCardBackdrop
-          label={promptText}
-          title={<span>{promptText}</span>}
-          onExpandedChange={setIsActionPanelExpanded}
-        >
+          <span className="library-card-caption-title">{promptText}</span>
           {metadataLine}
-          <div className="catalog-backdrop-action-slot">
-            {shouldMountActions ? visibleActionGroup : null}
-          </div>
-        </CatalogCardBackdrop>
+        </div>
       </div>
     );
   },
@@ -904,6 +899,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           if (item.type === 'placeholder') return gridItemWidth + IMAGE_GRID_COLUMN_GAP;
           return (
             estimateImageGridItemHeight({ image: item.image, thumbnailSize: gridItemWidth }) +
+            IMAGE_GRID_CAPTION_HEIGHT +
             IMAGE_GRID_COLUMN_GAP
           );
         });
@@ -954,6 +950,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
             estimatedTop +=
               estimateImageGridItemHeight({ image: item.image, thumbnailSize: gridItemWidth }) +
+              IMAGE_GRID_CAPTION_HEIGHT +
               IMAGE_GRID_COLUMN_GAP;
             continue;
           }
@@ -1145,9 +1142,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                     onClick={isAllSelected ? onDeselectAll : () => onSelectAll(sortedImages)}
                     icon={
                       isAllSelected ? (
-                        <CheckSquare size={16} className="text-accent-400" />
+                        <CheckSquare width={16} height={16} className="text-accent-400" />
                       ) : (
-                        <Square size={16} />
+                        <Square width={16} height={16} />
                       )
                     }
                     label={isAllSelected ? 'Deselect' : `Select loaded images (${imageCount})`}
@@ -1159,7 +1156,8 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   onClick={() => setShowFavoritesOnly((current) => !current)}
                   icon={
                     <Heart
-                      size={16}
+                      width={16}
+                      height={16}
                       fill={showFavoritesOnly ? 'currentColor' : 'none'}
                       strokeWidth={2.5}
                     />
@@ -1174,13 +1172,13 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   <>
                     <ActionButton
                       onClick={() => onDownloadAll(sortedImages)}
-                      icon={<Download size={16} />}
+                      icon={<Download width={16} height={16} />}
                       label={`Download ${imageCount} images`}
                       tooltipPosition="bottom"
                     />
                     <ActionButton
                       onClick={onClearWorkspace}
-                      icon={<Trash2 size={16} />}
+                      icon={<Trash2 width={16} height={16} />}
                       label="Archive workspace images"
                       variant="danger"
                       tooltipPosition="bottom"
@@ -1191,13 +1189,13 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   <>
                     <ActionButton
                       onClick={() => onDownloadSelected(sortedImages)}
-                      icon={<Download size={16} />}
+                      icon={<Download width={16} height={16} />}
                       label={`Download selected (${selectedImageCount})`}
                       tooltipPosition="bottom"
                     />
                     <ActionButton
                       onClick={() => onDeleteSelected(sortedImages)}
-                      icon={<Trash2 size={16} />}
+                      icon={<Trash2 width={16} height={16} />}
                       label={`Archive selected (${selectedImageCount})`}
                       variant="danger"
                       tooltipPosition="bottom"
@@ -1227,7 +1225,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                           : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
                       }`}
                     >
-                      <Icon size={16} className="pointer-events-none" />
+                      <Icon width={16} height={16} className="pointer-events-none" />
                     </button>
                   </Tooltip>
                 );
@@ -1235,7 +1233,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             </div>
             <Tooltip content="Thumbnail size" position="bottom">
               <label className="flex h-10 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 text-[color:var(--wb-muted)] shadow-2xl backdrop-blur-md sm:flex">
-                <Photo size={15} />
+                <Photo width={15} height={15} />
                 <input
                   type="range"
                   aria-label="Thumbnail size"
@@ -1264,7 +1262,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                       : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]'
                   }`}
                 >
-                  <ArrowUpDown size={16} />
+                  <ArrowUpDown width={16} height={16} />
                   <span className="hidden max-w-28 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal lg:inline">
                     {activeSortOption.label}
                   </span>
@@ -1310,7 +1308,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                             {option.description}
                           </span>
                         </span>
-                        {selected ? <Check size={14} className="shrink-0 text-accent-200" /> : null}
+                        {selected ? (
+                          <Check width={14} height={14} className="shrink-0 text-accent-200" />
+                        ) : null}
                       </button>
                     );
                   })}
@@ -1405,7 +1405,11 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                     disabled={isCatalogLoading}
                     className="inline-flex items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                    {isCatalogLoading ? <Loader2 size={18} /> : <RefreshCw size={14} />}
+                    {isCatalogLoading ? (
+                      <Loader2 size={18} />
+                    ) : (
+                      <RefreshCw width={14} height={14} />
+                    )}
                     {isCatalogLoading ? 'Loading' : 'Load more'}
                   </button>
                 )}

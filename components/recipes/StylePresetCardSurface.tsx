@@ -1,17 +1,17 @@
 import { CatalogCardBackdrop } from '../CatalogCardBackdrop';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import {
-  IconCheck as Check,
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconCopy as Copy,
-  IconHeart as Heart,
-  IconPalette as Palette,
-  IconPlus as Plus,
-  IconInfoCircle as Eye,
-  IconTextPlus as TextPlus,
-  IconX as X,
-} from '@tabler/icons-react';
+  Check,
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  Copy,
+  Heart,
+  Palette,
+  Plus,
+  InfoCircle as Eye,
+  TextBox as TextPlus,
+  Xmark as X,
+} from 'iconoir-react';
 import React, { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { resolveStyleFullCardUrl } from '../../lib/styleThumbnailCatalog';
@@ -133,7 +133,7 @@ function StylePresetResultButton({
         />
       ) : (
         <span className="flex flex-col items-center gap-2 text-xs text-[color:var(--wb-muted)]">
-          <Palette size={24} aria-hidden="true" />
+          <Palette width={24} height={24} aria-hidden="true" />
           <span>
             {preset.ui &&
             typeof preset.ui === 'object' &&
@@ -146,7 +146,7 @@ function StylePresetResultButton({
       )}
       {active && (
         <span className="style-card-selection-mark" aria-hidden="true">
-          <Check size={14} />
+          <Check width={14} height={14} />
         </span>
       )}
     </button>
@@ -304,7 +304,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
               aria-pressed={favorite}
               onClick={() => onToggleFavorite(preset.id)}
             >
-              <Heart size={14} fill={favorite ? 'currentColor' : 'none'} />
+              <Heart width={14} height={14} fill={favorite ? 'currentColor' : 'none'} />
             </button>
             <button
               type="button"
@@ -314,14 +314,14 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 setPreviewOpen(true);
               }}
             >
-              <Eye size={16} />
+              <Eye width={16} height={16} />
             </button>
             <button
               type="button"
               aria-label={copied ? 'Prompt copied' : 'Copy prompt'}
               onClick={(event) => onCopy(event, preset)}
             >
-              {copied ? <Check size={16} /> : <Copy size={16} />}
+              {copied ? <Check width={16} height={16} /> : <Copy width={16} height={16} />}
             </button>
             {onUsePrompt && (
               <button
@@ -332,7 +332,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                   onUsePrompt(preset);
                 }}
               >
-                <TextPlus size={16} />
+                <TextPlus width={16} height={16} />
               </button>
             )}
           </div>
@@ -372,7 +372,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 aria-label="Close style preview"
                 onClick={() => previewDialogRef.current?.close()}
               >
-                <X size={16} />
+                <X width={16} height={16} />
               </button>
             </header>
             {activeCardImage ? (
@@ -399,7 +399,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                   aria-label={`Previous image for ${presetDisplayName}`}
                   onClick={() => handleCycle(-1)}
                 >
-                  <ChevronLeft size={16} />
+                  <ChevronLeft width={16} height={16} />
                 </button>
                 <span role="status" data-style-active-image-label={activeCardImage?.label}>
                   {activeCardImage?.label}
@@ -409,7 +409,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                   aria-label={`Next image for ${presetDisplayName}`}
                   onClick={() => handleCycle(1)}
                 >
-                  <ChevronRight size={16} />
+                  <ChevronRight width={16} height={16} />
                 </button>
               </div>
             )}
@@ -437,7 +437,8 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             </div>
             <footer>
               <button type="button" onClick={(event) => onCopy(event, preset)}>
-                {copied ? <Check size={14} /> : <Copy size={14} />} Copy prompt
+                {copied ? <Check width={14} height={14} /> : <Copy width={14} height={14} />} Copy
+                prompt
               </button>
               <button
                 type="button"
@@ -446,7 +447,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 disabled={selectionDisabled}
                 onClick={() => onApply(preset)}
               >
-                {active ? <Check size={14} /> : <Plus size={14} />}
+                {active ? <Check width={14} height={14} /> : <Plus width={14} height={14} />}
                 {active ? 'Remove from mix' : 'Add to mix'}
               </button>
             </footer>

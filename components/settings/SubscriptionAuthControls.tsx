@@ -1,4 +1,4 @@
-import { IconCheck, IconCopy, IconExternalLink } from '@tabler/icons-react';
+import { Check, Copy as CopyIcon, OpenNewWindow } from 'iconoir-react';
 import { useCallback, useEffect, useState } from 'react';
 
 import type {
@@ -159,13 +159,13 @@ export function SubscriptionAuthControls({
                 aria-label="Copy user code"
                 className={`${controlGhost} size-9 shrink-0 px-0`}
               >
-                {copied ? <IconCheck size={15} /> : <IconCopy size={15} />}
+                {copied ? <Check width={15} height={15} /> : <CopyIcon width={15} height={15} />}
               </button>
             </div>
           ) : null}
           <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-2">
             <a href={browserUrl} target="_blank" rel="noreferrer" className={controlPrimary}>
-              <IconExternalLink size={14} />
+              <OpenNewWindow width={14} height={14} />
               {subscriptionAuthOpenLabel(providerId)}
             </a>
             <button

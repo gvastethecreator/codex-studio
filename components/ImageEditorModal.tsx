@@ -1,12 +1,12 @@
 import { CozyLoader } from './CozyMascot';
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import {
-  IconBrush as Brush,
-  IconSparkles as Sparkles,
-  IconTrash as Trash2,
-  IconArrowBackUp as Undo,
-  IconX as X,
-} from '@tabler/icons-react';
+  DesignPencil as Brush,
+  Sparks as Sparkles,
+  Trash as Trash2,
+  Undo,
+  Xmark as X,
+} from 'iconoir-react';
 import React, { useCallback, useEffect, useEffectEvent, useRef, useState } from 'react';
 import { isImageEditorApplyDisabled } from '../lib/grokImagineUiPolicy';
 import type { Attachment } from '../types';
@@ -127,7 +127,7 @@ function ImageEditorControlsPanel({
           })}
           className="studio-primary-control w-full h-10 disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          {isGenerating ? <CozyLoader size={18} /> : <Sparkles size={18} />}
+          {isGenerating ? <CozyLoader size={18} /> : <Sparkles width={18} height={18} />}
           {!isGenerating && <span>Generate edit</span>}
         </button>
       </div>
@@ -381,7 +381,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       <div className="studio-bar flex shrink-0 min-h-16 w-full items-center justify-between gap-3 border-b border-[color:var(--wb-line)] px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">
           <div className="rounded-[var(--wb-radius)] bg-accent-500/10 p-2 sm:p-2.5">
-            <Sparkles size={18} className="text-accent-400 sm:size-5" />
+            <Sparkles width={18} height={18} className="text-accent-400 sm:size-5" />
           </div>
           <div className="min-w-0">
             <h2 className="truncate text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] sm:text-sm">
@@ -398,7 +398,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           onClick={handleClose}
           className="rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-3 text-[color:var(--wb-dim)] shadow-xl transition-[background-color,color] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]"
         >
-          <X size={24} />
+          <X width={24} height={24} />
         </button>
       </div>
 

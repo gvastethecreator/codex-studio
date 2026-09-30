@@ -2,14 +2,14 @@ import { CozyLoader as Loader2 } from '../CozyMascot';
 import { RecipeControls } from './RecipeWorkbenchContext';
 import React, { useState, useMemo } from 'react';
 import {
-  IconRotateClockwise as RotateCw,
-  IconArrowBarUp as ArrowUpFromLine,
-  IconZoomIn as ZoomIn,
-  IconCamera as Camera,
-  IconEye as Eye,
-  IconRotate3d as Move3d,
-  IconPointer as MousePointer2,
-} from '@tabler/icons-react';
+  RefreshDouble as RotateCw,
+  ArrowUp as ArrowUpFromLine,
+  ZoomIn,
+  Camera,
+  Eye,
+  Axes as Move3d,
+  CursorPointer as MousePointer2,
+} from 'iconoir-react';
 import type { ImageGenerationConfig } from '../../types';
 import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -47,7 +47,7 @@ function CameraAnglesInfoPanel({ hPos, vPos, framing }: CameraAnglesInfoPanelPro
       <div className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-5 shadow-xl">
         <div className="flex items-center gap-3 mb-3">
           <div className="p-2 bg-cyan-500/10 rounded-[var(--wb-radius)]">
-            <Eye size={14} className="text-[color:var(--wb-info)]" />
+            <Eye width={14} height={14} className="text-[color:var(--wb-info)]" />
           </div>
           <div>
             <h3 className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
@@ -132,7 +132,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
         <div className="flex-1 min-w-45 space-y-3">
           <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
-              <RotateCw size={12} className="text-[color:var(--wb-info)]" /> Azimuth
+              <RotateCw width={12} height={12} className="text-[color:var(--wb-info)]" /> Azimuth
             </div>
             <span className="text-[color:var(--wb-info)] font-mono">{Math.round(azimuth)}°</span>
           </div>
@@ -151,7 +151,8 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
         <div className="flex-1 min-w-45 space-y-3">
           <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
-              <ArrowUpFromLine size={12} className="text-[color:var(--wb-danger)]" /> Elevation
+              <ArrowUpFromLine width={12} height={12} className="text-[color:var(--wb-danger)]" />{' '}
+              Elevation
             </div>
             <span className="text-[color:var(--wb-danger)] font-mono">
               {Math.round(elevation)}°
@@ -172,7 +173,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
         <div className="flex-1 min-w-45 space-y-3">
           <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
-              <ZoomIn size={12} className="text-[color:var(--wb-warning)]" /> Zoom
+              <ZoomIn width={12} height={12} className="text-[color:var(--wb-warning)]" /> Zoom
             </div>
             <span className="text-[color:var(--wb-warning)] font-mono">
               {Math.round(distance)}%
@@ -207,7 +208,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
           {/* Viewport Overlay Controls */}
           <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] backdrop-blur-sm">
-              <Move3d size={12} className="text-[color:var(--wb-info)]" />
+              <Move3d width={12} height={12} className="text-[color:var(--wb-info)]" />
               <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
                 Orbit & Zoom
               </span>
@@ -238,11 +239,13 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             {/* Instruction Overlay */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] backdrop-blur-sm text-[color:var(--wb-muted)] text-[length:var(--wbp-label)] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
               <span className="flex items-center gap-1.5">
-                <MousePointer2 size={12} className="text-[color:var(--wb-ink)]" /> Drag to Orbit
+                <MousePointer2 width={12} height={12} className="text-[color:var(--wb-ink)]" /> Drag
+                to Orbit
               </span>
               <span className="w-px h-3 bg-white/20" />
               <span className="flex items-center gap-1.5">
-                <ZoomIn size={12} className="text-[color:var(--wb-ink)]" /> Scroll to Zoom
+                <ZoomIn width={12} height={12} className="text-[color:var(--wb-ink)]" /> Scroll to
+                Zoom
               </span>
             </div>
           </div>

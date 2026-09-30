@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  IconKey as Key,
-  IconExternalLink as ExternalLink,
-  IconShieldCheck as ShieldCheck,
-  IconX as X,
-} from '@tabler/icons-react';
+import { Key, OpenNewWindow as ExternalLink, ShieldCheck, Xmark as X } from 'iconoir-react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 
 interface KeyPopoverProps {
@@ -27,7 +22,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
         >
           <div className="p-4 border-b border-[color:var(--wb-line)] flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Key size={14} className="text-accent-400" />
+              <Key width={14} height={14} className="text-accent-400" />
               <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
                 Local Session
               </span>
@@ -38,7 +33,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
               onClick={onClose}
               className="text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] transition-colors"
             >
-              <X size={14} />
+              <X width={14} height={14} />
             </button>
           </div>
 
@@ -59,7 +54,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
 
             <div className="pt-2 border-t border-[color:var(--wb-line)] flex flex-col gap-2">
               <div className="flex items-center gap-2 opacity-60">
-                <ShieldCheck size={12} className="text-accent-500" />
+                <ShieldCheck width={12} height={12} className="text-accent-500" />
                 <span className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-muted)]">
                   Local Management by Codex
                 </span>
@@ -70,7 +65,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] transition-colors"
               >
-                app-server Documentation <ExternalLink size={10} />
+                app-server Documentation <ExternalLink width={10} height={10} />
               </a>
             </div>
           </div>

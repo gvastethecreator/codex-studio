@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconPaperclip as Paperclip } from '@tabler/icons-react';
+import { Attachment as Paperclip } from 'iconoir-react';
 
 interface DropZoneOverlayProps {
   isVisible: boolean;

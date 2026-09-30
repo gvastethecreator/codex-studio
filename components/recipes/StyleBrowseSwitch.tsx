@@ -1,4 +1,4 @@
-import { IconCompass as Compass, IconLibrary as Library } from '@tabler/icons-react';
+import { Compass, BookStack as Library } from 'iconoir-react';
 
 export function StyleBrowseSwitch({
   catalogOpen,
@@ -22,7 +22,7 @@ export function StyleBrowseSwitch({
         aria-pressed={catalogOpen && !expanded}
         onClick={onCatalog}
       >
-        <Library size={14} />
+        <Library width={14} height={14} />
         <span>Catalog</span>
       </button>
       <button
@@ -31,7 +31,7 @@ export function StyleBrowseSwitch({
         aria-pressed={catalogOpen && expanded}
         onClick={onExplore}
       >
-        <Compass size={14} />
+        <Compass width={14} height={14} />
         <span>Explore</span>
       </button>
     </div>

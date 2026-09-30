@@ -5,14 +5,14 @@ import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './Recip
 import React from 'react';
 import { AnimationFramePreview } from './AnimationFramePreview';
 import {
-  IconAlertTriangle as AlertTriangle,
-  IconCheck as Check,
-  IconDownload as Download,
-  IconGif as Gif,
-  IconPlayerPlay as Play,
-  IconRefresh as RefreshCw,
-  IconSparkles as Sparkles,
-} from '@tabler/icons-react';
+  WarningTriangle as AlertTriangle,
+  Check,
+  Download,
+  GifFormat as Gif,
+  Play,
+  Refresh as RefreshCw,
+  Sparks as Sparkles,
+} from 'iconoir-react';
 import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
@@ -708,18 +708,18 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   onClick={() => generateFrame(false)}
                   disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
                 >
-                  <Play size={13} />
+                  <Play width={13} height={13} />
                   Generate
                 </ActionButton>
                 <ActionButton
                   onClick={() => generateFrame(true)}
                   disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
                 >
-                  <Sparkles size={13} />
+                  <Sparkles width={13} height={13} />
                   Correct
                 </ActionButton>
                 <ActionButton onClick={attachSelectedGeneratedFrame} disabled={!activeRun || busy}>
-                  <RefreshCw size={13} />
+                  <RefreshCw width={13} height={13} />
                   Attach
                 </ActionButton>
               </div>
@@ -777,7 +777,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     </p>
                   </div>
                   <span className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/10 text-[color:var(--wb-warning)] ">
-                    <Gif size={20} />
+                    <Gif width={20} height={20} />
                   </span>
                 </div>
               </div>
@@ -924,7 +924,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       {busy ? (
                         <Loader2 size={13} className="animate-spin" />
                       ) : (
-                        <Sparkles size={13} />
+                        <Sparkles width={13} height={13} />
                       )}
                       Prepare
                     </ActionButton>
@@ -1031,21 +1031,21 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 New sequence
               </ActionButton>
               <ActionButton onClick={syncGeneratedFrames} disabled={!activeRun || busy}>
-                <RefreshCw size={13} />
+                <RefreshCw width={13} height={13} />
                 Sync
               </ActionButton>
               <ActionButton
                 onClick={() => nextFrameId && setSelectedFrameId(nextFrameId)}
                 disabled={!activeRun || !nextFrameId || busy}
               >
-                <Play size={13} />
+                <Play width={13} height={13} />
                 Next frame
               </ActionButton>
               <ActionButton
                 onClick={exportGif}
                 disabled={!activeRun || generatedCount < (activeRun?.frames.length ?? 1) || busy}
               >
-                <Download size={13} />
+                <Download width={13} height={13} />
                 GIF
               </ActionButton>
             </div>
@@ -1111,9 +1111,9 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                         ) : (
                           <div className="grid h-full place-items-center text-[color:var(--wb-dim)]">
                             {state?.status === 'generated' ? (
-                              <Check size={20} />
+                              <Check width={20} height={20} />
                             ) : (
-                              <Play size={20} />
+                              <Play width={20} height={20} />
                             )}
                           </div>
                         )}
@@ -1174,7 +1174,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   ) : null}
                 </div>
                 <ActionButton onClick={runQa} disabled={!activeRun || busy}>
-                  <Check size={13} />
+                  <Check width={13} height={13} />
                   QA
                 </ActionButton>
               </div>
@@ -1188,7 +1188,11 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       : 'border-emerald-500/2 bg-emerald-500/10 text-[color:var(--wb-success)] '
                   }`}
                 >
-                  {error ? <AlertTriangle size={14} /> : <Check size={14} />}
+                  {error ? (
+                    <AlertTriangle width={14} height={14} />
+                  ) : (
+                    <Check width={14} height={14} />
+                  )}
                   <span className="min-w-0 truncate">{error ?? message}</span>
                 </div>
               )}

@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import {
-  IconSun as Sun,
-  IconCamera as Camera,
-  IconPalette as Palette,
-  IconDeviceTv as MonitorPlay,
-  IconFingerprint as Fingerprint,
-  IconTypography as TextIcon,
-} from '@tabler/icons-react';
+  SunLight as Sun,
+  Camera,
+  Palette,
+  Tv as MonitorPlay,
+  Fingerprint,
+  Text as TextIcon,
+} from 'iconoir-react';
 import type { ImageGenerationConfig } from '../../types';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
@@ -152,7 +152,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
         <div className="flex items-center gap-3 flex-wrap justify-center flex-1">
           <ControlDropdown
             title="Aesthetic"
-            icon={<MonitorPlay size={14} />}
+            icon={<MonitorPlay width={14} height={14} />}
             label={params.style}
             options={CONTROL_OPTIONS.style}
             onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
@@ -164,35 +164,35 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             {' '}
             <ControlDropdown
               title="Lighting"
-              icon={<Sun size={14} />}
+              icon={<Sun width={14} height={14} />}
               label={params.lighting}
               options={CONTROL_OPTIONS.lighting}
               onSelect={(v) => setParams((p) => ({ ...p, lighting: v }))}
             />
             <ControlDropdown
               title="Correction"
-              icon={<Fingerprint size={14} />}
+              icon={<Fingerprint width={14} height={14} />}
               label={params.anatomy}
               options={CONTROL_OPTIONS.anatomy}
               onSelect={(v) => setParams((p) => ({ ...p, anatomy: v }))}
             />
             <ControlDropdown
               title="Text Handling"
-              icon={<TextIcon size={14} />}
+              icon={<TextIcon width={14} height={14} />}
               label={params.text}
               options={CONTROL_OPTIONS.text}
               onSelect={(v) => setParams((p) => ({ ...p, text: v }))}
             />
             <ControlDropdown
               title="Color Grading"
-              icon={<Palette size={14} />}
+              icon={<Palette width={14} height={14} />}
               label={params.color}
               options={CONTROL_OPTIONS.color}
               onSelect={(v) => setParams((p) => ({ ...p, color: v }))}
             />
             <ControlDropdown
               title="Lens Details"
-              icon={<Camera size={14} />}
+              icon={<Camera width={14} height={14} />}
               label={params.camera}
               options={CONTROL_OPTIONS.camera}
               onSelect={(v) => setParams((p) => ({ ...p, camera: v }))}

@@ -1,27 +1,27 @@
 import {
-  IconBolt as Bolt,
-  IconBook as BookOpen,
-  IconBox as Box,
-  IconBuilding as Building,
-  IconCamera as Camera,
-  IconMovie as Clapperboard,
-  IconDeviceGamepad2 as Gamepad2,
-  IconHeart as Heart,
-  IconStack as Layers,
-  IconMoonStars as MoonStars,
-  IconPalette as Palette,
-  IconPencil as PenTool,
-  IconPlayerPlay as Play,
-  IconSearch as Search,
-  IconShirt as Shirt,
-  IconAdjustmentsHorizontal as SlidersHorizontal,
-  IconMoodPlus as SmilePlus,
-  IconSparkles as Sparkles,
-  IconStar as Star,
-  IconSword as Sword,
-  IconDeviceTv as Tv,
-  IconWand as Wand2,
-} from '@tabler/icons-react';
+  Flash as Bolt,
+  Book as BookOpen,
+  Box3dCenter as Box,
+  Building,
+  Camera,
+  Movie as Clapperboard,
+  Gamepad as Gamepad2,
+  Heart,
+  MultiplePages as Layers,
+  MoonSat as MoonStars,
+  Palette,
+  EditPencil as PenTool,
+  Play,
+  Search,
+  Shirt,
+  ControlSlider as SlidersHorizontal,
+  Emoji as SmilePlus,
+  Sparks as Sparkles,
+  Star,
+  Shield as Sword,
+  Tv,
+  MagicWand as Wand2,
+} from 'iconoir-react';
 import type React from 'react';
 import type { StyleCollection } from './styles/collections';
 import type { StyleTheme } from './StyleRecipeNavigationPanel';
@@ -160,101 +160,101 @@ export function getPackIcon(id: string): React.ReactNode {
   const size = 18;
   switch (id) {
     case USER_STYLE_PACK_ID:
-      return <Sparkles size={size} />;
+      return <Sparkles width={size} height={size} />;
     case FAVORITES_PACK_ID:
-      return <Heart size={size} fill="currentColor" />;
+      return <Heart width={size} height={size} fill="currentColor" />;
     case 'pack_01':
-      return <Camera size={size} />;
+      return <Camera width={size} height={size} />;
     case 'pack_02':
-      return <Clapperboard size={size} />;
+      return <Clapperboard width={size} height={size} />;
     case 'pack_03':
-      return <Box size={size} />;
+      return <Box width={size} height={size} />;
     case 'pack_04':
-      return <PenTool size={size} />;
+      return <PenTool width={size} height={size} />;
     case 'pack_05':
-      return <Sword size={size} />;
+      return <Sword width={size} height={size} />;
     case 'pack_06':
-      return <Palette size={size} />;
+      return <Palette width={size} height={size} />;
     case 'pack_07':
-      return <Building size={size} />;
+      return <Building width={size} height={size} />;
     case 'pack_08':
-      return <Shirt size={size} />;
+      return <Shirt width={size} height={size} />;
     case 'pack_09':
-      return <Layers size={size} />;
+      return <Layers width={size} height={size} />;
     case 'pack_10':
-      return <Wand2 size={size} />;
+      return <Wand2 width={size} height={size} />;
     case 'pack_11':
-      return <SmilePlus size={size} />;
+      return <SmilePlus width={size} height={size} />;
     case 'pack_12':
-      return <Gamepad2 size={size} />;
+      return <Gamepad2 width={size} height={size} />;
     case 'pack_13':
-      return <Heart size={size} />;
+      return <Heart width={size} height={size} />;
     case 'pack_14':
-      return <MoonStars size={size} />;
+      return <MoonStars width={size} height={size} />;
     case 'pack_15':
-      return <Bolt size={size} />;
+      return <Bolt width={size} height={size} />;
     case 'pack_16':
-      return <Star size={size} />;
+      return <Star width={size} height={size} />;
     case 'pack_17':
-      return <BookOpen size={size} />;
+      return <BookOpen width={size} height={size} />;
     default:
-      return <Layers size={size} />;
+      return <Layers width={size} height={size} />;
   }
 }
 
 export function getStyleCollectionIcon(icon: string, size = 18): React.ReactNode {
   switch (icon) {
     case 'sparkles':
-      return <Sparkles size={size} />;
+      return <Sparkles width={size} height={size} />;
     case 'heart':
-      return <Heart size={size} fill="currentColor" />;
+      return <Heart width={size} height={size} fill="currentColor" />;
     case 'clock':
-      return <Star size={size} />;
+      return <Star width={size} height={size} />;
     case 'camera':
-      return <Camera size={size} />;
+      return <Camera width={size} height={size} />;
     case 'film':
     case 'clapperboard':
-      return <Clapperboard size={size} />;
+      return <Clapperboard width={size} height={size} />;
     case 'bolt':
     case 'zap':
-      return <Bolt size={size} />;
+      return <Bolt width={size} height={size} />;
     case 'scan':
-      return <Search size={size} />;
+      return <Search width={size} height={size} />;
     case 'tv':
-      return <Tv size={size} />;
+      return <Tv width={size} height={size} />;
     case 'play':
-      return <Play size={size} />;
+      return <Play width={size} height={size} />;
     case 'book':
-      return <BookOpen size={size} />;
+      return <BookOpen width={size} height={size} />;
     case 'palette':
     case 'brush':
-      return <Palette size={size} />;
+      return <Palette width={size} height={size} />;
     case 'pen':
-      return <PenTool size={size} />;
+      return <PenTool width={size} height={size} />;
     case 'wand':
-      return <Wand2 size={size} />;
+      return <Wand2 width={size} height={size} />;
     case 'box':
-      return <Box size={size} />;
+      return <Box width={size} height={size} />;
     case 'layers':
     case 'grid':
-      return <Layers size={size} />;
+      return <Layers width={size} height={size} />;
     case 'shirt':
-      return <Shirt size={size} />;
+      return <Shirt width={size} height={size} />;
     case 'building':
-      return <Building size={size} />;
+      return <Building width={size} height={size} />;
     case 'gamepad':
-      return <Gamepad2 size={size} />;
+      return <Gamepad2 width={size} height={size} />;
     case 'moon':
     case 'moon-stars':
-      return <MoonStars size={size} />;
+      return <MoonStars width={size} height={size} />;
     case 'sword':
-      return <Sword size={size} />;
+      return <Sword width={size} height={size} />;
     case 'sliders':
-      return <SlidersHorizontal size={size} />;
+      return <SlidersHorizontal width={size} height={size} />;
     case 'smile':
-      return <SmilePlus size={size} />;
+      return <SmilePlus width={size} height={size} />;
     default:
-      return <Layers size={size} />;
+      return <Layers width={size} height={size} />;
   }
 }
 

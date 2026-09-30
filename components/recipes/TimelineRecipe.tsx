@@ -1,20 +1,20 @@
 import { getRecipeStringParam } from '../../lib/recipeIdentity';
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
-  IconClock as Clock,
-  IconPlayerTrackPrev as StepBack,
-  IconPlayerTrackNext as StepForward,
-  IconLock as Lock,
-  IconVideo as Video,
-  IconPlayerSkipForward as FastForward,
-  IconPlayerSkipBack as Rewind,
-  IconHourglass as Hourglass,
-  IconMovie as Film,
-  IconUpload as Upload,
-  IconStack as Layers,
-  IconActivity as Activity,
-  IconSun as Sun,
-} from '@tabler/icons-react';
+  Clock,
+  FastArrowLeft as StepBack,
+  FastArrowRight as StepForward,
+  Lock,
+  VideoCamera as Video,
+  SkipNext as FastForward,
+  SkipPrev as Rewind,
+  Hourglass,
+  Movie as Film,
+  Upload,
+  MultiplePages as Layers,
+  Activity,
+  SunLight as Sun,
+} from 'iconoir-react';
 import { AnimatePresence, MotionButton, MotionDiv } from '../../lib/gsapMotion';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
@@ -154,7 +154,11 @@ function TimelineBottomDock({
             onClick={() => onSetDirection('backward')}
             className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-[var(--wb-radius)] transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
-            <StepBack size={14} fill={direction === 'backward' ? 'currentColor' : 'none'} />
+            <StepBack
+              width={14}
+              height={14}
+              fill={direction === 'backward' ? 'currentColor' : 'none'}
+            />
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
               Prev
             </span>
@@ -168,7 +172,11 @@ function TimelineBottomDock({
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
               Next
             </span>
-            <StepForward size={14} fill={direction === 'forward' ? 'currentColor' : 'none'} />
+            <StepForward
+              width={14}
+              height={14}
+              fill={direction === 'forward' ? 'currentColor' : 'none'}
+            />
           </button>
         </div>
       </div>
@@ -178,7 +186,7 @@ function TimelineBottomDock({
       {/* GROUP 2: TIME */}
       <ControlDropdown
         title="Interval"
-        icon={<Hourglass size={14} />}
+        icon={<Hourglass width={14} height={14} />}
         label={timeDelta.label}
         options={TIME_OPTIONS.map((o) => o.label)}
         onSelect={(l) => {
@@ -195,14 +203,14 @@ function TimelineBottomDock({
         <div className="recipe-advanced-grid">
           <ControlDropdown
             title="Motion"
-            icon={<Activity size={14} />}
+            icon={<Activity width={14} height={14} />}
             label={motionAmount}
             options={MOTION_OPTIONS}
             onSelect={onSetMotionAmount}
           />
           <ControlDropdown
             title="Lighting"
-            icon={<Sun size={14} />}
+            icon={<Sun width={14} height={14} />}
             label={lightingMode}
             options={LIGHTING_OPTIONS}
             onSelect={onSetLightingMode}
@@ -223,7 +231,11 @@ function TimelineBottomDock({
             onClick={() => onSetCameraMode(cameraMode === 'locked' ? 'dynamic' : 'locked')}
             className={`flex min-w-25 items-center gap-2 rounded-[var(--wb-radius)] border px-4 transition-colors h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-[color:var(--wb-danger)]' : 'bg-blue-500/10 border-blue-500/2 text-blue-400'}`}
           >
-            {cameraMode === 'locked' ? <Lock size={14} /> : <Video size={14} />}
+            {cameraMode === 'locked' ? (
+              <Lock width={14} height={14} />
+            ) : (
+              <Video width={14} height={14} />
+            )}
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
               {cameraMode}
             </span>
@@ -240,7 +252,7 @@ function TimelineBottomDock({
             className={`h-10 px-4 rounded-[var(--wb-radius)] border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]' : 'bg-transparent border-[color:var(--wb-line)] text-[color:var(--wb-muted)]'}`}
             data-tooltip="Toggle Onion Skin"
           >
-            <Layers size={14} />
+            <Layers width={14} height={14} />
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
               Ghost
             </span>
@@ -317,12 +329,12 @@ function TimelineCanvas({
                 <div
                   className={`p-4 rounded-full bg-[color:var(--wb-panel)]/60 border border-[color:var(--wb-line)] transition-[opacity,transform] duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
-                  <Rewind size={32} className="text-teal-400" />
+                  <Rewind width={32} height={32} className="text-teal-400" />
                 </div>
                 <div
                   className={`p-4 rounded-full bg-[color:var(--wb-panel)]/60 border border-[color:var(--wb-line)] transition-[opacity,transform] duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                 >
-                  <FastForward size={32} className="text-teal-400" />
+                  <FastForward width={32} height={32} className="text-teal-400" />
                 </div>
               </div>
               <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-[color:var(--wb-panel)]/60 rounded-full border border-[color:var(--wb-line)] flex items-center gap-3 backdrop-blur-md z-30">
@@ -342,7 +354,7 @@ function TimelineCanvas({
                 <span className="text-[length:var(--wbp-label)] font-bold hidden sm:block">
                   Replace
                 </span>
-                <Upload size={14} />
+                <Upload width={14} height={14} />
               </button>
               <input
                 type="file"
@@ -376,7 +388,8 @@ function TimelineCanvas({
                 />
                 <div className="size-20 rounded-full bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                   <Clock
-                    size={32}
+                    width={32}
+                    height={32}
                     className="text-[color:var(--wb-dim)] group-hover:text-teal-400"
                   />
                 </div>
@@ -411,7 +424,7 @@ function TimelineCanvas({
       <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-[color:var(--wb-line)] bg-[color:var(--wb-bg)] pb-4">
         <div className="flex items-center justify-between px-6 pt-2">
           <div className="flex items-center gap-2 text-teal-500/60">
-            <Film size={12} />
+            <Film width={12} height={12} />
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
               Film Strip
             </span>

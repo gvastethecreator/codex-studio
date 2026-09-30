@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconCheck as Check, IconChevronDown as ChevronDown } from '@tabler/icons-react';
+import { Check, NavArrowDown as ChevronDown } from 'iconoir-react';
 
 import { cn } from '../../lib/utils';
 import type { CommandCenterProviderProjection } from '../../lib/commandCenterProjection';
@@ -83,7 +83,8 @@ export function ProviderQuickSwitch({
             </span>
           ) : null}
           <ChevronDown
-            size={12}
+            width={12}
+            height={12}
             aria-hidden="true"
             className={
               isRail
@@ -146,7 +147,7 @@ export function ProviderQuickSwitch({
                     {option.statusDetail}
                   </span>
                 </span>
-                {isSelected ? <Check size={15} aria-hidden="true" /> : null}
+                {isSelected ? <Check width={15} height={15} aria-hidden="true" /> : null}
               </button>
             );
           })}

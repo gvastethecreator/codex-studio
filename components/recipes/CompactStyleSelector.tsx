@@ -1,20 +1,20 @@
 import { AnimatePresence } from '../../lib/gsapMotion';
 import {
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconChevronUp as ChevronUp,
-  IconEye as Eye,
-  IconFolder as Folder,
-  IconHeart as Heart,
-  IconLayoutGrid as LayoutGrid,
-  IconPlayerPause as Pause,
-  IconPlayerPlay as Play,
-  IconPlus as Plus,
-  IconSearch as Search,
-  IconX as X,
-} from '@tabler/icons-react';
+  Check,
+  NavArrowDown as ChevronDown,
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  NavArrowUp as ChevronUp,
+  Eye,
+  Folder,
+  Heart,
+  ViewGrid as LayoutGrid,
+  Pause,
+  Play,
+  Plus,
+  Search,
+  Xmark as X,
+} from 'iconoir-react';
 import React, {
   useCallback,
   useEffect,
@@ -519,7 +519,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
           }}
           onBlur={deferHidePreview}
         >
-          <span className="cs-check">{chosen ? <Check size={14} /> : null}</span>
+          <span className="cs-check">{chosen ? <Check width={14} height={14} /> : null}</span>
           <span className="cs-option-text">
             {result.name}
             {query.trim() ? <span className="cs-option-sub">{result.categoryName}</span> : null}
@@ -536,7 +536,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
             if (choice) void showPreview(result, choice, true);
           }}
         >
-          <Eye size={13} />
+          <Eye width={13} height={13} />
         </button>
         <button
           type="button"
@@ -545,7 +545,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
           aria-pressed={fav}
           onClick={() => onToggleFavorite(result.id)}
         >
-          <Heart size={13} fill={fav ? 'currentColor' : 'none'} />
+          <Heart width={13} height={13} fill={fav ? 'currentColor' : 'none'} />
         </button>
         {onCopyPrompt && (
           <button
@@ -624,7 +624,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
           }}
         >
           <div className="cs-search">
-            <Search size={15} aria-hidden="true" />
+            <Search width={15} height={15} aria-hidden="true" />
             <input
               ref={searchRef}
               type="search"
@@ -654,14 +654,14 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                   searchRef.current?.focus();
                 }}
               >
-                <X size={12} />
+                <X width={12} height={12} />
               </button>
             ) : null}
           </div>
           <div className="cs-breadcrumb">
             {showBack ? (
               <button type="button" className="cs-back" aria-label="Go back" onClick={goBack}>
-                <ChevronLeft size={13} />
+                <ChevronLeft width={13} height={13} />
               </button>
             ) : null}
             <strong data-tooltip={title}>{title}</strong>
@@ -672,7 +672,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 onClick={() => navigate({ view: route.view === 'all' ? 'packs' : 'all' })}
               >
                 {browseLabel}
-                <ChevronRight size={12} />
+                <ChevronRight width={12} height={12} />
               </button>
             ) : null}
           </div>
@@ -702,10 +702,10 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                     aria-label={`${pack.name}, ${pack.presetCount} ${pack.presetCount === 1 ? 'style' : 'styles'}`}
                     onClick={() => navigate({ view: 'categories', packId: pack.id })}
                   >
-                    <Folder size={13} />
+                    <Folder width={13} height={13} />
                     <span className="cs-option-text">{pack.name}</span>
                     <span className="cs-dir-count">{pack.presetCount}</span>
-                    <ChevronRight size={13} />
+                    <ChevronRight width={13} height={13} />
                   </button>
                 </div>
               ))
@@ -791,7 +791,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               aria-pressed={route.view === 'favorites'}
               onClick={() => navigate({ view: route.view === 'favorites' ? 'all' : 'favorites' })}
             >
-              <Heart size={12} />
+              <Heart width={12} height={12} />
               Favorites
             </button>
             <span className="cs-footer-status" aria-live="polite">
@@ -858,7 +858,11 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               className="cs-pause-button"
               onClick={() => onToggleEnabled(weightSlot.preset.id)}
             >
-              {weightSlot.enabled === false ? <Play size={12} /> : <Pause size={12} />}
+              {weightSlot.enabled === false ? (
+                <Play width={12} height={12} />
+              ) : (
+                <Pause width={12} height={12} />
+              )}
               {weightSlot.enabled === false ? 'Enable style' : 'Pause style'}
             </button>
             <div
@@ -873,7 +877,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 disabled={weightIndex <= 0}
                 onClick={() => onMove(weightSlot.preset.id, -1)}
               >
-                <ChevronUp size={12} />
+                <ChevronUp width={12} height={12} />
               </button>
               <button
                 type="button"
@@ -881,7 +885,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 disabled={weightIndex >= selectedStyles.length - 1}
                 onClick={() => onMove(weightSlot.preset.id, 1)}
               >
-                <ChevronDown size={12} />
+                <ChevronDown width={12} height={12} />
               </button>
             </div>
           </div>
@@ -914,7 +918,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         aria-label="Close preview"
         onClick={() => closePreview(true)}
       >
-        <X size={14} />
+        <X width={14} height={14} />
       </button>
       <div className="cs-preview-image">
         {preview.src ? (
@@ -973,9 +977,9 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
             aria-controls={popoverId}
             onClick={() => (menuOpen ? closeMenu(false) : openMenu())}
           >
-            <Plus size={14} />
+            <Plus width={14} height={14} />
             Add a style
-            <ChevronDown size={14} />
+            <ChevronDown width={14} height={14} />
           </button>
         ) : (
           selectedStyles.map((slot) => {
@@ -1023,7 +1027,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                     <img src={getStyleThumbnail(slot.preset.id)} alt="" loading="lazy" />
                   ) : (
                     <span className="cs-thumbnail-empty" aria-hidden="true">
-                      <LayoutGrid size={16} />
+                      <LayoutGrid width={16} height={16} />
                     </span>
                   )}
                   <span className="cs-name-text" data-tooltip={name}>
@@ -1052,7 +1056,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                   aria-label={`Remove ${name}`}
                   onClick={() => onRemove(slot.preset.id)}
                 >
-                  <X size={13} />
+                  <X width={13} height={13} />
                 </button>
               </div>
             );
@@ -1069,9 +1073,9 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         aria-controls={popoverId}
         onClick={() => (menuOpen ? closeMenu(false) : openMenu())}
       >
-        <Plus size={13} />
+        <Plus width={13} height={13} />
         Add
-        <ChevronDown size={11} />
+        <ChevronDown width={11} height={11} />
       </button>
       <div className="cs-live sr-only" role="status" aria-live="polite" aria-atomic="true">
         {selectedCount} of {maxSlots} styles selected

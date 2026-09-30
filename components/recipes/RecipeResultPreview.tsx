@@ -1,16 +1,16 @@
 import type { UseCatalogResult } from '../../hooks/useCatalogPage';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconCopy as Copy,
-  IconDownload as Download,
-  IconHeart as Heart,
-  IconMinus as Minus,
-  IconPlus as Plus,
-  IconArrowsMaximize as OpenFull,
-  IconPaperclip as Paperclip,
-} from '@tabler/icons-react';
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  Copy,
+  Download,
+  Heart,
+  Minus,
+  Plus,
+  Expand as OpenFull,
+  Attachment as Paperclip,
+} from 'iconoir-react';
 
 import { buildCarouselThumbnailWindow } from '../../lib/imageCarouselThumbnails';
 import { useImagePanZoom } from '../../lib/imagePanZoom';
@@ -225,12 +225,12 @@ export function RecipeResultPreview({
             <div className="result-image-controls" role="group" aria-label="Image actions">
               <Tooltip content="Copy image">
                 <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
-                  <Copy size={14} />
+                  <Copy width={14} height={14} />
                 </button>
               </Tooltip>
               <Tooltip content="Download image">
                 <button type="button" aria-label="Download image" onClick={handleDownload}>
-                  <Download size={14} />
+                  <Download width={14} height={14} />
                 </button>
               </Tooltip>
               {onToggleFavorite ? (
@@ -243,7 +243,7 @@ export function RecipeResultPreview({
                     aria-pressed={Boolean(selected?.isFavorite)}
                     onClick={() => selected && onToggleFavorite(selected.id)}
                   >
-                    <Heart size={14} />
+                    <Heart width={14} height={14} />
                   </button>
                 </Tooltip>
               ) : null}
@@ -254,14 +254,14 @@ export function RecipeResultPreview({
                     aria-label="Use as source"
                     onClick={() => onUseAsReference(selected)}
                   >
-                    <Paperclip size={14} />
+                    <Paperclip width={14} height={14} />
                   </button>
                 </Tooltip>
               ) : null}
               {onOpen && selected ? (
                 <Tooltip content="Open result">
                   <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
-                    <OpenFull size={14} />
+                    <OpenFull width={14} height={14} />
                   </button>
                 </Tooltip>
               ) : null}
@@ -296,7 +296,7 @@ export function RecipeResultPreview({
               <div className="recipe-result-zoom" role="group" aria-label="Zoom controls">
                 <Tooltip content="Zoom out">
                   <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
-                    <Minus size={14} />
+                    <Minus width={14} height={14} />
                   </button>
                 </Tooltip>
                 <Tooltip content="Reset zoom to 100%">
@@ -311,7 +311,7 @@ export function RecipeResultPreview({
                 </Tooltip>
                 <Tooltip content="Zoom in">
                   <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
-                    <Plus size={14} />
+                    <Plus width={14} height={14} />
                   </button>
                 </Tooltip>
               </div>
@@ -376,7 +376,7 @@ export function RecipeResultPreview({
                   onPointerDown={(event) => event.stopPropagation()}
                   onClick={() => selectIndex(selectedIndex - 1)}
                 >
-                  <ChevronLeft size={22} />
+                  <ChevronLeft width={22} height={22} />
                 </button>
                 <button
                   type="button"
@@ -387,7 +387,7 @@ export function RecipeResultPreview({
                   onPointerDown={(event) => event.stopPropagation()}
                   onClick={() => selectIndex(selectedIndex + 1)}
                 >
-                  <ChevronRight size={22} />
+                  <ChevronRight width={22} height={22} />
                 </button>
               </>
             ) : null}

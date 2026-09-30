@@ -9,14 +9,14 @@ import React, {
   useState,
 } from 'react';
 import {
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconFileText as FileText,
-  IconLock as Lock,
-  IconSearch as Search,
-  IconSparkles as Sparkles,
-  IconX as X,
-} from '@tabler/icons-react';
+  Check,
+  NavArrowDown as ChevronDown,
+  Page as FileText,
+  Lock,
+  Search,
+  Sparks as Sparkles,
+  Xmark as X,
+} from 'iconoir-react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { useGenerationDraft } from '../../contexts/GenerationContext';
 import { useWorkspaceState } from '../../contexts/WorkspaceContext';
@@ -186,7 +186,7 @@ function getAccent(accent: string) {
 
 function CharacterLabIcon({ id, size = 18 }: { id: string; size?: number }) {
   const frame = getCharacterLabIconFrame(id);
-  if (!frame) return <Sparkles size={size} aria-hidden="true" />;
+  if (!frame) return <Sparkles width={size} height={size} aria-hidden="true" />;
 
   const scale = size / characterLabIconAtlas.cellSize;
   return (
@@ -542,7 +542,8 @@ function SelectField({
           </span>
         </span>
         <ChevronDown
-          size={15}
+          width={15}
+          height={15}
           className={`shrink-0 text-[color:var(--wb-muted)] transition-[transform,color] duration-150 ${
             isOpen ? 'rotate-180 text-violet-200' : ''
           }`}
@@ -600,7 +601,7 @@ function SelectField({
                   {optionText.detail}
                 </span>
               </span>
-              {selected && <Check size={14} className="shrink-0 text-violet-200" />}
+              {selected && <Check width={14} height={14} className="shrink-0 text-violet-200" />}
             </button>
           );
         })}
@@ -719,7 +720,7 @@ function AttachmentSetupSlot({
           className="absolute right-1 top-1 rounded-[var(--wb-radius)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-ink)] opacity-0 transition-[opacity,color] duration-150 hover:text-[color:var(--wb-danger)]  group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70"
           aria-label={`Remove ${label}`}
         >
-          <X size={11} />
+          <X width={11} height={11} />
         </button>
       )}
     </div>
@@ -812,7 +813,7 @@ function ActionButton({
       </span>
       {locked && (
         <span className="absolute right-2 top-2 rounded-[var(--wb-radius)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-muted)]">
-          <Lock size={10} aria-hidden="true" />
+          <Lock width={10} height={10} aria-hidden="true" />
         </span>
       )}
     </button>
@@ -1197,7 +1198,8 @@ const CharacterLabRecipeSession: React.FC<
               <div className="mt-2 flex items-center gap-2">
                 <div className="relative min-w-0 flex-1">
                   <Search
-                    size={14}
+                    width={14}
+                    height={14}
                     className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--wb-dim)]"
                     aria-hidden="true"
                   />
@@ -1399,7 +1401,7 @@ const CharacterLabRecipeSession: React.FC<
                 <details className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5">
                   <summary>Compiled prompt</summary>
                   <div className="mb-1.5 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                    <FileText size={12} aria-hidden="true" />
+                    <FileText width={12} height={12} aria-hidden="true" />
                     Compiled prompt
                   </div>
                   <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-muted)] custom-scrollbar">

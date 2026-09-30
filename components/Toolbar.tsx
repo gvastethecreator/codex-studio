@@ -7,36 +7,35 @@ import {
 import { CreatePromptExpandDialog } from './create/CreatePromptExpandDialog';
 import { ReferenceTray } from './ReferenceTray';
 import {
-  IconBan as Ban,
-  IconRobot as Bot,
-  IconBrain as BrainCircuit,
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconEdit as Edit3,
-  IconEraser as Eraser,
-  IconHash as Hash,
-  IconPhotoPlus as ImagePlus,
-  IconStack as Layers,
-  IconMaximize as Maximize,
-  IconDeviceDesktop as Monitor,
-  IconDots as MoreHorizontal,
-  IconCirclePlus as PlusCircle,
-  IconMinus as Minus,
-  IconPlus as Plus,
-  IconAspectRatio as Ratio,
-  IconRectangle as RectangleHorizontal,
-  IconRectangleVertical as RectangleVertical,
-  IconScan as Scan,
-  IconAdjustmentsHorizontal as SlidersHorizontal,
-  IconSend as Send,
-  IconShieldExclamation as ShieldAlert,
-  IconSquare as Square,
-  IconSparkles as Sparkles,
-  IconWand as Wand,
-  IconWand as Wand2,
-  IconX as X,
-  IconBolt as Zap,
-} from '@tabler/icons-react';
+  Prohibition as Ban,
+  ElectronicsChip as Bot,
+  Brain as BrainCircuit,
+  Check,
+  NavArrowDown as ChevronDown,
+  EditPencil as Edit3,
+  Erase as Eraser,
+  Hashtag as Hash,
+  MediaImagePlus as ImagePlus,
+  MultiplePages as Layers,
+  Expand as Maximize,
+  Computer as Monitor,
+  MoreHoriz as MoreHorizontal,
+  PlusCircle,
+  Minus,
+  Plus,
+  Crop as Ratio,
+  Square as RectangleHorizontal,
+  ScanBarcode as Scan,
+  ControlSlider as SlidersHorizontal,
+  SendDiagonal as Send,
+  ShieldAlert,
+  Square,
+  Sparks as Sparkles,
+  MagicWand as Wand,
+  MagicWand as Wand2,
+  Xmark as X,
+  Flash as Zap,
+} from 'iconoir-react';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   formatCodexModelLabel,
@@ -124,9 +123,10 @@ const ICON_SIZE = 14;
 
 const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
   const [width = 1, height = 1] = ratio.split(':').map(Number);
-  if (width === height) return <Square size={ICON_SIZE} />;
-  if (width > height) return <RectangleHorizontal size={ICON_SIZE} />;
-  return <RectangleVertical size={ICON_SIZE} />;
+  if (width === height) return <Square width={ICON_SIZE} height={ICON_SIZE} />;
+  if (width > height)
+    return <RectangleHorizontal width={ICON_SIZE} height={ICON_SIZE} className="scale-y-75" />;
+  return <RectangleHorizontal width={ICON_SIZE} height={ICON_SIZE} className="scale-x-75" />;
 };
 
 const BATCH_COUNTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -682,7 +682,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               onClick={() => fileInputRef.current?.click()}
               aria-label="Add image reference"
             >
-              <Plus size={16} aria-hidden="true" />
+              <Plus width={16} height={16} aria-hidden="true" />
               <span>Add</span>
             </button>
           )}
@@ -769,7 +769,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               onClick={() => fileInputRef.current?.click()}
                               aria-label="Add image reference"
                             >
-                              <Plus size={16} aria-hidden="true" />
+                              <Plus width={16} height={16} aria-hidden="true" />
                               <span>Add</span>
                             </button>
                           )}
@@ -800,7 +800,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             aria-label="Analyze references"
                             className="create-icon-button"
                           >
-                            <Scan size={16} />
+                            <Scan width={16} height={16} />
                           </button>
                         </Tooltip>
                         <div className="relative">
@@ -817,7 +817,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               aria-expanded={isRefineOpen}
                               className={`create-icon-button ${isRefineOpen ? 'is-active' : ''}`}
                             >
-                              <Edit3 size={16} />
+                              <Edit3 width={16} height={16} />
                             </button>
                           </Tooltip>
                           <DemandMountedGsapDropdown
@@ -856,7 +856,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                 aria-label="Apply edit instructions"
                                 className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                               >
-                                {isRefactoring ? <CozyLoader size={18} /> : <Send size={12} />}
+                                {isRefactoring ? (
+                                  <CozyLoader size={18} />
+                                ) : (
+                                  <Send width={12} height={12} />
+                                )}
                               </button>
                             </div>
                           </DemandMountedGsapDropdown>
@@ -869,7 +873,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             aria-label="Enhance prompt"
                             className={`create-icon-button ${isEnhancingPrompt ? 'is-active' : ''}`}
                           >
-                            {isEnhancingPrompt ? <CozyLoader size={18} /> : <Wand2 size={16} />}
+                            {isEnhancingPrompt ? (
+                              <CozyLoader size={18} />
+                            ) : (
+                              <Wand2 width={16} height={16} />
+                            )}
                           </button>
                         </Tooltip>
                         <Tooltip content="Expand editor">
@@ -883,7 +891,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               setIsRefineOpen(false);
                             }}
                           >
-                            <Maximize size={16} />
+                            <Maximize width={16} height={16} />
                           </button>
                         </Tooltip>
                       </div>
@@ -962,7 +970,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           <strong id="create-format-value">{generationConfig.aspectRatio}</strong>
                           <small id="create-format-orientation">{formatOrientation}</small>
                         </span>
-                        <ChevronDown size={14} aria-hidden="true" />
+                        <ChevronDown width={14} height={14} aria-hidden="true" />
                       </button>
                       <DemandMountedGsapDropdown
                         portal
@@ -1042,7 +1050,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                 : 'Default'}
                             </small>
                           </span>
-                          <ChevronDown size={14} aria-hidden="true" />
+                          <ChevronDown width={14} height={14} aria-hidden="true" />
                         </button>
                         <DemandMountedGsapDropdown
                           portal
@@ -1107,7 +1115,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           disabled={currentBatch === previousBatchCount}
                           onClick={() => updateConfig('batchCount', previousBatchCount)}
                         >
-                          <Minus size={16} />
+                          <Minus width={16} height={16} />
                         </button>
                         <input
                           id="create-quantity-input"
@@ -1138,7 +1146,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           disabled={currentBatch === nextBatchCount}
                           onClick={() => updateConfig('batchCount', nextBatchCount)}
                         >
-                          <Plus size={16} />
+                          <Plus width={16} height={16} />
                         </button>
                       </div>
                     </div>
@@ -1162,12 +1170,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           }
                         }}
                       >
-                        <SlidersHorizontal size={15} aria-hidden="true" />
+                        <SlidersHorizontal width={15} height={15} aria-hidden="true" />
                         <span>Advanced</span>
                         <span className="create-advanced-meta">
                           {generationConfig.negativePrompt?.trim() ? '1 active' : 'Optional'}
                         </span>
-                        <ChevronDown size={13} aria-hidden="true" />
+                        <ChevronDown width={13} height={13} aria-hidden="true" />
                       </button>
                       <AnimatePresence>
                         {isAdvancedOpen ? (
@@ -1219,7 +1227,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   className={iconBtnClass}
                   data-tooltip="Add Image"
                 >
-                  <PlusCircle size={17} />
+                  <PlusCircle width={17} height={17} />
                 </button>
 
                 {hasAttachments && (
@@ -1291,7 +1299,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         aria-expanded={isNegativeOpen}
                         className={`${iconBtnClass} ${isNegativeOpen || generationConfig.negativePrompt ? 'text-[color:var(--wb-danger)]' : ''}`}
                       >
-                        <Ban size={15} />
+                        <Ban width={15} height={15} />
                         {generationConfig.negativePrompt && (
                           <div className="absolute top-1 right-1 size-1.5 bg-red-500 rounded-full" />
                         )}
@@ -1345,7 +1353,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             aria-expanded={isRefineOpen}
                             className={`${iconBtnClass} ${isRefineOpen ? activeIconBtnClass : ''}`}
                           >
-                            <Edit3 size={15} />
+                            <Edit3 width={15} height={15} />
                           </button>
                         </Tooltip>
                         <DemandMountedGsapDropdown
@@ -1385,7 +1393,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               aria-label="Apply edit instructions"
                               className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                             >
-                              {isRefactoring ? <CozyLoader size={18} /> : <Send size={12} />}
+                              {isRefactoring ? (
+                                <CozyLoader size={18} />
+                              ) : (
+                                <Send width={12} height={12} />
+                              )}
                             </button>
                           </div>
                         </DemandMountedGsapDropdown>
@@ -1400,7 +1412,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           aria-label="Enhance prompt"
                           className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
                         >
-                          {isEnhancingPrompt ? <CozyLoader size={18} /> : <Wand2 size={15} />}
+                          {isEnhancingPrompt ? (
+                            <CozyLoader size={18} />
+                          ) : (
+                            <Wand2 width={15} height={15} />
+                          )}
                         </button>
                       </Tooltip>
                     </>
@@ -1433,7 +1449,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 aria-expanded={isMobileControlsOpen}
                 className={`${btnClass} min-w-0 flex-1 sm:hidden`}
               >
-                <SlidersHorizontal size={14} />
+                <SlidersHorizontal width={14} height={14} />
                 <span>{isContextOnly ? 'Context' : 'Controls'}</span>
               </button>
             )}
@@ -1472,7 +1488,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   aria-label="Close generation controls"
                   className="flex size-10 items-center justify-center rounded-[var(--wb-radius)] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                 >
-                  <X size={14} />
+                  <X width={14} height={14} />
                 </button>
               </div>
 
@@ -1522,7 +1538,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         aria-label="Apply edit instructions"
                         className="flex size-10 items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
                       >
-                        {isRefactoring ? <CozyLoader size={18} /> : <Send size={12} />}
+                        {isRefactoring ? <CozyLoader size={18} /> : <Send width={12} height={12} />}
                       </button>
                     </div>
                   </div>
@@ -1534,7 +1550,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       aria-label="Enhance prompt"
                       className="flex h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-white/2 bg-white/5 text-[length:var(--wbp-label)] font-semibold leading-none tracking-normal text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
                     >
-                      {isEnhancingPrompt ? <CozyLoader size={18} /> : <Wand2 size={14} />}
+                      {isEnhancingPrompt ? (
+                        <CozyLoader size={18} />
+                      ) : (
+                        <Wand2 width={14} height={14} />
+                      )}
                       Enhance
                     </button>
                   </div>
@@ -1623,7 +1643,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       aria-expanded={isSizeOpen}
                       className={btnClass}
                     >
-                      <Monitor size={14} />
+                      <Monitor width={14} height={14} />
                       <span>{generationConfig.imageSize || '1K'}</span>
                     </button>
                     <DemandMountedGsapDropdown
@@ -1672,7 +1692,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       aria-expanded={isBatchOpen}
                       className={btnClass}
                     >
-                      <Layers size={14} />
+                      <Layers width={14} height={14} />
                       <span>{generationConfig.batchCount || 1}x</span>
                     </button>
                     <DemandMountedGsapDropdown
@@ -1737,7 +1757,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         aria-expanded={isExecutionOpen}
                         className={isRail ? 'create-tool-chip' : btnClass}
                       >
-                        {isRail ? null : <BrainCircuit size={14} />}
+                        {isRail ? null : <BrainCircuit width={14} height={14} />}
                         {isRail ? (
                           <span className="create-engine-copy">
                             <span className="create-engine-kicker">Model</span>
@@ -1748,7 +1768,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             {executionSummary}
                           </span>
                         )}
-                        {isRail ? <ChevronDown size={12} aria-hidden="true" /> : null}
+                        {isRail ? <ChevronDown width={12} height={12} aria-hidden="true" /> : null}
                       </button>
                       <DemandMountedGsapDropdown
                         portal
@@ -1775,7 +1795,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             aria-label="Close generation settings"
                             onClick={() => setIsExecutionOpen(false)}
                           >
-                            <X size={14} />
+                            <X width={14} height={14} />
                           </button>
                         </header>
                         <div className="create-execution-body">
@@ -1817,7 +1837,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                       {getCodexSpeedOptions(model).includes('fast') && (
                                         <span className="create-execution-badge">Fast</span>
                                       )}
-                                      {isSelected && <Check size={14} aria-hidden="true" />}
+                                      {isSelected && (
+                                        <Check width={14} height={14} aria-hidden="true" />
+                                      )}
                                     </button>
                                   );
                                 })}
@@ -1849,7 +1871,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                         {imageModel.lifecycle === 'previous' && (
                                           <span className="create-execution-badge">Previous</span>
                                         )}
-                                        {isSelected && <Check size={14} aria-hidden="true" />}
+                                        {isSelected && (
+                                          <Check width={14} height={14} aria-hidden="true" />
+                                        )}
                                       </button>
                                     );
                                   })}
@@ -1957,7 +1981,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       data-tooltip="Generation provider"
                       className={`${btnClass} cursor-default`}
                     >
-                      <Zap size={14} />
+                      <Zap width={14} height={14} />
                       <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
                         {formatGenerationProviderLabel(activeProviderId)}
                       </span>
@@ -2012,7 +2036,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     />
                   ) : isRail ? (
                     <>
-                      <Sparkles size={17} aria-hidden="true" />
+                      <Sparkles width={17} height={17} aria-hidden="true" />
                       <span>{`Generate ${outputSummary}`}</span>
                     </>
                   ) : (
@@ -2021,7 +2045,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <div className="relative z-10 flex items-center gap-2">
                         <>
                           <Wand2
-                            size={14}
+                            width={14}
+                            height={14}
                             className="group-hover:rotate-12 transition-transform text-accent-300"
                           />
                           <span className="text-white">GENERATE</span>

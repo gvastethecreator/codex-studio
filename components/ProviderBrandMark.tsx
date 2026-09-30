@@ -1,4 +1,4 @@
-import { IconApi, IconFlask } from '@tabler/icons-react';
+import { PlugTypeA, Flask } from 'iconoir-react';
 import codexMark from '../assets/providers/codex.svg';
 import grokMark from '../assets/providers/grok.svg';
 import googleMark from '../assets/providers/google.svg';
@@ -46,7 +46,11 @@ function ProviderGlyph({ providerId, size }: { providerId: string; size: number 
         className={`provider-mark provider-mark-${providerId}`}
       />
     );
-  return providerId === 'dry_run' ? <IconFlask size={size} /> : <IconApi size={size} />;
+  return providerId === 'dry_run' ? (
+    <Flask width={size} height={size} />
+  ) : (
+    <PlugTypeA width={size} height={size} />
+  );
 }
 
 export function ProviderBrandMark({

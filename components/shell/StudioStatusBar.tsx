@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconLayoutSidebarRight as SidebarRight, IconServer as Server } from '@tabler/icons-react';
+import { LayoutRight as SidebarRight, Server } from 'iconoir-react';
 
 import type { UseCatalogResult } from '../../hooks/useCatalogPage';
 import type { StudioCommandCenterProjection } from '../../lib/commandCenterProjection';
@@ -104,7 +104,7 @@ export function StudioStatusBar({
           aria-label={`Open runtime status: ${runtimeStatus.label}`}
           className={`studio-command-surface studio-hit-target flex h-7 items-center justify-center gap-1.5 rounded-[var(--wb-radius)] border px-2 ${runtimeToneClass(runtimeStatus.tone)}`}
         >
-          <Server size={13} />
+          <Server width={13} height={13} />
           <span className="hidden text-[length:var(--wbp-label)] font-semibold tracking-normal sm:inline">
             {runtimeStatus.label}
           </span>
@@ -124,7 +124,7 @@ export function StudioStatusBar({
               : 'border-[color:var(--wb-border)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]',
           )}
         >
-          <SidebarRight size={13} />
+          <SidebarRight width={13} height={13} />
           <span>Jobs</span>
           {queueCount > 0 ? (
             <span className="tabular-nums text-accent-200">{queueCount} active</span>

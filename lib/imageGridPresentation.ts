@@ -9,6 +9,8 @@ export const MIN_THUMBNAIL_SIZE = 144;
 export const MAX_THUMBNAIL_SIZE = 320;
 export const THUMBNAIL_SIZE_STEP = 8;
 export const IMAGE_GRID_COLUMN_GAP = 16;
+/** Fixed caption block under every library card image, in px. */
+export const IMAGE_GRID_CAPTION_HEIGHT = 64;
 export const IMAGE_GRID_MAX_COLUMNS = 12;
 export const IMAGE_GRID_CARD_MIN_WIDTH = 256;
 export const IMAGE_GRID_PRIORITY_VIEWPORT_OVERSCAN_PX = 96;
@@ -139,6 +141,17 @@ function resolveImageGridNumericRatio(
   return width > 0 && height > 0 ? width / height : 1;
 }
 
+/** Frames this wide leave too little image height for an overlaid toolbar. */
+export const IMAGE_GRID_WIDE_FRAME_RATIO = 1.6;
+
+export function isWideImageGridFrame(
+  image: Pick<GeneratedImageWithConfig, 'config' | 'width' | 'height'>,
+  viewMode: ImageGridViewMode,
+) {
+  if (viewMode === 'grid' || viewMode === 'list') return false;
+  return resolveImageGridNumericRatio(image) >= IMAGE_GRID_WIDE_FRAME_RATIO;
+}
+
 export function estimateImageGridItemHeight({
   image,
   thumbnailSize,
@@ -202,9 +215,9 @@ export function estimateImageGridCardItemHeight({
   viewMode: ImageGridViewMode;
 }) {
   if (viewMode === 'list') return 104;
-  if (viewMode === 'grid') return itemWidth;
+  if (viewMode === 'grid') return itemWidth + IMAGE_GRID_CAPTION_HEIGHT;
   const ratio = resolveImageGridNumericRatio(image);
-  return itemWidth / ratio + 112;
+  return itemWidth / ratio + IMAGE_GRID_CAPTION_HEIGHT;
 }
 
 export interface ImageGridVirtualWindow {

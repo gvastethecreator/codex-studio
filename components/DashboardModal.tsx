@@ -2,13 +2,13 @@ import { MotionDiv } from '../lib/gsapMotion';
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import {
-  IconX as X,
-  IconUser as User,
-  IconDownload as Download,
-  IconDatabase as Database,
-  IconStack as Layers,
-  IconDeviceDesktop as HardDrive,
-} from '@tabler/icons-react';
+  Xmark as X,
+  User,
+  Download,
+  Database,
+  MultiplePages as Layers,
+  Computer as HardDrive,
+} from 'iconoir-react';
 import type { Workspace } from '../types';
 
 interface DashboardModalProps {
@@ -45,7 +45,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
         <div className="flex shrink-0 items-center justify-between border-b border-[color:var(--wb-line)] p-4 sm:p-6">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-[var(--wb-radius)] bg-accent-500/10 text-accent-400">
-              <User size={20} />
+              <User width={20} height={20} />
             </div>
             <h2 className="text-sm font-semibold tracking-normal text-[color:var(--wb-ink)]">
               Library summary
@@ -57,14 +57,14 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             onClick={onClose}
             className="p-2 rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] transition-colors cursor-pointer"
           >
-            <X size={20} />
+            <X width={20} height={20} />
           </button>
         </div>
 
         <div className="custom-scrollbar flex flex-1 flex-col gap-6 overflow-y-auto p-4 sm:gap-8 sm:p-8">
           <div className="flex items-center gap-4 sm:gap-6">
             <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-bar)] text-[color:var(--wb-muted)] sm:size-20">
-              <User size={34} />
+              <User width={34} height={34} />
               <div className="absolute inset-0 bg-linear-to-tr from-accent-500/20 to-transparent" />
             </div>
             <div>
@@ -86,7 +86,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
             <div className="p-4 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] border border-[color:var(--wb-line)] flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <HardDrive size={14} className="text-[color:var(--wb-success)]" />
+                <HardDrive width={14} height={14} className="text-[color:var(--wb-success)]" />
                 <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Library
                 </span>
@@ -95,7 +95,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             </div>
             <div className="p-4 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] border border-[color:var(--wb-line)] flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <Layers size={14} className="text-blue-400" />
+                <Layers width={14} height={14} className="text-blue-400" />
                 <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Images loaded
                 </span>
@@ -106,7 +106,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             </div>
             <div className="p-4 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] border border-[color:var(--wb-line)] flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <Database size={14} className="text-purple-400" />
+                <Database width={14} height={14} className="text-purple-400" />
                 <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Workspaces
                 </span>

@@ -3,18 +3,18 @@ import { CozyLoader as Loader2 } from '../CozyMascot';
 import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './RecipeWorkbenchContext';
 import React from 'react';
 import {
-  IconAlertTriangle as AlertTriangle,
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconClipboardList as ClipboardList,
-  IconFileImport as FileImport,
-  IconFileText as FileText,
-  IconFolder as Folder,
-  IconPackage as Package,
-  IconPlus as Plus,
-  IconRefresh as RefreshCw,
-  IconSearch as Search,
-} from '@tabler/icons-react';
+  WarningTriangle as AlertTriangle,
+  Check,
+  NavArrowDown as ChevronDown,
+  List as ClipboardList,
+  Import as FileImport,
+  Page as FileText,
+  Folder,
+  Package,
+  Plus,
+  Refresh as RefreshCw,
+  Search,
+} from 'iconoir-react';
 import {
   createSpriteAtlasContract,
   isSpriteAtlasIdleRow,
@@ -655,7 +655,11 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           <span className="text-xs font-semibold tracking-normal text-[color:var(--wb-muted)]">
                             Layout Guide
                           </span>
-                          <FileText size={14} className="text-[color:var(--wb-muted)]" />
+                          <FileText
+                            width={14}
+                            height={14}
+                            className="text-[color:var(--wb-muted)]"
+                          />
                         </div>
                         <img
                           src={getSpriteAtlasLayoutGuideUrl(activeRun.id, selectedRow.id)}
@@ -671,7 +675,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           disabled={busy || !activeProviderId}
                           className="inline-flex min-h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-info)]  hover:bg-sky-500/15 disabled:opacity-50"
                         >
-                          <ClipboardList size={15} />
+                          <ClipboardList width={15} height={15} />
                           {activeProviderId
                             ? `Queue with ${activeProviderId}`
                             : 'Choose a provider'}
@@ -682,7 +686,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           disabled={busy}
                           className="inline-flex min-h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-rose-400/2 bg-rose-500/10 px-3 text-xs font-bold tracking-normal text-[color:var(--wb-danger)]  hover:bg-rose-500/15 disabled:opacity-50"
                         >
-                          <AlertTriangle size={15} />
+                          <AlertTriangle width={15} height={15} />
                           Block
                         </button>
                       </div>
@@ -716,7 +720,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           className="inline-flex min-h-10 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] px-3 text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-50"
                           aria-label="Import selected row"
                         >
-                          <FileImport size={15} />
+                          <FileImport width={15} height={15} />
                         </button>
                       </div>
                     </div>
@@ -761,7 +765,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
             ) : (
               <div className="grid h-full place-items-center p-3">
                 <EmptyState
-                  icon={<FileText size={32} />}
+                  icon={<FileText width={32} height={32} />}
                   title="Select a row"
                   copy="No row loaded."
                 />
@@ -787,7 +791,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     </p>
                   </div>
                   <span className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 text-[color:var(--wb-info)] ">
-                    <Package size={20} />
+                    <Package width={20} height={20} />
                   </span>
                 </div>
 
@@ -886,7 +890,11 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     disabled={busy}
                     className="studio-primary-control min-h-11 w-full disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    {busy ? <Loader2 size={15} className="animate-spin" /> : <Plus size={15} />}
+                    {busy ? (
+                      <Loader2 size={15} className="animate-spin" />
+                    ) : (
+                      <Plus width={15} height={15} />
+                    )}
                     Prepare Run
                   </button>
                 </RecipePrimaryAction>
@@ -934,7 +942,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   onClick={() => void runAction(refreshRuns, 'Runs refreshed.')}
                   disabled={busy}
                 >
-                  <RefreshCw size={14} />
+                  <RefreshCw width={14} height={14} />
                 </IconButton>
                 <IconButton
                   label={
@@ -946,7 +954,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   disabled={busy || !activeRun || !selectedRow || !activeProviderId}
                   tone="sky"
                 >
-                  <ClipboardList size={14} />
+                  <ClipboardList width={14} height={14} />
                 </IconButton>
                 <details className="relative">
                   <summary className="cursor-pointer rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-2 text-xs">
@@ -963,7 +971,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       disabled={busy || !activeRun}
                       tone="amber"
                     >
-                      <Package size={14} />
+                      <Package width={14} height={14} />
                     </IconButton>
                   </div>
                 </details>
@@ -973,7 +981,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   disabled={busy || !activeRun || !canCompose}
                   tone="sky"
                 >
-                  <Package size={14} />
+                  <Package width={14} height={14} />
                 </IconButton>
                 <IconButton
                   label="Accept visual check"
@@ -987,7 +995,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   disabled={busy || !activeRun}
                   tone="emerald"
                 >
-                  <Check size={14} />
+                  <Check width={14} height={14} />
                 </IconButton>
                 <IconButton
                   label="Technical check"
@@ -997,7 +1005,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   }
                   tone="emerald"
                 >
-                  <Check size={14} />
+                  <Check width={14} height={14} />
                 </IconButton>
               </div>
             </div>
@@ -1024,7 +1032,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
           {error && (
             <div className="m-3 flex items-start gap-2 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 p-3 text-sm text-[color:var(--wb-danger)] ">
-              <AlertTriangle size={16} className="mt-0.5 shrink-0" />
+              <AlertTriangle width={16} height={16} className="mt-0.5 shrink-0" />
               <span>{error}</span>
             </div>
           )}
@@ -1044,7 +1052,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     </span>
                     <span className="relative min-w-0">
                       <Search
-                        size={14}
+                        width={14}
+                        height={14}
                         className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--wb-dim)]"
                         aria-hidden="true"
                       />
@@ -1154,7 +1163,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       </div>
                     ) : (
                       <EmptyState
-                        icon={<Package size={28} />}
+                        icon={<Package width={28} height={28} />}
                         title="Atlas not composed"
                         copy="Queue a row, import the result, then compose the exact strips."
                       />
@@ -1224,7 +1233,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     </div>
                   ) : (
                     <EmptyState
-                      icon={<Search size={30} />}
+                      icon={<Search width={30} height={30} />}
                       title="No matching rows"
                       copy="Clear search or status filter."
                     />
@@ -1234,7 +1243,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
             ) : (
               <div className="grid h-full place-items-center p-3">
                 <EmptyState
-                  icon={<Folder size={34} />}
+                  icon={<Folder width={34} height={34} />}
                   title="No Sprite Atlas run"
                   copy="Prepare Run writes the row contract. Queue sends one row to the selected provider."
                 />
@@ -1352,7 +1361,8 @@ const SelectField: React.FC<{
         >
           <span className="truncate">{value}</span>
           <ChevronDown
-            size={14}
+            width={14}
+            height={14}
             className={`shrink-0 text-[color:var(--wb-muted)] transition-[color,transform] ${
               isOpen ? 'rotate-180 text-[color:var(--wb-info)] ' : ''
             }`}
@@ -1390,7 +1400,7 @@ const SelectField: React.FC<{
               >
                 <span className="truncate">{option}</span>
                 {selected ? (
-                  <Check size={12} className="shrink-0 text-[color:var(--wb-info)] " />
+                  <Check width={12} height={12} className="shrink-0 text-[color:var(--wb-info)] " />
                 ) : null}
               </button>
             );

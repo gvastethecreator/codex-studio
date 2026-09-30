@@ -1,20 +1,20 @@
 import React, { useState, useRef, useMemo, useCallback, useId } from 'react';
 import {
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconMovie as Clapperboard,
-  IconVideo as Video,
-  IconAperture as Aperture,
-  IconMovie as Film,
-  IconX as X,
-  IconSun as Sun,
-  IconGrid3x3 as Grid3X3,
-  IconClock as Clock,
-  IconCloudRain as CloudRain,
-  IconTemplate as LayoutTemplate,
-  IconRectangle as RectangleHorizontal,
-  IconUpload as Upload,
-} from '@tabler/icons-react';
+  Check,
+  NavArrowDown as ChevronDown,
+  Movie as Clapperboard,
+  VideoCamera as Video,
+  Lens as Aperture,
+  Movie as Film,
+  Xmark as X,
+  SunLight as Sun,
+  ViewGrid as Grid3X3,
+  Clock,
+  Rain as CloudRain,
+  ViewColumns2 as LayoutTemplate,
+  Square as RectangleHorizontal,
+  Upload,
+} from 'iconoir-react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -97,7 +97,8 @@ const ShotTypeDropdown: React.FC<{
       >
         <span className="truncate">{value}</span>
         <ChevronDown
-          size={11}
+          width={11}
+          height={11}
           className={`shrink-0 text-[color:var(--wb-ink)]/45 transition-[color,transform] ${
             isOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : ''
           }`}
@@ -137,7 +138,7 @@ const ShotTypeDropdown: React.FC<{
             >
               <span className="truncate">{shot}</span>
               {selected ? (
-                <Check size={11} className="shrink-0 text-[color:var(--wb-danger)]" />
+                <Check width={11} height={11} className="shrink-0 text-[color:var(--wb-danger)]" />
               ) : null}
             </button>
           );
@@ -243,9 +244,9 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
                     : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'
                 }`}
               >
-                {count === 3 && <LayoutTemplate size={14} />}
-                {count === 6 && <RectangleHorizontal size={14} />}
-                {count === 9 && <Grid3X3 size={14} />}
+                {count === 3 && <LayoutTemplate width={14} height={14} />}
+                {count === 6 && <RectangleHorizontal width={14} height={14} />}
+                {count === 9 && <Grid3X3 width={14} height={14} />}
                 <span className="text-[length:var(--wbp-label)] font-semibold">{count} Scenes</span>
               </button>
             ))}
@@ -257,21 +258,21 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         <div className="flex items-center gap-3 flex-wrap justify-center">
           <ControlDropdown
             title="Time"
-            icon={<Clock size={14} />}
+            icon={<Clock width={14} height={14} />}
             label={params.time}
             options={CONTROL_OPTIONS.time}
             onSelect={(v) => setParams((p) => ({ ...p, time: v }))}
           />
           <ControlDropdown
             title="Weather"
-            icon={<CloudRain size={14} />}
+            icon={<CloudRain width={14} height={14} />}
             label={params.weather}
             options={CONTROL_OPTIONS.weather}
             onSelect={(v) => setParams((p) => ({ ...p, weather: v }))}
           />
           <ControlDropdown
             title="Lighting"
-            icon={<Sun size={14} />}
+            icon={<Sun width={14} height={14} />}
             label={params.lighting}
             options={CONTROL_OPTIONS.lighting}
             onSelect={(v) => setParams((p) => ({ ...p, lighting: v }))}
@@ -285,28 +286,28 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <div className="recipe-advanced-grid">
             <ControlDropdown
               title="Genre"
-              icon={<Film size={14} />}
+              icon={<Film width={14} height={14} />}
               label={params.genre}
               options={CONTROL_OPTIONS.genre}
               onSelect={(v) => setParams((p) => ({ ...p, genre: v }))}
             />
             <ControlDropdown
               title="Tone"
-              icon={<Aperture size={14} />}
+              icon={<Aperture width={14} height={14} />}
               label={params.tone}
               options={CONTROL_OPTIONS.tone}
               onSelect={(v) => setParams((p) => ({ ...p, tone: v }))}
             />
             <ControlDropdown
               title="Camera"
-              icon={<Video size={14} />}
+              icon={<Video width={14} height={14} />}
               label={params.movement}
               options={CONTROL_OPTIONS.movement}
               onSelect={(v) => setParams((p) => ({ ...p, movement: v }))}
             />
             <ControlDropdown
               title="Lens"
-              icon={<Clapperboard size={14} />}
+              icon={<Clapperboard width={14} height={14} />}
               label={params.lens}
               options={CONTROL_OPTIONS.lens}
               onSelect={(v) => setParams((p) => ({ ...p, lens: v }))}
@@ -376,7 +377,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             onClick={() => updateConfig('attachments', [])}
             className="pointer-events-auto absolute right-4 top-4 z-20 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] transition-[background-color,color] hover:bg-red-500 hover:text-[color:var(--wb-ink)]"
           >
-            <X size={14} />
+            <X width={14} height={14} />
           </button>
         )}
       </div>

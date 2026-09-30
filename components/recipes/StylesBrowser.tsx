@@ -4,29 +4,29 @@ import { runtimeLogger } from '../../utils/runtimeLogger';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import { useWorkspaceState } from '../../contexts/GlobalContext';
 import {
-  IconArchive as Archive,
-  IconArrowsSort as ArrowUpDown,
-  IconBox as Box,
-  IconBriefcase as Briefcase,
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconCopy as Copy,
-  IconFilter as Filter,
-  IconFolders as Folders,
-  IconHeart as Heart,
-  IconLayoutGrid as LayoutGrid,
-  IconStack as Layers,
-  IconPencil as PenTool,
-  IconPlayerPlay as Play,
-  IconPlus as Plus,
-  IconSearch as Search,
-  IconAdjustmentsHorizontal as SlidersHorizontal,
-  IconSparkles as Sparkles,
-  IconWand as Wand2,
-  IconX as X,
-} from '@tabler/icons-react';
+  Archive,
+  Sort as ArrowUpDown,
+  Box3dCenter as Box,
+  Suitcase as Briefcase,
+  Check,
+  NavArrowDown as ChevronDown,
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  Copy,
+  Filter,
+  Folder as Folders,
+  Heart,
+  ViewGrid as LayoutGrid,
+  MultiplePages as Layers,
+  EditPencil as PenTool,
+  Play,
+  Plus,
+  Search,
+  ControlSlider as SlidersHorizontal,
+  Sparks as Sparkles,
+  MagicWand as Wand2,
+  Xmark as X,
+} from 'iconoir-react';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useLatestRef } from '../../hooks/useLatestRef';
 import {
@@ -1678,7 +1678,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         countLabel: `${globalStyleCategoryCount}`,
         tabId: ALL_STYLE_CATEGORIES_TAB_ID,
         theme: PACK_THEMES.pack_10,
-        icon: <Layers size={14} />,
+        icon: <Layers width={14} height={14} />,
       },
       {
         id: 'browse:all_cards',
@@ -1687,7 +1687,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         countLabel: `${globalStylePresetCount}`,
         tabId: ALL_STYLE_CARDS_TAB_ID,
         theme: PACK_THEMES.pack_06,
-        icon: <LayoutGrid size={14} />,
+        icon: <LayoutGrid width={14} height={14} />,
       },
     ];
     const personalItems: StyleRecipeNavigationItem[] = [
@@ -1698,7 +1698,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         countLabel: `${userStylePresets.length}`,
         tabId: USER_STYLE_PACK_ID,
         theme: PACK_THEMES[USER_STYLE_PACK_ID],
-        icon: <Sparkles size={14} />,
+        icon: <Sparkles width={14} height={14} />,
       },
       {
         id: 'personal:favorites',
@@ -1707,7 +1707,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         countLabel: `${favorites.length}`,
         tabId: FAVORITES_PACK_ID,
         theme: PACK_THEMES[FAVORITES_PACK_ID],
-        icon: <Heart size={14} fill="currentColor" />,
+        icon: <Heart width={14} height={14} fill="currentColor" />,
       },
     ];
 
@@ -1825,7 +1825,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                       {catalogExpanded ? 'Style explorer' : 'Styles'}
                     </h2>
                     <label className="styles-catalog-search">
-                      <Search size={16} aria-hidden="true" />
+                      <Search width={16} height={16} aria-hidden="true" />
                       <input
                         type="search"
                         aria-label="Search styles"
@@ -1866,7 +1866,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                       aria-label="Close style catalog"
                       onClick={closeStyleCatalog}
                     >
-                      <X size={14} />
+                      <X width={14} height={14} />
                       Close
                     </button>
                     <div className="styles-catalog-tabs vt-recipe-tabs vt-style-tabs">
@@ -1885,7 +1885,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                               : 'No previous category'
                           }
                         >
-                          <ChevronLeft size={15} />
+                          <ChevronLeft width={15} height={15} />
                         </button>
                         <button
                           type="button"
@@ -1897,7 +1897,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                             nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next category'
                           }
                         >
-                          <ChevronRight size={15} />
+                          <ChevronRight width={15} height={15} />
                         </button>
                       </div>
                       <div className="styles-catalog-tab-group">
@@ -1913,7 +1913,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                             !isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID,
                           )}
                         >
-                          <LayoutGrid size={15} />
+                          <LayoutGrid width={15} height={15} />
                           All styles
                         </button>
                         <button
@@ -1924,7 +1924,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                           aria-pressed={isPackLandingOpen}
                           className={styleCatalogTabClass(isPackLandingOpen)}
                         >
-                          <Layers size={15} />
+                          <Layers width={15} height={15} />
                           Collections
                         </button>
                         <button
@@ -1943,7 +1943,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                             !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID,
                           )}
                         >
-                          <Sparkles size={15} />
+                          <Sparkles width={15} height={15} />
                           {USER_STYLE_PACK_NAME}
                         </button>
                         <button
@@ -1957,7 +1957,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                           )}
                         >
                           <Heart
-                            size={15}
+                            width={15}
+                            height={15}
                             fill={
                               !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
                                 ? 'currentColor'
@@ -2042,7 +2043,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                               className="studio-ghost-control style-catalog-control"
                             >
                               Manage
-                              <ChevronDown size={12} aria-hidden="true" />
+                              <ChevronDown width={12} height={12} aria-hidden="true" />
                             </button>
                             <DemandMountedGsapDropdown
                               open={isManageStylesOpen}
@@ -2066,7 +2067,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                 className="studio-ghost-control style-catalog-control style-catalog-menu-action"
                                 data-tooltip="Create Style"
                               >
-                                <Plus size={15} />
+                                <Plus width={15} height={15} />
                                 <span className="inline">Create</span>
                               </button>
 
@@ -2083,7 +2084,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                 className="studio-ghost-control style-catalog-control style-catalog-menu-action"
                                 data-tooltip="Save Blend"
                               >
-                                <Layers size={15} />
+                                <Layers width={15} height={15} />
                                 <span className="inline">Blend</span>
                               </button>
 
@@ -2102,9 +2103,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                 data-tooltip={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
                               >
                                 {canEditActiveUserStyle ? (
-                                  <PenTool size={15} />
+                                  <PenTool width={15} height={15} />
                                 ) : (
-                                  <Copy size={15} />
+                                  <Copy width={15} height={15} />
                                 )}
                                 <span className="inline">
                                   {canEditActiveUserStyle ? 'Edit' : 'Clone'}
@@ -2125,7 +2126,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                 className="studio-ghost-control style-catalog-control style-catalog-icon"
                                 data-tooltip="Categories"
                               >
-                                <Layers size={14} />
+                                <Layers width={14} height={14} />
                               </button>
                               <button
                                 type="button"
@@ -2135,7 +2136,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                 className="studio-ghost-control style-catalog-control style-catalog-icon"
                                 data-tooltip="All cards"
                               >
-                                <LayoutGrid size={14} />
+                                <LayoutGrid width={14} height={14} />
                               </button>
                             </div>
                           )}
@@ -2152,12 +2153,13 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                               className="studio-ghost-control style-catalog-control style-catalog-sort"
                               data-tooltip="Sort styles"
                             >
-                              <ArrowUpDown size={14} className="shrink-0" />
+                              <ArrowUpDown width={14} height={14} className="shrink-0" />
                               <span className="min-w-0 flex-1 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                                 {activeSortOption.label}
                               </span>
                               <ChevronDown
-                                size={13}
+                                width={13}
+                                height={13}
                                 className={`shrink-0 transition-transform ${isSortDropdownOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : 'text-[color:var(--wb-dim)]'}`}
                               />
                             </button>
@@ -2198,7 +2200,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                       }`}
                                     >
                                       <span>{option.label}</span>
-                                      {selected ? <Check size={13} className="shrink-0" /> : null}
+                                      {selected ? (
+                                        <Check width={13} height={13} className="shrink-0" />
+                                      ) : null}
                                     </button>
                                   );
                                 })}
@@ -2215,7 +2219,11 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                               className="studio-ghost-control style-catalog-control style-catalog-icon"
                               data-tooltip="Filter Favorites in this Pack"
                             >
-                              <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
+                              <Heart
+                                width={16}
+                                height={16}
+                                fill={showFavoritesOnly ? 'currentColor' : 'none'}
+                              />
                             </button>
                           )}
 
@@ -2326,7 +2334,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                               aria-label="Show style map"
                               data-tooltip="Show style map"
                             >
-                              <ChevronRight size={14} />
+                              <ChevronRight width={14} height={14} />
                             </button>
                           </aside>
                         )}
@@ -2416,7 +2424,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                         }
                                         icon={
                                           isFlatStyleGroup || !categoryIdentity ? (
-                                            <LayoutGrid size={12} />
+                                            <LayoutGrid width={12} height={12} />
                                           ) : (
                                             <StyleCategoryGlyph
                                               iconId={categoryIdentity.iconId}
@@ -2447,7 +2455,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                     <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
                                       {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
                                         <>
-                                          <Filter size={32} className="opacity-20" />
+                                          <Filter width={32} height={32} className="opacity-20" />
                                           <span className="text-xs font-bold tracking-normal">
                                             Could not load this style pack
                                           </span>
@@ -2456,13 +2464,13 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                             onClick={retryStylePacks}
                                             className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                                           >
-                                            <Wand2 size={13} />
+                                            <Wand2 width={13} height={13} />
                                             Retry
                                           </button>
                                         </>
                                       ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
                                         <>
-                                          <Filter size={32} className="opacity-20" />
+                                          <Filter width={32} height={32} className="opacity-20" />
                                           <span className="text-xs font-bold tracking-normal">
                                             Could not load styles
                                           </span>
@@ -2471,7 +2479,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                             onClick={() => void refreshUserStyles()}
                                             className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                                           >
-                                            <Wand2 size={13} />
+                                            <Wand2 width={13} height={13} />
                                             Retry
                                           </button>
                                         </>
@@ -2480,7 +2488,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                         normalizedStyleSearchQuery.length === 0 ? (
                                         <>
                                           <Sparkles
-                                            size={32}
+                                            width={32}
+                                            height={32}
                                             className="opacity-30 text-[color:var(--wb-info)] "
                                           />
                                           <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
@@ -2491,13 +2500,13 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                             onClick={handleCreateUserStyle}
                                             className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
                                           >
-                                            <Plus size={13} />
+                                            <Plus width={13} height={13} />
                                             Create Style
                                           </button>
                                         </>
                                       ) : (
                                         <>
-                                          <Filter size={32} className="opacity-20" />
+                                          <Filter width={32} height={32} className="opacity-20" />
                                           <span className="text-xs font-bold tracking-normal">
                                             {isLoadingUserStyles || isLoadingStylePacks
                                               ? 'Loading styles'
@@ -2594,7 +2603,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
             }}
           >
             <span>Advanced layers</span>
-            <SlidersHorizontal size={13} />
+            <SlidersHorizontal width={13} height={13} />
           </button>
         ) : null}
         {advancedOpen && selectedStyles.length > 0 ? (
@@ -2616,7 +2625,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                   document.querySelector<HTMLElement>('[data-style-advanced-toggle]')?.focus();
                 }}
               >
-                <X size={14} />
+                <X width={14} height={14} />
               </button>
             </div>
             <div className="create-side-panel-body custom-scrollbar">
@@ -2653,7 +2662,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                     } min-h-8 flex-1 gap-1.5 px-2 text-xs font-semibold capitalize transition-[background-color,border-color,color,box-shadow]`}
                   >
                     <Check
-                      size={14}
+                      width={14}
+                      height={14}
                       strokeWidth={3}
                       aria-hidden="true"
                       className={isActive ? 'opacity-100' : 'opacity-0'}
@@ -2682,7 +2692,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
           data-generate-active={isGenerating ? 'true' : 'false'}
           className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
         >
-          <Play size={16} />
+          <Play width={16} height={16} />
           {isGenerating ? 'Queue' : 'Generate'}
         </button>
       </RecipeControls>

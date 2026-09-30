@@ -2,11 +2,11 @@ import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import { SettingsAppearancePanel } from './SettingsAppearancePanel';
 import { SettingsOutputPanel } from './SettingsOutputPanel';
 import {
-  IconDatabase as Database,
-  IconFolderOpen as FolderOpen,
-  IconRotate as RotateCcw,
-  IconSettings as Settings,
-} from '@tabler/icons-react';
+  Database,
+  Folder as FolderOpen,
+  RefreshCircle as RotateCcw,
+  Settings,
+} from 'iconoir-react';
 import type React from 'react';
 import { type GenerationProviderId } from '../../packages/shared/src/generationContracts';
 import type {
@@ -59,7 +59,7 @@ export function SettingsFormPanel({
         <>
           <div className="md:col-span-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
             <div className="flex items-center gap-3">
-              <FolderOpen size={16} className="text-[color:var(--wb-muted)]" />
+              <FolderOpen width={16} height={16} className="text-[color:var(--wb-muted)]" />
               <div className="min-w-0">
                 <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Studio Library
@@ -78,7 +78,7 @@ export function SettingsFormPanel({
             className="flex items-center justify-between rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
           >
             <span className="flex items-center gap-3">
-              <Database size={16} className="text-[color:var(--wb-danger)] " />
+              <Database width={16} height={16} className="text-[color:var(--wb-danger)] " />
               <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] ">
                 Rebuild Library
               </span>
@@ -86,7 +86,7 @@ export function SettingsFormPanel({
             {isResettingStudio ? (
               <LoaderCircle size={16} className="animate-spin text-[color:var(--wb-danger)] " />
             ) : (
-              <RotateCcw size={16} className="text-[color:var(--wb-danger)] " />
+              <RotateCcw width={16} height={16} className="text-[color:var(--wb-danger)] " />
             )}
           </button>
         </>
@@ -125,7 +125,8 @@ export function SettingsFormPanel({
           >
             <span className="flex items-center gap-3">
               <FolderOpen
-                size={16}
+                width={16}
+                height={16}
                 className={
                   autoDetectOutputSources ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
                 }
@@ -173,7 +174,8 @@ export function SettingsFormPanel({
           >
             <span className="flex items-center gap-3">
               <Settings
-                size={16}
+                width={16}
+                height={16}
                 className={
                   commandCenterCompactMode ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
                 }

@@ -1,11 +1,6 @@
 import { summarizePersistentJobs } from '../lib/persistentJobSummary';
 import React from 'react';
-import {
-  IconActivity as Activity,
-  IconDatabase as Database,
-  IconStack3 as Layers3,
-  IconTerminal as Terminal,
-} from '@tabler/icons-react';
+import { Activity, Database, MultiplePagesEmpty as Layers3, Terminal } from 'iconoir-react';
 
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { LogEntry, Workspace } from '../types';
@@ -61,7 +56,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
     <div className="flex flex-col gap-6">
       <div>
         <div className="mb-3 flex items-center gap-2">
-          <Activity size={14} className="text-accent-400" />
+          <Activity width={14} height={14} className="text-accent-400" />
           <h3 className={sectionTitleClass}>Session Metrics</h3>
         </div>
         <div className="grid grid-cols-3 gap-2">
@@ -90,7 +85,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
 
       <div>
         <div className="mb-3 flex items-center gap-2">
-          <Database size={14} className="text-accent-400" />
+          <Database width={14} height={14} className="text-accent-400" />
           <h3 className={sectionTitleClass}>Workspaces</h3>
         </div>
         <div className="space-y-2">
@@ -118,7 +113,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
 
       <div>
         <div className="mb-3 flex items-center gap-2">
-          <Layers3 size={14} className="text-accent-400" />
+          <Layers3 width={14} height={14} className="text-accent-400" />
           <h3 className={sectionTitleClass}>Recent Jobs</h3>
         </div>
         <div className="space-y-2">
@@ -196,7 +191,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
 
       <div className="min-h-0 flex-1">
         <div className="mb-3 flex items-center gap-2">
-          <Terminal size={14} className="text-accent-400" />
+          <Terminal width={14} height={14} className="text-accent-400" />
           <h3 className={sectionTitleClass}>Recent Activity</h3>
         </div>
         <div className="custom-scrollbar max-h-110 space-y-1.5 overflow-y-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 font-mono text-[length:var(--wbp-label)] leading-relaxed">

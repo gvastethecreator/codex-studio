@@ -1,15 +1,15 @@
 import { CozyLoader as Loader2 } from './CozyMascot';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  IconAlertTriangle as AlertTriangle,
-  IconRobot as Bot,
-  IconCircleCheck as CheckCircle2,
-  IconClock as Clock,
-  IconMessage as MessageSquare,
-  IconSend as Send,
-  IconUser as User,
-  IconX as X,
-} from '@tabler/icons-react';
+  WarningTriangle as AlertTriangle,
+  ElectronicsChip as Bot,
+  CheckCircle as CheckCircle2,
+  Clock,
+  ChatBubble as MessageSquare,
+  SendDiagonal as Send,
+  User,
+  Xmark as X,
+} from 'iconoir-react';
 
 import { cn } from '../lib/utils';
 import { useLatestRef } from '../hooks/useLatestRef';
@@ -148,7 +148,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
           <header className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
             <div className="flex min-w-0 items-center gap-3">
               <div className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-500/10 text-accent-300">
-                <MessageSquare size={18} />
+                <MessageSquare width={18} height={18} />
               </div>
               <div className="min-w-0">
                 <h2
@@ -170,7 +170,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
               className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2.5 text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               aria-label="Close Codex chat"
             >
-              <X size={18} />
+              <X width={18} height={18} />
             </button>
           </header>
 
@@ -192,7 +192,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     >
                       {message.role === 'assistant' ? (
                         <div className="mt-1 grid size-8 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-500/10 text-accent-300">
-                          <Icon size={15} />
+                          <Icon width={15} height={15} />
                         </div>
                       ) : null}
                       <div
@@ -240,7 +240,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     {isGenerating ? (
                       <Loader2 size={17} className="animate-spin" />
                     ) : (
-                      <Send size={17} />
+                      <Send width={17} height={17} />
                     )}
                   </button>
                 </div>

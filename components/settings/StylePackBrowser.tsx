@@ -1,4 +1,4 @@
-import { IconArrowLeft as ArrowLeft, IconPhoto as ImageIcon } from '@tabler/icons-react';
+import { ArrowLeft, MediaImage } from 'iconoir-react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import {
   previewImageUrl,
@@ -98,7 +98,7 @@ function PackCover({ pack, onOpen }: { pack: BrowsablePack; onOpen: () => void }
           />
         ) : (
           <span className="grid size-full place-items-center text-[color:var(--wb-muted)]">
-            <ImageIcon size={22} />
+            <MediaImage width={22} height={22} />
           </span>
         )}
       </span>
@@ -146,7 +146,7 @@ export function PackDetail({
           onClick={onBack}
           className="studio-ghost-control flex items-center gap-2 px-3"
         >
-          <ArrowLeft size={14} />
+          <ArrowLeft width={14} height={14} />
           Back to packs
         </button>
         {actions ? <div className="flex flex-wrap gap-2">{actions}</div> : null}

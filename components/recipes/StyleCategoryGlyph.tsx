@@ -1,31 +1,31 @@
 import {
-  IconArchive as Archive,
-  IconBolt as Bolt,
-  IconBox as Box,
-  IconBriefcase as Briefcase,
-  IconBuilding as Building,
-  IconCamera as Camera,
-  IconCpu as Cpu,
-  IconDeviceGamepad2 as Gamepad2,
-  IconDeviceTv as Tv,
-  IconFolder as Folder,
-  IconLeaf as Leaf,
-  IconMoonStars as MoonStars,
-  IconPencil as Pen,
-  IconPlayerPlay as Play,
-  IconShirt as Shirt,
-  IconSparkles as Sparkles,
-  IconStack as Layers,
-  IconSun as Sun,
-  IconAdjustmentsHorizontal as SlidersHorizontal,
-  IconUser as User,
-  IconWand as Wand2,
-} from '@tabler/icons-react';
+  Archive,
+  Flash as Bolt,
+  Box3dCenter as Box,
+  Suitcase as Briefcase,
+  Building,
+  Camera,
+  Cpu,
+  Gamepad as Gamepad2,
+  Tv,
+  Folder,
+  Leaf,
+  MoonSat as MoonStars,
+  EditPencil as Pen,
+  Play,
+  Shirt,
+  Sparks as Sparkles,
+  MultiplePages as Layers,
+  SunLight as Sun,
+  ControlSlider as SlidersHorizontal,
+  User,
+  MagicWand as Wand2,
+} from 'iconoir-react';
 import React from 'react';
 
 import type { StyleCategoryIconId } from './styleCategoryIdentity';
 
-const ICONS: Record<StyleCategoryIconId, React.ComponentType<{ size?: number }>> = {
+const ICONS: Record<StyleCategoryIconId, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   archive: Archive,
   bolt: Bolt,
   box: Box,
@@ -57,5 +57,5 @@ export function StyleCategoryGlyph({
   size?: number;
 }) {
   const Icon = ICONS[iconId] ?? Folder;
-  return <Icon size={size} />;
+  return <Icon width={size} height={size} />;
 }

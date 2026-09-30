@@ -1,14 +1,14 @@
 import {
-  IconCheck as Check,
-  IconCopy as Copy,
-  IconDeviceFloppy as Save,
-  IconPhoto as Photo,
-  IconSparkles as Sparkles,
-  IconTrash as Trash2,
-  IconUpload as Upload,
-  IconWand as Wand2,
-  IconX as X,
-} from '@tabler/icons-react';
+  Check,
+  Copy,
+  FloppyDisk as Save,
+  MediaImage as Photo,
+  Sparks as Sparkles,
+  Trash as Trash2,
+  Upload,
+  MagicWand as Wand2,
+  Xmark as X,
+} from 'iconoir-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useLatestRef } from '../../hooks/useLatestRef';
 import type {
@@ -528,7 +528,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
         <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/98 px-4 sm:px-5">
           <div className="min-w-0">
             <div className="flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-              <Sparkles size={13} />
+              <Sparkles width={13} height={13} />
               <span>{mode === 'edit' ? 'Edit Style' : 'Style Editor'}</span>
               <span className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/8 px-1.5 py-0.5 text-[length:var(--wbp-label)] text-[color:var(--wb-ink)]">
                 {sourceKind.replace(/_/g, ' ')}
@@ -544,7 +544,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             className="flex size-9 shrink-0 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/7 text-[color:var(--wb-ink)] transition-colors hover:bg-white/12 hover:text-[color:var(--wb-ink)]"
             aria-label="Close style editor"
           >
-            <X size={16} />
+            <X width={16} height={16} />
           </button>
         </div>
 
@@ -603,7 +603,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                             : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
                         }`}
                       >
-                        {active && <Check size={10} />}
+                        {active && <Check width={10} height={10} />}
                         {taskLabel(task)}
                       </button>
                     );
@@ -658,7 +658,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
               <div className="mb-3 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                  <Sparkles size={13} />
+                  <Sparkles width={13} height={13} />
                   Source
                 </div>
                 <span className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
@@ -712,7 +712,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
 
             <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
               <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                <Photo size={13} />
+                <Photo width={13} height={13} />
                 References
               </div>
 
@@ -727,7 +727,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     event.currentTarget.value = '';
                   }}
                 />
-                <Upload size={18} className="text-[color:var(--wb-info)] " />
+                <Upload width={18} height={18} className="text-[color:var(--wb-info)] " />
                 <span className="mt-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                   Add Images
                 </span>
@@ -820,7 +820,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
 
             <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
               <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                <Check size={13} />
+                <Check width={13} height={13} />
                 Apply
               </div>
               <div className="grid grid-cols-2 gap-1.5">
@@ -839,7 +839,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                       }`}
                     >
                       <span className="truncate">{field.label}</span>
-                      {enabled && <Check size={10} />}
+                      {enabled && <Check width={10} height={10} />}
                     </button>
                   );
                 })}
@@ -848,7 +848,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
 
             <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
               <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                <Wand2 size={13} />
+                <Wand2 width={13} height={13} />
                 Assist
               </div>
               <div className="grid grid-cols-2 gap-1.5">
@@ -881,7 +881,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 disabled={isAssisting}
                 className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-colors hover:bg-accent-500/25 disabled:opacity-45"
               >
-                <Sparkles size={14} />
+                <Sparkles width={14} height={14} />
                 {isAssisting ? 'Working' : 'Assist'}
               </button>
             </div>
@@ -917,7 +917,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   disabled={isSaving}
                   className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-45"
                 >
-                  <Copy size={14} />
+                  <Copy width={14} height={14} />
                   Duplicate
                 </button>
                 <button
@@ -926,7 +926,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   disabled={isSaving}
                   className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-red-400/15 bg-red-500/8 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]  transition-colors hover:bg-red-500/14 disabled:opacity-45"
                 >
-                  <Trash2 size={14} />
+                  <Trash2 width={14} height={14} />
                   Archive
                 </button>
               </>
@@ -939,7 +939,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             disabled={!canSave}
             className="studio-primary-control h-10 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            <Save size={15} />
+            <Save width={15} height={15} />
             {isSaving ? 'Saving' : 'Save Style'}
           </button>
         </div>

@@ -1,5 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
-import { IconAlertTriangle as AlertTriangle } from '@tabler/icons-react';
+import { WarningTriangle as AlertTriangle } from 'iconoir-react';
 import { runtimeLogger } from '../utils/runtimeLogger';
 
 interface Props {
@@ -41,7 +41,7 @@ export class ErrorBoundary extends Component<Props, State> {
               : 'w-full h-full flex flex-col items-center justify-center p-6 bg-[color:var(--wb-panel)]/50 border border-red-500/20 rounded-[var(--wb-radius)]'
           }
         >
-          <AlertTriangle size={48} className="text-red-500 mb-4" />
+          <AlertTriangle width={48} height={48} className="text-red-500 mb-4" />
           <h2 className="text-lg font-semibold text-[color:var(--wb-ink)] tracking-normal mb-2">
             System Error
           </h2>

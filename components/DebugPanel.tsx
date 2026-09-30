@@ -1,6 +1,6 @@
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
-import { IconBrain as BrainCircuit, IconX as X } from '@tabler/icons-react';
+import { Brain as BrainCircuit, Xmark as X } from 'iconoir-react';
 
 import type { JobDetailResponse } from '../packages/shared/src';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
@@ -74,7 +74,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
             onClick={onClose}
             className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2.5 text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           >
-            <X size={18} />
+            <X width={18} height={18} />
           </button>
         </div>
 
@@ -106,7 +106,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
               </div>
             ) : (
               <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-8 text-center">
-                <BrainCircuit size={30} className="mb-4 text-accent-400" />
+                <BrainCircuit width={30} height={30} className="mb-4 text-accent-400" />
                 <h3 className="text-xl font-semibold text-[color:var(--wb-ink)]">
                   Pick a job to inspect
                 </h3>

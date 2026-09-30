@@ -1,16 +1,16 @@
 import { CozyLoader as Loader2 } from './CozyMascot';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  IconAlertTriangle as AlertTriangle,
-  IconCircleCheck as CheckCircle2,
-  IconChevronLeft as ChevronLeft,
-  IconChevronRight as ChevronRight,
-  IconClock as Clock,
-  IconStack as Layers,
-  IconMaximize as Maximize2,
-  IconRotate as RotateCcw,
-  IconCircleX as XCircle,
-} from '@tabler/icons-react';
+  WarningTriangle as AlertTriangle,
+  CheckCircle as CheckCircle2,
+  NavArrowLeft as ChevronLeft,
+  NavArrowRight as ChevronRight,
+  Clock,
+  MultiplePages as Layers,
+  Expand as Maximize2,
+  RefreshCircle as RotateCcw,
+  XmarkCircle as XCircle,
+} from 'iconoir-react';
 
 import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
 import { summarizePersistentJobs } from '../lib/persistentJobSummary';
@@ -265,7 +265,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 onClick={onClose}
                 className="studio-hit-target rounded-[var(--wb-radius)] p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               >
-                <XCircle size={18} />
+                <XCircle width={18} height={18} />
               </button>
             ) : null}
           </div>
@@ -400,7 +400,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           decoding="async"
                         />
                         <span className="absolute inset-0 grid place-items-center text-[color:var(--wb-ink)] opacity-0 group-hover:bg-[color:var(--wb-well)] group-hover:opacity-100 group-focus-visible:opacity-100">
-                          <Maximize2 size={14} />
+                          <Maximize2 width={14} height={14} />
                         </span>
                       </button>
                     ))}
@@ -457,7 +457,11 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           </section>
           {!jobHistory.loading && !jobHistory.error && jobs.length === 0 ? (
             <div className="py-8 text-center">
-              <Layers size={24} className="mx-auto mb-3 text-[color:var(--wb-muted)]" />
+              <Layers
+                width={24}
+                height={24}
+                className="mx-auto mb-3 text-[color:var(--wb-muted)]"
+              />
               <p className="text-sm text-[color:var(--wb-ink)]">
                 {view === 'active'
                   ? 'No active jobs'
@@ -597,7 +601,7 @@ const RecentResultViewer: React.FC<{
             className="rounded-[var(--wb-radius)] p-2 text-[color:var(--wb-ink)]/50 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             aria-label="Close recent result"
           >
-            <XCircle size={18} />
+            <XCircle width={18} height={18} />
           </button>
         </div>
       </div>
@@ -608,7 +612,7 @@ const RecentResultViewer: React.FC<{
           className="absolute left-3 z-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Previous recent result"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft width={20} height={20} />
         </button>
         <img
           src={result.fullSrc || result.src}
@@ -624,7 +628,7 @@ const RecentResultViewer: React.FC<{
           className="absolute right-3 z-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Next recent result"
         >
-          <ChevronRight size={20} />
+          <ChevronRight width={20} height={20} />
         </button>
       </div>
     </div>
@@ -664,11 +668,11 @@ const ServerJobItem: React.FC<{
     job.status === 'running' ? (
       <Loader2 size={14} className="motion-safe:animate-spin" />
     ) : job.status === 'completed' ? (
-      <CheckCircle2 size={14} />
+      <CheckCircle2 width={14} height={14} />
     ) : job.status === 'needs_review' || job.status === 'failed' ? (
-      <AlertTriangle size={14} />
+      <AlertTriangle width={14} height={14} />
     ) : (
-      <Clock size={14} />
+      <Clock width={14} height={14} />
     );
   return (
     <article
@@ -747,7 +751,7 @@ const ServerJobItem: React.FC<{
               data-tooltip={canResume ? 'Resume existing remote job' : 'Retry this job'}
               className="flex min-h-8 items-center gap-1.5 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
             >
-              <RotateCcw size={13} />
+              <RotateCcw width={13} height={13} />
               {canResume ? 'Resume' : 'Retry'}
             </button>
           ) : null}

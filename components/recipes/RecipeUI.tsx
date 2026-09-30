@@ -1,9 +1,5 @@
 import React, { useId, useRef, useState } from 'react';
-import {
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconColorPicker as Pipette,
-} from '@tabler/icons-react';
+import { Check, NavArrowDown as ChevronDown, ColorPicker as Pipette } from 'iconoir-react';
 
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
@@ -60,7 +56,8 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
             {label}
           </span>
           <ChevronDown
-            size={13}
+            width={13}
+            height={13}
             className={`shrink-0 text-[color:var(--wb-dim)] transition-[color,transform] ${
               isOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : ''
             }`}
@@ -99,7 +96,9 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
                 }`}
               >
                 <span className="truncate">{opt}</span>
-                {selected ? <Check size={12} className="shrink-0" aria-hidden="true" /> : null}
+                {selected ? (
+                  <Check width={12} height={12} className="shrink-0" aria-hidden="true" />
+                ) : null}
               </button>
             );
           })}
@@ -132,7 +131,8 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
       >
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay" />
         <Pipette
-          size={14}
+          width={14}
+          height={14}
           className="text-[color:var(--wb-ink)] drop-shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
         />
       </button>
@@ -153,7 +153,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
           onClick={() => nativePickerRef.current?.click()}
           className="flex h-8 w-full items-center justify-center gap-2 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
         >
-          <Pipette size={12} /> Custom Color
+          <Pipette width={12} height={12} /> Custom Color
         </button>
         <input
           ref={nativePickerRef}

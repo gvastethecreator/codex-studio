@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { IconGauge as Gauge, IconWifiOff as WifiOff } from '@tabler/icons-react';
+import { Dashboard as Gauge, WifiOff } from 'iconoir-react';
 import type { StudioUsageSummary } from '../../lib/studioDiagnostics';
 import Tooltip from '../Tooltip';
 
@@ -77,7 +77,11 @@ export function UsageStatusCard({
           aria-label="Usage status"
         >
           <div className="flex size-5 shrink-0 items-center justify-center rounded-[var(--wb-radius)] bg-[color:var(--wb-well)] text-inherit">
-            {usage.tone === 'offline' ? <WifiOff size={13} /> : <Gauge size={13} />}
+            {usage.tone === 'offline' ? (
+              <WifiOff width={13} height={13} />
+            ) : (
+              <Gauge width={13} height={13} />
+            )}
           </div>
           {visibleLimits.length > 0 ? (
             <div className="flex h-7 items-center gap-2">

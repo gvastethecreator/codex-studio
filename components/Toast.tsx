@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import {
-  IconX as X,
-  IconAlertCircle as AlertCircle,
-  IconCircleCheck as CheckCircle,
-  IconInfoCircle as Info,
-  IconAlertTriangle as AlertTriangle,
-} from '@tabler/icons-react';
+  Xmark as X,
+  WarningCircle as AlertCircle,
+  CheckCircle,
+  InfoCircle as Info,
+  WarningTriangle as AlertTriangle,
+} from 'iconoir-react';
 import type { ToastMessage } from '../hooks/useToasts';
 
 interface ToastProps {

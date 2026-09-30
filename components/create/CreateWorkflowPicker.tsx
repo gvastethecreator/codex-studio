@@ -1,6 +1,6 @@
 import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { IconChevronDown, IconSitemap } from '@tabler/icons-react';
+import { NavArrowDown, Network } from 'iconoir-react';
 
 import type { RecipeAliasId } from '../../lib/recipeAliases';
 import { createRecipeDiscoveryProjection } from '../../lib/recipeDiscoveryProjection';
@@ -122,10 +122,11 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
               }
             }}
           >
-            <IconSitemap size={16} aria-hidden="true" />
+            <Network width={16} height={16} aria-hidden="true" />
             <span id="create-workflow-value">{selectedLabel}</span>
-            <IconChevronDown
-              size={14}
+            <NavArrowDown
+              width={14}
+              height={14}
               className={`create-workflow-chevron${open ? ' is-open' : ''}`}
               aria-hidden="true"
             />

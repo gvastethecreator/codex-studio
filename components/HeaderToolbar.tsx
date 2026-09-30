@@ -1,17 +1,17 @@
 import React from 'react';
 import {
-  IconSparkles,
-  IconLibrary,
-  IconTrash as Trash2,
-  IconHelpCircle as CircleHelp,
-  IconActivity as Activity,
-  IconBriefcase as Briefcase,
-  IconMenu2 as Menu2,
-  IconMessage as MessageSquare,
-  IconSettings as Settings,
-  IconSun as Sun,
-  IconMoon as Moon,
-} from '@tabler/icons-react';
+  Sparks,
+  BookStack,
+  Trash as Trash2,
+  HelpCircle as CircleHelp,
+  Activity,
+  Suitcase as Briefcase,
+  Menu as Menu2,
+  ChatBubble as MessageSquare,
+  Settings,
+  SunLight as Sun,
+  HalfMoon as Moon,
+} from 'iconoir-react';
 import Tooltip from './Tooltip';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
@@ -138,7 +138,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               aria-current={currentView !== 'studio' ? 'page' : undefined}
               onClick={() => onViewChange('recipes')}
             >
-              <IconSparkles size={16} aria-hidden="true" /> Create
+              <Sparks width={16} height={16} aria-hidden="true" /> Create
             </button>
             <CreateWorkflowPicker
               selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
@@ -156,7 +156,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               aria-current={currentView === 'studio' ? 'page' : undefined}
               onClick={() => onViewChange('studio')}
             >
-              <IconLibrary size={16} aria-hidden="true" /> Library
+              <BookStack width={16} height={16} aria-hidden="true" /> Library
             </button>
           </nav>
         </div>
@@ -174,7 +174,11 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               }
               className="studio-command-surface studio-control studio-hit-target flex size-8 items-center justify-center rounded"
             >
-              {appearance === 'light' ? <Moon size={15} /> : <Sun size={15} />}
+              {appearance === 'light' ? (
+                <Moon width={15} height={15} />
+              ) : (
+                <Sun width={15} height={15} />
+              )}
             </button>
           </Tooltip>
           <div ref={workspaceRef} className="relative">
@@ -189,7 +193,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 aria-controls="studio-workspace-menu"
                 className="studio-command-surface studio-control studio-hit-target flex h-8 w-auto cursor-pointer items-center justify-center gap-1.5 rounded px-2 transition-[color,background-color,border-color,opacity,transform]"
               >
-                <Briefcase size={15} />
+                <Briefcase width={15} height={15} />
                 <span className="hidden max-w-28 truncate text-xs font-medium lg:inline">
                   {workspaceLabel}
                 </span>
@@ -307,7 +311,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               aria-label="Open Studio Settings"
               className="studio-command-surface studio-control studio-hit-target hidden size-8 items-center justify-center rounded sm:flex"
             >
-              <Settings size={15} />
+              <Settings width={15} height={15} />
             </button>
           </Tooltip>
           <div ref={mobileCommandRef} className="relative sm:hidden">
@@ -322,7 +326,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 aria-controls="mobile-command-menu"
                 className="studio-command-surface studio-control studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded"
               >
-                <Menu2 size={15} />
+                <Menu2 width={15} height={15} />
               </button>
             </Tooltip>
             <DemandMountedGsapDropdown
@@ -341,7 +345,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   onClick={() => runMobileCommand(onOpenSettings)}
                   className="studio-ghost-control flex min-h-12 w-full items-center gap-2 px-3 text-left"
                 >
-                  <Settings size={15} />
+                  <Settings width={15} height={15} />
                   Settings
                 </button>
                 <button
@@ -357,7 +361,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   }
                   className="studio-ghost-control flex min-h-12 w-full items-center gap-2 px-3 text-left"
                 >
-                  <MessageSquare size={15} />
+                  <MessageSquare width={15} height={15} />
                   Compose
                 </button>
                 <button
@@ -367,7 +371,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   onClick={() => runMobileCommand(onToggleDebug)}
                   className="studio-ghost-control flex min-h-12 w-full items-center gap-2 px-3 text-left"
                 >
-                  <Activity size={15} />
+                  <Activity width={15} height={15} />
                   Activity
                 </button>
                 <button
@@ -377,7 +381,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   onClick={() => runMobileCommand(onOpenTrash)}
                   className="studio-ghost-control relative flex min-h-12 items-center gap-2 px-3 text-left"
                 >
-                  <Trash2 size={15} />
+                  <Trash2 width={15} height={15} />
                   Archive
                   {trashCount > 0 && (
                     <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-[color:var(--wb-danger)]">
@@ -392,7 +396,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   onClick={() => runMobileCommand(onOpenOnboarding)}
                   className="studio-ghost-control flex min-h-12 w-full items-center gap-2 px-3 text-left"
                 >
-                  <CircleHelp size={15} />
+                  <CircleHelp width={15} height={15} />
                   Help
                 </button>
                 <button

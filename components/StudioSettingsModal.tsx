@@ -5,12 +5,7 @@ import { validateOutputTemplate } from '../packages/shared/src/outputLayout';
 import { SettingsGeneralPanel } from './settings/SettingsGeneralPanel';
 import { StudioHelpGuide } from './StudioHelpGuide';
 import { ConfirmationModal } from './ConfirmationModal';
-import {
-  IconRefresh as RefreshCw,
-  IconDeviceFloppy as Save,
-  IconSettings as Settings,
-  IconX as X,
-} from '@tabler/icons-react';
+import { Refresh as RefreshCw, FloppyDisk as Save, Settings, Xmark as X } from 'iconoir-react';
 import type React from 'react';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -272,7 +267,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
         <div className="studio-dialog-header">
           <div className="flex items-center gap-3">
             <div className="flex size-9 items-center justify-center rounded studio-ghost-control text-[color:var(--wb-accent)]">
-              <Settings size={18} />
+              <Settings width={18} height={18} />
             </div>
             <div>
               <h2 id="studio-settings-title" className="studio-dialog-title">
@@ -291,7 +286,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               {isLoading ? (
                 <LoaderCircle size={16} className="animate-spin" />
               ) : (
-                <RefreshCw size={16} />
+                <RefreshCw width={16} height={16} />
               )}
             </button>
             <button
@@ -300,7 +295,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               onClick={requestClose}
               className="studio-ghost-control"
             >
-              <X size={18} />
+              <X width={18} height={18} />
             </button>
           </div>
         </div>
@@ -481,7 +476,11 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             disabled={isSaving || isLoading || !settings || !hasChanges || Boolean(fileNameError)}
             className="studio-primary-control disabled:opacity-60"
           >
-            {isSaving ? <LoaderCircle size={15} className="animate-spin" /> : <Save size={15} />}
+            {isSaving ? (
+              <LoaderCircle size={15} className="animate-spin" />
+            ) : (
+              <Save width={15} height={15} />
+            )}
             {isSaving ? 'Saving…' : 'Save'}
           </button>
         </div>

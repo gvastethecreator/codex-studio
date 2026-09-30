@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
-import { IconDots } from '@tabler/icons-react';
+import { MoreHoriz } from 'iconoir-react';
 
 /** A compact caption and an upward disclosure, shared by image catalogs. */
 export function CatalogCardBackdrop({
@@ -60,7 +60,7 @@ export function CatalogCardBackdrop({
               onExpandedChange?.(!expanded);
             }}
           >
-            <IconDots size={16} />
+            <MoreHoriz width={16} height={16} />
           </button>
         ) : null}
       </div>

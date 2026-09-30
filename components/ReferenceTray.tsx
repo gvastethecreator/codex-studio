@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IconPencil as Pencil, IconRefresh as Refresh, IconX as X } from '@tabler/icons-react';
+import { EditPencil as Pencil, Refresh, Xmark as X } from 'iconoir-react';
 import type { Attachment } from '../types';
 
 export function ReferenceTray({
@@ -59,10 +59,10 @@ export function ReferenceTray({
                   aria-label={`Edit ${attachment.name}`}
                   data-tooltip="Edit"
                 >
-                  <Pencil size={11} />
+                  <Pencil width={11} height={11} />
                 </button>
                 <label className="relative inline-flex size-5 cursor-pointer items-center justify-center">
-                  <Refresh size={11} aria-hidden="true" />
+                  <Refresh width={11} height={11} aria-hidden="true" />
                   <input
                     type="file"
                     accept="image/*"
@@ -83,7 +83,7 @@ export function ReferenceTray({
                   aria-label={`Remove ${attachment.name}`}
                   data-tooltip="Remove"
                 >
-                  <X size={11} />
+                  <X width={11} height={11} />
                 </button>
               </div>
             ) : (
@@ -103,11 +103,11 @@ export function ReferenceTray({
                     data-tooltip="Edit"
                     className="inline-flex size-7 items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                   >
-                    <Pencil size={14} />
+                    <Pencil width={14} height={14} />
                     {isCompact ? null : <span className="sr-only">Edit</span>}
                   </button>
                   <label className="relative inline-flex size-7 cursor-pointer items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]">
-                    <Refresh size={14} aria-hidden="true" />
+                    <Refresh width={14} height={14} aria-hidden="true" />
                     <input
                       type="file"
                       accept="image/*"
@@ -128,7 +128,7 @@ export function ReferenceTray({
                     data-tooltip="Remove"
                     className="inline-flex size-7 items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                   >
-                    <X size={14} />
+                    <X width={14} height={14} />
                   </button>
                 </div>
               </div>

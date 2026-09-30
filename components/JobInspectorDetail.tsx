@@ -1,19 +1,19 @@
 import React, { useMemo } from 'react';
 import { canRetryStudioJob, canResumeStudioJob } from '../lib/studioJobRetry';
 import {
-  IconActivity as Activity,
-  IconAlertCircle as AlertCircle,
-  IconBrain as BrainCircuit,
-  IconClock as Clock3,
-  IconEye as Eye,
-  IconFileText as FileText,
-  IconPhoto as ImageIcon,
-  IconStack3 as Layers3,
-  IconLink as Link2,
-  IconMessage as MessageSquare,
-  IconRotate as RotateCcw,
-  IconTool as Wrench,
-} from '@tabler/icons-react';
+  Activity,
+  WarningCircle as AlertCircle,
+  Brain as BrainCircuit,
+  Clock as Clock3,
+  Eye,
+  Page as FileText,
+  MediaImage,
+  MultiplePagesEmpty as Layers3,
+  Link as Link2,
+  ChatBubble as MessageSquare,
+  RefreshCircle as RotateCcw,
+  Wrench,
+} from 'iconoir-react';
 
 import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
 import {
@@ -121,7 +121,11 @@ function JobStatusBanner({
       <section className="rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
-            <AlertCircle size={18} className="mt-0.5 shrink-0 text-[color:var(--wb-danger)]" />
+            <AlertCircle
+              width={18}
+              height={18}
+              className="mt-0.5 shrink-0 text-[color:var(--wb-danger)]"
+            />
             <div className="min-w-0">
               <h3 className="text-sm font-semibold text-[color:var(--wb-danger)] ">{title}</h3>
               <p className="mt-2 text-[13px] leading-6 text-[color:var(--wb-danger)]  [overflow-wrap:anywhere]">
@@ -144,7 +148,11 @@ function JobStatusBanner({
       <section className="rounded-[var(--wb-radius)] border border-amber-500/2 bg-amber-500/8 p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
-            <Eye size={18} className="mt-0.5 shrink-0 text-[color:var(--wb-warning)]" />
+            <Eye
+              width={18}
+              height={18}
+              className="mt-0.5 shrink-0 text-[color:var(--wb-warning)]"
+            />
             <div className="min-w-0 space-y-3">
               <div>
                 <h3 className="text-sm font-semibold text-[color:var(--wb-warning)] ">
@@ -199,11 +207,11 @@ function JobStatusBanner({
 }
 
 function TimelineIcon({ item }: { item: JobInspectorTimelineItem }) {
-  if (item.sourceType === 'event') return <Activity size={16} />;
-  if (item.tone === 'reasoning') return <BrainCircuit size={16} />;
-  if (item.tone === 'tool') return <Wrench size={16} />;
-  if (item.tone === 'message') return <MessageSquare size={16} />;
-  return <FileText size={16} />;
+  if (item.sourceType === 'event') return <Activity width={16} height={16} />;
+  if (item.tone === 'reasoning') return <BrainCircuit width={16} height={16} />;
+  if (item.tone === 'tool') return <Wrench width={16} height={16} />;
+  if (item.tone === 'message') return <MessageSquare width={16} height={16} />;
+  return <FileText width={16} height={16} />;
 }
 
 function SectionCard({
@@ -293,11 +301,11 @@ function ArtifactTile({
       <div className="space-y-1 p-3">
         <div className="flex items-center gap-2 text-[color:var(--wb-muted)]">
           {artifact.kind === 'image' ? (
-            <ImageIcon size={14} />
+            <MediaImage width={14} height={14} />
           ) : artifact.kind === 'link' ? (
-            <Link2 size={14} />
+            <Link2 width={14} height={14} />
           ) : (
-            <FileText size={14} />
+            <FileText width={14} height={14} />
           )}
           <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
             {artifact.sourceLabel}
@@ -335,7 +343,7 @@ function OutputPreviewStrip({
     return (
       <div>
         <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-          <ImageIcon size={14} className="text-accent-300" />
+          <MediaImage width={14} height={14} className="text-accent-300" />
           <span>{title}</span>
         </div>
         <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
@@ -348,7 +356,7 @@ function OutputPreviewStrip({
   return (
     <div>
       <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-        <ImageIcon size={14} className="text-accent-300" />
+        <MediaImage width={14} height={14} className="text-accent-300" />
         <span>{title}</span>
       </div>
       <div className="custom-scrollbar flex gap-3 overflow-x-auto pb-1">
@@ -417,7 +425,7 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
   const assetImportMs = findTiming(metrics.timings, 'asset_import');
 
   return (
-    <SectionCard title="Runtime summary" eyebrow="Metrics" icon={<Clock3 size={16} />}>
+    <SectionCard title="Runtime summary" eyebrow="Metrics" icon={<Clock3 width={16} height={16} />}>
       <p className="mb-2 text-xs text-[color:var(--wb-muted)]">
         Attempt {metrics.attempt ?? 'unknown'} ·{' '}
         {metrics.transport ?? 'Execution transport unavailable'}. Stages describe the latest worker
@@ -720,7 +728,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 onClick={() => onRetryJob(detail.job.id)}
                 className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-500/2 bg-[color:var(--wb-well)] px-4 py-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-[color:var(--wb-well)] hover:text-[color:var(--wb-ink)] cursor-pointer"
               >
-                <RotateCcw size={14} />
+                <RotateCcw width={14} height={14} />
                 <span>{canResumeStudioJob(detail.job) ? 'Resume job' : 'Retry job'}</span>
               </button>
             ) : null}
@@ -748,7 +756,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
             <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
               <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                <ImageIcon size={14} className="text-[color:var(--wb-success)]" />
+                <MediaImage width={14} height={14} className="text-[color:var(--wb-success)]" />
                 <span>
                   {detail.job.status === 'queued' || detail.job.status === 'running'
                     ? 'Output pending'
@@ -814,7 +822,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           {primaryReference && (
             <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
               <div className="flex items-center gap-2 border-b border-[color:var(--wb-line)] px-4 py-3 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                <Layers3 size={14} className="text-indigo-300" />
+                <Layers3 width={14} height={14} className="text-indigo-300" />
                 <span>Reference context</span>
               </div>
 
@@ -906,7 +914,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
         <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
           <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
             <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-              <FileText size={14} className="text-violet-300" />
+              <FileText width={14} height={14} className="text-violet-300" />
               <span>Prompt used</span>
             </div>
           </div>
@@ -932,7 +940,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
 
             <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
               <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                <BrainCircuit size={14} className="text-[color:var(--wb-success)] " />
+                <BrainCircuit width={14} height={14} className="text-[color:var(--wb-success)] " />
                 <span>Execution facts</span>
               </div>
               <dl className="space-y-2.5">
@@ -951,7 +959,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
 
             <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
               <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                <Layers3 size={14} className="text-[color:var(--wb-warning)] " />
+                <Layers3 width={14} height={14} className="text-[color:var(--wb-warning)] " />
                 <span>Job snapshot</span>
               </div>
               <dl className="space-y-2.5">

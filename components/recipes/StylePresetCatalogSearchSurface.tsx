@@ -1,18 +1,18 @@
 import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import {
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconSearch as Search,
-  IconX as X,
-  IconArrowRight as ArrowRight,
-  IconDatabase as Database,
-  IconSparkles as Sparkles,
-  IconInfoCircle as Info,
-  IconHeart as Heart,
-  IconCopy as Copy,
-  IconTextPlus as TextPlus,
-} from '@tabler/icons-react';
+  Check,
+  NavArrowDown as ChevronDown,
+  Search,
+  Xmark as X,
+  ArrowRight,
+  Database,
+  Sparks as Sparkles,
+  InfoCircle as Info,
+  Heart,
+  Copy,
+  TextBox as TextPlus,
+} from 'iconoir-react';
 import {
   getStyleCategoryImage,
   getStyleThumbnail,
@@ -157,7 +157,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       <div className="flex h-16 shrink-0 items-center justify-between border-b border-[color:var(--wb-line)] px-6">
         <div className="flex min-w-0 items-center gap-3">
           <div className="flex size-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]">
-            <Database size={17} />
+            <Database width={17} height={17} />
           </div>
           <div className="min-w-0">
             <h3 className="text-xs font-semibold tracking-normal text-[color:var(--wb-ink)]">
@@ -184,13 +184,13 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           className="flex size-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Close style catalog"
         >
-          <X size={16} />
+          <X width={16} height={16} />
         </button>
       </div>
 
       <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[color:var(--wb-line)] px-6 py-4">
         <div className="flex min-w-70 flex-1 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2">
-          <Search size={15} className="text-[color:var(--wb-muted)]" />
+          <Search width={15} height={15} className="text-[color:var(--wb-muted)]" />
           <input
             data-style-catalog-search-input
             value={query}
@@ -203,7 +203,8 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           {query && (
             <button type="button" onClick={() => setQuery('')} aria-label="Clear catalog search">
               <X
-                size={13}
+                width={13}
+                height={13}
                 className="text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]"
               />
             </button>
@@ -234,7 +235,8 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               </span>
             </span>
             <ChevronDown
-              size={14}
+              width={14}
+              height={14}
               className={`shrink-0 text-[color:var(--wb-dim)] transition-[color,transform] ${
                 isPackFilterOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : ''
               }`}
@@ -283,7 +285,9 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       {pack.presetCount} presets
                     </span>
                   </span>
-                  {selected ? <Check size={13} className="shrink-0" aria-hidden="true" /> : null}
+                  {selected ? (
+                    <Check width={13} height={13} className="shrink-0" aria-hidden="true" />
+                  ) : null}
                 </button>
               );
             })}
@@ -382,7 +386,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       </>
                     ) : (
                       <div className="flex size-full items-center justify-center text-[color:var(--wb-dim)]">
-                        <Sparkles size={18} />
+                        <Sparkles width={18} height={18} />
                       </div>
                     )}
                   </div>
@@ -424,7 +428,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                         aria-label={`Information about ${result.name}`}
                         onClick={() => setInformation(result)}
                       >
-                        <Info size={16} />
+                        <Info width={16} height={16} />
                       </button>
                       {onToggleFavorite && (
                         <button
@@ -434,7 +438,8 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                           onClick={() => onToggleFavorite(result.id)}
                         >
                           <Heart
-                            size={16}
+                            width={16}
+                            height={16}
                             fill={favorites.includes(result.id) ? 'currentColor' : 'none'}
                           />
                         </button>
@@ -445,7 +450,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                           aria-label={`Copy prompt for ${result.name}`}
                           onClick={() => onCopyPrompt(result)}
                         >
-                          <Copy size={16} />
+                          <Copy width={16} height={16} />
                         </button>
                       )}
                       {onUsePrompt && (
@@ -454,7 +459,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                           aria-label={`Use ${result.name} as prompt`}
                           onClick={() => onUsePrompt(result)}
                         >
-                          <TextPlus size={16} />
+                          <TextPlus width={16} height={16} />
                         </button>
                       )}
                     </div>
@@ -465,7 +470,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           </div>
         ) : (
           <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-[color:var(--wb-dim)]">
-            <Search size={32} className="opacity-25" />
+            <Search width={32} height={32} className="opacity-25" />
             <span className="text-xs font-semibold tracking-normal">No presets found</span>
           </div>
         )}
@@ -485,7 +490,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               aria-label="Close style information"
               onClick={() => informationRef.current?.close()}
             >
-              <X size={16} />
+              <X width={16} height={16} />
             </button>
           </div>
           <div className="p-4 space-y-3">
@@ -501,7 +506,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                 setInformation(null);
               }}
             >
-              <ArrowRight size={14} /> Browse category
+              <ArrowRight width={14} height={14} /> Browse category
             </button>
           </div>
         </dialog>
