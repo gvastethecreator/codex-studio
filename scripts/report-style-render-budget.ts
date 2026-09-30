@@ -388,12 +388,14 @@ export async function createStyleRenderBudgetReport({
   });
   const packById = new Map(loadedPacks.map((pack) => [pack.id, pack]));
   // Style packs are installed extensions, so a checkout without them (CI) budgets what it has.
-  const skippedSearchScenarios = SEARCH_SCENARIOS.filter((scenario) => !packById.has(scenario.packId)).map(
-    (scenario) => `${scenario.name} (${scenario.packId} not installed)`,
-  );
+  const skippedSearchScenarios = SEARCH_SCENARIOS.filter(
+    (scenario) => !packById.has(scenario.packId),
+  ).map((scenario) => `${scenario.name} (${scenario.packId} not installed)`);
   const searchScenarios = SEARCH_SCENARIOS.flatMap((scenario) => {
     const pack = packById.get(scenario.packId);
-    return pack ? [createSearchScenarioBudget({ pack, gridColumns, containerWidth, ...scenario })] : [];
+    return pack
+      ? [createSearchScenarioBudget({ pack, gridColumns, containerWidth, ...scenario })]
+      : [];
   });
   const violations = packs.flatMap((pack) => {
     const errors: string[] = [];
@@ -490,7 +492,8 @@ if (import.meta.main) {
     console.log(
       `[styles:render] flatAllCards total=${report.flatAllCards.totalPresets} eagerCards=${report.flatAllCards.eagerPresetCards} plannedCards=${report.flatAllCards.plannedPresetCards}`,
     );
-    for (const skipped of report.skippedSearchScenarios) console.log(`[styles:render] skipped search ${skipped}`);
+    for (const skipped of report.skippedSearchScenarios)
+      console.log(`[styles:render] skipped search ${skipped}`);
   }
 
   if (report.violations.length > 0) {
