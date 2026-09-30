@@ -1,0 +1,102 @@
+<!doctype html>
+<!--
+  Cozy Studio banner and social preview. Readable text lives here, never in the generated art.
+  Render at 2100x900 for the README banner and 1280x640 for the social preview, with ?art=<art.png>.
+  The art is a textless image made in Cozy Studio; its prompt is in PROMPT.md.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Martian+Mono:wght@400&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0b0a10;
+        --cream: #f4efe6;
+        --pink: #ff5fa2;
+        --acid: #c6f33a;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html,
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background: var(--ink);
+      }
+      #art {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 50%;
+      }
+      .copy {
+        position: absolute;
+        top: 50%;
+        left: 6.5%;
+        width: 36%;
+        transform: translateY(-50%);
+        color: var(--cream);
+        font-family: 'Bricolage Grotesque', sans-serif;
+      }
+      h1 {
+        font-size: min(7.2vw, 17vh);
+        font-weight: 800;
+        line-height: 0.88;
+        letter-spacing: -0.045em;
+      }
+      p {
+        margin-top: 3.4vh;
+        font-size: min(2.5vw, 6vh);
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+      p mark {
+        padding: 0 0.12em;
+        background: var(--pink);
+        color: var(--ink);
+      }
+      small {
+        display: block;
+        margin-top: 4vh;
+        font:
+          400 min(0.85vw, 2.1vh) / 1.5 'Martian Mono',
+          monospace;
+        letter-spacing: 0.02em;
+        color: var(--acid);
+      }
+      body.narrow .copy {
+        left: 5.5%;
+        width: 34%;
+      }
+      body.narrow h1 {
+        font-size: 6.4vw;
+      }
+      body.narrow p {
+        font-size: 2.2vw;
+      }
+      body.narrow small {
+        font-size: 0.8vw;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="art" alt="" />
+    <div class="copy">
+      <h1>cozy<br />studio</h1>
+      <p>relax and <mark>create more.</mark></p>
+      <small>free &amp; open source image studio</small>
+    </div>
+    <script>
+      document.getElementById('art').src = new URLSearchParams(location.search).get('art');
+      if (innerWidth / innerHeight < 2.2) document.body.classList.add('narrow');
+    </script>
+  </body>
+</html>

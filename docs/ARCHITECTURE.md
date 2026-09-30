@@ -109,12 +109,13 @@ graph TD
 - Workspace is the only user-visible organization entity (`/api/workspaces`).
 - Project routes, contracts, columns, and tables are retired.
 - `StudioWorkspace` is the shared API contract. Shared Effect schemas validate Workspace and Job intake boundaries before route logic runs.
-- Persistent jobs carry immutable Library identity or root context and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
+- Persistent jobs carry immutable Library identity or root context, the output folder and naming captured at submit (`library_context_json`), and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads. Detail paths load full payloads on demand.
 - `/api/jobs` returns all open jobs (`queued`, `running`, `needs_review`) separately from cursor-paged terminal history (`completed`, `failed`, `cancelled`). Workspace filters scope the rows and counts; the response also names the global open count. History status filters do not hide open work. Queue owns pagination and keeps loaded rows visible during a failed page read. Identical summary reads preserve its cursor; a revision gap on the shared event connection restarts reconciliation because older pages may have changed. Job-specific observers and animation recovery read `/api/jobs/{id}/status`, independent of the history window.
-- The Studio Library defaults to a folder named `Codex Studio` in the user home. Portable start uses `Codex Studio Library` beside the unpacked folder when `STUDIO_LIBRARY_DIR` is unset.
+- Studio data lives in a private app-data folder (`resolveStudioDataRoot` in `apps/local-server/src/config.ts`): `%LOCALAPPDATA%\Cozy Studio` on Windows, `~/Library/Application Support/Cozy Studio` on macOS, `~/.local/share/cozy-studio` on Linux. The Studio Library is its `Library` folder and installed extensions its `Extensions` folder. Portable start uses `Cozy Studio Library` beside the unpacked folder when `STUDIO_LIBRARY_DIR` is unset.
 - Internal Studio Library state lives under `.studio/`.
-- Generated outputs, thumbnails, exports, and trash assets live under `outputs/`. New generations use `outputs/<workspace>/`.
+- A new library registers `Pictures/Cozy Studio` (or `STUDIO_IMAGES_DIR`) as an output-only library and selects it as the output directory. Generated images go there, flat, named `{date}_{style}_{prompt}` by default. Without a selected output directory, generations fall back to `outputs/` inside the Studio Library.
+- Style packs are Cozy Extensions (ADR 0011). `extensionRoutes.ts` lists, installs, previews and updates them from local build folders or GitHub release indexes; the Essentials pack installs once when no style pack is present, and its copies hide while their source pack is installed.
 - Browser storage contains bounded transient preferences and input state, not job or image truth.
 - External Output Sources are read-only candidates until selected files are imported as Local Assets.
 
@@ -257,6 +258,10 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `ui:chunks:verify`
 - `library:layout:verify`
 - `architecture:verify` (the aggregate Style, Recipe, Provider, Catalog, Library-layout, UI, Workspace-authority, and render-isolation gate required by CI)
+
+## Project site
+
+`landing/` builds the public page at <https://cozy.gvaste.dev/>. It is separate from the app and has its own `package.json`. The content is `landing/site.yaml` and `landing/template.yaml`; the page engine is a copy of the gh-pages-template renderer. `.github/workflows/pages.yml` builds and deploys it when a push to `main` changes `landing/`. See `landing/README.md`.
 
 ## Storage maintenance
 

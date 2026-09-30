@@ -34,9 +34,9 @@ Default Studio Library is `Library` inside the private Cozy Studio app-data fold
 STUDIO_LIBRARY_DIR=D:\Cozy Studio Library
 ```
 
-Then run `bun run studio:init`. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`.
+Then run `bun run studio:init`. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate an older library.
 
-Preferred Output Path is not the generate destination. Generate writes under `outputs/<workspace>/` inside the Studio Library.
+Preferred Output Path is not the generate destination. Generate writes to the images folder chosen in onboarding or Settings, Output, which is Pictures/Cozy Studio on a new library.
 
 ## Common startup problems
 
