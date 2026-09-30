@@ -32,12 +32,10 @@ page.on('response', (response) => {
 page.on('pageerror', (error) => pageErrors.push(error.message));
 
 const routes = [
-  { name: 'Studio', hash: '#studio', selector: '[data-route-view="studio"]' },
-  { name: 'Recipes', hash: '#recipes', selector: '[data-route-key="recipes-list"]' },
   {
-    name: 'Styles',
-    hash: '#recipe-styles',
-    selector: '[data-route-key="recipe-styles"] [data-compact-style-selector]',
+    name: 'Default',
+    hash: '#recipes',
+    selector: '[data-route-key="recipes-list"] [data-compact-style-selector]',
   },
   {
     name: 'Character Lab',
@@ -48,7 +46,7 @@ const routes = [
 const observations: Array<{ name: string; brokenImages: string[] }> = [];
 
 try {
-  await page.goto(`${baseUrl}/#studio`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`${baseUrl}/#recipes`, { waitUntil: 'domcontentloaded' });
   for (const route of routes) {
     await page.evaluate((hash) => {
       window.location.hash = hash;
