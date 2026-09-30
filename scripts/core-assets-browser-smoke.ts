@@ -33,7 +33,7 @@ page.on('pageerror', (error) => pageErrors.push(error.message));
 
 const routes = [
   { name: 'Studio', hash: '#studio', selector: '[data-route-view="studio"]' },
-  { name: 'Recipes', hash: '#recipes', selector: '[data-route-view="recipes"]' },
+  { name: 'Recipes', hash: '#recipes', selector: '[data-route-key="recipes-list"]' },
   {
     name: 'Styles',
     hash: '#recipe-styles',

@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
 import { encodeResizedWebpFromPath } from './imagePipeline';
+import { resolveLibraryPathFromRoot } from './library';
 
 const DEFAULT_THUMBNAIL_MAX_EDGE = 512;
 const MIN_THUMBNAIL_MAX_EDGE = 48;
@@ -47,7 +48,7 @@ export function resolveLibraryThumbnailPath(
     .digest('hex')
     .slice(0, 12);
 
-  return path.join(libraryDir, '.studio', 'thumbnails', `${cacheKey}.${maxEdge}.webp`);
+  return resolveLibraryPathFromRoot(libraryDir, 'thumbnails', `${cacheKey}.${maxEdge}.webp`);
 }
 
 export async function ensureThumbnailVariant(

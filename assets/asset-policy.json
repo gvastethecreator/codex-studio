@@ -11,6 +11,8 @@
       "assets/recipes/character-lab/character-lab-option-atlas.webp"
     ],
     "includePrefixes": [
+      "assets/brand/",
+      "assets/providers/",
       "assets/recipes/onboarding/",
       "assets/recipes/cards/",
       "assets/recipes/styles/previews/"
