@@ -130,7 +130,14 @@ describe('quota diagnostic notice', () => {
         },
       },
     });
-    render(<SubscriptionHttpDiagnosticNotice value={named} />);
+    // The notice compares the reset with the clock; pin it to when the response arrived.
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-09-26T04:09:27.000Z'));
+    try {
+      render(<SubscriptionHttpDiagnosticNotice value={named} />);
+    } finally {
+      vi.useRealTimers();
+    }
     expect(screen.getByText(/Reported reset: .*30 Sept 2026, 00:03/)).toBeTruthy();
     expect(screen.getByText(/Later availability is not verified/)).toBeTruthy();
     expect(screen.getByText(/Automatic retries will not be sent/)).toBeTruthy();
