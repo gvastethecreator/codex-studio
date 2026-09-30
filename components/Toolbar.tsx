@@ -433,7 +433,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             : '');
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      onGenerate(trimmedPrompt, { codexTransport: selectedCodexTransport }, { preventModal: true });
+      onGenerate(
+        trimmedPrompt,
+        { recipeId: activeRecipe, codexTransport: selectedCodexTransport },
+        { preventModal: true },
+      );
 
       closeAllMenus();
       setIsNegativeOpen(false);

@@ -71,7 +71,10 @@ export function useStyleComposition({
     }
     const layers = (config.recipeParams as { selectedStyles?: SelectedStyleLayer[] } | null)
       ?.selectedStyles;
-    if (!Array.isArray(layers) || !layers.length) return;
+    if (!Array.isArray(layers) || !layers.length) {
+      didRestoreSelection.current = true;
+      return;
+    }
     didRestoreSelection.current = true;
     setSelectedStyles(
       layers.map((layer) => ({
@@ -158,7 +161,7 @@ export function useStyleComposition({
   useEffect(() => {
     if (!didRestoreSelection.current && selectedStyles.length === 0) return;
     if (intentionalStylesV1) return;
-    updateConfig('recipeId', 'styles');
+    updateConfig('recipeId', registeredStyleGenerationPlan ? 'styles' : null);
     updateConfig('recipeParams', {
       ...registeredStyleGenerationPlan?.recipeParams,
       selectedStyles: registeredStyleGenerationPlan?.recipeParams.selectedStyles ?? [],
@@ -170,6 +173,13 @@ export function useStyleComposition({
   useEffect(() => {
     if (!intentionalStylesV1) return;
     if (!didRestoreSelection.current && selectedStyles.length === 0) return;
+    if (activeSelectedStyleCount === 0) {
+      setCompileIssues([]);
+      updateConfig('recipeId', null);
+      updateConfig('recipeParams', { selectedStyleDraft: selectedStyles });
+      updateConfig('recipeContext', '');
+      return;
+    }
     let cancelled = false;
     updateConfig('recipeId', 'styles');
     void (async () => {
@@ -244,6 +254,7 @@ export function useStyleComposition({
       cancelled = true;
     };
   }, [
+    activeSelectedStyleCount,
     config.negativePrompt,
     config.prompt,
     intentionalMode,

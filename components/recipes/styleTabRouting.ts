@@ -1,5 +1,5 @@
 export const STYLE_PACKS_TAB_ID = 'packs';
-export const STYLE_RECIPE_HASH_PREFIX = 'recipe-styles';
+export const STYLE_RECIPE_HASH_PREFIX = 'recipes';
 export const STYLE_COLLECTION_TAB_PREFIX = 'collection/';
 
 export type StyleTabId = string;
@@ -50,7 +50,8 @@ export function readStyleTabIdFromHash(
   options: StyleTabRouteOptions,
 ): StyleTabId | null {
   const hash = rawHash.replace(/^#/, '');
-  if (!hash.startsWith(STYLE_RECIPE_HASH_PREFIX)) return null;
+  if (hash !== STYLE_RECIPE_HASH_PREFIX && !hash.startsWith(`${STYLE_RECIPE_HASH_PREFIX}/`))
+    return null;
 
   const segment = hash
     .slice(STYLE_RECIPE_HASH_PREFIX.length)

@@ -26,7 +26,7 @@ export function buildRoutePreloadPlan({
   if (routeView === 'recipe' && activeRecipe) {
     return {
       delayMs: ROUTE_PRELOAD_BUDGET.recipeIdleDelayMs,
-      surfaces: ['recipes-view'],
+      surfaces: [],
       recipeIds: [activeRecipe],
     };
   }
@@ -41,7 +41,7 @@ export function buildRoutePreloadPlan({
 
   return {
     delayMs: ROUTE_PRELOAD_BUDGET.studioIdleDelayMs,
-    surfaces: ['recipes-view'],
+    surfaces: ['recipe-page'],
     recipeIds: [],
   };
 }

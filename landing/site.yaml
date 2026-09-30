@@ -5,12 +5,12 @@ project:
   name: Cozy Studio
   tagline: your ideas, freshly brewed
   description: A free image studio that runs on your computer and makes images with the subscription you already have.
-  url: https://cozy.gvaste.dev/
+  url: https://gvastethecreator.github.io/cozy-studio/
   repo: https://github.com/gvastethecreator/cozy-studio
   license: MIT
   sponsor: https://github.com/sponsors/gvastethecreator
   stack: Bun · React · local API
-  ogImage: assets/social.jpg
+  ogImage: https://gvastethecreator.github.io/cozy-studio/assets/social.jpg
 
 brand:
   initials: CS

@@ -1,4 +1,4 @@
-// Workflow modules (ADR 0011): every workflow except Create (`default`) and `styles` is an
+// Workflow modules (ADR 0011): every workflow except Create (`default`, including styles) is an
 // optional built-in module. A module is Studio code shipped with the app. Turning one off hides its
 // workflows, loads none of its code, rejects its new jobs and closes its API routes. Its existing
 // jobs and images stay in the Studio Library.

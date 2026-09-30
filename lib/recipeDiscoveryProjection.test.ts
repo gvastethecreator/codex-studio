@@ -49,7 +49,12 @@ describe('recipeDiscoveryProjection', () => {
       'character',
       'character-lab',
     ]);
-    expect(groups.flatMap((group) => group.entries)).toHaveLength(RECIPE_DISCOVERY_CATALOG.length);
+    expect(groups.flatMap((group) => group.entries)).toHaveLength(
+      RECIPE_DISCOVERY_CATALOG.length - 1,
+    );
+    expect(createRecipeDiscoveryProjection().entries.some((entry) => entry.id === 'styles')).toBe(
+      false,
+    );
     expect(groups.map((group) => group.label)).toEqual([
       'Create & Edit',
       'Character',
@@ -68,7 +73,8 @@ describe('recipeDiscoveryProjection', () => {
       const ids = createRecipesGridProjection().entries.map((entry) => entry.id);
       expect(ids).not.toContain('timeline');
       expect(ids.some((id) => id.startsWith('character-') || id === 'character-lab')).toBe(false);
-      expect(ids).toEqual(expect.arrayContaining(['styles', 'character', 'camera']));
+      expect(ids).toEqual(expect.arrayContaining(['character', 'camera']));
+      expect(ids).not.toContain('styles');
     } finally {
       registerDisabledWorkflowModules([]);
     }

@@ -182,15 +182,9 @@ export const AppContent: React.FC = () => {
               onSelectId={shell.historySelection.setId}
               routeKey={isRecipe ? `recipe-${activeRecipe ?? 'active'}` : 'recipes-list'}
               onSidePanelTarget={setSidePanelTarget}
-              stage={isRecipe ? <StudioViewport {...shell.viewport} /> : undefined}
-              action={
-                isRecipe ? (
-                  <div className="recipe-primary-action" ref={setActionTarget} />
-                ) : undefined
-              }
-              tools={
-                isRecipe ? <div ref={setControlsTarget} className="create-recipe-controls" /> : null
-              }
+              stage={<StudioViewport {...shell.viewport} />}
+              action={<div className="recipe-primary-action" ref={setActionTarget} />}
+              tools={<div ref={setControlsTarget} className="create-recipe-controls" />}
             />
           ) : (
             <div className="workbench-canvas relative min-w-0 flex-1 overflow-hidden">

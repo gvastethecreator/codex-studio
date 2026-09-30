@@ -35,7 +35,7 @@ describe('styleTabRouting', () => {
   it('preserves special style browser route ids', () => {
     expect(normalizeStyleTabId('all_categories', routeOptions)).toBe('all_categories');
     expect(normalizeStyleTabId('all_cards', routeOptions)).toBe('all_cards');
-    expect(getStyleTabHash('all_cards', routeOptions)).toBe('recipe-styles/all_cards');
+    expect(getStyleTabHash('all_cards', routeOptions)).toBe('recipes/all_cards');
   });
 
   it('preserves collection route ids without requiring source pack membership', () => {
@@ -49,19 +49,19 @@ describe('styleTabRouting', () => {
   });
 
   it('reads style route hashes and strips trailing slash/query fragments', () => {
-    expect(readStyleTabIdFromHash('#recipe-styles', routeOptions)).toBeNull();
-    expect(readStyleTabIdFromHash('#recipe-styles/', routeOptions)).toBeNull();
-    expect(readStyleTabIdFromHash('#recipe-styles/pack_04?x=1', routeOptions)).toBe('pack_04');
-    expect(
-      readStyleTabIdFromHash('#recipe-styles/collection/analog_film_process/', routeOptions),
-    ).toBe('collection/analog_film_process');
+    expect(readStyleTabIdFromHash('#recipes', routeOptions)).toBeNull();
+    expect(readStyleTabIdFromHash('#recipes/', routeOptions)).toBeNull();
+    expect(readStyleTabIdFromHash('#recipes/pack_04?x=1', routeOptions)).toBe('pack_04');
+    expect(readStyleTabIdFromHash('#recipes/collection/analog_film_process/', routeOptions)).toBe(
+      'collection/analog_film_process',
+    );
     expect(readStyleTabIdFromHash('#other/pack_04', routeOptions)).toBeNull();
   });
 
   it('writes normalized route hashes', () => {
-    expect(getStyleTabHash('pack_04', routeOptions)).toBe('recipe-styles/pack_04');
+    expect(getStyleTabHash('pack_04', routeOptions)).toBe('recipes/pack_04');
     expect(getStyleTabHash('collection/analog_film_process', routeOptions)).toBe(
-      'recipe-styles/collection/analog_film_process',
+      'recipes/collection/analog_film_process',
     );
     expect(getStyleTabHash('unknown', routeOptions)).toBe(
       `${STYLE_RECIPE_HASH_PREFIX}/${STYLE_PACKS_TAB_ID}`,

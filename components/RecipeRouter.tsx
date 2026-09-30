@@ -70,7 +70,6 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   grokCanExecute = false,
   intentionalStylesV1 = false,
 }) => {
-  if (!activeRecipe) return null;
   // A turned-off workflow module never loads its code; say how to turn it back on.
   if (!isRecipeEnabled(activeRecipe)) {
     const workflowModule = findWorkflowModuleForRecipe(activeRecipe);
@@ -124,7 +123,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             onSelectImage={openModal}
           />
         )}
-        {activeRecipe === 'styles' && (
+        {(!activeRecipe || activeRecipe === 'styles') && (
           <LoadedStylesRecipe
             config={generationConfig}
             updateConfig={updateGenerationConfig}

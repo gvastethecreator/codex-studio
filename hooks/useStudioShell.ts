@@ -168,7 +168,9 @@ export function useStudioShell(): StudioShellController {
     historySelectedId,
     historyRecipeId:
       studioSettings.data.settingsDomain.settings?.showWorkspaceHistoryInCarousel === false
-        ? (recipe.activeRecipe ?? null)
+        ? recipe.activeRecipe === 'styles'
+          ? null
+          : (recipe.activeRecipe ?? null)
         : undefined,
     activeWorkspaceId,
     isTrashOpen: viewState.overlays.trash.isOpen,

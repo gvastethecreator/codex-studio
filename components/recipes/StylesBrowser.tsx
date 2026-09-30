@@ -680,7 +680,10 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       { preventModal: true },
     );
   };
-  const referenceImages = config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES);
+  const referenceImages = useMemo(
+    () => config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES),
+    [config.attachments],
+  );
   const referenceSlotsRemaining = Math.max(0, MAX_STYLE_REFERENCE_IMAGES - referenceImages.length);
   const grokGenerateBlock = resolveGrokImagineGenerateBlock({
     providerId: activeProviderId,
@@ -2642,7 +2645,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
             </div>
           </div>
         ) : null}
-        {intentionalStylesV1 || referenceImages.length > 0 ? (
+        {selectedStyles.length > 0 && (intentionalStylesV1 || referenceImages.length > 0) ? (
           <div className="mt-3 space-y-2">
             <div role="group" aria-label="Style application mode" className="flex gap-1">
               {(intentionalStylesV1

@@ -157,7 +157,7 @@ describe('HeaderToolbar chrome', () => {
     expect(screen.queryByRole('button', { name: 'Compare reference' })).toBeNull();
   });
 
-  it('shows the active recipe in the workflow control between Create and Library', () => {
+  it('shows the core styles recipe as Default in the workflow control', () => {
     const onCloseRecipe = vi.fn();
     renderHeader({
       routeView: 'recipe',
@@ -166,7 +166,7 @@ describe('HeaderToolbar chrome', () => {
       onCloseRecipe,
     });
 
-    fireEvent.click(screen.getByRole('button', { name: 'Workflow: Styles' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Workflow: Default' }));
     fireEvent.click(screen.getByRole('option', { name: 'Default' }));
     expect(onCloseRecipe).toHaveBeenCalledTimes(1);
   });

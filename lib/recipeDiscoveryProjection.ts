@@ -61,7 +61,9 @@ function recipeMatchesFilters(
 
 /** Recipes and aliases whose workflow module is on. */
 function enabledDiscoveryEntries() {
-  return RECIPE_DISCOVERY_CATALOG.filter((entry) => isWorkflowEnabled(entry.id));
+  return RECIPE_DISCOVERY_CATALOG.filter(
+    (entry) => entry.id !== 'styles' && isWorkflowEnabled(entry.id),
+  );
 }
 
 export function createRecipeDiscoveryProjection(

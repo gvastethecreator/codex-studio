@@ -11,11 +11,11 @@ import { createStyleRenderBudgetReport } from './report-style-render-budget';
 import { createStylePresetCatalog } from '../components/recipes/stylePresetManifests';
 import { loadInstalledStylePackData } from './installed-style-packs';
 
-const DEFAULT_URL = 'http://localhost:17222/#recipe-styles';
+const DEFAULT_URL = 'http://localhost:17222/#recipes';
 const DEFAULT_PACK_ID = 'pack_05';
 const DEFAULT_COLLECTION_ID = 'analog_film_process';
 const DEFAULT_CATALOG_QUERY = 'boudoir';
-const STYLE_RECIPE_HASH_PREFIX = '#recipe-styles';
+const STYLE_RECIPE_HASH_PREFIX = '#recipes';
 const DEFAULT_TIMEOUT_MS = 30_000;
 const DEFAULT_VIEWPORT = {
   width: 1600,
@@ -69,9 +69,9 @@ function numberArgValue(name: string) {
 function usage() {
   return [
     'Usage:',
-    '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--collection=analog_film_process] [--query=boudoir] [--timeout=30000] [--headed] [--fixture] [--verify] [--json]',
-    '  bun run scripts/verify-styles-browser-gate.ts --measure --url=http://127.0.0.1:17228/#recipe-styles/pack_05 [--comparison-url=http://127.0.0.1:17229/#recipe-styles/pack_05] [--output=.scratch/workflow-performance/styles/comparison.json]',
-    '  bun run scripts/verify-styles-browser-gate.ts --workflow --url=http://127.0.0.1:17229/#recipe-styles/user_styles [--output=.scratch/workflow-performance/styles/editing.json]',
+    '  bun run styles:browser -- [--url=http://localhost:17222/#recipes] [--pack=pack_05] [--collection=analog_film_process] [--query=boudoir] [--timeout=30000] [--headed] [--fixture] [--verify] [--json]',
+    '  bun run scripts/verify-styles-browser-gate.ts --measure --url=http://127.0.0.1:17228/#recipes/pack_05 [--comparison-url=http://127.0.0.1:17229/#recipes/pack_05] [--output=.scratch/workflow-performance/styles/comparison.json]',
+    '  bun run scripts/verify-styles-browser-gate.ts --workflow --url=http://127.0.0.1:17229/#recipes/user_styles [--output=.scratch/workflow-performance/styles/editing.json]',
     '  bun run scripts/verify-styles-browser-gate.ts --jobs-workflow --url=http://127.0.0.1:17229/ [--output=.scratch/workflow-performance/jobs.json]',
     '',
     'Notes:',

@@ -55,7 +55,7 @@ export function preloadStudioViewportRoute(routeView: AppPageView, activeRecipe:
   }
 
   if (routeView === 'studio') return studioPageSurface.load().then(() => {});
-  return recipesViewSurface.load().then(() => {});
+  return Promise.all([recipePageSurface.load(), preloadRecipeComponent('styles')]).then(() => {});
 }
 
 export function preloadStudioViewportSurface(surface: RoutePreloadSurface) {

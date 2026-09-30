@@ -110,7 +110,7 @@ export function useScopedGenerationDraft(
     (recipeId: ImageGenerationConfig['recipeId'], value: ImageGenerationConfig) => {
       if (!legacyReady || !draftsReady) return;
       setDrafts((current) => {
-        const key = `${workspace}:${recipeId ?? 'studio'}`;
+        const key = `${workspace}:${recipeId === 'styles' ? 'studio' : (recipeId ?? 'studio')}`;
         const restored =
           recipeId === 'character-lab'
             ? restoreCharacterLabDraft(current[key] ?? initial, value)

@@ -84,7 +84,7 @@ export function resolveHashRouterState(
     return { ...previous, overlay: 'modal' };
   }
 
-  if (hash === 'recipes') {
+  if (hash === 'recipes' || hash.startsWith('recipes/')) {
     return {
       view: 'recipes',
       activeRecipeId: null,

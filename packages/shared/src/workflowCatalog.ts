@@ -1,6 +1,6 @@
-/** Shared navigation order; workflow identities and routes remain unchanged. */
+/** Shared navigation order. Default includes the optional style tools. */
 export const WORKFLOW_CATEGORIES = [
-  { id: 'create', label: 'Create & Edit', workflows: ['default', 'styles', 'remaster'] },
+  { id: 'create', label: 'Create & Edit', workflows: ['default', 'remaster'] },
   {
     id: 'character',
     label: 'Character',

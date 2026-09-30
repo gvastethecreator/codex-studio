@@ -138,7 +138,7 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
         data-active-recipe-alias={activeRecipeAliasId ?? undefined}
       >
         <Suspense fallback={<LazySurfaceFallback label="Loading view" />}>
-          {routeView === 'recipe' && activeRecipe ? (
+          {routeView === 'recipes' || (routeView === 'recipe' && activeRecipe) ? (
             <ConnectedRecipePage
               Component={RecipePage}
               activeRecipe={activeRecipe}

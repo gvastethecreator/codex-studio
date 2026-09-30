@@ -61,7 +61,13 @@ function ConnectedGenerationToolbar({
       layout={layout}
       railTools={railTools}
       railAction={railAction}
-      activeRecipe={activeRecipe}
+      activeRecipe={
+        !activeRecipe || activeRecipe === 'styles'
+          ? draft.generationConfig.recipeId === 'styles'
+            ? 'styles'
+            : null
+          : activeRecipe
+      }
       mode={
         ['animation-sequence', 'sprite-atlas', 'character-lab'].includes(activeRecipe ?? '')
           ? 'context-only'

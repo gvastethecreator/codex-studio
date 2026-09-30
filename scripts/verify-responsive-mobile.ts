@@ -74,13 +74,6 @@ const SCENARIOS: ResponsiveScenario[] = [
     hash: '#recipes',
     expectedRoute: 'recipes-list',
     closeQueue: true,
-    requiredSelectors: [],
-  },
-  {
-    name: 'styles',
-    hash: '#recipe-styles',
-    expectedRoute: 'recipe-styles',
-    closeQueue: true,
     requiresComposer: true,
     requiredSelectors: ['[data-compact-style-selector]'],
   },

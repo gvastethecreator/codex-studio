@@ -24,6 +24,7 @@ describe('CreateWorkflowPicker', () => {
     const listbox = screen.getByRole('listbox', { name: 'Workflows' });
     expect(listbox).toBeTruthy();
     expect(listbox.className).toContain('custom-scrollbar');
+    expect(screen.queryByRole('option', { name: /open styles/i })).toBeNull();
 
     fireEvent.click(screen.getByRole('option', { name: 'Default' }));
     expect(onSelectRecipe).not.toHaveBeenCalled();
@@ -39,11 +40,11 @@ describe('CreateWorkflowPicker', () => {
     );
 
     fireEvent.click(screen.getByRole('button', { name: 'Workflow: Default' }));
-    fireEvent.click(screen.getByRole('option', { name: /open styles/i }));
+    fireEvent.click(screen.getByRole('option', { name: /open remaster/i }));
 
     expect(onSelectRecipe).toHaveBeenCalled();
     const [recipeId] = onSelectRecipe.mock.calls[0];
-    expect(recipeId).toBe('styles');
+    expect(recipeId).toBe('remaster');
   });
 
   it('returns to Default through the optional default handler', () => {
@@ -51,13 +52,13 @@ describe('CreateWorkflowPicker', () => {
 
     render(
       <CreateWorkflowPicker
-        selectedLabel="Styles"
+        selectedLabel="Remaster"
         onSelectRecipe={vi.fn()}
         onSelectDefault={onSelectDefault}
       />,
     );
 
-    fireEvent.click(screen.getByRole('button', { name: 'Workflow: Styles' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Workflow: Remaster' }));
     fireEvent.click(screen.getByRole('option', { name: 'Default' }));
     expect(onSelectDefault).toHaveBeenCalledTimes(1);
   });

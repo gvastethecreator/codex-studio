@@ -189,11 +189,13 @@ describe('Toolbar composer chrome', () => {
   });
 
   it('shows one generate requirement next to Generate and keeps the action usable', () => {
+    const onGenerate = vi.fn();
     const { container } = renderToolbar({
       activeProviderId: 'chatgpt',
       codexTransport: 'subscription_http',
       codexAvailableTransports: ['subscription_http'],
       generationConfig: config({ prompt: '' }),
+      onGenerate,
     });
     const requirement = container.querySelector('#generation-requirement');
     expect(requirement?.textContent).toBe('Add a prompt or image.');
@@ -207,6 +209,15 @@ describe('Toolbar composer chrome', () => {
       'Add a prompt or image.',
     );
     expect(container.querySelectorAll('#generation-requirement')).toHaveLength(1);
+    fireEvent.change(screen.getByRole('textbox', { name: 'Prompt input' }), {
+      target: { value: 'A lantern with no style preset' },
+    });
+    fireEvent.click(generate);
+    expect(onGenerate).toHaveBeenCalledWith(
+      'A lantern with no style preset',
+      { recipeId: null, codexTransport: 'subscription_http' },
+      { preventModal: true },
+    );
   });
 
   it('groups provider and Codex execution in the same Create rail row', () => {

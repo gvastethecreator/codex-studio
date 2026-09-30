@@ -6,7 +6,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "build": "node scripts/build-astro.mjs site.yaml dist /",
+    "build": "node scripts/build-astro.mjs site.yaml dist /cozy-studio/",
     "build:local": "node scripts/build-astro.mjs site.yaml dist-local /"
   },
   "dependencies": {

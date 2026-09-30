@@ -262,7 +262,8 @@ function queryCatalogInternal(
     params.push(...workspaceClause.params);
   }
   if (filters.recipeId !== undefined) {
-    if (filters.recipeId === null) clauses.push("(recipe_id IS NULL OR recipe_id = '')");
+    if (filters.recipeId === null)
+      clauses.push("(recipe_id IS NULL OR recipe_id = '' OR recipe_id = 'styles')");
     else {
       clauses.push('recipe_id = ?');
       params.push(filters.recipeId);

@@ -19,6 +19,7 @@ describe('resolveHashRouterState', () => {
       activeRecipeAliasId: null,
       overlay: 'none',
     });
+    expect(resolveHashRouterState(studioRoute, '#recipes/pack_01')).toEqual(next);
   });
 
   it('maps recipe hashes to the concrete recipe page', () => {

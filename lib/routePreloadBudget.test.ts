@@ -6,10 +6,10 @@ import {
 } from './routePreloadBudget';
 
 describe('routePreloadBudget', () => {
-  it('keeps Home preload bounded to the recipes list shell', () => {
+  it('keeps Home preload bounded to the Create shell', () => {
     expect(buildRoutePreloadPlan({ routeView: 'studio', activeRecipe: null })).toEqual({
       delayMs: ROUTE_PRELOAD_BUDGET.studioIdleDelayMs,
-      surfaces: ['recipes-view'],
+      surfaces: ['recipe-page'],
       recipeIds: [],
     });
   });
@@ -17,12 +17,12 @@ describe('routePreloadBudget', () => {
   it('preloads only the active recipe from recipe routes', () => {
     expect(buildRoutePreloadPlan({ routeView: 'recipe', activeRecipe: 'styles' })).toEqual({
       delayMs: ROUTE_PRELOAD_BUDGET.recipeIdleDelayMs,
-      surfaces: ['recipes-view'],
+      surfaces: [],
       recipeIds: ['styles'],
     });
   });
 
-  it('does not fan out every recipe while browsing recipe cards', () => {
+  it('does not fan out every recipe in Default', () => {
     expect(buildRoutePreloadPlan({ routeView: 'recipes', activeRecipe: null })).toEqual({
       delayMs: ROUTE_PRELOAD_BUDGET.recipesIdleDelayMs,
       surfaces: ['studio-page', 'recipe-page'],

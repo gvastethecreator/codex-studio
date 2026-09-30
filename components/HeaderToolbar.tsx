@@ -141,8 +141,16 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               <Sparks width={16} height={16} aria-hidden="true" /> Create
             </button>
             <CreateWorkflowPicker
-              selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
-              selectedLabel={isRecipeView && activeRecipeData ? activeRecipeData.name : 'Default'}
+              selectedId={
+                isRecipeView && activeRecipe !== 'styles'
+                  ? (activeRecipeAliasId ?? activeRecipe)
+                  : 'default'
+              }
+              selectedLabel={
+                isRecipeView && activeRecipe !== 'styles' && activeRecipeData
+                  ? activeRecipeData.name
+                  : 'Default'
+              }
               onSelectRecipe={onSelectRecipe}
               onSelectDefault={() => {
                 if (isRecipeView) onCloseRecipe();

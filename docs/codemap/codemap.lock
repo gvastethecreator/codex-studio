@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "7f5dbc0603150cab51a5fc03cf158e74bf489e19",
-  "working_tree_dirty": false,
-  "generated_at": "2026-09-30T07:25:20Z",
-  "generation_id": "0b14a43a1d7f9412d281ebdb52431f38c89176ff06f3bb454047b97784be7337",
+  "source_commit": "6f2d3c4f44eb1c91bb9247b7e7ad00294406b497",
+  "working_tree_dirty": true,
+  "generated_at": "2026-09-30T14:20:17Z",
+  "generation_id": "238318adfc61aac90b22227d53d159ae2bb5b5630055c2ba9ee1926c68da06bf",
   "analysis": {
     "version": "syntax-1",
     "digest": "f254907343def68e42baabf08b179db9817a145bc24eaad26add0adf05d75581"
@@ -285,8 +285,8 @@
         "path": "apps/local-server/src/catalog.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a8a09c30fe11807b4e16107559ba61f1ec7b9dafd3a9321c42551b788e8a22fd",
-        "size": 16683
+        "digest": "957afd06f31712c11a7808120fa18d7d28dd2edb3a6a8c6d4489cd3282d7200c",
+        "size": 16713
       },
       {
         "path": "apps/local-server/src/catalogCommands.test.ts",
@@ -1867,8 +1867,8 @@
         "path": "components/AppContent.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "39aba319566ff068a2c968ee981a5c46bccee8eed96ee11f019d8c5c5c4b97ac",
-        "size": 10828
+        "digest": "1fc625a649eb30e26cd7971a4689f58e252d3008483c7960b78dab2cdeb433c0",
+        "size": 10662
       },
       {
         "path": "components/AppOverlays.tsx",
@@ -1937,15 +1937,15 @@
         "path": "components/HeaderToolbar.test.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "934b2e5c23c192df45aa1eb09d8c6edc41d56d43d66b1e19c50194691e590895",
-        "size": 5854
+        "digest": "8fff03d58795b7075ba7d5ab031c67f6c10e008ca61a80830b6fadac72b810bb",
+        "size": 5844
       },
       {
         "path": "components/HeaderToolbar.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "e2920d1252e61ee886c16504cde1bbadff3f7ebf27fd692d87a5e39bbf1e698c",
-        "size": 16501
+        "digest": "b5643c642b9d03bc7e62b80df34e7feb086f39a6ef7b8fa150801c1cb0c5f9c9",
+        "size": 16700
       },
       {
         "path": "components/ImageCarousel.tsx",
@@ -2035,8 +2035,8 @@
         "path": "components/RecipeRouter.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "1064565d98bdb1d0f0ef0bf405579b6e816673c0450b9a5efc868a7b89c5609a",
-        "size": 7457
+        "digest": "08ecdf6f9dc3827f60afc95a3d42c61218b57ddc243cebbfcc136efe07f9275f",
+        "size": 7442
       },
       {
         "path": "components/RecipesView.tsx",
@@ -2133,15 +2133,15 @@
         "path": "components/Toolbar.composer.test.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "f9d12a31db59ebc5188831a5ac6bbfad4edc5a1625a73a01e628a8d2556c4f1c",
-        "size": 13280
+        "digest": "ba339ba78551852a6988884a7b4788d9c3570f155f9ff545abaf661b0bfe7a50",
+        "size": 13691
       },
       {
         "path": "components/Toolbar.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "0eb62f238dacb3b22b67389ecbd7278b4aaea406a5553fcb91df8ace125268c0",
-        "size": 99601
+        "digest": "4ffc8f982b567ad8ed05a62a53c965c0cf2e4411aeda9226686dc585c9c2333c",
+        "size": 99658
       },
       {
         "path": "components/ToolbarLiveStatus.test.tsx",
@@ -2189,8 +2189,8 @@
         "path": "components/create/CreateWorkflowPicker.test.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "cae96de7eecdc3d1bf558cd413c3323f1284fd3de511b6db627ac0ad9101d461",
-        "size": 3292
+        "digest": "f76fe01cfa1490a15c780c24acee0f068c19e6e259fb20efebefea76be88b5f3",
+        "size": 3379
       },
       {
         "path": "components/create/CreateWorkflowPicker.tsx",
@@ -2518,8 +2518,8 @@
         "path": "components/recipes/StylesBrowser.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "89c955ca858a5e3257cd23939b380b9f23e0f1487213c77d0549c0fcc4ccdb90",
-        "size": 111715
+        "digest": "8cb44cee2638b1d15a9ffb033b4b3d39f83a04de11aef2a971139bacea97cf5a",
+        "size": 111796
       },
       {
         "path": "components/recipes/StylesRecipe.tsx",
@@ -2756,15 +2756,15 @@
         "path": "components/recipes/styleTabRouting.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "e92d7b7d075ba3a0991e9e741e243fb2753315457c7e07cd180d82798aabbf14",
-        "size": 3015
+        "digest": "f2d5b01f8d6d5ae5295b66c263fe42c5ee8d2374252d5604b79579c4ce6bd651",
+        "size": 2973
       },
       {
         "path": "components/recipes/styleTabRouting.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "4c7542379766a9fbfe22016fa2d0d03ed6749ac4e8c3a2fc310c7e7e1ebf9ca4",
-        "size": 2132
+        "digest": "d1dccbf00c7f90f90bf9624a3252930e23cfa070b6dd7727e3b9b6128615a15c",
+        "size": 2173
       },
       {
         "path": "components/recipes/styles/TcgComponentStudio.tsx",
@@ -2928,11 +2928,18 @@
         "size": 6281
       },
       {
+        "path": "components/recipes/useStyleComposition.test.tsx",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "cbf98a6bf55b1aaf947e69905f41fcbbdea83d404babb1fbd12392ee5fe702b4",
+        "size": 3236
+      },
+      {
         "path": "components/recipes/useStyleComposition.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a22f57bce39328f3c9c4bfd8156e0e1c9476bfe8f84a6b0b7eab9dc4547163b2",
-        "size": 14580
+        "digest": "2aa1d3c3ba0b7dd1ce308a934f4a9c76744fcc5bfb1bdc6a0f3cdee8bf8c85a6",
+        "size": 14950
       },
       {
         "path": "components/recipes/useUserStyleLibrary.ts",
@@ -3050,8 +3057,8 @@
         "path": "components/shell/StudioGenerationDock.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "8c22c7ded7b533c88cd756ba8bdbec7434c326a948b329dda1c5298fabc317e0",
-        "size": 3357
+        "digest": "b541b186b0e6d1236489de43cb5b0313d1b493d5467da036274a1374f4434f5c",
+        "size": 3527
       },
       {
         "path": "components/shell/StudioStatusBar.test.tsx",
@@ -3078,8 +3085,8 @@
         "path": "components/shell/StudioViewport.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "226d21cb79ea2ed63fb6996386230d58374e7123f5ce4ee98f433d8bf2d29a1c",
-        "size": 5329
+        "digest": "30c3c64381a13aa0b46503354ff3b2b3bb5f3a7133cb6caa2f69d2b244266148",
+        "size": 5358
       },
       {
         "path": "components/shell/studioViewportRouting.ts",
@@ -3197,8 +3204,8 @@
         "path": "contexts/GenerationContext.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "346e4cad8c4391b54bcbb3218ba57972d85abad73d9043d06838bb3c68591978",
-        "size": 11151
+        "digest": "f115c262a6dd857ee9b058acfe2f83d1d343d00a561cf7949402e8977c60c99b",
+        "size": 11192
       },
       {
         "path": "contexts/GenerationIsolation.runtime.test.tsx",
@@ -3526,15 +3533,15 @@
         "path": "hooks/useHashRouter.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "480094d0a5f89677085a9fe38405a8aad78c40975dc539674509e377dfde646c",
-        "size": 4157
+        "digest": "1fba4402968f4f330f1aee86cba6e710cf3ac366b8e34d70f4248e6562894707",
+        "size": 4240
       },
       {
         "path": "hooks/useHashRouter.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6e2480be411ff7132a1c599b506d2522569ea51ec4634f75df78ee55856b9f8c",
-        "size": 7503
+        "digest": "fdf338a5a54696d72b46da2336b875c95cc8870c3feb6499afd8681baab98226",
+        "size": 7534
       },
       {
         "path": "hooks/useHorizontalDragScroll.ts",
@@ -3666,8 +3673,8 @@
         "path": "hooks/useScopedGenerationDraft.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c55407e1c2f4e326228409e545d01a9455dde3487b372b21e7ee440530db8e7c",
-        "size": 4637
+        "digest": "3c8de81bc7c98f258f86c22edf077380a1d018d03b15776f772d1d8625b5e93b",
+        "size": 4674
       },
       {
         "path": "hooks/useSettingsSurface.ts",
@@ -3834,8 +3841,8 @@
         "path": "hooks/useStudioShell.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "5b11aeb24c2ed22fdd80559adc6a315db94164cf0f9c82577ec8d27f50c7cf49",
-        "size": 35889
+        "digest": "de3cc9704af63f34f75be7363cf2906cdadc9d635da1b4f42ccae2eb7816301e",
+        "size": 35951
       },
       {
         "path": "hooks/useStudioViewState.ts",
@@ -4583,15 +4590,15 @@
         "path": "lib/recipeDiscoveryProjection.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "235d33651ca0795bfbb309be6f657cd9372ce4a7437e029ed3f60f792b98455a",
-        "size": 3048
+        "digest": "cee7a197b4ea412457dd9e8141627cf146b192e01c19ccef1005ee884045dee2",
+        "size": 3217
       },
       {
         "path": "lib/recipeDiscoveryProjection.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "177542c3ff124c349ba5b1195cb801e4704fca6e64e59e5acc865bb8dd587fd6",
-        "size": 2890
+        "digest": "745a2c80e97817ea9893f5f56fd2c79d6ca0229bff358abd35745748deeb8c7d",
+        "size": 2924
       },
       {
         "path": "lib/recipeIdentity.test.ts",
@@ -4695,15 +4702,15 @@
         "path": "lib/routePreloadBudget.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "8c0fa3ba1a63c66306cb3848af4a1ce879024fa0f1827788926fb10db8f06c8e",
-        "size": 1516
+        "digest": "ee9c9e721069770456cecb8fe25952cc83ac4ba4d8e6f333fd18d908ef924a48",
+        "size": 1478
       },
       {
         "path": "lib/routePreloadBudget.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f8d2caf9ef4a330b53c0957598b20d3d1145c94b2a7ca8a9e2429e2314e01666",
-        "size": 1359
+        "digest": "9c862546d18d20093fd3e6c70c259298b0e96f57b40cf588a74f35e1e5b95a8e",
+        "size": 1344
       },
       {
         "path": "lib/settingsSurface.test.ts",
@@ -4926,8 +4933,8 @@
         "path": "lib/studioViewportRouteSurfaces.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "e9bf21ecb9c41c2f54640e3f03c7f7df7fab2a629802e94136967a43d0c0b0cb",
-        "size": 2487
+        "digest": "c605b21fb9875d75ce9c1d11e41c86542d2cff7821bdf05f671054badc315c4f",
+        "size": 2535
       },
       {
         "path": "lib/studioWorkspaceExport.test.ts",
@@ -5465,15 +5472,15 @@
         "path": "packages/shared/src/workflowCatalog.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6e75e98915715612fd930f99c39ba4cb9d5f3f8d6d04341fb6ef6577bd53722f",
-        "size": 1243
+        "digest": "41fb625ab81142ad769050d7f18f0fe842b67a7f6f410f62ff37fb0e2631cbb7",
+        "size": 1227
       },
       {
         "path": "packages/shared/src/workflowModules.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "92fe1fd8cea06472a6adf779ec08487182040b56c4d9581db978e456c5294870",
-        "size": 4765
+        "digest": "2ef165a3d47bbee38358b9d3c15c8429398f99261c4fc6db8cd72fcc23951ca4",
+        "size": 4770
       },
       {
         "path": "packages/shared/src/workspaceContracts.test.ts",
@@ -6109,8 +6116,8 @@
         "path": "scripts/verify-responsive-mobile.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "217458813ecade3d92c718e411d2f57c2905c539fc266c02395027ee89e9d07c",
-        "size": 14864
+        "digest": "c9cf910bfa3d793f9dff2f494e7c01e57c5f5fa7b53b09271ff06e9bfc645b81",
+        "size": 14722
       },
       {
         "path": "scripts/verify-style-editing.ts",
@@ -6123,8 +6130,8 @@
         "path": "scripts/verify-styles-browser-gate.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "978c89f8b9819ce53163b56cef0762296896c6287880ccbb046b51ab0862dde4",
-        "size": 19062
+        "digest": "2b8228f6677f1ea8c9784d921a6f5f7e75cf3e45236be7b5beeb98f24b8f481a",
+        "size": 19026
       },
       {
         "path": "scripts/workspace-authority-source-audit-rules.ts",
@@ -6554,12 +6561,12 @@
         "size": 710
       }
     ],
-    "digest": "ed532e219746fa4b5de7f82db8e774942a12ad4f68ea57a66e2d58bb85157ec3"
+    "digest": "67bb855371c77cc8303ac93a8c7aad9bbac22bf6cc8c97923b2b16a8f85c6548"
   },
-  "source_digest": "714b43cac480ce30bef94e9b0ae9614765843f5d6cc4da2b0516321462e2250f",
+  "source_digest": "a15151721f3ef58805a89cd9261fd00d549bbe420e0b2668fc85d34e48b61eb5",
   "artifact_hashes": {
-    "codemap.json": "c408802ece4cebd4839e19faf932630b531bee23a95203b0a8ed9825727d1b6c",
-    "codemap.md": "e70090d1fb9fad73e16db756c186dae800d2b808e28d159d5624f3ebbd89f7a2",
-    "codemap.html": "8a7f371f54672152c98ca4e1b2ef6801240686f5b818abecd73d0e53ad492c08"
+    "codemap.json": "4ef3eb19632a5b3023a51d79c2f202acb6299f7739e508b0bedef918235a07a3",
+    "codemap.md": "7adb8ae4f3e80fd3608281cf24b94cf8d938fcb4ef50c6218983f0c6efdfe396",
+    "codemap.html": "f94195c0907c6caf4a49a0923fea6d5a432994f8c5bb9c8a9385465d587db97d"
   }
 }

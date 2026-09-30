@@ -111,7 +111,7 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
 
   const configHook = useGenerationConfig({
     log,
-    scopeKey: `${activeWorkspaceId}:${activeRecipe ?? 'studio'}`,
+    scopeKey: `${activeWorkspaceId}:${activeRecipe === 'styles' ? 'studio' : (activeRecipe ?? 'studio')}`,
   });
   const generationConfigRef = useLatestRef(configHook.generationConfig);
 

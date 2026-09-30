@@ -1,6 +1,6 @@
 # Cozy Studio landing page
 
-This folder builds the public page at <https://cozy.gvaste.dev/>. It does not ship with the app.
+This folder builds the public page at <https://gvastethecreator.github.io/cozy-studio/>. It does not ship with the app.
 
 - `site.yaml` holds the words, links, and pictures.
 - `template.yaml` holds colours, type, and layout.
@@ -15,10 +15,12 @@ You need Bun and Node 22.18 or newer.
 cd landing
 bun install
 bun run build:local   # dist-local/, for http://localhost:<port>/
-bun run build         # dist/, for GitHub Pages at cozy.gvaste.dev
+bun run build         # dist/, for GitHub Pages under /cozy-studio/
 ```
 
 `.github/workflows/pages.yml` runs `bun run build` and deploys `dist/` when a push to `main` changes this folder.
+
+In the repository's Pages settings, use GitHub Actions as the source and leave Custom domain empty. The production build uses `/cozy-studio/` for assets and links; `build:local` uses `/` for local preview.
 
 The build prints two notices that are not errors:
 

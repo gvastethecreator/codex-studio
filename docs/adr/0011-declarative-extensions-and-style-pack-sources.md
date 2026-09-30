@@ -45,7 +45,7 @@ Studio gets a declarative extension system named Cozy Extensions.
 
 ### Workflow modules
 
-Every workflow except `default` and `styles` becomes an optional built-in module. Examples are Character Lab, Sprite Atlas, Animation Sequence and Camera Angles.
+Every workflow except `default` becomes an optional built-in module. Default includes optional style tools; styled generations keep the core `styles` recipe contract. Examples of optional modules are Character Lab, Sprite Atlas, Animation Sequence and Camera Angles.
 
 - A module is Studio code. It ships and is versioned with the app. It is not a Cozy Extension and is never downloaded.
 - The Extensions panel lists modules next to installed extensions, and the user can turn each module on or off.
