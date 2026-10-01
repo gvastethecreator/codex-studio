@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../config', () => ({
@@ -35,9 +36,10 @@ describe('CodexRpcClient', () => {
       JSON.stringify({ method: 'turn/completed', params: { turn: { id: 'turn-1' } } }),
     );
 
-    const notification = await client.waitForNotification(
-      (message) => message.method === 'turn/completed',
-      100,
+    const notification = await Effect.runPromise(
+      Effect.scoped(
+        client.waitForNotification((message) => message.method === 'turn/completed', 100),
+      ),
     );
 
     expect(notification.method).toBe('turn/completed');
@@ -45,7 +47,11 @@ describe('CodexRpcClient', () => {
 
   it('resolves waitForNotification when a matching message arrives later', async () => {
     const client = new CodexRpcClient({ ensureAppServer: () => {} });
-    const waiting = client.waitForNotification((message) => message.method === 'job.progress', 500);
+    const waiting = Effect.runPromise(
+      Effect.scoped(
+        client.waitForNotification((message) => message.method === 'job.progress', 500),
+      ),
+    );
 
     setTimeout(() => {
       (client as any).handleMessage(
@@ -58,13 +64,17 @@ describe('CodexRpcClient', () => {
 
   it('rejects waitForNotification on timeout', async () => {
     const client = new CodexRpcClient({ ensureAppServer: () => {} });
-    const waiting = client.waitForNotification((message) => message.method === 'never', 20);
+    const waiting = Effect.runPromise(
+      Effect.scoped(client.waitForNotification((message) => message.method === 'never', 20)),
+    );
     await expect(waiting).rejects.toThrow('Timed out waiting for Codex notification');
   });
 
   it('rejects waiters when client closes', async () => {
     const client = new CodexRpcClient({ ensureAppServer: () => {} });
-    const waiting = client.waitForNotification((message) => message.method === 'never', 2000);
+    const waiting = Effect.runPromise(
+      Effect.scoped(client.waitForNotification((message) => message.method === 'never', 2000)),
+    );
     client.close();
     await expect(waiting).rejects.toThrow('Codex app-server socket closed');
   });
@@ -73,7 +83,9 @@ describe('CodexRpcClient', () => {
     const client = new CodexRpcClient({ ensureAppServer: () => {}, requestTimeoutMs: 50 });
     const { sent } = attachOpenSocket(client);
 
-    const response = client.request('account/read', { refreshToken: false });
+    const response = Effect.runPromise(
+      Effect.scoped(client.request('account/read', { refreshToken: false })),
+    );
     const id = JSON.parse(sent[0]).id;
     (client as any).handleMessage(JSON.stringify({ id, result: { account: null } }));
 
@@ -91,7 +103,9 @@ describe('CodexRpcClient', () => {
     const client = new CodexRpcClient({ ensureAppServer: () => {}, requestTimeoutMs: 15 });
     const { sent } = attachOpenSocket(client);
 
-    const timedOut = client.request('account/read', { refreshToken: false });
+    const timedOut = Effect.runPromise(
+      Effect.scoped(client.request('account/read', { refreshToken: false })),
+    );
     await expect(timedOut).rejects.toThrow(
       'Timed out waiting for Codex app-server response to account/read after 15ms',
     );
@@ -101,7 +115,7 @@ describe('CodexRpcClient', () => {
     (client as any).handleMessage(JSON.stringify({ id: lateId, result: { late: true } }));
     expect(client.getNotificationCount()).toBe(0);
 
-    const recovered = client.request('initialize', {});
+    const recovered = Effect.runPromise(Effect.scoped(client.request('initialize', {})));
     const recoveryId = JSON.parse(sent[1]).id;
     (client as any).handleMessage(JSON.stringify({ id: recoveryId, result: { ok: true } }));
     await expect(recovered).resolves.toEqual({ ok: true });
@@ -113,7 +127,9 @@ describe('CodexRpcClient', () => {
     try {
       const client = new CodexRpcClient({ ensureAppServer: () => {} });
       const { sent } = attachOpenSocket(client);
-      const request = client.request('account/read', { refreshToken: false });
+      const request = Effect.runPromise(
+        Effect.scoped(client.request('account/read', { refreshToken: false })),
+      );
       const rejection = expect(request).rejects.toThrow(
         `Timed out waiting for Codex app-server response to account/read after ${CodexRpcClient.DEFAULT_REQUEST_TIMEOUT_MS}ms`,
       );
@@ -138,9 +154,11 @@ describe('CodexRpcClient', () => {
         throw sendError;
       });
 
-      const request = client.request('account/read', { refreshToken: false });
+      const request = Effect.runPromise(
+        Effect.scoped(client.request('account/read', { refreshToken: false })),
+      );
 
-      await expect(request).rejects.toBe(sendError);
+      await expect(request).rejects.toMatchObject({ cause: sendError });
       expect((client as any).pending.size).toBe(0);
       await vi.advanceTimersByTimeAsync(CodexRpcClient.DEFAULT_REQUEST_TIMEOUT_MS);
       expect((client as any).pending.size).toBe(0);
@@ -155,14 +173,16 @@ describe('CodexRpcClient', () => {
       requestTimeoutMs: 2000,
     });
     const { socket: socketClosing } = attachOpenSocket(socketCloseClient);
-    const socketCloseRequest = socketCloseClient.request('account/read', {});
+    const socketCloseRequest = Effect.runPromise(
+      Effect.scoped(socketCloseClient.request('account/read', {})),
+    );
     (socketCloseClient as any).handleSocketClose(socketClosing);
     await expect(socketCloseRequest).rejects.toThrow('Codex app-server socket closed');
     expect((socketCloseClient as any).pending.size).toBe(0);
 
     const closeClient = new CodexRpcClient({ ensureAppServer: () => {}, requestTimeoutMs: 2000 });
     const { socket } = attachOpenSocket(closeClient);
-    const closeRequest = closeClient.request('account/read', {});
+    const closeRequest = Effect.runPromise(Effect.scoped(closeClient.request('account/read', {})));
     closeClient.close();
     await expect(closeRequest).rejects.toThrow('Codex app-server socket closed');
     expect(socket.close).toHaveBeenCalledTimes(1);

@@ -1,3 +1,5 @@
+import { providerPromise, providerSync } from '../providers/providerEffect';
+import { Effect } from 'effect';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
@@ -59,9 +61,11 @@ function createDeferred<T>() {
 
 function createTestClient(connect: () => Promise<void>) {
   return {
-    connect: vi.fn(connect),
-    request: vi.fn(async (method: string) =>
-      method === 'initialize' ? { codexHome: 'D:/codex-home' } : { thread: { id: 'thread-1' } },
+    connect: vi.fn(() => providerPromise(connect)),
+    request: vi.fn((method: string) =>
+      providerSync(() =>
+        method === 'initialize' ? { codexHome: 'D:/codex-home' } : { thread: { id: 'thread-1' } },
+      ),
     ),
     notify: vi.fn(),
     close: vi.fn(),
@@ -79,8 +83,8 @@ describe('createSessionPool concurrency', () => {
       resolveLibraryPath: (...parts) => `${registryRoot}/${parts.join('/')}`,
     });
 
-    const first = pool.getOrCreateSession('shared');
-    const second = pool.getOrCreateSession('shared');
+    const first = Effect.runPromise(Effect.scoped(pool.getOrCreateSession('shared')));
+    const second = Effect.runPromise(Effect.scoped(pool.getOrCreateSession('shared')));
 
     expect(createClient).toHaveBeenCalledTimes(1);
     connected.resolve();
@@ -105,8 +109,12 @@ describe('createSessionPool concurrency', () => {
       resolveLibraryPath: (...parts) => `${registryRoot}/${parts.join('/')}`,
     });
 
-    await expect(pool.getOrCreateSession('retryable')).rejects.toThrow('connect failed');
-    await expect(pool.getOrCreateSession('retryable')).resolves.toMatchObject({
+    await expect(
+      Effect.runPromise(Effect.scoped(pool.getOrCreateSession('retryable'))),
+    ).rejects.toThrow('connect failed');
+    await expect(
+      Effect.runPromise(Effect.scoped(pool.getOrCreateSession('retryable'))),
+    ).resolves.toMatchObject({
       sessionKey: 'retryable',
       threadId: 'thread-1',
     });

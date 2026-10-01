@@ -1,12 +1,17 @@
+import { providerPromise } from '../providers/providerEffect';
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { extractUsageSnapshot, pickRateLimitSnapshot } from './rateLimitUsage';
 
 vi.mock('./rpcClient', () => ({
   CodexRpcClient: class {
-    async connect() {}
-    async request() {
-      return null;
+    connect() {
+      return providerPromise(async () => {});
+    }
+    request() {
+      return providerPromise(async () => {
+        return null;
+      });
     }
     notify() {}
     close() {}
@@ -254,15 +259,19 @@ describe('localCodexSession fallback cause taxonomy', () => {
     ];
     const reader = createLocalCodexSessionReader({
       createClient: () => ({
-        async connect() {},
-        async request(method: string) {
-          if (method === 'initialize') return null;
-          if (method === 'account/read') {
-            const next = failures.shift();
-            if (next instanceof Error) throw next;
-            return next;
-          }
-          return null;
+        connect() {
+          return providerPromise(async () => {});
+        },
+        request(method: string) {
+          return providerPromise(async () => {
+            if (method === 'initialize') return null;
+            if (method === 'account/read') {
+              const next = failures.shift();
+              if (next instanceof Error) throw next;
+              return next;
+            }
+            return null;
+          });
         },
         notify() {},
         close() {},
@@ -283,15 +292,19 @@ describe('localCodexSession fallback cause taxonomy', () => {
   it('maps an account/read timeout to protocol_incompatible instead of login required', async () => {
     const reader = createLocalCodexSessionReader({
       createClient: () => ({
-        async connect() {},
-        async request(method: string) {
-          if (method === 'initialize') return null;
-          if (method === 'account/read') {
-            throw new Error(
-              'Timed out waiting for Codex app-server response to account/read after 15ms',
-            );
-          }
-          return null;
+        connect() {
+          return providerPromise(async () => {});
+        },
+        request(method: string) {
+          return providerPromise(async () => {
+            if (method === 'initialize') return null;
+            if (method === 'account/read') {
+              throw new Error(
+                'Timed out waiting for Codex app-server response to account/read after 15ms',
+              );
+            }
+            return null;
+          });
         },
         notify() {},
         close() {},
@@ -316,11 +329,15 @@ describe('localCodexSession fallback cause taxonomy', () => {
     for (const payload of invalidPayloads) {
       const reader = createLocalCodexSessionReader({
         createClient: () => ({
-          async connect() {},
-          async request(method: string) {
-            if (method === 'initialize') return null;
-            if (method === 'account/read') return payload;
-            return null;
+          connect() {
+            return providerPromise(async () => {});
+          },
+          request(method: string) {
+            return providerPromise(async () => {
+              if (method === 'initialize') return null;
+              if (method === 'account/read') return payload;
+              return null;
+            });
           },
           notify() {},
           close() {},
@@ -337,11 +354,15 @@ describe('localCodexSession fallback cause taxonomy', () => {
   it('keeps a null account as a valid logged-out response', async () => {
     const reader = createLocalCodexSessionReader({
       createClient: () => ({
-        async connect() {},
-        async request(method: string) {
-          if (method === 'initialize') return null;
-          if (method === 'account/read') return { account: null };
-          return null;
+        connect() {
+          return providerPromise(async () => {});
+        },
+        request(method: string) {
+          return providerPromise(async () => {
+            if (method === 'initialize') return null;
+            if (method === 'account/read') return { account: null };
+            return null;
+          });
         },
         notify() {},
         close() {},
@@ -361,12 +382,16 @@ describe('localCodexSession fallback cause taxonomy', () => {
     });
     const reader = createLocalCodexSessionReader({
       createClient: () => ({
-        async connect() {},
-        async request(method: string) {
-          calls.push(method);
-          if (method === 'initialize') return null;
-          if (method === 'account/read') return accountResponse;
-          return null;
+        connect() {
+          return providerPromise(async () => {});
+        },
+        request(method: string) {
+          return providerPromise(async () => {
+            calls.push(method);
+            if (method === 'initialize') return null;
+            if (method === 'account/read') return accountResponse;
+            return null;
+          });
         },
         notify() {},
         close() {},

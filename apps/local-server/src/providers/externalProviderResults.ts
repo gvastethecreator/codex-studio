@@ -1,6 +1,18 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { Effect } from 'effect';
+import {
+  ExternalProviderImageError,
+  ProviderOperationError,
+  providerFetch,
+  providerBody,
+  providerOperation,
+  providerPromise,
+  providerSync,
+  type ProviderEffect,
+  type ProviderSleep,
+} from './providerEffect';
+export { ExternalProviderImageError } from './providerEffect';
 import type { CompiledProviderInput } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
 import { resolveLibraryPath } from '../library';
@@ -21,17 +33,10 @@ export type ExternalProviderFetch = (
 
 const MAX_IMAGE_BYTES = 25 * 1024 * 1024;
 
-export class ExternalProviderImageError extends Error {
-  constructor(message: string) {
-    super(message);
-    this.name = 'ExternalProviderImageError';
-  }
-}
-
 export interface ExternalProviderRetryOptions {
   maxAttempts: number;
   retryDelayMs: number;
-  sleep: (durationMs: number) => Promise<unknown>;
+  sleep: ProviderSleep;
 }
 
 export interface ExternalProviderFileDependencies {
@@ -97,43 +102,57 @@ export function responseSnippet(value: string, secrets: readonly string[] = []) 
     .slice(0, 500);
 }
 
-export async function readResponseTextLimited(
-  response: Pick<Response, 'text'> & { body?: Response['body'] },
-  maxBytes: number,
-) {
-  if (!response.body) {
-    const text = await response.text();
-    if (Buffer.byteLength(text, 'utf8') > maxBytes) {
-      throw new Error(`Provider response exceeded ${maxBytes} bytes.`);
-    }
-    return text;
-  }
-
-  const reader = response.body.getReader();
-  const chunks: Uint8Array[] = [];
-  let total = 0;
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    total += value.byteLength;
-    if (total > maxBytes) {
-      await reader.cancel();
-      throw new Error(`Provider response exceeded ${maxBytes} bytes.`);
-    }
-    chunks.push(value);
-  }
-  return Buffer.concat(chunks).toString('utf8');
+function readBodyBytes(body: ReadableStream<Uint8Array>, maxBytes: number, tooLarge: () => Error) {
+  return providerOperation(
+    Effect.gen(function* () {
+      const reader = yield* Effect.acquireRelease(
+        providerSync(() => body.getReader()),
+        (reader) =>
+          Effect.promise(async () => {
+            await reader.cancel().catch(() => undefined);
+            reader.releaseLock();
+          }),
+      );
+      const chunks: Uint8Array[] = [];
+      let total = 0;
+      while (true) {
+        const { done, value } = yield* providerPromise(
+          () => reader.read(),
+          () => reader.cancel(),
+        );
+        if (done) break;
+        total += value.byteLength;
+        if (total > maxBytes) throw tooLarge();
+        chunks.push(value);
+      }
+      return Buffer.concat(chunks);
+    }),
+  );
 }
 
-function isRetryableStatus(status: number) {
-  return isRetryableProviderStatus(status);
+export function readResponseTextLimited(
+  response: Pick<Response, 'text'> & { body?: Response['body'] },
+  maxBytes: number,
+): ProviderEffect<string> {
+  return providerOperation(
+    Effect.gen(function* () {
+      const tooLarge = () => new Error(`Provider response exceeded ${maxBytes} bytes.`);
+      if (response.body) {
+        const bytes = yield* readBodyBytes(response.body, maxBytes, tooLarge);
+        return bytes.toString('utf8');
+      }
+      const text = yield* providerBody(() => response.text());
+      if (Buffer.byteLength(text, 'utf8') > maxBytes) throw tooLarge();
+      return text;
+    }),
+  );
 }
 
 function isAbortError(error: unknown) {
   return error instanceof Error && error.name === 'AbortError';
 }
 
-export async function fetchExternalProviderWithRetry({
+export function fetchExternalProviderWithRetry({
   label,
   fetch,
   input,
@@ -147,54 +166,38 @@ export async function fetchExternalProviderWithRetry({
   input: string | URL | Request;
   init?: RequestInit;
 } & ExternalProviderRetryOptions) {
-  const retryPolicy = normalizeExternalProviderRetryPolicy({
-    maxAttempts,
-    retryDelayMs,
-  });
-
-  const program = Effect.gen(function* () {
-    let lastNetworkError: unknown = null;
-
-    for (let attempt = 1; attempt <= retryPolicy.maxAttempts; attempt += 1) {
-      const attemptResult = yield* Effect.tryPromise({
-        try: () => fetch(input, init),
-        catch: (error) => error,
-      }).pipe(
-        Effect.map((response) => ({ type: 'response' as const, response })),
-        Effect.catchAll((error) => Effect.succeed({ type: 'error' as const, error })),
-      );
-
-      if (attemptResult.type === 'response') {
-        if (
-          attemptResult.response.ok ||
-          !isRetryableStatus(attemptResult.response.status) ||
-          attempt === retryPolicy.maxAttempts
-        ) {
-          return { response: attemptResult.response, attempts: attempt };
-        }
-      } else {
-        if (isAbortError(attemptResult.error) || attempt === retryPolicy.maxAttempts) {
-          return yield* Effect.fail(attemptResult.error);
-        }
-        lastNetworkError = attemptResult.error;
+  return Effect.suspend(() => {
+    const policy = normalizeExternalProviderRetryPolicy({ maxAttempts, retryDelayMs });
+    let attempts = 0;
+    const request = Effect.gen(function* () {
+      attempts += 1;
+      const response = yield* providerFetch(fetch, input, init);
+      if (
+        !response.ok &&
+        isRetryableProviderStatus(response.status) &&
+        attempts < policy.maxAttempts
+      ) {
+        yield* Effect.promise(async () => {
+          await response.body?.cancel().catch(() => undefined);
+        });
+        return yield* Effect.fail(
+          new ProviderOperationError(new Error(`${label}: HTTP ${response.status}`)),
+        );
       }
-
-      const delayMs = getExternalProviderRetryDelayMs(retryPolicy.retryDelayMs, attempt);
-      yield* Effect.tryPromise({
-        try: () => sleep(delayMs),
-        catch: (error) =>
-          error instanceof Error ? error : new Error(`${label} retry delay failed.`),
-      });
-    }
-
-    return yield* Effect.fail(
-      lastNetworkError instanceof Error
-        ? lastNetworkError
-        : new Error(`${label} failed without a response.`),
+      return { response, attempts };
+    });
+    return request.pipe(
+      Effect.retry({
+        while: (error) => {
+          if (isAbortError(error) || attempts >= policy.maxAttempts || init?.signal?.aborted)
+            return Effect.succeed(false);
+          return sleep(getExternalProviderRetryDelayMs(policy.retryDelayMs, attempts)).pipe(
+            Effect.as(true),
+          );
+        },
+      }),
     );
   });
-
-  return await Effect.runPromise(program);
 }
 
 export function findFirstHostedImageUrl(value: unknown): string | null {
@@ -349,38 +352,24 @@ function validateImageBuffer(buffer: Buffer, declaredMime: string | null) {
   return { buffer, mimeType: detectedMime };
 }
 
-async function readImageBytesLimited(
+function readImageBytesLimited(
   response: Pick<Response, 'arrayBuffer' | 'headers'> & { body?: Response['body'] },
 ) {
-  const contentLength = Number(response.headers.get('content-length'));
-  if (Number.isFinite(contentLength) && contentLength > MAX_IMAGE_BYTES) {
-    throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
-  }
-  if (!response.body) {
-    const buffer = Buffer.from(await response.arrayBuffer());
-    if (buffer.length > MAX_IMAGE_BYTES) {
-      throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
-    }
-    return buffer;
-  }
-
-  const reader = response.body.getReader();
-  const chunks: Uint8Array[] = [];
-  let total = 0;
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    total += value.byteLength;
-    if (total > MAX_IMAGE_BYTES) {
-      await reader.cancel();
-      throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
-    }
-    chunks.push(value);
-  }
-  return Buffer.concat(chunks);
+  return providerOperation(
+    Effect.gen(function* () {
+      const tooLarge = () =>
+        new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
+      const contentLength = Number(response.headers.get('content-length'));
+      if (Number.isFinite(contentLength) && contentLength > MAX_IMAGE_BYTES) throw tooLarge();
+      if (response.body) return yield* readBodyBytes(response.body, MAX_IMAGE_BYTES, tooLarge);
+      const buffer = Buffer.from(yield* providerBody(() => response.arrayBuffer()));
+      if (buffer.length > MAX_IMAGE_BYTES) throw tooLarge();
+      return buffer;
+    }),
+  );
 }
 
-export async function storeHostedImageResult({
+export function storeHostedImageResult({
   providerId,
   providerSlug,
   model,
@@ -398,79 +387,82 @@ export async function storeHostedImageResult({
   maxAttempts,
   retryDelayMs,
   sleep,
-}: StoreHostedImageResultInput): Promise<TurnResult> {
-  let imageResponse: Awaited<ReturnType<ExternalProviderFetch>>;
-  let imageAttempts: number;
-  try {
-    const result = await fetchExternalProviderWithRetry({
-      label: `${providerId} image download`,
-      fetch,
-      input: imageUrl,
-      init: { signal: job.signal, redirect: 'error' },
-      maxAttempts,
-      retryDelayMs,
-      sleep,
-    });
-    imageResponse = result.response;
-    imageAttempts = result.attempts;
-  } catch (error) {
-    if (isAbortError(error)) throw error;
-    throw new ExternalProviderImageError(
-      error instanceof Error ? error.message : `${providerId} image download failed.`,
-    );
-  }
-  if (!imageResponse.ok) {
-    throw new ExternalProviderImageError(
-      `${providerId} image download failed after ${imageAttempts} attempt(s): ${imageResponse.status} ${imageResponse.statusText}`,
-    );
-  }
+}: StoreHostedImageResultInput): ProviderEffect<TurnResult> {
+  return providerOperation(
+    Effect.gen(function* () {
+      const { response: imageResponse, attempts: imageAttempts } =
+        yield* fetchExternalProviderWithRetry({
+          label: `${providerId} image download`,
+          fetch,
+          input: imageUrl,
+          init: { signal: job.signal, redirect: 'error' },
+          maxAttempts,
+          retryDelayMs,
+          sleep,
+        }).pipe(
+          Effect.mapError((error) =>
+            isAbortError(error) ? error : new ExternalProviderImageError(error.message),
+          ),
+        );
+      if (!imageResponse.ok) {
+        throw new ExternalProviderImageError(
+          `${providerId} image download failed after ${imageAttempts} attempt(s): ${imageResponse.status} ${imageResponse.statusText}`,
+        );
+      }
 
-  const responseMime = imageResponse.headers.get('content-type')?.split(';')[0]?.trim() ?? null;
-  if (!responseMime?.startsWith('image/')) {
-    throw new ExternalProviderImageError('Provider image download returned a non-image response.');
-  }
-  const validated = validateImageBuffer(await readImageBytesLimited(imageResponse), responseMime);
-  const ext = extensionFromMime(validated.mimeType) ?? extensionFromUrl(imageUrl) ?? '.png';
-  const mimeType = validated.mimeType;
-  const safeJobId = sanitizeFilePart(job.id);
-  const outputPath = files.resolveLibraryPath(
-    'assets',
-    `${safeJobId}-${providerSlug}-${fileTimestamp ?? files.now()}${ext}`,
+      const responseMime = imageResponse.headers.get('content-type')?.split(';')[0]?.trim() ?? null;
+      if (!responseMime?.startsWith('image/')) {
+        throw new ExternalProviderImageError(
+          'Provider image download returned a non-image response.',
+        );
+      }
+      const validated = validateImageBuffer(
+        yield* readImageBytesLimited(imageResponse),
+        responseMime,
+      );
+      const ext = extensionFromMime(validated.mimeType) ?? extensionFromUrl(imageUrl) ?? '.png';
+      const mimeType = validated.mimeType;
+      const safeJobId = sanitizeFilePart(job.id);
+      const outputPath = files.resolveLibraryPath(
+        'assets',
+        `${safeJobId}-${providerSlug}-${fileTimestamp ?? files.now()}${ext}`,
+      );
+      files.mkdir(path.dirname(outputPath), { recursive: true });
+      files.writeFile(outputPath, validated.buffer);
+
+      const transcriptDir = files.resolveLibraryPath('transcripts', safeJobId);
+      files.mkdir(transcriptDir, { recursive: true });
+      const transcriptPath = path.join(transcriptDir, `${providerSlug}.json`);
+      files.writeFile(
+        transcriptPath,
+        JSON.stringify(
+          {
+            providerId,
+            model,
+            endpointBase,
+            sourceSpecId: compiledInput.sourceSpecId,
+            task: compiledInput.task,
+            outputPath,
+            requestAttempts,
+            imageAttempts,
+            ...(diagnostics ? { diagnostics } : {}),
+            responseShape: isRecord(responseJson) ? Object.keys(responseJson).sort() : [],
+          },
+          null,
+          2,
+        ),
+        'utf8',
+      );
+
+      return {
+        assets: [{ type: 'file', sourcePath: outputPath, mimeType }],
+        transcript: transcriptPath,
+        turnId: null,
+        threadId: null,
+        durationMs: Math.max(0, files.now() - startedAt),
+      };
+    }),
   );
-  files.mkdir(path.dirname(outputPath), { recursive: true });
-  files.writeFile(outputPath, validated.buffer);
-
-  const transcriptDir = files.resolveLibraryPath('transcripts', safeJobId);
-  files.mkdir(transcriptDir, { recursive: true });
-  const transcriptPath = path.join(transcriptDir, `${providerSlug}.json`);
-  files.writeFile(
-    transcriptPath,
-    JSON.stringify(
-      {
-        providerId,
-        model,
-        endpointBase,
-        sourceSpecId: compiledInput.sourceSpecId,
-        task: compiledInput.task,
-        outputPath,
-        requestAttempts,
-        imageAttempts,
-        ...(diagnostics ? { diagnostics } : {}),
-        responseShape: isRecord(responseJson) ? Object.keys(responseJson).sort() : [],
-      },
-      null,
-      2,
-    ),
-    'utf8',
-  );
-
-  return {
-    assets: [{ type: 'file', sourcePath: outputPath, mimeType }],
-    transcript: transcriptPath,
-    turnId: null,
-    threadId: null,
-    durationMs: Math.max(0, files.now() - startedAt),
-  };
 }
 
 export function storeInlineImageResult({
@@ -486,48 +478,50 @@ export function storeInlineImageResult({
   startedAt,
   diagnostics,
   files,
-}: StoreInlineImageResultInput): TurnResult {
-  const responseMime = image.mimeType?.split(';')[0]?.trim() ?? null;
-  const validated = decodeAndValidateInlineImage(image.data, responseMime);
-  const ext = extensionFromMime(validated.mimeType) ?? '.png';
-  const mimeType = validated.mimeType;
-  const safeJobId = sanitizeFilePart(job.id);
-  const outputPath = files.resolveLibraryPath(
-    'assets',
-    `${safeJobId}-${providerSlug}-${files.now()}${ext}`,
-  );
-  files.mkdir(path.dirname(outputPath), { recursive: true });
-  files.writeFile(outputPath, validated.buffer);
+}: StoreInlineImageResultInput): ProviderEffect<TurnResult> {
+  return providerSync(() => {
+    const responseMime = image.mimeType?.split(';')[0]?.trim() ?? null;
+    const validated = decodeAndValidateInlineImage(image.data, responseMime);
+    const ext = extensionFromMime(validated.mimeType) ?? '.png';
+    const mimeType = validated.mimeType;
+    const safeJobId = sanitizeFilePart(job.id);
+    const outputPath = files.resolveLibraryPath(
+      'assets',
+      `${safeJobId}-${providerSlug}-${files.now()}${ext}`,
+    );
+    files.mkdir(path.dirname(outputPath), { recursive: true });
+    files.writeFile(outputPath, validated.buffer);
 
-  const transcriptDir = files.resolveLibraryPath('transcripts', safeJobId);
-  files.mkdir(transcriptDir, { recursive: true });
-  const transcriptPath = path.join(transcriptDir, `${providerSlug}.json`);
-  files.writeFile(
-    transcriptPath,
-    JSON.stringify(
-      {
-        providerId,
-        model,
-        endpointBase,
-        sourceSpecId: compiledInput.sourceSpecId,
-        task: compiledInput.task,
-        outputPath,
-        requestAttempts,
-        imageAttempts: 0,
-        ...(diagnostics ? { diagnostics } : {}),
-        responseShape: isRecord(responseJson) ? Object.keys(responseJson).sort() : [],
-      },
-      null,
-      2,
-    ),
-    'utf8',
-  );
+    const transcriptDir = files.resolveLibraryPath('transcripts', safeJobId);
+    files.mkdir(transcriptDir, { recursive: true });
+    const transcriptPath = path.join(transcriptDir, `${providerSlug}.json`);
+    files.writeFile(
+      transcriptPath,
+      JSON.stringify(
+        {
+          providerId,
+          model,
+          endpointBase,
+          sourceSpecId: compiledInput.sourceSpecId,
+          task: compiledInput.task,
+          outputPath,
+          requestAttempts,
+          imageAttempts: 0,
+          ...(diagnostics ? { diagnostics } : {}),
+          responseShape: isRecord(responseJson) ? Object.keys(responseJson).sort() : [],
+        },
+        null,
+        2,
+      ),
+      'utf8',
+    );
 
-  return {
-    assets: [{ type: 'file', sourcePath: outputPath, mimeType }],
-    transcript: transcriptPath,
-    turnId: null,
-    threadId: null,
-    durationMs: Math.max(0, files.now() - startedAt),
-  };
+    return {
+      assets: [{ type: 'file', sourcePath: outputPath, mimeType }],
+      transcript: transcriptPath,
+      turnId: null,
+      threadId: null,
+      durationMs: Math.max(0, files.now() - startedAt),
+    };
+  });
 }

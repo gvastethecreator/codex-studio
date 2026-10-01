@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerPromise, providerSync } from './providers/providerEffect';
 import { describe, expect, it, vi } from 'vitest';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -101,16 +103,19 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run'], co
     run:
       run ??
       (({ signal }) =>
-        new Promise((_, reject) => {
-          providerStarted.resolve();
-          const rejectAsAborted = () => {
-            const error = new Error('worker interrupted');
-            error.name = 'AbortError';
-            reject(error);
-          };
-          if (signal?.aborted) rejectAsAborted();
-          else signal?.addEventListener('abort', rejectAsAborted, { once: true });
-        })),
+        providerPromise(
+          () =>
+            new Promise<never>((_, reject) => {
+              providerStarted.resolve();
+              const rejectAsAborted = () => {
+                const error = new Error('worker interrupted');
+                error.name = 'AbortError';
+                reject(error);
+              };
+              if (signal?.aborted) rejectAsAborted();
+              else signal?.addEventListener('abort', rejectAsAborted, { once: true });
+            }),
+        )),
   };
   const addJobEvent = vi.fn();
   const publishEvent = vi.fn();
@@ -148,6 +153,41 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run'], co
 }
 
 describe('worker shutdown', () => {
+  it('holds provider capacity until cancellation cleanup finishes', async () => {
+    const started = createDeferred();
+    const cleaning = createDeferred();
+    const releaseCleanup = createDeferred();
+    const nextStarted = createDeferred();
+    const first = createJob('cleanup-first');
+    const next = createJob('cleanup-next');
+    const harness = createWorkerHarness([first, next], ({ id }) =>
+      Effect.gen(function* () {
+        if (id === first.id) {
+          yield* Effect.addFinalizer(() =>
+            providerPromise(async () => {
+              cleaning.resolve();
+              await releaseCleanup.promise;
+            }).pipe(Effect.orDie),
+          );
+          started.resolve();
+          return yield* Effect.never;
+        }
+        nextStarted.resolve();
+        return { assets: [], transcript: '', threadId: null, turnId: null, durationMs: 0 };
+      }),
+    );
+    harness.controller.enqueueJob(first);
+    harness.controller.enqueueJob(next);
+    await started.promise;
+    harness.controller.cancelQueuedOrRunningJob(first.id);
+    await cleaning.promise;
+    expect(harness.jobs.get(next.id)?.status).toBe('queued');
+    expect(harness.controller.getWorkerStatus().activeWorkerCount).toBe(1);
+    releaseCleanup.resolve();
+    await nextStarted.promise;
+    expect(harness.jobs.get(first.id)?.status).toBe('cancelled');
+    await harness.controller.shutdown();
+  });
   it('rejects invalid resource limits and cancels reserved work before a provider starts', async () => {
     for (const global of [0, -1, 1.5, Infinity, 17]) {
       expect(() => validateWorkerLimits({ global, providers: {} })).toThrow('global capacity');
@@ -159,13 +199,15 @@ describe('worker shutdown', () => {
     }
     const cancelled = { ...createJob('reserved'), providerId: 'comfy' as const };
     const next = { ...createJob('next'), providerId: 'codex' as const };
-    const run = vi.fn(async () => ({
-      assets: [],
-      transcript: '',
-      threadId: null,
-      turnId: null,
-      durationMs: 1,
-    }));
+    const run = vi.fn(() =>
+      providerSync(() => ({
+        assets: [],
+        transcript: '',
+        threadId: null,
+        turnId: null,
+        durationMs: 1,
+      })),
+    );
     const harness = createWorkerHarness([cancelled, next], run);
     harness.controller.enqueueJob(cancelled);
     harness.controller.enqueueJob(next);
@@ -203,34 +245,35 @@ describe('worker shutdown', () => {
     let maximumActive = 0;
     const harness = createWorkerHarness(
       jobList,
-      async ({ id }) => {
-        const item = workload.find((candidate) => candidate.id === id)!;
-        active += 1;
-        maximumActive = Math.max(maximumActive, active);
-        sequence.push({
-          event: 'start',
-          id,
-          providerId: item.providerId,
-          atMs: performance.now() - startedAt,
-          active,
-        });
-        await new Promise((resolve) => setTimeout(resolve, item.durationMs));
-        sequence.push({
-          event: 'provider-complete',
-          id,
-          providerId: item.providerId,
-          atMs: performance.now() - startedAt,
-          active,
-        });
-        active -= 1;
-        return {
-          assets: [],
-          transcript: '',
-          threadId: null,
-          turnId: null,
-          durationMs: item.durationMs,
-        };
-      },
+      ({ id }) =>
+        providerPromise(async () => {
+          const item = workload.find((candidate) => candidate.id === id)!;
+          active += 1;
+          maximumActive = Math.max(maximumActive, active);
+          sequence.push({
+            event: 'start',
+            id,
+            providerId: item.providerId,
+            atMs: performance.now() - startedAt,
+            active,
+          });
+          await new Promise((resolve) => setTimeout(resolve, item.durationMs));
+          sequence.push({
+            event: 'provider-complete',
+            id,
+            providerId: item.providerId,
+            atMs: performance.now() - startedAt,
+            active,
+          });
+          active -= 1;
+          return {
+            assets: [],
+            transcript: '',
+            threadId: null,
+            turnId: null,
+            durationMs: item.durationMs,
+          };
+        }),
       2,
     );
     try {
@@ -360,9 +403,11 @@ describe('worker shutdown', () => {
   });
   it('persists uncertain provider acceptance as review and blocks duplicate retry or false cancellation after reload', async () => {
     const job = { ...createJob('job-uncertain'), providerId: 'comfy' as const };
-    const run = vi.fn(async () => {
-      throw new ProviderExecutionUncertainError('Provider acceptance unknown');
-    });
+    const run = vi.fn(() =>
+      providerSync(() => {
+        throw new ProviderExecutionUncertainError('Provider acceptance unknown');
+      }),
+    );
     const { controller, jobs, publishEvent } = createWorkerHarness([job], run);
     controller.enqueueJob(job);
     await vi.waitFor(() => expect(jobs.get(job.id)?.status).toBe('needs_review'));

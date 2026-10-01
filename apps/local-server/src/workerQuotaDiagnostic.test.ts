@@ -1,3 +1,4 @@
+import { providerSync } from './providers/providerEffect';
 import { describe, expect, it, vi } from 'vitest';
 
 import type { Job } from '../../../packages/shared/src';
@@ -114,19 +115,21 @@ describe('worker quota diagnostic metadata', () => {
   it('projects the allowlisted diagnostic onto job.failed', async () => {
     const diagnostic = quotaDiagnostic();
     const job = createJob('failed-quota');
-    const harness = createHarness(async () => {
-      throw new SubscriptionHttpError(
-        'ChatGPT reported an exhausted usage limit. PRIVATE_PROMPT_SENTINEL',
-        {
-          code: 'source_limit',
-          fallbackAllowed: false,
-          httpStatus: 429,
-          providerCode: 'usage_limit_reached',
-          retryAfterSeconds: 30,
-          diagnostic,
-        },
-      );
-    });
+    const harness = createHarness(() =>
+      providerSync(() => {
+        throw new SubscriptionHttpError(
+          'ChatGPT reported an exhausted usage limit. PRIVATE_PROMPT_SENTINEL',
+          {
+            code: 'source_limit',
+            fallbackAllowed: false,
+            httpStatus: 429,
+            providerCode: 'usage_limit_reached',
+            retryAfterSeconds: 30,
+            diagnostic,
+          },
+        );
+      }),
+    );
     harness.jobs.set(job.id, job);
     harness.controller.enqueueJob(job);
     await vi.waitFor(() => expect(harness.jobs.get(job.id)?.status).toBe('failed'));
@@ -151,16 +154,21 @@ describe('worker quota diagnostic metadata', () => {
   it('projects the cause diagnostic onto job.needs_review', async () => {
     const diagnostic = quotaDiagnostic();
     const job = createJob('review-quota');
-    const harness = createHarness(async () => {
-      throw new ProviderExecutionUncertainError('Review this job before sending another request.', {
-        cause: new SubscriptionHttpError('service failure', {
-          code: 'http_error',
-          fallbackAllowed: false,
-          httpStatus: 503,
-          diagnostic,
-        }),
-      });
-    });
+    const harness = createHarness(() =>
+      providerSync(() => {
+        throw new ProviderExecutionUncertainError(
+          'Review this job before sending another request.',
+          {
+            cause: new SubscriptionHttpError('service failure', {
+              code: 'http_error',
+              fallbackAllowed: false,
+              httpStatus: 503,
+              diagnostic,
+            }),
+          },
+        );
+      }),
+    );
     harness.jobs.set(job.id, job);
     harness.controller.enqueueJob(job);
     await vi.waitFor(() => expect(harness.jobs.get(job.id)?.status).toBe('needs_review'));
@@ -176,13 +184,15 @@ describe('worker quota diagnostic metadata', () => {
 
   it('still fails the job when the attached diagnostic is not exportable', async () => {
     const job = createJob('invalid-diagnostic');
-    const harness = createHarness(async () => {
-      throw new SubscriptionHttpError('limit', {
-        code: 'source_limit',
-        fallbackAllowed: false,
-        diagnostic: { schemaVersion: 9, prompt: 'PRIVATE_PROMPT_SENTINEL' } as never,
-      });
-    });
+    const harness = createHarness(() =>
+      providerSync(() => {
+        throw new SubscriptionHttpError('limit', {
+          code: 'source_limit',
+          fallbackAllowed: false,
+          diagnostic: { schemaVersion: 9, prompt: 'PRIVATE_PROMPT_SENTINEL' } as never,
+        });
+      }),
+    );
     harness.jobs.set(job.id, job);
     harness.controller.enqueueJob(job);
     await vi.waitFor(() => expect(harness.jobs.get(job.id)?.status).toBe('failed'));

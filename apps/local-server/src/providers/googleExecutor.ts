@@ -1,3 +1,11 @@
+import { Effect } from 'effect';
+import {
+  providerOperation,
+  providerPromise,
+  providerBody,
+  type ProviderEffect,
+  type ProviderSleep,
+} from './providerEffect';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { extname } from 'node:path';
 import type { GenerationTaskKind } from '../../../../packages/shared/src';
@@ -42,7 +50,7 @@ export interface GoogleImageExecutorDependencies {
   writeFile?: typeof writeFileSync;
   readFile?: ReadLocalFile;
   now?: () => number;
-  sleep?: (durationMs: number) => Promise<unknown>;
+  sleep?: ProviderSleep;
   maxAttempts?: number;
   retryDelayMs?: number;
   getAccessToken?: (env: Record<string, string | undefined>) => Promise<string>;
@@ -248,103 +256,107 @@ export function createGoogleImageExecutor({
   writeFile = writeFileSync,
   readFile = readFileSync,
   now = () => Date.now(),
-  sleep = (durationMs) => Bun.sleep(durationMs),
+  sleep = (durationMs) => Effect.sleep(durationMs),
   maxAttempts = DEFAULT_MAX_ATTEMPTS,
   retryDelayMs = DEFAULT_RETRY_DELAY_MS,
   getAccessToken = (credentialEnv) =>
     getUsableAccessToken('google', { env: credentialEnv, fetch: fetchFn as typeof fetch }),
   invalidateAccessToken = (message) => invalidateStoredAccessToken('google', message),
 }: GoogleImageExecutorDependencies = {}): ExternalProviderExecutor {
-  return async function executeGoogleImageJob({
+  return function executeGoogleImageJob({
     providerId,
     job,
     compiledInput,
-  }: ExternalProviderExecutionContext): Promise<TurnResult> {
-    if (providerId !== 'google' || compiledInput.providerId !== 'google') {
-      throw new Error(`Google executor received provider "${providerId}".`);
-    }
-    if (compiledInput.payloadKind !== 'api_request') {
-      throw new Error(`Google executor cannot run payload "${compiledInput.payloadKind}".`);
-    }
+  }: ExternalProviderExecutionContext): ProviderEffect<TurnResult> {
+    return providerOperation(
+      Effect.gen(function* () {
+        if (providerId !== 'google' || compiledInput.providerId !== 'google') {
+          throw new Error(`Google executor received provider "${providerId}".`);
+        }
+        if (compiledInput.payloadKind !== 'api_request') {
+          throw new Error(`Google executor cannot run payload "${compiledInput.payloadKind}".`);
+        }
 
-    const startedAt = now();
-    const payload = asGooglePayload(compiledInput.payload);
-    const apiKey = readGoogleApiKey(env);
-    const oauthConfig = apiKey ? null : readGoogleOAuthConfig(env);
-    const cloudProjectId = oauthConfig?.cloudProjectId ?? null;
-    const accessToken = apiKey ? null : await getAccessToken(env);
-    const model =
-      payload.model?.trim() ||
-      env.GOOGLE_IMAGE_MODEL?.trim() ||
-      env.GEMINI_IMAGE_MODEL?.trim() ||
-      DEFAULT_GOOGLE_IMAGE_MODEL;
-    if (!isGoogleImageModel(model)) {
-      throw new Error(
-        `Google image model "${model}" is unsupported. Available models: ${GOOGLE_IMAGE_MODELS.join(', ')}.`,
-      );
-    }
-    if (payload.output.count !== 1) {
-      throw new Error('Google image generation requires exactly one output image per Job.');
-    }
-    const apiBase = resolveGoogleApiBase(env.GOOGLE_API_BASE);
-    const endpoint = `${apiBase}/interactions`;
-    const requestBody = createGoogleRequestBody(payload, compiledInput.task, readFile, model);
-    const headers: Record<string, string> = {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-      ...(apiKey ? { 'x-goog-api-key': apiKey } : {}),
-      ...(accessToken ? { Authorization: `Bearer ${accessToken}` } : {}),
-      ...(!apiKey && cloudProjectId ? { 'x-goog-user-project': cloudProjectId } : {}),
-    };
-    const { response, attempts: requestAttempts } = await fetchExternalProviderWithRetry({
-      label: 'Google image request',
-      fetch: fetchFn,
-      input: endpoint,
-      init: {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(requestBody),
-        signal: job.signal,
-      },
-      maxAttempts,
-      retryDelayMs,
-      sleep,
-    });
+        const startedAt = now();
+        const payload = asGooglePayload(compiledInput.payload);
+        const apiKey = readGoogleApiKey(env);
+        const oauthConfig = apiKey ? null : readGoogleOAuthConfig(env);
+        const cloudProjectId = oauthConfig?.cloudProjectId ?? null;
+        const accessToken = apiKey ? null : yield* providerPromise(() => getAccessToken(env));
+        const model =
+          payload.model?.trim() ||
+          env.GOOGLE_IMAGE_MODEL?.trim() ||
+          env.GEMINI_IMAGE_MODEL?.trim() ||
+          DEFAULT_GOOGLE_IMAGE_MODEL;
+        if (!isGoogleImageModel(model)) {
+          throw new Error(
+            `Google image model "${model}" is unsupported. Available models: ${GOOGLE_IMAGE_MODELS.join(', ')}.`,
+          );
+        }
+        if (payload.output.count !== 1) {
+          throw new Error('Google image generation requires exactly one output image per Job.');
+        }
+        const apiBase = resolveGoogleApiBase(env.GOOGLE_API_BASE);
+        const endpoint = `${apiBase}/interactions`;
+        const requestBody = createGoogleRequestBody(payload, compiledInput.task, readFile, model);
+        const headers: Record<string, string> = {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+          ...(apiKey ? { 'x-goog-api-key': apiKey } : {}),
+          ...(accessToken ? { Authorization: `Bearer ${accessToken}` } : {}),
+          ...(!apiKey && cloudProjectId ? { 'x-goog-user-project': cloudProjectId } : {}),
+        };
+        const { response, attempts: requestAttempts } = yield* fetchExternalProviderWithRetry({
+          label: 'Google image request',
+          fetch: fetchFn,
+          input: endpoint,
+          init: {
+            method: 'POST',
+            headers,
+            body: JSON.stringify(requestBody),
+            signal: job.signal,
+          },
+          maxAttempts,
+          retryDelayMs,
+          sleep,
+        });
 
-    if (!response.ok) {
-      const body = await response.text().catch(() => '');
-      if (!apiKey && response.status === 401) {
-        invalidateAccessToken('Google rejected the stored access token. Sign in again.');
-      }
-      throw new Error(
-        `Google image request failed after ${requestAttempts} attempt(s): ${response.status} ${response.statusText}${body ? ` ${responseSnippet(body, [apiKey ?? '', accessToken ?? '', cloudProjectId ?? ''])}` : ''}`,
-      );
-    }
+        if (!response.ok) {
+          const body = yield* providerBody(() => response.text().catch(() => ''));
+          if (!apiKey && response.status === 401) {
+            invalidateAccessToken('Google rejected the stored access token. Sign in again.');
+          }
+          throw new Error(
+            `Google image request failed after ${requestAttempts} attempt(s): ${response.status} ${response.statusText}${body ? ` ${responseSnippet(body, [apiKey ?? '', accessToken ?? '', cloudProjectId ?? ''])}` : ''}`,
+          );
+        }
 
-    const json = await response.json();
-    const image = findFirstInlineImageData(json);
-    if (!image) {
-      throw new Error('Google image response did not include inline image data.');
-    }
+        const json = yield* providerBody(() => response.json());
+        const image = findFirstInlineImageData(json);
+        if (!image) {
+          throw new Error('Google image response did not include inline image data.');
+        }
 
-    return storeInlineImageResult({
-      providerId: 'google',
-      providerSlug: 'google',
-      model,
-      endpointBase: apiBase,
-      job,
-      compiledInput,
-      responseJson: json,
-      image,
-      requestAttempts,
-      startedAt,
-      diagnostics: createGoogleTranscriptDiagnostics(payload, requestBody),
-      files: {
-        resolveLibraryPath: resolveLibrary,
-        mkdir,
-        writeFile,
-        now,
-      },
-    });
+        return yield* storeInlineImageResult({
+          providerId: 'google',
+          providerSlug: 'google',
+          model,
+          endpointBase: apiBase,
+          job,
+          compiledInput,
+          responseJson: json,
+          image,
+          requestAttempts,
+          startedAt,
+          diagnostics: createGoogleTranscriptDiagnostics(payload, requestBody),
+          files: {
+            resolveLibraryPath: resolveLibrary,
+            mkdir,
+            writeFile,
+            now,
+          },
+        });
+      }),
+    );
   };
 }

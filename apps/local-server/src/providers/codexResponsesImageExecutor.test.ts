@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { describe, expect, it, vi } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
@@ -66,34 +67,40 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       }) as typeof import('node:fs').writeFileSync,
       now: () => 1,
     });
-    const result = await executor({
-      id: 'job-chatgpt',
-      providerId: 'chatgpt',
-      workspaceId: 'workspace-1',
-      prompt: 'stone keep',
-      checkpointRemoteExecution: vi.fn(),
-      execution: {
-        ...CODEX_HTTP_EXECUTION_DEFAULTS,
-        providerOptions: {
-          chatgpt: {
-            image: {
-              model: CODEX_HTTP_IMAGE_MODEL,
-              size: '1536x864',
-              quality: 'medium',
-              background: 'transparent',
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        executor({
+          id: 'job-chatgpt',
+          providerId: 'chatgpt',
+          workspaceId: 'workspace-1',
+          prompt: 'stone keep',
+          checkpointRemoteExecution: vi.fn(),
+          execution: {
+            ...CODEX_HTTP_EXECUTION_DEFAULTS,
+            providerOptions: {
+              chatgpt: {
+                image: {
+                  model: CODEX_HTTP_IMAGE_MODEL,
+                  size: '1536x864',
+                  quality: 'medium',
+                  background: 'transparent',
+                },
+              },
             },
           },
-        },
-      },
-      sourceSpec: createGenerationTaskSpec({
-        id: 'spec-wide',
-        task: 'image_generate',
-        providerId: 'chatgpt',
-        prompt: 'stone keep',
-        assets: [{ role: 'reference', name: 'ref.png', localPath: 'D:/studio-library/ref.png' }],
-        output: { aspectRatio: '16:9', imageSize: '1536x864', background: 'transparent' },
-      }),
-    });
+          sourceSpec: createGenerationTaskSpec({
+            id: 'spec-wide',
+            task: 'image_generate',
+            providerId: 'chatgpt',
+            prompt: 'stone keep',
+            assets: [
+              { role: 'reference', name: 'ref.png', localPath: 'D:/studio-library/ref.png' },
+            ],
+            output: { aspectRatio: '16:9', imageSize: '1536x864', background: 'transparent' },
+          }),
+        }),
+      ),
+    );
     expect(result.assets).toHaveLength(1);
     expect(result).toMatchObject({ threadId: null, turnId: null });
     expect(payload).toMatchObject({
@@ -149,20 +156,24 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
       now: () => 1,
     });
-    await executor({
-      id: 'job-4k',
-      workspaceId: 'workspace-1',
-      prompt: 'stone keep',
-      checkpointRemoteExecution: vi.fn(),
-      execution: httpExecution('3840x2160'),
-      sourceSpec: createGenerationTaskSpec({
-        id: 'spec-4k',
-        task: 'image_generate',
-        providerId: 'codex',
-        prompt: 'stone keep',
-        output: { aspectRatio: '16:9', imageSize: '3840x2160' },
-      }),
-    });
+    await Effect.runPromise(
+      Effect.scoped(
+        executor({
+          id: 'job-4k',
+          workspaceId: 'workspace-1',
+          prompt: 'stone keep',
+          checkpointRemoteExecution: vi.fn(),
+          execution: httpExecution('3840x2160'),
+          sourceSpec: createGenerationTaskSpec({
+            id: 'spec-4k',
+            task: 'image_generate',
+            providerId: 'codex',
+            prompt: 'stone keep',
+            output: { aspectRatio: '16:9', imageSize: '3840x2160' },
+          }),
+        }),
+      ),
+    );
     expect(payload).toMatchObject({
       tools: [{ type: 'image_generation', size: '3840x2160' }],
     });
@@ -196,13 +207,17 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
     });
     await expect(
-      executor({
-        id: 'job-empty',
-        workspaceId: 'workspace-1',
-        prompt: 'stone keep',
-        checkpointRemoteExecution: vi.fn(),
-        execution: httpExecution(),
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'job-empty',
+            workspaceId: 'workspace-1',
+            prompt: 'stone keep',
+            checkpointRemoteExecution: vi.fn(),
+            execution: httpExecution(),
+          }),
+        ),
+      ),
     ).rejects.toMatchObject({
       code: 'execution_uncertain',
     });
@@ -218,13 +233,17 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
     });
     await expect(
-      executor({
-        id: 'job-forbidden',
-        workspaceId: 'workspace-1',
-        prompt: 'stone keep',
-        checkpointRemoteExecution: vi.fn(),
-        execution: httpExecution(),
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'job-forbidden',
+            workspaceId: 'workspace-1',
+            prompt: 'stone keep',
+            checkpointRemoteExecution: vi.fn(),
+            execution: httpExecution(),
+          }),
+        ),
+      ),
     ).rejects.toMatchObject({
       code: 'entitlement_denied',
       fallbackAllowed: false,
@@ -263,13 +282,17 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
           new Response(JSON.stringify({ error }), { status, headers: { 'Retry-After': '30' } }),
       });
       await expect(
-        executor({
-          id: 'job-http-limit',
-          workspaceId: 'workspace-1',
-          prompt: 'stone keep',
-          checkpointRemoteExecution: vi.fn(),
-          execution: httpExecution(),
-        }),
+        Effect.runPromise(
+          Effect.scoped(
+            executor({
+              id: 'job-http-limit',
+              workspaceId: 'workspace-1',
+              prompt: 'stone keep',
+              checkpointRemoteExecution: vi.fn(),
+              execution: httpExecution(),
+            }),
+          ),
+        ),
       ).rejects.toMatchObject({ code: expected, fallbackAllowed: false, retryAfterSeconds: 30 });
     },
   );
@@ -341,13 +364,17 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
         writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
       });
       await expect(
-        executor({
-          id: 'job-moderation',
-          workspaceId: 'workspace-1',
-          prompt: 'stone keep',
-          checkpointRemoteExecution: checkpoint,
-          execution: httpExecution(),
-        }),
+        Effect.runPromise(
+          Effect.scoped(
+            executor({
+              id: 'job-moderation',
+              workspaceId: 'workspace-1',
+              prompt: 'stone keep',
+              checkpointRemoteExecution: checkpoint,
+              execution: httpExecution(),
+            }),
+          ),
+        ),
       ).rejects.toMatchObject({
         code,
         fallbackAllowed: false,
@@ -372,13 +399,17 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
     });
 
     await expect(
-      executor({
-        id: 'job-unauthorized',
-        workspaceId: 'workspace-1',
-        prompt: 'stone keep',
-        checkpointRemoteExecution: vi.fn(),
-        execution: httpExecution(),
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'job-unauthorized',
+            workspaceId: 'workspace-1',
+            prompt: 'stone keep',
+            checkpointRemoteExecution: vi.fn(),
+            execution: httpExecution(),
+          }),
+        ),
+      ),
     ).rejects.toMatchObject({
       code: 'invalid_grant',
       message: expect.stringContaining('rejected [redacted]'),
@@ -402,20 +433,24 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       readFile: () => new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]),
     });
     await expect(
-      executor({
-        id: 'job-too-many-sources',
-        workspaceId: 'workspace-1',
-        prompt: 'combine sources',
-        checkpointRemoteExecution: vi.fn(),
-        execution: httpExecution(),
-        sourceSpec: createGenerationTaskSpec({
-          id: 'spec-too-many-sources',
-          task: 'image_edit',
-          providerId: 'codex',
-          prompt: 'combine sources',
-          assets,
-        }),
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'job-too-many-sources',
+            workspaceId: 'workspace-1',
+            prompt: 'combine sources',
+            checkpointRemoteExecution: vi.fn(),
+            execution: httpExecution(),
+            sourceSpec: createGenerationTaskSpec({
+              id: 'spec-too-many-sources',
+              task: 'image_edit',
+              providerId: 'codex',
+              prompt: 'combine sources',
+              assets,
+            }),
+          }),
+        ),
+      ),
     ).rejects.toThrow('at most 16 input images');
   });
   it('rejects unsupported execution settings before credentials or submission', async () => {
@@ -423,18 +458,22 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
     const fetch = vi.fn();
     const executor = createChatgptResponsesImageExecutor({ getAccessToken, fetch });
     await expect(
-      executor({
-        id: 'invalid',
-        workspaceId: 'a',
-        prompt: 'prompt',
-        checkpointRemoteExecution: vi.fn(),
-        execution: {
-          ...httpExecution(),
-          model: 'gpt-5.4',
-          reasoningEffort: 'high',
-          serviceTier: 'fast',
-        },
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'invalid',
+            workspaceId: 'a',
+            prompt: 'prompt',
+            checkpointRemoteExecution: vi.fn(),
+            execution: {
+              ...httpExecution(),
+              model: 'gpt-5.4',
+              reasoningEffort: 'high',
+              serviceTier: 'fast',
+            },
+          }),
+        ),
+      ),
     ).rejects.toThrow('Apply the HTTP settings');
     expect(getAccessToken).not.toHaveBeenCalled();
     expect(fetch).not.toHaveBeenCalled();
@@ -454,21 +493,25 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       fetch,
     });
     await expect(
-      executor({
-        id: 'lost',
-        providerId: 'chatgpt',
-        workspaceId: 'a',
-        prompt: 'prompt',
-        execution: {
-          ...CODEX_HTTP_EXECUTION_DEFAULTS,
-          providerOptions: {
-            chatgpt: {
-              image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'lost',
+            providerId: 'chatgpt',
+            workspaceId: 'a',
+            prompt: 'prompt',
+            execution: {
+              ...CODEX_HTTP_EXECUTION_DEFAULTS,
+              providerOptions: {
+                chatgpt: {
+                  image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+                },
+              },
             },
-          },
-        },
-        checkpointRemoteExecution,
-      }),
+            checkpointRemoteExecution,
+          }),
+        ),
+      ),
     ).rejects.toMatchObject({
       code: 'execution_uncertain',
       message: expect.not.stringContaining('codex-secret'),
@@ -478,22 +521,26 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       fetch,
     });
     await expect(
-      restarted({
-        id: 'lost',
-        providerId: 'chatgpt',
-        workspaceId: 'a',
-        prompt: 'prompt',
-        execution: {
-          ...CODEX_HTTP_EXECUTION_DEFAULTS,
-          providerOptions: {
-            chatgpt: {
-              image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+      Effect.runPromise(
+        Effect.scoped(
+          restarted({
+            id: 'lost',
+            providerId: 'chatgpt',
+            workspaceId: 'a',
+            prompt: 'prompt',
+            execution: {
+              ...CODEX_HTTP_EXECUTION_DEFAULTS,
+              providerOptions: {
+                chatgpt: {
+                  image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+                },
+              },
             },
-          },
-        },
-        remoteExecution: stored,
-        checkpointRemoteExecution,
-      }),
+            remoteExecution: stored,
+            checkpointRemoteExecution,
+          }),
+        ),
+      ),
     ).rejects.toMatchObject({ code: 'execution_uncertain' });
     expect(fetch).toHaveBeenCalledTimes(1);
   });
@@ -524,21 +571,25 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       fetch,
       now: () => Date.parse('2026-09-25T22:00:00.000Z'),
     });
-    const error = await executor({
-      id: 'job-quota',
-      providerId: 'chatgpt',
-      workspaceId: 'workspace-1',
-      prompt: 'stone keep',
-      checkpointRemoteExecution: vi.fn(),
-      execution: {
-        ...CODEX_HTTP_EXECUTION_DEFAULTS,
-        providerOptions: {
-          chatgpt: {
-            image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+    const error = await Effect.runPromise(
+      Effect.scoped(
+        executor({
+          id: 'job-quota',
+          providerId: 'chatgpt',
+          workspaceId: 'workspace-1',
+          prompt: 'stone keep',
+          checkpointRemoteExecution: vi.fn(),
+          execution: {
+            ...CODEX_HTTP_EXECUTION_DEFAULTS,
+            providerOptions: {
+              chatgpt: {
+                image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+              },
+            },
           },
-        },
-      },
-    }).catch((caught: unknown) => caught);
+        }),
+      ),
+    ).catch((caught: unknown) => caught);
     expect(fetch).toHaveBeenCalledTimes(1);
     expect(error).toMatchObject({
       code: 'source_limit',
@@ -587,21 +638,25 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       now: () => Date.parse('2026-09-25T22:00:00.000Z'),
     });
     await expect(
-      executor({
-        id: 'job-sse-quota',
-        providerId: 'chatgpt',
-        workspaceId: 'workspace-1',
-        prompt: 'stone keep',
-        checkpointRemoteExecution: vi.fn(),
-        execution: {
-          ...CODEX_HTTP_EXECUTION_DEFAULTS,
-          providerOptions: {
-            chatgpt: {
-              image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            id: 'job-sse-quota',
+            providerId: 'chatgpt',
+            workspaceId: 'workspace-1',
+            prompt: 'stone keep',
+            checkpointRemoteExecution: vi.fn(),
+            execution: {
+              ...CODEX_HTTP_EXECUTION_DEFAULTS,
+              providerOptions: {
+                chatgpt: {
+                  image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+                },
+              },
             },
-          },
-        },
-      }),
+          }),
+        ),
+      ),
     ).rejects.toMatchObject({
       code: 'source_limit',
       httpStatus: null,
@@ -630,21 +685,25 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       fetch,
       now: () => Date.parse('2026-09-25T22:00:00.000Z'),
     });
-    const error = await executor({
-      id: 'job-503',
-      providerId: 'chatgpt',
-      workspaceId: 'workspace-1',
-      prompt: 'stone keep',
-      checkpointRemoteExecution: vi.fn(),
-      execution: {
-        ...CODEX_HTTP_EXECUTION_DEFAULTS,
-        providerOptions: {
-          chatgpt: {
-            image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+    const error = await Effect.runPromise(
+      Effect.scoped(
+        executor({
+          id: 'job-503',
+          providerId: 'chatgpt',
+          workspaceId: 'workspace-1',
+          prompt: 'stone keep',
+          checkpointRemoteExecution: vi.fn(),
+          execution: {
+            ...CODEX_HTTP_EXECUTION_DEFAULTS,
+            providerOptions: {
+              chatgpt: {
+                image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+              },
+            },
           },
-        },
-      },
-    }).catch((caught: unknown) => caught);
+        }),
+      ),
+    ).catch((caught: unknown) => caught);
     expect(fetch).toHaveBeenCalledTimes(1);
     expect(error).toMatchObject({
       code: 'execution_uncertain',

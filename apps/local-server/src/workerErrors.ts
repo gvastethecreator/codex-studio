@@ -6,6 +6,7 @@ export type WorkerErrorCode =
 
 /** A provider may have accepted work. Retrying or confirming cancellation is unsafe. */
 export class ProviderExecutionUncertainError extends Error {
+  readonly _tag = 'ProviderExecutionUncertainError';
   readonly code = 'execution_uncertain';
 
   constructor(message: string, options?: ErrorOptions) {
@@ -22,6 +23,7 @@ export interface WorkerErrorMeta {
 }
 
 export class WorkerError extends Error {
+  readonly _tag = 'WorkerError';
   readonly code: WorkerErrorCode;
   readonly meta: WorkerErrorMeta;
 

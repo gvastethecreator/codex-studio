@@ -1,3 +1,5 @@
+import { Effect, Semaphore } from 'effect';
+import { providerSync, providerPromise, providerFailure } from '../providers/providerEffect';
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 
 vi.mock('node:fs', async () => {
@@ -27,26 +29,30 @@ beforeAll(async () => {
 describe('createCodexTurn', () => {
   it('times out a hung turn completion, invalidates the persisted session, and retries', async () => {
     const closeSession = vi.fn();
-    const getSession = vi.fn().mockImplementation(async () => ({
-      client: {
-        getNotificationCount: () => 0,
-        request: vi.fn().mockResolvedValue({ turn: { id: 'turn-1' } }),
-        waitForNotification: vi.fn(
-          (_predicate: unknown, timeoutMs: number) =>
-            new Promise((_, reject) => {
-              setTimeout(
-                () => reject(new Error('Timed out waiting for Codex notification')),
-                timeoutMs,
-              );
-            }) as Promise<{ method: string; params?: unknown }>,
-        ),
-        getNotificationsSince: () => [],
-      },
-      codexHome: null,
-      threadId: 'thread-1',
-      sessionKey: 'pack_14',
-      queue: Promise.resolve(),
-    }));
+    const getSession = vi.fn().mockImplementation(() =>
+      providerSync(() => ({
+        client: {
+          getNotificationCount: () => 0,
+          request: vi.fn().mockReturnValue(Effect.succeed({ turn: { id: 'turn-1' } })),
+          waitForNotification: vi.fn((_predicate: unknown, timeoutMs: number) =>
+            providerPromise(
+              () =>
+                new Promise((_, reject) => {
+                  setTimeout(
+                    () => reject(new Error('Timed out waiting for Codex notification')),
+                    timeoutMs,
+                  );
+                }) as Promise<{ method: string; params?: unknown }>,
+            ),
+          ),
+          getNotificationsSince: () => [],
+        },
+        codexHome: null,
+        threadId: 'thread-1',
+        sessionKey: 'pack_14',
+        lock: Semaphore.makeUnsafe(1),
+      })),
+    );
 
     const turn = createCodexTurn({
       getSession,
@@ -60,17 +66,21 @@ describe('createCodexTurn', () => {
         reasoningEffort: 'low',
         serviceTier: null,
       }),
-      sleep: async () => {},
+      sleep: () => providerSync(() => {}),
       maxAttempts: 2,
       retryDelayMs: 0,
       turnCompletionTimeoutMs: 20,
     });
 
     await expect(
-      turn.runTurn({
-        jobId: 'job-1',
-        prompt: 'PACK: Mythic Noir Curated Vault',
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          turn.runTurn({
+            jobId: 'job-1',
+            prompt: 'PACK: Mythic Noir Curated Vault',
+          }),
+        ),
+      ),
     ).rejects.toThrow('Timed out waiting for Codex notification');
 
     expect(getSession).toHaveBeenCalledTimes(2);
@@ -85,18 +95,24 @@ describe('createCodexTurn', () => {
 
   it('invalidates the persisted session when codex socket closes mid-turn', async () => {
     const closeSession = vi.fn();
-    const getSession = vi.fn().mockImplementation(async () => ({
-      client: {
-        getNotificationCount: () => 0,
-        request: vi.fn().mockRejectedValue(new Error('Codex app-server socket closed')),
-        waitForNotification: vi.fn(),
-        getNotificationsSince: () => [],
-      },
-      codexHome: null,
-      threadId: 'thread-1',
-      sessionKey: 'pack_08',
-      queue: Promise.resolve(),
-    }));
+    const getSession = vi.fn().mockImplementation(() =>
+      providerSync(() => ({
+        client: {
+          getNotificationCount: () => 0,
+          request: vi
+            .fn()
+            .mockReturnValue(
+              Effect.fail(providerFailure(new Error('Codex app-server socket closed'))),
+            ),
+          waitForNotification: vi.fn(),
+          getNotificationsSince: () => [],
+        },
+        codexHome: null,
+        threadId: 'thread-1',
+        sessionKey: 'pack_08',
+        lock: Semaphore.makeUnsafe(1),
+      })),
+    );
 
     const turn = createCodexTurn({
       getSession,
@@ -110,16 +126,20 @@ describe('createCodexTurn', () => {
         reasoningEffort: 'low',
         serviceTier: null,
       }),
-      sleep: async () => {},
+      sleep: () => providerSync(() => {}),
       maxAttempts: 1,
       retryDelayMs: 0,
     });
 
     await expect(
-      turn.runTurn({
-        jobId: 'job-socket',
-        prompt: 'PACK: Fashion & Costume',
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          turn.runTurn({
+            jobId: 'job-socket',
+            prompt: 'PACK: Fashion & Costume',
+          }),
+        ),
+      ),
     ).rejects.toThrow('Codex app-server socket closed');
 
     expect(closeSession).toHaveBeenCalledTimes(1);
@@ -130,32 +150,36 @@ describe('createCodexTurn', () => {
 
   it('surfaces an actionable error when app-server reports exhausted model usage', async () => {
     const closeSession = vi.fn();
-    const request = vi.fn().mockResolvedValue({ turn: { id: 'turn-usage' } });
-    const getSession = vi.fn().mockResolvedValue({
-      client: {
-        getNotificationCount: () => 0,
-        request,
-        waitForNotification: vi.fn().mockResolvedValue({
-          method: 'turn/completed',
-          params: { turn: { id: 'turn-usage' } },
-        }),
-        getNotificationsSince: () => [
-          {
-            method: 'turn/completed',
-            params: {
-              turn: {
-                id: 'turn-usage',
-                error: { codexErrorInfo: 'usageLimitExceeded' },
+    const request = vi.fn().mockReturnValue(Effect.succeed({ turn: { id: 'turn-usage' } }));
+    const getSession = vi.fn().mockReturnValue(
+      Effect.succeed({
+        client: {
+          getNotificationCount: () => 0,
+          request,
+          waitForNotification: vi.fn().mockReturnValue(
+            Effect.succeed({
+              method: 'turn/completed',
+              params: { turn: { id: 'turn-usage' } },
+            }),
+          ),
+          getNotificationsSince: () => [
+            {
+              method: 'turn/completed',
+              params: {
+                turn: {
+                  id: 'turn-usage',
+                  error: { codexErrorInfo: 'usageLimitExceeded' },
+                },
               },
             },
-          },
-        ],
-      },
-      codexHome: null,
-      threadId: 'thread-usage',
-      sessionKey: 'pack_usage',
-      queue: Promise.resolve(),
-    });
+          ],
+        },
+        codexHome: null,
+        threadId: 'thread-usage',
+        sessionKey: 'pack_usage',
+        lock: Semaphore.makeUnsafe(1),
+      }),
+    );
 
     const turn = createCodexTurn({
       getSession,
@@ -174,10 +198,14 @@ describe('createCodexTurn', () => {
     });
 
     await expect(
-      turn.runTurn({
-        jobId: 'job-usage',
-        prompt: 'PACK: Luna Reserve usage check',
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          turn.runTurn({
+            jobId: 'job-usage',
+            prompt: 'PACK: Luna Reserve usage check',
+          }),
+        ),
+      ),
     ).rejects.toThrow(
       'Select GPT-Reserve to use the available Luna Reserve bucket, or wait for the regular bucket to reset.',
     );

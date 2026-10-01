@@ -1,6 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { basename, extname } from 'node:path';
-import { fal } from '@fal-ai/client';
+import { createFalClient } from '@fal-ai/client';
+import { Effect } from 'effect';
+import { providerOperation, providerPromise } from './providerEffect';
 import type { ProviderAssetInputRef } from './externalProviderInputs';
 import type { FalAssetUploadLocalFile } from './falAssetInputs';
 
@@ -48,14 +50,18 @@ export function createFalLocalAssetUploader({
   readFile = readFileSync,
   upload,
 }: FalLocalAssetUploaderDependencies): FalAssetUploadLocalFile {
-  return async function uploadLocalFalAsset(asset) {
-    const file = createFileFromLocalAsset(asset, readFile);
+  return function uploadLocalFalAsset(asset) {
+    return providerOperation(
+      Effect.gen(function* () {
+        const file = createFileFromLocalAsset(asset, readFile);
 
-    if (upload) {
-      return upload(file);
-    }
+        if (upload) {
+          return yield* providerPromise(() => upload(file));
+        }
 
-    fal.config({ credentials: apiKey });
-    return fal.storage.upload(file);
+        const client = createFalClient({ credentials: apiKey });
+        return yield* providerPromise(() => client.storage.upload(file));
+      }),
+    );
   };
 }

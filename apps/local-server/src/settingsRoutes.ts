@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 import type { EditableStudioSettings } from '../../../packages/shared/src';
 
 interface SettingsRoutesDependencies {
@@ -7,10 +7,7 @@ interface SettingsRoutesDependencies {
   updateSettings: (patch: unknown) => EditableStudioSettings;
 }
 
-const SettingsPatchBoundarySchema = Schema.Record({
-  key: Schema.String,
-  value: Schema.Unknown,
-});
+const SettingsPatchBoundarySchema = Schema.Record(Schema.String, Schema.Unknown);
 
 export function createSettingsRoutes({ readSettings, updateSettings }: SettingsRoutesDependencies) {
   const routes = new Hono();
@@ -32,8 +29,8 @@ export function createSettingsRoutes({ readSettings, updateSettings }: SettingsR
       );
     }
 
-    const decodedBody = Schema.decodeUnknownEither(SettingsPatchBoundarySchema)(rawBody);
-    if (Either.isLeft(decodedBody)) {
+    const decodedBody = Schema.decodeUnknownExit(SettingsPatchBoundarySchema)(rawBody);
+    if (Exit.isFailure(decodedBody)) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -45,7 +42,7 @@ export function createSettingsRoutes({ readSettings, updateSettings }: SettingsR
     }
 
     try {
-      return c.json(updateSettings(decodedBody.right));
+      return c.json(updateSettings(decodedBody.value));
     } catch (error) {
       return c.json(
         { error: error instanceof Error ? error.message : 'Unable to save settings.' },

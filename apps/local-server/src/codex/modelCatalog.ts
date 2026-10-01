@@ -1,12 +1,9 @@
+import { Effect } from 'effect';
 import { isCodexHttpCredentialReady } from '../auth/tokens';
 import { readChatgptHttpModels } from './chatgptAccountHttp';
 import { isAppServerRunning } from './processSupervisor';
 import { CodexRpcClient } from './rpcClient';
-import type {
-  CodexAuthMode,
-  CodexModel,
-  CodexModelCatalogResponse,
-} from '../../../../packages/shared/src';
+import type { CodexModel, CodexModelCatalogResponse } from '../../../../packages/shared/src';
 import {
   resolveCodexAuthMode,
   type CodexRpcTransportFactory,
@@ -263,32 +260,41 @@ function createCodexModelCatalogReader({
 } = {}) {
   return async function readCodexModelCatalog(): Promise<CodexModelCatalogResponse> {
     try {
-      return await withInitializedCodexClient({ createClient }, async (client) => {
-        const [modelResponse, accountResponse] = await Promise.all([
-          client.request('model/list', { limit: 100, includeHidden: true }),
-          client.request('account/read', { refreshToken: false }).catch(() => null),
-        ]);
+      return await Effect.runPromise(
+        withInitializedCodexClient({ createClient }, (client) =>
+          Effect.gen(function* () {
+            const [modelResponse, accountResponse] = yield* Effect.all(
+              [
+                client.request('model/list', { limit: 100, includeHidden: true }),
+                client
+                  .request('account/read', { refreshToken: false })
+                  .pipe(Effect.catch(() => Effect.succeed(null))),
+              ],
+              { concurrency: 2 },
+            );
 
-        const models = Array.isArray((modelResponse as any)?.data)
-          ? filterSelectableCodexModels(
-              ((modelResponse as any).data as any[])
-                .map(mapModel)
-                .filter((model): model is CodexModel => Boolean(model)),
-            )
-          : [];
+            const models = Array.isArray((modelResponse as any)?.data)
+              ? filterSelectableCodexModels(
+                  ((modelResponse as any).data as any[])
+                    .map(mapModel)
+                    .filter((model): model is CodexModel => Boolean(model)),
+                )
+              : [];
 
-        const account = accountResponse?.account ?? null;
+            const account = accountResponse?.account ?? null;
 
-        return {
-          models,
-          authMode: resolveCodexAuthMode(account),
-          planType: typeof account?.planType === 'string' ? account.planType : null,
-          recommendedDefaultModel: pickRecommendedModel(models),
-          source: 'app-server',
-          fetchedAt: now(),
-          error: null,
-        };
-      });
+            return {
+              models,
+              authMode: resolveCodexAuthMode(account),
+              planType: typeof account?.planType === 'string' ? account.planType : null,
+              recommendedDefaultModel: pickRecommendedModel(models),
+              source: 'app-server',
+              fetchedAt: now(),
+              error: null,
+            };
+          }),
+        ),
+      );
     } catch (error) {
       return buildFallbackCatalog(error);
     }

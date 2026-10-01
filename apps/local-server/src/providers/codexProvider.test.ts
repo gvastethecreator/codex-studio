@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { describe, expect, it } from 'vitest';
 
 import {
@@ -348,10 +350,12 @@ describe('codex generation provider', () => {
   it('delegates execution to the Codex Product Runtime with compiled input text', async () => {
     const calls: TurnParams[] = [];
     const turn: CodexTurn = {
-      async runTurn(params) {
-        calls.push(params);
-        return createTurnResult({
-          assets: [{ type: 'file', sourcePath: 'out.png', mimeType: 'image/png' }],
+      runTurn(params) {
+        return providerSync(() => {
+          calls.push(params);
+          return createTurnResult({
+            assets: [{ type: 'file', sourcePath: 'out.png', mimeType: 'image/png' }],
+          });
         });
       },
     };
@@ -361,16 +365,20 @@ describe('codex generation provider', () => {
       canUseCli: () => true,
     });
 
-    const result = await provider.run({
-      id: 'job-2',
-      workspaceId: 'workspace-1',
-      prompt: 'Prompt:\nsmall brass key',
-      execution: {
-        model: 'gpt-5.4',
-        reasoningEffort: 'low',
-        providerOptions: { codex: { transport: 'codex_app_server' } },
-      },
-    });
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        provider.run({
+          id: 'job-2',
+          workspaceId: 'workspace-1',
+          prompt: 'Prompt:\nsmall brass key',
+          execution: {
+            model: 'gpt-5.4',
+            reasoningEffort: 'low',
+            providerOptions: { codex: { transport: 'codex_app_server' } },
+          },
+        }),
+      ),
+    );
 
     expect(result.assets).toHaveLength(1);
     expect(calls).toHaveLength(1);
@@ -384,10 +392,12 @@ describe('codex generation provider', () => {
   it('keeps the accepted HTTP route even when the adapter reports a fallback-eligible error', async () => {
     const calls: string[] = [];
     const turn: CodexTurn = {
-      async runTurn() {
-        calls.push('cli');
-        return createTurnResult({
-          assets: [{ type: 'file', sourcePath: 'out.png', mimeType: 'image/png' }],
+      runTurn() {
+        return providerSync(() => {
+          calls.push('cli');
+          return createTurnResult({
+            assets: [{ type: 'file', sourcePath: 'out.png', mimeType: 'image/png' }],
+          });
         });
       },
     };
@@ -395,25 +405,30 @@ describe('codex generation provider', () => {
       turn,
       isHttpReady: () => true,
       canUseCli: () => true,
-      runHttp: async () => {
-        calls.push('http');
-        throw new SubscriptionHttpError('no image', {
-          code: 'empty_response',
-          fallbackAllowed: true,
-        });
-      },
+      runHttp: () =>
+        providerSync(() => {
+          calls.push('http');
+          throw new SubscriptionHttpError('no image', {
+            code: 'empty_response',
+            fallbackAllowed: true,
+          });
+        }),
     });
     await expect(
-      provider.run({
-        id: 'job-fallback',
-        workspaceId: 'workspace-1',
-        prompt: 'Prompt:\nkey',
-        execution: {
-          model: 'gpt-5.5',
-          reasoningEffort: 'provider_default',
-          providerOptions: { codex: { transport: 'subscription_http' } },
-        },
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          provider.run({
+            id: 'job-fallback',
+            workspaceId: 'workspace-1',
+            prompt: 'Prompt:\nkey',
+            execution: {
+              model: 'gpt-5.5',
+              reasoningEffort: 'provider_default',
+              providerOptions: { codex: { transport: 'subscription_http' } },
+            },
+          }),
+        ),
+      ),
     ).rejects.toThrow('no image');
     expect(calls).toEqual(['http']);
   });

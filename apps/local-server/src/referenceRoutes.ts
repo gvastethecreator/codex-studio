@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 import type { ReferenceHandoffResponse } from '../../../packages/shared/src';
 import type {
   ProcessedReference,
@@ -31,7 +31,7 @@ const ReferenceHandoffRequestSchema = Schema.Struct({
 });
 
 function decodeReferenceHandoffRequest(body: unknown) {
-  return Schema.decodeUnknownEither(ReferenceHandoffRequestSchema)(body);
+  return Schema.decodeUnknownExit(ReferenceHandoffRequestSchema)(body);
 }
 
 export function createReferenceRoutes({
@@ -60,7 +60,7 @@ export function createReferenceRoutes({
     }
 
     const decodedBody = decodeReferenceHandoffRequest(rawBody);
-    if (Either.isLeft(decodedBody)) {
+    if (Exit.isFailure(decodedBody)) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -77,7 +77,7 @@ export function createReferenceRoutes({
       const processed = await processReferences(
         handoffId,
         'Reference handoff.',
-        [...decodedBody.right.references],
+        [...decodedBody.value.references],
         readLibraryDir(),
       );
 

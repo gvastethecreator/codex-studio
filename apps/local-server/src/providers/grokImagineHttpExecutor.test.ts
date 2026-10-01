@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
@@ -133,7 +134,7 @@ describe('Grok Imagine HTTP executor', () => {
       now: () => 1000,
     });
 
-    const result = await executor(createContext());
+    const result = await Effect.runPromise(Effect.scoped(executor(createContext())));
     expect(result.assets[0]?.mimeType).toBe('image/png');
     const transcript = writes.find((write) => write.filePath.includes('transcripts'));
     expect(String(transcript?.content)).not.toContain('xai-secret');
@@ -150,7 +151,7 @@ describe('Grok Imagine HTTP executor', () => {
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
     });
     try {
-      await executor(createContext());
+      await Effect.runPromise(Effect.scoped(executor(createContext())));
       throw new Error('expected failure');
     } catch (error) {
       expect(error).toBeInstanceOf(SubscriptionHttpError);
@@ -169,10 +170,12 @@ describe('Grok Imagine HTTP executor', () => {
       mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
     });
-    await expect(executor(createContext())).rejects.toMatchObject({
-      code: 'timeout',
-      fallbackAllowed: true,
-    });
+    await expect(Effect.runPromise(Effect.scoped(executor(createContext())))).rejects.toMatchObject(
+      {
+        code: 'timeout',
+        fallbackAllowed: true,
+      },
+    );
   });
 
   it('posts image_url objects for edits and maps chat models to grok-imagine-image-2.0', async () => {
@@ -200,7 +203,7 @@ describe('Grok Imagine HTTP executor', () => {
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
       now: () => 1000,
     });
-    await executor(createEditContext());
+    await Effect.runPromise(Effect.scoped(executor(createEditContext())));
   });
 
   it('falls back to CLI when a hosted image URL cannot be downloaded', async () => {
@@ -221,10 +224,12 @@ describe('Grok Imagine HTTP executor', () => {
       mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
     });
-    await expect(executor(createContext())).rejects.toMatchObject({
-      code: 'timeout',
-      fallbackAllowed: true,
-    });
+    await expect(Effect.runPromise(Effect.scoped(executor(createContext())))).rejects.toMatchObject(
+      {
+        code: 'timeout',
+        fallbackAllowed: true,
+      },
+    );
   });
 
   it('does not misclassify Studio Library write failures as provider timeouts', async () => {
@@ -250,7 +255,9 @@ describe('Grok Imagine HTTP executor', () => {
       }) as typeof import('node:fs').writeFileSync,
     });
 
-    await expect(executor(createContext())).rejects.toThrow('disk full');
+    await expect(Effect.runPromise(Effect.scoped(executor(createContext())))).rejects.toThrow(
+      'disk full',
+    );
   });
 
   it('invalidates rejected OAuth credentials', async () => {
@@ -266,7 +273,9 @@ describe('Grok Imagine HTTP executor', () => {
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
     });
 
-    await expect(executor(createContext())).rejects.toMatchObject({ code: 'invalid_grant' });
+    await expect(Effect.runPromise(Effect.scoped(executor(createContext())))).rejects.toMatchObject(
+      { code: 'invalid_grant' },
+    );
     expect(invalidations).toEqual(['rejected']);
   });
 });

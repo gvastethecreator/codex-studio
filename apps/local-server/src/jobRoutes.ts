@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 import type {
   CreateJobRequest,
   Job,
@@ -35,7 +35,7 @@ const ACTIVE_RETRY_STATUSES = new Set<Job['status']>(['queued', 'running']);
 const REQUEUEABLE_STATUSES = new Set<Job['status']>(['failed', 'cancelled']);
 
 function decodeCreateJobRequestBoundary(body: unknown) {
-  return Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)(body);
+  return Schema.decodeUnknownExit(CreateJobRequestBoundarySchema)(body);
 }
 
 function resolveJobProviderId(job: Pick<Job, 'providerId' | 'sourceSpec'>) {
@@ -284,7 +284,7 @@ export function createJobRoutes({
     }
 
     const decodedBody = decodeCreateJobRequestBoundary(rawBody);
-    if (Either.isLeft(decodedBody)) {
+    if (Exit.isFailure(decodedBody)) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -295,7 +295,7 @@ export function createJobRoutes({
       );
     }
 
-    const boundaryBody: CreateJobRequestBoundary = decodedBody.right;
+    const boundaryBody: CreateJobRequestBoundary = decodedBody.value;
     const body: CreateJobRequest = {
       workspaceId: boundaryBody.workspaceId,
       kind: boundaryBody.kind,

@@ -1,3 +1,7 @@
+import { runProviderCliProcess } from './providerCliProcess';
+import { providerSync, type ProviderEffect } from './providerEffect';
+import { Effect, Result } from 'effect';
+import { providerOperation } from './providerEffect';
 import {
   constants as fsConstants,
   copyFileSync,
@@ -11,14 +15,12 @@ import {
   writeFileSync,
 } from 'node:fs';
 import { randomUUID } from 'node:crypto';
-import { spawn } from 'node:child_process';
 import os from 'node:os';
 import path from 'node:path';
-import type { TurnResult } from '../codex/turn';
+
 import { resolveGrokExecutable, resolveGrokHome } from '../grokExecutable';
 import { readGrokRuntimeDoctor } from '../grokRuntimeDoctor';
 import { resolveLibraryPath, resolveLibraryPathFromRoot } from '../library';
-import { terminateOwnedProcessTree } from '../ownedProcessTree';
 import type {
   ExternalProviderExecutionContext,
   ExternalProviderExecutor,
@@ -51,7 +53,7 @@ export interface RunGrokCliInput {
 
 export interface GrokImagineExecutorDependencies {
   env?: NodeJS.ProcessEnv;
-  runCli?: (input: RunGrokCliInput) => Promise<GrokCliRunResult>;
+  runCli?: (input: RunGrokCliInput) => ProviderEffect<GrokCliRunResult>;
   readRuntimeDoctor?: typeof readGrokRuntimeDoctor;
   resolveExecutable?: typeof resolveGrokExecutable;
   resolveGrokHome?: typeof resolveGrokHome;
@@ -69,89 +71,12 @@ interface GrokHeadlessResult {
   [key: string]: unknown;
 }
 
-function createAbortError() {
-  const error = new Error('Grok Imagine job was cancelled.');
-  error.name = 'AbortError';
-  return error;
-}
-
-export function runGrokCliProcess({
-  executable,
-  args,
-  cwd,
-  env,
-  signal,
-  timeoutMs,
-}: RunGrokCliInput): Promise<GrokCliRunResult> {
-  if (signal?.aborted) return Promise.reject(createAbortError());
-
-  return new Promise((resolve, reject) => {
-    const child = spawn(executable, args, {
-      cwd,
-      env,
-      windowsHide: true,
-      stdio: ['ignore', 'pipe', 'pipe'],
-    });
-    let stdout = '';
-    let stderr = '';
-    let outputBytes = 0;
-    let terminalError: Error | null = null;
-    let timedOut = false;
-    let aborted = false;
-    let settled = false;
-
-    const stop = () => {
-      try {
-        terminateOwnedProcessTree(child);
-      } catch {
-        child.kill();
-      }
-    };
-    const onAbort = () => {
-      aborted = true;
-      stop();
-    };
-    signal?.addEventListener('abort', onAbort, { once: true });
-    const timer = setTimeout(() => {
-      timedOut = true;
-      stop();
-    }, timeoutMs);
-
-    const append = (target: 'stdout' | 'stderr', chunk: unknown) => {
-      const text = String(chunk);
-      outputBytes += Buffer.byteLength(text);
-      if (outputBytes > MAX_PROCESS_OUTPUT_BYTES) {
-        terminalError = new Error('Grok Build output exceeded the safe process buffer limit.');
-        stop();
-        return;
-      }
-      if (target === 'stdout') stdout += text;
-      else stderr += text;
-    };
-    child.stdout.on('data', (chunk) => append('stdout', chunk));
-    child.stderr.on('data', (chunk) => append('stderr', chunk));
-    child.once('error', (error) => {
-      terminalError = error;
-    });
-    child.once('close', (code) => {
-      if (settled) return;
-      settled = true;
-      clearTimeout(timer);
-      signal?.removeEventListener('abort', onAbort);
-      if (aborted) {
-        reject(createAbortError());
-        return;
-      }
-      if (timedOut) {
-        reject(new Error(`Grok Imagine timed out after ${timeoutMs} ms.`));
-        return;
-      }
-      if (terminalError) {
-        reject(terminalError);
-        return;
-      }
-      resolve({ status: code ?? 1, stdout, stderr });
-    });
+export function runGrokCliProcess(input: RunGrokCliInput): ProviderEffect<GrokCliRunResult> {
+  return runProviderCliProcess({
+    ...input,
+    timeoutMessage: `Grok Imagine timed out after ${input.timeoutMs} ms.`,
+    outputLimitMessage: 'Grok Build output exceeded the safe process buffer limit.',
+    maxOutputBytes: MAX_PROCESS_OUTPUT_BYTES,
   });
 }
 
@@ -377,136 +302,141 @@ export function createGrokImagineExecutor({
   createSessionId = randomUUID,
   createTemporaryDirectory = () => mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-grok-')),
 }: GrokImagineExecutorDependencies = {}): ExternalProviderExecutor {
-  return async function executeGrokImagine({
-    providerId,
-    job,
-    compiledInput,
-  }: ExternalProviderExecutionContext): Promise<TurnResult> {
-    if (
-      providerId !== 'grok' ||
-      compiledInput.providerId !== 'grok' ||
-      compiledInput.payloadKind !== 'agent_cli_prompt'
-    ) {
-      throw new Error(`Grok Imagine executor received unsupported provider input.`);
-    }
+  return ({ providerId, job, compiledInput }: ExternalProviderExecutionContext) =>
+    providerOperation(
+      Effect.gen(function* () {
+        if (
+          providerId !== 'grok' ||
+          compiledInput.providerId !== 'grok' ||
+          compiledInput.payloadKind !== 'agent_cli_prompt'
+        ) {
+          throw new Error(`Grok Imagine executor received unsupported provider input.`);
+        }
 
-    const input = compiledInput as GrokImagineCompiledInput;
-    const libraryRoot = job.libraryContext?.rootPath ?? resolveDefaultLibraryPath();
-    const { sources } = validatePayload(input.payload, libraryRoot);
-    const runtime = readRuntimeDoctor();
-    if (!runtime.canRunJobs) {
-      throw new Error(`Grok Build runtime is not ready: ${runtime.recommendedAction}`);
-    }
-    if (input.payload.model && !runtime.availableModels.includes(input.payload.model)) {
-      throw new Error(
-        `Grok model "${input.payload.model}" is unavailable. Available models: ${runtime.availableModels.join(', ') || 'none'}.`,
-      );
-    }
+        const input = compiledInput as GrokImagineCompiledInput;
+        const libraryRoot = job.libraryContext?.rootPath ?? resolveDefaultLibraryPath();
+        const { sources } = validatePayload(input.payload, libraryRoot);
+        const runtime = readRuntimeDoctor();
+        if (!runtime.canRunJobs) {
+          throw new Error(`Grok Build runtime is not ready: ${runtime.recommendedAction}`);
+        }
+        if (input.payload.model && !runtime.availableModels.includes(input.payload.model)) {
+          throw new Error(
+            `Grok model "${input.payload.model}" is unavailable. Available models: ${runtime.availableModels.join(', ') || 'none'}.`,
+          );
+        }
 
-    const startedAt = now();
-    const sessionId = createSessionId();
-    const grokHome = resolveHome(env);
-    const sessionDirectory = resolveSessionDirectory(grokHome, libraryRoot, sessionId);
-    if (existsSync(sessionDirectory)) {
-      throw new Error(`Refusing to reuse existing Grok session ${sessionId}.`);
-    }
-    const temporaryDirectory = createTemporaryDirectory();
-    const promptFile = path.join(temporaryDirectory, 'prompt.md');
-    writeFileSync(promptFile, `${buildGrokImaginePrompt(input.payload, sources)}\n`, 'utf8');
-
-    try {
-      const executable = resolveExecutable(env);
-      const result = await runCli({
-        executable,
-        args: buildGrokImagineArgs({
-          cwd: libraryRoot,
-          promptFile,
-          sessionId,
-          payload: input.payload,
-        }),
-        cwd: libraryRoot,
-        env: { ...env, GROK_HOME: grokHome },
-        signal: job.signal,
-        timeoutMs: configuredTimeoutMs(env),
-      });
-      if (result.status !== 0) {
-        throw new Error(
-          `Grok Imagine failed with exit ${result.status}. Check the local Grok Build login and runtime logs.`,
+        const startedAt = now();
+        const sessionId = createSessionId();
+        const grokHome = resolveHome(env);
+        const sessionDirectory = resolveSessionDirectory(grokHome, libraryRoot, sessionId);
+        if (existsSync(sessionDirectory)) {
+          throw new Error(`Refusing to reuse existing Grok session ${sessionId}.`);
+        }
+        const temporaryDirectory = yield* Effect.acquireRelease(
+          providerSync(() => path.resolve(createTemporaryDirectory())),
+          (directory) => Effect.sync(() => rmSync(directory, { recursive: true, force: true })),
         );
-      }
-      const headless = parseHeadlessResult(result.stdout);
-      if (headless.sessionId !== sessionId) {
-        throw new Error('Grok Build returned an unexpected session id.');
-      }
-      if (normalizeStopReason(headless.stopReason) !== 'endturn') {
-        throw new Error(
-          `Grok Imagine stopped before completion: ${displayStopReason(headless.stopReason)}.`,
+        const promptFile = path.join(temporaryDirectory, 'prompt.md');
+        writeFileSync(promptFile, `${buildGrokImaginePrompt(input.payload, sources)}\n`, 'utf8');
+
+        const executable = resolveExecutable(env);
+        const result = Result.getOrThrowWith(
+          yield* Effect.result(
+            runCli({
+              executable,
+              args: buildGrokImagineArgs({
+                cwd: libraryRoot,
+                promptFile,
+                sessionId,
+                payload: input.payload,
+              }),
+              cwd: libraryRoot,
+              env: { ...env, GROK_HOME: grokHome },
+              signal: job.signal,
+              timeoutMs: configuredTimeoutMs(env),
+            }),
+          ),
+          (error) => error,
         );
-      }
-      const resolvedSessionDirectory = resolveSessionDirectory(grokHome, libraryRoot, sessionId);
-      const images = listGeneratedImages(resolvedSessionDirectory);
-      if (images.length !== 1) {
-        throw new Error(`Grok Imagine expected one generated image and found ${images.length}.`);
-      }
-      const sourceImage = images[0]!;
-      if (statSync(sourceImage).size === 0) {
-        throw new Error('Grok Imagine generated an empty image file.');
-      }
+        if (result.status !== 0) {
+          throw new Error(
+            `Grok Imagine failed with exit ${result.status}. Check the local Grok Build login and runtime logs.`,
+          );
+        }
+        const headless = parseHeadlessResult(result.stdout);
+        if (headless.sessionId !== sessionId) {
+          throw new Error('Grok Build returned an unexpected session id.');
+        }
+        if (normalizeStopReason(headless.stopReason) !== 'endturn') {
+          throw new Error(
+            `Grok Imagine stopped before completion: ${displayStopReason(headless.stopReason)}.`,
+          );
+        }
+        const resolvedSessionDirectory = resolveSessionDirectory(grokHome, libraryRoot, sessionId);
+        const images = listGeneratedImages(resolvedSessionDirectory);
+        if (images.length !== 1) {
+          throw new Error(`Grok Imagine expected one generated image and found ${images.length}.`);
+        }
+        const sourceImage = images[0]!;
+        if (statSync(sourceImage).size === 0) {
+          throw new Error('Grok Imagine generated an empty image file.');
+        }
 
-      const safeJobId = sanitizeFilePart(job.id);
-      const extension = path.extname(sourceImage).toLowerCase();
-      const outputPath = resolveJobLibraryPath(
-        job,
-        resolveDefaultLibraryPath,
-        'assets',
-        `${safeJobId}-grok-${now()}${extension}`,
-      );
-      mkdirSync(path.dirname(outputPath), { recursive: true });
-      copyFileSync(sourceImage, outputPath, fsConstants.COPYFILE_EXCL);
+        const safeJobId = sanitizeFilePart(job.id);
+        const extension = path.extname(sourceImage).toLowerCase();
+        const outputPath = resolveJobLibraryPath(
+          job,
+          resolveDefaultLibraryPath,
+          'assets',
+          `${safeJobId}-grok-${now()}${extension}`,
+        );
+        mkdirSync(path.dirname(outputPath), { recursive: true });
+        copyFileSync(sourceImage, outputPath, fsConstants.COPYFILE_EXCL);
 
-      const transcriptDirectory = resolveJobLibraryPath(
-        job,
-        resolveDefaultLibraryPath,
-        'transcripts',
-        safeJobId,
-      );
-      mkdirSync(transcriptDirectory, { recursive: true });
-      const transcriptPath = path.join(transcriptDirectory, 'grok.json');
-      writeFileSync(
-        transcriptPath,
-        JSON.stringify(
-          {
-            providerId: 'grok',
-            runtimeKind: 'agent_cli',
-            executable,
-            cliVersion: runtime.selectedVersionNumber,
-            model: input.payload.model,
-            reasoningEffort: input.payload.reasoningEffort,
-            sourceSpecId: compiledInput.sourceSpecId,
-            task: compiledInput.task,
-            operation: input.payload.operation,
-            sourceAssetCount: sources.length,
-            sessionId,
-            sessionDirectory: resolvedSessionDirectory,
-            outputPath,
-            stopReason: headless.stopReason,
-            responseShape: Object.keys(headless).sort(),
-          },
-          null,
-          2,
-        ),
-        'utf8',
-      );
+        const transcriptDirectory = resolveJobLibraryPath(
+          job,
+          resolveDefaultLibraryPath,
+          'transcripts',
+          safeJobId,
+        );
+        mkdirSync(transcriptDirectory, { recursive: true });
+        const transcriptPath = path.join(transcriptDirectory, 'grok.json');
+        writeFileSync(
+          transcriptPath,
+          JSON.stringify(
+            {
+              providerId: 'grok',
+              runtimeKind: 'agent_cli',
+              executable,
+              cliVersion: runtime.selectedVersionNumber,
+              model: input.payload.model,
+              reasoningEffort: input.payload.reasoningEffort,
+              sourceSpecId: compiledInput.sourceSpecId,
+              task: compiledInput.task,
+              operation: input.payload.operation,
+              sourceAssetCount: sources.length,
+              sessionId,
+              sessionDirectory: resolvedSessionDirectory,
+              outputPath,
+              stopReason: headless.stopReason,
+              responseShape: Object.keys(headless).sort(),
+            },
+            null,
+            2,
+          ),
+          'utf8',
+        );
 
-      return {
-        assets: [{ type: 'file', sourcePath: outputPath, mimeType: mimeFromExtension(outputPath) }],
-        transcript: transcriptPath,
-        turnId: null,
-        threadId: null,
-        durationMs: Math.max(0, now() - startedAt),
-      };
-    } finally {
-      rmSync(temporaryDirectory, { recursive: true, force: true });
-    }
-  };
+        return {
+          assets: [
+            { type: 'file', sourcePath: outputPath, mimeType: mimeFromExtension(outputPath) },
+          ],
+          transcript: transcriptPath,
+          turnId: null,
+          threadId: null,
+          durationMs: Math.max(0, now() - startedAt),
+        };
+      }),
+    );
 }

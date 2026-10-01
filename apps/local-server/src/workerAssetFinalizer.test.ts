@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { describe, expect, it, vi } from 'vitest';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
@@ -128,20 +129,24 @@ describe('workerAssetFinalizer', () => {
     });
 
     try {
-      await finalizer.finalizeJobAsset({
-        job: createJob({
-          libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
-        }),
-        catalogContext: {
-          workspaceId: 'workspace-1',
-          batchId: 'batch-1',
-        },
-        discoveredImagePath: 'D:/tmp/discovered.png',
-        providerId: 'codex',
-        options: {
-          logPrefix: 'Codex',
-        },
-      });
+      await Effect.runPromise(
+        Effect.scoped(
+          finalizer.finalizeJobAsset({
+            job: createJob({
+              libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
+            }),
+            catalogContext: {
+              workspaceId: 'workspace-1',
+              batchId: 'batch-1',
+            },
+            discoveredImagePath: 'D:/tmp/discovered.png',
+            providerId: 'codex',
+            options: {
+              logPrefix: 'Codex',
+            },
+          }),
+        ),
+      );
 
       expect(toPublicAssetUrl).toHaveBeenCalledWith(organizedPath, {
         libraryId: 'library-1',
@@ -273,13 +278,17 @@ describe('workerAssetFinalizer', () => {
     });
 
     try {
-      await finalizer.finalizeJobAsset({
-        job,
-        catalogContext: { workspaceId: 'project-1', batchId: null },
-        discoveredImagePath: organizedPath,
-        providerId: 'codex',
-        options: { logPrefix: 'Recovered' },
-      });
+      await Effect.runPromise(
+        Effect.scoped(
+          finalizer.finalizeJobAsset({
+            job,
+            catalogContext: { workspaceId: 'project-1', batchId: null },
+            discoveredImagePath: organizedPath,
+            providerId: 'codex',
+            options: { logPrefix: 'Recovered' },
+          }),
+        ),
+      );
 
       expect(addAsset).not.toHaveBeenCalled();
       expect(registerCatalogImage).not.toHaveBeenCalled();

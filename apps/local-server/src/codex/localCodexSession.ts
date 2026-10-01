@@ -1,3 +1,5 @@
+import { Effect, Fiber, Result } from 'effect';
+import { providerOperation, providerSync, type ProviderFailure } from '../providers/providerEffect';
 import type {
   CodexAuthMode,
   CodexUsageSnapshot,
@@ -8,8 +10,8 @@ import { CodexRpcClient } from './rpcClient';
 import { extractUsageSnapshot, pickRateLimitSnapshot } from './rateLimitUsage';
 
 export interface CodexRpcTransport {
-  connect(): Promise<void>;
-  request(method: string, params?: unknown): Promise<any>;
+  connect(): Effect.Effect<void, ProviderFailure>;
+  request(method: string, params?: unknown): Effect.Effect<any, ProviderFailure>;
   notify(method: string, params?: unknown): void;
   close(): void;
 }
@@ -175,27 +177,26 @@ export function buildLocalCodexSessionResponse(
   };
 }
 
-export async function withInitializedCodexClient<T>(
-  {
-    createClient = defaultClientFactory,
-  }: {
-    createClient?: CodexRpcTransportFactory;
-  } = {},
-  run: (client: CodexRpcTransport) => Promise<T>,
-): Promise<T> {
-  const client = createClient();
-
-  try {
-    await client.connect();
-    await client.request('initialize', {
-      clientInfo: CODEX_CLIENT_INFO,
-      capabilities: null,
-    });
-    client.notify('initialized');
-    return await run(client);
-  } finally {
-    client.close();
-  }
+export function withInitializedCodexClient<T, E, R>(
+  { createClient = defaultClientFactory }: { createClient?: CodexRpcTransportFactory } = {},
+  run: (client: CodexRpcTransport) => Effect.Effect<T, E, R>,
+) {
+  return Effect.acquireUseRelease(
+    providerSync(createClient),
+    (client) =>
+      providerOperation(
+        Effect.gen(function* () {
+          yield* client.connect();
+          yield* client.request('initialize', {
+            clientInfo: CODEX_CLIENT_INFO,
+            capabilities: null,
+          });
+          client.notify('initialized');
+          return yield* run(client);
+        }),
+      ),
+    (client) => Effect.sync(() => client.close()),
+  );
 }
 
 export function createLocalCodexSessionReader({
@@ -205,60 +206,74 @@ export function createLocalCodexSessionReader({
 } = {}) {
   return async function getLocalCodexSession(): Promise<LocalCodexSessionResponse> {
     try {
-      return await withInitializedCodexClient({ createClient }, async (client) => {
-        const rateLimitResponsePromise = client
-          .request('account/rateLimits/read', undefined)
-          .catch(() => null);
-        let accountResponse: unknown;
-        try {
-          accountResponse = await client.request('account/read', { refreshToken: false });
-        } catch (error) {
-          return buildLocalCodexSessionResponse({
-            authMode: null,
-            planType: null,
-            usage: null,
-            source: 'app-server',
-            fetchedAt: now(),
-            error: normalizeCodexSessionErrorMessage(error),
-            fallbackReason: classifyAccountReadFailureReason(error),
-          });
-        }
+      return await Effect.runPromise(
+        Effect.scoped(
+          withInitializedCodexClient({ createClient }, (client) =>
+            Effect.gen(function* () {
+              const rateLimitFiber = yield* client
+                .request('account/rateLimits/read', undefined)
+                .pipe(
+                  Effect.catch(() => Effect.succeed(null)),
+                  Effect.forkScoped({ startImmediately: true }),
+                );
+              let accountResponse: unknown;
+              try {
+                accountResponse = Result.getOrThrowWith(
+                  yield* Effect.result(client.request('account/read', { refreshToken: false })),
+                  (error) => error,
+                );
+              } catch (error) {
+                return buildLocalCodexSessionResponse({
+                  authMode: null,
+                  planType: null,
+                  usage: null,
+                  source: 'app-server',
+                  fetchedAt: now(),
+                  error: normalizeCodexSessionErrorMessage(error),
+                  fallbackReason: classifyAccountReadFailureReason(error),
+                });
+              }
 
-        if (!isAccountReadResponse(accountResponse)) {
-          const error = new Error('Codex app-server account/read returned an invalid response');
-          return buildLocalCodexSessionResponse({
-            authMode: null,
-            planType: null,
-            usage: null,
-            source: 'app-server',
-            fetchedAt: now(),
-            error: error.message,
-            fallbackReason: 'protocol_incompatible',
-          });
-        }
+              if (!isAccountReadResponse(accountResponse)) {
+                const error = new Error(
+                  'Codex app-server account/read returned an invalid response',
+                );
+                return buildLocalCodexSessionResponse({
+                  authMode: null,
+                  planType: null,
+                  usage: null,
+                  source: 'app-server',
+                  fetchedAt: now(),
+                  error: error.message,
+                  fallbackReason: 'protocol_incompatible',
+                });
+              }
 
-        const rateLimitResponse = await rateLimitResponsePromise;
+              const rateLimitResponse = yield* Fiber.join(rateLimitFiber);
 
-        const account = accountResponse?.account ?? null;
-        const authMode = resolveCodexAuthMode(account);
-        const { snapshot, path } = pickRateLimitSnapshot(rateLimitResponse);
+              const account = accountResponse?.account ?? null;
+              const authMode = resolveCodexAuthMode(account);
+              const { snapshot, path } = pickRateLimitSnapshot(rateLimitResponse);
 
-        return buildLocalCodexSessionResponse({
-          authMode,
-          planType:
-            typeof account?.planType === 'string'
-              ? account.planType
-              : typeof snapshot?.planType === 'string'
-                ? snapshot.planType
-                : typeof snapshot?.plan_type === 'string'
-                  ? snapshot.plan_type
-                  : null,
-          usage: extractUsageSnapshot(snapshot, path),
-          source: 'app-server',
-          fetchedAt: now(),
-          error: null,
-        });
-      });
+              return buildLocalCodexSessionResponse({
+                authMode,
+                planType:
+                  typeof account?.planType === 'string'
+                    ? account.planType
+                    : typeof snapshot?.planType === 'string'
+                      ? snapshot.planType
+                      : typeof snapshot?.plan_type === 'string'
+                        ? snapshot.plan_type
+                        : null,
+                usage: extractUsageSnapshot(snapshot, path),
+                source: 'app-server',
+                fetchedAt: now(),
+                error: null,
+              });
+            }),
+          ),
+        ),
+      );
     } catch (error) {
       const errorMessage = normalizeCodexSessionErrorMessage(error);
       return buildLocalCodexSessionResponse({

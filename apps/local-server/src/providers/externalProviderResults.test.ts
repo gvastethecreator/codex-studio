@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { describe, expect, it } from 'vitest';
 
 import {
@@ -92,32 +94,37 @@ describe('external provider results', () => {
       });
     };
 
-    const result = await storeHostedImageResult({
-      providerId: 'test-provider',
-      providerSlug: 'test',
-      model: 'model-a',
-      endpointBase: 'https://provider.example',
-      job: { id: 'job/unsafe' },
-      compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
-      responseJson: { data: { images: [{ url: 'https://cdn.example/out.jpg' }] } },
-      imageUrl: 'https://cdn.example/out.jpg',
-      requestAttempts: 2,
-      startedAt: 1000,
-      fetch,
-      files: {
-        resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
-        mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
-        writeFile: ((filePath, content, encoding) => {
-          writes.push({ filePath: String(filePath), content, encoding });
-        }) as typeof import('node:fs').writeFileSync,
-        now: () => 1200,
-      },
-      maxAttempts: 3,
-      retryDelayMs: 25,
-      sleep: async (durationMs) => {
-        sleeps.push(durationMs);
-      },
-    });
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        storeHostedImageResult({
+          providerId: 'test-provider',
+          providerSlug: 'test',
+          model: 'model-a',
+          endpointBase: 'https://provider.example',
+          job: { id: 'job/unsafe' },
+          compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
+          responseJson: { data: { images: [{ url: 'https://cdn.example/out.jpg' }] } },
+          imageUrl: 'https://cdn.example/out.jpg',
+          requestAttempts: 2,
+          startedAt: 1000,
+          fetch,
+          files: {
+            resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+            mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+            writeFile: ((filePath, content, encoding) => {
+              writes.push({ filePath: String(filePath), content, encoding });
+            }) as typeof import('node:fs').writeFileSync,
+            now: () => 1200,
+          },
+          maxAttempts: 3,
+          retryDelayMs: 25,
+          sleep: (durationMs) =>
+            providerSync(() => {
+              sleeps.push(durationMs);
+            }),
+        }),
+      ),
+    );
 
     const normalizedTranscript = result.transcript.replaceAll('\\', '/');
     const transcriptWrite = writes.find((write) =>
@@ -150,42 +157,46 @@ describe('external provider results', () => {
   it('rejects an oversized hosted image before reading its body', async () => {
     let readBody = false;
     await expect(
-      storeHostedImageResult({
-        providerId: 'test-provider',
-        providerSlug: 'test',
-        model: 'model-a',
-        endpointBase: 'provider',
-        job: { id: 'job-large' },
-        compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
-        responseJson: {},
-        imageUrl: 'provider-image',
-        requestAttempts: 1,
-        startedAt: 0,
-        fetch: async () => ({
-          ok: true,
-          status: 200,
-          statusText: 'OK',
-          headers: new Headers({
-            'content-type': 'image/png',
-            'content-length': String(26 * 1024 * 1024),
+      Effect.runPromise(
+        Effect.scoped(
+          storeHostedImageResult({
+            providerId: 'test-provider',
+            providerSlug: 'test',
+            model: 'model-a',
+            endpointBase: 'provider',
+            job: { id: 'job-large' },
+            compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
+            responseJson: {},
+            imageUrl: 'provider-image',
+            requestAttempts: 1,
+            startedAt: 0,
+            fetch: async () => ({
+              ok: true,
+              status: 200,
+              statusText: 'OK',
+              headers: new Headers({
+                'content-type': 'image/png',
+                'content-length': String(26 * 1024 * 1024),
+              }),
+              json: async () => ({}),
+              text: async () => '',
+              arrayBuffer: async () => {
+                readBody = true;
+                return new ArrayBuffer(0);
+              },
+            }),
+            files: {
+              resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+              mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+              writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+              now: () => 1,
+            },
+            maxAttempts: 1,
+            retryDelayMs: 1,
+            sleep: () => providerSync(() => undefined),
           }),
-          json: async () => ({}),
-          text: async () => '',
-          arrayBuffer: async () => {
-            readBody = true;
-            return new ArrayBuffer(0);
-          },
-        }),
-        files: {
-          resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
-          mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
-          writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
-          now: () => 1,
-        },
-        maxAttempts: 1,
-        retryDelayMs: 1,
-        sleep: async () => undefined,
-      }),
+        ),
+      ),
     ).rejects.toThrow('25 MB limit');
     expect(readBody).toBe(false);
   });
@@ -193,27 +204,31 @@ describe('external provider results', () => {
   it('stores inline image results without a provider image download', () => {
     const writes: Array<{ filePath: string; content: unknown; encoding?: unknown }> = [];
 
-    const result = storeInlineImageResult({
-      providerId: 'google',
-      providerSlug: 'google',
-      model: 'gemini-3.1-flash-image',
-      endpointBase: 'https://generativelanguage.googleapis.com/v1beta',
-      job: { id: 'job-inline' },
-      compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
-      responseJson: { candidates: [] },
-      image: { data: PNG_B64, mimeType: 'image/png' },
-      requestAttempts: 1,
-      startedAt: 1000,
-      diagnostics: { requestFieldNames: ['contents'] },
-      files: {
-        resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
-        mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
-        writeFile: ((filePath, content, encoding) => {
-          writes.push({ filePath: String(filePath), content, encoding });
-        }) as typeof import('node:fs').writeFileSync,
-        now: () => 1200,
-      },
-    });
+    const result = Effect.runSync(
+      Effect.scoped(
+        storeInlineImageResult({
+          providerId: 'google',
+          providerSlug: 'google',
+          model: 'gemini-3.1-flash-image',
+          endpointBase: 'https://generativelanguage.googleapis.com/v1beta',
+          job: { id: 'job-inline' },
+          compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
+          responseJson: { candidates: [] },
+          image: { data: PNG_B64, mimeType: 'image/png' },
+          requestAttempts: 1,
+          startedAt: 1000,
+          diagnostics: { requestFieldNames: ['contents'] },
+          files: {
+            resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+            mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+            writeFile: ((filePath, content, encoding) => {
+              writes.push({ filePath: String(filePath), content, encoding });
+            }) as typeof import('node:fs').writeFileSync,
+            now: () => 1200,
+          },
+        }),
+      ),
+    );
 
     const assetWrite = writes.find((write) =>
       write.filePath.replaceAll('\\', '/').endsWith('/assets/job-inline-google-1200.png'),
@@ -241,42 +256,73 @@ describe('external provider results', () => {
 
   it('rejects malformed inline image bytes before writing files', () => {
     expect(() =>
-      storeInlineImageResult({
-        providerId: 'google',
-        providerSlug: 'google',
-        model: 'model',
-        endpointBase: 'https://provider.example',
-        job: { id: 'job-invalid' },
-        compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
-        responseJson: {},
-        image: { data: 'AQID', mimeType: 'image/png' },
-        requestAttempts: 1,
-        startedAt: 0,
-        files: {
-          resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
-          mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
-          writeFile: (() => {
-            throw new Error('must not write');
-          }) as typeof import('node:fs').writeFileSync,
-          now: () => 1,
-        },
-      }),
+      Effect.runSync(
+        Effect.scoped(
+          storeInlineImageResult({
+            providerId: 'google',
+            providerSlug: 'google',
+            model: 'model',
+            endpointBase: 'https://provider.example',
+            job: { id: 'job-invalid' },
+            compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
+            responseJson: {},
+            image: { data: 'AQID', mimeType: 'image/png' },
+            requestAttempts: 1,
+            startedAt: 0,
+            files: {
+              resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+              mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+              writeFile: (() => {
+                throw new Error('must not write');
+              }) as typeof import('node:fs').writeFileSync,
+              now: () => 1,
+            },
+          }),
+        ),
+      ),
     ).toThrow(ExternalProviderImageError);
   });
 
   it('returns final retryable failure after max attempts', async () => {
-    const response = await fetchExternalProviderWithRetry({
-      label: 'test request',
-      fetch: async () =>
-        new Response('still down', { status: 503, statusText: 'Service Unavailable' }),
-      input: 'https://provider.example',
-      maxAttempts: 2,
-      retryDelayMs: 1,
-      sleep: async () => undefined,
-    });
+    const response = await Effect.runPromise(
+      Effect.scoped(
+        fetchExternalProviderWithRetry({
+          label: 'test request',
+          fetch: async () =>
+            new Response('still down', { status: 503, statusText: 'Service Unavailable' }),
+          input: 'https://provider.example',
+          maxAttempts: 2,
+          retryDelayMs: 1,
+          sleep: () => providerSync(() => undefined),
+        }),
+      ),
+    );
 
     expect(response.attempts).toBe(2);
     expect(response.response.ok).toBe(false);
     expect(response.response.status).toBe(503);
+  });
+
+  it('interrupts a retry delay without sending another request', async () => {
+    const controller = new AbortController();
+    let attempts = 0;
+    const exit = await Effect.runPromiseExit(
+      Effect.scoped(
+        fetchExternalProviderWithRetry({
+          label: 'cancelled request',
+          fetch: async () => {
+            attempts += 1;
+            return new Response('', { status: 503 });
+          },
+          input: 'https://provider.example',
+          maxAttempts: 3,
+          retryDelayMs: 1000,
+          sleep: () => Effect.sync(() => controller.abort()).pipe(Effect.andThen(Effect.never)),
+        }),
+      ),
+      { signal: controller.signal },
+    );
+    expect(exit._tag).toBe('Failure');
+    expect(attempts).toBe(1);
   });
 });

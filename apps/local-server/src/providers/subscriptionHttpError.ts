@@ -15,6 +15,7 @@ export type SubscriptionHttpErrorCode =
   | 'invalid_request';
 
 export class SubscriptionHttpError extends Error {
+  readonly _tag = 'SubscriptionHttpError';
   readonly code: SubscriptionHttpErrorCode;
   readonly fallbackAllowed: boolean;
   readonly httpStatus: number | null;

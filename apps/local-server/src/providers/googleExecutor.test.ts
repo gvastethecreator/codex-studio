@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
@@ -104,7 +105,7 @@ describe('google executor', () => {
       now: () => 1000,
     });
 
-    const result = await executor(createGoogleContext());
+    const result = await Effect.runPromise(Effect.scoped(executor(createGoogleContext())));
     const requestBody = parseJsonBody(calls[0].init?.body);
     const transcriptWrite = writes.find((write) =>
       write.filePath.replaceAll('\\', '/').endsWith('/transcripts/job-google/google.json'),
@@ -168,13 +169,17 @@ describe('google executor', () => {
       now: () => 2000,
     });
 
-    await executor(
-      createGoogleContext({
-        sourceSpec: {
-          task: 'image_edit',
-          assets: [{ role: 'input', name: 'source.png', localPath: 'D:/inputs/source.png' }],
-        },
-      }),
+    await Effect.runPromise(
+      Effect.scoped(
+        executor(
+          createGoogleContext({
+            sourceSpec: {
+              task: 'image_edit',
+              assets: [{ role: 'input', name: 'source.png', localPath: 'D:/inputs/source.png' }],
+            },
+          }),
+        ),
+      ),
     );
 
     const requestBody = parseJsonBody(calls[0].init?.body);
@@ -216,22 +221,32 @@ describe('google executor', () => {
     });
 
     await expect(
-      executor(
-        createGoogleContext({
-          sourceSpec: {
-            task: 'image_edit',
-            assets: [{ role: 'reference', name: 'ref.png', localPath: 'D:/inputs/ref.png' }],
-          },
-        }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor(
+            createGoogleContext({
+              sourceSpec: {
+                task: 'image_edit',
+                assets: [{ role: 'reference', name: 'ref.png', localPath: 'D:/inputs/ref.png' }],
+              },
+            }),
+          ),
+        ),
       ),
     ).rejects.toThrow('Google image_edit task requires an input or external_output asset');
     await expect(
-      executor(
-        createGoogleContext({
-          sourceSpec: {
-            assets: [{ role: 'input', name: 'source.png', sourceUrl: 'https://cdn.example/a.png' }],
-          },
-        }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor(
+            createGoogleContext({
+              sourceSpec: {
+                assets: [
+                  { role: 'input', name: 'source.png', sourceUrl: 'https://cdn.example/a.png' },
+                ],
+              },
+            }),
+          ),
+        ),
       ),
     ).rejects.toThrow('must be imported as a localPath asset');
     expect(calls).toHaveLength(0);
@@ -244,11 +259,15 @@ describe('google executor', () => {
     });
 
     await expect(
-      executor(
-        createGoogleContext({
-          model: 'gemini-3.1-flash-lite-image',
-          sourceSpec: { output: { count: 1, imageSize: '4K' } },
-        }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor(
+            createGoogleContext({
+              model: 'gemini-3.1-flash-lite-image',
+              sourceSpec: { output: { count: 1, imageSize: '4K' } },
+            }),
+          ),
+        ),
       ),
     ).rejects.toThrow('does not support 4K output');
   });
@@ -277,13 +296,17 @@ describe('google executor', () => {
       now: () => 3000,
     });
 
-    await executor(
-      createGoogleContext({
-        env: {
-          GOOGLE_OAUTH_CLIENT_ID: 'desktop.apps.googleusercontent.com',
-          GOOGLE_CLOUD_PROJECT_ID: 'studio-billing-project',
-        },
-      }),
+    await Effect.runPromise(
+      Effect.scoped(
+        executor(
+          createGoogleContext({
+            env: {
+              GOOGLE_OAUTH_CLIENT_ID: 'desktop.apps.googleusercontent.com',
+              GOOGLE_CLOUD_PROJECT_ID: 'studio-billing-project',
+            },
+          }),
+        ),
+      ),
     );
 
     expect(accessTokenCalls).toBe(1);
@@ -308,13 +331,17 @@ describe('google executor', () => {
     });
 
     await expect(
-      executor(
-        createGoogleContext({
-          env: {
-            GOOGLE_API_KEY: 'secret-google-value',
-            GOOGLE_API_BASE: 'https://user:pass@example.com/v1beta?key=secret-google-value',
-          },
-        }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor(
+            createGoogleContext({
+              env: {
+                GOOGLE_API_KEY: 'secret-google-value',
+                GOOGLE_API_BASE: 'https://user:pass@example.com/v1beta?key=secret-google-value',
+              },
+            }),
+          ),
+        ),
       ),
     ).rejects.toThrow('credential-free loopback URL');
     expect(calls).toHaveLength(0);

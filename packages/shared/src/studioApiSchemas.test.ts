@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 
 import {
   CreateJobRequestBoundarySchema,
@@ -19,10 +19,10 @@ describe('shared Studio API schemas', () => {
       updatedAt: '2026-08-08T00:00:00.000Z',
     };
 
-    expect(Either.isRight(Schema.decodeUnknownEither(StudioWorkspaceSchema)(workspace))).toBe(true);
+    expect(Exit.isSuccess(Schema.decodeUnknownExit(StudioWorkspaceSchema)(workspace))).toBe(true);
     expect(
-      Either.isLeft(
-        Schema.decodeUnknownEither(CreateStudioWorkspaceRequestSchema)({
+      Exit.isFailure(
+        Schema.decodeUnknownExit(CreateStudioWorkspaceRequestSchema)({
           name: 'Invalid',
           sortOrder: 'manual',
         }),
@@ -32,8 +32,18 @@ describe('shared Studio API schemas', () => {
 
   it('rejects unsupported job kinds at the shared transport boundary', () => {
     expect(
-      Either.isRight(
-        Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)({
+      Exit.isSuccess(
+        Schema.decodeUnknownExit(CreateJobRequestBoundarySchema)({
+          kind: 'dry_run',
+          providerId: null,
+          sourceSpec: undefined,
+          execution: undefined,
+        }),
+      ),
+    ).toBe(true);
+    expect(
+      Exit.isSuccess(
+        Schema.decodeUnknownExit(CreateJobRequestBoundarySchema)({
           workspaceId: 'default',
           kind: 'image_generate',
           prompt: 'A moonlit harbor',
@@ -41,8 +51,8 @@ describe('shared Studio API schemas', () => {
       ),
     ).toBe(true);
     expect(
-      Either.isLeft(
-        Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)({
+      Exit.isFailure(
+        Schema.decodeUnknownExit(CreateJobRequestBoundarySchema)({
           kind: 'project_generate',
         }),
       ),

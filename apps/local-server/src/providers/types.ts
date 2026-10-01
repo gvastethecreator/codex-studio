@@ -1,3 +1,4 @@
+import type { ProviderEffect } from './providerEffect';
 import type {
   GenerationProviderId,
   GenerationTaskSpec,
@@ -22,5 +23,5 @@ export interface GenerationProviderJob {
 
 export interface GenerationProvider {
   readonly id: string;
-  run(job: GenerationProviderJob): Promise<TurnResult>;
+  run(job: GenerationProviderJob): ProviderEffect<TurnResult>;
 }

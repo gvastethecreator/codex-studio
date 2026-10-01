@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 import type { registerLibrary, listLibraries, removeLibrary, setDefaultLibrary } from './libraries';
 import type { publishEvent } from './events';
 
@@ -43,8 +43,8 @@ export function createLibrariesRoutes({
       );
     }
 
-    const decodedBody = Schema.decodeUnknownEither(CreateLibraryBoundarySchema)(rawBody);
-    if (Either.isLeft(decodedBody)) {
+    const decodedBody = Schema.decodeUnknownExit(CreateLibraryBoundarySchema)(rawBody);
+    if (Exit.isFailure(decodedBody)) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -55,7 +55,7 @@ export function createLibrariesRoutes({
       );
     }
 
-    const body = decodedBody.right;
+    const body = decodedBody.value;
     const library = registerLibrary({
       name: body.name || 'Untitled Library',
       path: body.path,

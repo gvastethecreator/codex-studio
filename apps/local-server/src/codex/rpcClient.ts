@@ -1,3 +1,9 @@
+import { Effect, Schedule } from 'effect';
+import {
+  providerFailure,
+  providerOperation,
+  type ProviderFailure,
+} from '../providers/providerEffect';
 import { getCodexWsUrl } from '../config';
 import { ensureAppServer } from './processSupervisor';
 import type { AppServerEnsureReason } from '../../../../packages/shared/src';
@@ -23,7 +29,6 @@ export interface RpcClientDependencies {
 interface PendingRequest {
   resolve: (value: any) => void;
   reject: (error: Error) => void;
-  timeout: ReturnType<typeof setTimeout>;
 }
 
 export class CodexRpcClient {
@@ -43,7 +48,6 @@ export class CodexRpcClient {
     predicate: (message: JsonRpcMessage) => boolean;
     resolve: (message: JsonRpcMessage) => void;
     reject: (error: Error) => void;
-    timeout: ReturnType<typeof setTimeout>;
   }>();
 
   constructor({
@@ -65,75 +69,90 @@ export class CodexRpcClient {
         : CodexRpcClient.DEFAULT_REQUEST_TIMEOUT_MS;
   }
 
-  async connect() {
-    this.ensureAppServerFn(this.ensureReason);
-
-    for (let attempt = 0; attempt < this.maxConnectAttempts; attempt += 1) {
-      try {
-        await this.tryConnect();
-        return;
-      } catch {
-        await Bun.sleep(this.retryDelayMs);
-      }
-    }
-
-    throw new Error(`Unable to connect to ${this.wsUrl}`);
+  connect() {
+    return Effect.suspend(() => {
+      this.ensureAppServerFn(this.ensureReason);
+      if (this.maxConnectAttempts <= 0)
+        return Effect.fail(providerFailure(new Error(`Unable to connect to ${this.wsUrl}`)));
+      return this.tryConnect().pipe(
+        Effect.retry({
+          times: this.maxConnectAttempts - 1,
+          schedule: Schedule.spaced(this.retryDelayMs),
+        }),
+        Effect.mapError(() => providerFailure(new Error(`Unable to connect to ${this.wsUrl}`))),
+      );
+    }).pipe(providerOperation);
   }
 
   private tryConnect() {
-    return new Promise<void>((resolve, reject) => {
+    return Effect.callback<void, ProviderFailure>((resume) => {
       const socket = new WebSocket(this.wsUrl);
-      const timeout = setTimeout(() => {
-        socket.close();
-        reject(new Error('Timed out connecting to codex app-server'));
-      }, 1000);
-
-      socket.addEventListener('open', () => {
-        clearTimeout(timeout);
+      const onOpen = () => {
+        socket.removeEventListener('error', onError);
         this.socket = socket;
         socket.addEventListener('message', (event) => this.handleMessage(String(event.data)));
         socket.addEventListener('close', () => this.handleSocketClose(socket));
-        resolve();
+        resume(Effect.void);
+      };
+      const onError = () => {
+        socket.removeEventListener('open', onOpen);
+        socket.close();
+        resume(Effect.fail(providerFailure(new Error('WebSocket connection failed'))));
+      };
+      socket.addEventListener('open', onOpen, { once: true });
+      socket.addEventListener('error', onError, { once: true });
+      return Effect.sync(() => {
+        socket.removeEventListener('open', onOpen);
+        socket.removeEventListener('error', onError);
+        socket.close();
       });
-      socket.addEventListener('error', () => {
-        clearTimeout(timeout);
-        reject(new Error('WebSocket connection failed'));
-      });
-    });
+    }).pipe(
+      Effect.timeoutOrElse({
+        duration: 1000,
+        orElse: () =>
+          Effect.fail(providerFailure(new Error('Timed out connecting to codex app-server'))),
+      }),
+    );
   }
 
   request(method: string, params?: unknown) {
-    if (!this.socket || this.socket.readyState !== WebSocket.OPEN) {
-      throw new Error('Codex app-server socket is not open');
-    }
-    const id = this.nextId++;
-    const socket = this.socket;
-
-    return new Promise<any>((resolve, reject) => {
-      const pending: PendingRequest = {
-        resolve,
-        reject,
-        timeout: undefined as unknown as ReturnType<typeof setTimeout>,
-      };
-      this.pending.set(id, pending);
-      pending.timeout = setTimeout(() => {
-        if (this.pending.get(id) !== pending) return;
-        this.pending.delete(id);
-        clearTimeout(pending.timeout);
-        reject(
-          new Error(
-            `Timed out waiting for Codex app-server response to ${method} after ${this.requestTimeoutMs}ms`,
-          ),
+    return providerOperation(
+      Effect.suspend(() => {
+        if (!this.socket || this.socket.readyState !== WebSocket.OPEN) {
+          return Effect.fail(providerFailure(new Error('Codex app-server socket is not open')));
+        }
+        const id = this.nextId++;
+        const socket = this.socket;
+        return Effect.callback<any, ProviderFailure>((resume) => {
+          const pending: PendingRequest = {
+            resolve: (value) => resume(Effect.succeed(value)),
+            reject: (error) => resume(Effect.fail(providerFailure(error))),
+          };
+          this.pending.set(id, pending);
+          try {
+            socket.send(JSON.stringify({ jsonrpc: '2.0', id, method, params }));
+          } catch (error) {
+            this.clearPending(id, pending);
+            resume(Effect.fail(providerFailure(error)));
+          }
+          return Effect.sync(() => {
+            this.clearPending(id, pending);
+          });
+        }).pipe(
+          Effect.timeoutOrElse({
+            duration: this.requestTimeoutMs,
+            orElse: () =>
+              Effect.fail(
+                providerFailure(
+                  new Error(
+                    `Timed out waiting for Codex app-server response to ${method} after ${this.requestTimeoutMs}ms`,
+                  ),
+                ),
+              ),
+          }),
         );
-      }, this.requestTimeoutMs);
-
-      try {
-        socket.send(JSON.stringify({ jsonrpc: '2.0', id, method, params }));
-      } catch (error) {
-        this.clearPending(id, pending);
-        reject(error instanceof Error ? error : new Error(String(error)));
-      }
-    });
+      }),
+    );
   }
 
   notify(method: string, params?: unknown) {
@@ -142,28 +161,32 @@ export class CodexRpcClient {
   }
 
   waitForNotification(predicate: (message: JsonRpcMessage) => boolean, timeoutMs: number) {
-    const existing = this.notifications.find(predicate);
-    if (existing) return Promise.resolve(existing);
-
-    return new Promise<JsonRpcMessage>((resolve, reject) => {
-      const listener = {
-        predicate,
-        resolve: (message: JsonRpcMessage) => {
-          clearTimeout(listener.timeout);
+    return Effect.suspend(() => {
+      const existing = this.notifications.find(predicate);
+      if (existing) return Effect.succeed(existing);
+      return Effect.callback<JsonRpcMessage, ProviderFailure>((resume) => {
+        const listener = {
+          predicate,
+          resolve: (message: JsonRpcMessage) => {
+            this.notificationListeners.delete(listener);
+            resume(Effect.succeed(message));
+          },
+          reject: (error: Error) => {
+            this.notificationListeners.delete(listener);
+            resume(Effect.fail(providerFailure(error)));
+          },
+        };
+        this.notificationListeners.add(listener);
+        return Effect.sync(() => {
           this.notificationListeners.delete(listener);
-          resolve(message);
-        },
-        reject: (error: Error) => {
-          clearTimeout(listener.timeout);
-          this.notificationListeners.delete(listener);
-          reject(error);
-        },
-        timeout: setTimeout(() => {
-          listener.reject(new Error('Timed out waiting for Codex notification'));
-        }, timeoutMs),
-      };
-
-      this.notificationListeners.add(listener);
+        });
+      }).pipe(
+        Effect.timeoutOrElse({
+          duration: timeoutMs,
+          orElse: () =>
+            Effect.fail(providerFailure(new Error('Timed out waiting for Codex notification'))),
+        }),
+      );
     });
   }
 
@@ -194,7 +217,6 @@ export class CodexRpcClient {
 
   private clearPending(id: number | string, pending: PendingRequest) {
     if (this.pending.get(id) !== pending) return false;
-    clearTimeout(pending.timeout);
     this.pending.delete(id);
     return true;
   }

@@ -1,3 +1,5 @@
+import { Cause, Context, Effect, Exit, Fiber, Layer, ManagedRuntime } from 'effect';
+import { providerOperation } from './providers/providerEffect';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import path from 'node:path';
@@ -47,6 +49,14 @@ import {
 
 export type { WorkerStatus } from '../../../packages/shared/src/workerContracts';
 
+class WorkerProviders extends Context.Service<
+  WorkerProviders,
+  {
+    codex: GenerationProvider;
+    external: GenerationProvider;
+  }
+>()('cozy-studio/WorkerProviders') {}
+
 export interface WorkerController {
   enqueueJob(job: Job): void;
   cancelQueuedOrRunningJob(jobId: string): ReturnType<typeof getJob>;
@@ -95,26 +105,6 @@ function throwIfAborted(signal?: AbortSignal) {
   if (signal?.aborted) {
     throw createAbortError();
   }
-}
-
-function waitWithAbort(durationMs: number, signal?: AbortSignal) {
-  if (!signal) return Bun.sleep(durationMs);
-  throwIfAborted(signal);
-
-  return new Promise<void>((resolve, reject) => {
-    const timeout = setTimeout(() => {
-      signal.removeEventListener('abort', handleAbort);
-      resolve();
-    }, durationMs);
-
-    const handleAbort = () => {
-      clearTimeout(timeout);
-      signal.removeEventListener('abort', handleAbort);
-      reject(createAbortError());
-    };
-
-    signal.addEventListener('abort', handleAbort, { once: true });
-  });
 }
 
 function svgForPrompt(prompt: string) {
@@ -184,7 +174,7 @@ export function createWorkerController({
   const jobQueue: Job[] = [];
   const runningJobControllers = new Map<string, AbortController>();
   const runningJobAbortReasons = new Map<string, 'user' | 'reset' | 'shutdown'>();
-  const activeJobPromises = new Map<string, Promise<void>>();
+  const activeJobFibers = new Map<string, Fiber.Fiber<void, never>>();
   let activeWorkerCount = 0;
   let isShuttingDown = false;
   let shutdownPromise: Promise<void> | null = null;
@@ -192,6 +182,12 @@ export function createWorkerController({
     createGenerationProvider?.() ?? createCodexGenerationProvider({ turn: createTurn() });
   const externalGenerationProvider =
     createExternalProvider?.() ?? createExternalGenerationProvider();
+  const runtime = ManagedRuntime.make(
+    Layer.succeed(WorkerProviders, {
+      codex: codexGenerationProvider,
+      external: externalGenerationProvider,
+    }),
+  );
   const assetPathing = createWorkerAssetPathing({
     resolveExecutionOptions,
     readEditableStudioSettings: readEditableStudioSettingsFn,
@@ -302,35 +298,39 @@ export function createWorkerController({
     ensureThumbnailVariant: ensureThumbnailVariantFn,
   });
 
-  async function runDryJob(job: Job, signal?: AbortSignal) {
-    const startedAt = Date.now();
-    recordJobEvent(job.id, 'dry_run.started', 'Dry run asset creation started.');
-    logger('info', 'worker', 'Dry run job started.', job.id);
-    await waitWithAbort(500, signal);
-    throwIfAborted(signal);
+  function runDryJob(job: Job, signal?: AbortSignal) {
+    return providerOperation(
+      Effect.gen(function* () {
+        const startedAt = Date.now();
+        recordJobEvent(job.id, 'dry_run.started', 'Dry run asset creation started.');
+        logger('info', 'worker', 'Dry run job started.', job.id);
+        yield* Effect.sleep(500);
+        throwIfAborted(signal);
 
-    const filePath = assetPathing.resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
-    mkdirSync(path.dirname(filePath), { recursive: true });
-    writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
-    const checkpoint = {
-      state: 'moving_asset' as const,
-      sourcePath: filePath,
-      filePath,
-      assetId: null,
-      catalogId: null,
-    };
-    updateJobFinalizationFn(job.id, checkpoint);
-    await assetFinalizer.finalizeJobAsset({
-      job: { ...job, finalization: checkpoint },
-      catalogContext: resolveJobCatalogContextFn(job),
-      discoveredImagePath: filePath,
-      providerId: 'dry_run',
-      options: { logPrefix: 'Dry run', width: 1200, height: 800 },
-    });
-    recordJobEvent(job.id, 'dry_run.completed', 'Dry run asset creation completed.', {
-      durationMs: Date.now() - startedAt,
-      assetCount: 1,
-    });
+        const filePath = assetPathing.resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
+        mkdirSync(path.dirname(filePath), { recursive: true });
+        writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
+        const checkpoint = {
+          state: 'moving_asset' as const,
+          sourcePath: filePath,
+          filePath,
+          assetId: null,
+          catalogId: null,
+        };
+        updateJobFinalizationFn(job.id, checkpoint);
+        yield* assetFinalizer.finalizeJobAsset({
+          job: { ...job, finalization: checkpoint },
+          catalogContext: resolveJobCatalogContextFn(job),
+          discoveredImagePath: filePath,
+          providerId: 'dry_run',
+          options: { logPrefix: 'Dry run', width: 1200, height: 800 },
+        });
+        recordJobEvent(job.id, 'dry_run.completed', 'Dry run asset creation completed.', {
+          durationMs: Date.now() - startedAt,
+          assetCount: 1,
+        });
+      }),
+    );
   }
 
   function persistProviderCheckpoint(job: Job, checkpoint: NonNullable<Job['remoteExecution']>) {
@@ -341,239 +341,249 @@ export function createWorkerController({
     });
   }
 
-  async function runCodexJob(job: Job, signal?: AbortSignal) {
-    logger('info', 'worker', 'Codex imagegen job started.', job.id);
-    const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
-    recordJobEvent(job.id, 'codex.started', 'Codex image generation started.', { turnRecordId });
-    const catalogContext = resolveJobCatalogContextFn(job);
-    const executionOptions = resolveExecutionOptions(job.execution);
-    const result = await codexGenerationProvider.run({
-      id: job.id,
-      workspaceId: job.workspaceId,
-      libraryContext: job.libraryContext,
-      prompt: job.finalPromptUsed,
-      execution: job.execution,
-      providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
-      sourceSpec: job.sourceSpec,
-      remoteExecution: job.remoteExecution,
-      checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint),
-      signal,
-    });
+  function runCodexJob(job: Job, signal?: AbortSignal) {
+    return providerOperation(
+      Effect.gen(function* () {
+        logger('info', 'worker', 'Codex imagegen job started.', job.id);
+        const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
+        recordJobEvent(job.id, 'codex.started', 'Codex image generation started.', {
+          turnRecordId,
+        });
+        const catalogContext = resolveJobCatalogContextFn(job);
+        const executionOptions = resolveExecutionOptions(job.execution);
+        const { codex } = yield* WorkerProviders;
+        const result = yield* codex.run({
+          id: job.id,
+          workspaceId: job.workspaceId,
+          libraryContext: job.libraryContext,
+          prompt: job.finalPromptUsed,
+          execution: job.execution,
+          providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
+          sourceSpec: job.sourceSpec,
+          remoteExecution: job.remoteExecution,
+          checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint),
+          signal,
+        });
 
-    throwIfAborted(signal);
-    recordJobEvent(job.id, 'codex.completed', 'Codex image generation completed.', {
-      durationMs: result.durationMs,
-      assetCount: result.assets.length,
-      threadId: result.threadId,
-      turnId: result.turnId,
-    });
+        throwIfAborted(signal);
+        recordJobEvent(job.id, 'codex.completed', 'Codex image generation completed.', {
+          durationMs: result.durationMs,
+          assetCount: result.assets.length,
+          threadId: result.threadId,
+          turnId: result.turnId,
+        });
 
-    upsertCodexTurnFn({
-      id: turnRecordId,
-      jobId: job.id,
-      codexThreadId: result.threadId,
-      codexTurnId: result.turnId,
-      transcriptPath: result.transcript,
-      status: result.assets.length > 0 ? 'completed' : 'needs_review',
-    });
+        upsertCodexTurnFn({
+          id: turnRecordId,
+          jobId: job.id,
+          codexThreadId: result.threadId,
+          codexTurnId: result.turnId,
+          transcriptPath: result.transcript,
+          status: result.assets.length > 0 ? 'completed' : 'needs_review',
+        });
 
-    const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
-    if (!discoveredImagePath) {
-      updateJobStatusFn(job.id, 'needs_review');
-      publishEventFn('job.progress', getJobFn(job.id));
-      logger(
-        'warn',
-        'worker',
-        `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`,
-        job.id,
-      );
-      return;
-    }
-
-    await assetFinalizer.finalizeJobAsset({
-      job,
-      catalogContext,
-      discoveredImagePath,
-      providerId: 'codex',
-      options: {
-        logPrefix: 'Codex',
-        embedMetadata: true,
-        executionOptions,
-      },
-    });
-  }
-
-  async function runExternalJob(job: Job, signal?: AbortSignal) {
-    const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'unknown';
-    recordJobEvent(job.id, 'external.started', `External provider job started: ${providerId}.`);
-    logger('info', 'worker', `External provider job started: ${providerId}.`, job.id);
-    const catalogContext = resolveJobCatalogContextFn(job);
-
-    const result = await externalGenerationProvider.run({
-      id: job.id,
-      workspaceId: job.workspaceId,
-      libraryContext: job.libraryContext,
-      prompt: job.finalPromptUsed,
-      execution: job.execution,
-      providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
-      sourceSpec: job.sourceSpec,
-      remoteExecution: job.remoteExecution,
-      checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint),
-      signal,
-    });
-
-    throwIfAborted(signal);
-
-    recordJobEvent(job.id, 'external.completed', 'External provider execution completed.', {
-      transcript: result.transcript,
-      durationMs: result.durationMs,
-      assetCount: result.assets.length,
-    });
-
-    const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
-    if (!discoveredImagePath) {
-      updateJobStatusFn(job.id, 'needs_review');
-      publishEventFn('job.progress', getJobFn(job.id));
-      logger(
-        'warn',
-        'worker',
-        `External provider completed but no image file was discovered. Transcript: ${result.transcript}`,
-        job.id,
-      );
-      return;
-    }
-
-    await assetFinalizer.finalizeJobAsset({
-      job,
-      catalogContext,
-      discoveredImagePath,
-      providerId,
-      options: {
-        logPrefix: 'External provider',
-      },
-    });
-  }
-
-  async function processJob(job: Job, controller: AbortController) {
-    executionSpans.set(job.id, {
-      attempt: job.attempt ?? 1,
-      executionId: randomUUID(),
-      transport: job.execution?.providerOptions?.codex?.transport ?? job.providerId ?? 'unknown',
-    });
-    try {
-      throwIfAborted(controller.signal);
-      recordJobEvent(job.id, 'job.started', 'Job execution started.', {
-        startedAt: new Date().toISOString(),
-      });
-      updateJobStatusFn(job.id, 'running');
-      publishEventFn('job.running', getJobFn(job.id));
-      if (job.finalization) {
-        if (job.finalization.state === 'completed') {
-          updateJobStatusFn(job.id, 'completed');
-          publishEventFn('job.completed', getJobFn(job.id));
+        const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
+        if (!discoveredImagePath) {
+          updateJobStatusFn(job.id, 'needs_review');
+          publishEventFn('job.progress', getJobFn(job.id));
+          logger(
+            'warn',
+            'worker',
+            `Codex turn completed but no image file was discovered. Transcript: ${result.transcript}`,
+            job.id,
+          );
           return;
         }
-        const resumePath = job.finalization.filePath ?? job.finalization.sourcePath;
-        if (!resumePath) {
-          throw new Error(`Job ${job.id} has an incomplete finalization checkpoint.`);
-        }
-        const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'recovered';
-        await assetFinalizer.finalizeJobAsset({
-          job,
-          catalogContext: resolveJobCatalogContextFn(job),
-          discoveredImagePath: resumePath,
-          providerId,
-          options: { logPrefix: 'Recovered' },
-        });
-        return;
-      }
-      const runtimeTarget = resolveWorkerRuntimeTargetFn(job);
 
-      if (runtimeTarget === 'dry_run') {
-        await runDryJob(job, controller.signal);
-      } else if (runtimeTarget === 'codex') {
-        await runCodexJob(job, controller.signal);
-      } else if (runtimeTarget === 'external') {
-        await runExternalJob(job, controller.signal);
-      } else {
-        throw createUnsupportedRuntimeTargetError(
-          {
-            kind: job.kind,
-            providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
-            sourceTask: job.sourceSpec?.task ?? null,
+        yield* assetFinalizer.finalizeJobAsset({
+          job,
+          catalogContext,
+          discoveredImagePath,
+          providerId: 'codex',
+          options: {
+            logPrefix: 'Codex',
+            embedMetadata: true,
+            executionOptions,
           },
-          { jobId: job.id },
-        );
-      }
-    } catch (error) {
+        });
+      }),
+    );
+  }
+
+  function runExternalJob(job: Job, signal?: AbortSignal) {
+    return providerOperation(
+      Effect.gen(function* () {
+        const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'unknown';
+        recordJobEvent(job.id, 'external.started', `External provider job started: ${providerId}.`);
+        logger('info', 'worker', `External provider job started: ${providerId}.`, job.id);
+        const catalogContext = resolveJobCatalogContextFn(job);
+
+        const { external } = yield* WorkerProviders;
+        const result = yield* external.run({
+          id: job.id,
+          workspaceId: job.workspaceId,
+          libraryContext: job.libraryContext,
+          prompt: job.finalPromptUsed,
+          execution: job.execution,
+          providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
+          sourceSpec: job.sourceSpec,
+          remoteExecution: job.remoteExecution,
+          checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint),
+          signal,
+        });
+
+        throwIfAborted(signal);
+
+        recordJobEvent(job.id, 'external.completed', 'External provider execution completed.', {
+          transcript: result.transcript,
+          durationMs: result.durationMs,
+          assetCount: result.assets.length,
+        });
+
+        const discoveredImagePath = result.assets[0]?.sourcePath ?? null;
+        if (!discoveredImagePath) {
+          updateJobStatusFn(job.id, 'needs_review');
+          publishEventFn('job.progress', getJobFn(job.id));
+          logger(
+            'warn',
+            'worker',
+            `External provider completed but no image file was discovered. Transcript: ${result.transcript}`,
+            job.id,
+          );
+          return;
+        }
+
+        yield* assetFinalizer.finalizeJobAsset({
+          job,
+          catalogContext,
+          discoveredImagePath,
+          providerId,
+          options: {
+            logPrefix: 'External provider',
+          },
+        });
+      }),
+    );
+  }
+
+  function processJob(job: Job, controller: AbortController) {
+    return providerOperation(
+      Effect.gen(function* () {
+        executionSpans.set(job.id, {
+          attempt: job.attempt ?? 1,
+          executionId: randomUUID(),
+          transport:
+            job.execution?.providerOptions?.codex?.transport ?? job.providerId ?? 'unknown',
+        });
+        throwIfAborted(controller.signal);
+        recordJobEvent(job.id, 'job.started', 'Job execution started.', {
+          startedAt: new Date().toISOString(),
+        });
+        updateJobStatusFn(job.id, 'running');
+        publishEventFn('job.running', getJobFn(job.id));
+        if (job.finalization) {
+          if (job.finalization.state === 'completed') {
+            updateJobStatusFn(job.id, 'completed');
+            publishEventFn('job.completed', getJobFn(job.id));
+            return;
+          }
+          const resumePath = job.finalization.filePath ?? job.finalization.sourcePath;
+          if (!resumePath) {
+            throw new Error(`Job ${job.id} has an incomplete finalization checkpoint.`);
+          }
+          const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'recovered';
+          yield* assetFinalizer.finalizeJobAsset({
+            job,
+            catalogContext: resolveJobCatalogContextFn(job),
+            discoveredImagePath: resumePath,
+            providerId,
+            options: { logPrefix: 'Recovered' },
+          });
+          return;
+        }
+        const runtimeTarget = resolveWorkerRuntimeTargetFn(job);
+
+        if (runtimeTarget === 'dry_run') {
+          yield* runDryJob(job, controller.signal);
+        } else if (runtimeTarget === 'codex') {
+          yield* runCodexJob(job, controller.signal);
+        } else if (runtimeTarget === 'external') {
+          yield* runExternalJob(job, controller.signal);
+        } else {
+          throw createUnsupportedRuntimeTargetError(
+            {
+              kind: job.kind,
+              providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
+              sourceTask: job.sourceSpec?.task ?? null,
+            },
+            { jobId: job.id },
+          );
+        }
+      }),
+    );
+  }
+
+  function handleJobFailure(job: Job, error: unknown) {
+    if (
+      error instanceof ProviderExecutionUncertainError ||
+      (!isAbortError(error) &&
+        job.remoteExecution &&
+        ['submitting', 'accepted', 'completed'].includes(job.remoteExecution.phase))
+    ) {
+      const message =
+        error instanceof ProviderExecutionUncertainError
+          ? error.message
+          : 'Provider execution was recorded, but local completion could not be confirmed. Review this job before creating another request.';
+      const cause = error instanceof Error ? error.cause : null;
+      recordJobEvent(
+        job.id,
+        'job.needs_review',
+        message,
+        cause instanceof SubscriptionHttpError ? subscriptionHttpFailureMetadata(cause) : undefined,
+      );
+      updateJobStatusFn(job.id, 'needs_review', message);
+      publishEventFn('job.progress', getJobFn(job.id));
+      logger('warn', 'worker', message, job.id);
+    } else if (isAbortError(error)) {
+      const abortReason = runningJobAbortReasons.get(job.id) ?? 'user';
       if (
-        error instanceof ProviderExecutionUncertainError ||
-        (!isAbortError(error) &&
-          job.remoteExecution &&
-          ['submitting', 'accepted', 'completed'].includes(job.remoteExecution.phase))
+        abortReason !== 'shutdown' &&
+        job.remoteExecution &&
+        job.remoteExecution.phase !== 'cancelled'
       ) {
         const message =
-          error instanceof ProviderExecutionUncertainError
-            ? error.message
-            : 'Provider execution was recorded, but local completion could not be confirmed. Review this job before creating another request.';
-        const cause = error instanceof Error ? error.cause : null;
-        recordJobEvent(
-          job.id,
-          'job.needs_review',
-          message,
-          cause instanceof SubscriptionHttpError
-            ? subscriptionHttpFailureMetadata(cause)
-            : undefined,
-        );
+          'Remote cancellation is not confirmed. Resume this job to reconcile its provider result.';
         updateJobStatusFn(job.id, 'needs_review', message);
         publishEventFn('job.progress', getJobFn(job.id));
-        logger('warn', 'worker', message, job.id);
-      } else if (isAbortError(error)) {
-        const abortReason = runningJobAbortReasons.get(job.id) ?? 'user';
-        if (
-          abortReason !== 'shutdown' &&
-          job.remoteExecution &&
-          job.remoteExecution.phase !== 'cancelled'
-        ) {
-          const message =
-            'Remote cancellation is not confirmed. Resume this job to reconcile its provider result.';
-          updateJobStatusFn(job.id, 'needs_review', message);
-          publishEventFn('job.progress', getJobFn(job.id));
-          recordJobEvent(job.id, 'job.needs_review', message);
-        } else if (abortReason === 'shutdown') {
-          recordJobEvent(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
-          updateJobStatusFn(job.id, 'queued');
-          publishEventFn('job.queued', getJobFn(job.id));
-          logger('info', 'worker', 'Job requeued for recovery after studio shutdown.', job.id);
-        } else {
-          recordJobEvent(job.id, 'job.cancelled', 'Job cancelled by user.');
-          updateJobStatusFn(job.id, 'cancelled');
-          publishEventFn('job.cancelled', getJobFn(job.id));
-          logger('info', 'worker', 'Job cancelled by user.', job.id);
-        }
+        recordJobEvent(job.id, 'job.needs_review', message);
+      } else if (abortReason === 'shutdown') {
+        recordJobEvent(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
+        updateJobStatusFn(job.id, 'queued');
+        publishEventFn('job.queued', getJobFn(job.id));
+        logger('info', 'worker', 'Job requeued for recovery after studio shutdown.', job.id);
       } else {
-        const message = formatWorkerErrorMessage(error);
-        recordJobEvent(
-          job.id,
-          'job.failed',
-          message,
-          error instanceof SubscriptionHttpError
-            ? subscriptionHttpFailureMetadata(error)
-            : undefined,
-        );
-        updateJobStatusFn(job.id, 'failed', message);
-        publishEventFn('job.failed', getJobFn(job.id));
-        logger('error', 'worker', message, job.id);
+        const message =
+          abortReason === 'reset' ? 'Job cancelled by Studio reset.' : 'Job cancelled by user.';
+        recordJobEvent(job.id, 'job.cancelled', message);
+        updateJobStatusFn(job.id, 'cancelled');
+        publishEventFn('job.cancelled', getJobFn(job.id));
+        logger('info', 'worker', message, job.id);
       }
-    } finally {
-      executionSpans.delete(job.id);
-      runningJobControllers.delete(job.id);
-      runningJobAbortReasons.delete(job.id);
-      runningJobs.delete(job.id);
+    } else {
+      const message = formatWorkerErrorMessage(error);
+      recordJobEvent(
+        job.id,
+        'job.failed',
+        message,
+        error instanceof SubscriptionHttpError ? subscriptionHttpFailureMetadata(error) : undefined,
+      );
+      updateJobStatusFn(job.id, 'failed', message);
+      publishEventFn('job.failed', getJobFn(job.id));
+      logger('error', 'worker', message, job.id);
     }
   }
 
-  async function processQueue() {
+  function processQueue() {
     if (isShuttingDown) return;
     while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
       const providers = [...new Set(jobQueue.map(providerFor))];
@@ -598,19 +608,37 @@ export function createWorkerController({
       runningJobControllers.set(job.id, controller);
 
       activeWorkerCount += 1;
-      const workPromise = Promise.resolve().then(async () => {
-        try {
-          await processJob(job, controller);
-        } finally {
-          activeWorkerCount -= 1;
-          const remaining = (activeByProvider.get(provider) ?? 1) - 1;
-          if (remaining === 0) activeByProvider.delete(provider);
-          else activeByProvider.set(provider, remaining);
-          activeJobPromises.delete(job.id);
-          queueMicrotask(processQueue);
-        }
-      });
-      activeJobPromises.set(job.id, workPromise);
+      const work = Effect.uninterruptibleMask((restore) =>
+        Effect.gen(function* () {
+          const exit = yield* Effect.exit(
+            restore(
+              Effect.yieldNow.pipe(Effect.andThen(Effect.scoped(processJob(job, controller)))),
+            ),
+          );
+          if (Exit.isFailure(exit) && getJobFn(job.id)?.finalization?.state !== 'completed') {
+            const error = Cause.hasInterruptsOnly(exit.cause)
+              ? createAbortError()
+              : Cause.squash(exit.cause);
+            handleJobFailure(job, error);
+          }
+        }),
+      ).pipe(
+        Effect.ensuring(
+          Effect.sync(() => {
+            executionSpans.delete(job.id);
+            runningJobControllers.delete(job.id);
+            runningJobAbortReasons.delete(job.id);
+            runningJobs.delete(job.id);
+            activeWorkerCount -= 1;
+            const remaining = (activeByProvider.get(provider) ?? 1) - 1;
+            if (remaining === 0) activeByProvider.delete(provider);
+            else activeByProvider.set(provider, remaining);
+            activeJobFibers.delete(job.id);
+            queueMicrotask(processQueue);
+          }),
+        ),
+      );
+      activeJobFibers.set(job.id, runtime.runFork(work, { signal: controller.signal }));
     }
   }
 
@@ -715,8 +743,8 @@ export function createWorkerController({
         }
       }
 
-      if (activeJobPromises.size > 0) {
-        await Promise.allSettled(activeJobPromises.values());
+      if (activeJobFibers.size > 0) {
+        await runtime.runPromise(Fiber.awaitAll([...activeJobFibers.values()]));
       }
 
       runningJobs.clear();
@@ -743,11 +771,12 @@ export function createWorkerController({
             }
           }
 
-          if (activeJobPromises.size > 0) {
-            await Promise.allSettled(activeJobPromises.values());
+          if (activeJobFibers.size > 0) {
+            await runtime.runPromise(Fiber.awaitAll([...activeJobFibers.values()]));
           }
 
           runningJobs.clear();
+          await runtime.dispose();
         })();
       }
 

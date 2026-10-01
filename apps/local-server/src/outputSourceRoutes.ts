@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 import {
   detectExternalOutputSourceCandidates,
   importExternalOutputSourceFiles,
@@ -26,18 +26,18 @@ interface OutputSourceRoutesDependencies {
 const RegisterOutputSourceBoundarySchema = Schema.Struct({
   label: Schema.optional(Schema.String),
   path: Schema.String,
-  providerId: Schema.optional(Schema.Union(Schema.String, Schema.Null)),
+  providerId: Schema.optional(Schema.NullOr(Schema.String)),
 });
 
 const ImportOutputSourceBoundarySchema = Schema.Struct({
   files: Schema.Array(Schema.String),
   limit: Schema.optional(Schema.Number),
-  workspaceId: Schema.optional(Schema.Union(Schema.String, Schema.Null)),
+  workspaceId: Schema.optional(Schema.NullOr(Schema.String)),
 });
 
 function decodeImportOutputSourceBody(rawBody: unknown) {
-  const strict = Schema.decodeUnknownEither(ImportOutputSourceBoundarySchema)(rawBody);
-  if (Either.isRight(strict)) return strict.right;
+  const strict = Schema.decodeUnknownExit(ImportOutputSourceBoundarySchema)(rawBody);
+  if (Exit.isSuccess(strict)) return strict.value;
 
   if (typeof rawBody !== 'object' || rawBody === null || Array.isArray(rawBody)) {
     return null;
@@ -118,8 +118,8 @@ export function createOutputSourceRoutes({
       );
     }
 
-    const decodedBody = Schema.decodeUnknownEither(RegisterOutputSourceBoundarySchema)(rawBody);
-    if (Either.isLeft(decodedBody)) {
+    const decodedBody = Schema.decodeUnknownExit(RegisterOutputSourceBoundarySchema)(rawBody);
+    if (Exit.isFailure(decodedBody)) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -133,7 +133,7 @@ export function createOutputSourceRoutes({
     const result = registerExternalOutputSource({
       storage: settingsStorage,
       libraryDir: readConfig().libraryDir,
-      input: decodedBody.right,
+      input: decodedBody.value,
     });
 
     if (!result.ok) {

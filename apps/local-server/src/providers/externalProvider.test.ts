@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
@@ -23,13 +25,17 @@ describe('externalProvider', () => {
     });
 
     await expect(
-      provider.run({
-        id: 'job-fal',
-        workspaceId: 'workspace-1',
-        providerId: 'fal',
-        prompt: 'small brass key',
-        execution: null,
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          provider.run({
+            id: 'job-fal',
+            workspaceId: 'workspace-1',
+            providerId: 'fal',
+            prompt: 'small brass key',
+            execution: null,
+          }),
+        ),
+      ),
     ).rejects.toThrow('Missing Provider Secret source: FAL_KEY or FAL_API_KEY.');
   });
 
@@ -44,13 +50,17 @@ describe('externalProvider', () => {
 
     let message = '';
     try {
-      await provider.run({
-        id: 'job-google',
-        workspaceId: 'workspace-1',
-        providerId: 'google',
-        prompt: 'glass owl',
-        execution: null,
-      });
+      await Effect.runPromise(
+        Effect.scoped(
+          provider.run({
+            id: 'job-google',
+            workspaceId: 'workspace-1',
+            providerId: 'google',
+            prompt: 'glass owl',
+            execution: null,
+          }),
+        ),
+      );
     } catch (error) {
       message = error instanceof Error ? error.message : String(error);
     }
@@ -75,22 +85,27 @@ describe('externalProvider', () => {
         getExternalProviderRuntimePreflight(providerId, {
           GOOGLE_API_KEY: 'secret-google-value',
         }),
-      execute: async (context) => {
-        calls.push(context);
-        return turnResult({
-          assets: [{ type: 'file', sourcePath: 'D:/out/image.png', mimeType: 'image/png' }],
-        });
-      },
+      execute: (context) =>
+        providerSync(() => {
+          calls.push(context);
+          return turnResult({
+            assets: [{ type: 'file', sourcePath: 'D:/out/image.png', mimeType: 'image/png' }],
+          });
+        }),
     });
 
-    const result = await provider.run({
-      id: 'job-google',
-      workspaceId: 'workspace-1',
-      providerId: 'google',
-      prompt: 'fallback prompt',
-      execution: { model: 'nano-banana', reasoningEffort: 'minimal', serviceTier: null },
-      sourceSpec,
-    });
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        provider.run({
+          id: 'job-google',
+          workspaceId: 'workspace-1',
+          providerId: 'google',
+          prompt: 'fallback prompt',
+          execution: { model: 'nano-banana', reasoningEffort: 'minimal', serviceTier: null },
+          sourceSpec,
+        }),
+      ),
+    );
 
     expect(result.assets).toHaveLength(1);
     expect(calls).toHaveLength(1);
@@ -118,22 +133,29 @@ describe('externalProvider', () => {
         }),
       createExecutor: (providerId) =>
         providerId === 'google'
-          ? async (context) => {
-              calls.push(context);
-              return turnResult({
-                assets: [{ type: 'file', sourcePath: 'D:/out/google.png', mimeType: 'image/png' }],
-              });
-            }
+          ? (context) =>
+              providerSync(() => {
+                calls.push(context);
+                return turnResult({
+                  assets: [
+                    { type: 'file', sourcePath: 'D:/out/google.png', mimeType: 'image/png' },
+                  ],
+                });
+              })
           : null,
     });
 
-    const result = await provider.run({
-      id: 'job-google',
-      workspaceId: 'workspace-1',
-      providerId: 'google',
-      prompt: 'glass owl',
-      execution: null,
-    });
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        provider.run({
+          id: 'job-google',
+          workspaceId: 'workspace-1',
+          providerId: 'google',
+          prompt: 'glass owl',
+          execution: null,
+        }),
+      ),
+    );
 
     expect(result.assets[0]?.sourcePath).toBe('D:/out/google.png');
     expect(calls).toHaveLength(1);
@@ -147,13 +169,17 @@ describe('externalProvider', () => {
     expect(JSON.stringify(calls)).not.toContain('secret-google-value');
 
     await expect(
-      provider.run({
-        id: 'job-fal',
-        workspaceId: 'workspace-1',
-        providerId: 'fal',
-        prompt: 'small brass key',
-        execution: null,
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          provider.run({
+            id: 'job-fal',
+            workspaceId: 'workspace-1',
+            providerId: 'fal',
+            prompt: 'small brass key',
+            execution: null,
+          }),
+        ),
+      ),
     ).rejects.toThrow('Provider runtime preflight failed for fal');
   });
 });

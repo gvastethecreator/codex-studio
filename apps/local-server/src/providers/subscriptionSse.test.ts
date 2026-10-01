@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { describe, expect, it } from 'vitest';
 import { consumeSseJson } from './subscriptionSse';
 
@@ -14,14 +15,18 @@ function chunks(parts: string[]) {
 describe('subscription SSE consumption', () => {
   it('parses frames split across transport chunks without retaining earlier events', async () => {
     const events: unknown[] = [];
-    await consumeSseJson(
-      chunks([
-        'event: response.output_item.done\r\nda',
-        'ta: {"result":"final",',
-        '"status":"completed"}\r\n\r\n',
-        'data: [DONE]\n\n',
-      ]),
-      (event) => events.push(event),
+    await Effect.runPromise(
+      Effect.scoped(
+        consumeSseJson(
+          chunks([
+            'event: response.output_item.done\r\nda',
+            'ta: {"result":"final",',
+            '"status":"completed"}\r\n\r\n',
+            'data: [DONE]\n\n',
+          ]),
+          (event) => events.push(event),
+        ),
+      ),
     );
     expect(events).toEqual([
       { type: 'response.output_item.done', result: 'final', status: 'completed' },
@@ -30,7 +35,9 @@ describe('subscription SSE consumption', () => {
 
   it('rejects an oversized frame instead of accepting an unbounded response', async () => {
     await expect(
-      consumeSseJson(chunks(['data: 123456789\n\n']), () => undefined, 8),
+      Effect.runPromise(
+        Effect.scoped(consumeSseJson(chunks(['data: 123456789\n\n']), () => undefined, 8)),
+      ),
     ).rejects.toThrow('size limit');
   });
 });

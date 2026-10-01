@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -59,42 +61,47 @@ describe('createGrokImagineExecutor', () => {
         resolveDefaultLibraryPath: (...segments) => path.join(libraryRoot, ...segments),
         createSessionId: () => '123e4567-e89b-42d3-a456-426614174000',
         now: () => 1_000,
-        runCli: async ({ args, cwd }) => {
-          observedArgs = args;
-          const promptIndex = args.indexOf('--prompt-file');
-          observedPrompt = readFileSync(args[promptIndex + 1]!, 'utf8');
-          const sessionIndex = args.indexOf('--session-id');
-          const sessionId = args[sessionIndex + 1]!;
-          const imagesDirectory = path.join(
-            grokHome,
-            'sessions',
-            encodeURIComponent(cwd),
-            sessionId,
-            'images',
-          );
-          mkdirSync(imagesDirectory, { recursive: true });
-          writeFileSync(path.join(imagesDirectory, 'generated.webp'), 'fake-image');
-          return {
-            status: 0,
-            stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
-            stderr: '',
-          };
-        },
+        runCli: ({ args, cwd }) =>
+          providerSync(() => {
+            observedArgs = args;
+            const promptIndex = args.indexOf('--prompt-file');
+            observedPrompt = readFileSync(args[promptIndex + 1]!, 'utf8');
+            const sessionIndex = args.indexOf('--session-id');
+            const sessionId = args[sessionIndex + 1]!;
+            const imagesDirectory = path.join(
+              grokHome,
+              'sessions',
+              encodeURIComponent(cwd),
+              sessionId,
+              'images',
+            );
+            mkdirSync(imagesDirectory, { recursive: true });
+            writeFileSync(path.join(imagesDirectory, 'generated.webp'), 'fake-image');
+            return {
+              status: 0,
+              stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
+              stderr: '',
+            };
+          }),
       });
 
-      const result = await executor({
-        providerId: 'grok',
-        preflight: READY_PREFLIGHT,
-        compiledInput,
-        job: {
-          id: 'job-grok-1',
-          workspaceId: 'workspace-1',
-          libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
-          providerId: 'grok',
-          prompt: 'A clean geometric red paper boat on calm water.',
-          execution: { model: 'grok-4.5', reasoningEffort: 'low' },
-        },
-      });
+      const result = await Effect.runPromise(
+        Effect.scoped(
+          executor({
+            providerId: 'grok',
+            preflight: READY_PREFLIGHT,
+            compiledInput,
+            job: {
+              id: 'job-grok-1',
+              workspaceId: 'workspace-1',
+              libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
+              providerId: 'grok',
+              prompt: 'A clean geometric red paper boat on calm water.',
+              execution: { model: 'grok-4.5', reasoningEffort: 'low' },
+            },
+          }),
+        ),
+      );
 
       expect(observedArgs).toEqual(
         expect.arrayContaining([
@@ -149,26 +156,31 @@ describe('createGrokImagineExecutor', () => {
       const executor = createGrokImagineExecutor({
         readRuntimeDoctor: () => READY_RUNTIME,
         resolveGrokHome: () => path.join(root, 'grok-home'),
-        runCli: async () => {
-          runCount += 1;
-          return { status: 1, stdout: '', stderr: '' };
-        },
+        runCli: () =>
+          providerSync(() => {
+            runCount += 1;
+            return { status: 1, stdout: '', stderr: '' };
+          }),
       });
 
       await expect(
-        executor({
-          providerId: 'grok',
-          preflight: READY_PREFLIGHT,
-          compiledInput,
-          job: {
-            id: 'job-grok-edit',
-            workspaceId: 'workspace-1',
-            libraryContext: { libraryId: 'library-1', rootPath: root },
-            providerId: 'grok',
-            prompt: sourceSpec.prompt,
-            sourceSpec,
-          },
-        }),
+        Effect.runPromise(
+          Effect.scoped(
+            executor({
+              providerId: 'grok',
+              preflight: READY_PREFLIGHT,
+              compiledInput,
+              job: {
+                id: 'job-grok-edit',
+                workspaceId: 'workspace-1',
+                libraryContext: { libraryId: 'library-1', rootPath: root },
+                providerId: 'grok',
+                prompt: sourceSpec.prompt,
+                sourceSpec,
+              },
+            }),
+          ),
+        ),
       ).rejects.toThrow('must be imported into the Studio Library');
       expect(runCount).toBe(0);
     } finally {
@@ -222,44 +234,49 @@ describe('createGrokImagineExecutor', () => {
         resolveDefaultLibraryPath: (...segments) => path.join(libraryRoot, ...segments),
         createSessionId: () => '123e4567-e89b-42d3-a456-426614174001',
         now: () => 2_000,
-        runCli: async ({ args, cwd }) => {
-          runCount += 1;
-          observedArgs = args;
-          const promptIndex = args.indexOf('--prompt-file');
-          observedPrompt = readFileSync(args[promptIndex + 1]!, 'utf8');
-          const sessionIndex = args.indexOf('--session-id');
-          const sessionId = args[sessionIndex + 1]!;
-          const imagesDirectory = path.join(
-            grokHome,
-            'sessions',
-            encodeURIComponent(cwd),
-            sessionId,
-            'images',
-          );
-          mkdirSync(imagesDirectory, { recursive: true });
-          writeFileSync(path.join(imagesDirectory, 'edited.webp'), 'fake-edited-image');
-          return {
-            status: 0,
-            stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
-            stderr: '',
-          };
-        },
+        runCli: ({ args, cwd }) =>
+          providerSync(() => {
+            runCount += 1;
+            observedArgs = args;
+            const promptIndex = args.indexOf('--prompt-file');
+            observedPrompt = readFileSync(args[promptIndex + 1]!, 'utf8');
+            const sessionIndex = args.indexOf('--session-id');
+            const sessionId = args[sessionIndex + 1]!;
+            const imagesDirectory = path.join(
+              grokHome,
+              'sessions',
+              encodeURIComponent(cwd),
+              sessionId,
+              'images',
+            );
+            mkdirSync(imagesDirectory, { recursive: true });
+            writeFileSync(path.join(imagesDirectory, 'edited.webp'), 'fake-edited-image');
+            return {
+              status: 0,
+              stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
+              stderr: '',
+            };
+          }),
       });
 
-      const result = await executor({
-        providerId: 'grok',
-        preflight: READY_PREFLIGHT,
-        compiledInput,
-        job: {
-          id: 'job-grok-managed-edit',
-          workspaceId: 'workspace-1',
-          libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
-          providerId: 'grok',
-          prompt: sourceSpec.prompt,
-          sourceSpec,
-          execution: { model: 'grok-4.5', reasoningEffort: 'low' },
-        },
-      });
+      const result = await Effect.runPromise(
+        Effect.scoped(
+          executor({
+            providerId: 'grok',
+            preflight: READY_PREFLIGHT,
+            compiledInput,
+            job: {
+              id: 'job-grok-managed-edit',
+              workspaceId: 'workspace-1',
+              libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
+              providerId: 'grok',
+              prompt: sourceSpec.prompt,
+              sourceSpec,
+              execution: { model: 'grok-4.5', reasoningEffort: 'low' },
+            },
+          }),
+        ),
+      );
 
       expect(runCount).toBe(1);
       expect(observedArgs).toEqual(expect.arrayContaining(['--tools', 'image_edit']));
@@ -304,26 +321,31 @@ describe('createGrokImagineExecutor', () => {
       const executor = createGrokImagineExecutor({
         readRuntimeDoctor: () => READY_RUNTIME,
         resolveGrokHome: () => path.join(root, 'grok-home'),
-        runCli: async () => {
-          runCount += 1;
-          return { status: 1, stdout: '', stderr: '' };
-        },
+        runCli: () =>
+          providerSync(() => {
+            runCount += 1;
+            return { status: 1, stdout: '', stderr: '' };
+          }),
       });
 
       await expect(
-        executor({
-          providerId: 'grok',
-          preflight: READY_PREFLIGHT,
-          compiledInput,
-          job: {
-            id: 'job-grok-source-limit',
-            workspaceId: 'workspace-1',
-            libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
-            providerId: 'grok',
-            prompt: sourceSpec.prompt,
-            sourceSpec,
-          },
-        }),
+        Effect.runPromise(
+          Effect.scoped(
+            executor({
+              providerId: 'grok',
+              preflight: READY_PREFLIGHT,
+              compiledInput,
+              job: {
+                id: 'job-grok-source-limit',
+                workspaceId: 'workspace-1',
+                libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
+                providerId: 'grok',
+                prompt: sourceSpec.prompt,
+                sourceSpec,
+              },
+            }),
+          ),
+        ),
       ).rejects.toThrow('at most 5 managed source images');
       expect(runCount).toBe(0);
     } finally {
@@ -353,26 +375,31 @@ describe('createGrokImagineExecutor', () => {
       const executor = createGrokImagineExecutor({
         readRuntimeDoctor: () => READY_RUNTIME,
         resolveGrokHome: () => path.join(root, 'grok-home'),
-        runCli: async () => {
-          runCount += 1;
-          return { status: 1, stdout: '', stderr: '' };
-        },
+        runCli: () =>
+          providerSync(() => {
+            runCount += 1;
+            return { status: 1, stdout: '', stderr: '' };
+          }),
       });
 
       await expect(
-        executor({
-          providerId: 'grok',
-          preflight: READY_PREFLIGHT,
-          compiledInput,
-          job: {
-            id: 'job-grok-ratio',
-            workspaceId: 'workspace-1',
-            libraryContext: { libraryId: 'library-1', rootPath: root },
-            providerId: 'grok',
-            prompt: sourceSpec.prompt,
-            sourceSpec,
-          },
-        }),
+        Effect.runPromise(
+          Effect.scoped(
+            executor({
+              providerId: 'grok',
+              preflight: READY_PREFLIGHT,
+              compiledInput,
+              job: {
+                id: 'job-grok-ratio',
+                workspaceId: 'workspace-1',
+                libraryContext: { libraryId: 'library-1', rootPath: root },
+                providerId: 'grok',
+                prompt: sourceSpec.prompt,
+                sourceSpec,
+              },
+            }),
+          ),
+        ),
       ).rejects.toThrow('does not support aspect ratio "2:3"');
       expect(runCount).toBe(0);
     } finally {
@@ -402,39 +429,44 @@ describe('createGrokImagineExecutor', () => {
         resolveDefaultLibraryPath: (...segments) => path.join(libraryRoot, ...segments),
         createSessionId: () => '123e4567-e89b-42d3-a456-426614174002',
         now: () => 3_000,
-        runCli: async ({ args, cwd }) => {
-          observedArgs = args;
-          const sessionIndex = args.indexOf('--session-id');
-          const sessionId = args[sessionIndex + 1]!;
-          const imagesDirectory = path.join(
-            grokHome,
-            'sessions',
-            encodeURIComponent(cwd),
-            sessionId,
-            'images',
-          );
-          mkdirSync(imagesDirectory, { recursive: true });
-          writeFileSync(path.join(imagesDirectory, 'generated.webp'), 'fake-image');
-          return {
-            status: 0,
-            stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
-            stderr: '',
-          };
-        },
+        runCli: ({ args, cwd }) =>
+          providerSync(() => {
+            observedArgs = args;
+            const sessionIndex = args.indexOf('--session-id');
+            const sessionId = args[sessionIndex + 1]!;
+            const imagesDirectory = path.join(
+              grokHome,
+              'sessions',
+              encodeURIComponent(cwd),
+              sessionId,
+              'images',
+            );
+            mkdirSync(imagesDirectory, { recursive: true });
+            writeFileSync(path.join(imagesDirectory, 'generated.webp'), 'fake-image');
+            return {
+              status: 0,
+              stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
+              stderr: '',
+            };
+          }),
       });
 
-      await executor({
-        providerId: 'grok',
-        preflight: READY_PREFLIGHT,
-        compiledInput,
-        job: {
-          id: 'job-grok-default-model',
-          workspaceId: 'workspace-1',
-          libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
-          providerId: 'grok',
-          prompt: 'A clean geometric red paper boat on calm water.',
-        },
-      });
+      await Effect.runPromise(
+        Effect.scoped(
+          executor({
+            providerId: 'grok',
+            preflight: READY_PREFLIGHT,
+            compiledInput,
+            job: {
+              id: 'job-grok-default-model',
+              workspaceId: 'workspace-1',
+              libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
+              providerId: 'grok',
+              prompt: 'A clean geometric red paper boat on calm water.',
+            },
+          }),
+        ),
+      );
 
       expect(observedArgs).not.toContain('--model');
     } finally {

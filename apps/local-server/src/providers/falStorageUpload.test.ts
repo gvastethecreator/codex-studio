@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { describe, expect, it } from 'vitest';
 
 import type { ProviderAssetInputRef } from './externalProviderInputs';
@@ -31,8 +32,10 @@ describe('fal storage upload', () => {
       },
     });
 
-    const url = await uploadLocalAsset(
-      asset({ name: 'source.png', localPath: 'D:/inputs/source.png' }),
+    const url = await Effect.runPromise(
+      Effect.scoped(
+        uploadLocalAsset(asset({ name: 'source.png', localPath: 'D:/inputs/source.png' })),
+      ),
     );
 
     expect(url).toBe('https://v3.fal.media/files/source.png');
@@ -48,8 +51,8 @@ describe('fal storage upload', () => {
       upload: async () => 'https://v3.fal.media/files/source.png',
     });
 
-    await expect(uploadLocalAsset(asset({ name: 'source.png' }))).rejects.toThrow(
-      'does not have a local path',
-    );
+    await expect(
+      Effect.runPromise(Effect.scoped(uploadLocalAsset(asset({ name: 'source.png' })))),
+    ).rejects.toThrow('does not have a local path');
   });
 });

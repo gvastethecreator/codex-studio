@@ -1,3 +1,5 @@
+import { Effect, Result } from 'effect';
+import { providerOperation, providerSync, providerPromise, providerFetch } from './providerEffect';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { extname } from 'node:path';
 import { resolveLibraryPath } from '../library';
@@ -313,205 +315,263 @@ export function createChatgptResponsesImageExecutor({
   // Keep the response observable before classifying an accepted submission as uncertain.
   requestTimeoutMs = 300_000,
 }: ChatgptResponsesImageExecutorDependencies = {}) {
-  return async (job: GenerationProviderJob) => {
-    const providerId = job.providerId === 'chatgpt' ? 'chatgpt' : 'codex';
-    if (job.remoteExecution) {
-      if (job.remoteExecution.providerId === providerId && job.remoteExecution.phase === 'failed') {
-        throw new Error(
-          'The previous HTTP attempt was rejected. Retry this failed job after restoring access.',
-        );
-      }
-      throw new ProviderExecutionUncertainError(
-        'An HTTP submission is already recorded for this job. Review the existing result; Studio will not send it again.',
-      );
-    }
-    if (!job.checkpointRemoteExecution)
-      throw new Error('HTTP execution requires durable submission storage.');
-    const compiled =
-      providerId === 'chatgpt' ? compileChatgptImageInput(job) : compileCodexImagegenInput(job);
-    const startedAt = now();
-    const policy =
-      providerId === 'chatgpt'
-        ? { ...job.execution?.providerOptions?.chatgpt, transport: 'subscription_http' }
-        : job.execution?.providerOptions?.codex;
-    if (!job.execution || policy?.transport !== 'subscription_http' || !policy.image) {
-      throw new ProviderExecutionUncertainError(
-        'This job has no captured HTTP execution contract. Review it before creating another request.',
-      );
-    }
-    const expected = resolveCodexExecutionPolicy(
-      job.execution,
-      job.sourceSpec,
-      'subscription_http',
-    );
-    if (
-      policy.image.model !== expected.image?.model ||
-      policy.image.size !== expected.image?.size ||
-      policy.image.quality !== expected.image?.quality ||
-      (policy.image.background ?? 'opaque') !== expected.image?.background
-    ) {
-      throw new Error('The saved HTTP execution contract does not match this job.');
-    }
-    const { quality, size, model: imageModel } = policy.image;
-    const inputImages = compiled.payload.imageInputs.map((item) =>
-      toInputImagePart(item, readFile),
-    );
-    const token = await getAccessToken();
-    const payload = {
-      model: job.execution.model,
-      store: false,
-      instructions: CODEX_INSTRUCTIONS,
-      input: [
-        {
-          type: 'message',
-          role: 'user',
-          content: [{ type: 'input_text', text: compiled.payload.text }, ...inputImages],
-        },
-      ],
-      tools: [
-        {
-          type: 'image_generation',
-          model: imageModel,
-          size,
-          quality,
-          output_format: 'png',
-          background: policy.image?.background ?? 'opaque',
-          partial_images: 0,
-        },
-      ],
-      stream: true,
-    };
-    const headers: Record<string, string> = {
-      Accept: 'text/event-stream',
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json',
-      'User-Agent': studioUserAgent(),
-      originator: studioCodexOriginator(env),
-    };
-    const accountId = readChatgptAccountId(token);
-    if (accountId) headers['ChatGPT-Account-ID'] = accountId;
-
-    let response: Awaited<ReturnType<ExternalProviderFetch>>;
-    const requestSignal = job.signal
-      ? AbortSignal.any([job.signal, AbortSignal.timeout(requestTimeoutMs)])
-      : AbortSignal.timeout(requestTimeoutMs);
-    job.signal?.throwIfAborted();
-    job.checkpointRemoteExecution({ providerId, phase: 'submitting', startedAt });
-    try {
-      response = await fetchImpl(`${CODEX_RESPONSES_BASE_URL}/responses`, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(payload),
-        redirect: 'error',
-        signal: requestSignal,
-      });
-    } catch (error) {
-      throw new ProviderExecutionUncertainError(
-        `ChatGPT HTTP submission could not be confirmed. Review this job before sending another request. ${responseSnippet(error instanceof Error ? error.message : '', [token])}`,
-      );
-    }
-
-    const headersReceivedAtMs = now();
-    const observation: SubscriptionHttpObservation = {
-      provider: providerId,
-      headersReceivedAtMs,
-      retryAfterHeader: response.headers.get('retry-after'),
-      dateHeader: response.headers.get('date'),
-      ageHeader: response.headers.get('age'),
-      primaryUsedPercentHeader: response.headers.get('x-codex-primary-used-percent'),
-      transportHttpStatus: response.status,
-    };
-    const retryAfterSeconds = readRetryAfter(observation.retryAfterHeader, headersReceivedAtMs);
-    if (!response.ok) {
-      let raw: string;
-      try {
-        raw = await readResponseTextLimited(response, 32 * 1024 * 1024);
-      } catch {
-        throw new ProviderExecutionUncertainError(
-          'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
-        );
-      }
-      if (job.signal?.aborted) {
-        throw new ProviderExecutionUncertainError(
-          'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
-        );
-      }
-      const failure = classifyCodexHttpFailure(
-        response.status,
-        raw,
-        [token],
-        retryAfterSeconds,
-        observation,
-      );
-      if (response.status >= 500) {
-        throw new ProviderExecutionUncertainError(
-          `ChatGPT HTTP returned ${response.status} after submission. Review this job before sending another request. ${failure.message}`,
-          { cause: failure },
-        );
-      }
-      if (response.status === 401) invalidateAccessToken(failure.message);
-      job.checkpointRemoteExecution({ providerId, phase: 'failed', startedAt });
-      throw failure;
-    }
-
-    let finalB64: string | null = null;
-    let failedEvent: Record<string, unknown> | null = null;
-    try {
-      if (!response.body) throw new Error('ChatGPT HTTP response has no event stream.');
-      await consumeSseJson(response.body, (event) => {
-        if (isFailedSseEvent(event)) {
-          failedEvent = event;
-          return;
+  return (job: GenerationProviderJob) =>
+    providerOperation(
+      Effect.gen(function* () {
+        const providerId = job.providerId === 'chatgpt' ? 'chatgpt' : 'codex';
+        if (job.remoteExecution) {
+          if (
+            job.remoteExecution.providerId === providerId &&
+            job.remoteExecution.phase === 'failed'
+          ) {
+            throw new Error(
+              'The previous HTTP attempt was rejected. Retry this failed job after restoring access.',
+            );
+          }
+          throw new ProviderExecutionUncertainError(
+            'An HTTP submission is already recorded for this job. Review the existing result; Studio will not send it again.',
+          );
         }
-        if (failedEvent) return;
-        const found = extractImageCandidates(event);
-        if (found.final) finalB64 = found.final;
-      });
-    } catch {
-      if (!failedEvent) {
-        throw new ProviderExecutionUncertainError(
-          'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
+        if (!job.checkpointRemoteExecution)
+          throw new Error('HTTP execution requires durable submission storage.');
+        const compiled =
+          providerId === 'chatgpt' ? compileChatgptImageInput(job) : compileCodexImagegenInput(job);
+        const startedAt = now();
+        const policy =
+          providerId === 'chatgpt'
+            ? { ...job.execution?.providerOptions?.chatgpt, transport: 'subscription_http' }
+            : job.execution?.providerOptions?.codex;
+        if (!job.execution || policy?.transport !== 'subscription_http' || !policy.image) {
+          throw new ProviderExecutionUncertainError(
+            'This job has no captured HTTP execution contract. Review it before creating another request.',
+          );
+        }
+        const expected = resolveCodexExecutionPolicy(
+          job.execution,
+          job.sourceSpec,
+          'subscription_http',
         );
-      }
-    }
-    if (job.signal?.aborted && !failedEvent) {
-      throw new ProviderExecutionUncertainError(
-        'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
-      );
-    }
-    if (failedEvent) {
-      job.checkpointRemoteExecution({ providerId, phase: 'failed', startedAt });
-      const failure = classifySseFailure(failedEvent, [token], retryAfterSeconds, observation);
-      if (failure.code === 'invalid_grant') invalidateAccessToken(failure.message);
-      throw failure;
-    }
-    if (!finalB64) {
-      throw new ProviderExecutionUncertainError(
-        'ChatGPT HTTP returned no final image. Review the existing request before creating another job.',
-      );
-    }
+        if (
+          policy.image.model !== expected.image?.model ||
+          policy.image.size !== expected.image?.size ||
+          policy.image.quality !== expected.image?.quality ||
+          (policy.image.background ?? 'opaque') !== expected.image?.background
+        ) {
+          throw new Error('The saved HTTP execution contract does not match this job.');
+        }
+        const { quality, size, model: imageModel } = policy.image;
+        const inputImages = compiled.payload.imageInputs.map((item) =>
+          toInputImagePart(item, readFile),
+        );
+        const token = Result.getOrThrowWith(
+          yield* Effect.result(providerPromise(() => getAccessToken())),
+          (error) => error,
+        );
+        const payload = {
+          model: job.execution.model,
+          store: false,
+          instructions: CODEX_INSTRUCTIONS,
+          input: [
+            {
+              type: 'message',
+              role: 'user',
+              content: [{ type: 'input_text', text: compiled.payload.text }, ...inputImages],
+            },
+          ],
+          tools: [
+            {
+              type: 'image_generation',
+              model: imageModel,
+              size,
+              quality,
+              output_format: 'png',
+              background: policy.image?.background ?? 'opaque',
+              partial_images: 0,
+            },
+          ],
+          stream: true,
+        };
+        const headers: Record<string, string> = {
+          Accept: 'text/event-stream',
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+          'User-Agent': studioUserAgent(),
+          originator: studioCodexOriginator(env),
+        };
+        const accountId = readChatgptAccountId(token);
+        if (accountId) headers['ChatGPT-Account-ID'] = accountId;
 
-    try {
-      const result = storeInlineImageResult({
-        providerId,
-        providerSlug: providerId === 'chatgpt' ? 'chatgpt-http' : 'codex-http',
-        model: imageModel,
-        endpointBase: CODEX_RESPONSES_BASE_URL,
-        job: { id: job.id },
-        compiledInput: compiled,
-        responseJson: { quality, size },
-        image: { data: finalB64, mimeType: 'image/png' },
-        requestAttempts: 1,
-        startedAt,
-        diagnostics: { runtime: 'subscription_http', quality, size },
-        files: { resolveLibraryPath: resolveLibraryPathFn, mkdir, writeFile, now },
-      });
-      job.checkpointRemoteExecution({ providerId, phase: 'completed', startedAt });
-      return result;
-    } catch {
-      throw new ProviderExecutionUncertainError(
-        'ChatGPT HTTP returned a result, but Studio could not save it. Review the result before creating another job.',
-      );
-    }
-  };
+        return yield* Effect.scoped(
+          providerOperation(
+            Effect.gen(function* () {
+              let response: Awaited<ReturnType<ExternalProviderFetch>>;
+              job.signal?.throwIfAborted();
+              job.checkpointRemoteExecution!({ providerId, phase: 'submitting', startedAt });
+              try {
+                response = Result.getOrThrowWith(
+                  yield* Effect.result(
+                    providerFetch(fetchImpl, `${CODEX_RESPONSES_BASE_URL}/responses`, {
+                      method: 'POST',
+                      headers,
+                      body: JSON.stringify(payload),
+                      redirect: 'error',
+                      signal: job.signal,
+                    }),
+                  ),
+                  (error) => error,
+                );
+              } catch (error) {
+                throw new ProviderExecutionUncertainError(
+                  `ChatGPT HTTP submission could not be confirmed. Review this job before sending another request. ${responseSnippet(error instanceof Error ? error.message : '', [token])}`,
+                );
+              }
+
+              const headersReceivedAtMs = now();
+              const observation: SubscriptionHttpObservation = {
+                provider: providerId,
+                headersReceivedAtMs,
+                retryAfterHeader: response.headers.get('retry-after'),
+                dateHeader: response.headers.get('date'),
+                ageHeader: response.headers.get('age'),
+                primaryUsedPercentHeader: response.headers.get('x-codex-primary-used-percent'),
+                transportHttpStatus: response.status,
+              };
+              const retryAfterSeconds = readRetryAfter(
+                observation.retryAfterHeader,
+                headersReceivedAtMs,
+              );
+              if (!response.ok) {
+                let raw: string;
+                try {
+                  raw = Result.getOrThrowWith(
+                    yield* Effect.result(readResponseTextLimited(response, 32 * 1024 * 1024)),
+                    (error) => error,
+                  );
+                } catch {
+                  throw new ProviderExecutionUncertainError(
+                    'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
+                  );
+                }
+                if (job.signal?.aborted) {
+                  throw new ProviderExecutionUncertainError(
+                    'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
+                  );
+                }
+                const failure = classifyCodexHttpFailure(
+                  response.status,
+                  raw,
+                  [token],
+                  retryAfterSeconds,
+                  observation,
+                );
+                if (response.status >= 500) {
+                  throw new ProviderExecutionUncertainError(
+                    `ChatGPT HTTP returned ${response.status} after submission. Review this job before sending another request. ${failure.message}`,
+                    { cause: failure },
+                  );
+                }
+                if (response.status === 401) invalidateAccessToken(failure.message);
+                job.checkpointRemoteExecution!({ providerId, phase: 'failed', startedAt });
+                throw failure;
+              }
+
+              let finalB64: string | null = null;
+              let failedEvent: Record<string, unknown> | null = null;
+              try {
+                if (!response.body) throw new Error('ChatGPT HTTP response has no event stream.');
+                Result.getOrThrowWith(
+                  yield* Effect.result(
+                    consumeSseJson(response.body, (event) => {
+                      if (isFailedSseEvent(event)) {
+                        failedEvent = event;
+                        return;
+                      }
+                      if (failedEvent) return;
+                      const found = extractImageCandidates(event);
+                      if (found.final) finalB64 = found.final;
+                    }),
+                  ),
+                  (error) => error,
+                );
+              } catch {
+                if (!failedEvent) {
+                  throw new ProviderExecutionUncertainError(
+                    'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
+                  );
+                }
+              }
+              if (job.signal?.aborted && !failedEvent) {
+                throw new ProviderExecutionUncertainError(
+                  'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
+                );
+              }
+              if (failedEvent) {
+                job.checkpointRemoteExecution!({ providerId, phase: 'failed', startedAt });
+                const failure = classifySseFailure(
+                  failedEvent,
+                  [token],
+                  retryAfterSeconds,
+                  observation,
+                );
+                if (failure.code === 'invalid_grant') invalidateAccessToken(failure.message);
+                throw failure;
+              }
+              if (!finalB64) {
+                throw new ProviderExecutionUncertainError(
+                  'ChatGPT HTTP returned no final image. Review the existing request before creating another job.',
+                );
+              }
+
+              try {
+                const result = Result.getOrThrowWith(
+                  yield* Effect.result(
+                    storeInlineImageResult({
+                      providerId,
+                      providerSlug: providerId === 'chatgpt' ? 'chatgpt-http' : 'codex-http',
+                      model: imageModel,
+                      endpointBase: CODEX_RESPONSES_BASE_URL,
+                      job: { id: job.id },
+                      compiledInput: compiled,
+                      responseJson: { quality, size },
+                      image: { data: finalB64, mimeType: 'image/png' },
+                      requestAttempts: 1,
+                      startedAt,
+                      diagnostics: { runtime: 'subscription_http', quality, size },
+                      files: { resolveLibraryPath: resolveLibraryPathFn, mkdir, writeFile, now },
+                    }).pipe(
+                      Effect.tap(() =>
+                        providerSync(() => {
+                          job.checkpointRemoteExecution!({
+                            providerId,
+                            phase: 'completed',
+                            startedAt,
+                          });
+                        }),
+                      ),
+                      Effect.uninterruptible,
+                    ),
+                  ),
+                  (error) => error,
+                );
+                return result;
+              } catch {
+                throw new ProviderExecutionUncertainError(
+                  'ChatGPT HTTP returned a result, but Studio could not save it. Review the result before creating another job.',
+                );
+              }
+            }),
+          ),
+        ).pipe(
+          Effect.timeoutOrElse({
+            duration: requestTimeoutMs,
+            orElse: () =>
+              Effect.fail(
+                new ProviderExecutionUncertainError(
+                  'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
+                ),
+              ),
+          }),
+        );
+      }),
+    );
 }

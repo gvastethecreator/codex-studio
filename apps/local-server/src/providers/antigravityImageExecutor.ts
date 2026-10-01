@@ -1,4 +1,7 @@
-import { spawn } from 'node:child_process';
+import { runProviderCliProcess } from './providerCliProcess';
+import { providerSync, type ProviderEffect } from './providerEffect';
+import { Effect, Result } from 'effect';
+import { providerOperation } from './providerEffect';
 import {
   constants as fsConstants,
   copyFileSync,
@@ -15,7 +18,7 @@ import {
 } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import type { TurnResult } from '../codex/turn';
+
 import {
   createAntigravityChildEnvironment,
   resolveAntigravityExecutable,
@@ -26,7 +29,6 @@ import {
   type AntigravityRuntimeDoctorReport,
 } from '../antigravityRuntimeDoctor';
 import { resolveLibraryPath, resolveLibraryPathFromRoot } from '../library';
-import { terminateOwnedProcessTree } from '../ownedProcessTree';
 import type {
   ExternalProviderExecutionContext,
   ExternalProviderExecutor,
@@ -63,7 +65,7 @@ export interface RunAntigravityCliInput {
 
 export interface AntigravityImageExecutorDependencies {
   env?: NodeJS.ProcessEnv;
-  runCli?: (input: RunAntigravityCliInput) => Promise<AntigravityCliRunResult>;
+  runCli?: (input: RunAntigravityCliInput) => ProviderEffect<AntigravityCliRunResult>;
   readRuntimeDoctor?: () => AntigravityRuntimeDoctorReport;
   resolveExecutable?: typeof resolveAntigravityExecutable;
   resolveHome?: typeof resolveAntigravityHome;
@@ -80,84 +82,14 @@ interface ParsedAntigravityStream {
   eventTypes: string[];
 }
 
-function createAbortError() {
-  const error = new Error('Antigravity image job was cancelled.');
-  error.name = 'AbortError';
-  return error;
-}
-
-export function runAntigravityCliProcess({
-  executable,
-  args,
-  cwd,
-  env,
-  stdin,
-  signal,
-  timeoutMs,
-}: RunAntigravityCliInput): Promise<AntigravityCliRunResult> {
-  if (signal?.aborted) return Promise.reject(createAbortError());
-  return new Promise((resolve, reject) => {
-    const child = spawn(executable, args, {
-      cwd,
-      env,
-      windowsHide: true,
-      stdio: ['pipe', 'pipe', 'pipe'],
-    });
-    let stdout = '';
-    let stderr = '';
-    let outputBytes = 0;
-    let terminalError: Error | null = null;
-    let timedOut = false;
-    let aborted = false;
-    let settled = false;
-
-    const stop = () => {
-      try {
-        terminateOwnedProcessTree(child);
-      } catch {
-        child.kill();
-      }
-    };
-    const onAbort = () => {
-      aborted = true;
-      stop();
-    };
-    signal?.addEventListener('abort', onAbort, { once: true });
-    const timer = setTimeout(() => {
-      timedOut = true;
-      stop();
-    }, timeoutMs);
-    const append = (target: 'stdout' | 'stderr', chunk: unknown) => {
-      const text = String(chunk);
-      outputBytes += Buffer.byteLength(text);
-      if (outputBytes > MAX_PROCESS_OUTPUT_BYTES) {
-        terminalError = new Error('Antigravity output exceeded the safe process buffer limit.');
-        stop();
-        return;
-      }
-      if (target === 'stdout') stdout += text;
-      else stderr += text;
-    };
-    child.stdout.on('data', (chunk) => append('stdout', chunk));
-    child.stderr.on('data', (chunk) => append('stderr', chunk));
-    child.stdin.on('error', (error) => {
-      terminalError ??= error;
-    });
-    child.once('error', (error) => {
-      terminalError = error;
-    });
-    child.once('close', (code) => {
-      if (settled) return;
-      settled = true;
-      clearTimeout(timer);
-      signal?.removeEventListener('abort', onAbort);
-      if (aborted) return reject(createAbortError());
-      if (timedOut)
-        return reject(new Error(`Antigravity image generation timed out after ${timeoutMs} ms.`));
-      if (terminalError) return reject(terminalError);
-      resolve({ status: code ?? 1, stdout, stderr });
-    });
-    child.stdin.end(stdin, 'utf8');
+export function runAntigravityCliProcess(
+  input: RunAntigravityCliInput,
+): ProviderEffect<AntigravityCliRunResult> {
+  return runProviderCliProcess({
+    ...input,
+    timeoutMessage: `Antigravity image generation timed out after ${input.timeoutMs} ms.`,
+    outputLimitMessage: 'Antigravity output exceeded the safe process buffer limit.',
+    maxOutputBytes: MAX_PROCESS_OUTPUT_BYTES,
   });
 }
 
@@ -435,104 +367,112 @@ export function createAntigravityImageExecutor({
   now = () => Date.now(),
   createTemporaryDirectory = () => mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-antigravity-')),
 }: AntigravityImageExecutorDependencies = {}): ExternalProviderExecutor {
-  return async function executeAntigravityImage({
-    providerId,
-    job,
-    compiledInput,
-  }: ExternalProviderExecutionContext): Promise<TurnResult> {
-    if (
-      providerId !== 'antigravity' ||
-      compiledInput.providerId !== 'antigravity' ||
-      compiledInput.payloadKind !== 'agent_cli_prompt'
-    ) {
-      throw new Error('Antigravity executor received unsupported provider input.');
-    }
-    const input = compiledInput as AntigravityImageCompiledInput;
-    if (input.payload.output.count !== 1) {
-      throw new Error('Antigravity requires exactly one output image per Job.');
-    }
-    const runtime = readRuntimeDoctor();
-    if (!runtime.canRunJobs) {
-      throw new Error(`Antigravity runtime is not ready: ${runtime.recommendedAction}`);
-    }
-    if (input.payload.model && !runtime.availableModels.includes(input.payload.model)) {
-      throw new Error(
-        `Antigravity model "${input.payload.model}" is unavailable. Available models: ${runtime.availableModels.join(', ') || 'none'}.`,
-      );
-    }
-    const startedAt = now();
-    const libraryRoot = job.libraryContext?.rootPath ?? resolveDefaultLibraryPath();
-    const temporaryDirectory = assertOwnedTemporaryDirectory(createTemporaryDirectory());
-    try {
-      const stagedSources = stageManagedSources(input.payload, libraryRoot, temporaryDirectory);
-      const prompt = buildAntigravityImagePrompt(input.payload, stagedSources);
-      const stdin = `${JSON.stringify({ event: 'user', message: { content: prompt } })}\n`;
-      const executable = resolveExecutable(env);
-      const result = await runCli({
-        executable,
-        args: buildAntigravityImageArgs(input.payload),
-        cwd: temporaryDirectory,
-        env: createAntigravityChildEnvironment(env),
-        stdin,
-        signal: job.signal,
-        timeoutMs: configuredTimeoutMs(env),
-      });
-      if (result.status !== 0) {
-        throw new Error(
-          `Antigravity image generation failed with exit ${result.status}. Check the local CLI login and runtime logs.`,
+  return ({ providerId, job, compiledInput }: ExternalProviderExecutionContext) =>
+    providerOperation(
+      Effect.gen(function* () {
+        if (
+          providerId !== 'antigravity' ||
+          compiledInput.providerId !== 'antigravity' ||
+          compiledInput.payloadKind !== 'agent_cli_prompt'
+        ) {
+          throw new Error('Antigravity executor received unsupported provider input.');
+        }
+        const input = compiledInput as AntigravityImageCompiledInput;
+        if (input.payload.output.count !== 1) {
+          throw new Error('Antigravity requires exactly one output image per Job.');
+        }
+        const runtime = readRuntimeDoctor();
+        if (!runtime.canRunJobs) {
+          throw new Error(`Antigravity runtime is not ready: ${runtime.recommendedAction}`);
+        }
+        if (input.payload.model && !runtime.availableModels.includes(input.payload.model)) {
+          throw new Error(
+            `Antigravity model "${input.payload.model}" is unavailable. Available models: ${runtime.availableModels.join(', ') || 'none'}.`,
+          );
+        }
+        const startedAt = now();
+        const libraryRoot = job.libraryContext?.rootPath ?? resolveDefaultLibraryPath();
+        const temporaryDirectory = yield* Effect.acquireRelease(
+          providerSync(() => assertOwnedTemporaryDirectory(createTemporaryDirectory())),
+          (directory) => Effect.sync(() => rmSync(directory, { recursive: true, force: true })),
         );
-      }
-      const stream = parseAntigravityStream(result.stdout);
-      if (
-        normalizeComparablePath(realpathSync(stream.cwd)) !==
-        normalizeComparablePath(temporaryDirectory)
-      ) {
-        throw new Error('Antigravity reported an unexpected execution workspace.');
-      }
-      const artifactDirectory = resolveArtifactDirectory(resolveHome(env), stream.conversationId);
-      const images = listArtifactImages(artifactDirectory);
-      if (images.length !== 1) {
-        throw new Error(`Antigravity expected one generated image and found ${images.length}.`);
-      }
-      const imagePath = images[0]!;
-      const imageSize = statSync(imagePath).size;
-      if (imageSize <= 0) throw new Error('Antigravity generated an empty image file.');
-      if (imageSize > MAX_IMAGE_BYTES) {
-        throw new Error('Antigravity generated an image larger than the 25 MB limit.');
-      }
-      const libraryPath = (...segments: string[]) =>
-        job.libraryContext
-          ? resolveLibraryPathFromRoot(job.libraryContext.rootPath, ...segments)
-          : resolveDefaultLibraryPath(...segments);
-      return storeInlineImageResult({
-        providerId: 'antigravity',
-        providerSlug: 'antigravity',
-        model: input.payload.model || 'cli-default',
-        endpointBase: 'local://antigravity-cli',
-        job,
-        compiledInput,
-        responseJson: { events: stream.eventTypes, status: stream.resultStatus },
-        image: { data: readFileSync(imagePath).toString('base64'), mimeType: null },
-        requestAttempts: 1,
-        startedAt,
-        diagnostics: {
-          runtimeKind: 'agent_cli',
-          executable,
-          cliVersion: runtime.selectedVersionNumber,
-          conversationId: stream.conversationId,
-          artifactDirectory,
-          sourceAssetCount: stagedSources.length,
-          toolStepCount: stream.toolStepCount,
-        },
-        files: {
-          resolveLibraryPath: libraryPath,
-          mkdir: mkdirSync,
-          writeFile: writeFileSync,
-          now,
-        },
-      });
-    } finally {
-      rmSync(temporaryDirectory, { recursive: true, force: true });
-    }
-  };
+        const stagedSources = stageManagedSources(input.payload, libraryRoot, temporaryDirectory);
+        const prompt = buildAntigravityImagePrompt(input.payload, stagedSources);
+        const stdin = `${JSON.stringify({ event: 'user', message: { content: prompt } })}\n`;
+        const executable = resolveExecutable(env);
+        const result = Result.getOrThrowWith(
+          yield* Effect.result(
+            runCli({
+              executable,
+              args: buildAntigravityImageArgs(input.payload),
+              cwd: temporaryDirectory,
+              env: createAntigravityChildEnvironment(env),
+              stdin,
+              signal: job.signal,
+              timeoutMs: configuredTimeoutMs(env),
+            }),
+          ),
+          (error) => error,
+        );
+        if (result.status !== 0) {
+          throw new Error(
+            `Antigravity image generation failed with exit ${result.status}. Check the local CLI login and runtime logs.`,
+          );
+        }
+        const stream = parseAntigravityStream(result.stdout);
+        if (
+          normalizeComparablePath(realpathSync(stream.cwd)) !==
+          normalizeComparablePath(temporaryDirectory)
+        ) {
+          throw new Error('Antigravity reported an unexpected execution workspace.');
+        }
+        const artifactDirectory = resolveArtifactDirectory(resolveHome(env), stream.conversationId);
+        const images = listArtifactImages(artifactDirectory);
+        if (images.length !== 1) {
+          throw new Error(`Antigravity expected one generated image and found ${images.length}.`);
+        }
+        const imagePath = images[0]!;
+        const imageSize = statSync(imagePath).size;
+        if (imageSize <= 0) throw new Error('Antigravity generated an empty image file.');
+        if (imageSize > MAX_IMAGE_BYTES) {
+          throw new Error('Antigravity generated an image larger than the 25 MB limit.');
+        }
+        const libraryPath = (...segments: string[]) =>
+          job.libraryContext
+            ? resolveLibraryPathFromRoot(job.libraryContext.rootPath, ...segments)
+            : resolveDefaultLibraryPath(...segments);
+        return Result.getOrThrowWith(
+          yield* Effect.result(
+            storeInlineImageResult({
+              providerId: 'antigravity',
+              providerSlug: 'antigravity',
+              model: input.payload.model || 'cli-default',
+              endpointBase: 'local://antigravity-cli',
+              job,
+              compiledInput,
+              responseJson: { events: stream.eventTypes, status: stream.resultStatus },
+              image: { data: readFileSync(imagePath).toString('base64'), mimeType: null },
+              requestAttempts: 1,
+              startedAt,
+              diagnostics: {
+                runtimeKind: 'agent_cli',
+                executable,
+                cliVersion: runtime.selectedVersionNumber,
+                conversationId: stream.conversationId,
+                artifactDirectory,
+                sourceAssetCount: stagedSources.length,
+                toolStepCount: stream.toolStepCount,
+              },
+              files: {
+                resolveLibraryPath: libraryPath,
+                mkdir: mkdirSync,
+                writeFile: writeFileSync,
+                now,
+              },
+            }),
+          ),
+          (error) => error,
+        );
+      }),
+    );
 }

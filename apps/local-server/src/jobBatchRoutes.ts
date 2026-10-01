@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { Hono } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 import { CreateJobRequestBoundarySchema } from '../../../packages/shared/src/studioApiSchemas';
 import type { CreateJobRequest, RetryJobBatchRequest } from '../../../packages/shared/src';
 import type {
@@ -70,10 +70,10 @@ export function createJobBatchRoutes({
     if (accepted) return c.json(accepted);
     const requests: CreateJobRequest[] = [];
     for (const item of body.items) {
-      const decoded = Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)(item);
-      if (Either.isLeft(decoded))
+      const decoded = Schema.decodeUnknownExit(CreateJobRequestBoundarySchema)(item);
+      if (Exit.isFailure(decoded))
         return c.json({ error: 'Invalid batch item. No jobs were accepted.' }, 400);
-      requests.push(decoded.right as CreateJobRequest);
+      requests.push(decoded.value as CreateJobRequest);
     }
     const prepared: PreparedPersistentJob[] = [];
     for (const item of requests) {

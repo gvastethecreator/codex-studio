@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
@@ -57,16 +59,18 @@ describe('grok runtime executor fallback', () => {
     const executor = createGrokRuntimeExecutor({
       isHttpReady: () => true,
       canUseCli: () => true,
-      http: async () => {
-        calls.push('http');
-        return turnResult();
-      },
-      cli: async () => {
-        calls.push('cli');
-        return turnResult();
-      },
+      http: () =>
+        providerSync(() => {
+          calls.push('http');
+          return turnResult();
+        }),
+      cli: () =>
+        providerSync(() => {
+          calls.push('cli');
+          return turnResult();
+        }),
     });
-    await executor(context());
+    await Effect.runPromise(Effect.scoped(executor(context())));
     expect(calls).toEqual(['http']);
   });
 
@@ -74,24 +78,33 @@ describe('grok runtime executor fallback', () => {
     const allowed = createGrokRuntimeExecutor({
       isHttpReady: () => true,
       canUseCli: () => true,
-      http: async () => {
-        throw new SubscriptionHttpError('empty', { code: 'empty_response', fallbackAllowed: true });
-      },
-      cli: async () => turnResult(),
+      http: () =>
+        providerSync(() => {
+          throw new SubscriptionHttpError('empty', {
+            code: 'empty_response',
+            fallbackAllowed: true,
+          });
+        }),
+      cli: () => providerSync(() => turnResult()),
     });
-    await expect(allowed(context())).resolves.toMatchObject({ transcript: 't.json' });
+    await expect(Effect.runPromise(Effect.scoped(allowed(context())))).resolves.toMatchObject({
+      transcript: 't.json',
+    });
 
     const blocked = createGrokRuntimeExecutor({
       isHttpReady: () => true,
       canUseCli: () => true,
-      http: async () => {
-        throw new SubscriptionHttpError('relogin', {
-          code: 'invalid_grant',
-          fallbackAllowed: false,
-        });
-      },
-      cli: async () => turnResult(),
+      http: () =>
+        providerSync(() => {
+          throw new SubscriptionHttpError('relogin', {
+            code: 'invalid_grant',
+            fallbackAllowed: false,
+          });
+        }),
+      cli: () => providerSync(() => turnResult()),
     });
-    await expect(blocked(context())).rejects.toMatchObject({ code: 'invalid_grant' });
+    await expect(Effect.runPromise(Effect.scoped(blocked(context())))).rejects.toMatchObject({
+      code: 'invalid_grant',
+    });
   });
 });

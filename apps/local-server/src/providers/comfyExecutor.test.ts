@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
@@ -75,22 +77,28 @@ function createJob(): ComfyTestJob {
 function execute(
   executor: ReturnType<typeof createComfyWorkflowExecutor>,
   job: GenerationProviderJob,
+  fiberSignal?: AbortSignal,
 ) {
-  return executor({
-    providerId: 'comfy',
-    job,
-    compiledInput: compileComfyWorkflowInput(job),
-    preflight: {
-      providerId: 'comfy',
-      runtimeKind: 'local_workflow',
-      secretState: 'not_required',
-      secretSource: null,
-      localRuntimeState: 'configured',
-      localRuntimeSource: 'COMFY_API_URL',
-      canAttemptExecution: true,
-      diagnostics: [],
-    },
-  });
+  return Effect.runPromise(
+    Effect.scoped(
+      executor({
+        providerId: 'comfy',
+        job,
+        compiledInput: compileComfyWorkflowInput(job),
+        preflight: {
+          providerId: 'comfy',
+          runtimeKind: 'local_workflow',
+          secretState: 'not_required',
+          secretSource: null,
+          localRuntimeState: 'configured',
+          localRuntimeSource: 'COMFY_API_URL',
+          canAttemptExecution: true,
+          diagnostics: [],
+        },
+      }),
+    ),
+    { signal: fiberSignal },
+  );
 }
 
 const template = JSON.stringify({
@@ -153,26 +161,30 @@ describe('comfyExecutor', () => {
         writeFile: writeFileSync,
         now: () => 1000,
       },
-      sleep: async () => undefined,
+      sleep: () => providerSync(() => undefined),
       pollIntervalMs: 1,
       now: () => 500,
     });
 
-    const result = await executor({
-      providerId: 'comfy',
-      job,
-      compiledInput,
-      preflight: {
-        providerId: 'comfy',
-        runtimeKind: 'local_workflow',
-        secretState: 'not_required',
-        secretSource: null,
-        localRuntimeState: 'configured',
-        localRuntimeSource: 'COMFY_API_URL',
-        canAttemptExecution: true,
-        diagnostics: [],
-      },
-    });
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        executor({
+          providerId: 'comfy',
+          job,
+          compiledInput,
+          preflight: {
+            providerId: 'comfy',
+            runtimeKind: 'local_workflow',
+            secretState: 'not_required',
+            secretSource: null,
+            localRuntimeState: 'configured',
+            localRuntimeSource: 'COMFY_API_URL',
+            canAttemptExecution: true,
+            diagnostics: [],
+          },
+        }),
+      ),
+    );
 
     expect(JSON.parse(promptBodies[0] ?? '{}')).toMatchObject({
       client_id: 'job-comfy',
@@ -214,9 +226,10 @@ describe('comfyExecutor', () => {
         }
         return jsonResponse({ status: 'pending' });
       },
-      sleep: async () => {
-        signal.abort('studio_shutdown');
-      },
+      sleep: () =>
+        providerSync(() => {
+          signal.abort('studio_shutdown');
+        }),
     });
     await expect(execute(executor, job)).rejects.toMatchObject({ name: 'AbortError' });
     const recovered = createJob();
@@ -280,7 +293,7 @@ describe('comfyExecutor', () => {
       env: runtimeEnv,
       readFile: () => template,
       fetch,
-      sleep: async () => {},
+      sleep: () => providerSync(() => {}),
     });
     await expect(execute(executor, job)).rejects.toBeInstanceOf(ProviderExecutionUncertainError);
     expect(job.remoteExecution?.phase).toBe('submitting');
@@ -325,11 +338,14 @@ describe('comfyExecutor', () => {
           }
           return jsonResponse({ status: cancelling && confirmed ? 'cancelled' : 'in_progress' });
         },
-        sleep: async () => {
-          signal.abort();
-        },
+        sleep: () =>
+          providerSync(() => {
+            signal.abort();
+          }),
       });
-      await expect(execute(executor, job)).rejects.toMatchObject({
+      await expect(
+        execute(executor, job, confirmed ? undefined : signal.signal),
+      ).rejects.toMatchObject({
         name: confirmed ? 'AbortError' : 'ProviderExecutionUncertainError',
       });
       expect(job.remoteExecution?.phase).toBe(confirmed ? 'cancelled' : 'accepted');
@@ -350,21 +366,25 @@ describe('comfyExecutor', () => {
     });
 
     await expect(
-      executor({
-        providerId: 'comfy',
-        job,
-        compiledInput: compileComfyWorkflowInput(job),
-        preflight: {
-          providerId: 'comfy',
-          runtimeKind: 'local_workflow',
-          secretState: 'not_required',
-          secretSource: null,
-          localRuntimeState: 'configured',
-          localRuntimeSource: 'COMFY_API_URL',
-          canAttemptExecution: false,
-          diagnostics: ['Missing provider config source: COMFY_WORKFLOW_TEMPLATE_PATH.'],
-        },
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            providerId: 'comfy',
+            job,
+            compiledInput: compileComfyWorkflowInput(job),
+            preflight: {
+              providerId: 'comfy',
+              runtimeKind: 'local_workflow',
+              secretState: 'not_required',
+              secretSource: null,
+              localRuntimeState: 'configured',
+              localRuntimeSource: 'COMFY_API_URL',
+              canAttemptExecution: false,
+              diagnostics: ['Missing provider config source: COMFY_WORKFLOW_TEMPLATE_PATH.'],
+            },
+          }),
+        ),
+      ),
     ).rejects.toThrow('Comfy executor missing COMFY_WORKFLOW_TEMPLATE_PATH.');
   });
 });

@@ -1,5 +1,5 @@
 import { Hono, type Context } from 'hono';
-import { Either, Schema } from 'effect';
+import { Exit, Schema } from 'effect';
 
 import {
   CreateStudioWorkspaceRequestSchema,
@@ -93,11 +93,11 @@ export function createWorkspaceRoutes(dependencies: Partial<WorkspaceRoutesDepen
   routes.get('/', (c) => c.json(listWorkspaces()));
   routes.post('/', async (c) => {
     const rawBody = await c.req.json().catch(() => null);
-    const decoded = Schema.decodeUnknownEither(CreateStudioWorkspaceRequestSchema)(
+    const decoded = Schema.decodeUnknownExit(CreateStudioWorkspaceRequestSchema)(
       normalizeWorkspaceBoundaryAliases(rawBody),
     );
-    if (Either.isLeft(decoded)) return invalidWorkspaceBody(c);
-    const body = decoded.right;
+    if (Exit.isFailure(decoded)) return invalidWorkspaceBody(c);
+    const body = decoded.value;
     const requestedId = typeof body.id === 'string' ? body.id.trim() : '';
     const existingWorkspace = requestedId ? readWorkspace(requestedId) : null;
     if (existingWorkspace) {
@@ -120,11 +120,11 @@ export function createWorkspaceRoutes(dependencies: Partial<WorkspaceRoutesDepen
   });
   routes.patch('/:id', async (c) => {
     const rawBody = await c.req.json().catch(() => null);
-    const decoded = Schema.decodeUnknownEither(UpdateStudioWorkspaceRequestSchema)(
+    const decoded = Schema.decodeUnknownExit(UpdateStudioWorkspaceRequestSchema)(
       normalizeWorkspaceBoundaryAliases(rawBody),
     );
-    if (Either.isLeft(decoded)) return invalidWorkspaceBody(c);
-    const body = decoded.right;
+    if (Exit.isFailure(decoded)) return invalidWorkspaceBody(c);
+    const body = decoded.value;
     const workspace = updateWorkspace(c.req.param('id'), {
       name: body.name,
       libraryId: body.libraryId,

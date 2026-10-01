@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -114,32 +116,37 @@ describe('Antigravity image executor', () => {
         const temporary = mkdtempSync(path.join(root, 'cozy-studio-antigravity-'));
         return temporary;
       },
-      runCli: async ({ args, cwd, stdin, env }) => {
-        invocations.push({ args, cwd, stdin, env });
-        const artifact = path.join(antigravityHome, 'brain', CONVERSATION_ID);
-        mkdirSync(path.join(artifact, '.system_generated'), { recursive: true });
-        writeFileSync(path.join(artifact, 'studio-output.png'), PNG);
-        writeFileSync(path.join(artifact, '.system_generated', 'screenshot.png'), PNG);
-        return { status: 0, stdout: successStream(cwd), stderr: '' };
-      },
+      runCli: ({ args, cwd, stdin, env }) =>
+        providerSync(() => {
+          invocations.push({ args, cwd, stdin, env });
+          const artifact = path.join(antigravityHome, 'brain', CONVERSATION_ID);
+          mkdirSync(path.join(artifact, '.system_generated'), { recursive: true });
+          writeFileSync(path.join(artifact, 'studio-output.png'), PNG);
+          writeFileSync(path.join(artifact, '.system_generated', 'screenshot.png'), PNG);
+          return { status: 0, stdout: successStream(cwd), stderr: '' };
+        }),
       now: () => 5000,
     });
 
-    const result = await executor({
-      providerId: 'antigravity',
-      job,
-      compiledInput: compileAntigravityImageInput(job),
-      preflight: {
-        providerId: 'antigravity',
-        runtimeKind: 'agent_cli',
-        secretState: 'not_required',
-        secretSource: null,
-        localRuntimeState: 'configured',
-        localRuntimeSource: 'agy',
-        canAttemptExecution: true,
-        diagnostics: [],
-      },
-    });
+    const result = await Effect.runPromise(
+      Effect.scoped(
+        executor({
+          providerId: 'antigravity',
+          job,
+          compiledInput: compileAntigravityImageInput(job),
+          preflight: {
+            providerId: 'antigravity',
+            runtimeKind: 'agent_cli',
+            secretState: 'not_required',
+            secretSource: null,
+            localRuntimeState: 'configured',
+            localRuntimeSource: 'agy',
+            canAttemptExecution: true,
+            diagnostics: [],
+          },
+        }),
+      ),
+    );
 
     expect(invocations).toHaveLength(1);
     expect(invocations[0]?.args).toEqual(
@@ -218,25 +225,30 @@ describe('Antigravity image executor', () => {
       resolveExecutable: () => 'agy',
       resolveHome: () => antigravityHome,
       createTemporaryDirectory: () => mkdtempSync(path.join(root, 'cozy-studio-antigravity-')),
-      runCli: async ({ cwd }) => ({ status: 0, stdout: successStream(cwd), stderr: '' }),
+      runCli: ({ cwd }) =>
+        providerSync(() => ({ status: 0, stdout: successStream(cwd), stderr: '' })),
     });
 
     await expect(
-      executor({
-        providerId: 'antigravity',
-        job,
-        compiledInput: compileAntigravityImageInput(job),
-        preflight: {
-          providerId: 'antigravity',
-          runtimeKind: 'agent_cli',
-          secretState: 'not_required',
-          secretSource: null,
-          localRuntimeState: 'configured',
-          localRuntimeSource: 'agy',
-          canAttemptExecution: true,
-          diagnostics: [],
-        },
-      }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor({
+            providerId: 'antigravity',
+            job,
+            compiledInput: compileAntigravityImageInput(job),
+            preflight: {
+              providerId: 'antigravity',
+              runtimeKind: 'agent_cli',
+              secretState: 'not_required',
+              secretSource: null,
+              localRuntimeState: 'configured',
+              localRuntimeSource: 'agy',
+              canAttemptExecution: true,
+              diagnostics: [],
+            },
+          }),
+        ),
+      ),
     ).rejects.toThrow('found 0');
   });
 
@@ -249,11 +261,17 @@ describe('Antigravity image executor', () => {
       stdin: '',
       timeoutMs: 50,
     };
-    await expect(runAntigravityCliProcess(input)).rejects.toThrow('timed out');
+    await expect(Effect.runPromise(Effect.scoped(runAntigravityCliProcess(input)))).rejects.toThrow(
+      'timed out',
+    );
 
     const controller = new AbortController();
     const cancelled = expect(
-      runAntigravityCliProcess({ ...input, timeoutMs: 5_000, signal: controller.signal }),
+      Effect.runPromise(
+        Effect.scoped(
+          runAntigravityCliProcess({ ...input, timeoutMs: 5_000, signal: controller.signal }),
+        ),
+      ),
     ).rejects.toMatchObject({ name: 'AbortError' });
     setTimeout(() => controller.abort(), 25);
     await cancelled;

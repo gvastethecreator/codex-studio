@@ -1,3 +1,5 @@
+import { Effect, Exit, Semaphore } from 'effect';
+import { providerOperation, providerSync, type ProviderEffect } from '../providers/providerEffect';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { CodexRpcClient } from './rpcClient';
@@ -12,17 +14,20 @@ export interface SessionHandle {
   codexHome: string | null;
   threadId: string | null;
   sessionKey: string;
-  queue: Promise<void>;
+  lock: Semaphore.Semaphore;
 }
 
 export interface SessionPool {
   getOrCreateSession(
     sessionKey: string,
     execution?: JobExecutionOptions | null,
-  ): Promise<SessionHandle>;
+  ): ProviderEffect<SessionHandle>;
   releaseSession(handle: SessionHandle): void;
-  destroySession(threadIdOrSessionKey: string): Promise<void>;
-  createSession(sessionKey: string, execution?: JobExecutionOptions | null): Promise<SessionHandle>;
+  destroySession(threadIdOrSessionKey: string): Effect.Effect<void>;
+  createSession(
+    sessionKey: string,
+    execution?: JobExecutionOptions | null,
+  ): ProviderEffect<SessionHandle>;
   closeSession(sessionKey: string, options?: { invalidatePersistedThread?: boolean }): void;
   getSessionKey(prompt: string): string;
 }
@@ -62,7 +67,7 @@ export function createSessionPool({
   resolveProcessCwd = () => process.cwd(),
 }: CreateSessionPoolDependencies = {}): SessionPool {
   const imagegenSessions = new Map<string, SessionHandle>();
-  const pendingImagegenSessions = new Map<string, Promise<SessionHandle>>();
+  const creationLocks = new Map<string, { lock: Semaphore.Semaphore; users: number }>();
 
   function getImagegenSessionRegistryPath() {
     return resolveLibrary('state', 'imagegen-session-registry.json');
@@ -118,61 +123,72 @@ export function createSessionPool({
     return pack || 'unknown_pack';
   }
 
-  async function createSession(
+  function createSession(
     sessionKey: string,
     execution?: JobExecutionOptions | null,
-  ): Promise<SessionHandle> {
-    const client = createClient();
-    try {
-      await client.connect();
+  ): ProviderEffect<SessionHandle> {
+    return Effect.suspend(() => {
+      const client = createClient();
+      return providerOperation(
+        Effect.gen(function* () {
+          yield* client.connect();
 
-      const init = await client.request('initialize', {
-        clientInfo: {
-          name: 'cozy-studio',
-          title: 'Cozy Studio',
-          version: '0.1.0',
-        },
-        capabilities: null,
-      });
-      const codexHome = init?.codexHome ?? null;
-      client.notify('initialized');
+          const init = yield* client.request('initialize', {
+            clientInfo: {
+              name: 'cozy-studio',
+              title: 'Cozy Studio',
+              version: '0.1.0',
+            },
+            capabilities: null,
+          });
+          const codexHome = init?.codexHome ?? null;
+          client.notify('initialized');
 
-      const persistedThreadId = getPersistedImagegenThreadId(sessionKey);
-      let threadId = persistedThreadId;
+          const persistedThreadId = getPersistedImagegenThreadId(sessionKey);
+          let threadId = persistedThreadId;
 
-      if (!threadId) {
-        const executionOptions = resolveExecutionOptions(execution);
-        const thread = await client.request('thread/start', {
-          model: executionOptions.model,
-          serviceTier: executionOptions.serviceTier ?? undefined,
-          cwd: resolveProcessCwd(),
-          approvalPolicy: 'never',
-          sandbox: 'danger-full-access',
-          sessionStartSource: 'startup',
-          developerInstructions: buildCodexImagegenDeveloperInstructions(sessionKey),
-        });
-        threadId = thread?.thread?.id ?? null;
-      }
+          if (!threadId) {
+            const executionOptions = resolveExecutionOptions(execution);
+            const thread = yield* client.request('thread/start', {
+              model: executionOptions.model,
+              serviceTier: executionOptions.serviceTier ?? undefined,
+              cwd: resolveProcessCwd(),
+              approvalPolicy: 'never',
+              sandbox: 'danger-full-access',
+              sessionStartSource: 'startup',
+              developerInstructions: buildCodexImagegenDeveloperInstructions(sessionKey),
+            });
+            threadId = thread?.thread?.id ?? null;
+          }
 
-      const session: SessionHandle = {
-        client,
-        codexHome,
-        threadId,
-        sessionKey,
-        queue: Promise.resolve(),
-      };
-      imagegenSessions.set(sessionKey, session);
-      rememberImagegenSession(sessionKey, session.threadId);
-      logger(
-        'info',
-        'codex-session',
-        `${persistedThreadId ? 'Reused' : 'Started'} persistent imagegen thread ${session.threadId ?? 'unknown'} for ${sessionKey}`,
+          const session: SessionHandle = {
+            client,
+            codexHome,
+            threadId,
+            sessionKey,
+            lock: Semaphore.makeUnsafe(1),
+          };
+          imagegenSessions.set(sessionKey, session);
+          rememberImagegenSession(sessionKey, session.threadId);
+          logger(
+            'info',
+            'codex-session',
+            `${persistedThreadId ? 'Reused' : 'Started'} persistent imagegen thread ${session.threadId ?? 'unknown'} for ${sessionKey}`,
+          );
+          return session;
+        }),
+      ).pipe(
+        Effect.onExit((exit) =>
+          Effect.sync(() => {
+            if (Exit.isFailure(exit)) {
+              client.close();
+              if (imagegenSessions.get(sessionKey)?.client === client)
+                imagegenSessions.delete(sessionKey);
+            }
+          }),
+        ),
       );
-      return session;
-    } catch (error) {
-      client.close();
-      throw error;
-    }
+    });
   }
 
   function closeSession(sessionKey: string, options?: { invalidatePersistedThread?: boolean }) {
@@ -185,31 +201,43 @@ export function createSessionPool({
     }
   }
 
-  async function getOrCreateSession(sessionKey: string, execution?: JobExecutionOptions | null) {
-    const existing = imagegenSessions.get(sessionKey);
-    if (existing) return existing;
-    const pending = pendingImagegenSessions.get(sessionKey);
-    if (pending) return pending;
-
-    const creation = createSession(sessionKey, execution).finally(() => {
-      if (pendingImagegenSessions.get(sessionKey) === creation) {
-        pendingImagegenSessions.delete(sessionKey);
-      }
-    });
-    pendingImagegenSessions.set(sessionKey, creation);
-    return creation;
+  function getOrCreateSession(sessionKey: string, execution?: JobExecutionOptions | null) {
+    return Effect.acquireUseRelease(
+      providerSync(() => {
+        let entry = creationLocks.get(sessionKey);
+        if (!entry) {
+          entry = { lock: Semaphore.makeUnsafe(1), users: 0 };
+          creationLocks.set(sessionKey, entry);
+        }
+        entry.users += 1;
+        return entry;
+      }),
+      (entry) =>
+        entry.lock.withPermits(1)(
+          Effect.suspend(() => {
+            const existing = imagegenSessions.get(sessionKey);
+            return existing ? Effect.succeed(existing) : createSession(sessionKey, execution);
+          }),
+        ),
+      (entry) =>
+        Effect.sync(() => {
+          if (--entry.users === 0) creationLocks.delete(sessionKey);
+        }),
+    );
   }
 
   return {
     getOrCreateSession,
     releaseSession() {},
-    async destroySession(threadIdOrSessionKey) {
-      const sessionKey = imagegenSessions.has(threadIdOrSessionKey)
-        ? threadIdOrSessionKey
-        : [...imagegenSessions.values()].find(
-            (session) => session.threadId === threadIdOrSessionKey,
-          )?.sessionKey;
-      if (sessionKey) closeSession(sessionKey, { invalidatePersistedThread: true });
+    destroySession(threadIdOrSessionKey) {
+      return Effect.sync(() => {
+        const sessionKey = imagegenSessions.has(threadIdOrSessionKey)
+          ? threadIdOrSessionKey
+          : [...imagegenSessions.values()].find(
+              (session) => session.threadId === threadIdOrSessionKey,
+            )?.sessionKey;
+        if (sessionKey) closeSession(sessionKey, { invalidatePersistedThread: true });
+      });
     },
     createSession,
     closeSession,
@@ -227,10 +255,10 @@ export function getImagegenSessionKey(prompt: string) {
   return defaultSessionPool.getSessionKey(prompt);
 }
 
-async function createImagegenSession(
+function createImagegenSession(
   sessionKey: string,
   execution?: JobExecutionOptions | null,
-): Promise<SessionHandle> {
+): ProviderEffect<SessionHandle> {
   return defaultSessionPool.createSession(sessionKey, execution);
 }
 
@@ -241,9 +269,6 @@ export function closeImagegenSession(
   defaultSessionPool.closeSession(sessionKey, options);
 }
 
-export async function getImagegenSession(
-  sessionKey: string,
-  execution?: JobExecutionOptions | null,
-) {
+export function getImagegenSession(sessionKey: string, execution?: JobExecutionOptions | null) {
   return defaultSessionPool.getOrCreateSession(sessionKey, execution);
 }

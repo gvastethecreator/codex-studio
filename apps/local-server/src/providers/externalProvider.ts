@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerOperation, type ProviderEffect } from './providerEffect';
 import type { CompiledProviderInput, GenerationProviderId } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
 import { createChatgptResponsesImageExecutor } from './chatgptResponsesImageExecutor';
@@ -24,7 +26,7 @@ export interface ExternalProviderExecutionContext {
 
 export type ExternalProviderExecutor = (
   context: ExternalProviderExecutionContext,
-) => Promise<TurnResult>;
+) => ProviderEffect<TurnResult>;
 
 export interface CreateExternalGenerationProviderDependencies {
   readPreflight?: (providerId: GenerationProviderId) => ProviderRuntimePreflight | null;
@@ -64,40 +66,44 @@ export function createExternalGenerationProvider({
 }: CreateExternalGenerationProviderDependencies = {}): GenerationProvider {
   return {
     id: 'external',
-    async run(job) {
-      const providerId = job.providerId ?? job.sourceSpec?.providerId;
+    run(job) {
+      return providerOperation(
+        Effect.gen(function* () {
+          const providerId = job.providerId ?? job.sourceSpec?.providerId;
 
-      if (!isExternalExecutableProviderId(providerId)) {
-        throw new Error(`Unsupported external provider: ${providerId ?? 'null'}.`);
-      }
+          if (!isExternalExecutableProviderId(providerId)) {
+            throw new Error(`Unsupported external provider: ${providerId ?? 'null'}.`);
+          }
 
-      const compiledInput = compileProviderInputForJob(providerId, job);
-      const preflight = readPreflight(providerId);
+          const compiledInput = compileProviderInputForJob(providerId, job);
+          const preflight = readPreflight(providerId);
 
-      if (!preflight) {
-        throw new Error(`Provider runtime preflight is not registered for ${providerId}.`);
-      }
+          if (!preflight) {
+            throw new Error(`Provider runtime preflight is not registered for ${providerId}.`);
+          }
 
-      if (!preflight.canAttemptExecution && !job.remoteExecution) {
-        throw new Error(
-          `Provider runtime preflight failed for ${providerId}: ${formatPreflightDiagnostics(preflight)}`,
-        );
-      }
+          if (!preflight.canAttemptExecution && !job.remoteExecution) {
+            throw new Error(
+              `Provider runtime preflight failed for ${providerId}: ${formatPreflightDiagnostics(preflight)}`,
+            );
+          }
 
-      const executor = execute ?? createExecutor(providerId);
+          const executor = execute ?? createExecutor(providerId);
 
-      if (!executor) {
-        throw new Error(
-          `External provider adapter "${providerId}" has no execution executor wired yet. Compiled Provider Input is ready for payload "${compiledInput.payloadKind}".`,
-        );
-      }
+          if (!executor) {
+            throw new Error(
+              `External provider adapter "${providerId}" has no execution executor wired yet. Compiled Provider Input is ready for payload "${compiledInput.payloadKind}".`,
+            );
+          }
 
-      return executor({
-        providerId,
-        job,
-        compiledInput,
-        preflight,
-      });
+          return yield* executor({
+            providerId,
+            job,
+            compiledInput,
+            preflight,
+          });
+        }),
+      );
     },
   };
 }

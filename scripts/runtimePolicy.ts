@@ -1,4 +1,4 @@
-import { Duration, Effect } from 'effect';
+import { Duration, Effect, Schedule } from 'effect';
 
 export interface ScriptRetryPolicy {
   attempts: number;
@@ -41,20 +41,13 @@ function withScriptRetry<T>(
   const policy = normalizeScriptRetryPolicy(policyInput);
   const shouldRetry = policyInput.shouldRetry ?? (() => true);
 
-  const attemptEffect = (attempt: number): Effect.Effect<T, unknown> =>
-    factory().pipe(
-      Effect.catchAll((error) => {
-        if (attempt >= policy.attempts || !shouldRetry(error)) {
-          return Effect.fail(error);
-        }
-
-        const delayEffect =
-          policy.delayMs > 0 ? Effect.sleep(Duration.millis(policy.delayMs)) : Effect.void;
-        return delayEffect.pipe(Effect.zipRight(attemptEffect(attempt + 1)));
-      }),
-    );
-
-  return attemptEffect(1);
+  return Effect.suspend(factory).pipe(
+    Effect.retry({
+      times: policy.attempts - 1,
+      schedule: Schedule.spaced(policy.delayMs),
+      while: shouldRetry,
+    }),
+  );
 }
 
 export async function runWithScriptRetry<T>(

@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { readGrokRuntimeDoctor } from '../grokRuntimeDoctor';
 import { isGrokHttpCredentialReady } from '../auth/tokens';
 import type { ExternalProviderExecutor } from './externalProvider';
@@ -18,16 +19,16 @@ export function createGrokRuntimeExecutor({
   isHttpReady = () => isGrokHttpCredentialReady(),
   canUseCli = () => readGrokRuntimeDoctor().canRunJobs,
 }: GrokRuntimeExecutorDependencies = {}): ExternalProviderExecutor {
-  return async (context) => {
-    if (isHttpReady()) {
-      try {
-        return await http(context);
-      } catch (error) {
-        if (isAbortError(error) || !isSubscriptionHttpFallbackAllowed(error) || !canUseCli()) {
-          throw error;
-        }
-      }
-    }
-    return cli(context);
-  };
+  return (context) =>
+    Effect.suspend(() => {
+      if (!isHttpReady()) return cli(context);
+      return http(context).pipe(
+        Effect.catch((error) => {
+          if (isAbortError(error) || !isSubscriptionHttpFallbackAllowed(error) || !canUseCli()) {
+            return Effect.fail(error);
+          }
+          return cli(context);
+        }),
+      );
+    });
 }

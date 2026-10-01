@@ -1,3 +1,10 @@
+import { Effect } from 'effect';
+import {
+  providerOperation,
+  providerBody,
+  type ProviderEffect,
+  type ProviderSleep,
+} from './providerEffect';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import type { GenerationTaskKind } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
@@ -26,7 +33,7 @@ export interface FalImageExecutorDependencies {
   mkdir?: typeof mkdirSync;
   writeFile?: typeof writeFileSync;
   now?: () => number;
-  sleep?: (durationMs: number) => Promise<unknown>;
+  sleep?: ProviderSleep;
   maxAttempts?: number;
   retryDelayMs?: number;
   uploadLocalAsset?: FalAssetUploadLocalFile;
@@ -59,22 +66,26 @@ function trimTrailingSlash(value: string) {
   return value.replace(/\/+$/, '');
 }
 
-async function createFalRequestBody(
+function createFalRequestBody(
   payload: HostedImageApiCompiledPayload,
   dependencies: { uploadLocalAsset?: FalAssetUploadLocalFile } = {},
 ) {
-  const body: Record<string, unknown> = {
-    prompt: payload.prompt,
-  };
+  return providerOperation(
+    Effect.gen(function* () {
+      const body: Record<string, unknown> = {
+        prompt: payload.prompt,
+      };
 
-  if (payload.negativePrompt) body.negative_prompt = payload.negativePrompt;
-  if (payload.output.imageSize) body.image_size = payload.output.imageSize;
-  if (payload.output.count > 1) body.num_images = payload.output.count;
+      if (payload.negativePrompt) body.negative_prompt = payload.negativePrompt;
+      if (payload.output.imageSize) body.image_size = payload.output.imageSize;
+      if (payload.output.count > 1) body.num_images = payload.output.count;
 
-  return {
-    ...body,
-    ...(await createFalAssetRequestFields(payload.assets, dependencies)),
-  };
+      return {
+        ...body,
+        ...(yield* createFalAssetRequestFields(payload.assets, dependencies)),
+      };
+    }),
+  );
 }
 
 function assertFalRequestBodySupportsTask(
@@ -109,90 +120,94 @@ export function createFalImageExecutor({
   mkdir = mkdirSync,
   writeFile = writeFileSync,
   now = () => Date.now(),
-  sleep = (durationMs) => Bun.sleep(durationMs),
+  sleep = (durationMs) => Effect.sleep(durationMs),
   maxAttempts = DEFAULT_MAX_ATTEMPTS,
   retryDelayMs = DEFAULT_RETRY_DELAY_MS,
   uploadLocalAsset,
 }: FalImageExecutorDependencies = {}): ExternalProviderExecutor {
-  return async function executeFalImageJob({
+  return function executeFalImageJob({
     providerId,
     job,
     compiledInput,
-  }: ExternalProviderExecutionContext): Promise<TurnResult> {
-    if (providerId !== 'fal' || compiledInput.providerId !== 'fal') {
-      throw new Error(`Fal executor received provider "${providerId}".`);
-    }
-    if (compiledInput.payloadKind !== 'api_request') {
-      throw new Error(`Fal executor cannot run payload "${compiledInput.payloadKind}".`);
-    }
+  }: ExternalProviderExecutionContext): ProviderEffect<TurnResult> {
+    return providerOperation(
+      Effect.gen(function* () {
+        if (providerId !== 'fal' || compiledInput.providerId !== 'fal') {
+          throw new Error(`Fal executor received provider "${providerId}".`);
+        }
+        if (compiledInput.payloadKind !== 'api_request') {
+          throw new Error(`Fal executor cannot run payload "${compiledInput.payloadKind}".`);
+        }
 
-    const startedAt = now();
-    const payload = asFalPayload(compiledInput.payload);
-    const apiKey = firstConfiguredEnv(env, ['FAL_KEY', 'FAL_API_KEY']);
-    if (!apiKey) {
-      throw new Error('Missing Provider Secret source: FAL_KEY or FAL_API_KEY.');
-    }
-    const model = payload.model?.trim() || env.FAL_MODEL?.trim() || DEFAULT_FAL_IMAGE_MODEL;
-    const apiBase = trimTrailingSlash(env.FAL_API_BASE?.trim() || DEFAULT_FAL_API_BASE);
-    const endpoint = `${apiBase}/${model.replace(/^\/+/, '')}`;
-    const requestBody = await createFalRequestBody(payload, {
-      uploadLocalAsset: uploadLocalAsset ?? createFalLocalAssetUploader({ apiKey }),
-    });
-    assertFalRequestBodySupportsTask(compiledInput.task, requestBody);
-    const { response, attempts: requestAttempts } = await fetchExternalProviderWithRetry({
-      label: 'fal.ai request',
-      fetch: fetchFn,
-      input: endpoint,
-      init: {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          Authorization: `Key ${apiKey}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestBody),
-        signal: job.signal,
-      },
-      maxAttempts,
-      retryDelayMs,
-      sleep,
-    });
+        const startedAt = now();
+        const payload = asFalPayload(compiledInput.payload);
+        const apiKey = firstConfiguredEnv(env, ['FAL_KEY', 'FAL_API_KEY']);
+        if (!apiKey) {
+          throw new Error('Missing Provider Secret source: FAL_KEY or FAL_API_KEY.');
+        }
+        const model = payload.model?.trim() || env.FAL_MODEL?.trim() || DEFAULT_FAL_IMAGE_MODEL;
+        const apiBase = trimTrailingSlash(env.FAL_API_BASE?.trim() || DEFAULT_FAL_API_BASE);
+        const endpoint = `${apiBase}/${model.replace(/^\/+/, '')}`;
+        const requestBody = yield* createFalRequestBody(payload, {
+          uploadLocalAsset: uploadLocalAsset ?? createFalLocalAssetUploader({ apiKey }),
+        });
+        assertFalRequestBodySupportsTask(compiledInput.task, requestBody);
+        const { response, attempts: requestAttempts } = yield* fetchExternalProviderWithRetry({
+          label: 'fal.ai request',
+          fetch: fetchFn,
+          input: endpoint,
+          init: {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              Authorization: `Key ${apiKey}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestBody),
+            signal: job.signal,
+          },
+          maxAttempts,
+          retryDelayMs,
+          sleep,
+        });
 
-    if (!response.ok) {
-      const body = await response.text().catch(() => '');
-      throw new Error(
-        `fal.ai request failed after ${requestAttempts} attempt(s): ${response.status} ${response.statusText}${body ? ` ${responseSnippet(body, [apiKey])}` : ''}`,
-      );
-    }
+        if (!response.ok) {
+          const body = yield* providerBody(() => response.text().catch(() => ''));
+          throw new Error(
+            `fal.ai request failed after ${requestAttempts} attempt(s): ${response.status} ${response.statusText}${body ? ` ${responseSnippet(body, [apiKey])}` : ''}`,
+          );
+        }
 
-    const json = await response.json();
-    const imageUrl = findFirstHostedImageUrl(json);
-    if (!imageUrl) {
-      throw new Error('fal.ai response did not include an image URL.');
-    }
+        const json = yield* providerBody(() => response.json());
+        const imageUrl = findFirstHostedImageUrl(json);
+        if (!imageUrl) {
+          throw new Error('fal.ai response did not include an image URL.');
+        }
 
-    return storeHostedImageResult({
-      providerId: 'fal',
-      providerSlug: 'fal',
-      model,
-      endpointBase: apiBase,
-      job,
-      compiledInput,
-      responseJson: json,
-      imageUrl,
-      requestAttempts,
-      startedAt,
-      diagnostics: createFalTranscriptDiagnostics(payload, requestBody),
-      fetch: fetchFn,
-      files: {
-        resolveLibraryPath: resolveLibrary,
-        mkdir,
-        writeFile,
-        now,
-      },
-      maxAttempts,
-      retryDelayMs,
-      sleep,
-    });
+        return yield* storeHostedImageResult({
+          providerId: 'fal',
+          providerSlug: 'fal',
+          model,
+          endpointBase: apiBase,
+          job,
+          compiledInput,
+          responseJson: json,
+          imageUrl,
+          requestAttempts,
+          startedAt,
+          diagnostics: createFalTranscriptDiagnostics(payload, requestBody),
+          fetch: fetchFn,
+          files: {
+            resolveLibraryPath: resolveLibrary,
+            mkdir,
+            writeFile,
+            now,
+          },
+          maxAttempts,
+          retryDelayMs,
+          sleep,
+        });
+      }),
+    );
   };
 }

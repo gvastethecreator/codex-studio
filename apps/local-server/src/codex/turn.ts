@@ -1,3 +1,11 @@
+import { Effect, Result } from 'effect';
+import {
+  providerOperation,
+  providerPromise,
+  providerFailure,
+  type ProviderEffect,
+  type ProviderSleep,
+} from '../providers/providerEffect';
 import { copyFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { resolveLibraryPath } from '../library';
@@ -40,7 +48,7 @@ export interface TurnResult {
 }
 
 export interface CodexTurn {
-  runTurn(params: TurnParams): Promise<TurnResult>;
+  runTurn(params: TurnParams): ProviderEffect<TurnResult>;
 }
 
 export interface CodexTurnDependencies {
@@ -53,7 +61,7 @@ export interface CodexTurnDependencies {
   resolveProcessCwd?: () => string;
   imagegenSkillPath?: string;
   logger?: typeof log;
-  sleep?: (durationMs: number) => Promise<unknown>;
+  sleep?: ProviderSleep;
   maxAttempts?: number;
   retryDelayMs?: number;
   turnStartTimeoutMs?: number;
@@ -83,56 +91,6 @@ function throwIfAborted(signal?: AbortSignal) {
   if (signal?.aborted) {
     throw createAbortError();
   }
-}
-
-async function raceWithAbort<T>(promise: Promise<T>, signal?: AbortSignal, onAbort?: () => void) {
-  if (!signal) return promise;
-  throwIfAborted(signal);
-
-  return new Promise<T>((resolve, reject) => {
-    const handleAbort = () => {
-      signal.removeEventListener('abort', handleAbort);
-      onAbort?.();
-      reject(createAbortError());
-    };
-    signal.addEventListener('abort', handleAbort, { once: true });
-
-    promise.then(
-      (value) => {
-        signal.removeEventListener('abort', handleAbort);
-        resolve(value);
-      },
-      (error) => {
-        signal.removeEventListener('abort', handleAbort);
-        reject(error);
-      },
-    );
-  });
-}
-
-function raceWithTimeout<T>(
-  promise: Promise<T>,
-  timeoutMs: number,
-  errorMessage: string,
-  onTimeout?: () => void,
-) {
-  return new Promise<T>((resolve, reject) => {
-    const timeout = setTimeout(() => {
-      onTimeout?.();
-      reject(new Error(errorMessage));
-    }, timeoutMs);
-
-    promise.then(
-      (value) => {
-        clearTimeout(timeout);
-        resolve(value);
-      },
-      (error) => {
-        clearTimeout(timeout);
-        reject(error);
-      },
-    );
-  });
 }
 
 function mimeForPath(filePath: string) {
@@ -197,14 +155,14 @@ interface ResolvedCodexTurnDependencies {
   resolveProcessCwd: () => string;
   imagegenSkillPath: string;
   logger: typeof log;
-  sleep: (durationMs: number) => Promise<unknown>;
+  sleep: ProviderSleep;
   maxAttempts: number;
   retryDelayMs: number;
   turnStartTimeoutMs: number;
   turnCompletionTimeoutMs: number;
 }
 
-async function runCodexImagegenTurn(
+function runCodexImagegenTurn(
   session: SessionHandle,
   job: {
     id: string;
@@ -217,134 +175,149 @@ async function runCodexImagegenTurn(
   sessionKey: string,
   dependencies: ResolvedCodexTurnDependencies,
   signal?: AbortSignal,
-): Promise<TurnResult> {
-  const executionOptions = dependencies.resolveExecutionOptions(job.execution);
-  const assetExtractor = dependencies.createAssetExtractor(job.id);
-  const notificationStart = session.client.getNotificationCount();
-  let turnId: string | null = null;
+): ProviderEffect<TurnResult> {
+  return providerOperation(
+    Effect.gen(function* () {
+      const executionOptions = dependencies.resolveExecutionOptions(job.execution);
+      const assetExtractor = dependencies.createAssetExtractor(job.id);
+      const notificationStart = session.client.getNotificationCount();
+      let turnId: string | null = null;
 
-  const invalidateSession = () =>
-    dependencies.closeSession(sessionKey, {
-      invalidatePersistedThread: true,
-    });
+      const invalidateSession = () =>
+        dependencies.closeSession(sessionKey, {
+          invalidatePersistedThread: true,
+        });
 
-  let turn;
-  try {
-    turn = await raceWithAbort(
-      raceWithTimeout(
-        session.client.request('turn/start', {
+      let turn;
+      try {
+        turn = Result.getOrThrowWith(
+          yield* Effect.result(
+            session.client
+              .request('turn/start', {
+                threadId: session.threadId,
+                input: buildCodexImagegenTurnInput({
+                  imagegenSkillPath: dependencies.imagegenSkillPath,
+                  fallbackPrompt: job.prompt,
+                  compiledInput: job.compiledInput ?? null,
+                }),
+                cwd: dependencies.resolveProcessCwd(),
+                approvalPolicy: 'never',
+                model: executionOptions.model,
+                effort: executionOptions.reasoningEffort,
+                serviceTier: executionOptions.serviceTier ?? undefined,
+              })
+              .pipe(Effect.onInterrupt(() => Effect.sync(invalidateSession)))
+              .pipe(
+                Effect.timeoutOrElse({
+                  duration: dependencies.turnStartTimeoutMs,
+                  orElse: () =>
+                    Effect.fail(
+                      providerFailure(
+                        new Error('Timed out waiting for Codex notification (turn start)'),
+                      ),
+                    ),
+                }),
+              ),
+          ),
+          (error) => error,
+        );
+      } catch (error) {
+        if (isCodexUsageLimitValue(error)) {
+          throw createCodexUsageLimitError();
+        }
+        throw error;
+      }
+      turnId = turn?.turn?.id ?? null;
+
+      yield* session.client
+        .waitForNotification(
+          (message) =>
+            message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
+          dependencies.turnCompletionTimeoutMs,
+        )
+        .pipe(Effect.onInterrupt(() => Effect.sync(invalidateSession)));
+
+      throwIfAborted(signal);
+
+      const notifications = session.client.getNotificationsSince(notificationStart);
+      for (const notification of notifications) {
+        writeFileSync(transcriptPath, `${JSON.stringify(notification)}\n`, {
+          flag: 'a',
+        });
+      }
+
+      if (notifications.some(isCodexUsageLimitValue)) {
+        throw createCodexUsageLimitError();
+      }
+
+      const discoveredAssets = yield* providerPromise(() =>
+        assetExtractor.extract(notifications, {
           threadId: session.threadId,
-          input: buildCodexImagegenTurnInput({
-            imagegenSkillPath: dependencies.imagegenSkillPath,
-            fallbackPrompt: job.prompt,
-            compiledInput: job.compiledInput ?? null,
-          }),
-          cwd: dependencies.resolveProcessCwd(),
-          approvalPolicy: 'never',
-          model: executionOptions.model,
-          effort: executionOptions.reasoningEffort,
-          serviceTier: executionOptions.serviceTier ?? undefined,
+          sinceMs: startedAt,
         }),
-        dependencies.turnStartTimeoutMs,
-        'Timed out waiting for Codex notification (turn start)',
-        invalidateSession,
-      ),
-      signal,
-      invalidateSession,
-    );
-  } catch (error) {
-    if (isCodexUsageLimitValue(error)) {
-      throw createCodexUsageLimitError();
-    }
-    throw error;
-  }
-  turnId = turn?.turn?.id ?? null;
+      );
+      const discoveredAsset = discoveredAssets[0];
 
-  await raceWithAbort(
-    session.client.waitForNotification(
-      (message) =>
-        message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
-      dependencies.turnCompletionTimeoutMs,
-    ),
-    signal,
-    invalidateSession,
+      if (discoveredAsset?.origin === 'inline' && discoveredAsset.sourcePath) {
+        return {
+          assets: [
+            {
+              type: 'file',
+              sourcePath: discoveredAsset.sourcePath,
+              mimeType: discoveredAsset.mimeType,
+            },
+          ],
+          transcript: transcriptPath,
+          turnId,
+          threadId: session.threadId,
+          durationMs: Date.now() - startedAt,
+        };
+      }
+
+      const assistantText = extractAssistantText(notifications);
+      if (
+        /can[’']?t directly generate|image generation runtime\/tool isn[’']?t available|OPENAI_API_KEY/i.test(
+          assistantText,
+        )
+      ) {
+        throw new Error(
+          `Codex app-server thread lacks image generation capability for job ${job.id}`,
+        );
+      }
+
+      if (!discoveredAsset?.sourcePath) {
+        return {
+          assets: [],
+          transcript: transcriptPath,
+          turnId,
+          threadId: session.threadId,
+          durationMs: Date.now() - startedAt,
+        };
+      }
+
+      const outputPath = dependencies.resolveLibraryPath(
+        'assets',
+        `${job.id}-codex${path.extname(discoveredAsset.sourcePath).toLowerCase() || '.png'}`,
+      );
+      copyFileSync(discoveredAsset.sourcePath, outputPath);
+      return {
+        assets: [
+          {
+            type: 'file',
+            sourcePath: outputPath,
+            mimeType: discoveredAsset.mimeType || mimeForPath(outputPath),
+          },
+        ],
+        transcript: transcriptPath,
+        turnId,
+        threadId: session.threadId,
+        durationMs: Date.now() - startedAt,
+      };
+    }),
   );
-
-  throwIfAborted(signal);
-
-  const notifications = session.client.getNotificationsSince(notificationStart);
-  for (const notification of notifications) {
-    writeFileSync(transcriptPath, `${JSON.stringify(notification)}\n`, {
-      flag: 'a',
-    });
-  }
-
-  if (notifications.some(isCodexUsageLimitValue)) {
-    throw createCodexUsageLimitError();
-  }
-
-  const discoveredAssets = await assetExtractor.extract(notifications, {
-    threadId: session.threadId,
-    sinceMs: startedAt,
-  });
-  const discoveredAsset = discoveredAssets[0];
-
-  if (discoveredAsset?.origin === 'inline' && discoveredAsset.sourcePath) {
-    return {
-      assets: [
-        {
-          type: 'file',
-          sourcePath: discoveredAsset.sourcePath,
-          mimeType: discoveredAsset.mimeType,
-        },
-      ],
-      transcript: transcriptPath,
-      turnId,
-      threadId: session.threadId,
-      durationMs: Date.now() - startedAt,
-    };
-  }
-
-  const assistantText = extractAssistantText(notifications);
-  if (
-    /can[’']?t directly generate|image generation runtime\/tool isn[’']?t available|OPENAI_API_KEY/i.test(
-      assistantText,
-    )
-  ) {
-    throw new Error(`Codex app-server thread lacks image generation capability for job ${job.id}`);
-  }
-
-  if (!discoveredAsset?.sourcePath) {
-    return {
-      assets: [],
-      transcript: transcriptPath,
-      turnId,
-      threadId: session.threadId,
-      durationMs: Date.now() - startedAt,
-    };
-  }
-
-  const outputPath = dependencies.resolveLibraryPath(
-    'assets',
-    `${job.id}-codex${path.extname(discoveredAsset.sourcePath).toLowerCase() || '.png'}`,
-  );
-  copyFileSync(discoveredAsset.sourcePath, outputPath);
-  return {
-    assets: [
-      {
-        type: 'file',
-        sourcePath: outputPath,
-        mimeType: discoveredAsset.mimeType || mimeForPath(outputPath),
-      },
-    ],
-    transcript: transcriptPath,
-    turnId,
-    threadId: session.threadId,
-    durationMs: Date.now() - startedAt,
-  };
 }
 
-async function runImagegenJob(
+function runImagegenJob(
   job: {
     id: string;
     prompt: string;
@@ -354,81 +327,95 @@ async function runImagegenJob(
     signal?: AbortSignal;
   },
   dependencies: ResolvedCodexTurnDependencies,
-): Promise<TurnResult> {
-  const startedAt = Date.now();
-  const transcriptDir = dependencies.resolveLibraryPath('transcripts', job.id);
-  mkdirSync(transcriptDir, { recursive: true });
-  const transcriptPath = path.join(transcriptDir, 'events.jsonl');
-  const sessionIdentity = resolveCodexImagegenSessionIdentity({
-    jobId: job.id,
-    prompt: job.prompt,
-    requestedSessionKey: job.sessionKey,
-    hasImageInputs: (job.compiledInput?.payload.imageInputs.length ?? 0) > 0,
-    getSessionKey: dependencies.getSessionKey,
-  });
-  const { sessionKey, reusable: reusableSession } = sessionIdentity;
-  let lastError: unknown = null;
-  const retryPolicy = normalizeCodexRetryPolicy({
-    maxAttempts: dependencies.maxAttempts,
-    retryDelayMs: dependencies.retryDelayMs,
-  });
-
-  for (let attempt = 1; attempt <= retryPolicy.maxAttempts; attempt += 1) {
-    let runResult!: TurnResult;
-    const session = await dependencies.getSession(sessionKey, job.execution);
-    const run = session.queue.then(async () => {
-      try {
-        runResult = await runCodexImagegenTurn(
-          session,
-          job,
-          transcriptPath,
-          startedAt,
-          sessionKey,
-          dependencies,
-          job.signal,
+): ProviderEffect<TurnResult> {
+  return providerOperation(
+    Effect.gen(function* () {
+      const startedAt = Date.now();
+      const transcriptDir = dependencies.resolveLibraryPath('transcripts', job.id);
+      mkdirSync(transcriptDir, { recursive: true });
+      const transcriptPath = path.join(transcriptDir, 'events.jsonl');
+      const sessionIdentity = resolveCodexImagegenSessionIdentity({
+        jobId: job.id,
+        prompt: job.prompt,
+        requestedSessionKey: job.sessionKey,
+        hasImageInputs: (job.compiledInput?.payload.imageInputs.length ?? 0) > 0,
+        getSessionKey: dependencies.getSessionKey,
+      });
+      const { sessionKey, reusable: reusableSession } = sessionIdentity;
+      const retryPolicy = normalizeCodexRetryPolicy({
+        maxAttempts: dependencies.maxAttempts,
+        retryDelayMs: dependencies.retryDelayMs,
+      });
+      let attempt = 0;
+      let enteredTurn = false;
+      const runAttempt = Effect.suspend(() => {
+        attempt += 1;
+        enteredTurn = false;
+        return Effect.scoped(
+          Effect.gen(function* () {
+            throwIfAborted(job.signal);
+            const session = yield* Effect.acquireRelease(
+              dependencies.getSession(sessionKey, job.execution),
+              () =>
+                Effect.sync(() => {
+                  if (!reusableSession)
+                    dependencies.closeSession(sessionKey, { invalidatePersistedThread: true });
+                }),
+              { interruptible: true },
+            );
+            enteredTurn = true;
+            return yield* session.lock
+              .withPermits(1)(
+                runCodexImagegenTurn(
+                  session,
+                  job,
+                  transcriptPath,
+                  startedAt,
+                  sessionKey,
+                  dependencies,
+                  job.signal,
+                ),
+              )
+              .pipe(
+                Effect.tapError((error) =>
+                  Effect.sync(() => {
+                    if (!isAbortError(error))
+                      dependencies.closeSession(sessionKey, {
+                        invalidatePersistedThread: shouldInvalidatePersistedThread(error.message),
+                      });
+                  }),
+                ),
+              );
+          }),
         );
-      } catch (error) {
-        if (isAbortError(error)) {
-          throw error;
-        }
-        const message = error instanceof Error ? error.message : String(error);
-        const invalidatePersistedThread = shouldInvalidatePersistedThread(message);
-        dependencies.closeSession(sessionKey, { invalidatePersistedThread });
-        throw error;
-      }
-    });
-    session.queue = run.catch(() => {});
-
-    try {
-      await run;
-      if (!reusableSession) {
-        dependencies.closeSession(sessionKey, {
-          invalidatePersistedThread: true,
-        });
-      }
-      return runResult;
-    } catch (error) {
-      if (!reusableSession) {
-        dependencies.closeSession(sessionKey, {
-          invalidatePersistedThread: true,
-        });
-      }
-      lastError = error;
-      if (isAbortError(error)) throw error;
-      const message = error instanceof Error ? error.message : String(error);
-      const retryable = isTransientCodexRuntimeErrorMessage(message);
-      if (!retryable || attempt === retryPolicy.maxAttempts) throw error;
-      dependencies.logger(
-        'warn',
-        'codex-session',
-        `Retrying ${job.id} after transient Codex failure on ${sessionKey}: ${message}`,
-        job.id,
+      });
+      return yield* runAttempt.pipe(
+        Effect.retry({
+          while: (error) => {
+            if (
+              !enteredTurn ||
+              isAbortError(error) ||
+              job.signal?.aborted ||
+              attempt >= retryPolicy.maxAttempts ||
+              !isTransientCodexRuntimeErrorMessage(error.message)
+            ) {
+              return Effect.succeed(false);
+            }
+            return Effect.gen(function* () {
+              dependencies.logger(
+                'warn',
+                'codex-session',
+                `Retrying ${job.id} after transient Codex failure on ${sessionKey}: ${error.message}`,
+                job.id,
+              );
+              yield* dependencies.sleep(retryPolicy.retryDelayMs);
+              return true;
+            });
+          },
+        }),
       );
-      await dependencies.sleep(retryPolicy.retryDelayMs);
-    }
-  }
-
-  throw lastError instanceof Error ? lastError : new Error(String(lastError));
+    }),
+  );
 }
 
 export function createCodexTurn({
@@ -446,7 +433,7 @@ export function createCodexTurn({
     'SKILL.md',
   ),
   logger = log,
-  sleep = (durationMs: number) => Bun.sleep(durationMs),
+  sleep = (durationMs: number) => Effect.sleep(durationMs),
   maxAttempts = DEFAULT_CODEX_RETRY_POLICY.maxAttempts,
   retryDelayMs = DEFAULT_CODEX_RETRY_POLICY.retryDelayMs,
   turnStartTimeoutMs = DEFAULT_CODEX_TURN_START_TIMEOUT_MS,

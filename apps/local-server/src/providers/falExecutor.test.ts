@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerSync } from './providerEffect';
 import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
@@ -84,7 +86,7 @@ describe('fal executor', () => {
       now: () => 1000,
     });
 
-    const result = await executor(createFalContext());
+    const result = await Effect.runPromise(Effect.scoped(executor(createFalContext())));
     const normalizedTranscript = result.transcript.replaceAll('\\', '/');
     const normalizedWrites = writes.map((write) => write.filePath.replaceAll('\\', '/'));
 
@@ -146,20 +148,24 @@ describe('fal executor', () => {
       now: () => 1000,
     });
 
-    await executor(
-      createFalContext({
-        sourceSpec: {
-          assets: [
-            { role: 'input', name: 'input.png', sourceUrl: 'https://cdn.example/input.png' },
-            { role: 'mask', name: 'mask.png', sourceUrl: 'https://cdn.example/mask.png' },
-            {
-              role: 'reference',
-              name: 'reference.png',
-              sourceUrl: 'https://cdn.example/reference.png',
+    await Effect.runPromise(
+      Effect.scoped(
+        executor(
+          createFalContext({
+            sourceSpec: {
+              assets: [
+                { role: 'input', name: 'input.png', sourceUrl: 'https://cdn.example/input.png' },
+                { role: 'mask', name: 'mask.png', sourceUrl: 'https://cdn.example/mask.png' },
+                {
+                  role: 'reference',
+                  name: 'reference.png',
+                  sourceUrl: 'https://cdn.example/reference.png',
+                },
+              ],
             },
-          ],
-        },
-      }),
+          }),
+        ),
+      ),
     );
 
     const requestBody = calls[0].init?.body;
@@ -192,21 +198,26 @@ describe('fal executor', () => {
       mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
       now: () => 1000,
-      uploadLocalAsset: async (asset) => {
-        uploads.push(asset.localPath ?? '');
-        return `https://v3.fal.media/files/${asset.name}`;
-      },
+      uploadLocalAsset: (asset) =>
+        providerSync(() => {
+          uploads.push(asset.localPath ?? '');
+          return `https://v3.fal.media/files/${asset.name}`;
+        }),
     });
 
-    await executor(
-      createFalContext({
-        sourceSpec: {
-          assets: [
-            { role: 'input', name: 'input.png', localPath: 'D:/inputs/input.png' },
-            { role: 'mask', name: 'mask.png', localPath: 'D:/inputs/mask.png' },
-          ],
-        },
-      }),
+    await Effect.runPromise(
+      Effect.scoped(
+        executor(
+          createFalContext({
+            sourceSpec: {
+              assets: [
+                { role: 'input', name: 'input.png', localPath: 'D:/inputs/input.png' },
+                { role: 'mask', name: 'mask.png', localPath: 'D:/inputs/mask.png' },
+              ],
+            },
+          }),
+        ),
+      ),
     );
 
     const requestBody = calls[0].init?.body;
@@ -233,15 +244,19 @@ describe('fal executor', () => {
     });
 
     await expect(
-      executor(
-        createFalContext({
-          sourceSpec: {
-            task: 'image_edit',
-            assets: [
-              { role: 'reference', name: 'ref.png', sourceUrl: 'https://cdn.example/ref.png' },
-            ],
-          },
-        }),
+      Effect.runPromise(
+        Effect.scoped(
+          executor(
+            createFalContext({
+              sourceSpec: {
+                task: 'image_edit',
+                assets: [
+                  { role: 'reference', name: 'ref.png', sourceUrl: 'https://cdn.example/ref.png' },
+                ],
+              },
+            }),
+          ),
+        ),
       ),
     ).rejects.toThrow('fal.ai image_edit task requires an input or external_output asset');
     expect(calls).toHaveLength(0);
@@ -262,12 +277,12 @@ describe('fal executor', () => {
       mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
       writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
       now: () => 1000,
-      sleep: async () => undefined,
+      sleep: () => providerSync(() => undefined),
     });
 
     let message = '';
     try {
-      await executor(createFalContext());
+      await Effect.runPromise(Effect.scoped(executor(createFalContext())));
     } catch (error) {
       message = error instanceof Error ? error.message : String(error);
     }
@@ -316,13 +331,14 @@ describe('fal executor', () => {
         writes.push({ filePath: String(filePath), content, encoding });
       }) as typeof import('node:fs').writeFileSync,
       now: () => 2000,
-      sleep: async (durationMs) => {
-        sleeps.push(durationMs);
-      },
+      sleep: (durationMs) =>
+        providerSync(() => {
+          sleeps.push(durationMs);
+        }),
       retryDelayMs: 25,
     });
 
-    const result = await executor(createFalContext());
+    const result = await Effect.runPromise(Effect.scoped(executor(createFalContext())));
     const transcriptWrite = writes.find((write) =>
       write.filePath.replaceAll('\\', '/').endsWith('/transcripts/job-fal/fal.json'),
     );
@@ -376,17 +392,21 @@ describe('fal executor', () => {
       now: () => 3000,
     });
 
-    await executor(
-      createFalContext({
-        sourceSpec: {
-          task: 'image_edit',
-          assets: [
-            { role: 'input', name: 'input.png', sourceUrl: 'https://cdn.example/input.png' },
-            { role: 'mask', name: 'mask.png', sourceUrl: 'https://cdn.example/mask.png' },
-            { role: 'reference', name: 'ref.png', sourceUrl: 'https://cdn.example/ref.png' },
-          ],
-        },
-      }),
+    await Effect.runPromise(
+      Effect.scoped(
+        executor(
+          createFalContext({
+            sourceSpec: {
+              task: 'image_edit',
+              assets: [
+                { role: 'input', name: 'input.png', sourceUrl: 'https://cdn.example/input.png' },
+                { role: 'mask', name: 'mask.png', sourceUrl: 'https://cdn.example/mask.png' },
+                { role: 'reference', name: 'ref.png', sourceUrl: 'https://cdn.example/ref.png' },
+              ],
+            },
+          }),
+        ),
+      ),
     );
 
     const transcriptWrite = writes.find((write) =>

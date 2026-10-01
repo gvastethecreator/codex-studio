@@ -83,6 +83,9 @@ graph TD
 - `apps/local-server/src/providerExecutionPolicy.ts` resolves effective execution fields at intake: explicit request, selected-provider default, then bootstrap fallback.
 - `apps/local-server/src/catalog.ts` owns Catalog Entry persistence. `apps/local-server/src/db/` separates the SQLite connection, ordered migrations, and domain stores for workspaces, jobs, assets, settings, events or logs, and Codex turns.
 - `apps/local-server/src/managedAssetPolicy.ts` validates provider assets against the captured Library root. `apps/local-server/src/workerAssetFinalizer.ts` owns recoverable file, Asset, Catalog, and job finalization.
+- `worker.ts` creates one Effect 4.0.0 `ManagedRuntime` per worker. `Context.Service` and `Layer` provide the generation providers. SQLite remains the job authority; the existing global and per-provider admission limits select which jobs receive a fiber. Capacity is released only after scoped resources and finalization finish.
+- `providers/providerEffect.ts` defines the typed failure boundary and scoped native operations. All provider executors and Codex turns return composable effects. HTTP bodies, SSE readers, CLI processes, temporary output directories, and Codex RPC listeners have explicit cleanup. Effect owns retry waits and execution deadlines; retries remain local to the operations that already allow them. There is no retry of an entire generation job.
+- `codex/sessionPool.ts` shares session creation and serializes turns with Effect semaphores. Session reuse, invalidation, and each job's captured transport remain in force. Native SDK and filesystem work enter through explicit Effect boundaries; Hono-facing APIs still return promises.
 - `apps/local-server/src/eventStreamRoutes.ts` owns SSE.
 - `apps/local-server/src/libraryRoutes.ts` owns local asset serving.
 - `apps/local-server/src/settingsRoutes.ts` owns editable Studio Settings.
@@ -108,7 +111,7 @@ graph TD
 - Ordered schema migrations in `apps/local-server/src/db/migrations.ts` are recorded in `schema_migrations` and applied in a transaction.
 - Workspace is the only user-visible organization entity (`/api/workspaces`).
 - Project routes, contracts, columns, and tables are retired.
-- `StudioWorkspace` is the shared API contract. Shared Effect schemas validate Workspace and Job intake boundaries before route logic runs.
+- `StudioWorkspace` is the shared API contract. Shared Effect v4 schemas validate Workspace and Job intake with `decodeUnknownExit` and `Exit` before route logic runs. Optional fields and HTTP validation responses keep the same contract.
 - Persistent jobs carry immutable Library identity or root context, the output folder and naming captured at submit (`library_context_json`), and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads. Detail paths load full payloads on demand.
 - `/api/jobs` returns all open jobs (`queued`, `running`, `needs_review`) separately from cursor-paged terminal history (`completed`, `failed`, `cancelled`). Workspace filters scope the rows and counts; the response also names the global open count. History status filters do not hide open work. Queue owns pagination and keeps loaded rows visible during a failed page read. Identical summary reads preserve its cursor; a revision gap on the shared event connection restarts reconciliation because older pages may have changed. Job-specific observers and animation recovery read `/api/jobs/{id}/status`, independent of the history window.
@@ -151,7 +154,7 @@ Backend shutdown quiesces the job worker before it stops the managed `codex app-
 Queued jobs remain durable.
 Active jobs receive an abort and return to `queued`.
 The existing startup recovery scan enqueues them again on the next launch.
-Application exit therefore is not a user cancellation and does not leave provider work orphaned.
+User cancellation and Studio reset record separate reasons. Comfy cancellation must be confirmed for the stored remote ID; an unconfirmed cancellation remains `needs_review`. Shutdown stops local observation without cancelling recoverable remote work. ChatGPT and Comfy submission checkpoints prevent a second submission after an uncertain acceptance. Asset finalization keeps its checkpoints and completes file, Asset, Catalog Entry, metadata, and event work before the worker releases its capacity.
 
 High-volume projections stay compact and event-driven.
 Job list rows use `JobSummary` rather than full prompt-bearing jobs.

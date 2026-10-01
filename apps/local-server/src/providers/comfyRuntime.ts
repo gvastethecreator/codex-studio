@@ -1,3 +1,5 @@
+import { Effect } from 'effect';
+import { providerOperation, providerFetch, providerBody, providerTimeout } from './providerEffect';
 import { createHash } from 'node:crypto';
 import { isRecord, type ExternalProviderFetch } from './externalProviderResults';
 
@@ -27,72 +29,94 @@ export function comfyEndpoint(base: string, route: string) {
   return `${base}/api/${route}`;
 }
 
-export async function readComfyJson(
+export function readComfyJson(fetch: ExternalProviderFetch, url: string, signal?: AbortSignal) {
+  return providerOperation(
+    Effect.gen(function* () {
+      const response = yield* requestComfyJson(fetch, url, { signal });
+      if (!response.ok) throw new Error(`Comfy status request failed (HTTP ${response.status}).`);
+      return response.body;
+    }),
+  );
+}
+
+export function requestComfyJson(
   fetch: ExternalProviderFetch,
   url: string,
-  signal?: AbortSignal,
+  init?: RequestInit,
+  timeoutMs = 10_000,
 ) {
-  const deadline = AbortSignal.timeout(10_000);
-  const response = await fetch(url, {
-    signal: signal ? AbortSignal.any([signal, deadline]) : deadline,
-  });
-  if (!response.ok) throw new Error(`Comfy status request failed (HTTP ${response.status}).`);
-  return (await response.json()) as unknown;
+  return Effect.scoped(
+    Effect.gen(function* () {
+      const response = yield* providerFetch(fetch, url, init);
+      const body: unknown = response.ok ? yield* providerBody(() => response.json()) : null;
+      return { ok: response.ok, status: response.status, body };
+    }),
+  ).pipe(providerTimeout(timeoutMs));
 }
 
 /** Query only nodes used by this workflow; partner nodes require separate spend consent. */
-export async function validateComfyWorkflow(
+export function validateComfyWorkflow(
   workflow: unknown,
   base: string,
   fetch: ExternalProviderFetch,
   signal?: AbortSignal,
 ) {
-  if (!isRecord(workflow) || Array.isArray(workflow.nodes) || Object.keys(workflow).length === 0) {
-    throw new Error(
-      'Comfy requires an API workflow. Convert the UI workflow with the local Comfy CLI first.',
-    );
-  }
-  const classes = new Set<string>();
-  for (const node of Object.values(workflow)) {
-    if (!isRecord(node) || typeof node.class_type !== 'string' || !isRecord(node.inputs)) {
-      throw new Error('Comfy API workflow nodes must have class_type and inputs.');
-    }
-    classes.add(node.class_type);
-  }
-  for (const name of classes) {
-    const info = await readComfyJson(
-      fetch,
-      comfyEndpoint(base, `object_info/${encodeURIComponent(name)}`),
-      signal,
-    );
-    const definition = isRecord(info) && isRecord(info[name]) ? info[name] : null;
-    if (!definition) throw new Error(`Comfy node is not installed: ${name}.`);
-    if (definition.api_node === true) {
-      throw new Error(`Comfy partner node ${name} requires a separately authorized paid workflow.`);
-    }
-    const inputs = isRecord(definition.input) ? definition.input : {};
-    const required = isRecord(inputs.required) ? inputs.required : {};
-    const optional = isRecord(inputs.optional) ? inputs.optional : {};
-    for (const node of Object.values(workflow)) {
-      if (!isRecord(node) || node.class_type !== name || !isRecord(node.inputs)) continue;
-      for (const field of Object.keys(required)) {
-        if (!(field in node.inputs))
-          throw new Error(`Comfy node ${name} is missing input ${field}.`);
+  return providerOperation(
+    Effect.gen(function* () {
+      if (
+        !isRecord(workflow) ||
+        Array.isArray(workflow.nodes) ||
+        Object.keys(workflow).length === 0
+      ) {
+        throw new Error(
+          'Comfy requires an API workflow. Convert the UI workflow with the local Comfy CLI first.',
+        );
       }
-      for (const [field, schema] of Object.entries({ ...required, ...optional })) {
-        const value = node.inputs[field];
-        // Linked inputs are validated by Comfy during prompt intake; scalar enums
-        // include checkpoint/LoRA filenames from this exact runtime.
-        if (
-          value !== undefined &&
-          !Array.isArray(value) &&
-          Array.isArray(schema) &&
-          Array.isArray(schema[0]) &&
-          !schema[0].includes(value)
-        ) {
-          throw new Error(`Comfy input ${name}.${field} is unavailable on this runtime.`);
+      const classes = new Set<string>();
+      for (const node of Object.values(workflow)) {
+        if (!isRecord(node) || typeof node.class_type !== 'string' || !isRecord(node.inputs)) {
+          throw new Error('Comfy API workflow nodes must have class_type and inputs.');
+        }
+        classes.add(node.class_type);
+      }
+      for (const name of classes) {
+        const info = yield* readComfyJson(
+          fetch,
+          comfyEndpoint(base, `object_info/${encodeURIComponent(name)}`),
+          signal,
+        );
+        const definition = isRecord(info) && isRecord(info[name]) ? info[name] : null;
+        if (!definition) throw new Error(`Comfy node is not installed: ${name}.`);
+        if (definition.api_node === true) {
+          throw new Error(
+            `Comfy partner node ${name} requires a separately authorized paid workflow.`,
+          );
+        }
+        const inputs = isRecord(definition.input) ? definition.input : {};
+        const required = isRecord(inputs.required) ? inputs.required : {};
+        const optional = isRecord(inputs.optional) ? inputs.optional : {};
+        for (const node of Object.values(workflow)) {
+          if (!isRecord(node) || node.class_type !== name || !isRecord(node.inputs)) continue;
+          for (const field of Object.keys(required)) {
+            if (!(field in node.inputs))
+              throw new Error(`Comfy node ${name} is missing input ${field}.`);
+          }
+          for (const [field, schema] of Object.entries({ ...required, ...optional })) {
+            const value = node.inputs[field];
+            // Linked inputs are validated by Comfy during prompt intake; scalar enums
+            // include checkpoint/LoRA filenames from this exact runtime.
+            if (
+              value !== undefined &&
+              !Array.isArray(value) &&
+              Array.isArray(schema) &&
+              Array.isArray(schema[0]) &&
+              !schema[0].includes(value)
+            ) {
+              throw new Error(`Comfy input ${name}.${field} is unavailable on this runtime.`);
+            }
+          }
         }
       }
-    }
-  }
+    }),
+  );
 }
