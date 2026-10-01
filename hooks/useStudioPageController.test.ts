@@ -18,6 +18,8 @@ describe('buildStudioPageController', () => {
         catalogVisualGroupCount: 2,
       },
       grid: {
+        libraryFilters: { q: '', sort: 'desc', favorites: false },
+        onLibraryFiltersChange: () => {},
         isModalOpen: false,
         allImages: [
           {
@@ -140,6 +142,8 @@ describe('buildStudioPageController', () => {
         catalogVisualGroupCount: 0,
       },
       grid: {
+        libraryFilters: { q: '', sort: 'desc', favorites: false },
+        onLibraryFiltersChange: () => {},
         isModalOpen: true,
         allImages: [],
         imagesWithConfig: [],

@@ -47,6 +47,8 @@ graph TD
 - `hooks/useStudioRuntime.ts` aggregates backend health, onboarding, diagnostics, session verification, and readiness.
 - `hooks/useLocalStudioSync.ts` mirrors jobs, logs, catalog changes, and SSE state.
 - `hooks/useCatalog.ts` owns Image Catalog reads, pagination, mutations, trash, queue-result previews, and refresh scopes.
+- `hooks/useLibraryUrlState.ts` owns the typed Library query parameters through nuqs 2.10.1 and the React SPA adapter in `main.tsx`. Search, favorites, and sort update the URL with `replace`; workspace selection uses `push`. Updates preserve unrelated parameters and the hash routes. Default filters are omitted; the effective workspace is always included.
+- `WorkspaceContext` resolves the URL workspace only after the durable workspace list loads. A missing selection uses the saved preference, an unknown ID becomes `default`, and failed hydration leaves the URL intact for retry. The initial Library link intent is captured before normalization so that a shared Library link takes priority over the preferred startup workflow. A plain startup keeps the existing workflow behavior.
 - `lib/catalogRequestGate.ts` gives Catalog replacement, pagination, filter, and detail reads generation-scoped ownership. Stale responses cannot publish across view generations.
 - `services/studio-api/http.ts` owns the shared typed HTTP and error boundary. Sibling modules split requests by domain: jobs, catalog, workspaces, runtime, settings, providers, recipes, output sources, maintenance, and logs.
 - `services/studioEventSource.ts` owns the shared SSE connection.

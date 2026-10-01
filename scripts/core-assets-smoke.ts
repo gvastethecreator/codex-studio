@@ -26,6 +26,10 @@ function shouldCopy(source: string) {
     relative.startsWith('.git/') ||
     relative === '.scratch' ||
     relative.startsWith('.scratch/') ||
+    relative === '.tmp' ||
+    relative.startsWith('.tmp/') ||
+    relative === 'tmp' ||
+    relative.startsWith('tmp/') ||
     relative === '.local' ||
     relative.startsWith('.local/') ||
     relative === 'logs' ||
@@ -114,6 +118,8 @@ async function runBrowserSmoke(tempDir: string, baseUrl: string) {
       path.join(root, 'node_modules', 'tsx', 'dist', 'cli.mjs'),
       path.join(tempDir, 'scripts', 'core-assets-browser-smoke.ts'),
       `--url=${baseUrl}`,
+      `--library-dir=${isolatedLibraryDir}`,
+      `--screenshot=${path.join(root, '.scratch', 'screenshots', 'core-assets-smoke', 'library-url.png')}`,
     ],
     {
       cwd: tempDir,

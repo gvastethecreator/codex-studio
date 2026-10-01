@@ -1,3 +1,4 @@
+import type { LibraryFilters } from '../../hooks/useLibraryUrlState';
 import React, { useCallback } from 'react';
 
 import type { AspectRatio, GeneratedImage, GeneratedImageWithConfig } from '../../types';
@@ -7,9 +8,8 @@ import { FormatPreview } from '../FormatPreview';
 import { ImageGrid } from '../ImageGrid';
 
 export interface StudioGridSurfaceProps {
-  searchQuery?: string;
-  onSearchQueryChange?: (value: string) => void;
-  onClearSearch?: () => void;
+  libraryFilters: LibraryFilters;
+  onLibraryFiltersChange: (filters: Partial<LibraryFilters>) => void;
   onCreate?: () => void;
   activeWorkspaceId: string;
   allImages: GeneratedImage[];
@@ -53,9 +53,8 @@ export interface StudioGridSurfaceProps {
 }
 
 export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
-  searchQuery,
-  onSearchQueryChange,
-  onClearSearch,
+  libraryFilters,
+  onLibraryFiltersChange,
   onCreate,
   activeWorkspaceId,
   allImages,
@@ -131,9 +130,8 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
       <div className="flex-1 relative min-h-0">
         <ErrorBoundary fallbackMessage="Failed to render the image grid.">
           <ImageGrid
-            searchQuery={searchQuery}
-            onSearchQueryChange={onSearchQueryChange}
-            onClearSearch={onClearSearch}
+            libraryFilters={libraryFilters}
+            onLibraryFiltersChange={onLibraryFiltersChange}
             onCreate={onCreate}
             key={activeWorkspaceId}
             images={imagesWithConfig}

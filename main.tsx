@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import React from 'react';
+import { NuqsAdapter } from 'nuqs/adapters/react';
 import App from './App';
 import { loadInstalledStylePacks } from './lib/installedStylePacks';
 import { registerDisabledWorkflowModules } from './lib/workflowModuleState';
@@ -19,7 +20,9 @@ const workflowModulesLoaded = getEditableStudioSettings().then((settings) =>
 void Promise.allSettled([loadInstalledStylePacks(), workflowModulesLoaded]).finally(() => {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <App />
+      <NuqsAdapter>
+        <App />
+      </NuqsAdapter>
     </React.StrictMode>,
   );
 });

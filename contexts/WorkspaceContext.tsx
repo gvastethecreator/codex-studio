@@ -10,6 +10,7 @@ import React, {
   type ReactNode,
 } from 'react';
 import type { Workspace } from '../types';
+import { useLibraryUrlState, type LibraryFilters } from '../hooks/useLibraryUrlState';
 import { runtimeLogger } from '../utils/runtimeLogger';
 import { set } from '../utils/idb';
 import {
@@ -34,8 +35,7 @@ type WorkspaceAction =
   | { type: 'RESET' }
   | { type: 'CREATE'; workspace: Workspace; activate?: boolean }
   | { type: 'DELETE'; id: string }
-  | { type: 'RENAME'; id: string; name: string }
-  | { type: 'SET_ACTIVE'; id: string };
+  | { type: 'RENAME'; id: string; name: string };
 
 function ensureDefaultWorkspace(workspaces: Workspace[]): Workspace[] {
   if (workspaces.some((workspace) => workspace.id === DEFAULT_WORKSPACE_ID)) {
@@ -92,19 +92,15 @@ function workspaceReducer(state: WorkspaceState, action: WorkspaceAction): Works
           w.id === action.id ? { ...w, name: action.name } : w,
         ),
       };
-    case 'SET_ACTIVE':
-      return {
-        ...state,
-        activeWorkspaceId: state.workspaces.some((w) => w.id === action.id)
-          ? action.id
-          : state.activeWorkspaceId,
-      };
     default:
       return state;
   }
 }
 
 export interface WorkspaceContextValue {
+  libraryFilters: LibraryFilters;
+  setLibraryFilters: (filters: Partial<LibraryFilters>) => void;
+  hasInitialLibraryLink: boolean;
   workspaces: Workspace[];
   createWorkspace: (workspace: Workspace, options?: { activate?: boolean }) => void;
   deleteWorkspace: (id: string) => void;
@@ -117,12 +113,34 @@ export interface WorkspaceContextValue {
 const WorkspaceContext = createContext<WorkspaceContextValue | undefined>(undefined);
 
 export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const { query, setQuery, hasInitialLibraryLink } = useLibraryUrlState();
   const [state, dispatch] = useReducer(workspaceReducer, undefined, createInitialWorkspaceState);
   const [isHydrated, setIsHydrated] = useState(false);
   const [hydrationError, setHydrationError] = useState(false);
   const [retryVersion, setRetryVersion] = useState(0);
   const { addToast } = useToastUi();
   const activePersistRef = useRef<number | null>(null);
+  const requestedWorkspace = query.workspace ?? state.activeWorkspaceId;
+  const activeWorkspaceId = state.workspaces.some(
+    (workspace) => workspace.id === requestedWorkspace,
+  )
+    ? requestedWorkspace
+    : DEFAULT_WORKSPACE_ID;
+  const libraryFilters = useMemo(
+    () => ({ q: query.q, favorites: query.favorites, sort: query.sort }),
+    [query.q, query.favorites, query.sort],
+  );
+  const setLibraryFilters = useCallback(
+    (filters: Partial<LibraryFilters>) => {
+      void setQuery(filters, { history: 'replace' });
+    },
+    [setQuery],
+  );
+
+  useEffect(() => {
+    if (!isHydrated) return;
+    void setQuery({ ...query, workspace: activeWorkspaceId }, { history: 'replace' });
+  }, [isHydrated, query, activeWorkspaceId, setQuery]);
 
   useEffect(() => {
     let cancelled = false;
@@ -163,18 +181,20 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
     if (!isHydrated) return;
     if (activePersistRef.current) clearTimeout(activePersistRef.current);
     activePersistRef.current = window.setTimeout(() => {
-      set('app-active-workspace-id', state.activeWorkspaceId).catch((error) => {
+      set('app-active-workspace-id', activeWorkspaceId).catch((error) => {
         runtimeLogger.error('Error setting active workspace preference', error);
       });
     }, 300);
     return () => {
       if (activePersistRef.current) clearTimeout(activePersistRef.current);
     };
-  }, [isHydrated, state.activeWorkspaceId]);
+  }, [isHydrated, activeWorkspaceId]);
 
   const createWorkspace = useCallback(
     (workspace: Workspace, options?: { activate?: boolean }) => {
       dispatch({ type: 'CREATE', workspace, activate: options?.activate ?? true });
+      if (options?.activate ?? true)
+        void setQuery({ workspace: workspace.id }, { history: 'push' });
       void createWorkspaceApi({
         id: workspace.id,
         name: workspace.name?.trim() || 'Untitled Workspace',
@@ -192,6 +212,8 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
               },
               activate: options?.activate ?? true,
             });
+            if (options?.activate ?? true)
+              void setQuery({ workspace: created.id }, { history: 'replace' });
           }
         })
         .catch((error) => {
@@ -203,7 +225,7 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
           );
         });
     },
-    [addToast],
+    [addToast, setQuery],
   );
 
   const deleteWorkspace = useCallback(
@@ -241,13 +263,22 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
     [addToast, state.workspaces],
   );
 
-  const setActiveWorkspace = useCallback((id: string) => {
-    dispatch({ type: 'SET_ACTIVE', id });
-  }, []);
+  const setActiveWorkspace = useCallback(
+    (id: string) => {
+      if (!state.workspaces.some((workspace) => workspace.id === id) || id === activeWorkspaceId)
+        return;
+      void setQuery({ workspace: id }, { history: 'push' });
+    },
+    [state.workspaces, activeWorkspaceId, setQuery],
+  );
 
   const resetWorkspaces = useCallback(() => {
     dispatch({ type: 'RESET' });
-  }, []);
+    void setQuery(
+      { workspace: DEFAULT_WORKSPACE_ID, q: '', favorites: false, sort: 'desc' },
+      { history: 'replace' },
+    );
+  }, [setQuery]);
 
   const value = useMemo<WorkspaceContextValue>(
     () => ({
@@ -255,13 +286,19 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,
-      activeWorkspaceId: state.activeWorkspaceId,
+      activeWorkspaceId,
+      libraryFilters,
+      setLibraryFilters,
+      hasInitialLibraryLink,
       setActiveWorkspace,
       resetWorkspaces,
     }),
     [
       state.workspaces,
-      state.activeWorkspaceId,
+      activeWorkspaceId,
+      libraryFilters,
+      setLibraryFilters,
+      hasInitialLibraryLink,
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,

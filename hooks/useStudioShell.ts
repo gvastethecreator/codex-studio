@@ -100,9 +100,7 @@ export interface StudioShellController {
  * only renders the shell instead of stitching the whole Studio inline.
  */
 export function useStudioShell(): StudioShellController {
-  const [catalogQuery, setCatalogQuery] = useState('');
   const [isSupportOpen, setSupportOpen] = useState(false);
-  const deferredCatalogQuery = useDeferredValue(catalogQuery);
   // Selective subscriptions: workspace + toast + stable log actions only.
   // Runtime log *list* updates must not re-render this shell (log-list hook is overlay-only).
   const {
@@ -113,7 +111,12 @@ export function useStudioShell(): StudioShellController {
     activeWorkspaceId,
     setActiveWorkspace,
     resetWorkspaces,
+    libraryFilters,
+    setLibraryFilters,
+    hasInitialLibraryLink,
   } = useWorkspaceState();
+  const catalogQuery = libraryFilters.q;
+  const deferredCatalogQuery = useDeferredValue(catalogQuery);
   const { log } = useRuntimeLogActions();
   const { addToast, isDebugPanelOpen, openDebugPanel, closeDebugPanel } = useToastUi();
   const resetStudioState = resetWorkspaces;
@@ -143,6 +146,7 @@ export function useStudioShell(): StudioShellController {
     studioSettings.data.settingsDomain.settings?.preferredWorkflow,
     navigateToRecipes,
     navigateToRecipe,
+    hasInitialLibraryLink,
   );
   const {
     activeCatalog,
@@ -675,9 +679,8 @@ export function useStudioShell(): StudioShellController {
           previewRatio: viewState.preview.ratio,
           generationAspectRatio: config.aspectRatio,
           isInteractingWithToolbar: ui.isInteractingWithToolbar,
-          searchQuery: catalogQuery,
-          onSearchQueryChange: setCatalogQuery,
-          onClearSearch: () => setCatalogQuery(''),
+          libraryFilters,
+          onLibraryFiltersChange: setLibraryFilters,
           onCreate: () => handleViewChange('recipes'),
           catalogTotal: activeCatalog.total,
           catalogHasMore: activeCatalog.hasMore,
@@ -701,7 +704,8 @@ export function useStudioShell(): StudioShellController {
       historyCatalog,
       historySelectedId,
       selectHistoryImage,
-      catalogQuery,
+      libraryFilters,
+      setLibraryFilters,
       handleViewChange,
       workspaces,
       studioRuntime.activity.mergedLogs,
@@ -995,7 +999,8 @@ export function useStudioShell(): StudioShellController {
       historyCatalog,
       historySelectedId,
       selectHistoryImage,
-      catalogQuery,
+      libraryFilters,
+      setLibraryFilters,
       handleDragOver,
       handleDragLeave,
       handleDrop,

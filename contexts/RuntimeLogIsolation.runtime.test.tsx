@@ -4,7 +4,8 @@
  * Runtime regression for §12.7: appending a runtime log must not re-render
  * workspace/shell descendants. Only a leaf useRuntimeLogs() consumer may update.
  */
-import React, { useEffect, useRef } from 'react';
+import { NuqsTestingAdapter } from 'nuqs/adapters/testing';
+
 import { act, cleanup, render, screen } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
@@ -76,14 +77,16 @@ function ProviderTree({
 }) {
   // Same nesting order as GlobalProvider: Toast → RuntimeLog(actions) → Workspace → app
   return (
-    <ToastUiProvider>
-      <RuntimeLogProvider>
-        <WorkspaceProvider>
-          <WorkspaceShellProbe renders={shellRenders} />
-          <LogLeafProbe renders={leafRenders} />
-        </WorkspaceProvider>
-      </RuntimeLogProvider>
-    </ToastUiProvider>
+    <NuqsTestingAdapter>
+      <ToastUiProvider>
+        <RuntimeLogProvider>
+          <WorkspaceProvider>
+            <WorkspaceShellProbe renders={shellRenders} />
+            <LogLeafProbe renders={leafRenders} />
+          </WorkspaceProvider>
+        </RuntimeLogProvider>
+      </ToastUiProvider>
+    </NuqsTestingAdapter>
   );
 }
 

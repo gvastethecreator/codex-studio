@@ -1,3 +1,4 @@
+import type { LibraryFilters } from '../hooks/useLibraryUrlState';
 import { CozyLoader as Loader2 } from './CozyMascot';
 import React, { useRef, useState, useMemo, useSyncExternalStore } from 'react';
 import type {
@@ -624,9 +625,8 @@ export interface ImageGridProps {
   onDownloadAll: (images: GeneratedImageWithConfig[]) => void;
   onDeleteSelected: (images: GeneratedImageWithConfig[]) => void;
   onClearWorkspace: () => void;
-  searchQuery?: string;
-  onSearchQueryChange?: (value: string) => void;
-  onClearSearch?: () => void;
+  libraryFilters: LibraryFilters;
+  onLibraryFiltersChange: (filters: Partial<LibraryFilters>) => void;
   onCreate?: () => void;
   catalogTotal?: number;
   hasMore?: boolean;
@@ -676,9 +676,8 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onDownloadAll,
     onDeleteSelected,
     onClearWorkspace,
-    searchQuery = '',
-    onSearchQueryChange,
-    onClearSearch,
+    libraryFilters: { q: searchQuery, sort: sortOrder, favorites: showFavoritesOnly },
+    onLibraryFiltersChange,
     onCreate,
     catalogTotal,
     hasMore = false,
@@ -688,9 +687,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onRetryCatalog,
     generationPlaceholders = EMPTY_GENERATION_PLACEHOLDERS,
   }) => {
-    const [sortOrder, setSortOrder] = useState<ImageGridSortOption>('desc');
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
-    const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
     const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
     const [viewMode, setViewMode] = useState<ImageGridViewMode>(DEFAULT_IMAGE_GRID_VIEW_MODE);
     const sortButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -1098,8 +1095,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   type="button"
                   className="studio-ghost-control px-4 py-2"
                   onClick={() => {
-                    onClearSearch?.();
-                    setShowFavoritesOnly(false);
+                    onLibraryFiltersChange({ q: '', favorites: false });
                   }}
                 >
                   Clear filters
@@ -1130,7 +1126,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               aria-label="Search library"
               placeholder="Search all images in this workspace"
               value={searchQuery}
-              onChange={(event) => onSearchQueryChange?.(event.target.value)}
+              onChange={(event) => onLibraryFiltersChange({ q: event.target.value })}
               className="studio-well"
             />
           </label>
@@ -1153,7 +1149,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   />
                 )}
                 <ActionButton
-                  onClick={() => setShowFavoritesOnly((current) => !current)}
+                  onClick={() => onLibraryFiltersChange({ favorites: !showFavoritesOnly })}
                   icon={
                     <Heart
                       width={16}
@@ -1291,7 +1287,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                         aria-checked={selected}
                         data-dropdown-item
                         onClick={() => {
-                          setSortOrder(option.value);
+                          onLibraryFiltersChange({ sort: option.value });
                           setIsSortMenuOpen(false);
                         }}
                         className={`flex min-h-11 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-2.5 text-left transition-[background-color,color,transform] ${

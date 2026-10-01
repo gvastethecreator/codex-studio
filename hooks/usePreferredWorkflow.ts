@@ -8,8 +8,9 @@ export function usePreferredWorkflow(
   preferred: PreferredWorkflow | undefined,
   navigateToDefault: () => void,
   navigateToRecipe: (id: Exclude<RecipeId, null>, aliasId?: RecipeAliasId | null) => void,
+  hasInitialLibraryLink: boolean,
 ) {
-  const waiting = useRef(!window.location.hash);
+  const waiting = useRef(!window.location.hash && !hasInitialLibraryLink);
   const initialHash = useRef(window.location.hash);
   const latest = useRef(preferred);
   // Runs before the effect below that calls open(), so open() reads the current preference.
