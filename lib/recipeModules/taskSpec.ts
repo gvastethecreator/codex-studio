@@ -125,7 +125,7 @@ export function buildGenerationTaskSpecFromRecipe({
       ? requestedTask
       : (module?.defaultTask ?? 'image_generate');
   const recipeTaskKind = behavior.resolveTask
-    ? behavior.resolveTask(moduleTaskKind, referenceCount)
+    ? behavior.resolveTask(moduleTaskKind, referenceCount, config.recipeParams ?? {})
     : moduleTaskKind;
   // An edit needs an image to edit. Without one the request is a generation.
   const taskKind =

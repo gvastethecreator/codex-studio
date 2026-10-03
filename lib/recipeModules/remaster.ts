@@ -139,6 +139,11 @@ function describeRemasterFidelity(fidelity: number) {
   return 'Keep the subject recognizable. Free reinterpretation of rendering and missing detail is allowed.';
 }
 
+/** Below half fidelity the user asks for a new look, not a restoration. */
+function isReinterpretation(params: RecipeParams) {
+  return Math.max(0, Math.min(100, getNumber(params, 'fidelity', 100))) < 50;
+}
+
 function buildRemasterDirectives(params: RecipeParams) {
   const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 100)));
 
@@ -148,7 +153,9 @@ function buildRemasterDirectives(params: RecipeParams) {
       directives: [
         directive(
           'Goal',
-          'Restore and remaster the input image into one clean, polished version of the same picture.',
+          fidelity >= 50
+            ? 'Restore and remaster the input image into one clean, polished version of the same picture.'
+            : 'Reinterpret the input image in the finish, light, and color below and in the prompt. Keep its subject and composition recognizable; change rendering, texture, and color boldly.',
         ),
         directive(
           'Rules',
@@ -183,12 +190,16 @@ export const remasterRecipe: RecipeDefinition = {
   module,
   policy: remasterPolicy,
   referencePromptFallback: 'Restore and remaster the provided image.',
-  /** An attached source image is always edited. */
-  resolveTask: (task, referenceCount) => (referenceCount > 0 ? 'image_edit' : task),
-  attachmentRole: (_params, index) => (index === 0 ? 'input' : 'reference'),
-  referenceInstruction: (_params, _attachment, index) =>
-    index === 0
-      ? 'The image to restore. Output this same picture, restored.'
-      : 'Extra detail reference only. Do not merge it into the picture.',
+  /** A restoration edits its source. A reinterpretation renders anew from it as a reference. */
+  resolveTask: (task, referenceCount, params) =>
+    referenceCount > 0 && !isReinterpretation(params) ? 'image_edit' : task,
+  attachmentRole: (params, index) =>
+    index === 0 && !isReinterpretation(params) ? 'input' : 'reference',
+  referenceInstruction: (params, _attachment, index) =>
+    index !== 0
+      ? 'Extra detail reference only. Do not merge it into the picture.'
+      : isReinterpretation(params)
+        ? 'The image to reinterpret. Keep its subject and composition recognizable.'
+        : 'The image to restore. Output this same picture, restored.',
   directives: (params) => buildRemasterDirectives(params),
 };

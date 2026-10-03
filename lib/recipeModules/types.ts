@@ -100,7 +100,11 @@ export interface RecipeBehavior {
   referencePromptFallback?: string;
   variationScope?(params: RecipeParams): GenerationVariationScope | undefined;
   /** Adjusts the task after the generic requested/default task choice. */
-  resolveTask?(task: GenerationTaskKind, referenceCount: number): GenerationTaskKind;
+  resolveTask?(
+    task: GenerationTaskKind,
+    referenceCount: number,
+    params: RecipeParams,
+  ): GenerationTaskKind;
   attachmentRole?(params: RecipeParams, index: number): 'input' | 'reference';
   referenceInstruction(params: RecipeParams, attachment: Attachment, index: number): string;
   /** Quality preset for tasks without a task-bound preset. */
