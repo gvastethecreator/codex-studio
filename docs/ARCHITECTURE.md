@@ -79,6 +79,7 @@ graph TD
 ## Core backend seams
 
 - `apps/local-server/src/appFactory.ts` composes the local API.
+- `repositoryUpdates.ts` checks `origin/main` and applies fast-forward updates from a clean `main` checkout. `/api/updates` exposes check, update and restart actions through the local API security boundary. The app blocks mutations during updates and failed dependency installations, and checks durable queued/running jobs before accepting updates. Installation retries keep the applied commit and do not fetch Git again. After dependency installation, the backend shuts down with exit code 75; `scripts/dev.ts` restarts only its owned backend and renderer processes. The launcher waits for the renderer's HTTP readiness before starting the backend, so the new backend instance tells the browser it can reload. An occupied UI port causes a startup error without stopping its listener. Settings stores the opt-in notification preference. Other launch modes expose checks but disable update and restart.
 - `apps/local-server/src/runtimeRoutes.ts` owns health, bootstrap config, and app-server lifecycle routes.
 - `apps/local-server/src/codexRoutes.ts` owns Local Codex Session routes.
 - `apps/local-server/src/jobRoutes.ts` and `apps/local-server/src/persistentJobIntake.ts` own job creation, validation, provider selection, and enqueue behavior.

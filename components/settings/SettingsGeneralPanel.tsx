@@ -19,6 +19,22 @@ export function SettingsGeneralPanel({
       <h3 className="studio-dialog-title">Make Studio yours</h3>
       <label className="settings-row">
         <span>
+          <strong>Notify me about updates</strong>
+          <small>
+            Check for new commits on main at startup and every hour while Studio is open.
+          </small>
+        </span>
+        <input
+          type="checkbox"
+          aria-label="Notify me about updates"
+          checked={value.notifyOnUpdates}
+          onChange={(event) =>
+            onChange((current) => ({ ...current, notifyOnUpdates: event.target.checked }))
+          }
+        />
+      </label>
+      <label className="settings-row">
+        <span>
           <strong>Preferred workflow</strong>
           <small>
             Open this workflow when Studio starts without a direct link, and in new workspaces.

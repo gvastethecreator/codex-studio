@@ -3,6 +3,7 @@ import { CozyLoader as LoaderCircle } from './CozyMascot';
 import { useTheme } from '../hooks/useTheme';
 import { validateOutputTemplate } from '../packages/shared/src/outputLayout';
 import { SettingsGeneralPanel } from './settings/SettingsGeneralPanel';
+import { SettingsUpdatesPanel } from './settings/SettingsUpdatesPanel';
 import { StudioHelpGuide } from './StudioHelpGuide';
 import { ConfirmationModal } from './ConfirmationModal';
 import { Refresh as RefreshCw, FloppyDisk as Save, Settings, Xmark as X } from 'iconoir-react';
@@ -114,6 +115,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const { preferences, savedPreferences, previewPreferences, commitPreferences } = useTheme();
   const [search, setSearch] = useState('');
   const searchItems = [
+    {
+      domain: 'general',
+      label: 'Studio updates',
+      description: 'Notify, update repository and restart',
+      target: 'Notify me about updates',
+    },
     {
       domain: 'general',
       label: 'Preferred workflow',
@@ -393,6 +400,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             {activeDomain === 'general' && (
               <fieldset disabled={isSaving || !settings}>
                 <SettingsGeneralPanel value={formState} onChange={setFormState} />
+                <SettingsUpdatesPanel hasUnsavedChanges={hasChanges} />
               </fieldset>
             )}
             {activeDomain === 'help' && <StudioHelpGuide />}

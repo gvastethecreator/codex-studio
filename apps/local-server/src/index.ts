@@ -5,11 +5,23 @@ import { providerDispatchHeld, scheduleRecoverableJobs } from './providerDispatc
 import { log } from './logger';
 import { serveWithPortFallback } from './portUtils';
 import { beginSignalShutdown, shutdownStudioServer } from './serverShutdown';
+import { STUDIO_RESTART_EXIT_CODE } from '../../../packages/shared/src/repositoryUpdates';
 
 export { createStudioApp } from './appFactory';
 
 if (import.meta.main) {
-  const studio = await createStudioApp();
+  const studio = await createStudioApp({
+    restart:
+      process.env.STUDIO_MANAGED_RESTART === '1'
+        ? () => {
+            void beginSignalShutdown({
+              shutdown,
+              exit: (code) => process.exit(code === 0 ? STUDIO_RESTART_EXIT_CODE : code),
+              reportError: (error) => console.error('Studio restart failed:', error),
+            });
+          }
+        : undefined,
+  });
   const configuredPort = getSettings().serverPort;
   const hostname = '127.0.0.1';
 
@@ -17,6 +29,11 @@ if (import.meta.main) {
     hostname,
     port: configuredPort,
     onPortConflict(attemptedPort, nextPort) {
+      if (process.env.STUDIO_MANAGED_RESTART === '1') {
+        throw new Error(
+          `Studio backend port ${attemptedPort} is already in use. Close the conflicting server and restart Studio. The managed launcher must keep its configured API port.`,
+        );
+      }
       log('warn', 'server', `Port ${attemptedPort} is in use; attempting next port ${nextPort}...`);
     },
     fetch(req: Request, server: any) {

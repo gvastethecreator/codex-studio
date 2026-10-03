@@ -33,6 +33,7 @@ import { buildStudioShellOverlayController } from './useStudioOverlayController'
 import { useStudioReset } from './useStudioReset';
 import { useStudioRuntime } from './useStudioRuntime';
 import { useStudioSettings } from './useStudioSettings';
+import { useRepositoryUpdateNotifications } from './useRepositoryUpdateNotifications';
 import { useSettingsSurface } from './useSettingsSurface';
 import { useStudioJobsListClearedAt } from './useStudioJobsListClearedAt';
 import { useStudioViewState } from './useStudioViewState';
@@ -142,6 +143,10 @@ export function useStudioShell(): StudioShellController {
   );
   const viewState = useStudioViewState({ closeOverlay });
   const studioSettings = useStudioSettings({ addToast });
+  useRepositoryUpdateNotifications(
+    studioSettings.data.settingsDomain.settings?.notifyOnUpdates ?? false,
+    addToast,
+  );
   const openPreferredWorkflow = usePreferredWorkflow(
     studioSettings.data.settingsDomain.settings?.preferredWorkflow,
     navigateToRecipes,

@@ -34,6 +34,7 @@ export interface EditableStudioSettings {
   defaultProviderId: GenerationProviderId;
   defaultOutputMode: StudioOutputMode;
   autoDetectOutputSources: boolean;
+  notifyOnUpdates: boolean;
   commandCenterCompactMode: boolean;
   intentionalStylesV1: boolean;
   /** Optional workflow modules the user turned off (ADR 0011). */
@@ -57,6 +58,7 @@ export interface EditableStudioSettingsPatch {
   defaultProviderId?: GenerationProviderId;
   defaultOutputMode?: StudioOutputMode;
   autoDetectOutputSources?: boolean;
+  notifyOnUpdates?: boolean;
   commandCenterCompactMode?: boolean;
   intentionalStylesV1?: boolean;
   disabledWorkflowModules?: WorkflowModuleId[];
@@ -176,6 +178,7 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     defaultProviderId: 'chatgpt',
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,
+    notifyOnUpdates: false,
     commandCenterCompactMode: false,
     intentionalStylesV1: false,
     disabledWorkflowModules: [],
@@ -231,6 +234,9 @@ export function sanitizeEditableStudioSettingsPatch(value: unknown): EditableStu
   if (defaultOutputMode) patch.defaultOutputMode = defaultOutputMode;
   if (typeof value.autoDetectOutputSources === 'boolean') {
     patch.autoDetectOutputSources = value.autoDetectOutputSources;
+  }
+  if (typeof value.notifyOnUpdates === 'boolean') {
+    patch.notifyOnUpdates = value.notifyOnUpdates;
   }
   if (typeof value.commandCenterCompactMode === 'boolean') {
     patch.commandCenterCompactMode = value.commandCenterCompactMode;
@@ -316,6 +322,7 @@ export function mergeEditableStudioSettingsPatch(
     defaultProviderId: patch.defaultProviderId ?? current.defaultProviderId,
     defaultOutputMode: patch.defaultOutputMode ?? current.defaultOutputMode,
     autoDetectOutputSources: patch.autoDetectOutputSources ?? current.autoDetectOutputSources,
+    notifyOnUpdates: patch.notifyOnUpdates ?? current.notifyOnUpdates ?? false,
     commandCenterCompactMode: patch.commandCenterCompactMode ?? current.commandCenterCompactMode,
     intentionalStylesV1: patch.intentionalStylesV1 ?? current.intentionalStylesV1,
     disabledWorkflowModules: patch.disabledWorkflowModules ?? current.disabledWorkflowModules ?? [],

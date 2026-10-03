@@ -38,6 +38,7 @@ export interface StudioSettingsFormState {
   outputSubfolderPreset: string;
   outputFileNameTemplate: string;
   autoDetectOutputSources: boolean;
+  notifyOnUpdates: boolean;
   commandCenterCompactMode: boolean;
   intentionalStylesV1: boolean;
   showWorkspaceHistoryInCarousel: boolean;
@@ -58,6 +59,7 @@ export function createInitialStudioSettingsFormState(): StudioSettingsFormState 
     outputSubfolderPreset: encodeSubfolderTokens([]),
     outputFileNameTemplate: '{date}_{style}_{prompt}',
     autoDetectOutputSources: true,
+    notifyOnUpdates: false,
     commandCenterCompactMode: false,
     intentionalStylesV1: false,
     showWorkspaceHistoryInCarousel: true,
@@ -77,6 +79,7 @@ export function getStudioSettingsFormState(
     outputSubfolderPreset: encodeSubfolderTokens(settings.outputOrganization.subfolderTokens),
     outputFileNameTemplate: settings.outputOrganization.fileNameTemplate,
     autoDetectOutputSources: settings.autoDetectOutputSources,
+    notifyOnUpdates: settings.notifyOnUpdates,
     commandCenterCompactMode: settings.commandCenterCompactMode,
     intentionalStylesV1: settings.intentionalStylesV1,
     showWorkspaceHistoryInCarousel: settings.showWorkspaceHistoryInCarousel ?? true,
@@ -103,6 +106,7 @@ export function buildStudioSettingsPatch(
       fileNameTemplate: formState.outputFileNameTemplate,
     },
     autoDetectOutputSources: formState.autoDetectOutputSources,
+    notifyOnUpdates: formState.notifyOnUpdates,
     commandCenterCompactMode: formState.commandCenterCompactMode,
     intentionalStylesV1: formState.intentionalStylesV1,
     showWorkspaceHistoryInCarousel: formState.showWorkspaceHistoryInCarousel,

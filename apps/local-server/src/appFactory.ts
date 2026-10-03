@@ -92,6 +92,9 @@ import { jobBatchStore } from './db/jobBatches';
 import { createAssetLogRoutes } from './assetLogRoutes';
 import { createCheckingRuntimeReport, createRuntimeRoutes } from './runtimeRoutes';
 import { createStudioControlRoutes } from './studioControlRoutes';
+import { createRepositoryUpdates } from './repositoryUpdates';
+import { createRepositoryUpdateRoutes } from './repositoryUpdateRoutes';
+import { listRecoverableJobs } from './db/jobs';
 import { createMaintenanceRoutes } from './maintenanceRoutes';
 import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
@@ -169,6 +172,7 @@ const defaultLogStore: StudioLogStore = { listLogs };
 
 export interface CreateStudioAppOptions {
   runInit?: boolean;
+  restart?: () => void;
   dependencies?: {
     readLocalCodexSession?: () => Promise<LocalCodexSessionResponse>;
     readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
@@ -261,6 +265,32 @@ export async function createStudioApp(
     '*',
     createLocalApiSecurityMiddleware({ allowedOrigins: options.dependencies?.allowedOrigins }),
   );
+
+  let activeMutations = 0;
+  const updates = createRepositoryUpdates({
+    restart: options.restart,
+    isBusy: () => activeMutations > 0 || listRecoverableJobs().length > 0,
+  });
+  app.use('/api/*', async (c, next) => {
+    if (
+      ['GET', 'HEAD', 'OPTIONS'].includes(c.req.method) ||
+      c.req.path.startsWith('/api/updates')
+    ) {
+      return next();
+    }
+    if (updates.blocksMutations())
+      return c.json(
+        { error: 'Studio update is incomplete. Finish it in Settings before continuing.' },
+        503,
+      );
+    activeMutations += 1;
+    try {
+      await next();
+    } finally {
+      activeMutations -= 1;
+    }
+  });
+  app.route('/api/updates', createRepositoryUpdateRoutes(updates));
 
   app.route(
     '/api',

@@ -287,6 +287,7 @@ export function resetDemoStore(
     defaultProviderId: 'codex',
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,
+    notifyOnUpdates: false,
     commandCenterCompactMode: false,
     intentionalStylesV1: false,
     disabledWorkflowModules: [],

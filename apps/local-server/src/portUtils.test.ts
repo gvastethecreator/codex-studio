@@ -80,6 +80,19 @@ describe('portUtils', () => {
         { from: 17223, to: 17224 },
         { from: 17224, to: 17225 },
       ]);
+
+      serveFn.mockClear();
+      expect(() =>
+        serveWithPortFallback({
+          port: 17223,
+          serveFn: serveFn as any,
+          onPortConflict() {
+            throw new Error('Managed API port must stay fixed.');
+          },
+          fetch: vi.fn() as any,
+        }),
+      ).toThrow('Managed API port must stay fixed.');
+      expect(serveFn).toHaveBeenCalledTimes(1);
     });
   });
 });

@@ -16,6 +16,7 @@ describe('studioSettings', () => {
       defaultProviderId: 'chatgpt',
       defaultOutputMode: 'studio_library',
       autoDetectOutputSources: true,
+      notifyOnUpdates: false,
       commandCenterCompactMode: false,
       intentionalStylesV1: false,
       disabledWorkflowModules: [],
@@ -70,6 +71,7 @@ describe('studioSettings', () => {
       {
         defaultProviderId: 'comfy',
         commandCenterCompactMode: true,
+        notifyOnUpdates: true,
         showWorkspaceHistoryInCarousel: false,
         preferredOutputPath: 'D:/DEV/cozy-studio/outputs',
         outputOrganization: {
@@ -89,6 +91,13 @@ describe('studioSettings', () => {
 
     expect(settings.defaultProviderId).toBe('comfy');
     expect(settings.commandCenterCompactMode).toBe(true);
+    expect(settings.notifyOnUpdates).toBe(true);
+    expect(
+      mergeEditableStudioSettingsPatch(settings, { notifyOnUpdates: 'false' }).notifyOnUpdates,
+    ).toBe(true);
+    expect(
+      mergeEditableStudioSettingsPatch(settings, { notifyOnUpdates: false }).notifyOnUpdates,
+    ).toBe(false);
     expect(settings.showWorkspaceHistoryInCarousel).toBe(false);
     expect(mergeEditableStudioSettingsPatch(settings, {}).showWorkspaceHistoryInCarousel).toBe(
       false,
