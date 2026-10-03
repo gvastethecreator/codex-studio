@@ -2,12 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { GeneratedImageWithConfig } from '../types';
-import {
-  resolveStudioCarouselDisplayCandidates,
-  resolveStudioCarouselDisplaySrc,
-  resolveStudioCarouselFallbackSrc,
-  resolveStudioCarouselImage,
-} from './studioCarouselImage';
+import { resolveStudioCarouselDisplaySrc, resolveStudioCarouselImage } from './studioCarouselImage';
 
 function image(id: string): GeneratedImageWithConfig {
   return {
@@ -48,7 +43,7 @@ describe('resolveStudioCarouselImage', () => {
     ).toBe(first);
   });
 
-  it('uses the bounded preview for modal display when preview variants are available', () => {
+  it('uses the original for zoom even when reduced variants are available', () => {
     const modalImage = {
       ...image('img-1'),
       src: 'http://studio/library/outputs/original.png',
@@ -57,50 +52,22 @@ describe('resolveStudioCarouselImage', () => {
     };
 
     expect(resolveStudioCarouselDisplaySrc({ image: modalImage, isComparing: false })).toBe(
-      modalImage.preview,
+      modalImage.src,
     );
   });
 
-  it('falls through preview, thumbnail, and source when display candidates fail', () => {
+  it('keeps the original URL when the grid can only show a cached thumbnail', () => {
     const modalImage = {
-      ...image('img-1'),
-      src: 'http://studio/library/outputs/original.png',
-      preview: 'http://studio/library/outputs/original.png?variant=thumb&max=1024',
-      thumbnail: 'http://studio/library/outputs/thumbnails/stored-thumb.webp',
-    };
-
-    const displaySrc = resolveStudioCarouselDisplaySrc({ image: modalImage, isComparing: false });
-
-    expect(
-      resolveStudioCarouselFallbackSrc({ image: modalImage, displaySrc, isComparing: false }),
-    ).toBe(modalImage.thumbnail);
-    expect(
-      resolveStudioCarouselDisplaySrc({
-        image: modalImage,
-        isComparing: false,
-        failedDisplaySrcs: [modalImage.preview],
-      }),
-    ).toBe(modalImage.thumbnail);
-    expect(
-      resolveStudioCarouselDisplaySrc({
-        image: modalImage,
-        isComparing: false,
-        failedDisplaySrcs: [modalImage.preview, modalImage.thumbnail],
-      }),
-    ).toBe(modalImage.src);
-  });
-
-  it('deduplicates safe visual candidates for source-missing catalog entries', () => {
-    const modalImage = {
-      ...image('img-1'),
+      ...image('missing-original'),
+      sourceUrl: 'http://studio/library/outputs/original.png',
       src: 'http://studio/library/outputs/thumbnails/stored-thumb.webp',
       preview: 'http://studio/library/outputs/thumbnails/stored-thumb.webp',
       thumbnail: 'http://studio/library/outputs/thumbnails/stored-thumb.webp',
     };
 
-    expect(
-      resolveStudioCarouselDisplayCandidates({ image: modalImage, isComparing: false }),
-    ).toEqual([modalImage.thumbnail]);
+    expect(resolveStudioCarouselDisplaySrc({ image: modalImage, isComparing: false })).toBe(
+      modalImage.sourceUrl,
+    );
   });
 
   it('uses the reference image only while comparing', () => {

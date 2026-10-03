@@ -36,10 +36,7 @@ import {
 
 import { TopToolbar } from './ui/TopToolbar';
 import { BottomToolbar } from './ui/BottomToolbar';
-import {
-  resolveStudioCarouselDisplaySrc,
-  resolveStudioCarouselFallbackSrc,
-} from '../lib/studioCarouselImage';
+import { resolveStudioCarouselDisplaySrc } from '../lib/studioCarouselImage';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import { useHorizontalDragScroll } from '../hooks/useHorizontalDragScroll';
@@ -92,20 +89,14 @@ const CarouselImageItem: React.FC<{
   const [background, setBackground] = useState('dark');
 
   const imgRef = useRef<HTMLImageElement>(null);
-  const [failedDisplaySrcs, setFailedDisplaySrcs] = useState<string[]>([]);
+  const [failedDisplaySrc, setFailedDisplaySrc] = useState<string | null>(null);
   const target = useRef({ x: 0, y: 0, scale: 1 });
   const current = useRef({ x: 0, y: 0, scale: 1 });
   const dragStart = useRef({ x: 0, y: 0 });
   const isDragging = useRef(false);
   const rafId = useRef<number | null>(null);
 
-  const displaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing, failedDisplaySrcs });
-  const fallbackDisplaySrc = resolveStudioCarouselFallbackSrc({
-    image,
-    displaySrc,
-    isComparing,
-    failedDisplaySrcs,
-  });
+  const displaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing });
   const imageDimensions = resolveCarouselImageDimensions(image);
 
   // Calculate aspect ratio for the style to ensure the image has a size before loading
@@ -311,11 +302,8 @@ const CarouselImageItem: React.FC<{
         width={imageDimensions.width}
         height={imageDimensions.height}
         draggable={false}
-        onError={() =>
-          setFailedDisplaySrcs((current) =>
-            current.includes(displaySrc) ? current : [...current, displaySrc],
-          )
-        }
+        onError={() => setFailedDisplaySrc(displaySrc)}
+        onLoad={() => setFailedDisplaySrc(null)}
         className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_2px_12px_#0002]`}
         style={{
           // Only apply view transition if NOT sliding and NOT comparing, to avoid glitches
@@ -325,9 +313,12 @@ const CarouselImageItem: React.FC<{
         }}
       />
 
-      {fallbackDisplaySrc && failedDisplaySrcs.length > 0 && (
-        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/2 bg-amber-500/10 px-3 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] ">
-          Using catalog preview
+      {failedDisplaySrc === displaySrc && (
+        <div
+          role="alert"
+          className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/2 bg-amber-500/10 px-3 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] "
+        >
+          {isComparing ? 'Reference image unavailable.' : 'Original image unavailable.'}
         </div>
       )}
 
