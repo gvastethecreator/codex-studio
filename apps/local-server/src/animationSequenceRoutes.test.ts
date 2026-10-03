@@ -7,11 +7,11 @@ import type { CatalogImage, Job } from '../../../packages/shared/src';
 
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
 
-async function writeFixturePng(filePath: string, color: string, size = 1024) {
+async function writeFixturePng(filePath: string, color: string, size = 1024, height = size) {
   await sharp({
     create: {
       width: size,
-      height: size,
+      height,
       channels: color === '#ff0000' ? 3 : 4,
       background: color,
     },
@@ -284,7 +284,8 @@ describe('animationSequenceRoutes', () => {
       expect(partialForceResponse.status).toBe(200);
 
       const smallPath = path.join(root, 'small.png');
-      await writeFixturePng(smallPath, '#112233', 16);
+      // A different aspect ratio cannot be scaled without cropping or stretching.
+      await writeFixturePng(smallPath, '#112233', 16, 24);
       const smallResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
         method: 'POST',
         body: JSON.stringify({ frameIndex: 1, sourcePath: smallPath }),
@@ -308,6 +309,23 @@ describe('animationSequenceRoutes', () => {
         'frame-0002.png',
       );
       expect(readFileSync(rawFile).equals(readFileSync(smallPath))).toBe(true);
+
+      // The provider's own resolution at the run aspect is scaled uniformly to the run size.
+      const largePath = path.join(root, 'large.png');
+      await writeFixturePng(largePath, '#334455', 1254);
+      const largeResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
+        method: 'POST',
+        body: JSON.stringify({ frameIndex: 1, sourcePath: largePath }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const largePayload = (await largeResponse.json()) as {
+        frames: Array<{ id: string; status: string; width: number; height: number }>;
+      };
+      expect(largePayload.frames.find((frame) => frame.id === 'frame-0002')).toMatchObject({
+        status: 'generated',
+        width: 1024,
+        height: 1024,
+      });
       await expect(partialForceResponse.json()).resolves.toMatchObject({
         export: { frameCount: 1 },
       });

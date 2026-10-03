@@ -22,7 +22,7 @@ New atlas runs ask for native transparency. `static-items` is not packed in the 
 
 Row generation uses the existing provider queue and the provider selected in Studio. The app does not spawn the specialist skill and does not copy its model runtime.
 
-Animation Sequence attaches a frame only when the source already matches the contract size. It does not cover-crop the frame to pass QA.
+Animation Sequence attaches a frame at the contract size, or at another resolution with the same aspect ratio (within 1%), which it scales uniformly to the contract size. A frame with another aspect ratio is blocked. It never crops or stretches a frame to pass QA.
 
 ## Consequences
 

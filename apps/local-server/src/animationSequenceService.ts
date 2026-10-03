@@ -423,12 +423,17 @@ export function createAnimationSequenceService({
     const framePath = path.join(run.paths.framesDir, `${frame.id}.png`);
     await copyFile(sourcePath, rawPath);
     const metadata = await authoringSharp(sourcePath).metadata();
-    const exactSize =
-      metadata.width === run.contract.dimensions.width &&
-      metadata.height === run.contract.dimensions.height;
+    const { width: contractWidth, height: contractHeight } = run.contract.dimensions;
+    const exactSize = metadata.width === contractWidth && metadata.height === contractHeight;
+    // Providers may return the run's aspect at another resolution. A uniform scale keeps every
+    // pixel of the frame; nothing is cropped or stretched. A different aspect still blocks.
+    const sameAspect =
+      Boolean(metadata.width && metadata.height) &&
+      Math.abs(metadata.width! / metadata.height! - contractWidth / contractHeight) <=
+        (contractWidth / contractHeight) * 0.01;
     const hasAlpha = metadata.hasAlpha === true;
     const hasTransparency = hasAlpha && !(await authoringSharp(sourcePath).stats()).isOpaque;
-    if (!exactSize) {
+    if (!exactSize && !sameAspect) {
       frame.status = 'blocked';
       frame.rawPath = rawPath;
       frame.framePath = null;
@@ -440,7 +445,7 @@ export function createAnimationSequenceService({
         reasonKind: 'geometry_mismatch',
         userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height}.`,
         suggestion:
-          'Select Retry to generate the frame at the run size. This workflow does not crop or scale frames.',
+          'Select Retry to generate the frame at the run aspect ratio. This workflow does not crop or stretch frames.',
       };
       frame.updatedAt = timestamp;
       return;
@@ -450,13 +455,16 @@ export function createAnimationSequenceService({
       !hasTransparency && run.contract.background === 'transparent'
         ? 'Transparent output was requested, but this frame is opaque. The original frame is preserved.'
         : null;
+    const source = exactSize
+      ? authoringSharp(sourcePath)
+      : authoringSharp(sourcePath).resize(contractWidth, contractHeight, {
+          fit: 'fill',
+          kernel: 'lanczos3',
+        });
     if (run.contract.background === 'solid') {
-      await authoringSharp(sourcePath)
-        .flatten({ background: run.contract.matteColor })
-        .png()
-        .toFile(framePath);
+      await source.flatten({ background: run.contract.matteColor }).png().toFile(framePath);
     } else {
-      await authoringSharp(sourcePath).png().toFile(framePath);
+      await source.png().toFile(framePath);
     }
     const info = await authoringSharp(framePath).metadata();
 

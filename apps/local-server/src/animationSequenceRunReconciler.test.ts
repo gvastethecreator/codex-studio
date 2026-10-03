@@ -26,9 +26,9 @@ async function setup() {
   const service = createAnimationSequenceService(options);
   const run = await service.createRun({ prompt: 'a lantern pulses', frameCount: 2 });
 
-  async function addImage(id: string, size = 1024) {
+  async function addImage(id: string, size = 1024, height = size) {
     const filePath = path.join(root, `${id}.png`);
-    await sharp({ create: { width: size, height: size, channels: 4, background: '#3366ff' } })
+    await sharp({ create: { width: size, height, channels: 4, background: '#3366ff' } })
       .png()
       .toFile(filePath);
     catalog.set(id, { id, filePath } as CatalogImage);
@@ -171,7 +171,7 @@ describe('Animation Sequence run participant', () => {
   it('lets a later sibling replace a geometry-blocked result', async () => {
     const { participant, addImage, job, frame } = await setup();
     await participant.recordDispatch([job('job-a', 'queued'), job('job-b', 'queued')]);
-    await addImage('image-small', 16);
+    await addImage('image-small', 16, 24);
     await addImage('image-good');
 
     await participant.settle(job('job-a', 'completed', { catalogId: 'image-small' }));
