@@ -19,7 +19,7 @@ export interface RecipePageProps {
     value: ImageGenerationConfig[K],
   ) => void;
   updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
-  handlePastedFiles: (files: File[]) => void;
+  handlePastedFiles: (files: File[], replaceId?: string) => void;
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,

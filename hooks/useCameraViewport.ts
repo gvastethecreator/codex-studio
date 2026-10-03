@@ -17,29 +17,20 @@ type ThreeSubjectMesh = {
 
 const loadThree = () => import('three');
 
-type CameraAction =
-  | { type: 'set_azimuth'; value: number | ((prev: number) => number) }
-  | { type: 'set_elevation'; value: number | ((prev: number) => number) }
-  | { type: 'set_distance'; value: number | ((prev: number) => number) };
+type CameraAction = {
+  key: keyof CameraViewportState;
+  value: number | ((prev: number) => number);
+  range: CameraViewportRange;
+};
 
+function clampToRange(value: number, range: CameraViewportRange) {
+  return Math.min(range.max, Math.max(range.min, value));
+}
+
+// Every write (sliders, drag, wheel, restored drafts) stays inside the recipe's accepted ranges.
 function cameraReducer(prev: CameraViewportState, action: CameraAction): CameraViewportState {
-  switch (action.type) {
-    case 'set_azimuth':
-      return {
-        ...prev,
-        azimuth: typeof action.value === 'function' ? action.value(prev.azimuth) : action.value,
-      };
-    case 'set_elevation':
-      return {
-        ...prev,
-        elevation: typeof action.value === 'function' ? action.value(prev.elevation) : action.value,
-      };
-    case 'set_distance':
-      return {
-        ...prev,
-        distance: typeof action.value === 'function' ? action.value(prev.distance) : action.value,
-      };
-  }
+  const next = typeof action.value === 'function' ? action.value(prev[action.key]) : action.value;
+  return { ...prev, [action.key]: clampToRange(next, action.range) };
 }
 
 export interface CameraViewportState {
@@ -48,10 +39,18 @@ export interface CameraViewportState {
   distance: number;
 }
 
+export interface CameraViewportRange {
+  min: number;
+  max: number;
+}
+
+export type CameraViewportRanges = Record<keyof CameraViewportState, CameraViewportRange>;
+
 export interface UseCameraViewportOptions {
   aspectRatio: string;
   referenceImageSrc?: string | null;
   initialState?: Partial<CameraViewportState>;
+  ranges: CameraViewportRanges;
 }
 
 export interface UseCameraViewportResult {
@@ -156,26 +155,31 @@ export const useCameraViewport = ({
   aspectRatio,
   referenceImageSrc,
   initialState,
+  ranges,
 }: UseCameraViewportOptions): UseCameraViewportResult => {
   const initialCamera: CameraViewportState = {
-    azimuth: initialState?.azimuth ?? 0,
-    elevation: initialState?.elevation ?? 0,
-    distance: initialState?.distance ?? 100,
+    azimuth: clampToRange(initialState?.azimuth ?? 0, ranges.azimuth),
+    elevation: clampToRange(initialState?.elevation ?? 0, ranges.elevation),
+    distance: clampToRange(initialState?.distance ?? 100, ranges.distance),
   };
   const [cameraState, dispatch] = useReducer(cameraReducer, initialCamera);
   const { azimuth, elevation, distance } = cameraState;
+  const rangesRef = useLatestRef(ranges);
 
   const setAzimuth = useCallback(
-    (value: number | ((prev: number) => number)) => dispatch({ type: 'set_azimuth', value }),
-    [],
+    (value: number | ((prev: number) => number)) =>
+      dispatch({ key: 'azimuth', value, range: rangesRef.current.azimuth }),
+    [rangesRef],
   );
   const setElevation = useCallback(
-    (value: number | ((prev: number) => number)) => dispatch({ type: 'set_elevation', value }),
-    [],
+    (value: number | ((prev: number) => number)) =>
+      dispatch({ key: 'elevation', value, range: rangesRef.current.elevation }),
+    [rangesRef],
   );
   const setDistance = useCallback(
-    (value: number | ((prev: number) => number)) => dispatch({ type: 'set_distance', value }),
-    [],
+    (value: number | ((prev: number) => number)) =>
+      dispatch({ key: 'distance', value, range: rangesRef.current.distance }),
+    [rangesRef],
   );
 
   const [viewportError, setViewportError] = useState<string | null>(null);
@@ -188,11 +192,7 @@ export const useCameraViewport = ({
       lastRenderedEl?: number;
       lastRenderedDist?: number;
     }
-  >({
-    azimuth: initialState?.azimuth ?? 0,
-    elevation: initialState?.elevation ?? 0,
-    distance: initialState?.distance ?? 100,
-  });
+  >(initialCamera);
 
   const hasReference = Boolean(referenceImageSrc);
   const hasReferenceRef = useRef(hasReference);
@@ -727,10 +727,7 @@ export const useCameraViewport = ({
           return next;
         });
 
-        setElevation((previous) => {
-          const next = previous - deltaY * 0.5;
-          return Math.max(-89, Math.min(89, next));
-        });
+        setElevation((previous) => previous - deltaY * 0.5);
       };
 
       const onMouseUp = () => {
@@ -741,7 +738,7 @@ export const useCameraViewport = ({
       const onWheel = (event: WheelEvent) => {
         event.preventDefault();
         const delta = event.deltaY * 0.1;
-        setDistance((previous) => Math.max(20, Math.min(200, previous - delta)));
+        setDistance((previous) => previous - delta);
       };
 
       const canvasElement = renderer.domElement;

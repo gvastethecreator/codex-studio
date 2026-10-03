@@ -69,6 +69,26 @@ const DEFAULT_PARAMS = {
   lens: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'lens', 'Auto-Detect'),
 };
 
+// Storyboard panels read best as landscape film frames.
+const CINEMATIC_PANEL_ASPECT = 16 / 9;
+
+/** Pick the rows x columns split whose panels come closest to a 16:9 film frame. */
+function getCinematicGrid(frames: number, sheetAspect: number) {
+  let best = { rows: 1, cols: frames };
+  let bestScore = Infinity;
+  for (let rows = 1; rows <= frames; rows += 1) {
+    if (frames % rows !== 0) continue;
+    const cols = frames / rows;
+    const score = Math.abs(Math.log((sheetAspect * rows) / cols / CINEMATIC_PANEL_ASPECT));
+    // On a tie, the later split has wider panels; keep it.
+    if (score <= bestScore + 1e-9) {
+      best = { rows, cols };
+      bestScore = score;
+    }
+  }
+  return best;
+}
+
 const ShotTypeDropdown: React.FC<{
   value: string;
   sceneLabel: string;
@@ -80,12 +100,12 @@ const ShotTypeDropdown: React.FC<{
   const listboxId = useId();
 
   return (
-    <div className="relative">
+    <div className="relative min-w-0 max-w-[min(120px,100%)]">
       <button
         ref={triggerRef}
         type="button"
         onClick={() => setIsOpen((open) => !open)}
-        className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[length:var(--wbp-label)] font-bold tracking-normal transition-[background-color,border-color,color,transform] ${
+        className={`flex min-h-7 max-w-full items-center gap-1.5 rounded border px-2 py-1 text-center text-[length:var(--wbp-label)] font-bold tracking-normal transition-[background-color,border-color,color,transform] ${
           isOpen
             ? 'border-[color:var(--wb-accent)] bg-[color-mix(in_srgb,var(--wb-accent)_14%,transparent)] text-[color:var(--wb-ink)]'
             : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
@@ -106,6 +126,7 @@ const ShotTypeDropdown: React.FC<{
         />
       </button>
       <DemandMountedGsapDropdown
+        portal
         id={listboxId}
         open={isOpen}
         onOpenChange={setIsOpen}
@@ -113,9 +134,7 @@ const ShotTypeDropdown: React.FC<{
         placement={openBelow ? 'bottom-left' : 'top-left'}
         role="listbox"
         aria-label={`${sceneLabel} shot type`}
-        className={`absolute left-1/2 z-40 max-h-48 w-44 -translate-x-1/2 overflow-y-auto rounded-[var(--wb-radius)] p-1 ${
-          openBelow ? 'top-[calc(100%+0.35rem)]' : 'bottom-[calc(100%+0.35rem)]'
-        }`}
+        className="max-h-48 w-44 overflow-y-auto rounded-[var(--wb-radius)] p-1"
       >
         {SHOT_TYPES.map((shot) => {
           const selected = shot === value;
@@ -176,14 +195,19 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
     setParams((p) => ({ ...p, frames: count }));
   }, []);
 
-  const gridLayout = useMemo(() => {
-    const isPortrait = ratioValue < 1;
-    const frames = params.frames;
+  const gridLayout = useMemo(
+    () => getCinematicGrid(params.frames, ratioValue),
+    [params.frames, ratioValue],
+  );
 
-    if (frames === 3) return isPortrait ? { rows: 3, cols: 1 } : { rows: 1, cols: 3 };
-    if (frames === 6) return isPortrait ? { rows: 3, cols: 2 } : { rows: 2, cols: 3 };
-    return { rows: 3, cols: 3 };
-  }, [params.frames, ratioValue]);
+  // Hidden panels keep their pick while the editor is open, but only visible panels are sent.
+  const visibleFrameShots = useMemo(
+    () =>
+      Object.fromEntries(
+        Object.entries(frameShots).filter(([index]) => Number(index) < params.frames),
+      ),
+    [frameShots, params.frames],
+  );
 
   const recipeParams = useMemo(
     () => ({
@@ -191,7 +215,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
       rows: gridLayout.rows,
       cols: gridLayout.cols,
       aspectRatio: config.aspectRatio,
-      frameShots,
+      frameShots: visibleFrameShots,
       genre: params.genre,
       tone: params.tone,
       lighting: params.lighting,
@@ -202,7 +226,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
     }),
     [
       config.aspectRatio,
-      frameShots,
       gridLayout.cols,
       gridLayout.rows,
       params.frames,
@@ -213,6 +236,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
       params.time,
       params.tone,
       params.weather,
+      visibleFrameShots,
     ],
   );
 
@@ -330,7 +354,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         className="relative overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
         style={{
           aspectRatio: ratioValue,
-          width: 'min(90vw, 74vh)',
+          width: `min(90vw, 74vh, calc((100dvh - var(--studio-chrome-block)) * ${ratioValue}))`,
           maxWidth: '100%',
           maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
         }}
@@ -344,7 +368,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         )}
 
         <div
-          className="pointer-events-none absolute inset-0 grid gap-px bg-[color:var(--wb-well)] transition-colors duration-500"
+          className="pointer-events-none absolute inset-0 grid gap-px transition-colors duration-500"
           style={{
             gridTemplateColumns: `repeat(${gridLayout.cols}, 1fr)`,
             gridTemplateRows: `repeat(${gridLayout.rows}, 1fr)`,
@@ -353,9 +377,9 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           {Array.from({ length: params.frames }).map((_, i) => (
             <div
               key={i}
-              className="relative bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-[color:var(--wb-line)] group/cell pointer-events-auto"
+              className="relative min-w-0 bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-[color:var(--wb-line)] group/cell pointer-events-auto"
             >
-              <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)]/30 group-hover/cell:text-[color:var(--wb-ink)]/60 tracking-normal transition-colors mb-2">
+              <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] group-hover/cell:text-[color:var(--wb-ink)] tracking-normal transition-colors mb-2">
                 {i === 0 ? 'START' : i === params.frames - 1 ? 'END' : `SCENE ${i + 1}`}
               </span>
               <ShotTypeDropdown
@@ -374,8 +398,13 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <button
             type="button"
             aria-label="Remove cinematic reference"
-            onClick={() => updateConfig('attachments', [])}
-            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] transition-[background-color,color] hover:bg-red-500 hover:text-[color:var(--wb-ink)]"
+            onClick={() =>
+              updateConfig(
+                'attachments',
+                config.attachments.filter((attachment) => attachment.id !== activeImage.id),
+              )
+            }
+            className="pointer-events-auto absolute right-2 top-2 z-20 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-ink)] transition-[background-color,color] hover:bg-red-500 hover:text-[color:var(--wb-ink)]"
           >
             <X width={14} height={14} />
           </button>

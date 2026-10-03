@@ -1,5 +1,5 @@
 import { getRecipeStringParam } from '../../lib/recipeIdentity';
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback, useContext } from 'react';
 import {
   Clock,
   FastArrowLeft as StepBack,
@@ -17,16 +17,20 @@ import {
 } from 'iconoir-react';
 import { AnimatePresence, MotionButton, MotionDiv } from '../../lib/gsapMotion';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
+import type { CatalogImage } from '../../packages/shared/src';
 import { RATIO_MAP } from '../../constants';
 import { RecipeLayout } from './RecipeLayout';
+import { RecipeWorkbenchContext } from './RecipeWorkbenchContext';
 import { ControlDropdown } from './RecipeUI';
 import { QuickStartText } from './QuickStartText';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { buildGeneratedImageContextAttachment } from '../../hooks/useGenerationConfig';
 import { useLazyRef } from '../../hooks/useLazyRef';
 import { useLatestRef } from '../../hooks/useLatestRef';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { createTimelineRecipeParams } from '../../lib/recipeDerivedParams';
 import { getRecipeNumberParam, hasRecipeIdentity } from '../../lib/recipeIdentity';
+import { materializeCatalogEntryImageWithConfig } from '../../lib/studioCatalogImageAdapter';
 import { getRecipeModuleUiModel, getRecipeOptions, getRecipeStringDefault } from './recipeModuleUi';
 
 interface TimelineRecipeProps {
@@ -36,10 +40,9 @@ interface TimelineRecipeProps {
     value: ImageGenerationConfig[K],
   ) => void;
   updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
-  onFileSelect: (files: File[]) => void;
+  onFileSelect: (files: File[], replaceId?: string) => void;
   onGenerate: (prompt?: string) => void;
   isGenerating: boolean;
-  images?: GeneratedImageWithConfig[];
   onSelectImage?: (image: GeneratedImageWithConfig) => void;
 }
 
@@ -64,7 +67,67 @@ const TIME_OPTIONS = (
 
 const MOTION_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'motionAmount');
 const LIGHTING_OPTIONS = getRecipeOptions(TIMELINE_MODULE, 'lightingMode');
-const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
+const EVOLVING_LIGHTING_MODE = 'Evolving';
+const LIGHTING_SHIFT_INTERVALS = new Set(['Hours', 'Years']);
+
+function useTimelineCatalogFrames() {
+  const { history } = useContext(RecipeWorkbenchContext);
+  const entries = history?.entries;
+  const scopeKey = history?.scopeKey;
+  const hydrateDetail = history?.hydrateDetail;
+  const [failedDetail, setFailedDetail] = useState<{ id: string; scopeKey?: string } | null>(null);
+  // A catalog refresh resets entries to summaries. Frame details do not change, so keep them
+  // and the frame indices stay known across refreshes.
+  const detailCache = useLazyRef(() => new Map<string, CatalogImage>());
+  const timelineEntries = useMemo(
+    () =>
+      (entries ?? []).flatMap((entry) => {
+        if (entry.recipeId !== 'timeline') return [];
+        if (entry.detailLevel === 'detail') {
+          detailCache.current.set(entry.id, entry);
+          return [entry];
+        }
+        return [detailCache.current.get(entry.id) ?? entry];
+      }),
+    [detailCache, entries],
+  );
+  const pendingId = timelineEntries.find((entry) => entry.detailLevel !== 'detail')?.id;
+  const detailFailed =
+    !!pendingId && failedDetail?.id === pendingId && failedDetail.scopeKey === scopeKey;
+
+  // Entries are a dependency because a refresh discards an in-flight detail without changing
+  // pendingId; running again on the new entries keeps hydration from stalling.
+  useEffect(() => {
+    if (!pendingId || !hydrateDetail || detailFailed) return;
+    let active = true;
+    void hydrateDetail(pendingId).catch(() => {
+      if (active) setFailedDetail({ id: pendingId, scopeKey });
+    });
+    return () => {
+      active = false;
+    };
+  }, [detailFailed, entries, hydrateDetail, pendingId, scopeKey]);
+
+  const images = useMemo(
+    () =>
+      timelineEntries
+        .filter((entry) => entry.detailLevel === 'detail')
+        .map(materializeCatalogEntryImageWithConfig),
+    [timelineEntries],
+  );
+
+  return {
+    images,
+    isLoading: Boolean(history?.isLoading || pendingId),
+    hasError: Boolean(history?.error || detailFailed),
+    hasMore: history?.hasMore ?? false,
+    loadMore: () => void history?.loadMore().catch(() => undefined),
+    retry: () => {
+      setFailedDetail(null);
+      if (history?.error) void history.refresh().catch(() => undefined);
+    },
+  };
+}
 
 type TimelineItem = {
   id: string;
@@ -87,10 +150,17 @@ function useTimelineKeyboard(
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.defaultPrevented || document.querySelector('[aria-modal="true"]')) return;
+      // Only page-level focus or focus on the Timeline stage/strip steers the sequence, so
+      // arrows keep working in tablists, menus, and other widgets.
+      const target = e.target;
+      if (target instanceof Element && target !== document.body) {
+        if (!target.closest('[data-timeline-surface]')) return;
+        if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return;
+      }
       const items = timelineItemsRef.current;
       const active = activeImageRef.current;
       if (items.length === 0 || !active) return;
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
       const currentIndex = items.findIndex((item) => item.src === active.dataUrl);
       if (currentIndex === -1) return;
       if (e.key === 'ArrowLeft') {
@@ -267,14 +337,15 @@ interface TimelineCanvasProps {
   activeImage: Attachment | undefined;
   onionSkinSrc: string | null;
   direction: 'forward' | 'backward';
-  currentRefIndex: number;
+  currentRefIndex: number | null;
   ratioValue: number;
   timelineItems: TimelineItem[];
-  sessionOrigin: { id: string; src: string } | null;
+  sessionOrigin: Attachment | null;
   scrollContainerRef: React.RefObject<HTMLDivElement | null>;
   itemRefs: React.MutableRefObject<Map<string, HTMLButtonElement>>;
   onLocalUpload: (files: File[]) => void;
   onItemClick: (item: TimelineItem) => void;
+  frameStatus: React.ReactNode;
 }
 
 function TimelineCanvas({
@@ -289,6 +360,7 @@ function TimelineCanvas({
   itemRefs,
   onLocalUpload,
   onItemClick,
+  frameStatus,
 }: TimelineCanvasProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const handleDrop = (e: React.DragEvent) => {
@@ -300,12 +372,15 @@ function TimelineCanvas({
   return (
     <>
       {/* Main Viewport */}
-      <div className="flex-1 w-full flex items-center justify-center min-h-0 relative">
+      <div
+        data-timeline-surface
+        className="flex-1 w-full flex items-center justify-center min-h-0 relative"
+      >
         <div
           className="relative rounded-[var(--wb-radius)] overflow-hidden border border-[color:var(--wb-line)] shadow-2xl bg-[color:var(--wb-panel)]"
           style={{
             aspectRatio: ratioValue,
-            width: 'min(86vw, 72vh)',
+            width: `min(86vw, 72vh, calc((100dvh - var(--studio-chrome-block)) * ${ratioValue}))`,
             maxWidth: '100%',
             maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
           }}
@@ -337,9 +412,9 @@ function TimelineCanvas({
                   <FastForward width={32} height={32} className="text-teal-400" />
                 </div>
               </div>
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-[color:var(--wb-panel)]/60 rounded-full border border-[color:var(--wb-line)] flex items-center gap-3 backdrop-blur-md z-30">
+              <div className="absolute top-4 left-1/2 -translate-x-1/2 max-w-[calc(100%-2rem)] px-3 py-1.5 bg-[color:var(--wb-panel)]/60 rounded-2xl border border-[color:var(--wb-line)] flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 whitespace-nowrap backdrop-blur-md z-30">
                 <span className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-muted)]">
-                  Frame: {currentRefIndex}
+                  Frame: {currentRefIndex ?? '?'}
                 </span>
                 <div className="size-1 bg-white/20 rounded-full" />
                 <span className="text-[length:var(--wbp-label)] font-semibold text-teal-400 tracking-normal">
@@ -349,7 +424,7 @@ function TimelineCanvas({
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="absolute top-4 right-4 z-30 p-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)]/60 text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] transition-colors pointer-events-auto border border-[color:var(--wb-line)] flex items-center gap-2"
+                className="absolute bottom-4 right-4 z-30 p-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)]/60 text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] transition-colors pointer-events-auto border border-[color:var(--wb-line)] flex items-center gap-2"
               >
                 <span className="text-[length:var(--wbp-label)] font-bold hidden sm:block">
                   Replace
@@ -421,14 +496,18 @@ function TimelineCanvas({
       </div>
 
       {/* Timeline Strip (Carousel) */}
-      <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-[color:var(--wb-line)] bg-[color:var(--wb-bg)] pb-4">
-        <div className="flex items-center justify-between px-6 pt-2">
+      <div
+        data-timeline-surface
+        className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-[color:var(--wb-line)] bg-[color:var(--wb-bg)] pb-4"
+      >
+        <div className="flex flex-wrap items-center justify-between gap-2 px-6 pt-2">
           <div className="flex items-center gap-2 text-teal-500/60">
             <Film width={12} height={12} />
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
               Film Strip
             </span>
           </div>
+          {frameStatus}
           <div className="flex items-center gap-4">
             <div className="flex gap-1 opacity-20">
               {[...Array(20)].map((_, i) => (
@@ -471,7 +550,7 @@ function TimelineCanvas({
               <AnimatePresence mode="popLayout">
                 {timelineItems.map((item) => {
                   const isActive = activeImage?.dataUrl === item.src;
-                  const isAnchor = sessionOrigin?.src === item.src;
+                  const isAnchor = sessionOrigin?.dataUrl === item.src;
 
                   return (
                     <MotionButton
@@ -521,16 +600,6 @@ function TimelineCanvas({
   );
 }
 
-// File-scope utility: reads a File as a data URL
-function readFileAsDataUrl(file: File): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result as string);
-    reader.onerror = reject;
-    reader.readAsDataURL(file);
-  });
-}
-
 // File-scope utility: extracts temporal sequence index from image config
 function getSequenceIndex(imageConfig?: ImageGenerationConfig): number {
   return imageConfig ? getRecipeNumberParam(imageConfig, 'nextIndex', 0) : 0;
@@ -539,12 +608,14 @@ function getSequenceIndex(imageConfig?: ImageGenerationConfig): number {
 function useTimelineRecipeController({
   config,
   updateConfig,
-  isGenerating,
+  updateAttachment,
+  onFileSelect,
   images,
 }: {
   config: ImageGenerationConfig;
   updateConfig: TimelineRecipeProps['updateConfig'];
-  isGenerating: boolean;
+  updateAttachment: TimelineRecipeProps['updateAttachment'];
+  onFileSelect: TimelineRecipeProps['onFileSelect'];
   images: GeneratedImageWithConfig[];
 }) {
   // --- Persistent UI State ---
@@ -562,10 +633,6 @@ function useTimelineRecipeController({
       TIME_OPTIONS[0],
     [timeDeltaLabel],
   );
-  const setTimeDelta = useCallback(
-    (opt: (typeof TIME_OPTIONS)[0]) => setTimeDeltaLabel(opt.label),
-    [setTimeDeltaLabel],
-  );
 
   const [cameraMode, setCameraMode] = useState<'locked' | 'dynamic'>(() =>
     config.recipeParams?.cameraMode === 'dynamic' ? 'dynamic' : 'locked',
@@ -576,6 +643,21 @@ function useTimelineRecipeController({
   );
   const [lightingMode, setLightingMode] = useState(() =>
     getRecipeStringParam(config, 'lightingMode', DEFAULT_LIGHTING_MODE),
+  );
+  const [isLightingChosen, setIsLightingChosen] = useState(false);
+  const chooseLightingMode = useCallback((mode: string) => {
+    setIsLightingChosen(true);
+    setLightingMode(mode);
+  }, []);
+  const setTimeDelta = useCallback(
+    (opt: (typeof TIME_OPTIONS)[0]) => {
+      setTimeDeltaLabel(opt.label);
+      // Hours and Years move the light, so lighting left on its default follows the interval.
+      if (!isLightingChosen && LIGHTING_SHIFT_INTERVALS.has(opt.label)) {
+        setLightingMode((mode) => (mode === DEFAULT_LIGHTING_MODE ? EVOLVING_LIGHTING_MODE : mode));
+      }
+    },
+    [isLightingChosen],
   );
 
   const [isOnionSkinEnabled, setIsOnionSkinEnabled] = useState(false);
@@ -588,33 +670,46 @@ function useTimelineRecipeController({
   // react-doctor-disable-next-line react-doctor/no-event-handler
   const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1.777, [config.aspectRatio]);
 
-  const [uploadedOrigin, setUploadedOrigin] = useState<{ id: string; src: string } | null>(null);
+  const [originId, setOriginId] = useState<string | null>(null);
   const sessionOrigin = useMemo(() => {
-    // react-doctor-disable-next-line react-doctor/no-event-handler
-    if (uploadedOrigin) return uploadedOrigin;
-    const anchorAtt = config.attachments.find((a) => a.name.includes('(Anchor)'));
-    if (anchorAtt) return { id: anchorAtt.id, src: anchorAtt.dataUrl };
-    if (config.attachments.length > 0)
-      return { id: config.attachments[0].id, src: config.attachments[0].dataUrl };
-    return null;
-  }, [uploadedOrigin, config.attachments]);
+    return (
+      config.attachments.find((attachment) => attachment.id === originId) ??
+      config.attachments.find((attachment) => attachment.name.includes('(Anchor)')) ??
+      config.attachments[0] ??
+      null
+    );
+  }, [originId, config.attachments]);
 
-  // 1. Calculate Logical Index of Active Frame
-  const currentRefIndex = useMemo(() => {
-    if (!activeImage) return 0;
-    const matchedGen = images.find((img) => img.src === activeImage.dataUrl);
-    if (matchedGen) return getSequenceIndex(matchedGen.config);
-    if (sessionOrigin && activeImage.dataUrl === sessionOrigin.src) return 0;
-    return 0;
-  }, [activeImage, images, sessionOrigin]);
+  // The origin attachment names the sequence; only frames generated from it belong to the strip.
+  const sequenceId = sessionOrigin?.id ?? null;
+  const sequenceFrames = useMemo(
+    () =>
+      sequenceId
+        ? images.filter(
+            (img) =>
+              hasRecipeIdentity(img.config, 'timeline') &&
+              getRecipeStringParam(img.config, 'sequenceId') === sequenceId,
+          )
+        : [],
+    [images, sequenceId],
+  );
+
+  // 1. Calculate Logical Index of Active Frame (null while its frame is not loaded yet)
+  const activeFrame = useMemo(() => {
+    if (!activeImage) return { index: 0, sourceFrameId: null };
+    if (activeImage.id === sessionOrigin?.id) return { index: 0, sourceFrameId: sessionOrigin.id };
+    const matchedGen = sequenceFrames.find((img) => img.src === activeImage.dataUrl);
+    return matchedGen
+      ? { index: getSequenceIndex(matchedGen.config), sourceFrameId: matchedGen.id }
+      : { index: null, sourceFrameId: null };
+  }, [activeImage, sequenceFrames, sessionOrigin]);
+  const currentRefIndex = activeFrame.index;
 
   // 2. Build the Unified Timeline Strip
   const timelineItems = useMemo(() => {
-    // react-doctor-disable-next-line react-doctor/no-event-handler
-    const generatedItems = images.filter((img) => hasRecipeIdentity(img.config, 'timeline'));
     const itemsMap = new Map();
 
-    generatedItems.forEach((img) => {
+    sequenceFrames.forEach((img) => {
       itemsMap.set(img.src, {
         id: img.id,
         src: img.src,
@@ -627,11 +722,11 @@ function useTimelineRecipeController({
     });
 
     if (sessionOrigin) {
-      if (!itemsMap.has(sessionOrigin.src)) {
-        itemsMap.set(sessionOrigin.src, {
+      if (!itemsMap.has(sessionOrigin.dataUrl)) {
+        itemsMap.set(sessionOrigin.dataUrl, {
           id: sessionOrigin.id,
-          src: sessionOrigin.src,
-          thumbnail: sessionOrigin.src,
+          src: sessionOrigin.dataUrl,
+          thumbnail: sessionOrigin.dataUrl,
           index: 0,
           isOrigin: true,
           isGenerated: false,
@@ -640,31 +735,44 @@ function useTimelineRecipeController({
       }
     }
     return Array.from(itemsMap.values()).sort((a, b) => a.index - b.index);
-  }, [images, sessionOrigin]);
+  }, [sequenceFrames, sessionOrigin]);
 
-  // 3. Local File Upload Handler
+  // 3. Local File Upload Handler: the shared attachment pipeline converts and persists the file.
+  const [uploadError, setUploadError] = useState<string | null>(null);
+  const pendingUploadRef = useRef<{ name: string; id: string | null } | null>(null);
   const handleLocalUpload = useCallback(
-    async (files: File[]) => {
-      if (files.length === 0) return;
+    (files: File[]) => {
       const file = files[0];
-      try {
-        const dataUrl = await readFileAsDataUrl(file);
-
-        const newAttachment: Attachment = {
-          id: `timeline-origin-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
-          name: file.name,
-          dataUrl: dataUrl,
-          strength: 1,
-        };
-
-        updateConfig('attachments', [newAttachment]);
-        setUploadedOrigin({ id: newAttachment.id, src: dataUrl });
-      } catch (err) {
-        // Failed to load local file
+      if (!file) return;
+      setUploadError(null);
+      setOriginId(null);
+      pendingUploadRef.current = { name: file.name, id: null };
+      if (!activeImage) {
+        onFileSelect([file]);
+        return;
       }
+      // A new keyframe starts a new sequence: drop the Ref/Anchor pair, then replace in place.
+      if (config.attachments.length > 1) updateConfig('attachments', [activeImage]);
+      onFileSelect([file], activeImage.id);
     },
-    [updateConfig],
+    [activeImage, config.attachments.length, onFileSelect, updateConfig],
   );
+
+  useEffect(() => {
+    const pending = pendingUploadRef.current;
+    if (!pending) return;
+    if (pending.id === null) {
+      if (!activeImage?.isProcessing) return;
+      pending.id = activeImage.id;
+      updateAttachment(activeImage.id, { strength: 1 });
+      return;
+    }
+    const attachment = config.attachments.find((item) => item.id === pending.id);
+    if (attachment?.isProcessing) return;
+    pendingUploadRef.current = null;
+    // The shared pipeline drops an attachment it could not read.
+    if (!attachment) setUploadError(`Could not load ${pending.name}. Try another image.`);
+  }, [activeImage, config.attachments, updateAttachment]);
 
   // 4. Robust Center Scroll Logic
   const scrollToItem = useCallback(
@@ -692,25 +800,25 @@ function useTimelineRecipeController({
       // Immediate feedback scroll
       scrollToItem(item.id);
 
-      const newAttachments: Attachment[] = [];
-      const isSelectingOrigin = sessionOrigin && item.src === sessionOrigin.src;
+      const isSelectingOrigin = sessionOrigin && item.src === sessionOrigin.dataUrl;
+      const reference = isSelectingOrigin
+        ? sessionOrigin
+        : item.originalObj && buildGeneratedImageContextAttachment(item.originalObj);
+      if (!reference) return;
 
-      newAttachments.push({
-        id: `timeline-ref-${item.id}-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
-        name: `Frame ${item.index} (Ref)`,
-        dataUrl: item.src,
-        strength: 1,
-      });
+      const newAttachments: Attachment[] = [
+        { ...reference, name: `Frame ${item.index} (Ref)`, strength: 1 },
+      ];
 
       if (sessionOrigin && !isSelectingOrigin) {
         newAttachments.push({
-          id: `timeline-anchor-${sessionOrigin.id}`,
+          ...sessionOrigin,
           name: `Frame 0 (Anchor)`,
-          dataUrl: sessionOrigin.src,
           strength: 0.3,
         });
       }
 
+      setOriginId(sessionOrigin?.id ?? null);
       updateConfig('attachments', newAttachments);
 
       // Update direction based on navigation
@@ -747,6 +855,9 @@ function useTimelineRecipeController({
     () =>
       createTimelineRecipeParams({
         currentRefIndex,
+        sequenceIndices: timelineItems.map((item) => item.index),
+        sequenceId,
+        sourceFrameId: activeFrame.sourceFrameId,
         direction,
         timeDeltaLabel: timeDelta.label,
         cameraMode,
@@ -755,20 +866,23 @@ function useTimelineRecipeController({
         isAnchored: config.attachments.length > 1,
       }),
     [
+      activeFrame.sourceFrameId,
       cameraMode,
       config.attachments.length,
       currentRefIndex,
       direction,
       lightingMode,
       motionAmount,
+      sequenceId,
       timeDelta.label,
+      timelineItems,
     ],
   );
 
   useRecipeContextRegistration(updateConfig, 'timeline', recipeParams);
 
   const onionSkinSrc = useMemo(() => {
-    if (!isOnionSkinEnabled || !activeImage) return null;
+    if (!isOnionSkinEnabled || !activeImage || currentRefIndex === null) return null;
     const targetIndex = currentRefIndex + (direction === 'forward' ? -1 : 1);
     const skinItem = timelineItems.find((i) => i.index === targetIndex);
     return skinItem?.src || null;
@@ -787,7 +901,7 @@ function useTimelineRecipeController({
         onSetDirection={setDirection}
         onSetTimeDelta={setTimeDelta}
         onSetMotionAmount={setMotionAmount}
-        onSetLightingMode={setLightingMode}
+        onSetLightingMode={chooseLightingMode}
         onSetCameraMode={setCameraMode}
         onToggleOnionSkin={() => setIsOnionSkinEnabled((p) => !p)}
       />
@@ -803,7 +917,7 @@ function useTimelineRecipeController({
       setDirection,
       setTimeDelta,
       setMotionAmount,
-      setLightingMode,
+      chooseLightingMode,
       setCameraMode,
     ],
   );
@@ -821,20 +935,24 @@ function useTimelineRecipeController({
     scrollContainerRef,
     sessionOrigin,
     timelineItems,
+    uploadError,
   };
 }
 
 export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   config,
   updateConfig,
+  updateAttachment,
+  onFileSelect,
   isGenerating,
-  images = EMPTY_IMAGES,
 }) => {
+  const frames = useTimelineCatalogFrames();
   const timelineController = useTimelineRecipeController({
     config,
     updateConfig,
-    isGenerating,
-    images,
+    updateAttachment,
+    onFileSelect,
+    images: frames.images,
   });
 
   return (
@@ -855,6 +973,41 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
         itemRefs={timelineController.itemRefs}
         onLocalUpload={timelineController.handleLocalUpload}
         onItemClick={timelineController.handleItemClick}
+        frameStatus={
+          <div className="flex items-center gap-3 text-xs text-[color:var(--wb-muted)]">
+            {timelineController.uploadError ? (
+              <span role="alert">{timelineController.uploadError}</span>
+            ) : null}
+            {frames.hasError ? (
+              <div role="alert" className="flex items-center gap-2">
+                <span>Could not load timeline frames.</span>
+                <button
+                  type="button"
+                  className="studio-ghost-control px-2 py-1"
+                  onClick={frames.retry}
+                >
+                  Retry
+                </button>
+              </div>
+            ) : frames.isLoading ? (
+              <span role="status">Loading frames...</span>
+            ) : timelineController.currentRefIndex === null ? (
+              <span role="status">
+                Can't place the selected frame. Load more frames or pick one from the strip.
+              </span>
+            ) : null}
+            {frames.hasMore && (
+              <button
+                type="button"
+                className="studio-ghost-control px-2 py-1"
+                disabled={frames.isLoading}
+                onClick={frames.loadMore}
+              >
+                Load more frames
+              </button>
+            )}
+          </div>
+        }
       />
     </RecipeLayout>
   );

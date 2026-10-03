@@ -1,11 +1,9 @@
-import { CozyLoader as Loader2 } from '../CozyMascot';
 import { RecipeControls } from './RecipeWorkbenchContext';
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import {
   RefreshDouble as RotateCw,
   ArrowUp as ArrowUpFromLine,
   ZoomIn,
-  Camera,
   Eye,
   Axes as Move3d,
   CursorPointer as MousePointer2,
@@ -15,8 +13,7 @@ import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { createCameraRecipeParams } from '../../lib/recipeDerivedParams';
 import { RecipeLayout } from './RecipeLayout';
-import { QuickStartText } from './QuickStartText';
-import { getRecipeModuleUiModel, getRecipeRange } from './recipeModuleUi';
+import { getRecipeModuleUiModel, getRecipeNumberDefault, getRecipeRange } from './recipeModuleUi';
 
 interface CameraAnglesRecipeProps {
   config: ImageGenerationConfig;
@@ -27,11 +24,16 @@ interface CameraAnglesRecipeProps {
   isGenerating: boolean;
 }
 
-const { module: CAMERA_MODULE } = getRecipeModuleUiModel('camera');
+const { module: CAMERA_MODULE, defaults: CAMERA_DEFAULTS } = getRecipeModuleUiModel('camera');
 const CAMERA_RANGES = {
   azimuth: getRecipeRange(CAMERA_MODULE, 'azimuth', { min: -180, max: 180, step: 1 }),
   elevation: getRecipeRange(CAMERA_MODULE, 'elevation', { min: -85, max: 85, step: 1 }),
   distance: getRecipeRange(CAMERA_MODULE, 'distance', { min: 20, max: 200, step: 1 }),
+};
+const CAMERA_RESET = {
+  azimuth: getRecipeNumberDefault(CAMERA_DEFAULTS, 'azimuth', 0),
+  elevation: getRecipeNumberDefault(CAMERA_DEFAULTS, 'elevation', 0),
+  distance: getRecipeNumberDefault(CAMERA_DEFAULTS, 'distance', 100),
 };
 
 interface CameraAnglesInfoPanelProps {
@@ -79,8 +81,6 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   updateConfig,
   isGenerating,
 }) => {
-  const [isEstimating, setIsEstimating] = useState(false);
-
   const activeImage = config.attachments[0];
   const hasReference = !!activeImage;
   const {
@@ -94,6 +94,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     aspectRatio: config.aspectRatio,
     initialState: config.recipeId === 'camera' ? (config.recipeParams ?? undefined) : undefined,
     referenceImageSrc: activeImage?.dataUrl ?? null,
+    ranges: CAMERA_RANGES,
   });
 
   const recipeParams = useMemo(
@@ -104,26 +105,10 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
 
   useRecipeContextRegistration(updateConfig, 'camera', recipeParams);
 
-  const handleEstimateCamera = async () => {
-    if (!activeImage || isEstimating) return;
-    setIsEstimating(true);
-
-    try {
-      const image = new Image();
-      image.src = activeImage.dataUrl;
-      await image.decode();
-
-      const ratio = image.naturalWidth / Math.max(1, image.naturalHeight);
-      setAzimuth(ratio > 1.25 ? 25 : ratio < 0.8 ? -15 : 0);
-      setElevation(image.naturalHeight > image.naturalWidth ? 8 : 0);
-      setDistance(ratio > 1.6 ? 120 : ratio < 0.75 ? 85 : 100);
-    } catch (error) {
-      setAzimuth(0);
-      setElevation(0);
-      setDistance(100);
-    } finally {
-      setIsEstimating(false);
-    }
+  const handleResetCamera = () => {
+    setAzimuth(CAMERA_RESET.azimuth);
+    setElevation(CAMERA_RESET.elevation);
+    setDistance(CAMERA_RESET.distance);
   };
 
   const BottomDock = useMemo(
@@ -216,7 +201,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             <div className="flex flex-col gap-1 text-[length:var(--wbp-label)] font-mono text-[color:var(--wb-muted)] bg-[color:var(--wb-well)] p-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)]">
               <span className="text-[color:var(--wb-info)]">AZ: {Math.round(azimuth)}°</span>
               <span className="text-[color:var(--wb-danger)]">EL: {Math.round(elevation)}°</span>
-              <span className="text-[color:var(--wb-warning)]">DIST: {Math.round(distance)}%</span>
+              <span className="text-[color:var(--wb-warning)]">ZOOM: {Math.round(distance)}%</span>
             </div>
           </div>
 
@@ -253,11 +238,9 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
 
         <RecipeControls>
           <div className="w-full flex min-h-0 shrink-0 flex-col gap-4">
-            {hasReference && (
-              <button type="button" onClick={handleEstimateCamera} disabled={isEstimating}>
-                Fit camera to reference
-              </button>
-            )}
+            <button type="button" onClick={handleResetCamera}>
+              Reset camera
+            </button>
             <details>
               <summary>Virtual framing details</summary>
               <CameraAnglesInfoPanel hPos={hPos} vPos={vPos} framing={framing} />

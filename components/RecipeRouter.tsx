@@ -34,7 +34,7 @@ interface RecipeRouterProps {
     value: ImageGenerationConfig[K],
   ) => void;
   updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
-  handlePastedFiles: (files: File[]) => void;
+  handlePastedFiles: (files: File[], replaceId?: string) => void;
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
@@ -160,7 +160,6 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             onFileSelect={handlePastedFiles}
             onGenerate={(prompt) => handleGenerate(prompt, undefined, { preventModal: true })}
             isGenerating={isGenerating}
-            images={imagesWithConfig}
             onSelectImage={(img) => handleAddToContext(img)}
           />
         )}
