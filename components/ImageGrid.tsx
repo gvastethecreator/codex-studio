@@ -225,6 +225,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         image.config.aspectRatio,
         undefined,
         image.mimeType,
+        image.localPath,
       );
       downloadImage(image.src, smartName);
     };

@@ -83,6 +83,7 @@ export interface SpriteAtlasJobLookup {
 
 export interface CreateSpriteAtlasServiceOptions {
   readLibraryDir: () => string;
+  allocateOutputGeneration?: (ownerKey: string) => number;
   readOutputContext?: (workspaceId?: string) => JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   createId?: () => string;
@@ -598,6 +599,7 @@ function runFingerprint(run: SpriteAtlasRun) {
 
 export function createSpriteAtlasService({
   readLibraryDir,
+  allocateOutputGeneration,
   readOutputContext,
   getCatalogImage,
   createId = randomUUID,
@@ -877,11 +879,12 @@ export function createSpriteAtlasService({
         createdAt: new Date(timestamp),
         extension: '.png',
       };
-      paths.atlasPath = captureWorkflowOutput(outputContext, outputInput);
-      paths.manifestPath = captureWorkflowOutput(outputContext, {
-        ...outputInput,
-        extension: '.json',
-      });
+      paths.atlasPath = captureWorkflowOutput(outputContext, outputInput, allocateOutputGeneration);
+      paths.manifestPath = captureWorkflowOutput(
+        outputContext,
+        { ...outputInput, extension: '.json' },
+        allocateOutputGeneration,
+      );
       const contract = createSpriteAtlasContract({ ...input });
       const run: SpriteAtlasRun = {
         id: runId,

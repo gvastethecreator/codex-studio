@@ -63,6 +63,7 @@ export interface AnimationSequenceService {
 
 export interface CreateAnimationSequenceServiceOptions {
   readLibraryDir: () => string;
+  allocateOutputGeneration?: (ownerKey: string) => number;
   readOutputContext?: (workspaceId?: string) => JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   /** Stored job reads for reconciliation. Defaults to the Studio database. */
@@ -344,6 +345,7 @@ function resolveSourcePath({
 
 export function createAnimationSequenceService({
   readLibraryDir,
+  allocateOutputGeneration,
   readOutputContext,
   getCatalogImage,
   getJob = (jobId) => getStoredJob(jobId),
@@ -607,7 +609,7 @@ export function createAnimationSequenceService({
         createdAt: new Date(timestamp),
         extension: '.gif',
       };
-      paths.gifPath = captureWorkflowOutput(outputContext, outputInput);
+      paths.gifPath = captureWorkflowOutput(outputContext, outputInput, allocateOutputGeneration);
       paths.exportsDir = path.dirname(paths.gifPath);
       paths.outputContext = outputContext.output ?? outputContext;
       const contract = createAnimationSequenceContract(input);

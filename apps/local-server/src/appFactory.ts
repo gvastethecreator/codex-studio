@@ -14,6 +14,7 @@ import {
 } from './antigravityRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
+import { updateCatalogImageFileSize } from './catalog';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
 import { listAssets } from './db/assets';
 import { listLogs } from './db/events';
@@ -600,6 +601,8 @@ export async function createStudioApp(
       catalogStore,
       catalogCommands,
       embedMetadata,
+      getJob,
+      updateCatalogImageFileSize,
     }),
   );
 

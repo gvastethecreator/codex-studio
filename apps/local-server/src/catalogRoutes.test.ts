@@ -1,9 +1,14 @@
+import { mkdtempSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 
 import type { CatalogImage } from '../../../packages/shared/src';
 import { createCatalogRoutes, createMemoryCatalogStore } from './catalogRoutes';
 import { createCatalogCommands } from './catalogCommands';
 import type { QueryCatalogFilters, StudioCatalogStore } from './catalogStore';
+import { embedMetadata, extractMetadata } from './metadataEmbedder';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   return {
@@ -34,7 +39,14 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   };
 }
 
-function createRoutes(store: StudioCatalogStore) {
+function createRoutes(
+  store: StudioCatalogStore,
+  embed: typeof embedMetadata = async (filePath: string) => ({
+    filePath,
+    bytesWritten: 0,
+    format: 'png' as const,
+  }),
+) {
   return createCatalogRoutes({
     catalogStore: store,
     catalogCommands: createCatalogCommands({
@@ -45,15 +57,73 @@ function createRoutes(store: StudioCatalogStore) {
       purgeCatalogImage: (...args) => store.purgeCatalogImage(...args),
       publishEvent: () => {},
     }),
-    embedMetadata: async (filePath) => ({
-      filePath,
-      bytesWritten: 0,
-      format: 'png' as const,
-    }),
+    embedMetadata: embed,
+    getJob: () => null,
+    updateCatalogImageFileSize: (id, fileSizeBytes) => {
+      const image = store.getCatalogImage(id);
+      if (image) image.fileSizeBytes = fileSizeBytes;
+      return image;
+    },
   });
 }
 
 describe('catalog routes', () => {
+  it('preserves converted image metadata and refreshes its Catalog file size', async () => {
+    const directory = mkdtempSync(path.join(os.tmpdir(), 'studio-catalog-embed-'));
+    try {
+      const filePath = path.join(directory, 'converted.png');
+      const original = await sharp({
+        create: { width: 2, height: 2, channels: 3, background: '#765432' },
+      })
+        .png()
+        .toBuffer();
+      writeFileSync(filePath, original);
+      const existingMetadata = {
+        prompt: 'Exact embedded prompt',
+        model: 'embedded-model',
+        negativePrompt: 'Original exclusions',
+        generatedAt: '2026-05-20T00:00:00.000Z',
+        studioVersion: '0.0.0',
+      };
+      await embedMetadata(filePath, existingMetadata);
+      const image = catalogImage({
+        filePath,
+        fileSizeBytes: original.length,
+        jobId: null,
+        generationConfig: {
+          model: 'catalog-model',
+          imageConversion: {
+            originalPrompt: 'Compiled original prompt',
+            originalModel: 'original-model',
+          },
+        },
+      });
+      const routes = createRoutes(createMemoryCatalogStore([image]), embedMetadata);
+      const response = await routes.request('/image-1/embed', { method: 'POST' });
+      expect(response.status).toBe(200);
+      await expect(extractMetadata(filePath)).resolves.toMatchObject({
+        ...existingMetadata,
+        libraryId: image.libraryId,
+        catalogId: image.id,
+      });
+      const fileSizeBytes = statSync(filePath).size;
+      await expect(response.json()).resolves.toMatchObject({ bytesWritten: fileSizeBytes });
+      await expect((await routes.request('/image-1')).json()).resolves.toMatchObject({
+        fileSizeBytes,
+      });
+
+      // A converted copy with stripped metadata can still recover its original provenance.
+      writeFileSync(filePath, original);
+      expect((await routes.request('/image-1/embed', { method: 'POST' })).status).toBe(200);
+      await expect(extractMetadata(filePath)).resolves.toMatchObject({
+        prompt: 'Compiled original prompt',
+        model: 'original-model',
+      });
+    } finally {
+      rmSync(directory, { recursive: true, force: true });
+    }
+  });
+
   it('queries through an injected Catalog Store', async () => {
     const calls: QueryCatalogFilters[] = [];
     const image = catalogImage({

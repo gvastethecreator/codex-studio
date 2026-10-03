@@ -10,17 +10,46 @@ export const downloadImage = (src: string, filename: string) => {
   document.body.removeChild(link);
 };
 
-/**
- * Generates a professional filename: ###-prompt-short-max-6-words-model-resolution with the original image extension.
- */
+const IMAGE_EXTENSIONS: Record<string, string> = {
+  'image/png': 'png',
+  'image/jpeg': 'jpg',
+  'image/webp': 'webp',
+  'image/gif': 'gif',
+  'image/avif': 'avif',
+  'image/svg+xml': 'svg',
+};
+
+function safeDownloadFilename(value: string) {
+  const name = value.replace(/[<>:"/\\|?*\x00-\x1f]/g, '-').replace(/[. ]+$/, '') || 'image';
+  return /^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(name) ? `_${name}` : name;
+}
+
+/** Keep the saved basename, or build a name for an image that has no local file. */
 export const generateSmartFilename = (
   prompt: string | undefined,
   id: string,
   model: string = 'unknown-model',
   resolution: string = 'unknown-res',
   index?: number,
-  mimeType = 'image/png',
+  mimeType?: string,
+  localPath?: string,
 ) => {
+  const extension = IMAGE_EXTENSIONS[mimeType?.split(';')[0].trim().toLowerCase() ?? ''];
+  const basename = localPath?.split(/[\\/]/).pop();
+  if (basename && basename !== '.' && basename !== '..') {
+    const name = safeDownloadFilename(basename);
+    const suffix = /\.([^.]+)$/.exec(name);
+    const savedExtension = suffix?.[1].toLowerCase();
+    if (
+      savedExtension &&
+      (!extension ||
+        extension === savedExtension ||
+        (extension === 'jpg' && savedExtension === 'jpeg'))
+    ) {
+      return name;
+    }
+    return `${suffix ? name.slice(0, -suffix[0].length) : name}.${extension ?? 'png'}`;
+  }
   // 1. Index: ### (e.g. 001, 002) or short ID
   const idxStr =
     index !== undefined
@@ -42,20 +71,10 @@ export const generateSmartFilename = (
 
   // 3. Model and Resolution
   const safeModel = model.replace(/[^a-zA-Z0-9-]/g, '-');
-  const safeResolution = resolution.replace(/[^a-zA-Z0-9-:]/g, '-');
-
-  const extension =
-    (
-      {
-        'image/png': 'png',
-        'image/jpeg': 'jpg',
-        'image/webp': 'webp',
-        'image/gif': 'gif',
-        'image/avif': 'avif',
-        'image/svg+xml': 'svg',
-      } as Record<string, string>
-    )[mimeType] ?? 'png';
-  return `${idxStr}-${slug}-${safeModel}-${safeResolution}.${extension}`;
+  const safeResolution = resolution.replace(/[^a-zA-Z0-9-]/g, '-');
+  return safeDownloadFilename(
+    `${idxStr}-${slug}-${safeModel}-${safeResolution}.${extension ?? 'png'}`,
+  );
 };
 
 export const downloadMultipleImagesAsZip = async (
@@ -68,7 +87,7 @@ export const downloadMultipleImagesAsZip = async (
   ]);
   const zip = new JSZip();
 
-  await Promise.all(
+  const files = await Promise.all(
     images.map(async (img, index) => {
       try {
         const blob = await fetchImageBlob(img.src);
@@ -79,13 +98,33 @@ export const downloadMultipleImagesAsZip = async (
           img.config.aspectRatio,
           index + 1,
           blob.type || img.mimeType,
+          img.localPath,
         );
-        zip.file(filename, blob);
+        return { filename, blob };
       } catch (err) {
         runtimeLogger.error(`Failed to fetch image ${img.id} for zip`, err);
+        return null;
       }
     }),
   );
+  const nameKey = (name: string) => name.normalize('NFC').toLowerCase();
+  const originalNames = new Set(files.flatMap((file) => (file ? [nameKey(file.filename)] : [])));
+  const usedNames = new Set<string>();
+  // Allocate in selection order, independent of network completion order. Keep each original
+  // basename available when a duplicate needs a suffix, including on case-insensitive systems.
+  for (const file of files) {
+    if (!file) continue;
+    let filename = file.filename;
+    const dot = filename.lastIndexOf('.');
+    if (usedNames.has(nameKey(filename))) {
+      let index = 2;
+      do {
+        filename = `${file.filename.slice(0, dot)}-${String(index++).padStart(6, '0')}${file.filename.slice(dot)}`;
+      } while (originalNames.has(nameKey(filename)) || usedNames.has(nameKey(filename)));
+    }
+    usedNames.add(nameKey(filename));
+    zip.file(filename, file.blob);
+  }
   const content = await zip.generateAsync({ type: 'blob' });
   saveAs(content, zipFilename);
 };

@@ -20,6 +20,7 @@ async function setup() {
   const jobs = new Map<string, Job>();
   const options = {
     readLibraryDir: () => root,
+    allocateOutputGeneration: () => 1,
     getCatalogImage: (imageId: string) => catalog.get(imageId) ?? null,
     getJob: (jobId: string) => jobs.get(jobId) ?? null,
   };

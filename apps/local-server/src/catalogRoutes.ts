@@ -7,7 +7,10 @@ import type {
 } from '../../../packages/shared/src';
 import type { CatalogCommandResult } from './catalogCommands';
 import type { StudioCatalogStore } from './catalogStore';
-import type { embedMetadata as embedMetadataFn } from './metadataEmbedder';
+import { extractMetadata, type embedMetadata as embedMetadataFn } from './metadataEmbedder';
+import type { getJob as getJobFn } from './db/jobs';
+import { catalogImageMetadata, jobImageMetadata } from './providers/jobImageMetadata';
+import type { updateCatalogImageFileSize as updateCatalogImageFileSizeFn } from './catalog';
 
 interface CatalogCommandsBoundary {
   update(
@@ -26,6 +29,8 @@ export interface CreateCatalogRoutesDependencies {
   catalogStore: StudioCatalogStore;
   catalogCommands: CatalogCommandsBoundary;
   embedMetadata: typeof embedMetadataFn;
+  getJob: typeof getJobFn;
+  updateCatalogImageFileSize: typeof updateCatalogImageFileSizeFn;
 }
 
 function jsonNotFound(c: { json: (payload: unknown, status: 404) => Response }) {
@@ -72,6 +77,8 @@ export function createCatalogRoutes({
   catalogStore,
   catalogCommands,
   embedMetadata,
+  getJob,
+  updateCatalogImageFileSize,
 }: CreateCatalogRoutesDependencies) {
   const routes = new Hono();
 
@@ -148,19 +155,23 @@ export function createCatalogRoutes({
   routes.post('/:id/embed', async (c) => {
     const image = catalogStore.getCatalogImage(c.req.param('id'));
     if (!image) return jsonNotFound(c);
+    const job = image.jobId ? getJob(image.jobId) : null;
+    const metadata = job
+      ? jobImageMetadata(job)
+      : ((await extractMetadata(image.filePath)) ?? catalogImageMetadata(image));
     const result = await embedMetadata(image.filePath, {
-      prompt: image.prompt || '',
       negativePrompt: image.negativePrompt,
       aspectRatio: image.aspectRatio,
       imageSize: image.imageSize,
-      model: 'codex-imagegen',
       recipe: image.recipeId,
       batchId: image.batchId,
       generatedAt: image.createdAt,
       studioVersion: '0.0.0',
+      ...metadata,
       libraryId: image.libraryId,
       catalogId: image.id,
     });
+    updateCatalogImageFileSize(image.id, result.bytesWritten);
     return c.json(result);
   });
 

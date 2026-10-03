@@ -2,11 +2,13 @@ import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import { createGenerationTaskSpec, type Job } from '../../../packages/shared/src';
 import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
 import { createSpriteAtlasService } from './spriteAtlasService';
+
+vi.mock('./db/outputGenerations', () => ({ getOutputGeneration: () => 1 }));
 
 async function writeStrip(filePath: string, frames: number, cellWidth: number, cellHeight: number) {
   await sharp({

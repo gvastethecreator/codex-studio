@@ -2,10 +2,12 @@ import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'no
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import type { CatalogImage, Job } from '../../../packages/shared/src';
 
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
+
+vi.mock('./db/outputGenerations', () => ({ getOutputGeneration: () => 1 }));
 
 async function writeFixturePng(filePath: string, color: string, size = 1024, height = size) {
   await sharp({

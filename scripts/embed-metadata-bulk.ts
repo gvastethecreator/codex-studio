@@ -1,6 +1,9 @@
 import { initStudio } from '../apps/local-server/src/init';
 import { getDb } from '../apps/local-server/src/db/connection';
 import { embedMetadata, extractMetadata } from '../apps/local-server/src/metadataEmbedder';
+import { getJob } from '../apps/local-server/src/db/jobs';
+import { jobImageMetadata } from '../apps/local-server/src/providers/jobImageMetadata';
+import { updateCatalogImageFileSize } from '../apps/local-server/src/catalog';
 
 initStudio();
 
@@ -18,12 +21,12 @@ for (const row of rows) {
     continue;
   }
   try {
-    await embedMetadata(row.file_path, {
-      prompt: row.prompt || '',
+    const job = row.job_id ? getJob(row.job_id) : null;
+    const result = await embedMetadata(row.file_path, {
+      ...(job ? jobImageMetadata(job) : { prompt: row.prompt || '', model: 'unknown' }),
       negativePrompt: row.negative_prompt,
       aspectRatio: row.aspect_ratio,
       imageSize: row.image_size,
-      model: 'codex-imagegen',
       recipe: row.recipe_id,
       batchId: row.batch_id,
       generatedAt: row.created_at,
@@ -31,6 +34,7 @@ for (const row of rows) {
       libraryId: row.library_id,
       catalogId: row.id,
     });
+    updateCatalogImageFileSize(row.id, result.bytesWritten);
     embedded += 1;
   } catch {
     failed += 1;

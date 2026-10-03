@@ -15,6 +15,7 @@ export interface WorkspaceSlugInput {
 
 export interface OutputAssetPathContext {
   jobId: string;
+  generationNumber?: number;
   workspaceSlug?: string | null;
   providerId: string | null | undefined;
   model: string | null | undefined;

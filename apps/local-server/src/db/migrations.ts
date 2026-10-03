@@ -345,6 +345,16 @@ const DATABASE_MIGRATIONS = [
       ensureColumn(database, 'jobs', 'library_context_json', 'TEXT');
     },
   },
+  {
+    version: 10,
+    name: 'durable-output-generations',
+    migrate(database: Database) {
+      database.run(`CREATE TABLE output_generations (
+        generation_number INTEGER PRIMARY KEY AUTOINCREMENT,
+        owner_key TEXT NOT NULL UNIQUE
+      )`);
+    },
+  },
 ] as const;
 
 function backfillJobOperationalColumns(database: Database) {

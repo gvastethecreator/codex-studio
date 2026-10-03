@@ -8,9 +8,12 @@ import { ProviderExecutionUncertainError } from './workerErrors';
 import { SubscriptionHttpError } from './providers/subscriptionHttpError';
 import { extractSubscriptionHttpDiagnostic } from './providers/subscriptionHttpDiagnostic';
 
+vi.mock('./db/outputGenerations', () => ({ getOutputGeneration: () => 1 }));
+
 vi.mock('./catalog', () => ({
   getCatalogImageByJobId: vi.fn(() => null),
   registerCatalogImage: vi.fn(() => null),
+  updateCatalogImageFileSize: vi.fn(() => null),
 }));
 
 vi.mock('./db/assets', () => ({

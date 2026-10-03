@@ -4,7 +4,11 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import { getSettings } from './config';
-import { getCatalogImageByJobId, registerCatalogImage } from './catalog';
+import {
+  getCatalogImageByJobId,
+  registerCatalogImage,
+  updateCatalogImageFileSize,
+} from './catalog';
 import { addAsset, getAssetByJobId } from './db/assets';
 import { upsertCodexTurn } from './db/codexTurns';
 import { addJobEvent } from './db/events';
@@ -70,6 +74,7 @@ export interface CreateWorkerControllerDependencies {
   getSettings?: typeof getSettings;
   registerCatalogImage?: typeof registerCatalogImage;
   getCatalogImageByJobId?: typeof getCatalogImageByJobId;
+  updateCatalogImageFileSize?: typeof updateCatalogImageFileSize;
   addAsset?: typeof addAsset;
   getAssetByJobId?: typeof getAssetByJobId;
   addJobEvent?: typeof addJobEvent;
@@ -132,6 +137,7 @@ export function createWorkerController({
   getSettings: getSettingsFn = getSettings,
   registerCatalogImage: registerCatalogImageFn = registerCatalogImage,
   getCatalogImageByJobId: getCatalogImageByJobIdFn = getCatalogImageByJobId,
+  updateCatalogImageFileSize: updateCatalogImageFileSizeFn = updateCatalogImageFileSize,
   addAsset: addAssetFn = addAsset,
   getAssetByJobId: getAssetByJobIdFn = getAssetByJobId,
   addJobEvent: addJobEventFn = addJobEvent,
@@ -272,6 +278,7 @@ export function createWorkerController({
   const assetFinalizer = createWorkerAssetFinalizer({
     registerCatalogImage: registerCatalogImageFn,
     getCatalogImageByJobId: getCatalogImageByJobIdFn,
+    updateCatalogImageFileSize: updateCatalogImageFileSizeFn,
     addAsset: addAssetFn,
     getAssetByJobId: getAssetByJobIdFn,
     addJobEvent: recordJobEvent,
@@ -283,7 +290,6 @@ export function createWorkerController({
     logger,
     embedMetadata: embedMetadataFn,
     parsePromptTransport: parsePromptTransportFn,
-    resolveExecutionOptions,
     resolveCatalogGenerationConfig: buildCatalogGenerationConfigFromJob,
     resolveGeneratedAssetTargetPath: assetPathing.resolveGeneratedAssetTargetPath,
     moveGeneratedAssetToPath: assetPathing.moveGeneratedAssetToPath,
@@ -395,8 +401,6 @@ export function createWorkerController({
           providerId: 'codex',
           options: {
             logPrefix: 'Codex',
-            embedMetadata: true,
-            executionOptions,
           },
         });
       }),

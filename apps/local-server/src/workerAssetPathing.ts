@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, copyFileSync, unlinkSync, readFileSync, constants } from 'node:fs';
 import { reserveOutputPath } from './outputDestination';
+import { getOutputGeneration } from './db/outputGenerations';
 import { formatOutputRelativePath } from '../../../packages/shared/src/outputLayout';
 import path from 'node:path';
 import {
@@ -72,6 +73,7 @@ interface CreateWorkerAssetPathingDependencies {
   resolveLibraryPath: typeof resolveLibraryPath;
   getWorkspace?: (id: string) => WorkerAssetWorkspace | null;
   listWorkspaces?: () => WorkerAssetWorkspace[];
+  allocateOutputGeneration?: (ownerKey: string) => number;
 }
 
 function resolveJobWorkspaceSlug(
@@ -107,6 +109,7 @@ export function createWorkerAssetPathing({
   resolveLibraryPath,
   getWorkspace,
   listWorkspaces,
+  allocateOutputGeneration = getOutputGeneration,
 }: CreateWorkerAssetPathingDependencies) {
   function resolveGeneratedAssetTargetPath(job: Job, providerId: string | null, extension: string) {
     const executionOptions = resolveExecutionOptions(job.execution);
@@ -118,6 +121,9 @@ export function createWorkerAssetPathing({
         });
     const context = {
       jobId: job.id,
+      generationNumber: settings.outputOrganization.fileNameTemplate.includes('{generation}')
+        ? allocateOutputGeneration(`job:${job.id}`)
+        : undefined,
       workspaceSlug:
         job.libraryContext?.workspaceSlug ??
         resolveJobWorkspaceSlug(job, getWorkspace, listWorkspaces),

@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, realpathSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { getOutputGeneration } from './db/outputGenerations';
 import type { JobLibraryContext } from '../../../packages/shared/src/types';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import {
@@ -49,16 +50,22 @@ export function reserveOutputPath(root: string, target: string, stateRoot: strin
   throw new Error('Too many files share this output name. Choose another filename template.');
 }
 
-export function captureWorkflowOutput(context: JobLibraryContext, input: OutputLayoutContext) {
+export function captureWorkflowOutput(
+  context: JobLibraryContext,
+  input: OutputLayoutContext,
+  allocateOutputGeneration: (ownerKey: string) => number = getOutputGeneration,
+) {
   const root = context.output?.rootPath ?? path.join(context.rootPath, 'outputs');
   mkdirSync(root, { recursive: true });
-  const relative = formatOutputRelativePath(
-    context.outputOrganization ?? createDefaultEditableStudioSettings().outputOrganization,
-    {
-      ...input,
-      workspaceSlug: context.workspaceSlug,
-    },
-  );
+  const organization =
+    context.outputOrganization ?? createDefaultEditableStudioSettings().outputOrganization;
+  const relative = formatOutputRelativePath(organization, {
+    ...input,
+    generationNumber: organization.fileNameTemplate.includes('{generation}')
+      ? allocateOutputGeneration(`workflow:${input.jobId}`)
+      : undefined,
+    workspaceSlug: context.workspaceSlug,
+  });
   return reserveOutputPath(
     root,
     path.resolve(root, relative),

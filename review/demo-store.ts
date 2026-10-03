@@ -280,7 +280,7 @@ export function resetDemoStore(
   workspaces.set(DEFAULT_WORKSPACE, makeWorkspace(DEFAULT_WORKSPACE, 'Studio'));
   workspaces.set(SECOND_WORKSPACE, makeWorkspace(SECOND_WORKSPACE, 'Noir tests'));
   settings = {
-    schemaVersion: 'editable-studio-settings/v1',
+    schemaVersion: 'editable-studio-settings/v2',
     preferredWorkflow: 'default',
     outputDirectory: null,
     outputDirectoryId: null,

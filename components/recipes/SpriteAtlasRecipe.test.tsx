@@ -1,7 +1,7 @@
 /** @vitest-environment jsdom */
 import React from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { DEFAULT_GENERATION_CONFIG } from '../../constants';
 import {
   createSpriteAtlasContract,
@@ -257,13 +257,17 @@ describe('SpriteAtlasRecipe', () => {
       />,
     );
     await screen.findByRole('heading', { name: 'Live atlas' });
+    // The heading can commit before the selected run's event subscription effect runs.
+    await waitFor(() => expect(workflowRunListeners.size).toBe(1));
 
     const emit = (payload: WorkflowRunUpdatedEventPayload) =>
       workflowRunListeners.forEach((listener) => listener(payload));
-    emit({ recipeId: 'sprite-atlas', runId: 'another-run' });
-    emit({ recipeId: 'animation-sequence', runId: 'atlas-live' });
+    act(() => {
+      emit({ recipeId: 'sprite-atlas', runId: 'another-run' });
+      emit({ recipeId: 'animation-sequence', runId: 'atlas-live' });
+    });
     expect(getRun).not.toHaveBeenCalled();
-    emit({ recipeId: 'sprite-atlas', runId: 'atlas-live' });
+    await act(async () => emit({ recipeId: 'sprite-atlas', runId: 'atlas-live' }));
     await screen.findByRole('heading', { name: 'Reconciled atlas' });
     expect(getRun).toHaveBeenCalledWith('atlas-live');
 

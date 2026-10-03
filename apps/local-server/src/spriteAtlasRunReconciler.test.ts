@@ -78,6 +78,7 @@ async function setup() {
   const imageByJob = new Map<string, string>();
   const service = createSpriteAtlasService({
     readLibraryDir: () => root,
+    allocateOutputGeneration: () => 1,
     getCatalogImage: (imageId) => images.get(imageId) ?? null,
   });
   const participant = createSpriteAtlasRunParticipant(service, {

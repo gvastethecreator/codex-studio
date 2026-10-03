@@ -13,6 +13,10 @@ import {
 import type { StudioOutputOrganizationSettings } from '../../packages/shared/src/studioSettings';
 
 const NAME_PRESETS = [
+  {
+    label: 'Date (UTC) · generation · style · prompt',
+    value: '{timestampUtc}_{generation}_{style}_{prompt}',
+  },
   { label: 'Date · style · prompt', value: '{date}_{style}_{prompt}' },
   { label: 'Date · time · prompt', value: '{date}_{time}_{prompt}' },
   { label: 'Timestamp · provider · job', value: '{timestamp}-{provider}-{jobId}' },
@@ -41,6 +45,7 @@ export function SettingsOutputPanel({
     ? null
     : formatOutputRelativePath(organization, {
         jobId: 'job-42',
+        generationNumber: 42,
         workspaceSlug: 'my-workspace',
         providerId: value.defaultProviderId,
         model: 'gpt-image',
@@ -144,7 +149,9 @@ export function SettingsOutputPanel({
       <label className="settings-row">
         <span>
           <strong>Filename preset</strong>
-          <small>A numeric suffix resolves duplicate names without replacing files.</small>
+          <small>
+            UTC date, time and a padded generation number keep names in generation order.
+          </small>
         </span>
         <select
           className="studio-field"
@@ -197,7 +204,8 @@ export function SettingsOutputPanel({
             {root.replaceAll('\\', '/')}/{relative}
           </output>
           <small>
-            Based on an example job. Running jobs keep the destination captured when they started.
+            Generation numbers continue across days and restarts. Running jobs keep their captured
+            filename template.
           </small>
         </div>
       )}

@@ -1,9 +1,13 @@
 import { Effect, Result } from 'effect';
 import { providerOperation, providerPromise } from './providers/providerEffect';
-import { statSync } from 'node:fs';
+import { readFileSync, statSync } from 'node:fs';
 import { authoringSharp } from './sharpAuthoringAdapter';
 import path from 'node:path';
-import type { getCatalogImageByJobId, registerCatalogImage } from './catalog';
+import type {
+  getCatalogImageByJobId,
+  registerCatalogImage,
+  updateCatalogImageFileSize,
+} from './catalog';
 import type { addAsset, getAssetByJobId } from './db/assets';
 import type { addJobEvent } from './db/events';
 import type { getJob, updateJobFinalization, updateJobStatus } from './db/jobs';
@@ -14,12 +18,13 @@ import type { log } from './logger';
 import type { embedMetadata } from './metadataEmbedder';
 import type { parsePromptTransport } from '../../../packages/shared/src/promptTransport';
 import type { Job } from '../../../packages/shared/src/types';
-import type { resolveJobExecutionOptions } from './codex/executionOptions';
+import { jobImageMetadata } from './providers/jobImageMetadata';
 import type { resolveJobCatalogContext } from './workerCatalogContext';
 
 interface WorkerAssetFinalizerDependencies {
   registerCatalogImage: typeof registerCatalogImage;
   getCatalogImageByJobId: typeof getCatalogImageByJobId;
+  updateCatalogImageFileSize: typeof updateCatalogImageFileSize;
   addAsset: typeof addAsset;
   getAssetByJobId: typeof getAssetByJobId;
   addJobEvent: typeof addJobEvent;
@@ -31,7 +36,6 @@ interface WorkerAssetFinalizerDependencies {
   logger: typeof log;
   embedMetadata: typeof embedMetadata;
   parsePromptTransport: typeof parsePromptTransport;
-  resolveExecutionOptions: typeof resolveJobExecutionOptions;
   resolveCatalogGenerationConfig: (job: Job) => Record<string, unknown>;
   resolveGeneratedAssetTargetPath: (
     job: Job,
@@ -45,8 +49,6 @@ interface WorkerAssetFinalizerDependencies {
 
 interface FinalizeWorkerAssetOptions {
   logPrefix: string;
-  embedMetadata?: boolean;
-  executionOptions?: ReturnType<typeof resolveJobExecutionOptions>;
   width?: number | null;
   height?: number | null;
 }
@@ -54,6 +56,7 @@ interface FinalizeWorkerAssetOptions {
 export function createWorkerAssetFinalizer({
   registerCatalogImage,
   getCatalogImageByJobId,
+  updateCatalogImageFileSize,
   addAsset,
   getAssetByJobId,
   addJobEvent,
@@ -110,7 +113,7 @@ export function createWorkerAssetFinalizer({
           if (job.sourceSpec?.output.background === 'transparent') {
             const stats = Result.getOrThrowWith(
               yield* Effect.result(
-                providerPromise(() => authoringSharp(organizedImagePath).stats()),
+                providerPromise(() => authoringSharp(readFileSync(organizedImagePath)).stats()),
               ),
               (error) => error,
             );
@@ -184,6 +187,43 @@ export function createWorkerAssetFinalizer({
             : parsePromptTransport(job.finalPromptUsed);
 
           const existingCatalogImage = getCatalogImageByJobId(job.id, asset.filePath);
+          let metadataEmbedded = false;
+          if (
+            ['.png', '.jpg', '.jpeg', '.webp'].includes(path.extname(asset.filePath).toLowerCase())
+          ) {
+            yield* providerPromise(async () => {
+              try {
+                await embedMetadata(asset.filePath, {
+                  ...jobImageMetadata(job),
+                  negativePrompt: parsedPrompt.negativePrompt || null,
+                  aspectRatio: parsedPrompt.aspectRatio,
+                  imageSize: parsedPrompt.imageSize,
+                  recipe: parsedPrompt.recipeId,
+                  batchId: catalogContext.batchId ?? job.id,
+                  generatedAt: asset.createdAt,
+                  studioVersion: '0.0.0',
+                  libraryId: assetLibrary?.libraryId ?? null,
+                });
+                metadataEmbedded = true;
+              } catch (error) {
+                logger(
+                  'warn',
+                  'metadata',
+                  `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
+                  job.id,
+                );
+              }
+            });
+          }
+          const fileSizeBytes = statSync(asset.filePath).size;
+          if (
+            existingCatalogImage &&
+            metadataEmbedded &&
+            existingCatalogImage.fileSizeBytes !== fileSizeBytes
+          ) {
+            const updated = updateCatalogImageFileSize(existingCatalogImage.id, fileSizeBytes);
+            if (updated) publishEvent('catalog.updated', updated);
+          }
           const catalogImage =
             existingCatalogImage ??
             registerCatalogImage({
@@ -197,7 +237,7 @@ export function createWorkerAssetFinalizer({
               width: asset.width,
               height: asset.height,
               mimeType: asset.mimeType,
-              fileSizeBytes: statSync(asset.filePath).size,
+              fileSizeBytes,
               jobId: asset.jobId,
               workspaceId: catalogContext.workspaceId,
               batchId: catalogContext.batchId,
@@ -211,37 +251,6 @@ export function createWorkerAssetFinalizer({
             assetId: asset.id,
             catalogId: catalogImage.id,
           });
-
-          if (options.embedMetadata && options.executionOptions) {
-            const executionOptions = options.executionOptions;
-            Result.getOrThrowWith(
-              yield* Effect.result(
-                providerPromise(() =>
-                  embedMetadata(asset.filePath, {
-                    prompt: job.finalPromptUsed,
-                    negativePrompt: parsedPrompt.negativePrompt || null,
-                    aspectRatio: parsedPrompt.aspectRatio,
-                    imageSize: parsedPrompt.imageSize,
-                    model: executionOptions.model,
-                    recipe: parsedPrompt.recipeId,
-                    batchId: catalogContext.batchId ?? job.id,
-                    generatedAt: new Date().toISOString(),
-                    studioVersion: '0.0.0',
-                    libraryId: catalogImage.libraryId,
-                    catalogId: catalogImage.id,
-                  }).catch((error) => {
-                    logger(
-                      'warn',
-                      'metadata',
-                      `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
-                      job.id,
-                    );
-                  }),
-                ),
-              ),
-              (error) => error,
-            );
-          }
 
           if (!existingAsset) {
             addJobEvent(job.id, 'asset.created', `${options.logPrefix} asset imported.`, {

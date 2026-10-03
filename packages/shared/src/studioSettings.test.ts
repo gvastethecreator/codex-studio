@@ -3,13 +3,14 @@ import { describe, expect, it } from 'vitest';
 import {
   createDefaultEditableStudioSettings,
   mergeEditableStudioSettingsPatch,
+  normalizeEditableStudioSettings,
   sanitizeEditableStudioSettingsPatch,
 } from './studioSettings';
 
 describe('studioSettings', () => {
   it('creates non-secret editable settings separate from bootstrap config', () => {
     expect(createDefaultEditableStudioSettings()).toEqual({
-      schemaVersion: 'editable-studio-settings/v1',
+      schemaVersion: 'editable-studio-settings/v2',
       preferredWorkflow: 'default',
       outputDirectory: null,
       outputDirectoryId: null,
@@ -25,7 +26,7 @@ describe('studioSettings', () => {
       preferredOutputPath: null,
       outputOrganization: {
         subfolderTokens: [],
-        fileNameTemplate: '{date}_{style}_{prompt}',
+        fileNameTemplate: '{timestampUtc}_{generation}_{style}_{prompt}',
       },
       providerDefaults: {
         codex: {
@@ -37,6 +38,26 @@ describe('studioSettings', () => {
       },
       updatedAt: null,
     });
+    const previous = {
+      ...createDefaultEditableStudioSettings(),
+      schemaVersion: 'editable-studio-settings/v1',
+      outputOrganization: {
+        subfolderTokens: ['workspace'],
+        fileNameTemplate: '{date}_{style}_{prompt}',
+      },
+    };
+    expect(normalizeEditableStudioSettings(previous).outputOrganization).toEqual({
+      subfolderTokens: ['workspace'],
+      fileNameTemplate: '{timestampUtc}_{generation}_{style}_{prompt}',
+    });
+    for (const settings of [
+      { ...previous, schemaVersion: 'editable-studio-settings/v2' },
+      { ...previous, outputOrganization: { fileNameTemplate: '{jobId}' } },
+    ]) {
+      expect(normalizeEditableStudioSettings(settings).outputOrganization.fileNameTemplate).toBe(
+        settings.outputOrganization.fileNameTemplate,
+      );
+    }
   });
 
   it('sanitizes unknown and secret-like fields before persistence', () => {

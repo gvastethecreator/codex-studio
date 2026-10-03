@@ -7,7 +7,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { createDefaultEditableStudioSettings, type Job } from '../../../packages/shared/src';
 import { createWorkerAssetPathing, inferGeneratedAssetMimeType } from './workerAssetPathing';
 
@@ -43,6 +43,53 @@ function workspaceLayoutSettings() {
 }
 
 describe('workerAssetPathing', () => {
+  it('keeps admission numbers in filenames when jobs finish out of order and share a second', () => {
+    const root = mkdtempSync(path.join(os.tmpdir(), 'output-generation-order-'));
+    try {
+      const settings = createDefaultEditableStudioSettings();
+      const allocateOutputGeneration = vi.fn((owner: string) => (owner === 'job:ninth' ? 9 : 10));
+      const pathing = createWorkerAssetPathing({
+        resolveExecutionOptions: () => ({
+          model: 'gpt-5.4-mini',
+          reasoningEffort: 'medium',
+          serviceTier: null,
+        }),
+        readEditableStudioSettings: () => settings,
+        getSetting: () => null,
+        setSetting: () => {},
+        resolveLibraryPath: (...segments) => path.join(root, ...segments),
+        allocateOutputGeneration,
+      });
+      const libraryContext = {
+        libraryId: 'main',
+        rootPath: root,
+        outputOrganization: settings.outputOrganization,
+      };
+      const createdAt = '2026-10-03T14:00:00.000Z';
+      const tenth = createJob({ id: 'tenth', createdAt, libraryContext });
+      const ninth = createJob({ id: 'ninth', createdAt, libraryContext });
+      const laterPath = pathing.resolveGeneratedAssetTargetPath(tenth, 'chatgpt', '.png');
+      const earlierPath = pathing.resolveGeneratedAssetTargetPath(ninth, 'chatgpt', '.png');
+      expect([laterPath, earlierPath].sort()).toEqual([earlierPath, laterPath]);
+      expect(path.basename(earlierPath)).toContain('_000009_');
+      expect(path.basename(laterPath)).toContain('_000010_');
+      expect(pathing.resolveGeneratedAssetTargetPath(ninth, 'chatgpt', '.png')).toBe(earlierPath);
+      expect(allocateOutputGeneration).toHaveBeenCalledWith('job:ninth');
+
+      const atlasGeneration = vi.fn(() => 11);
+      const input = { jobId: 'atlas', createdAt: new Date(createdAt), extension: '.png' };
+      const png = captureWorkflowOutput(libraryContext, input, atlasGeneration);
+      const json = captureWorkflowOutput(
+        libraryContext,
+        { ...input, extension: '.json' },
+        atlasGeneration,
+      );
+      expect(path.parse(png).name).toBe(path.parse(json).name);
+      expect(atlasGeneration.mock.calls).toEqual([['workflow:atlas'], ['workflow:atlas']]);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
   it('uses the shared preview, reserves collisions, and keeps a captured destination', () => {
     const root = mkdtempSync(path.join(os.tmpdir(), 'output-capture-'));
     try {
@@ -249,6 +296,7 @@ describe('workerAssetPathing', () => {
           serviceTier: null,
         }),
         readEditableStudioSettings: () => settings,
+        allocateOutputGeneration: () => 1,
         getSetting: () => null,
         setSetting: () => {},
         resolveLibraryPath: (...segments: string[]) => path.join(tempRoot, ...segments),

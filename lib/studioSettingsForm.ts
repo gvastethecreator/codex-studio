@@ -1,11 +1,12 @@
 import type { GenerationProviderId } from '../packages/shared/src/generationContracts';
 import type { PreferredWorkflow } from '../packages/shared/src/workflowCatalog';
 import { OUTPUT_FOLDER_TOKENS } from '../packages/shared/src/outputLayout';
-import type {
-  EditableStudioSettings,
-  EditableStudioSettingsPatch,
-  StudioOutputMode,
-  StudioOutputSubfolderToken,
+import {
+  createDefaultEditableStudioSettings,
+  type EditableStudioSettings,
+  type EditableStudioSettingsPatch,
+  type StudioOutputMode,
+  type StudioOutputSubfolderToken,
 } from '../packages/shared/src/studioSettings';
 
 export const OUTPUT_SUBFOLDER_PRESETS: {
@@ -57,7 +58,8 @@ export function createInitialStudioSettingsFormState(): StudioSettingsFormState 
     defaultOutputMode: 'studio_library',
     preferredOutputPath: '',
     outputSubfolderPreset: encodeSubfolderTokens([]),
-    outputFileNameTemplate: '{date}_{style}_{prompt}',
+    outputFileNameTemplate:
+      createDefaultEditableStudioSettings().outputOrganization.fileNameTemplate,
     autoDetectOutputSources: true,
     notifyOnUpdates: false,
     commandCenterCompactMode: false,

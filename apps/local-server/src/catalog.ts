@@ -451,6 +451,13 @@ export function updateCatalogImage(
   return getCatalogImage(id);
 }
 
+export function updateCatalogImageFileSize(id: string, fileSizeBytes: number) {
+  getDb()
+    .query('UPDATE catalog_images SET file_size_bytes = ? WHERE id = ?')
+    .run(fileSizeBytes, id);
+  return getCatalogImage(id);
+}
+
 export function softDeleteCatalogImage(id: string) {
   const image = getCatalogImage(id);
   if (!image || image.isDeleted) return image;

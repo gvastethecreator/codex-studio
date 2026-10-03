@@ -87,7 +87,7 @@ function inferMimeType(filePath: string) {
   return MIME_BY_EXTENSION[extname(filePath).toLowerCase()] ?? 'application/octet-stream';
 }
 
-function createGooglePromptText(payload: HostedImageApiCompiledPayload) {
+export function createGooglePromptText(payload: HostedImageApiCompiledPayload) {
   return payload.negativePrompt
     ? `${payload.prompt}\n\nAvoid: ${payload.negativePrompt}`
     : payload.prompt;

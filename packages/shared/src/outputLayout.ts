@@ -12,6 +12,8 @@ export const OUTPUT_NAME_TOKENS = [
   'date',
   'time',
   'timestamp',
+  'timestampUtc',
+  'generation',
   'workspace',
   'workflow',
   'provider',
@@ -24,6 +26,8 @@ export const OUTPUT_NAME_TOKENS = [
 ] as const;
 export interface OutputLayoutContext {
   jobId: string;
+  /** Stable sequence assigned when the generation is queued. */
+  generationNumber?: number;
   workspaceSlug?: string | null;
   providerId?: string | null;
   model?: string | null;
@@ -107,14 +111,23 @@ export function formatOutputRelativePath(
 ) {
   const error = validateOutputTemplate(organization.fileNameTemplate);
   if (error) throw new Error(error);
+  if (
+    organization.fileNameTemplate.includes('{generation}') &&
+    (!Number.isSafeInteger(context.generationNumber) || context.generationNumber! < 1)
+  ) {
+    throw new Error('A positive generation number is required for this filename template.');
+  }
   const date = context.createdAt ?? new Date();
   const pad = (value: number) => String(value).padStart(2, '0');
   const day = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
   const time = `${pad(date.getHours())}${pad(date.getMinutes())}${pad(date.getSeconds())}`;
+  const utc = date.toISOString();
   const values = {
     date: day,
     time,
     timestamp: `${day.replaceAll('-', '')}-${time}`,
+    timestampUtc: utc.slice(0, 10) + '_' + utc.slice(11, 19).replaceAll(':', '') + 'Z',
+    generation: String(context.generationNumber ?? '').padStart(6, '0'),
     workspace: cleanOutputPathPart(context.workspaceSlug, 'default'),
     workflow: cleanOutputPathPart(context.recipeId, 'default'),
     recipe: cleanOutputPathPart(context.recipeId, 'no-recipe'),

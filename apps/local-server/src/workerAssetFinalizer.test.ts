@@ -3,10 +3,11 @@ import { describe, expect, it, vi } from 'vitest';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import type { Job } from '../../../packages/shared/src';
+import { createGenerationTaskSpec, type Job } from '../../../packages/shared/src';
 import type { PromptTransportSnapshot } from '../../../packages/shared/src/promptTransport';
 import type { EmbedResult, ImageGenMetadata } from './metadataEmbedder';
 import { createWorkerAssetFinalizer } from './workerAssetFinalizer';
+import { jobImageMetadata } from './providers/jobImageMetadata';
 
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
@@ -17,6 +18,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
     sourceSpec: overrides.sourceSpec ?? null,
     status: overrides.status ?? 'running',
     execution: overrides.execution ?? null,
+    finalization: overrides.finalization ?? null,
     libraryContext: overrides.libraryContext ?? null,
     originalPrompt: overrides.originalPrompt ?? 'prompt',
     expandedPrompt: overrides.expandedPrompt ?? null,
@@ -29,6 +31,25 @@ function createJob(overrides: Partial<Job> = {}): Job {
 }
 
 describe('workerAssetFinalizer', () => {
+  it('uses the compiled Codex prompt without calling the coordinator an image model', () => {
+    const result = jobImageMetadata(
+      createJob({
+        providerId: 'codex',
+        execution: { model: 'gpt-5.5', reasoningEffort: 'medium' },
+        sourceSpec: createGenerationTaskSpec({
+          id: 'job-codex',
+          providerId: 'codex',
+          task: 'image_generate',
+          prompt: 'A brass key',
+          negativePrompt: 'text',
+        }),
+      }),
+    );
+    expect(result.prompt).toContain('A brass key');
+    expect(result.prompt).toContain('Avoid:\ntext');
+    expect(result.model).toBe('unknown');
+  });
+
   it('finalizes asset using organized path for file and public URL', async () => {
     const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'worker-asset-finalizer-'));
     const organizedPath = path.join(tempRoot, 'outputs', 'final.png');
@@ -84,11 +105,10 @@ describe('workerAssetFinalizer', () => {
     const logger = vi.fn();
     const embedMetadataMock = vi.fn<
       (filePath: string, metadata: ImageGenMetadata) => Promise<EmbedResult>
-    >(async () => ({
-      filePath: organizedPath,
-      bytesWritten: 3,
-      format: 'png',
-    }));
+    >(async () => {
+      writeFileSync(organizedPath, 'png with metadata', 'utf8');
+      return { filePath: organizedPath, bytesWritten: 17, format: 'png' };
+    });
     const parsePromptTransportMock = vi.fn<
       (prompt: string | null | undefined) => PromptTransportSnapshot
     >(() => ({
@@ -103,6 +123,7 @@ describe('workerAssetFinalizer', () => {
     const finalizer = createWorkerAssetFinalizer({
       registerCatalogImage,
       getCatalogImageByJobId: vi.fn(() => null),
+      updateCatalogImageFileSize: vi.fn(),
       addAsset,
       getAssetByJobId: vi.fn(() => null),
       addJobEvent,
@@ -114,11 +135,6 @@ describe('workerAssetFinalizer', () => {
       logger,
       embedMetadata: embedMetadataMock,
       parsePromptTransport: parsePromptTransportMock,
-      resolveExecutionOptions: vi.fn(() => ({
-        model: 'gpt-5.4-mini',
-        reasoningEffort: 'medium',
-        serviceTier: null,
-      })),
       resolveCatalogGenerationConfig: vi.fn(() => ({
         prompt: 'prompt',
       })),
@@ -133,6 +149,20 @@ describe('workerAssetFinalizer', () => {
         Effect.scoped(
           finalizer.finalizeJobAsset({
             job: createJob({
+              providerId: 'chatgpt',
+              finalPromptUsed: 'Un faro al amanecer',
+              sourceSpec: createGenerationTaskSpec({
+                id: 'job-finalizer-1',
+                task: 'image_generate',
+                providerId: 'chatgpt',
+                prompt: 'Un faro al amanecer',
+                negativePrompt: 'sin texto',
+              }),
+              execution: {
+                model: 'gpt-5.5',
+                reasoningEffort: 'medium',
+                providerOptions: { chatgpt: { imageModel: 'gpt-image-2.5-sunburst' } },
+              },
               libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
             }),
             catalogContext: {
@@ -140,9 +170,9 @@ describe('workerAssetFinalizer', () => {
               batchId: 'batch-1',
             },
             discoveredImagePath: 'D:/tmp/discovered.png',
-            providerId: 'codex',
+            providerId: 'chatgpt',
             options: {
-              logPrefix: 'Codex',
+              logPrefix: 'External provider',
             },
           }),
         ),
@@ -164,8 +194,17 @@ describe('workerAssetFinalizer', () => {
           libraryId: 'library-1',
           filePath: organizedPath,
           thumbnailPath: `${organizedPath}.thumb.webp`,
+          fileSizeBytes: 17,
         }),
       );
+      expect(embedMetadataMock).toHaveBeenCalledWith(
+        organizedPath,
+        expect.objectContaining({
+          prompt: expect.stringContaining('Un faro al amanecer'),
+          model: 'gpt-image-2.5-sunburst',
+        }),
+      );
+      expect(embedMetadataMock.mock.calls[0][1].prompt).toContain('Avoid:\nsin texto');
       expect(updateJobStatus).toHaveBeenCalledWith('job-finalizer-1', 'completed');
       expect(updateJobFinalization.mock.calls.map((call) => call[1].state)).toEqual([
         'moving_asset',
@@ -231,6 +270,16 @@ describe('workerAssetFinalizer', () => {
     const updateJobStatus = vi.fn();
     const updateJobFinalization = vi.fn();
     const job = createJob({
+      providerId: 'google',
+      execution: { model: 'gemini-image', reasoningEffort: 'medium' },
+      sourceSpec: createGenerationTaskSpec({
+        id: 'job-finalizer-1',
+        providerId: 'google',
+        task: 'image_generate',
+        prompt: 'prompt',
+        metadata: { variationBrief: 'Warm light' },
+        negativePrompt: 'text',
+      }),
       libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
       finalization: {
         state: 'asset_recorded',
@@ -240,9 +289,15 @@ describe('workerAssetFinalizer', () => {
         catalogId: null,
       },
     });
+    const embedMetadata = vi.fn(async () => {
+      writeFileSync(organizedPath, 'png with metadata', 'utf8');
+      return { filePath: organizedPath, bytesWritten: 17, format: 'png' as const };
+    });
+    const updateCatalogImageFileSize = vi.fn(() => ({ ...existingCatalog, fileSizeBytes: 17 }));
     const finalizer = createWorkerAssetFinalizer({
       registerCatalogImage,
       getCatalogImageByJobId: vi.fn(() => existingCatalog),
+      updateCatalogImageFileSize,
       addAsset,
       getAssetByJobId: vi.fn(() => existingAsset),
       addJobEvent: vi.fn(),
@@ -252,11 +307,7 @@ describe('workerAssetFinalizer', () => {
       getJob: vi.fn(() => job),
       toPublicAssetUrl: vi.fn(() => existingAsset.publicUrl),
       logger: vi.fn(),
-      embedMetadata: vi.fn(async () => ({
-        filePath: organizedPath,
-        bytesWritten: 3,
-        format: 'png' as const,
-      })),
+      embedMetadata,
       parsePromptTransport: vi.fn(() => ({
         prompt: 'prompt',
         negativePrompt: '',
@@ -264,11 +315,6 @@ describe('workerAssetFinalizer', () => {
         imageSize: null,
         recipeId: null,
         recipeContext: '',
-      })),
-      resolveExecutionOptions: vi.fn(() => ({
-        model: 'gpt-5.4-mini',
-        reasoningEffort: 'medium',
-        serviceTier: null,
       })),
       resolveCatalogGenerationConfig: vi.fn(() => ({})),
       resolveGeneratedAssetTargetPath: vi.fn(() => organizedPath),
@@ -284,7 +330,7 @@ describe('workerAssetFinalizer', () => {
             job,
             catalogContext: { workspaceId: 'project-1', batchId: null },
             discoveredImagePath: organizedPath,
-            providerId: 'codex',
+            providerId: 'google',
             options: { logPrefix: 'Recovered' },
           }),
         ),
@@ -292,6 +338,18 @@ describe('workerAssetFinalizer', () => {
 
       expect(addAsset).not.toHaveBeenCalled();
       expect(registerCatalogImage).not.toHaveBeenCalled();
+      expect(embedMetadata).toHaveBeenCalledWith(
+        organizedPath,
+        expect.objectContaining({
+          prompt: 'prompt\n\nVariation brief:\nWarm light\n\nAvoid: text',
+          model: 'gemini-image',
+        }),
+      );
+      expect(updateCatalogImageFileSize).toHaveBeenCalledWith('catalog-existing', 17);
+      expect(publishEvent).toHaveBeenCalledWith(
+        'catalog.updated',
+        expect.objectContaining({ fileSizeBytes: 17 }),
+      );
       expect(publishEvent).not.toHaveBeenCalledWith('asset.created', expect.anything());
       expect(publishEvent).not.toHaveBeenCalledWith('catalog.created', expect.anything());
       expect(updateJobFinalization).toHaveBeenLastCalledWith(

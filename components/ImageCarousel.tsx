@@ -823,6 +823,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         currentImage.config.aspectRatio,
         undefined,
         currentImage.mimeType,
+        currentImage.localPath,
       );
       downloadImage(currentImage.src, smartName);
     } catch (e) {

@@ -36,9 +36,12 @@ const emptyJobPage = {
   },
 };
 
+vi.mock('./db/outputGenerations', () => ({ getOutputGeneration: () => 1 }));
+
 vi.mock('./catalog', () => ({
   getCatalogImageByJobId: vi.fn(() => null),
   registerCatalogImage: vi.fn(() => null),
+  updateCatalogImageFileSize: vi.fn(() => null),
 }));
 
 vi.mock('./db/assets', () => ({

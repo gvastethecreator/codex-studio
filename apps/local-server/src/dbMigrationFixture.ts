@@ -1,4 +1,7 @@
 import { Database } from 'bun:sqlite';
+import { mkdtempSync, rmSync } from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import {
   createJob,
   getJob,
@@ -10,7 +13,9 @@ import {
   updateJobStatus,
   updateJobFinalPrompt,
   listJobAttempts,
+  requeueJob,
 } from './db/jobs';
+import { getOutputGeneration } from './db/outputGenerations';
 import { createJobBatchRoutes } from './jobBatchRoutes';
 import { createPersistentJobIntake } from './persistentJobIntake';
 import {
@@ -219,6 +224,39 @@ function readColumnNames(database: Database) {
   return (database.query('PRAGMA table_info(jobs)').all() as Array<{ name: string }>).map(
     (column) => column.name,
   );
+}
+
+function inspectOutputGenerations() {
+  const root = mkdtempSync(path.join(os.tmpdir(), 'studio-output-generations-'));
+  const databasePath = path.join(root, 'library.sqlite');
+  let sequenceDb = new Database(databasePath);
+  try {
+    migrateDatabase(sequenceDb);
+    const jobs = Array.from({ length: 10 }, (_, index) =>
+      createJob({ id: `sequence-${index + 1}`, kind: 'image_generate', prompt: 'owl' }, sequenceDb),
+    );
+    const ninth = jobs[8]!;
+    const tenth = jobs[9]!;
+    // Completion order and retries must not change admission order.
+    updateJobStatus(tenth.id, 'completed', null, sequenceDb);
+    updateJobStatus(ninth.id, 'failed', 'retry fixture', sequenceDb);
+    requeueJob(ninth.id, sequenceDb);
+    if (getOutputGeneration(`job:${tenth.id}`, sequenceDb) !== 10) return false;
+    if (getOutputGeneration(`job:${ninth.id}`, sequenceDb) !== 9) return false;
+    sequenceDb.close();
+    sequenceDb = new Database(databasePath);
+    migrateDatabase(sequenceDb);
+    if (getOutputGeneration(`job:${ninth.id}`, sequenceDb) !== 9) return false;
+
+    const atlasNumber = getOutputGeneration('workflow:atlas-sequence', sequenceDb);
+    if (atlasNumber !== 11 || getOutputGeneration('workflow:atlas-sequence', sequenceDb) !== 11) {
+      return false;
+    }
+    return getOutputGeneration('workflow:animation-sequence', sequenceDb) === 12;
+  } finally {
+    sequenceDb.close();
+    rmSync(root, { recursive: true, force: true });
+  }
 }
 
 function inspectJobHistory() {
@@ -685,6 +723,7 @@ try {
       remoteIdentityPreserved,
       completeJobHistory: inspectJobHistory(),
       atomicBatchRecovery: await inspectJobBatches(),
+      durableOutputGenerations: inspectOutputGenerations(),
       executionPolicyPreserved:
         getJob('job-workspace-only', database)?.execution?.providerOptions?.codex?.image?.size ===
           '1536x864' &&

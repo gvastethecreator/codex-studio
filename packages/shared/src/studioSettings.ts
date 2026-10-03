@@ -3,7 +3,7 @@ import type { GenerationProviderId } from './generationContracts';
 import { isPreferredWorkflow, type PreferredWorkflow } from './workflowCatalog';
 import { normalizeDisabledWorkflowModules, type WorkflowModuleId } from './workflowModules';
 
-const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
+const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v2' as const;
 
 export type StudioOutputMode = 'studio_library' | 'external_source';
 export type StudioOutputSubfolderToken =
@@ -186,9 +186,9 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     preferredLibraryId: null,
     preferredOutputPath: null,
     outputOrganization: {
-      // Every image lands in the chosen folder, named by date, style and prompt.
+      // Date, time and the queued generation sequence keep names in chronological order.
       subfolderTokens: [],
-      fileNameTemplate: '{date}_{style}_{prompt}',
+      fileNameTemplate: '{timestampUtc}_{generation}_{style}_{prompt}',
     },
     providerDefaults: {
       codex: {
@@ -261,17 +261,34 @@ export function sanitizeEditableStudioSettingsPatch(value: unknown): EditableStu
 export function normalizeEditableStudioSettings(value: unknown): EditableStudioSettings {
   const defaults = createDefaultEditableStudioSettings();
   if (!isRecord(value)) return defaults;
+  let stored = value;
+
+  // Upgrade only the previous default. Custom templates and captured job layouts stay intact.
+  const outputOrganization = value.outputOrganization;
+  if (
+    value.schemaVersion === 'editable-studio-settings/v1' &&
+    isRecord(outputOrganization) &&
+    outputOrganization.fileNameTemplate === '{date}_{style}_{prompt}'
+  ) {
+    stored = {
+      ...value,
+      outputOrganization: {
+        ...outputOrganization,
+        fileNameTemplate: defaults.outputOrganization.fileNameTemplate,
+      },
+    };
+  }
 
   return {
     ...mergeEditableStudioSettingsPatch(
       {
         ...defaults,
-        updatedAt: cleanString(value.updatedAt),
+        updatedAt: cleanString(stored.updatedAt),
       },
-      value,
-      cleanString(value.updatedAt),
+      stored,
+      cleanString(stored.updatedAt),
     ),
-    outputDirectoryId: cleanString(value.outputDirectoryId),
+    outputDirectoryId: cleanString(stored.outputDirectoryId),
   };
 }
 

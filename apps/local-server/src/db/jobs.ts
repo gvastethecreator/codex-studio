@@ -24,6 +24,7 @@ import {
   withWorkspaceMetadata,
 } from '../../../../packages/shared/src/workspaceContracts';
 import { getDb } from './connection';
+import { getOutputGeneration } from './outputGenerations';
 import { ensureDefaultWorkspaceRow } from './workspaces';
 
 function now() {
@@ -187,7 +188,9 @@ export function createJob(
     completedAt: null,
   };
   database
-    .query(`
+    .transaction(() => {
+      database
+        .query(`
       INSERT INTO jobs (
         id, workspace_id, recipe_id, batch_id, aspect_ratio,
         kind, provider_id, source_spec_json, status, execution_json,
@@ -196,29 +199,32 @@ export function createJob(
       )
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `)
-    .run(
-      job.id,
-      job.workspaceId,
-      job.recipeId ?? null,
-      job.batchId ?? null,
-      job.aspectRatio ?? null,
-      job.kind,
-      job.providerId,
-      job.sourceSpec ? JSON.stringify(job.sourceSpec) : null,
-      job.status,
-      job.execution ? JSON.stringify(job.execution) : null,
-      job.libraryContext?.libraryId ?? null,
-      job.libraryContext?.rootPath ?? null,
-      job.libraryContext ? JSON.stringify(job.libraryContext) : null,
-      job.originalPrompt,
-      job.expandedPrompt,
-      job.finalPromptUsed,
-      job.error,
-      job.createdAt,
-      job.updatedAt,
-      job.completedAt,
-      timestamp,
-    );
+        .run(
+          job.id,
+          job.workspaceId,
+          job.recipeId ?? null,
+          job.batchId ?? null,
+          job.aspectRatio ?? null,
+          job.kind,
+          job.providerId,
+          job.sourceSpec ? JSON.stringify(job.sourceSpec) : null,
+          job.status,
+          job.execution ? JSON.stringify(job.execution) : null,
+          job.libraryContext?.libraryId ?? null,
+          job.libraryContext?.rootPath ?? null,
+          job.libraryContext ? JSON.stringify(job.libraryContext) : null,
+          job.originalPrompt,
+          job.expandedPrompt,
+          job.finalPromptUsed,
+          job.error,
+          job.createdAt,
+          job.updatedAt,
+          job.completedAt,
+          timestamp,
+        );
+      getOutputGeneration(`job:${job.id}`, database);
+    })
+    .immediate();
   return job;
 }
 
