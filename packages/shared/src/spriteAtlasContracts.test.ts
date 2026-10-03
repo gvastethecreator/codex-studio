@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   createSpriteAtlasContract,
+  createSpriteAtlasContractParams,
   createSpriteAtlasPresetSummaries,
 } from './spriteAtlasContracts';
 
@@ -32,7 +33,20 @@ describe('spriteAtlasContracts', () => {
       'walls',
       'decor',
     ]);
-    expect(contract.rows.every((row) => row.repeatMode === null)).toBe(true);
+    expect(
+      contract.rows.map(({ id, repeatMode, tileRole }) => ({
+        id,
+        repeatMode,
+        tileRole: !!tileRole,
+      })),
+    ).toEqual([
+      { id: 'terrain', repeatMode: 'self', tileRole: false },
+      { id: 'paths', repeatMode: 'adjacency', tileRole: true },
+      { id: 'water', repeatMode: 'self', tileRole: false },
+      { id: 'walls', repeatMode: 'adjacency', tileRole: true },
+      { id: 'decor', repeatMode: 'overlay', tileRole: false },
+    ]);
+    expect(createSpriteAtlasContract(createSpriteAtlasContractParams(contract))).toEqual(contract);
   });
 
   it('assigns lanes from the preset instead of one shared sheet type', () => {
@@ -50,6 +64,19 @@ describe('spriteAtlasContracts', () => {
     });
     expect(createSpriteAtlasContract({ presetId: 'texture-pack' }).rows[0]).toMatchObject({
       repeatMode: 'self',
+    });
+    const loops = Object.fromEntries(
+      createSpriteAtlasContract({ presetId: 'platformer-character' }).rows.map((row) => [
+        row.id,
+        row.loop,
+      ]),
+    );
+    expect(loops).toMatchObject({
+      idle: true,
+      run: true,
+      jump: false,
+      attack: false,
+      death: false,
     });
   });
 

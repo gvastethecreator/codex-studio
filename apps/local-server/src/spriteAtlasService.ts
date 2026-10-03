@@ -16,6 +16,7 @@ import {
   type SpriteAtlasBlockedReasonKind,
   type SpriteAtlasQaReport,
   type SpriteAtlasRowHandoffJob,
+  type SpriteAtlasRowNormalization,
   type SpriteAtlasRowPromptResponse,
   type SpriteAtlasRowState,
   type SpriteAtlasRun,
@@ -218,19 +219,143 @@ async function writeJson(filePath: string, value: unknown) {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
+/**
+ * A stored row strip must be `frames` cells wide and one cell high. Import normalizes
+ * provider images to this size, so a mismatch here means an old or changed strip.
+ * Returns the blocked reason for a mismatch, or null when the strip fits.
+ */
+async function checkRowStripGeometry(
+  run: SpriteAtlasRun,
+  row: SpriteAtlasRowState,
+  stripPath: string,
+): Promise<SpriteAtlasBlockedReason | null> {
+  const metadata = await authoringSharp(stripPath).metadata();
+  const width = metadata.width ?? 0;
+  const height = metadata.height ?? 0;
+  const { cell } = run.contract;
+  const expectedWidth = cell.width * row.frames;
+  if (width === expectedWidth && height === cell.height) return null;
+  return blockedReason(
+    'geometry_mismatch',
+    `${row.id} is ${width}×${height}. The stored strip must be ${expectedWidth}×${cell.height} (${row.frames} cells of ${cell.width}×${cell.height}).`,
+    `Import ${row.id} again so it is normalized to the cell size.`,
+  );
+}
+
+const NORMALIZE_MIN_SLOT_PX = 8;
+/** Contain may not leave the art less than half of the cell on its short side. */
+const NORMALIZE_MIN_COVERAGE = 0.5;
+const NORMALIZE_ASPECT_TOLERANCE = 0.02;
+
+type RowStripNormalization = Pick<
+  SpriteAtlasRowNormalization,
+  'normalized' | 'sourceSize' | 'kernel' | 'fit'
+>;
+
+/**
+ * ADR 0010 row normalization. An exact-size image is not touched (returns `normalized: false`
+ * and writes nothing). Any other image is split into `frames` equal slots across its full
+ * width. Empty background above and below the art is trimmed first, so a strip drawn across a
+ * square provider image keeps its scale. Each slot is resampled to one cell: nearest-neighbor
+ * for pixel art, lanczos otherwise. A slot is never cropped or stretched by more than 2%:
+ * a larger aspect gap is padded with transparency (contain).
+ */
+async function normalizeRowStrip(
+  run: SpriteAtlasRun,
+  row: SpriteAtlasRowState,
+  sourcePath: string,
+  stripPath: string,
+): Promise<
+  | { kind: 'blocked'; blocked: SpriteAtlasBlockedReason }
+  | ({ kind: 'ready' } & RowStripNormalization)
+> {
+  const { cell } = run.contract;
+  const metadata = await authoringSharp(sourcePath).metadata();
+  const width = metadata.width ?? 0;
+  const height = metadata.height ?? 0;
+  const sourceSize = { w: width, h: height };
+  if (width === cell.width * row.frames && height === cell.height) {
+    return { kind: 'ready', normalized: false, sourceSize, kernel: null, fit: null };
+  }
+
+  const { info } = await authoringSharp(sourcePath).trim().toBuffer({ resolveWithObject: true });
+  const top = -(info.trimOffsetTop ?? 0);
+  const slotHeight = info.height;
+  const slotWidth = width / row.frames;
+  const cellAspect = cell.width / cell.height;
+  const slotAspect = slotWidth / slotHeight;
+  const coverage = Math.min(slotAspect / cellAspect, cellAspect / slotAspect);
+  const block = (detail: string) => ({
+    kind: 'blocked' as const,
+    blocked: blockedReason(
+      'geometry_mismatch',
+      `${row.id} is ${width}×${height}. ${detail}`,
+      `Generate one horizontal strip of ${row.frames} frames with the shape of ${cell.width * row.frames}×${cell.height}.`,
+    ),
+  });
+  if (slotWidth < NORMALIZE_MIN_SLOT_PX || slotHeight < NORMALIZE_MIN_SLOT_PX) {
+    return block(
+      `Its ${row.frames} slots are ${Math.floor(slotWidth)}×${slotHeight} px. Each slot needs at least ${NORMALIZE_MIN_SLOT_PX} px per side.`,
+    );
+  }
+  if (coverage < NORMALIZE_MIN_COVERAGE) {
+    return block(
+      `Its ${row.frames} slots are ${Math.round(slotWidth)}×${slotHeight} px. In a ${cell.width}×${cell.height} cell the art would fill only ${Math.round(coverage * 100)}% of one side.`,
+    );
+  }
+
+  const kernel = run.contract.stylePreset === 'pixel-art' ? 'nearest' : 'lanczos3';
+  const fit = 1 - coverage <= NORMALIZE_ASPECT_TOLERANCE ? 'scale' : 'contain';
+  const transparent = { r: 0, g: 0, b: 0, alpha: 0 };
+  const slots = await Promise.all(
+    Array.from({ length: row.frames }, async (_, index) => {
+      const left = Math.round(index * slotWidth);
+      const right = Math.round((index + 1) * slotWidth);
+      const input = await authoringSharp(sourcePath)
+        .extract({ left, top, width: right - left, height: slotHeight })
+        .resize(cell.width, cell.height, {
+          kernel,
+          fit: fit === 'scale' ? 'fill' : 'contain',
+          background: transparent,
+        })
+        .png()
+        .toBuffer();
+      return { input, left: index * cell.width, top: 0 };
+    }),
+  );
+  await authoringSharp({
+    create: {
+      width: cell.width * row.frames,
+      height: cell.height,
+      channels: 4,
+      background: transparent,
+    },
+  })
+    .composite(slots)
+    .png()
+    .toFile(stripPath);
+  return { kind: 'ready', normalized: true, sourceSize, kernel, fit };
+}
+
+function frameOrigin(run: SpriteAtlasRun) {
+  const { cell, workflowLane } = run.contract;
+  if (workflowLane === 'tileset') return { x: 0, y: 0 };
+  if (workflowLane === 'animation') return { x: Math.floor(cell.width / 2), y: cell.height };
+  return { x: Math.floor(cell.width / 2), y: Math.floor(cell.height / 2) };
+}
+
 function createRowPrompt(run: SpriteAtlasRun, row: SpriteAtlasRowState, basePrompt: string) {
   const contract = run.contract;
   const rowSpec = contract.rows.find((item) => item.id === row.id);
   return [
-    `Sprite Atlas Run: ${run.id}`,
+    `Row: ${row.id}`,
+    `Action: ${rowSpec?.action || row.id}`,
+    `Frames: ${row.frames}`,
     `Base prompt: ${basePrompt || run.title}`,
     `Preset: ${contract.presetId}`,
     `Asset kind: ${contract.assetKind}`,
     `Workflow lane: ${contract.workflowLane}`,
     `Frame semantics: ${contract.frameSemantics}`,
-    `Row: ${row.id}`,
-    `Frames: ${row.frames}`,
-    `Action: ${rowSpec?.action || row.id}`,
     `Camera: ${contract.camera}`,
     `Style: ${contract.customStyle || contract.stylePreset}`,
     `Cell: ${contract.cell.width}x${contract.cell.height}`,
@@ -249,6 +374,8 @@ function createRowPrompt(run: SpriteAtlasRun, row: SpriteAtlasRowState, baseProm
         : 'Frames are distinct items or variants. Do not imply animation between slots.',
     'Keep every frame upright at the requested camera and scale. Do not rotate or resize individual frames.',
     'Use clean slot separation. No text, labels, guide marks, watermarks, or merged atlas pages.',
+    '',
+    `Sprite Atlas Run: ${run.id}`,
   ].join('\n');
 }
 
@@ -282,6 +409,7 @@ function createRows(run: Pick<SpriteAtlasRun, 'contract' | 'paths'>, timestamp: 
       rawPath: null,
       sourceSha256: null,
       catalogImageId: null,
+      normalization: null,
       jobId: null,
       blocked: null,
       updatedAt: timestamp,
@@ -303,6 +431,13 @@ function resolveRunStatus(run: SpriteAtlasRun): SpriteAtlasRun['status'] {
     return 'waiting_for_rows';
   }
   return run.status === 'draft' ? 'draft' : run.status;
+}
+
+/** A re-queued row voids the composed atlas checks until every row is imported again. */
+function reopenRunForRows(run: SpriteAtlasRun) {
+  run.qa = null;
+  run.visualReview = { status: 'pending', acceptedAt: null };
+  run.status = 'waiting_for_rows';
 }
 
 function isSafeBlockedReason(
@@ -334,8 +469,9 @@ async function resolveImportSource({
   const catalogImageId = input.catalogImageId?.trim() || null;
   if (catalogImageId) {
     const image = getCatalogImage?.(catalogImageId);
+    if (!image) return { kind: 'missing' };
     if (
-      !image?.filePath ||
+      !image.filePath ||
       !(
         isPathInside(libraryDir, image.filePath) ||
         (libraryContext && isManagedGenerationAssetPath(image.filePath, libraryContext))
@@ -374,6 +510,7 @@ function normalizeRun(run: SpriteAtlasRun): SpriteAtlasRun {
       ...row,
       sourceSha256: row.sourceSha256 ?? null,
       catalogImageId: row.catalogImageId ?? null,
+      normalization: row.normalization ?? null,
     })),
   };
 }
@@ -465,6 +602,7 @@ export function createSpriteAtlasService({
       }
     }
     jobs.push(...(await Promise.all(rowsToWrite.map((row) => writeRowJob(run, row, timestamp)))));
+    if (rowsToWrite.length > 0) reopenRunForRows(run);
 
     return {
       jobs,
@@ -596,35 +734,63 @@ export function createSpriteAtlasService({
         libraryContext: readOutputContext?.(),
         getCatalogImage,
       });
-      if (resolved.kind === 'rejected') {
+      const rejectImport = (failure: SpriteAtlasBlockedReason) => {
+        if (row.rawPath && (row.status === 'raw_imported' || row.status === 'extracted')) {
+          throw new SpriteAtlasActionError(
+            failure.reasonKind,
+            `${failure.userMessage} ${failure.suggestion} ${row.id} keeps its previous import.`,
+          );
+        }
         row.status = 'blocked';
-        row.blocked = blockedReason(
-          'path_rejected',
-          'That image is outside the Studio Library.',
-          'Import the image through Settings → Library & imports, then choose it here.',
-        );
+        row.blocked = failure;
         row.updatedAt = timestamp;
         return saveRun(run);
+      };
+      if (resolved.kind === 'rejected') {
+        return rejectImport(
+          blockedReason(
+            'path_rejected',
+            'That image is outside the Studio Library.',
+            'Import the image through Settings → Library & imports, then choose it here.',
+          ),
+        );
       }
       if (resolved.kind === 'missing') {
-        row.status = 'blocked';
-        row.blocked = blockedReason(
-          'no_image_returned',
-          'No source row image was available to import.',
-          'Generate or select a real row strip, then import it into this row.',
+        return rejectImport(
+          blockedReason(
+            'no_image_returned',
+            'No source row image was available to import.',
+            'Generate or select a real row strip, then import it into this row.',
+          ),
         );
-        row.updatedAt = timestamp;
-        return saveRun(run);
       }
+      const rowName = safeSegment(row.id);
+      const sourceExtension = path.extname(resolved.sourcePath) || '.png';
+      const normalizedPath = path.join(run.paths.rawDir, `${rowName}.png`);
+      const strip = await normalizeRowStrip(run, row, resolved.sourcePath, normalizedPath);
+      if (strip.kind === 'blocked') return rejectImport(strip.blocked);
 
-      const outputPath = path.join(
-        run.paths.rawDir,
-        `${safeSegment(row.id)}${path.extname(resolved.sourcePath) || '.png'}`,
-      );
-      await copyFile(resolved.sourcePath, outputPath);
+      let outputPath = normalizedPath;
+      let originalPath = normalizedPath;
+      if (strip.normalized) {
+        originalPath = path.join(run.paths.rawDir, `${rowName}.source${sourceExtension}`);
+        await copyFile(resolved.sourcePath, originalPath);
+      } else {
+        outputPath = path.join(run.paths.rawDir, `${rowName}${sourceExtension}`);
+        originalPath = outputPath;
+        await copyFile(resolved.sourcePath, outputPath);
+      }
       const digest = await sha256File(outputPath);
       row.rawPath = outputPath;
       row.sourceSha256 = digest;
+      row.normalization = {
+        normalized: strip.normalized,
+        sourceSize: strip.sourceSize,
+        kernel: strip.kernel,
+        fit: strip.fit,
+        sourcePath: originalPath,
+        sourceSha256: strip.normalized ? await sha256File(originalPath) : digest,
+      };
       row.catalogImageId = resolved.catalogImageId;
       row.status = 'raw_imported';
       row.blocked = null;
@@ -658,29 +824,20 @@ export function createSpriteAtlasService({
 
       const measured = await Promise.all(
         run.rows.map(async (row) => {
-          const metadata = await authoringSharp(row.rawPath!).metadata();
-          return {
-            row,
-            width: metadata.width ?? 0,
-            height: metadata.height ?? 0,
-          };
+          const mismatch = await checkRowStripGeometry(run, row, row.rawPath!);
+          return mismatch ? [{ row, mismatch }] : [];
         }),
       );
-      const mismatched = measured.filter(
-        (item) =>
-          item.width !== run.contract.cell.width * item.row.frames ||
-          item.height !== run.contract.cell.height,
-      );
+      const mismatched = measured.flat();
       if (mismatched.length > 0) {
         const timestamp = now();
-        for (const item of mismatched) {
-          item.row.status = 'blocked';
-          item.row.blocked = blockedReason(
-            'geometry_mismatch',
-            `${item.row.id} is ${item.width}×${item.height}. The strip must be ${run.contract.cell.width * item.row.frames}×${run.contract.cell.height} with no resize.`,
-            'Import a strip at the declared cell size. The previous atlas was left in place.',
-          );
-          item.row.updatedAt = timestamp;
+        for (const { row, mismatch } of mismatched) {
+          row.status = 'blocked';
+          row.blocked = {
+            ...mismatch,
+            suggestion: `${mismatch.suggestion} The previous atlas was left in place.`,
+          };
+          row.updatedAt = timestamp;
         }
         await saveRun(run);
         throw new SpriteAtlasActionError(
@@ -705,11 +862,16 @@ export function createSpriteAtlasService({
       await rm(stagingDir, { recursive: true, force: true });
       await mkdir(stagingFramesDir, { recursive: true });
       const rowSpecs = new Map(run.contract.rows.map((row) => [row.id, row]));
+      const origin = frameOrigin(run);
       const composites: Array<{ input: string; left: number; top: number }> = [];
       const frameLayout: Array<{
         id: string;
         fps: number;
         loop: boolean;
+        normalized: boolean;
+        sourceSize?: { w: number; h: number };
+        kernel?: SpriteAtlasRowNormalization['kernel'];
+        fit?: SpriteAtlasRowNormalization['fit'];
         frames: Array<{
           source: string;
           x: number;
@@ -737,19 +899,28 @@ export function createSpriteAtlasService({
           const y = (baseRow + Math.floor(frameIndex / columns)) * cellHeight;
           composites.push({ input: framePath, left: x, top: y });
           frames.push({
-            source: framePath,
+            source: path.basename(framePath),
             x,
             y,
             width: cellWidth,
             height: cellHeight,
-            origin: { x: Math.floor(cellWidth / 2), y: cellHeight },
+            origin,
           });
         }
         const rowSpec = rowSpecs.get(row.id);
+        const normalization = row.normalization;
         frameLayout.push({
           id: row.id,
           fps: rowSpec?.fps ?? 1,
           loop: rowSpec?.loop ?? false,
+          ...(normalization?.normalized
+            ? {
+                normalized: true,
+                sourceSize: normalization.sourceSize,
+                kernel: normalization.kernel,
+                fit: normalization.fit,
+              }
+            : { normalized: false }),
           frames,
         });
       }
@@ -772,15 +943,10 @@ export function createSpriteAtlasService({
         mode: 'generated_art',
         workflow_lane: run.contract.workflowLane,
         frame_semantics: run.contract.frameSemantics,
+        atlas: { file: path.basename(run.paths.atlasPath), width, height },
         cell: run.contract.cell,
         columns,
-        frame_layout: frameLayout.map((row) => ({
-          ...row,
-          frames: row.frames.map((frame) => ({
-            ...frame,
-            source: path.join(run.paths.framesDir, path.basename(frame.source)),
-          })),
-        })),
+        frame_layout: frameLayout,
       });
       await publishStagedCompose({
         framesDir: run.paths.framesDir,
@@ -828,9 +994,13 @@ export function createSpriteAtlasService({
         })
         .join('');
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="none"/>${rects}${labels}</svg>`;
-      await writePngFromSvg(svg, run.paths.atlasPath);
+      // Test art stays beside the run. It never replaces the production atlas or its checks.
+      const fixtureDir = path.join(run.paths.runDir, 'fixture');
+      await mkdir(fixtureDir, { recursive: true });
+      await writePngFromSvg(svg, path.join(fixtureDir, 'atlas.png'));
 
-      await writeJson(run.paths.manifestPath, {
+      const origin = frameOrigin(run);
+      await writeJson(path.join(fixtureDir, 'manifest.json'), {
         version: 1,
         mode: 'fixture_smoke',
         frame_layout: rows.map((row, rowIndex) => ({
@@ -842,14 +1012,12 @@ export function createSpriteAtlasService({
             y: rowIndex * run.contract.cell.height,
             width: run.contract.cell.width,
             height: run.contract.cell.height,
-            origin: { x: Math.floor(run.contract.cell.width / 2), y: run.contract.cell.height },
+            origin,
           })),
         })),
       });
 
-      run.status = 'composed';
-      run.updatedAt = now();
-      return saveRun(run);
+      return run;
     },
     async runQa(runId) {
       const run = await getRun(runId);
@@ -885,6 +1053,14 @@ export function createSpriteAtlasService({
           const digest = await sha256File(row.rawPath);
           if (digest !== row.sourceSha256)
             issues.push(`${row.id} source hash does not match the import.`);
+          const original = row.normalization?.normalized ? row.normalization : null;
+          if (
+            original &&
+            (!(await fileExists(original.sourcePath)) ||
+              (await sha256File(original.sourcePath)) !== original.sourceSha256)
+          ) {
+            issues.push(`${row.id} provider image hash does not match the import.`);
+          }
           const metadata = await authoringSharp(row.rawPath).metadata();
           if (
             metadata.width !== run.contract.cell.width * row.frames ||
@@ -1003,6 +1179,7 @@ export function createSpriteAtlasService({
       row.status = 'generating';
       row.blocked = null;
       row.updatedAt = timestamp;
+      reopenRunForRows(run);
       return saveRun(run);
     },
     async acceptVisualReview(runId) {

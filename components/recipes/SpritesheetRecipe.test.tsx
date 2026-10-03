@@ -23,4 +23,37 @@ describe('SpritesheetRecipe', () => {
     const textarea = screen.getByRole('textbox', { name: 'Cell 1 prompt' });
     expect(textarea.closest('button')).toBeNull();
   });
+
+  it('updates background controls when output transparency changes', () => {
+    const renderRecipe = (outputBackground: 'workflow' | 'transparent') => (
+      <SpritesheetRecipe
+        config={{ ...DEFAULT_GENERATION_CONFIG, outputBackground }}
+        updateConfig={() => {}}
+        onGenerate={() => {}}
+        isGenerating={false}
+      />
+    );
+    const { rerender } = render(renderRecipe('workflow'));
+    const background = screen.getByRole('button', { name: 'Background' });
+
+    expect(background.closest('fieldset')?.disabled).toBe(false);
+    rerender(renderRecipe('transparent'));
+    expect(background.closest('fieldset')?.disabled).toBe(true);
+    rerender(renderRecipe('workflow'));
+    expect(background.closest('fieldset')?.disabled).toBe(false);
+    // A reference sets identity, not the backdrop.
+    rerender(
+      <SpritesheetRecipe
+        config={{
+          ...DEFAULT_GENERATION_CONFIG,
+          outputBackground: 'workflow',
+          attachments: [{ id: 'ref', name: 'Ref', dataUrl: 'data:image/png;base64,', strength: 1 }],
+        }}
+        updateConfig={() => {}}
+        onGenerate={() => {}}
+        isGenerating={false}
+      />,
+    );
+    expect(background.closest('fieldset')?.disabled).toBe(false);
+  });
 });

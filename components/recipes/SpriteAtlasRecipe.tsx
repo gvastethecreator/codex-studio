@@ -15,8 +15,10 @@ import {
   Refresh as RefreshCw,
   Search,
 } from 'iconoir-react';
+import { buildGeneratedImageContextAttachment } from '../../hooks/useGenerationConfig';
 import {
   createSpriteAtlasContract,
+  createSpriteAtlasContractParams,
   isSpriteAtlasIdleRow,
   SPRITE_ATLAS_ASSET_KINDS,
   type SpriteAtlasAssetKind,
@@ -27,7 +29,7 @@ import {
 } from '../../packages/shared/src/spriteAtlasContracts';
 import type { Job as StudioJob } from '../../packages/shared/src/types';
 import type { GenerationProviderId } from '../../packages/shared/src';
-import type { ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
+import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import {
   acceptSpriteAtlasVisualReview,
   composeSpriteAtlas,
@@ -176,6 +178,14 @@ function formatUpdatedAt(value: string) {
   return UPDATED_AT_FORMATTER.format(date);
 }
 
+/** Row prompts share one long header, so label library images by row and time instead. */
+function formatSourceImageLabel(image: GeneratedImageWithConfig) {
+  const rowId = image.config.recipeParams?.rowId;
+  const date = new Date(image.createdAt);
+  const when = Number.isNaN(date.getTime()) ? '' : ` · ${UPDATED_AT_FORMATTER.format(date)}`;
+  return `${typeof rowId === 'string' && rowId ? rowId : 'Library image'}${when}`;
+}
+
 function buildPipeline(run: SpriteAtlasRun | null) {
   const rows = run?.rows ?? [];
   const total = rows.length;
@@ -280,8 +290,11 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   const [rowStatusFilter, setRowStatusFilter] =
     React.useState<(typeof ROW_STATUS_FILTERS)[number]>('all');
   const [inspectorTab, setInspectorTab] = React.useState<InspectorTab>('guide');
-  const [selectedPrompt, setSelectedPrompt] = React.useState('');
-  const [isPromptLoading, setIsPromptLoading] = React.useState(false);
+  const [rowPrompt, setRowPrompt] = React.useState<{
+    key: string;
+    prompt: string;
+    error: string | null;
+  } | null>(null);
   const [isBusy, setIsBusy] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
   const [message, setMessage] = React.useState<string | null>(null);
@@ -303,10 +316,19 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     activeRun?.rows.find((row) => row.id === selectedRowId) ?? activeRun?.rows[0] ?? null;
   const selectedRunId = activeRun?.id ?? null;
   const selectedRowKey = selectedRow?.id ?? null;
+  const promptKey = selectedRunId && selectedRowKey ? `${selectedRunId}/${selectedRowKey}` : null;
+  // A prompt fetched for another row never counts as the selected row's prompt.
+  const currentRowPrompt = rowPrompt?.key === promptKey ? rowPrompt : null;
+  const isPromptLoading = Boolean(promptKey) && !currentRowPrompt;
+  const selectedPrompt = currentRowPrompt?.prompt ?? '';
+  const promptError = currentRowPrompt?.error ?? null;
   const rowCounts = React.useMemo(() => getRowCounts(activeRun?.rows ?? []), [activeRun]);
   const pipeline = React.useMemo(() => buildPipeline(activeRun), [activeRun]);
   const currentPreset = presets.find((preset) => preset.id === contract.presetId);
   const busy = isBusy || isGenerating;
+  const canQueue = Boolean(
+    !busy && activeRun && selectedRow && activeProviderId && selectedPrompt && !promptError,
+  );
   const canCompose = Boolean(
     activeRun?.rows.length &&
     activeRun.rows.every(
@@ -377,24 +399,21 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   }, []);
 
   React.useEffect(() => {
-    if (!selectedRunId || !selectedRowKey) {
-      setSelectedPrompt('');
-      return;
-    }
-
+    if (!selectedRunId || !selectedRowKey) return;
+    const key = `${selectedRunId}/${selectedRowKey}`;
     let cancelled = false;
-    setIsPromptLoading(true);
     void getSpriteAtlasRowPrompt(selectedRunId, selectedRowKey)
       .then((payload) => {
-        if (!cancelled) setSelectedPrompt(payload.prompt);
+        if (!cancelled) setRowPrompt({ key, prompt: payload.prompt, error: null });
       })
       .catch((err) => {
         if (!cancelled) {
-          setSelectedPrompt(err instanceof Error ? err.message : String(err));
+          setRowPrompt({
+            key,
+            prompt: '',
+            error: err instanceof Error ? err.message : String(err),
+          });
         }
-      })
-      .finally(() => {
-        if (!cancelled) setIsPromptLoading(false);
       });
 
     return () => {
@@ -422,13 +441,21 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     void spriteAtlasRunCoordinator
       .reconcile(activeRun)
       .then((result) => {
-        if (!cancelled) setReadyImports(result.ready);
+        if (cancelled) return;
+        setReadyImports(result.ready);
+        if (result.run !== activeRun) {
+          setActiveRun(result.run);
+          setRuns((current) => current.map((run) => (run.id === result.run.id ? result.run : run)));
+        }
       })
-      .catch(() => undefined);
+      .catch((err) => {
+        if (!cancelled) setError(err instanceof Error ? err.message : String(err));
+      });
     return () => {
       cancelled = true;
     };
-  }, [activeRun, generatingKey, catalogSignature]);
+    // isGenerating settles when a job ends, including failed jobs that add no catalog image.
+  }, [activeRun, generatingKey, catalogSignature, isGenerating]);
 
   React.useEffect(() => {
     setPlaybackFrame(1);
@@ -468,7 +495,16 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     [refreshRuns],
   );
 
-  const handleCreateRun = () =>
+  const hasPrepareInput = Boolean(config.prompt?.trim()) || config.attachments.length > 0;
+  const prepareRequirement =
+    contract.rows.length === 0
+      ? 'This preset has no rows. Choose a preset with rows to prepare a run.'
+      : !hasPrepareInput
+        ? 'Add a prompt or a reference image to prepare a run.'
+        : null;
+
+  const handleCreateRun = () => {
+    if (prepareRequirement) return;
     void runAction(
       async () =>
         createSpriteAtlasRun({
@@ -481,6 +517,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
         }),
       'Run prepared.',
     );
+  };
 
   const handleQueueRow = () => {
     if (!activeRun || !selectedRow) return;
@@ -496,25 +533,47 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
       setError(`Import an idle row before queueing ${selectedRow.id}.`);
       return;
     }
+    if (!selectedPrompt || promptError) {
+      setError(`The ${selectedRow.id} prompt is not loaded.`);
+      return;
+    }
     const rowId = selectedRow.id;
     const runId = activeRun.id;
+    // Non-idle rows carry the imported idle strip as the identity anchor (attachment 0).
+    const anchor = isSpriteAtlasIdleRow(rowId) ? null : activeRun.anchor;
+    let anchorAttachment: Attachment | null = null;
+    if (anchor) {
+      const anchorImageId = activeRun.rows.find((row) => row.id === anchor.rowId)?.catalogImageId;
+      const anchorImage = images.find((image) => image.id === anchorImageId);
+      if (!anchorImage) {
+        setError(
+          `The ${anchor.rowId} anchor image is not in this workspace. Import ${anchor.rowId} again before queueing ${rowId}.`,
+        );
+        return;
+      }
+      anchorAttachment = {
+        ...buildGeneratedImageContextAttachment(anchorImage),
+        name: `${anchor.rowId} identity anchor`,
+      };
+    }
     onGenerate(
-      selectedPrompt || selectedRow.id,
+      selectedPrompt,
       {
         recipeId: 'sprite-atlas',
         outputBackground: activeRun.contract.transparent ? 'transparent' : 'workflow',
-        attachments: [],
+        // A row is one wide strip. The widest ratio gives each frame slot the most pixels.
+        aspectRatio: '21:9',
+        ...(anchorAttachment ? { attachments: [anchorAttachment, ...config.attachments] } : {}),
+        // The stored run contract wins over the current draft settings.
         recipeParams: {
-          ...params,
+          ...createSpriteAtlasContractParams(activeRun.contract),
           runId,
           rowId,
-          presetId: activeRun.contract.presetId,
-          transparent: activeRun.contract.transparent,
         },
       },
       {
         preventModal: true,
-        useCurrentAttachments: false,
+        useCurrentAttachments: !anchorAttachment,
         onJobCreated: (job) => {
           if (job.providerId && activeProviderId && job.providerId !== activeProviderId) {
             setError(`Queued with ${job.providerId}.`);
@@ -581,7 +640,10 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
   const handleComposeFixture = () => {
     if (!activeRun) return;
-    void runAction(() => composeSpriteAtlasFixture(activeRun.id), 'Fixture atlas composed.');
+    void runAction(
+      () => composeSpriteAtlasFixture(activeRun.id),
+      'Fixture atlas written to the run fixture folder. The run status did not change.',
+    );
   };
 
   const handleCompose = () => {
@@ -635,6 +697,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         key={tab}
                         type="button"
                         onClick={() => setInspectorTab(tab)}
+                        aria-pressed={inspectorTab === tab}
                         className={`min-h-8 rounded-[var(--wb-radius)] px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition ${
                           inspectorTab === tab
                             ? 'bg-white/12 text-[color:var(--wb-ink)]'
@@ -672,12 +735,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         <button
                           type="button"
                           onClick={handleQueueRow}
-                          disabled={busy || !activeProviderId}
+                          disabled={!canQueue}
                           className="inline-flex min-h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-info)]  hover:bg-sky-500/15 disabled:opacity-50"
                         >
                           <ClipboardList width={15} height={15} />
                           {activeProviderId
-                            ? `Queue with ${activeProviderId}`
+                            ? `${selectedRow.status === 'blocked' ? 'Retry' : 'Queue'} with ${activeProviderId}`
                             : 'Choose a provider'}
                         </button>
                         <button
@@ -705,7 +768,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                             <option value="">Choose a library image</option>
                             {images.map((image) => (
                               <option key={image.id} value={image.id}>
-                                {image.config.prompt?.slice(0, 70) || image.id}
+                                {formatSourceImageLabel(image)}
                               </option>
                             ))}
                           </select>
@@ -735,9 +798,15 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           </span>
                           {isPromptLoading && <Loader2 size={14} className="animate-spin" />}
                         </div>
-                        <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-relaxed text-[color:var(--wb-ink)]">
-                          {selectedPrompt || 'Prompt unavailable.'}
-                        </pre>
+                        {promptError ? (
+                          <p role="alert" className="text-xs text-[color:var(--wb-danger)]">
+                            Prompt unavailable: {promptError}
+                          </p>
+                        ) : (
+                          <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-relaxed text-[color:var(--wb-ink)]">
+                            {isPromptLoading ? 'Loading prompt…' : selectedPrompt}
+                          </pre>
+                        )}
                       </div>
                       {activeRun.contract.rows.find((row) => row.id === selectedRow.id)
                         ?.mirrorPair ? (
@@ -823,6 +892,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         key={preset.id}
                         type="button"
                         onClick={() => selectPreset(preset)}
+                        aria-pressed={active}
                         className={`group grid gap-2 rounded-[var(--wb-radius)] border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] ${
                           active
                             ? 'border-sky-400/2 bg-sky-500/10'
@@ -887,7 +957,10 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <button
                     type="button"
                     onClick={handleCreateRun}
-                    disabled={busy}
+                    disabled={busy || Boolean(prepareRequirement)}
+                    aria-describedby={
+                      prepareRequirement ? 'sprite-atlas-prepare-requirement' : undefined
+                    }
                     className="studio-primary-control min-h-11 w-full disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     {busy ? (
@@ -897,6 +970,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     )}
                     Prepare Run
                   </button>
+                  {prepareRequirement && (
+                    <p
+                      id="sprite-atlas-prepare-requirement"
+                      className="mt-2 text-xs text-[color:var(--wb-muted)]"
+                    >
+                      {prepareRequirement}
+                    </p>
+                  )}
                 </RecipePrimaryAction>
               </div>
             </aside>
@@ -951,7 +1032,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       : 'Choose a provider'
                   }
                   onClick={handleQueueRow}
-                  disabled={busy || !activeRun || !selectedRow || !activeProviderId}
+                  disabled={!canQueue}
                   tone="sky"
                 >
                   <ClipboardList width={14} height={14} />
@@ -992,7 +1073,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       'Visual check accepted.',
                     );
                   }}
-                  disabled={busy || !activeRun}
+                  disabled={
+                    busy || !activeRun || !['composed', 'qa_passed'].includes(activeRun.status)
+                  }
                   tone="emerald"
                 >
                   <Check width={14} height={14} />
@@ -1045,8 +1128,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           <div className="min-h-0 flex-1 overflow-hidden">
             {activeRun ? (
               <section className="flex h-full min-h-0 flex-col">
-                <div className="grid gap-2 border-b border-[color:var(--wb-line)] p-3 lg:grid-cols-[minmax(0,1fr)_auto]">
-                  <label className="grid min-w-0 gap-1">
+                <div className="flex flex-wrap items-end gap-2 border-b border-[color:var(--wb-line)] p-3">
+                  <label className="grid min-w-[min(100%,14rem)] flex-1 basis-56 gap-1">
                     <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                       Search rows
                     </span>
@@ -1065,7 +1148,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       />
                     </span>
                   </label>
-                  <div className="custom-scrollbar flex gap-1.5 overflow-x-auto">
+                  <div className="flex flex-wrap gap-1.5">
                     {ROW_STATUS_FILTERS.map((status) => (
                       <FilterChip
                         key={status}
@@ -1093,6 +1176,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           key={matte}
                           type="button"
                           onClick={() => setStageMatte(matte)}
+                          aria-pressed={stageMatte === matte}
                           className={`min-h-8 rounded-[var(--wb-radius)] border px-2 text-xs ${
                             stageMatte === matte
                               ? 'border-sky-400/40 text-[color:var(--wb-ink)]'
@@ -1165,7 +1249,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       <EmptyState
                         icon={<Package width={28} height={28} />}
                         title="Atlas not composed"
-                        copy="Queue a row, import the result, then compose the exact strips."
+                        copy="Queue a row, import the result, then compose the row strips."
                       />
                     )}
 
@@ -1200,6 +1284,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                             setSelectedRowId(row.id);
                             setInspectorTab('guide');
                           }}
+                          aria-pressed={selectedRow?.id === row.id}
                           className={`group flex min-h-[96px] flex-col justify-between rounded-[var(--wb-radius)] border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] ${
                             selectedRow?.id === row.id
                               ? 'border-sky-400/2 bg-sky-500/10'
@@ -1273,6 +1358,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         setActiveRun(run);
                         setSelectedRowId(run.rows[0]?.id ?? null);
                       }}
+                      aria-pressed={activeRun?.id === run.id}
                       className={`rounded-[var(--wb-radius)] border p-2 text-left transition hover:border-[color:var(--wb-border)] ${
                         activeRun?.id === run.id
                           ? 'border-sky-400/2 bg-sky-500/10'
@@ -1370,6 +1456,7 @@ const SelectField: React.FC<{
           />
         </button>
         <DemandMountedGsapDropdown
+          portal
           id={listboxId}
           open={isOpen}
           onOpenChange={setIsOpen}
@@ -1377,7 +1464,7 @@ const SelectField: React.FC<{
           placement="bottom-left"
           role="listbox"
           aria-labelledby={labelId}
-          className="absolute left-0 top-[calc(100%+0.4rem)] z-50 max-h-64 w-full min-w-40 overflow-y-auto rounded-[var(--wb-radius)] p-1"
+          className="max-h-64 w-[var(--dropdown-trigger-width)] min-w-40 overflow-y-auto rounded-[var(--wb-radius)] p-1"
         >
           {options.map((option) => {
             const selected = option === value;
@@ -1419,6 +1506,7 @@ const FilterChip: React.FC<{
   <button
     type="button"
     onClick={onClick}
+    aria-pressed={active}
     className={`min-h-8 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition ${
       active
         ? 'border-sky-400/2 bg-sky-500/15 text-[color:var(--wb-ink)]'
@@ -1470,10 +1558,10 @@ const PipelineStep: React.FC<{
           : 'border-[color:var(--wb-line)] bg-white/[0.025] text-[color:var(--wb-muted)]';
   return (
     <div className={`min-w-0 rounded-[var(--wb-radius)] border p-2 ${tone}`}>
-      <div className="truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
+      <div className="break-words text-[length:var(--wbp-label)] font-semibold tracking-normal">
         {stage.label}
       </div>
-      <div className="mt-1 truncate font-mono text-[length:var(--wbp-label)] opacity-75">
+      <div className="mt-1 break-words font-mono text-[length:var(--wbp-label)] opacity-75">
         {stage.detail}
       </div>
     </div>

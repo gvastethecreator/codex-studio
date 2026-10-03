@@ -134,9 +134,16 @@ export function createSpriteAtlasRoutes({
     }
     const rowId = typeof body.rowId === 'string' ? body.rowId : '';
     if (!rowId) return c.json({ error: 'rowId is required', code: 'invalid_request_body' }, 400);
-    const run = await spriteAtlas.importRow(c.req.param('id'), body as ImportSpriteAtlasRowRequest);
-    if (!run) return c.json({ error: 'Sprite Atlas row not found' }, 404);
-    return c.json(run);
+    try {
+      const run = await spriteAtlas.importRow(
+        c.req.param('id'),
+        body as ImportSpriteAtlasRowRequest,
+      );
+      if (!run) return c.json({ error: 'Sprite Atlas row not found' }, 404);
+      return c.json(run);
+    } catch (error) {
+      return c.json(actionError(error), 409);
+    }
   });
 
   routes.post('/runs/:id/compose-fixture', async (c) => {

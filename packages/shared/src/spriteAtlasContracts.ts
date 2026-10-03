@@ -153,6 +153,19 @@ export interface SpriteAtlasRunPaths {
   qaReportPath: string;
 }
 
+/** How an imported provider image became the stored row strip (ADR 0010). */
+export interface SpriteAtlasRowNormalization {
+  normalized: boolean;
+  sourceSize: { w: number; h: number };
+  /** Null when the provider image already matched the contract size. */
+  kernel: 'nearest' | 'lanczos3' | null;
+  /** `scale` when slot and cell aspect differ by 2% or less; `contain` pads, never crops. */
+  fit: 'contain' | 'scale' | null;
+  /** The original provider image, kept beside the stored strip. */
+  sourcePath: string;
+  sourceSha256: string;
+}
+
 export interface SpriteAtlasRowState {
   id: string;
   status: SpriteAtlasRowStatus;
@@ -160,7 +173,9 @@ export interface SpriteAtlasRowState {
   promptPath: string;
   layoutGuidePath: string;
   rawPath: string | null;
+  /** Hash of the stored row strip at `rawPath`. */
   sourceSha256: string | null;
+  normalization: SpriteAtlasRowNormalization | null;
   catalogImageId: string | null;
   jobId: string | null;
   blocked: SpriteAtlasBlockedReason | null;
@@ -225,6 +240,8 @@ interface SpriteAtlasPresetRowDefinition {
   loop?: boolean;
   action?: string;
   mirrorPair?: string | null;
+  repeatMode?: SpriteAtlasRepeatMode | null;
+  tileRole?: string | null;
 }
 
 interface SpriteAtlasPresetDefinition {
@@ -246,7 +263,10 @@ function row(
   id: string,
   frames: number,
   action = '',
-  options: Pick<SpriteAtlasPresetRowDefinition, 'fps' | 'loop' | 'mirrorPair'> = {},
+  options: Pick<
+    SpriteAtlasPresetRowDefinition,
+    'fps' | 'loop' | 'mirrorPair' | 'repeatMode' | 'tileRole'
+  > = {},
 ): SpriteAtlasPresetRowDefinition {
   return { id, frames, action, ...options };
 }
@@ -269,8 +289,8 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('running-right', 8, '', { mirrorPair: 'running-left' }),
       row('running-left', 8, '', { mirrorPair: 'running-right' }),
       row('waving', 4),
-      row('jumping', 5),
-      row('failed', 8),
+      row('jumping', 5, '', { loop: false }),
+      row('failed', 8, '', { loop: false }),
       row('waiting', 6),
       row('running', 6),
       row('review', 6),
@@ -291,12 +311,12 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
     rows: [
       row('idle', 6),
       row('run', 8),
-      row('jump', 4),
+      row('jump', 4, '', { loop: false }),
       row('fall', 4),
-      row('land', 4),
-      row('attack', 6),
-      row('hurt', 4),
-      row('death', 8),
+      row('land', 4, '', { loop: false }),
+      row('attack', 6, '', { loop: false }),
+      row('hurt', 4, '', { loop: false }),
+      row('death', 8, '', { loop: false }),
     ],
   },
   'topdown-character': {
@@ -320,10 +340,10 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('walk-left', 8, '', { mirrorPair: 'walk-right' }),
       row('walk-right', 8, '', { mirrorPair: 'walk-left' }),
       row('walk-up', 8),
-      row('attack-down', 6),
-      row('attack-left', 6, '', { mirrorPair: 'attack-right' }),
-      row('attack-right', 6, '', { mirrorPair: 'attack-left' }),
-      row('attack-up', 6),
+      row('attack-down', 6, '', { loop: false }),
+      row('attack-left', 6, '', { loop: false, mirrorPair: 'attack-right' }),
+      row('attack-right', 6, '', { loop: false, mirrorPair: 'attack-left' }),
+      row('attack-up', 6, '', { loop: false }),
     ],
   },
   'isometric-character': {
@@ -347,10 +367,10 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('walk-sw', 8, '', { mirrorPair: 'walk-se' }),
       row('walk-ne', 8, '', { mirrorPair: 'walk-nw' }),
       row('walk-nw', 8, '', { mirrorPair: 'walk-ne' }),
-      row('attack-se', 6, '', { mirrorPair: 'attack-sw' }),
-      row('attack-sw', 6, '', { mirrorPair: 'attack-se' }),
-      row('attack-ne', 6, '', { mirrorPair: 'attack-nw' }),
-      row('attack-nw', 6, '', { mirrorPair: 'attack-ne' }),
+      row('attack-se', 6, '', { loop: false, mirrorPair: 'attack-sw' }),
+      row('attack-sw', 6, '', { loop: false, mirrorPair: 'attack-se' }),
+      row('attack-ne', 6, '', { loop: false, mirrorPair: 'attack-nw' }),
+      row('attack-nw', 6, '', { loop: false, mirrorPair: 'attack-ne' }),
     ],
   },
   'combat-character': {
@@ -369,12 +389,12 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('idle', 6),
       row('walk', 8),
       row('run', 8),
-      row('light-attack', 8),
-      row('heavy-attack', 10),
-      row('block', 4),
-      row('dodge', 6),
-      row('hit', 4),
-      row('death', 10),
+      row('light-attack', 8, '', { loop: false }),
+      row('heavy-attack', 10, '', { loop: false }),
+      row('block', 4, '', { loop: false }),
+      row('dodge', 6, '', { loop: false }),
+      row('hit', 4, '', { loop: false }),
+      row('death', 10, '', { loop: false }),
     ],
   },
   'fighting-game-character': {
@@ -393,14 +413,14 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('idle', 8),
       row('walk-forward', 8),
       row('walk-back', 8),
-      row('crouch', 4),
-      row('jump', 8),
-      row('punch', 6),
-      row('kick', 8),
-      row('special', 12),
-      row('hitstun', 6),
-      row('knockdown', 10),
-      row('win', 10),
+      row('crouch', 4, '', { loop: false }),
+      row('jump', 8, '', { loop: false }),
+      row('punch', 6, '', { loop: false }),
+      row('kick', 8, '', { loop: false }),
+      row('special', 12, '', { loop: false }),
+      row('hitstun', 6, '', { loop: false }),
+      row('knockdown', 10, '', { loop: false }),
+      row('win', 10, '', { loop: false }),
     ],
   },
   'rpg-monster': {
@@ -418,11 +438,11 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
     rows: [
       row('idle', 6),
       row('move', 6),
-      row('attack', 8),
-      row('cast', 8),
-      row('hit', 4),
-      row('death', 8),
-      row('taunt', 6),
+      row('attack', 8, '', { loop: false }),
+      row('cast', 8, '', { loop: false }),
+      row('hit', 4, '', { loop: false }),
+      row('death', 8, '', { loop: false }),
+      row('taunt', 6, '', { loop: false }),
       row('sleep', 4),
     ],
   },
@@ -440,13 +460,13 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
     formats: ['png', 'webp'],
     rows: [
       row('idle', 6),
-      row('blink', 4),
+      row('blink', 4, '', { loop: false }),
       row('talk', 6),
       row('happy', 4),
       row('sad', 4),
       row('thinking', 6),
-      row('alert', 4),
-      row('success', 4),
+      row('alert', 4, '', { loop: false }),
+      row('success', 4, '', { loop: false }),
     ],
   },
   'tileset-topdown': {
@@ -466,22 +486,29 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('terrain', 8, 'grass, dirt, stone, sand, mud, snow, and cracked ground tile variants', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
       row('paths', 8, 'path and road tiles: straight, corner, tee, cross, bridge, worn variants', {
         fps: 1,
         loop: false,
+        repeatMode: 'adjacency',
+        tileRole: 'path edges that join neighbors: straight, corner, tee, cross, bridge ends',
       }),
       row('water', 8, 'water, shoreline, foam, pond, river, and wet edge tiles', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
       row('walls', 8, 'wall, fence, cliff, ledge, gate, and obstacle tiles', {
         fps: 1,
         loop: false,
+        repeatMode: 'adjacency',
+        tileRole: 'wall, fence, cliff, and ledge edges that join neighbors',
       }),
       row('decor', 8, 'rocks, flowers, shrubs, crates, signs, debris, and ground decals', {
         fps: 1,
         loop: false,
+        repeatMode: 'overlay',
       }),
     ],
   },
@@ -501,22 +528,30 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('ground', 8, 'solid ground tiles: center, top, side, corner, cap, broken variants', {
         fps: 1,
         loop: false,
+        repeatMode: 'adjacency',
+        tileRole: 'solid ground autotile: center, top, side, corner, and cap pieces',
       }),
       row('slopes', 8, 'slope and ramp tiles with clean collision-readable silhouettes', {
         fps: 1,
         loop: false,
+        repeatMode: 'adjacency',
+        tileRole: 'slope and ramp pieces that join flat ground',
       }),
       row('ledges', 8, 'platform, bridge, one-way ledge, hanging edge, cracked ledge, supports', {
         fps: 1,
         loop: false,
+        repeatMode: 'adjacency',
+        tileRole: 'platform and ledge ends, middles, and supports',
       }),
       row('hazards', 8, 'spikes, lava edge, thorns, saw base, acid, warning hazard tiles', {
         fps: 1,
         loop: false,
+        repeatMode: 'overlay',
       }),
       row('decor', 8, 'grass tufts, vines, signs, rocks, chains, background trims, decals', {
         fps: 1,
         loop: false,
+        repeatMode: 'overlay',
       }),
     ],
   },
@@ -536,22 +571,27 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
       row('stone', 6, 'rough block, cracked slate, cobble, carved tile, wet stone, mossy stone', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
       row('wood', 6, 'plank, bark, worn board, dark beam, painted wood, splintered wood', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
       row('metal', 6, 'clean steel, rust, brass, scratched plate, riveted panel, dark iron', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
       row('fabric', 6, 'canvas, wool, leather, stitched cloth, banner weave, padded textile', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
       row('ground', 6, 'soil, sand, snow, grass, gravel, and mud material samples', {
         fps: 1,
         loop: false,
+        repeatMode: 'self',
       }),
     ],
   },
@@ -778,7 +818,6 @@ export function createSpriteAtlasContract(
         : preset.extractionMode === 'slots'
           ? 'true-grid'
           : 'static-items';
-  const repeatMode: SpriteAtlasRepeatMode | null = preset.assetKind === 'texture' ? 'self' : null;
   const frameSemantics: SpriteAtlasFrameSemantics =
     workflowLane === 'animation'
       ? 'temporal'
@@ -822,9 +861,29 @@ export function createSpriteAtlasContract(
       loop: presetRow.loop ?? true,
       action: presetRow.action ?? '',
       mirrorPair: presetRow.mirrorPair ?? null,
-      repeatMode,
-      tileRole: null,
+      repeatMode: presetRow.repeatMode ?? null,
+      tileRole: presetRow.tileRole ?? null,
     })),
     qaMode: isQaMode(qaModeValue) ? qaModeValue : 'standard',
+  };
+}
+
+/** Request params that rebuild a stored contract, so queued rows ignore the current draft. */
+export function createSpriteAtlasContractParams(contract: SpriteAtlasContract) {
+  return {
+    presetId: contract.presetId,
+    stylePreset: contract.stylePreset,
+    customStyle: contract.customStyle ?? '',
+    frameBudget: contract.frameBudget,
+    backgroundRemoval: contract.backgroundRemoval,
+    chromaKey: contract.chromaKey,
+    transparent: contract.transparent,
+    columns: contract.columns,
+    cellWidth: contract.cell.width,
+    cellHeight: contract.cell.height,
+    safeMarginX: contract.cell.safeMarginX,
+    safeMarginY: contract.cell.safeMarginY,
+    formats: contract.formats,
+    qaMode: contract.qaMode,
   };
 }

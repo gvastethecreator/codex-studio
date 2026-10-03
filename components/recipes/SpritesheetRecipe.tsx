@@ -49,6 +49,12 @@ const DEFAULT_PARAMS = {
   dividers: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'dividers', 'No Dividers'),
 };
 
+function parseGrid(grid: string): [number, number] {
+  if (grid.includes('Strip')) return [6, 1];
+  const [cols, rows] = grid.split('x').map(Number);
+  return [cols, rows];
+}
+
 function shouldOpenSpritesheetSidebarByDefault() {
   if (typeof window === 'undefined') return true;
   return window.innerWidth >= 640;
@@ -70,8 +76,6 @@ function getDividerStyle(dividers: string): string {
 }
 
 function getBackgroundClass(background: string): string {
-  if (background === 'Checkerboard')
-    return 'bg-[linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a),linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a)] bg-[length:20px_20px] bg-[position:0_0,10px_10px] bg-[color:var(--wb-panel)]';
   if (background.includes('Green')) return 'bg-[#00FF00]';
   if (background === 'White') return 'bg-white';
   if (background === 'Black') return 'bg-black';
@@ -213,10 +217,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
     if (editingCell !== null && cellInputRef.current) cellInputRef.current.focus();
   }, [editingCell]);
 
-  const [gridCols, gridRows] = useMemo(
-    () => (params.grid.includes('Strip') ? [6, 1] : params.grid.split('x').map(Number)),
-    [params.grid],
-  );
+  const [gridCols, gridRows] = useMemo(() => parseGrid(params.grid), [params.grid]);
 
   const recipeParams = useMemo(
     () => ({
@@ -295,10 +296,18 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           icon={<Grid3X3 width={14} height={14} />}
           label={params.grid}
           options={CONTROL_OPTIONS.grid}
-          onSelect={(v) => setParams((p) => ({ ...p, grid: v }))}
+          onSelect={(v) => {
+            const [cols, rows] = parseGrid(v);
+            setParams((p) => ({ ...p, grid: v }));
+            setCellPrompts((prev) =>
+              Object.fromEntries(
+                Object.entries(prev).filter(([index]) => Number(index) < cols * rows),
+              ),
+            );
+          }}
         />
         <fieldset
-          disabled={config.outputBackground === 'transparent' || config.attachments.length > 0}
+          disabled={config.outputBackground === 'transparent'}
           className="contents disabled:opacity-50"
         >
           <ControlDropdown
@@ -345,14 +354,21 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         </div>
       </>
     ),
-    [params, customColor, showGuides, config.prompt, config.attachments.length],
+    [
+      params,
+      customColor,
+      showGuides,
+      config.prompt,
+      config.attachments.length,
+      config.outputBackground,
+    ],
   );
 
   const hasDividers = params.dividers !== 'No Dividers';
   const gridContainerStyle = useMemo<React.CSSProperties>(
     () => ({
       aspectRatio: ratioValue,
-      width: `min(100%, ${availHeightCSS})`,
+      width: `min(100%, ${availHeightCSS}, calc(${availHeightCSS} * ${ratioValue}))`,
       maxHeight: availHeightCSS,
       display: 'grid',
       gridTemplateColumns: `repeat(${gridCols}, 1fr)`,
