@@ -11,7 +11,7 @@ import {
 import type { ImageGenerationConfig } from '../../types';
 import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
-import { createCameraRecipeParams } from '../../lib/recipeDerivedParams';
+import { createCameraRecipeParams } from '../../lib/recipeModules/camera';
 import { RecipeLayout } from './RecipeLayout';
 import { getRecipeModuleUiModel, getRecipeNumberDefault, getRecipeRange } from './recipeModuleUi';
 

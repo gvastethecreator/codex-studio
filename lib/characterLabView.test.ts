@@ -9,9 +9,8 @@ import {
   restoreCharacterLabDraft,
   updateCharacterLabView,
 } from './characterLabDraft';
-import { buildCharacterLabPrompt } from './characterLabPrompt';
-import { getRecipeModule } from './recipeModules';
-import { buildRecipeProviderDirectives } from './recipeProviderDirectives';
+import { buildCharacterLabPrompt } from './recipeModules/characterLab';
+import { buildRecipeProviderDirectives, getRecipeModule } from './recipeModules';
 import { CHARACTER_LAB_WORKFLOWS } from './characterLabWorkflows';
 import { RECIPE_DISCOVERY_CATALOG } from './recipeCatalog';
 

@@ -1,11 +1,12 @@
-import type {
-  AnimationSequenceContract,
-  AnimationSequenceFramePlanItem,
-} from '../packages/shared/src/animationSequenceContracts';
-import { createAnimationFrameHandoff } from './animationFrameHandoff';
-
-export type TimelineDirection = 'forward' | 'backward';
-export type TimelineCameraMode = 'locked' | 'dynamic';
+import {
+  createModuleDirectives,
+  directive,
+  getBoolean,
+  getNumber,
+  getString,
+} from './directiveHelpers';
+import { createRecipeModule } from './params';
+import type { RecipeDefinition, RecipeParams } from './types';
 
 export interface CameraRecipeInput {
   azimuth: number;
@@ -29,41 +30,73 @@ export interface CameraRecipeParams extends CameraDirectorInstructions {
   geometryConstraints: string;
 }
 
-export interface TimelineRecipeParamsInput {
-  /** Null while the active frame's sequence index is not known yet. */
-  currentRefIndex: number | null;
-  /** Indices already used in this sequence, including the origin (0). */
-  sequenceIndices: readonly number[];
-  /** Origin attachment id; frames with the same id form one sequence. */
-  sequenceId: string | null;
-  /** Catalog image id of the active frame, or the origin id when the origin is active. */
-  sourceFrameId: string | null;
-  direction: TimelineDirection;
-  timeDeltaLabel: string;
-  cameraMode: TimelineCameraMode;
-  motionAmount: string;
-  lightingMode: string;
-  isAnchored: boolean;
-}
-
-export interface AnimationSequenceRecipeParamsInput {
-  runId?: string | null;
-  contract: AnimationSequenceContract;
-  frame: AnimationSequenceFramePlanItem;
-  correctionMode?: boolean;
-}
-
-const TIME_DELTA_VALUE_BY_LABEL: Record<string, string> = {
-  'Split Second': 'IMMEDIATE_REACTION',
-  Seconds: 'SHORT_TERM_CONSEQUENCE',
-  Minutes: 'MEDIUM_TERM_PROGRESSION',
-  Hours: 'DAY_NIGHT_CYCLE',
-  Years: 'LONG_TERM_AGING',
-};
-
-export function getTimelineTimeDeltaValue(label: string) {
-  return TIME_DELTA_VALUE_BY_LABEL[label] ?? label;
-}
+const module = createRecipeModule({
+  id: 'camera',
+  title: 'Camera View',
+  description: 'Generate alternate camera views from orbit, pitch, zoom, and framing.',
+  defaultTask: 'image_generate',
+  variation: 'none',
+  supportedTasks: ['image_generate', 'image_edit'],
+  parameters: [
+    {
+      id: 'azimuth',
+      label: 'Azimuth',
+      kind: 'number',
+      control: 'slider',
+      group: 'orbit',
+      defaultValue: 0,
+      min: -180,
+      max: 180,
+      step: 1,
+    },
+    {
+      id: 'elevation',
+      label: 'Elevation',
+      kind: 'number',
+      control: 'slider',
+      group: 'orbit',
+      defaultValue: 0,
+      min: -85,
+      max: 85,
+      step: 1,
+    },
+    {
+      id: 'distance',
+      label: 'Distance',
+      kind: 'number',
+      control: 'slider',
+      group: 'orbit',
+      defaultValue: 100,
+      min: 20,
+      max: 200,
+      step: 1,
+    },
+    {
+      id: 'hasReference',
+      label: 'Has Reference',
+      kind: 'boolean',
+      control: 'toggle',
+      group: 'source',
+      defaultValue: false,
+    },
+    {
+      id: 'hPos',
+      label: 'Horizontal Position',
+      kind: 'string',
+      control: 'text',
+      group: 'derived',
+    },
+    { id: 'vPos', label: 'Vertical Position', kind: 'string', control: 'text', group: 'derived' },
+    { id: 'framing', label: 'Framing', kind: 'string', control: 'text', group: 'derived' },
+    {
+      id: 'geometryConstraints',
+      label: 'Geometry Constraints',
+      kind: 'string',
+      control: 'text',
+      group: 'derived',
+    },
+  ],
+});
 
 /**
  * Positive azimuth orbits the camera to the viewer's right, so the subject's left side turns
@@ -220,37 +253,53 @@ export function createCameraRecipeParams(input: CameraRecipeInput): CameraRecipe
   };
 }
 
-function getTimelineNextIndex(
-  currentRefIndex: number,
-  direction: TimelineDirection,
-  sequenceIndices: readonly number[],
-) {
-  const neighbor = currentRefIndex + (direction === 'forward' ? 1 : -1);
-  if (!sequenceIndices.includes(neighbor)) return neighbor;
-  // The neighbor slot is taken, so the new frame goes after the last (or before the first) one.
-  return direction === 'forward'
-    ? Math.max(currentRefIndex, ...sequenceIndices) + 1
-    : Math.min(currentRefIndex, ...sequenceIndices) - 1;
+function buildCameraDirectives(params: RecipeParams) {
+  const azimuth = Math.round(getNumber(params, 'azimuth', 0));
+  const elevation = Math.round(getNumber(params, 'elevation', 0));
+  const distance = Math.round(getNumber(params, 'distance', 100));
+  const director = getCameraDirectorInstructions(azimuth, elevation, distance);
+  const hPos = getString(params, 'hPos') || director.hPos;
+  const vPos = getString(params, 'vPos') || director.vPos;
+  const framing = getString(params, 'framing') || director.framing;
+  const geometryConstraints =
+    getString(params, 'geometryConstraints') || getCameraGeometryConstraints(azimuth, elevation);
+
+  const hasReference = getBoolean(params, 'hasReference');
+
+  return createModuleDirectives(module, [
+    {
+      title: 'Objective',
+      directives: [
+        directive(
+          'Goal',
+          hasReference
+            ? 'Re-render the same subject from the reference image as seen from the camera position below. Keep identity, outfit, materials, palette, and lighting. Invent only what the new angle reveals.'
+            : 'Render the subject from the prompt as seen from the camera position below.',
+        ),
+        directive('Rules', 'One image from one camera. No split views, grids, labels, or text.'),
+      ],
+    },
+    {
+      title: 'Camera Transform',
+      directives: [
+        directive('Orbit', `${azimuth} degrees (${hPos})`),
+        directive('Pitch', `${elevation} degrees (${vPos})`),
+        directive('Zoom', `${distance}% (${framing}). 100% is a medium shot; higher is closer.`),
+      ],
+    },
+    {
+      title: 'Visual Guidance',
+      directives: [directive('Geometry Constraints', geometryConstraints)],
+    },
+  ]);
 }
 
-export function createTimelineRecipeParams(input: TimelineRecipeParamsInput) {
-  return {
-    nextIndex:
-      input.currentRefIndex === null
-        ? null
-        : getTimelineNextIndex(input.currentRefIndex, input.direction, input.sequenceIndices),
-    sequenceId: input.sequenceId,
-    sourceFrameId: input.sourceFrameId,
-    direction: input.direction,
-    timeDeltaValue: getTimelineTimeDeltaValue(input.timeDeltaLabel),
-    timeDeltaLabel: input.timeDeltaLabel,
-    cameraMode: input.cameraMode,
-    motionAmount: input.motionAmount,
-    lightingMode: input.lightingMode,
-    isAnchored: input.isAnchored,
-  };
-}
-
-export function createAnimationSequenceRecipeParams(input: AnimationSequenceRecipeParamsInput) {
-  return createAnimationFrameHandoff(input).recipeParams;
-}
+export const cameraRecipe: RecipeDefinition = {
+  module,
+  policy: {},
+  referenceInstruction: (_params, _attachment, index) =>
+    index === 0
+      ? 'The subject to re-render from the new camera position.'
+      : 'Extra view of the same subject.',
+  directives: (params) => buildCameraDirectives(params),
+};

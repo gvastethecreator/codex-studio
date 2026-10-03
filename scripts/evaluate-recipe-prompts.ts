@@ -12,13 +12,13 @@ import {
 } from '../packages/shared/src/recipeProviderDirectives';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import {
+  buildRecipeProviderDirectives,
   createRecipeDefaultParams,
   isRecipeTaskSupported,
   listRecipeModules,
   validateRecipeParams,
   type RecipeModule,
 } from '../lib/recipeModules';
-import { buildRecipeProviderDirectives } from '../lib/recipeProviderDirectives';
 
 export interface EvaluationPair {
   recipeId: string;

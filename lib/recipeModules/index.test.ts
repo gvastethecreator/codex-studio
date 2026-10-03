@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { DEFAULT_GENERATION_CONFIG } from '../constants';
+import { DEFAULT_GENERATION_CONFIG } from '../../constants';
 import {
   buildGenerationTaskSpecFromRecipe,
   createRecipeDefaultParams,
@@ -10,7 +10,7 @@ import {
   isRecipeTaskSupported,
   listRecipeModules,
   validateRecipeParams,
-} from './recipeModules';
+} from './index';
 
 describe('recipeModules', () => {
   it('keeps one background choice consistent for image and text requests in every workflow', () => {

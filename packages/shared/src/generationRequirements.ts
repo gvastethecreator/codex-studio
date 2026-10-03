@@ -1,3 +1,6 @@
+import { getRecipePolicy } from './recipePolicies';
+import { hasRecipeSource } from './recipePolicies/types';
+
 export interface GenerationRequirement {
   field: 'prompt' | 'source' | 'styles';
   message: string;
@@ -16,73 +19,11 @@ export interface GenerationRequirementInput {
 export function getGenerationRequirement(
   input: GenerationRequirementInput,
 ): GenerationRequirement | null {
-  const params = input.recipeParams ?? {};
-  const hasSource = input.referenceCount > 0;
-  const prompt =
-    input.prompt?.trim() ||
-    (input.recipeId === 'character-lab' && typeof params.subject === 'string'
-      ? params.subject.trim()
-      : '');
-  if (input.recipeId === 'remaster' && !hasSource) {
-    return { field: 'source', message: 'Add a source image to restore.' };
-  }
-  if (
-    input.recipeId === 'spritesheet' &&
-    !hasSource &&
-    ((params.view ?? 'Match Source') === 'Match Source' ||
-      (params.style ?? 'Preserve Style') === 'Preserve Style')
-  ) {
-    return { field: 'source', message: 'Add a source image, or choose From prompt.' };
-  }
-  if (
-    input.recipeId === 'styles' &&
-    input.task !== 'style_preset_card' &&
-    !input.stylePresetId &&
-    !(typeof params.presetId === 'string' && params.presetId.trim()) &&
-    !(
-      Array.isArray(params.selectedStyles) &&
-      params.selectedStyles.some(
-        (style) =>
-          style &&
-          typeof style === 'object' &&
-          typeof style.presetId === 'string' &&
-          style.presetId.trim() &&
-          style.enabled !== false,
-      )
-    )
-  ) {
-    return { field: 'styles', message: 'Choose a style before generating.' };
-  }
-  if (
-    input.recipeId === 'styles' &&
-    typeof params.intentionalCompileError === 'string' &&
-    params.intentionalCompileError.trim()
-  ) {
-    return { field: 'styles', message: params.intentionalCompileError };
-  }
-  const styleMode = params.styleReferenceMode ?? params.intentionalMode;
-  if (
-    input.recipeId === 'styles' &&
-    input.task !== 'style_preset_card' &&
-    styleMode === 'preserve' &&
-    params.mode !== 'DIRECT_STYLE_SYNTHESIS' &&
-    !hasSource
-  ) {
-    return { field: 'source', message: 'Add an image to preserve.' };
-  }
-  if (input.recipeId === 'timeline' && params.nextIndex === null) {
-    return {
-      field: 'source',
-      message: 'Wait for the selected frame to load, or pick a frame in the film strip.',
-    };
-  }
-  if (input.recipeId === 'character-lab' && params.mode === 'effects' && !hasSource) {
-    return { field: 'source', message: 'Add a source image to apply this transform.' };
-  }
-  if (input.recipeId === 'animation-sequence' && !prompt) {
-    return { field: 'prompt', message: 'Add a motion prompt.' };
-  }
-  if (!prompt && !hasSource && input.recipeId !== 'styles') {
+  const policy = getRecipePolicy(input.recipeId);
+  const prompt = input.prompt?.trim() || (policy.effectivePrompt?.(input) ?? '');
+  const recipeRequirement = policy.requirement?.(input, prompt);
+  if (recipeRequirement) return recipeRequirement;
+  if (!prompt && !hasRecipeSource(input) && !policy.promptOptional) {
     return { field: 'prompt', message: 'Add a prompt or image.' };
   }
   return null;
@@ -93,20 +34,7 @@ export function getGenerationOutputSummary(
   params: Record<string, unknown> | null | undefined,
   count: number,
 ) {
-  const files = `${count} ${count === 1 ? 'file' : 'files'}`;
-  const gridValue = params?.grid ?? params?.layout;
-  const grid = typeof gridValue === 'string' ? gridValue : '';
-  const dimensions = grid.match(/(\d+)\s*[x×]\s*(\d+)/i);
-  const cells = dimensions
-    ? Number(dimensions[1]) * Number(dimensions[2])
-    : grid.includes('Strip')
-      ? 6
-      : Number(params?.rows) * Number(params?.cols) || null;
-  if (recipeId === 'spritesheet')
-    return `${count} ${count === 1 ? 'sheet' : 'sheets'}${cells ? ` · ${cells} cells each` : ''} · ${files}`;
-  if (recipeId === 'cinematic')
-    return `${count} ${count === 1 ? 'storyboard' : 'storyboards'}${cells ? ` · ${cells} scenes each` : ''} · ${files}`;
-  if (recipeId === 'character')
-    return `${count} character ${count === 1 ? 'sheet' : 'sheets'} · ${files}`;
+  const policy = getRecipePolicy(recipeId);
+  if (policy.outputSummary) return policy.outputSummary(params, count);
   return `${count} ${count === 1 ? 'image' : 'images'}`;
 }

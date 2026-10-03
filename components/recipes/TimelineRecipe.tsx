@@ -28,7 +28,7 @@ import { buildGeneratedImageContextAttachment } from '../../hooks/useGenerationC
 import { useLazyRef } from '../../hooks/useLazyRef';
 import { useLatestRef } from '../../hooks/useLatestRef';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
-import { createTimelineRecipeParams } from '../../lib/recipeDerivedParams';
+import { createTimelineRecipeParams } from '../../lib/recipeModules/timeline';
 import { getRecipeNumberParam, hasRecipeIdentity } from '../../lib/recipeIdentity';
 import { materializeCatalogEntryImageWithConfig } from '../../lib/studioCatalogImageAdapter';
 import { getRecipeModuleUiModel, getRecipeOptions, getRecipeStringDefault } from './recipeModuleUi';

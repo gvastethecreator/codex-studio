@@ -1,7 +1,6 @@
 import { createStyleBrowserProcessedData } from './styleBrowserRenderPlan';
 import { describe, expect, it } from 'vitest';
-import { getRecipeModule } from '../../lib/recipeModules';
-import { buildRecipeProviderDirectives } from '../../lib/recipeProviderDirectives';
+import { buildRecipeProviderDirectives, getRecipeModule } from '../../lib/recipeModules';
 import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import { compileIntentionalStylePlan } from './intentionalStyleCompile';
 import { buildStylePromptText } from './stylePromptText';

@@ -1,8 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import catalogJson from '../../packages/shared/src/styles/intentional-v1/catalog.fixture.json';
-import { getRecipeModule } from '../../lib/recipeModules';
-import { buildRecipeProviderDirectives } from '../../lib/recipeProviderDirectives';
+import { buildRecipeProviderDirectives, getRecipeModule } from '../../lib/recipeModules';
 import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import { compileIntentionalStylePlan } from './intentionalStyleCompile';
 import type { SelectedStyleSlot } from './styleLayerComposer';

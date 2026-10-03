@@ -26,7 +26,7 @@ import {
   resolveCharacterLabOutputBackground,
   type CharacterLabControl,
 } from '../../lib/characterLabWorkflows';
-import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
+import { buildCharacterLabPrompt } from '../../lib/recipeModules/characterLab';
 import {
   characterLabActions,
   characterLabCategories,

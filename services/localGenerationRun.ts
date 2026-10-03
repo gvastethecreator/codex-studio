@@ -22,6 +22,7 @@ import {
   resolveRecipeAttachmentRole,
   resolveRecipeVariationScope,
 } from '../lib/recipeModules';
+import { getRecipeBehavior } from '../lib/recipeModules/registry';
 import {
   cancelStudioJob,
   createStudioJobBatch,
@@ -308,10 +309,10 @@ export function buildLocalGenerationTaskPrompt({
   if (prompt) return prompt;
 
   if (config.attachments.length > 0) {
-    if (config.recipeId === 'styles')
-      return 'Apply the selected style using the provided reference image.';
-    if (config.recipeId === 'remaster') return 'Restore and remaster the provided image.';
-    return 'Generate from the provided reference image.';
+    return (
+      getRecipeBehavior(config.recipeId)?.referencePromptFallback ??
+      'Generate from the provided reference image.'
+    );
   }
 
   return 'Generate a high-quality image.';

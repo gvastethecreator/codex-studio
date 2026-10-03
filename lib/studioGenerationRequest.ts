@@ -7,6 +7,7 @@ import {
   resolveRecipeProviderBlock,
 } from './composerProviderProjection';
 import { resolveGrokImagineGenerateBlock } from './grokImagineUiPolicy';
+import { RECIPE_REFERENCE_RULES } from './recipeModules/composerRules';
 
 function withoutCharacterLabDraft<T extends Partial<ImageGenerationConfig>>(config: T) {
   const { characterLabDraft: _draft, ...request } = config;
@@ -65,12 +66,8 @@ export function prepareStudioGenerationRequest({
     configOverrides,
     generationConfig.recipeId,
   );
-  const maxAttachments =
-    effectiveRecipeId === 'timeline' ||
-    effectiveRecipeId === 'character-lab' ||
-    effectiveRecipeId === 'animation-sequence'
-      ? 4
-      : resolveProviderMaxInputImages(providerId);
+  const recipe = effectiveRecipeId ? RECIPE_REFERENCE_RULES[effectiveRecipeId] : undefined;
+  const maxAttachments = recipe?.maxReferences ?? resolveProviderMaxInputImages(providerId);
   const finalAttachments = baseAttachments.slice(0, maxAttachments);
   if (finalAttachments.some((attachment) => attachment.isProcessing)) {
     return { ok: false, message: 'Wait for reference images to finish loading before generating.' };
@@ -79,9 +76,7 @@ export function prepareStudioGenerationRequest({
     ...(generationConfig.recipeParams ?? {}),
     ...(configOverrides?.recipeParams ?? {}),
   };
-  const styleMode = recipeParams.styleReferenceMode ?? recipeParams.intentionalMode;
-  const stylesReferenceStrength =
-    styleMode === 'preserve' ? 0.85 : styleMode === 'reinterpret' ? 0.35 : 0.15;
+  const referenceStrength = recipe?.referenceStrength?.(recipeParams);
   const hasReferenceImage = finalAttachments.length > 0;
 
   if (!finalPrompt && !hasReferenceImage) {
@@ -114,7 +109,7 @@ export function prepareStudioGenerationRequest({
         configOverrides?.codexTransport ?? generationConfig.codexTransport ?? defaultCodexTransport,
       attachments: finalAttachments.map((attachment) => ({
         ...attachment,
-        strength: effectiveRecipeId === 'styles' ? stylesReferenceStrength : attachment.strength,
+        strength: referenceStrength ?? attachment.strength,
       })),
       prompt: finalPrompt,
       imageSize: resolveProviderImageSize(
