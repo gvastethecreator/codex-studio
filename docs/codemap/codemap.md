@@ -1,20 +1,20 @@
 # Code map: cozy-studio
 
-Generated: 2026-10-03T03:51:36Z | Commit: `603d1fa49581` | Schema: 2
-Generation: `6d8c696f5b4a6f7bc401ae19315afe772f20752954b9211fb28d6ec75816bf28`
+Generated: 2026-10-03T10:12:19Z | Commit: `ffa3176d6a05` | Schema: 2
+Generation: `46729e76802b29d25f26fd7c2a8302776d44a9fa607fad12ee69f2df56eb9abf`
 Scope: . | Inventory: working-tree
-Nodes: 1020 | Edges: 6197 | Flows: 5
+Nodes: 1044 | Edges: 6425 | Flows: 5
 
 ## Coverage
 
-- Analysis: **partial**; 940 analyzed of 953 included files.
+- Analysis: **partial**; 960 analyzed of 975 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3850.
+- Unresolved references and analysis limits: 4021.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
 
-- `App.tsx` | module | Repository | callers: main.tsx, review/entry.tsx | callees: components/AppContent.tsx, contexts/GenerationContext.tsx, contexts/GlobalContext.tsx, external:javascript:react | tests: 0 | entry: none
+- `App.tsx` | module | Repository | callers: main.tsx, review/entry.tsx | callees: components/AppContent.tsx, contexts/GenerationContext.tsx, contexts/GlobalContext.tsx, contexts/ImageConversionContext.tsx | tests: 0 | entry: none
 - `apps/local-server/src/animationGifEncoder.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/animationGifEncoder.ts, apps/local-server/src/animationGifEncoder.ts, external:javascript:sharp, external:javascript:sharp | tests: 0 | entry: none
 - `apps/local-server/src/animationGifEncoder.ts` | module | Repository | callers: apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationSequenceService.ts, apps/local-server/src/animationSequenceService.ts | callees: none | tests: 1 | entry: none
 - `apps/local-server/src/animationSequenceRoutes.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/animationSequenceRoutes.ts, apps/local-server/src/animationSequenceRoutes.ts, external:javascript:node:fs, external:javascript:node:fs | tests: 0 | entry: none
@@ -34,13 +34,14 @@ Nodes: 1020 | Edges: 6197 | Flows: 5
 - `apps/local-server/src/auth/authRoutes.ts` | module | Repository | callers: apps/local-server/src/appFactory.ts, apps/local-server/src/appFactory.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts | callees: apps/local-server/src/auth/controller.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts, external:javascript:hono | tests: 1 | entry: none
 - `apps/local-server/src/auth/constants.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/deviceCode.test.ts, apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/deviceCode.ts | callees: none | tests: 3 | entry: none
 - `apps/local-server/src/auth/controller.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/reset.ts | callees: apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/googleAuthorizationCode.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
-- Showing 20 of 1020 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
+- Showing 20 of 1044 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
 
 ## Edges
 
 - `App.tsx` -> `components/AppContent.tsx` | imports
 - `App.tsx` -> `contexts/GenerationContext.tsx` | imports
 - `App.tsx` -> `contexts/GlobalContext.tsx` | imports
+- `App.tsx` -> `contexts/ImageConversionContext.tsx` | imports
 - `App.tsx` -> `external:javascript:react` | imports
 - `App.tsx` -> `hooks/useTheme.ts` | imports
 - `apps/local-server/src/animationGifEncoder.test.ts` -> `apps/local-server/src/animationGifEncoder.ts` | calls
@@ -87,23 +88,22 @@ Nodes: 1020 | Edges: 6197 | Flows: 5
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/animationGifEncoder.ts` | calls
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/animationGifEncoder.ts` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/db/jobs.ts` | imports
-- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/library.ts` | calls
-- Showing 50 of 6197 edges; JSON contains every edge and its evidence.
+- Showing 50 of 6425 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
-- `apps/local-server/src/animationSequenceRoutes.test.ts:29`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:54`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:54`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:10`: object-member-call-not-resolved (vi)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:31`: object-member-call-not-resolved (path)
 - `apps/local-server/src/animationSequenceRoutes.test.ts:56`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:57`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:66`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:99`: object-member-call-not-resolved (expect)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:169`: object-member-call-not-resolved (expect)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:178`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:178`: object-member-call-not-resolved (os)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:204`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:204`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:56`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:58`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:59`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:68`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:101`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:171`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:180`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:180`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:206`: object-member-call-not-resolved (path)
 
 ## Flows
 
@@ -115,8 +115,8 @@ Nodes: 1020 | Edges: 6197 | Flows: 5
 
 ## Architecture changes
 
-- Nodes: +44 / -29; edges: +361 / -215.
-- Boundary changes: 0; new cycles: 1.
+- Nodes: +1 / -1; edges: +27 / -18.
+- Boundary changes: 0; new cycles: 0.
 
 ## Read next
 
