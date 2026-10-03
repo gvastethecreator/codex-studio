@@ -115,7 +115,9 @@ describe('CharacterLabRecipe', () => {
     ]);
     for (const { prompt, overrides } of runs) {
       expect(overrides.batchCount).toBe(1);
-      expect(prompt).toContain(`Action: ${overrides.recipeParams.actionLabel}`);
+      // Each job leads with its own action instruction.
+      const [lead] = prompt.split('\n');
+      expect(lead).toContain(overrides.recipeParams.actionPrompt.replace(/\.$/, ''));
       expect(prompt).not.toContain('Batch request');
     }
   });

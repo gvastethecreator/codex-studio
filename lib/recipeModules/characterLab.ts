@@ -227,7 +227,6 @@ export function buildCharacterLabPrompt(
     category: action.category,
     actionId: action.id,
   });
-  const sourceMode = options.hasSource ? 'source-image guided' : 'prompt guided';
   const background =
     outputBackground === 'transparent'
       ? 'transparent'
@@ -235,36 +234,27 @@ export function buildCharacterLabPrompt(
         ? 'opaque'
         : 'auto';
 
+  // The action leads: it is the request. Identity, options, and background rules follow.
+  const characterOptions = Object.entries({
+    Style: controls.style,
+    Clothing: controls.clothing,
+    'Body type': controls.bodyType,
+    Expression: controls.expression,
+    'Background color': controls.backgroundColor,
+  }).filter(([, value]) => value);
   return [
-    'Character Lab generation request.',
+    getModeInstruction(action),
+    line('Subject', options.subject || 'Use the composer prompt as the subject'),
     '',
-    line('Workflow', action.mode),
-    line('Category', action.category),
-    line('Action', action.label),
-    line('Source mode', sourceMode),
-    line('Requested aspect ratio', options.labAspectRatio),
-    '',
-    'Character identity contract:',
+    'Character identity:',
     options.hasSource
       ? `Treat the first image as the primary identity source${action.isCouplesPose ? ' for Character A' : ''}. Preserve the recognizable identity; the selected action may change body proportions, costume, or surroundings.`
       : 'Create one cohesive original character from the subject description and keep all generated details internally consistent.',
     getReferenceLine(action, options.referencesCount),
     'Do not add text, captions, watermarks, UI chrome, labels, or unrelated extra characters unless the selected action explicitly asks for them.',
+    ...(characterOptions.length > 0 ? ['', 'Character options:'] : []),
+    ...characterOptions.map(([label, value]) => line(label, value)),
     '',
-    'Global character options:',
-    line('Subject', options.subject || 'Use the composer prompt as the subject'),
-    ...Object.entries({
-      Style: controls.style,
-      Clothing: controls.clothing,
-      'Body type': controls.bodyType,
-      Expression: controls.expression,
-      'Background color': controls.backgroundColor,
-    })
-      .filter(([, value]) => value)
-      .map(([label, value]) => line(label, value)),
-    '',
-    'Selected action instructions:',
-    getModeInstruction(action),
     buildGenerationBackgroundInstruction(background, options.hasSource),
     CHARACTER_LAB_ACTION_PRIORITY,
     ...(options.additionalPrompt?.trim()
