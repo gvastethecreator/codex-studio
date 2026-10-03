@@ -8,7 +8,8 @@ import { authoringSharp } from './sharpAuthoringAdapter';
 import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
-  isAnimationSequenceBlockedReasonKind,
+  isAnimationSequenceFrameAwaitingJob,
+  listAnimationSequenceFrameJobIds,
   type AnimationSequenceBlockedReason,
   type AnimationSequenceExportRecord,
   type AnimationSequenceFramePromptResponse,
@@ -20,9 +21,12 @@ import {
   type CreateAnimationSequenceRunRequest,
   type ExportAnimationSequenceGifRequest,
 } from '../../../packages/shared/src/animationSequenceContracts';
-import type { JobLibraryContext, CatalogImage } from '../../../packages/shared/src/types';
+import type { GenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
+import type { JobLibraryContext, CatalogImage, Job } from '../../../packages/shared/src/types';
 import { encodeGif, type GifRgbaFrame } from './animationGifEncoder';
 import { resolveLibraryPathFromRoot } from './library';
+import { getJob as getStoredJob } from './db/jobs';
+import type { WorkflowRunDispatchIssue } from './workflowRunReconciler';
 
 export interface AnimationSequenceService {
   listRuns(): Promise<AnimationSequenceRun[]>;
@@ -32,10 +36,21 @@ export interface AnimationSequenceService {
     runId: string,
     frameId: string,
   ): Promise<AnimationSequenceFramePromptResponse | null>;
+  /** Manual Attach of a user-chosen image. */
   attachFrame(
     runId: string,
     input: AttachAnimationSequenceFrameRequest,
   ): Promise<AnimationSequenceRun | null>;
+  /** Rejects a frame job whose run or frame does not exist. */
+  validateDispatch(spec: GenerationTaskSpec): Promise<WorkflowRunDispatchIssue | null>;
+  /** Links accepted frame jobs to their frames before a worker can start them. */
+  recordDispatch(jobs: Job[]): Promise<void>;
+  /** Folds a settled or requeued frame job into its run. True when the run changed. */
+  settleJob(job: Job): Promise<boolean>;
+  /** Re-reads every linked job of one run and settles what finished. */
+  reconcileRun(runId: string): Promise<AnimationSequenceRun | null>;
+  /** Startup repair: links unrecorded recoverable jobs and settles finished ones. */
+  recoverRuns(recoverableJobs: Job[]): Promise<void>;
   exportGif(
     runId: string,
     input?: ExportAnimationSequenceGifRequest,
@@ -50,6 +65,8 @@ export interface CreateAnimationSequenceServiceOptions {
   readLibraryDir: () => string;
   readOutputContext?: (workspaceId?: string) => JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
+  /** Stored job reads for reconciliation. Defaults to the Studio database. */
+  getJob?: (jobId: string) => Job | null;
   createId?: () => string;
   now?: () => string;
 }
@@ -154,6 +171,7 @@ function createFrameStates(
     framePath: null,
     catalogImageId: null,
     jobId: null,
+    dispatch: null,
     width: null,
     height: null,
     blocked: null,
@@ -179,14 +197,101 @@ function invalidateGifExport(run: AnimationSequenceRun) {
   run.qa = null;
 }
 
-function isSafeBlockedReason(
-  value: AnimationSequenceBlockedReason | null | undefined,
-): value is AnimationSequenceBlockedReason {
+interface FrameDispatchTarget {
+  runId: string;
+  frameId?: string;
+  frameIndex?: number;
+  correctionMode: boolean;
+}
+
+/** Frame jobs carry their run and frame in the Animation Frame Handoff recipe params. */
+function readDispatchTarget(
+  spec: Pick<GenerationTaskSpec, 'recipeParams'> | null | undefined,
+): FrameDispatchTarget | null {
+  const params = spec?.recipeParams ?? {};
+  const runId = typeof params.runId === 'string' ? params.runId.trim() : '';
+  if (!runId) return null;
+  return {
+    runId,
+    frameId: typeof params.frameId === 'string' ? params.frameId : undefined,
+    frameIndex: typeof params.frameIndex === 'number' ? params.frameIndex : undefined,
+    correctionMode: params.correctionMode === true,
+  };
+}
+
+function groupJobsByRun(jobs: Job[]) {
+  const groups = new Map<string, Job[]>();
+  for (const job of jobs) {
+    const runId = readDispatchTarget(job.sourceSpec)?.runId;
+    if (runId) groups.set(runId, [...(groups.get(runId) ?? []), job]);
+  }
+  return groups;
+}
+
+const PENDING_JOB_STATUSES = new Set<Job['status']>(['queued', 'running']);
+
+function readJobCatalogImageId(job: Job | null) {
+  return job?.status === 'completed' ? (job.finalization?.catalogId ?? null) : null;
+}
+
+/** A job that may still attach an image to its frame. */
+function canJobLand(job: Job | null) {
+  return Boolean(job && (PENDING_JOB_STATUSES.has(job.status) || readJobCatalogImageId(job)));
+}
+
+/** Blocked frames whose jobs may still land stay linked, so a retried job can attach. */
+function needsReconcile(frame: AnimationSequenceFrameState) {
   return (
-    value?.status === 'blocked' &&
-    isAnimationSequenceBlockedReasonKind(value.reasonKind) &&
-    Boolean(value.userMessage.trim()) &&
-    Boolean(value.suggestion.trim())
+    listAnimationSequenceFrameJobIds(frame).length > 0 &&
+    (isAnimationSequenceFrameAwaitingJob(frame) || frame.status === 'blocked')
+  );
+}
+
+function markFrameAwaiting(
+  frame: AnimationSequenceFrameState,
+  correctionMode: boolean,
+  timestamp: string,
+) {
+  // A correction keeps the current image as its preview until the result lands.
+  frame.status = correctionMode ? 'correcting' : 'generating';
+  frame.blocked = null;
+  frame.updatedAt = timestamp;
+}
+
+function blockedReason(
+  reasonKind: AnimationSequenceBlockedReason['reasonKind'],
+  userMessage: string,
+  suggestion: string,
+): AnimationSequenceBlockedReason {
+  return { status: 'blocked', reasonKind, userMessage, suggestion };
+}
+
+const RETRY_SUGGESTION = 'Select Retry to queue this frame again.';
+
+/** Why a settled job produced no frame image. */
+function describeUnfinishedJob(job: Job | null) {
+  if (!job) return blockedReason('unknown', 'The frame job no longer exists.', RETRY_SUGGESTION);
+  if (job.status === 'failed') {
+    return blockedReason(
+      'runner_failed',
+      job.error ? `The frame job failed: ${job.error}` : 'The frame job failed.',
+      RETRY_SUGGESTION,
+    );
+  }
+  if (job.status === 'cancelled') {
+    return blockedReason('runner_failed', 'The frame job was cancelled.', RETRY_SUGGESTION);
+  }
+  if (job.status === 'needs_review') {
+    return blockedReason(
+      'no_image_returned',
+      'The frame job needs review: the provider did not confirm an image.',
+      'Resolve the job in Queue, then select Sync. Or select Retry to queue the frame again.',
+    );
+  }
+  return blockedReason(
+    'no_image_returned',
+    'The frame job completed, but its image is not in the Catalog.',
+    RETRY_SUGGESTION,
   );
 }
 
@@ -241,6 +346,7 @@ export function createAnimationSequenceService({
   readLibraryDir,
   readOutputContext,
   getCatalogImage,
+  getJob = (jobId) => getStoredJob(jobId),
   createId = randomUUID,
   now = () => new Date().toISOString(),
 }: CreateAnimationSequenceServiceOptions): AnimationSequenceService {
@@ -285,6 +391,177 @@ export function createAnimationSequenceService({
         ),
       )
     );
+  }
+
+  /** Copies a managed source image into the frame. The frame blocks when it is missing or off-size. */
+  async function applyFrameSource(
+    run: AnimationSequenceRun,
+    frame: AnimationSequenceFrameState,
+    input: Pick<AttachAnimationSequenceFrameRequest, 'catalogImageId' | 'sourcePath'>,
+  ) {
+    const timestamp = now();
+    const { sourcePath, catalogImageId } = resolveSourcePath({
+      input,
+      getCatalogImage,
+      libraryDir: readLibraryDir(),
+      libraryContext: readOutputContext?.(),
+    });
+
+    if (!sourcePath || !(await fileExists(sourcePath))) {
+      frame.status = 'blocked';
+      frame.blocked = {
+        status: 'blocked',
+        reasonKind: 'source_missing',
+        userMessage: 'No managed source image was available for this frame.',
+        suggestion: 'Generate or import the frame image into the Studio Library, then attach it.',
+      };
+      frame.updatedAt = timestamp;
+      return;
+    }
+
+    const rawPath = path.join(run.paths.rawDir, `${frame.id}${path.extname(sourcePath) || '.png'}`);
+    const framePath = path.join(run.paths.framesDir, `${frame.id}.png`);
+    await copyFile(sourcePath, rawPath);
+    const metadata = await authoringSharp(sourcePath).metadata();
+    const exactSize =
+      metadata.width === run.contract.dimensions.width &&
+      metadata.height === run.contract.dimensions.height;
+    const hasAlpha = metadata.hasAlpha === true;
+    const hasTransparency = hasAlpha && !(await authoringSharp(sourcePath).stats()).isOpaque;
+    if (!exactSize) {
+      frame.status = 'blocked';
+      frame.rawPath = rawPath;
+      frame.framePath = null;
+      frame.catalogImageId = catalogImageId;
+      frame.width = metadata.width ?? null;
+      frame.height = metadata.height ?? null;
+      frame.blocked = {
+        status: 'blocked',
+        reasonKind: 'geometry_mismatch',
+        userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height}.`,
+        suggestion:
+          'Select Retry to generate the frame at the run size. This workflow does not crop or scale frames.',
+      };
+      frame.updatedAt = timestamp;
+      return;
+    }
+
+    frame.warning =
+      !hasTransparency && run.contract.background === 'transparent'
+        ? 'Transparent output was requested, but this frame is opaque. The original frame is preserved.'
+        : null;
+    if (run.contract.background === 'solid') {
+      await authoringSharp(sourcePath)
+        .flatten({ background: run.contract.matteColor })
+        .png()
+        .toFile(framePath);
+    } else {
+      await authoringSharp(sourcePath).png().toFile(framePath);
+    }
+    const info = await authoringSharp(framePath).metadata();
+
+    frame.status = 'generated';
+    frame.rawPath = rawPath;
+    frame.framePath = framePath;
+    frame.catalogImageId = catalogImageId;
+    frame.width = info.width ?? null;
+    frame.height = info.height ?? null;
+    frame.blocked = null;
+    frame.updatedAt = timestamp;
+  }
+
+  /**
+   * Every read-modify-write of one run record runs alone, so concurrent writers cannot drop
+   * updates. The run is saved only when the edit reports a change.
+   */
+  function updateRun(runId: string, edit: (run: AnimationSequenceRun) => Promise<boolean>) {
+    return withRunLock(runId, async () => {
+      const run = await getRun(runId);
+      if (!run) return null;
+      if (!(await edit(run))) return { run, changed: false };
+      invalidateGifExport(run);
+      return { run: await saveRun(run), changed: true };
+    });
+  }
+
+  /** A new job set replaces the frame's dispatch. Recorded jobs only reopen a blocked frame. */
+  function recordFrameDispatch(run: AnimationSequenceRun, jobs: Job[]) {
+    const jobsByFrame = new Map<AnimationSequenceFrameState, Job[]>();
+    for (const job of jobs) {
+      const target = readDispatchTarget(job.sourceSpec);
+      const frame = target ? resolveFrame(run, target) : null;
+      if (frame) jobsByFrame.set(frame, [...(jobsByFrame.get(frame) ?? []), job]);
+    }
+    const timestamp = now();
+    let changed = false;
+    for (const [frame, frameJobs] of jobsByFrame) {
+      const correctionMode = readDispatchTarget(frameJobs[0]!.sourceSpec)?.correctionMode === true;
+      const recordedJobIds = listAnimationSequenceFrameJobIds(frame);
+      if (frameJobs.every((job) => recordedJobIds.includes(job.id))) {
+        if (frame.status !== 'blocked') continue;
+      } else {
+        frame.dispatch = { jobIds: frameJobs.map((job) => job.id), dispatchedAt: timestamp };
+        frame.jobId = frameJobs[0]!.id;
+      }
+      markFrameAwaiting(frame, correctionMode, timestamp);
+      changed = true;
+    }
+    return changed;
+  }
+
+  /**
+   * Folds one job of the frame's current dispatch into the frame. The first sibling with an
+   * image wins; failures block the frame only when no sibling can still land.
+   */
+  async function settleFrameJob(
+    run: AnimationSequenceRun,
+    frame: AnimationSequenceFrameState,
+    jobId: string,
+    job: Job | null,
+  ) {
+    const jobIds = listAnimationSequenceFrameJobIds(frame);
+    if (!jobIds.includes(jobId)) return false;
+    if (job && PENDING_JOB_STATUSES.has(job.status)) {
+      if (frame.status !== 'blocked') return false;
+      markFrameAwaiting(frame, readDispatchTarget(job.sourceSpec)?.correctionMode === true, now());
+      return true;
+    }
+    if (frame.status === 'generated') return false;
+    const catalogImageId = readJobCatalogImageId(job);
+    if (catalogImageId) {
+      if (frame.status === 'blocked' && frame.catalogImageId === catalogImageId) return false;
+      await applyFrameSource(run, frame, { catalogImageId });
+      return true;
+    }
+    if (!isAnimationSequenceFrameAwaitingJob(frame)) return false;
+    if (jobIds.some((siblingId) => siblingId !== jobId && canJobLand(getJob(siblingId)))) {
+      return false;
+    }
+    frame.status = 'blocked';
+    frame.blocked = describeUnfinishedJob(job);
+    frame.updatedAt = now();
+    return true;
+  }
+
+  function reconcileRun(runId: string, recoverableJobs: Job[] = []) {
+    return updateRun(runId, async (run) => {
+      let changed = recordFrameDispatch(
+        run,
+        recoverableJobs.filter((job) => {
+          const target = readDispatchTarget(job.sourceSpec);
+          const frame = target ? resolveFrame(run, target) : null;
+          return frame && !listAnimationSequenceFrameJobIds(frame).includes(job.id);
+        }),
+      );
+      for (const frame of run.frames) {
+        if (!needsReconcile(frame)) continue;
+        for (const jobId of listAnimationSequenceFrameJobIds(frame)) {
+          // Siblings settle in dispatch order, so the first finished image wins.
+          if (await settleFrameJob(run, frame, jobId, getJob(jobId))) changed = true;
+        }
+      }
+      return changed;
+    });
   }
 
   const service: AnimationSequenceService = {
@@ -366,102 +643,63 @@ export function createAnimationSequenceService({
       return { frameId: frame.id, prompt, promptPath: frame.promptPath };
     },
     async attachFrame(runId, input) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      const frame = resolveFrame(run, input);
-      if (!frame) return null;
-      const timestamp = now();
-      invalidateGifExport(run);
-
-      if (isSafeBlockedReason(input.blocked)) {
-        frame.status = 'blocked';
-        frame.blocked = input.blocked;
-        frame.updatedAt = timestamp;
-        return saveRun(run);
-      }
-
-      if (input.jobId?.trim() && !input.sourcePath && !input.catalogImageId) {
-        frame.jobId = input.jobId.trim();
-        frame.status = frame.status === 'generated' ? 'correcting' : 'generating';
-        frame.blocked = null;
-        frame.updatedAt = timestamp;
-        run.status = frame.status;
-        return saveRun(run);
-      }
-
-      const { sourcePath, catalogImageId } = resolveSourcePath({
-        input,
-        getCatalogImage,
-        libraryDir: readLibraryDir(),
-        libraryContext: readOutputContext?.(),
+      const result = await updateRun(runId, async (run) => {
+        const frame = resolveFrame(run, input);
+        if (!frame) return false;
+        await applyFrameSource(run, frame, input);
+        return true;
       });
-
-      if (!sourcePath || !(await fileExists(sourcePath))) {
-        frame.status = 'blocked';
-        frame.blocked = {
-          status: 'blocked',
-          reasonKind: 'source_missing',
-          userMessage: 'No managed source image was available for this frame.',
-          suggestion: 'Generate or import the frame image into the Studio Library, then attach it.',
+      return result?.changed ? result.run : null;
+    },
+    async validateDispatch(spec) {
+      const target = readDispatchTarget(spec);
+      if (!target) return null;
+      const run = await getRun(target.runId);
+      if (!run) {
+        return {
+          code: 'animation_sequence_run_not_found',
+          message: `Animation Sequence run ${target.runId} does not exist. Select an existing run, then queue the frame again.`,
         };
-        frame.updatedAt = timestamp;
-        return saveRun(run);
       }
-
-      const rawPath = path.join(
-        run.paths.rawDir,
-        `${frame.id}${path.extname(sourcePath) || '.png'}`,
+      if (!resolveFrame(run, target)) {
+        return {
+          code: 'animation_sequence_frame_not_found',
+          message: `Animation Sequence run ${run.id} has no frame ${target.frameId ?? target.frameIndex ?? '(missing)'}.`,
+        };
+      }
+      return null;
+    },
+    async recordDispatch(jobs) {
+      await Promise.all(
+        [...groupJobsByRun(jobs)].map(([runId, runJobs]) =>
+          updateRun(runId, async (run) => recordFrameDispatch(run, runJobs)),
+        ),
       );
-      const framePath = path.join(run.paths.framesDir, `${frame.id}.png`);
-      await copyFile(sourcePath, rawPath);
-      const metadata = await authoringSharp(sourcePath).metadata();
-      const exactSize =
-        metadata.width === run.contract.dimensions.width &&
-        metadata.height === run.contract.dimensions.height;
-      const hasAlpha = metadata.hasAlpha === true;
-      const hasTransparency = hasAlpha && !(await authoringSharp(sourcePath).stats()).isOpaque;
-      if (!exactSize) {
-        frame.status = 'blocked';
-        frame.rawPath = rawPath;
-        frame.framePath = null;
-        frame.catalogImageId = catalogImageId;
-        frame.width = metadata.width ?? null;
-        frame.height = metadata.height ?? null;
-        frame.blocked = {
-          status: 'blocked',
-          reasonKind: 'geometry_mismatch',
-          userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height}.`,
-          suggestion:
-            'Select Retry to generate the frame at the run size. This workflow does not crop or scale frames.',
-        };
-        frame.updatedAt = timestamp;
-        return saveRun(run);
-      }
-
-      frame.warning =
-        !hasTransparency && run.contract.background === 'transparent'
-          ? 'Transparent output was requested, but this frame is opaque. The original frame is preserved.'
-          : null;
-      if (run.contract.background === 'solid') {
-        await authoringSharp(sourcePath)
-          .flatten({ background: run.contract.matteColor })
-          .png()
-          .toFile(framePath);
-      } else {
-        await authoringSharp(sourcePath).png().toFile(framePath);
-      }
-      const info = await authoringSharp(framePath).metadata();
-
-      frame.status = 'generated';
-      frame.rawPath = rawPath;
-      frame.framePath = framePath;
-      frame.catalogImageId = catalogImageId;
-      frame.jobId = input.jobId?.trim() || frame.jobId;
-      frame.width = info.width ?? null;
-      frame.height = info.height ?? null;
-      frame.blocked = null;
-      frame.updatedAt = timestamp;
-      return saveRun(run);
+    },
+    async settleJob(job) {
+      const target = readDispatchTarget(job.sourceSpec);
+      if (!target) return false;
+      const result = await updateRun(target.runId, async (run) => {
+        const frame = resolveFrame(run, target);
+        return frame ? settleFrameJob(run, frame, job.id, job) : false;
+      });
+      return result?.changed ?? false;
+    },
+    async reconcileRun(runId) {
+      return (await reconcileRun(runId))?.run ?? null;
+    },
+    async recoverRuns(recoverableJobs) {
+      const recoverableByRun = groupJobsByRun(recoverableJobs);
+      const runs = await service.listRuns();
+      const results = await Promise.allSettled(
+        runs
+          .filter((run) => recoverableByRun.has(run.id) || run.frames.some(needsReconcile))
+          .map((run) => reconcileRun(run.id, recoverableByRun.get(run.id))),
+      );
+      const failure = results.find(
+        (result): result is PromiseRejectedResult => result.status === 'rejected',
+      );
+      if (failure) throw failure.reason;
     },
     async exportGif(runId, input = {}) {
       const run = await getRun(runId);
@@ -584,7 +822,6 @@ export function createAnimationSequenceService({
   // Every read-modify-write of one run record runs alone, so concurrent writers cannot drop updates.
   return {
     ...service,
-    attachFrame: (runId, input) => withRunLock(runId, () => service.attachFrame(runId, input)),
     exportGif: (runId, input) => withRunLock(runId, () => service.exportGif(runId, input)),
     runQa: (runId) => withRunLock(runId, () => service.runQa(runId)),
   };

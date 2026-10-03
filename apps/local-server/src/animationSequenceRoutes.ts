@@ -18,7 +18,7 @@ import {
 
 export interface AnimationSequenceRoutesDependencies extends Pick<
   CreateAnimationSequenceServiceOptions,
-  'readLibraryDir' | 'readOutputContext' | 'getCatalogImage'
+  'readLibraryDir' | 'readOutputContext' | 'getCatalogImage' | 'getJob'
 > {
   service?: AnimationSequenceService;
 }
@@ -31,12 +31,13 @@ export function createAnimationSequenceRoutes({
   readLibraryDir,
   readOutputContext,
   getCatalogImage,
+  getJob,
   service,
 }: AnimationSequenceRoutesDependencies) {
   const routes = new Hono();
   const animationSequence =
     service ??
-    createAnimationSequenceService({ readLibraryDir, readOutputContext, getCatalogImage });
+    createAnimationSequenceService({ readLibraryDir, readOutputContext, getCatalogImage, getJob });
 
   routes.get('/runs', async (c) =>
     c.json({ runs: (await animationSequence.listRuns()).map(toAnimationSequenceRunView) }),
@@ -91,6 +92,13 @@ export function createAnimationSequenceRoutes({
     }
     const run = await animationSequence.attachFrame(c.req.param('id'), input);
     if (!run) return c.json({ error: 'Animation Sequence frame not found' }, 404);
+    return c.json(toAnimationSequenceRunView(run));
+  });
+
+  // Manual Sync and runs saved before backend reconciliation re-read their frame jobs here.
+  routes.post('/runs/:id/reconcile', async (c) => {
+    const run = await animationSequence.reconcileRun(c.req.param('id'));
+    if (!run) return c.json({ error: 'Animation Sequence run not found' }, 404);
     return c.json(toAnimationSequenceRunView(run));
   });
 

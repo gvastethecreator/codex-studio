@@ -902,6 +902,7 @@ export function getAnimationReviewRuns(): { runs: AnimationSequenceRunView[] } {
           status: index % 2 === 0 ? 'generated' : 'planned',
           catalogImageId: index === 0 ? 'img-character' : index === 2 ? 'img-camera' : null,
           jobId: null,
+          dispatch: null,
           width: index % 2 === 0 ? 1024 : null,
           height: index % 2 === 0 ? 1024 : null,
           blocked: null,

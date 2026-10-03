@@ -132,6 +132,12 @@ export interface AnimationSequenceRunPaths {
   qaReportPath: string;
 }
 
+/** The jobs queued together for one frame operation. A new dispatch replaces the set. */
+export interface AnimationSequenceFrameDispatch {
+  jobIds: string[];
+  dispatchedAt: string;
+}
+
 export interface AnimationSequenceFrameState {
   warning?: string | null;
   id: string;
@@ -142,7 +148,9 @@ export interface AnimationSequenceFrameState {
   rawPath: string | null;
   framePath: string | null;
   catalogImageId: string | null;
+  /** Primary job: the first job of the current dispatch. */
   jobId: string | null;
+  dispatch: AnimationSequenceFrameDispatch | null;
   width: number | null;
   height: number | null;
   blocked: AnimationSequenceBlockedReason | null;
@@ -222,8 +230,6 @@ export interface AttachAnimationSequenceFrameRequest {
   frameIndex?: number;
   catalogImageId?: string | null;
   sourcePath?: string | null;
-  jobId?: string | null;
-  blocked?: AnimationSequenceBlockedReason | null;
 }
 
 export interface AnimationSequenceFramePromptResponse {
@@ -288,14 +294,6 @@ function isAnimationSequenceExportFormat(value: string): value is AnimationSeque
   return ANIMATION_SEQUENCE_EXPORT_FORMATS.includes(value as AnimationSequenceExportFormat);
 }
 
-export function isAnimationSequenceBlockedReasonKind(
-  value: string,
-): value is AnimationSequenceBlockedReasonKind {
-  return ANIMATION_SEQUENCE_BLOCKED_REASON_KINDS.includes(
-    value as AnimationSequenceBlockedReasonKind,
-  );
-}
-
 function clampInt(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, Math.round(value)));
 }
@@ -304,7 +302,14 @@ export function createAnimationSequenceFrameId(index: number) {
   return `frame-${String(index + 1).padStart(4, '0')}`;
 }
 
-/** A frame waits on its linked job until reconciliation attaches a result or blocks it. */
+/** Jobs of the frame's current dispatch. Runs saved before dispatch sets link one job. */
+export function listAnimationSequenceFrameJobIds(
+  frame: Pick<AnimationSequenceFrameState, 'jobId' | 'dispatch'>,
+) {
+  return frame.dispatch?.jobIds ?? (frame.jobId ? [frame.jobId] : []);
+}
+
+/** A frame waits on its linked jobs until reconciliation attaches a result or blocks it. */
 export function isAnimationSequenceFrameAwaitingJob(
   frame: Pick<AnimationSequenceFrameState, 'jobId' | 'status'>,
 ) {

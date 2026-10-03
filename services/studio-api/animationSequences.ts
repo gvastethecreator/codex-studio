@@ -42,6 +42,14 @@ export async function attachAnimationSequenceFrame(
   );
 }
 
+/** Re-reads the run's frame jobs on the backend and settles the ones that finished. */
+export async function reconcileAnimationSequenceRun(runId: string) {
+  return request<AnimationSequenceRunView>(
+    `/api/animation-sequence/runs/${encodeURIComponent(runId)}/reconcile`,
+    { method: 'POST' },
+  );
+}
+
 export async function exportAnimationSequenceGif(
   runId: string,
   input: ExportAnimationSequenceGifRequest = {},

@@ -1,9 +1,9 @@
-import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
-import type { CatalogImage } from '../../../packages/shared/src';
+import type { CatalogImage, Job } from '../../../packages/shared/src';
 
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
 
@@ -169,22 +169,6 @@ describe('animationSequenceRoutes', () => {
           issues: expect.arrayContaining(['GIF export is missing or stale.']),
         },
       });
-
-      const correctionResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
-        method: 'POST',
-        body: JSON.stringify({ frameId: 'frame-0001', jobId: 'job-correction' }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-      await expect(correctionResponse.json()).resolves.toMatchObject({
-        status: 'correcting',
-        frames: expect.arrayContaining([
-          expect.objectContaining({
-            id: 'frame-0001',
-            status: 'correcting',
-            jobId: 'job-correction',
-          }),
-        ]),
-      });
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -331,4 +315,53 @@ describe('animationSequenceRoutes', () => {
       rmSync(root, { recursive: true, force: true });
     }
   }, 20_000);
+
+  it('reconciles a legacy run whose frame links one job', async () => {
+    const root = mkdtempSync(path.join(os.tmpdir(), 'animation-sequence-reconcile-'));
+    try {
+      const sourcePath = path.join(root, 'legacy.png');
+      await writeFixturePng(sourcePath, '#33aa55');
+      const routes = createAnimationSequenceRoutes({
+        readLibraryDir: () => root,
+        getCatalogImage: (imageId) =>
+          imageId === 'legacy-image' ? createCatalogImage(imageId, sourcePath) : null,
+        getJob: (jobId) =>
+          ({
+            id: jobId,
+            status: 'completed',
+            finalization: { catalogId: 'legacy-image' },
+          }) as Job,
+      });
+      const run = (await (
+        await routes.request('/runs', {
+          method: 'POST',
+          body: JSON.stringify({ prompt: 'legacy run', frameCount: 2 }),
+          headers: { 'Content-Type': 'application/json' },
+        })
+      ).json()) as { id: string };
+      const statusPath = path.join(
+        root,
+        '.studio',
+        'state',
+        'animation-sequence',
+        run.id,
+        'animation-sequence-run.json',
+      );
+      const saved = JSON.parse(readFileSync(statusPath, 'utf8'));
+      delete saved.frames[0].dispatch;
+      Object.assign(saved.frames[0], { jobId: 'legacy-job', status: 'generating' });
+      writeFileSync(statusPath, JSON.stringify(saved));
+
+      expect(
+        (await routes.request('/runs/anim-missing/reconcile', { method: 'POST' })).status,
+      ).toBe(404);
+      const response = await routes.request(`/runs/${run.id}/reconcile`, { method: 'POST' });
+      expect(response.status).toBe(200);
+      await expect(response.json()).resolves.toMatchObject({
+        frames: [{ status: 'generated', catalogImageId: 'legacy-image', jobId: 'legacy-job' }, {}],
+      });
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
 });

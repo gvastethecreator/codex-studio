@@ -125,7 +125,7 @@ Provider-independent intent for one Animation Sequence frame operation, includin
 _Avoid_: frame prompt copy, UI generation config, provider payload
 
 **Animation Sequence Run Coordinator**:
-Durable workflow owner that dispatches frame jobs, records transitions, and reconciles completed Catalog Entries for one Animation Sequence run.
+Backend workflow owner for Animation Sequence runs. The React recipe submits Animation Frame Handoffs; the coordinator records each frame dispatch at job intake and reconciles frames from job events and at startup.
 _Avoid_: React generation loop, browser batch scan, route-owned workflow
 
 **Animation Sequence Run View**:

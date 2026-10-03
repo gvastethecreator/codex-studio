@@ -1,6 +1,5 @@
 import { projectGenerationBackgroundParams } from '../../lib/generationBackground';
 import { CozyLoader as Loader2 } from '../CozyMascot';
-import { useLinkedJobStatuses } from '../../hooks/useLinkedJobStatuses';
 import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './RecipeWorkbenchContext';
 import React from 'react';
 import { AnimationFramePreview } from './AnimationFramePreview';
@@ -18,6 +17,7 @@ import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
   isAnimationSequenceFrameAwaitingJob,
+  listAnimationSequenceFrameJobIds,
   type AnimationSequenceFramePlanItem,
   type AnimationSequenceFrameState,
   type AnimationSequenceRunView as AnimationSequenceRun,
@@ -27,7 +27,8 @@ import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../../type
 import { createAnimationFrameHandoff } from '../../lib/animationFrameHandoff';
 import { materializeCatalogEntryImageWithConfig } from '../../lib/studioCatalogImageAdapter';
 import { getCatalogImageDetail } from '../../services/studio-api/catalog';
-import { animationSequenceRunCoordinator } from '../../services/animationSequenceRunCoordinator';
+import { getStudioJobStatus } from '../../services/studio-api/jobs';
+import { createStudioEventStream } from '../../services/studioEventSource';
 import { hasRecipeIdentity } from '../../lib/recipeIdentity';
 import {
   isAnimationSequenceFramePromptCurrent,
@@ -41,7 +42,9 @@ import {
   exportAnimationSequenceGif,
   getAnimationSequenceFramePrompt,
   getAnimationSequenceGifUrl,
+  getAnimationSequenceRun,
   listAnimationSequenceRuns,
+  reconcileAnimationSequenceRun,
   runAnimationSequenceQa,
 } from '../../services/studio-api/animationSequences';
 import { useBoundedNumberInput } from './animationSequenceNumberInput';
@@ -59,7 +62,6 @@ interface AnimationSequenceRecipeProps {
     options?: {
       preventModal?: boolean;
       useCurrentAttachments?: boolean;
-      onJobCreated?: (job: StudioJob) => void;
     },
   ) => void;
   isGenerating: boolean;
@@ -134,12 +136,61 @@ function frameMatchesRun(image: GeneratedImageWithConfig, runId: string, frameId
   return params.runId === runId && params.frameId === frameId;
 }
 
-function findGeneratedFrameImage(
+/** A Catalog image made for the frame other than the attached one, such as a later variant. */
+function findAttachableFrameImage(
   images: GeneratedImageWithConfig[],
   runId: string,
-  frameId: string,
+  frame: Pick<AnimationSequenceFrameState, 'id' | 'catalogImageId'>,
 ) {
-  return images.find((image) => frameMatchesRun(image, runId, frameId)) ?? null;
+  return (
+    images.find(
+      (image) => image.id !== frame.catalogImageId && frameMatchesRun(image, runId, frame.id),
+    ) ?? null
+  );
+}
+
+type FrameJobStatus = StudioJob['status'] | 'unavailable';
+
+/** Status of frame jobs still awaited: one read per job set, then job events. No polling. */
+function useFrameJobStatuses(jobIds: string[]) {
+  const key = [...new Set(jobIds)].sort().join(',');
+  const [snapshot, setSnapshot] = React.useState<{
+    key: string;
+    jobs: Record<string, FrameJobStatus>;
+  }>({ key: '', jobs: {} });
+  React.useEffect(() => {
+    if (!key) return;
+    const ids = new Set(key.split(','));
+    let cancelled = false;
+    // Events are newer than the first read, so the read only fills statuses not seen yet.
+    const merge = (entries: Array<readonly [string, FrameJobStatus]>, fromEvent: boolean) => {
+      if (cancelled) return;
+      setSnapshot((current) => {
+        const jobs = current.key === key ? current.jobs : {};
+        const next = Object.fromEntries(entries);
+        return { key, jobs: fromEvent ? { ...jobs, ...next } : { ...next, ...jobs } };
+      });
+    };
+    const stream = createStudioEventStream();
+    const unsubscribe = stream.onJobUpdate('*', (job) => {
+      if (ids.has(job.id)) merge([[job.id, job.status]], true);
+    });
+    void Promise.all(
+      [...ids].map(async (id) => {
+        try {
+          return [id, (await getStudioJobStatus(id)).status] as const;
+        } catch {
+          return [id, 'unavailable'] as const;
+        }
+      }),
+    ).then((entries) => merge(entries, false));
+    return () => {
+      cancelled = true;
+      unsubscribe();
+      stream.close();
+    };
+  }, [key]);
+  return snapshot.key === key ? snapshot.jobs : {};
 }
 
 // Only generated frames (and frames correcting from a generated image) hold an accepted image.
@@ -439,46 +490,59 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
     };
   }, []);
 
-  const linkedJobs = useLinkedJobStatuses(
-    activeRun?.frames.flatMap((frame) => (frame.jobId ? [frame.jobId] : [])) ?? [],
-  );
+  const awaitedJobIds =
+    activeRun?.frames.flatMap((frame) =>
+      isAnimationSequenceFrameAwaitingJob(frame) ? listAnimationSequenceFrameJobIds(frame) : [],
+    ) ?? [];
+  const frameJobs = useFrameJobStatuses(awaitedJobIds);
+  const isFrameJobActive = (frame: AnimationSequenceRun['frames'][number]) =>
+    isAnimationSequenceFrameAwaitingJob(frame) &&
+    listAnimationSequenceFrameJobIds(frame).some((jobId) => {
+      const status = frameJobs[jobId];
+      return status === undefined || status === 'queued' || status === 'running';
+    });
   const resolveFrameImage = useFrameCatalogImages(
     activeRun?.frames.flatMap((frame) => (frame.catalogImageId ? [frame.catalogImageId] : [])) ??
       [],
     images,
   );
-  // Settled jobs reconcile once: results attach, failures block the frame with a Retry path.
-  const settledJobKey =
-    activeRun?.frames
-      .flatMap((frame) => {
-        const jobStatus = frame.jobId ? linkedJobs[frame.jobId] : undefined;
-        const settled = isAnimationSequenceFrameAwaitingJob(frame)
-          ? jobStatus !== undefined && jobStatus !== 'queued' && jobStatus !== 'running'
-          : frame.status === 'blocked' && jobStatus === 'completed';
-        return settled ? [`${frame.jobId}:${jobStatus}`] : [];
-      })
-      .sort()
-      .join('|') ?? '';
-  const autoSyncKeyRef = React.useRef('');
+  const applyRunUpdate = React.useCallback((run: AnimationSequenceRun) => {
+    setActiveRun((current) => (current?.id === run.id ? run : current));
+    setRuns((current) => current.map((item) => (item.id === run.id ? run : item)));
+  }, []);
+  const activeRunId = activeRun?.id ?? null;
+  // The backend settles frame jobs; the view refetches when it reports a change or reconnects.
   React.useEffect(() => {
-    if (!activeRun || !settledJobKey || autoSyncKeyRef.current === settledJobKey) return;
-    autoSyncKeyRef.current = settledJobKey;
+    if (!activeRunId) return;
+    const runId = activeRunId;
     let cancelled = false;
-    void animationSequenceRunCoordinator
-      .reconcile(activeRun)
-      .then((run) => {
-        if (!cancelled) setActiveRun(run);
-      })
-      .catch((syncError) => {
-        if (!cancelled)
-          setError(syncError instanceof Error ? syncError.message : String(syncError));
-      });
+    const refetchRun = () => {
+      void getAnimationSequenceRun(runId)
+        .then((run) => {
+          if (!cancelled) applyRunUpdate(run);
+        })
+        .catch(() => undefined);
+    };
+    const stream = createStudioEventStream();
+    const unsubscribers = [
+      stream.onWorkflowRunUpdated((payload) => {
+        if (payload.recipeId === 'animation-sequence' && payload.runId === runId) refetchRun();
+      }),
+      stream.onConnectionChange((connected) => {
+        if (connected) refetchRun();
+      }),
+      stream.onRevisionGap?.(refetchRun),
+    ];
     return () => {
       cancelled = true;
+      for (const unsubscribe of unsubscribers) unsubscribe?.();
+      stream.close();
     };
-  }, [activeRun, settledJobKey]);
-  const executionLabel = activeRun?.frames.some(
-    (frame) => frame.jobId && ['queued', 'running'].includes(linkedJobs[frame.jobId]),
+  }, [activeRunId, applyRunUpdate]);
+  const executionLabel = activeRun?.frames.some((frame) =>
+    listAnimationSequenceFrameJobIds(frame).some((jobId) =>
+      ['queued', 'running'].includes(frameJobs[jobId]),
+    ),
   )
     ? 'Generating frames'
     : activeRun?.frames.some(isAnimationSequenceFrameAwaitingJob)
@@ -486,21 +550,13 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       : activeRun
         ? STATUS_LABELS[activeRun.status]
         : 'Draft';
-  const activeRunId = activeRun?.id ?? null;
   const resolvedSelectedFrameId = selectedFrame?.id ?? null;
-  const selectedJobStatus = selectedFrame?.jobId ? linkedJobs[selectedFrame.jobId] : undefined;
   // A frame whose job may still run cannot be queued again; that would spend twice.
-  const isSelectedFrameJobActive = Boolean(
-    selectedFrame &&
-    isAnimationSequenceFrameAwaitingJob(selectedFrame) &&
-    (selectedJobStatus === undefined ||
-      selectedJobStatus === 'queued' ||
-      selectedJobStatus === 'running'),
-  );
+  const isSelectedFrameJobActive = Boolean(selectedFrame && isFrameJobActive(selectedFrame));
   const selectedFrameImage = resolveFrameImage(selectedFrame?.catalogImageId);
   const selectedCatalogMatch =
-    activeRun && selectedFrame && !selectedFrame.catalogImageId
-      ? findGeneratedFrameImage(images, activeRun.id, selectedFrame.id)
+    activeRun && selectedFrame
+      ? findAttachableFrameImage(images, activeRun.id, selectedFrame)
       : null;
   const frameAssets = (activeRun?.frames ?? []).flatMap((frame) => {
     const image = resolveFrameImage(frame.catalogImageId);
@@ -676,42 +732,15 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         batchCount: handoff.outputCount,
         attachments: frameAttachments,
       },
-      {
-        preventModal: true,
-        onJobCreated: (job) => {
-          void animationSequenceRunCoordinator
-            .recordDispatch(activeRun.id, selectedPlanFrame.id, job.id)
-            .then((run) => setActiveRun(run))
-            .catch((dispatchError) =>
-              setError(
-                dispatchError instanceof Error ? dispatchError.message : String(dispatchError),
-              ),
-            );
-        },
-      },
+      // The backend records the frame dispatch when it accepts the jobs.
+      { preventModal: true },
     );
     setMessage(`${selectedPlanFrame.id} queued.`);
   };
 
-  const syncGeneratedFrames = () => {
+  const syncRun = () => {
     if (!activeRun) return;
-    void runAction(async () => {
-      let updated: AnimationSequenceRun | null =
-        await animationSequenceRunCoordinator.reconcile(activeRun);
-      // Catalog image attachments target one run record and must serialize.
-      for (const frame of updated.frames) {
-        if (frame.catalogImageId || isAnimationSequenceFrameAwaitingJob(frame)) continue;
-        const image = findGeneratedFrameImage(images, activeRun.id, frame.id);
-        if (!image) continue;
-        // react-doctor-disable-next-line react-doctor/async-await-in-loop
-        updated = await attachAnimationSequenceFrame(activeRun.id, {
-          frameId: frame.id,
-          jobId: frame.jobId,
-          catalogImageId: image.id,
-        });
-      }
-      return updated;
-    }, 'Generated frames synced.');
+    void runAction(() => reconcileAnimationSequenceRun(activeRun.id), 'Frame jobs synced.');
   };
 
   const attachSelectedGeneratedFrame = () => {
@@ -848,8 +877,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   <div className="flex justify-between gap-2">
                     <span>Job status</span>
                     <span className="font-semibold text-[color:var(--wb-ink)]">
-                      {selectedFrame.jobId
-                        ? (linkedJobs[selectedFrame.jobId] ?? 'Checking job')
+                      {selectedFrame.jobId && isAnimationSequenceFrameAwaitingJob(selectedFrame)
+                        ? (frameJobs[selectedFrame.jobId] ?? 'Checking job')
                         : FRAME_STATUS_LABELS[selectedFrame.status]}
                     </span>
                   </div>
@@ -1151,7 +1180,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
               >
                 New sequence
               </ActionButton>
-              <ActionButton onClick={syncGeneratedFrames} disabled={!activeRun || busy}>
+              <ActionButton onClick={syncRun} disabled={!activeRun || busy}>
                 <RefreshCw width={13} height={13} />
                 Sync
               </ActionButton>
@@ -1209,7 +1238,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   const frameLabel = getFrameDisplayLabel(planFrame.ordinal);
                   const frameStatus =
                     state && isAnimationSequenceFrameAwaitingJob(state)
-                      ? `Job ${linkedJobs[state.jobId!] ?? 'checking'} · image pending`
+                      ? `Job ${frameJobs[state.jobId!] ?? 'checking'} · image pending`
                       : getFrameDisplayStatus(planFrame, state);
                   const blockedNote = state?.blocked ? `: ${state.blocked.userMessage}` : '';
                   return (
