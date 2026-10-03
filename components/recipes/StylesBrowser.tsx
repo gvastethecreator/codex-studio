@@ -70,7 +70,6 @@ import {
   estimateStyleGroupPlaceholderHeight,
   type StyleGridVirtualWindow,
 } from './styleGridVirtualization';
-import { buildStylePromptText } from './stylePromptText';
 import {
   createStylePresetCatalogSearchIndexFromRuntimePacks,
   type StylePresetCatalogSearchResult,
@@ -653,6 +652,10 @@ function getStylePackSummary(packId: string) {
 }
 
 // react-doctor-disable-next-line react-doctor/no-giant-component
+/** Style prompt text loads on demand when the user copies or uses a style as a prompt. */
+const buildStylePromptText = (preset: StyleRuntimePreset) =>
+  import('./stylePromptText').then((module) => module.buildStylePromptText(preset));
+
 export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   config,
   updateConfig,
@@ -1546,9 +1549,10 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const [previousPrompt, setPreviousPrompt] = useState<string | null>(null);
   const [promptNotice, setPromptNotice] = useState('');
   const handleUseStylePrompt = useCallback(
-    (preset: StyleRuntimePreset) => {
+    async (preset: StyleRuntimePreset) => {
+      const promptText = await buildStylePromptText(preset);
       setPreviousPrompt(config.prompt ?? '');
-      updateConfig('prompt', buildStylePromptText(preset));
+      updateConfig('prompt', promptText);
       setPromptNotice('Style added as prompt.');
       if (catalogExpanded) closeStyleCatalog();
     },
@@ -1566,9 +1570,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
             (await loadStyleRuntimePacks([result.packId]))[0]);
       const preset = pack?.presets.find((candidate) => candidate.id === result.id);
       if (!preset) throw new Error('Style unavailable');
-      if (action === 'use') handleUseStylePrompt(preset);
+      if (action === 'use') await handleUseStylePrompt(preset);
       else {
-        await navigator.clipboard.writeText(buildStylePromptText(preset));
+        await navigator.clipboard.writeText(await buildStylePromptText(preset));
         setPromptNotice('Prompt copied.');
       }
     } catch {
@@ -1579,9 +1583,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const handleCopyStylePrompt = useCallback(
     async (e: React.MouseEvent, preset: StyleRuntimePreset) => {
       e.stopPropagation();
-      const promptText = buildStylePromptText(preset);
       try {
-        await navigator.clipboard.writeText(promptText);
+        await navigator.clipboard.writeText(await buildStylePromptText(preset));
       } catch {
         setPromptNotice('Could not copy prompt. Please try again.');
         return;
@@ -1644,7 +1647,11 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
           FadeImageComponent={StyleFadeImage}
           onApply={() => handleApplyStyleRef.current(preset, presetPackId, archivedEntry?.packName)}
           onCopy={(event) => handleCopyStylePrompt(event, preset)}
-          onUsePrompt={() => handleUseStylePrompt(preset)}
+          onUsePrompt={() =>
+            void handleUseStylePrompt(preset).catch(() =>
+              setPromptNotice('Could not load this style prompt. Please try again.'),
+            )
+          }
           onToggleFavorite={toggleFavorite}
           onHoverPreviewChange={handleHoverPreviewChange}
         />
