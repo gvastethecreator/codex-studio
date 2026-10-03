@@ -31,8 +31,6 @@ import {
 import type { GenerationVariationScope } from './generationVariation';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { type RegisteredRecipeId } from './recipeIds';
-import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
-import type { RecipeContextParams } from './recipeContextBuilders';
 import { buildRecipeProviderDirectives } from './recipeProviderDirectives';
 
 function isInlineAttachmentDataUrl(value: string | null | undefined) {
@@ -90,7 +88,6 @@ export interface RecipeModule {
   /** How far repeated or sibling results may drift from the workflow contract. */
   variation: GenerationVariationScope;
   parameters: RecipeParameterDescriptor[];
-  buildContext(params: RecipeContextParams | null | undefined): string;
 }
 
 export interface BuildGenerationTaskSpecFromRecipeArgs {
@@ -359,33 +356,14 @@ function options(values: readonly string[]) {
   return [...values];
 }
 
-export function buildRecipeModuleContext(
-  recipeId: RegisteredRecipeId | null | undefined,
-  params: RecipeContextParams | null | undefined,
-) {
-  if (!recipeId || !params) {
-    return '';
-  }
-
-  const builder = RECIPE_CONTEXT_BUILDERS[recipeId];
-  if (!builder) {
-    return '';
-  }
-
-  return builder.buildContext(params);
-}
-
 function createRecipeModule(
-  module: Omit<RecipeModule, 'supportedProviders' | 'buildContext'> & {
+  module: Omit<RecipeModule, 'supportedProviders'> & {
     supportedProviders?: GenerationProviderId[];
   },
 ): RecipeModule {
   return {
     ...module,
     supportedProviders: module.supportedProviders ?? CODEX_FIRST_PROVIDERS,
-    buildContext(params) {
-      return buildRecipeModuleContext(module.id, params);
-    },
   };
 }
 
@@ -1557,10 +1535,9 @@ export function buildGenerationTaskSpecFromRecipe({
   const module = getRecipeModule(config.recipeId ?? null);
   const effectiveConfig = { ...config, recipeParams: projectGenerationBackgroundParams(config) };
   const animationSequenceParams = createAnimationSequenceParams(effectiveConfig);
-  const contextParams = animationSequenceParams ?? effectiveConfig.recipeParams ?? null;
-  const recipeContext = module?.buildContext(contextParams) || config.recipeContext || '';
+  const directiveParams = animationSequenceParams ?? effectiveConfig.recipeParams ?? null;
   const recipeProviderDirectives = module
-    ? buildRecipeProviderDirectives(module, contextParams, {
+    ? buildRecipeProviderDirectives(module, directiveParams, {
         referenceCount: config.attachments.length,
       })
     : null;
@@ -1718,7 +1695,6 @@ export function buildGenerationTaskSpecFromRecipe({
       requiresExactPath: true,
     },
     metadata: {
-      recipeContext,
       recipeProviderDirectives,
       spriteAtlas: spriteAtlasContract,
       animationSequence: animationSequenceContract

@@ -63,7 +63,7 @@ describe('buildGenerationConfigFromCatalogImage', () => {
 
     expect(config.prompt).toBe('Create a neon alley portrait of a masked courier.');
     expect(config.recipeId).toBe('styles');
-    expect(config.recipeContext).toContain('recipe: styles');
+    expect(config).not.toHaveProperty('recipeContext');
     expect(config.negativePrompt).toBe('low quality, blurry');
     expect(config.aspectRatio).toBe('2:3');
   });
@@ -74,7 +74,6 @@ describe('buildGenerationConfigFromCatalogImage', () => {
         prompt: 'Recovered prompt',
         recipeContext:
           '--- CODEX RECIPE CONTEXT ---\nprotocol: codex-recipe-v1\nrecipe: timeline\n--- END CODEX RECIPE CONTEXT ---',
-        recipeId: 'timeline',
         aspectRatio: '3:2',
         negativePrompt: 'noise',
         batchCount: 3,

@@ -142,7 +142,6 @@ describe('localGenerationRun', () => {
       ...DEFAULT_GENERATION_CONFIG,
       prompt: '',
       recipeId: 'styles',
-      recipeContext: '--- CODEX RECIPE CONTEXT --- legacy block',
       negativePrompt: 'explicit, harsh',
       attachments: [
         {

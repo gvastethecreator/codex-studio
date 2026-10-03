@@ -11,7 +11,6 @@ import type {
   GenerationProviderId,
   Job as StudioJob,
 } from '../packages/shared/src';
-import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
 
 type GenerateOptions = {
   preventModal?: boolean;
@@ -266,8 +265,7 @@ export function useStudioGenerationActions({
     (nextConfig: ImageGenerationConfig) => {
       addToast('Recipe restored', 'success');
 
-      const detectedRecipe =
-        nextConfig.recipeId ?? parseRecipeIdFromContext(nextConfig.recipeContext);
+      const detectedRecipe = nextConfig.recipeId ?? null;
       setRecipeDraft(
         detectedRecipe,
         buildRecipeRestoreConfig(nextConfig, generationConfigRef.current.attachments),

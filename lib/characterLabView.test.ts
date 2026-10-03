@@ -43,7 +43,7 @@ describe('characterLabView', () => {
   });
 
   it.each(['scenes', 'effects', 'special'] as const)(
-    'keeps %s controls consistent in prompt, context and provider directives',
+    'keeps %s controls consistent in prompt and provider directives',
     (mode) => {
       const config = updateCharacterLabView(
         DEFAULT_GENERATION_CONFIG,
@@ -67,13 +67,10 @@ describe('characterLabView', () => {
         additionalPrompt: view.prompt,
       });
       const module = getRecipeModule('character-lab')!;
-      const context = module.buildContext(params);
       const directives = JSON.stringify(buildRecipeProviderDirectives(module, params));
-      for (const output of [prompt, context, directives]) {
-        if (output !== directives) {
-          expect(output).toContain('Keep the red scarf');
-          expect(output).toContain('selected action takes precedence');
-        }
+      expect(prompt).toContain('Keep the red scarf');
+      expect(prompt).toContain('selected action takes precedence');
+      for (const output of [prompt, directives]) {
         if (mode === 'special') expect(output).not.toContain('Fantasy Knight Armor');
         else {
           expect(output).not.toContain('#FFFFFF');

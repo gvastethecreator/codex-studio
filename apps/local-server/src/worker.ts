@@ -208,7 +208,6 @@ export function createWorkerController({
 
     return {
       prompt: parsedPrompt.prompt,
-      recipeContext: parsedPrompt.recipeContext,
       recipeId: parsedPrompt.recipeId,
       recipeParams: null,
       attachments: [],
@@ -228,14 +227,9 @@ export function createWorkerController({
   function buildCatalogGenerationConfigFromJob(job: Job) {
     if (job.sourceSpec) {
       const executionOptions = resolveExecutionOptions(job.execution);
-      const recipeContext =
-        typeof job.sourceSpec.metadata.recipeContext === 'string'
-          ? job.sourceSpec.metadata.recipeContext
-          : null;
 
       return {
         prompt: job.sourceSpec.prompt,
-        recipeContext,
         recipeId: job.sourceSpec.recipeId,
         recipeParams: job.sourceSpec.recipeParams,
         attachments: job.sourceSpec.assets,
@@ -259,7 +253,6 @@ export function createWorkerController({
 
     return {
       prompt: parsedPrompt.prompt,
-      recipeContext: parsedPrompt.recipeContext,
       recipeId: parsedPrompt.recipeId,
       recipeParams: null,
       attachments: [],

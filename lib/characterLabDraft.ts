@@ -172,7 +172,6 @@ export function projectCharacterLabConfig(
     ...config,
     characterLabDraft: { ...draft, views: { ...draft.views, [draft.activeMode]: view } },
     recipeId: 'character-lab',
-    recipeContext: '',
     prompt: view.prompt,
     outputBackground: view.outputBackground ?? 'workflow',
     aspectRatio: normalizeImageGenRatio(view.labAspectRatio),

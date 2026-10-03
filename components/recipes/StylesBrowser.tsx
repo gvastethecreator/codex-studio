@@ -672,7 +672,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       {
         recipeId: null,
         recipeParams: null,
-        recipeContext: '',
         attachments: [],
         aspectRatio: '3:4',
         batchCount: 1,

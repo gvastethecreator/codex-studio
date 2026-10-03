@@ -47,7 +47,6 @@ const SERVER_TYPECHECK_ARGS = [
 const UNIT_TEST_FILES = [
   'contexts/globalReducer.test.ts',
   'hooks/useHashRouter.test.ts',
-  'lib/recipeContext.test.ts',
   'lib/workspaceIdbMigration.test.ts',
   'packages/shared/src/workspaceContracts.test.ts',
   'services/studio-api/api.test.ts',

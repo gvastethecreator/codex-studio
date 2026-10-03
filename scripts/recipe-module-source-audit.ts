@@ -10,11 +10,9 @@ const recipeSurfaceFiles = new Set(['components/RecipesView.tsx', 'components/Re
 const allowedRecipeSupportFiles = new Set(['components/recipes/recipeModuleUi.ts']);
 
 const forbiddenMarkers = [
-  'buildRecipeContext',
   'buildGenerationTaskSpecFromRecipe',
   'createGenerationTaskSpec',
   'buildRecipeProviderDirectives',
-  'recipeContextBuilders',
   'providerInputCompiler',
   'Recipe Provider Directives',
 ] as const;

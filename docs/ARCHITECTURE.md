@@ -55,7 +55,7 @@ graph TD
 - `services/localGenerationRun.ts` submits an atomic Persistent Job batch, observes accepted members, and returns catalog-derived results with complete or partial status.
 - `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
   The view owns batch grouping IDs; the adapter uses that rule when materializing images.
-  `lib/recipeIds.ts` owns recipe identity validation; shell metadata only adds titles and context parsing.
+  `lib/recipeIds.ts` owns recipe identity validation; shell metadata only adds titles and recipe-id recovery from legacy Recipe Context text.
 - `lib/studioLegacyWorkspaceSnapshotExport.ts` derives the export-only legacy workspace JSON shape from Catalog Entries. There is no browser batch store, import, or recovery path.
 - `lib/catalogRenderBudget.ts`, `lib/catalogCardActionSurface.ts`, and `lib/imageGridPresentation.ts` keep hot Catalog rendering bounded.
   They preserve card animation, hover or focus commands, and initial-viewport image discovery.
@@ -167,8 +167,8 @@ The SSE consumer coalesces batch, revision-gap, and reconnect reconciliation.
 
 Generation Tasks and Generation Providers stay separate:
 
-- Recipe Modules produce Generation Task Specs.
-- Providers compile specs into Compiled Provider Inputs.
+- Recipe Modules produce Generation Task Specs. Recipe Provider Directives are the only recipe text in a new spec.
+- Providers compile specs into Compiled Provider Inputs. A stored spec from before directives replays its Recipe Context through the compiler fallback.
 - Provider-specific secrets, SDKs, retries, and output discovery stay behind backend adapters.
 - Provider Secrets stay outside SQLite-backed Studio Settings, job metadata, logs, transcripts, screenshots, and docs.
 - Providers must return the same local contract: job state, Local Assets, Catalog Entries, metadata, logs, and diagnostics.

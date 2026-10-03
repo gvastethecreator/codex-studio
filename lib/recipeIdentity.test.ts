@@ -20,12 +20,11 @@ const baseConfig: ImageGenerationConfig = {
 };
 
 describe('recipeIdentity', () => {
-  it('prefers structured recipe id and params over prompt text', () => {
+  it('reads the structured recipe id and params', () => {
     const config: ImageGenerationConfig = {
       ...baseConfig,
       recipeId: 'styles',
       recipeParams: { presetId: 'SP99-001' },
-      recipeContext: 'TARGET STYLE: SOMETHING ELSE',
     };
 
     expect(resolveRecipeIdentity(config)).toMatchObject({ recipeId: 'styles' });
@@ -50,28 +49,9 @@ describe('recipeIdentity', () => {
     expect(hasStylePresetIdentity(config, 'SP03-001')).toBe(false);
   });
 
-  it('can read the recipe id from the structured context envelope', () => {
-    expect(
-      hasRecipeIdentity(
-        {
-          ...baseConfig,
-          recipeContext: ['--- CODEX RECIPE CONTEXT ---', 'recipe: timeline'].join('\n'),
-        },
-        'timeline',
-      ),
-    ).toBe(true);
-  });
-
-  it('does not classify recipes from legacy title substrings alone', () => {
-    expect(
-      hasRecipeIdentity(
-        {
-          ...baseConfig,
-          recipeContext: 'CAMERA VIEW PROMPT without a recipe envelope',
-        },
-        'camera',
-      ),
-    ).toBe(false);
+  it('has no identity without a structured recipe id', () => {
+    expect(resolveRecipeIdentity(baseConfig)).toBeNull();
+    expect(hasRecipeIdentity(baseConfig, 'camera')).toBe(false);
   });
 
   it('reads numeric params without parsing recipe prose', () => {

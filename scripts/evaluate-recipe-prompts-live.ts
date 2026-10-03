@@ -20,13 +20,12 @@ import {
   buildRecipeSpec,
   createBareVariant,
   createDirectivesVariant,
-  createLegacyVariant,
   type EvaluationVariant,
   type EvaluationVariantMetadata,
 } from './evaluate-recipe-prompts';
 import { pollWithScriptTimeout, runWithScriptRetry } from './runtimePolicy';
 
-export const LIVE_EVALUATION_VARIANT_NAMES = ['bare', 'legacy', 'directives'] as const;
+export const LIVE_EVALUATION_VARIANT_NAMES = ['bare', 'directives'] as const;
 
 export type LiveEvaluationVariantName = (typeof LIVE_EVALUATION_VARIANT_NAMES)[number];
 
@@ -34,7 +33,6 @@ export interface LiveRecipeEvaluationVariantPlan {
   name: LiveEvaluationVariantName;
   promptText: string;
   promptChars: number;
-  recipeContextChars: number;
   recipeDirectivesChars: number;
   compiledPromptText: string;
   compiledPromptChars: number;
@@ -75,7 +73,6 @@ export interface LiveRecipeEvaluationVariantReport {
   name: LiveEvaluationVariantName;
   promptText: string;
   promptChars: number;
-  recipeContextChars: number;
   recipeDirectivesChars: number;
   compiledPromptText: string;
   compiledPromptChars: number;
@@ -146,7 +143,7 @@ export interface ExecuteLiveRecipeEvaluationOptions {
 }
 
 const DEFAULT_API_BASE = 'http://127.0.0.1:17223';
-const DEFAULT_VARIANT_NAMES: LiveEvaluationVariantName[] = ['legacy', 'directives'];
+const DEFAULT_VARIANT_NAMES: LiveEvaluationVariantName[] = ['bare', 'directives'];
 const DEFAULT_POLL_MS = 2_000;
 const DEFAULT_TIMEOUT_MS = 15 * 60_000;
 const DEFAULT_REQUEST_RETRY_ATTEMPTS = 3;
@@ -224,28 +221,22 @@ function createEvaluationVariantForLiveSpec(
   name: LiveEvaluationVariantName,
 ): EvaluationVariant {
   if (name === 'bare') return createBareVariant(spec);
-  if (name === 'legacy') return createLegacyVariant(spec);
   return createDirectivesVariant(spec);
 }
 
-function calculatePromptSavings(
+function calculateRecipeTextChars(
   pair:
     | Pick<LiveRecipeEvaluationPairPlan, 'variants'>
     | Pick<LiveRecipeEvaluationPairReport, 'variants'>,
 ) {
-  const legacy = pair.variants.find((variant) => variant.name === 'legacy') ?? null;
+  const bare = pair.variants.find((variant) => variant.name === 'bare') ?? null;
   const directives = pair.variants.find((variant) => variant.name === 'directives') ?? null;
-  if (!legacy || !directives) return null;
-
-  const savings = legacy.compiledPromptChars - directives.compiledPromptChars;
-  const savingsPercent =
-    legacy.compiledPromptChars > 0 ? (savings / legacy.compiledPromptChars) * 100 : 0;
+  if (!bare || !directives) return null;
 
   return {
-    legacyChars: legacy.compiledPromptChars,
+    bareChars: bare.compiledPromptChars,
     directivesChars: directives.compiledPromptChars,
-    savings,
-    savingsPercent,
+    recipeTextChars: directives.compiledPromptChars - bare.compiledPromptChars,
   };
 }
 
@@ -316,17 +307,9 @@ export function createLiveVariantSourceSpec(
 ): GenerationTaskSpec {
   const nextSpec = cloneGenerationTaskSpec(spec);
 
-  if (name === 'legacy') {
-    nextSpec.metadata = {
-      ...nextSpec.metadata,
-      recipeProviderDirectives: null,
-    };
-  }
-
   if (name === 'bare') {
     nextSpec.metadata = {
       ...nextSpec.metadata,
-      recipeContext: null,
       recipeProviderDirectives: null,
     };
   }
@@ -374,7 +357,6 @@ export function createLiveRecipeEvaluationPlan(
         name: variantName,
         promptText: evaluation.promptText,
         promptChars: evaluation.promptChars,
-        recipeContextChars: evaluation.recipeContextChars,
         recipeDirectivesChars: evaluation.recipeDirectivesChars,
         compiledPromptText: compiled.payload.text,
         compiledPromptChars: compiled.payload.text.length,
@@ -422,7 +404,6 @@ export function createLiveRecipeEvaluationReport(
     failures: [],
     notes: [
       'Images stay in the Studio Library; this report stores only job ids, catalog refs, metrics, and transcript paths.',
-      'Keep legacy Recipe Context in stored job metadata until live quality evidence is satisfactory.',
     ],
     pairs: plan.pairs.map((pair) => ({
       recipeId: pair.recipeId,
@@ -437,7 +418,6 @@ export function createLiveRecipeEvaluationReport(
         name: variant.name,
         promptText: variant.promptText,
         promptChars: variant.promptChars,
-        recipeContextChars: variant.recipeContextChars,
         recipeDirectivesChars: variant.recipeDirectivesChars,
         compiledPromptText: variant.compiledPromptText,
         compiledPromptChars: variant.compiledPromptChars,
@@ -704,11 +684,9 @@ export function verifyLiveRecipeEvaluationReport(report: LiveRecipeEvaluationRep
   }
 
   for (const pair of report.pairs) {
-    const savings = calculatePromptSavings(pair);
-    if (savings && savings.directivesChars >= savings.legacyChars) {
-      failures.push(
-        `${pair.recipeId} directives compiled prompt is not smaller than legacy compiled prompt.`,
-      );
+    const recipeText = calculateRecipeTextChars(pair);
+    if (recipeText && recipeText.recipeTextChars <= 0) {
+      failures.push(`${pair.recipeId} directives compiled prompt adds no recipe text.`);
     }
 
     if (!report.executionRequested) continue;
@@ -737,9 +715,9 @@ function printPlanSummary(report: LiveRecipeEvaluationReport) {
   );
 
   for (const pair of report.pairs) {
-    const savings = calculatePromptSavings(pair);
-    const summary = savings
-      ? ` legacy=${savings.legacyChars} directives=${savings.directivesChars} savings=${savings.savings} (${savings.savingsPercent.toFixed(1)}%)`
+    const recipeText = calculateRecipeTextChars(pair);
+    const summary = recipeText
+      ? ` bare=${recipeText.bareChars} directives=${recipeText.directivesChars} recipeText=${recipeText.recipeTextChars}`
       : '';
 
     console.log(`  ${pair.recipeId} (${pair.recipeTitle})${summary}`);
@@ -792,16 +770,16 @@ export function createLiveEvaluationReviewMarkdown(report: LiveRecipeEvaluationR
   }
 
   for (const pair of report.pairs) {
-    const savings = calculatePromptSavings(pair);
+    const recipeText = calculateRecipeTextChars(pair);
 
     lines.push(`## ${pair.recipeId} — ${pair.recipeTitle}`, '');
     lines.push(`- Task: ${pair.task}`);
     if (pair.outputSize) lines.push(`- Output size: ${pair.outputSize}`);
     if (pair.aspectRatio) lines.push(`- Aspect ratio: ${pair.aspectRatio}`);
     if (pair.stylePresetId) lines.push(`- Style preset: ${pair.stylePresetId}`);
-    if (savings) {
+    if (recipeText) {
       lines.push(
-        `- Compiled prompt savings: ${savings.legacyChars} → ${savings.directivesChars} (${savings.savingsPercent.toFixed(1)}%)`,
+        `- Compiled prompt: bare ${recipeText.bareChars} → directives ${recipeText.directivesChars} (+${recipeText.recipeTextChars} recipe text)`,
       );
     }
     lines.push('');

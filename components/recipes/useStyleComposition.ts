@@ -167,7 +167,6 @@ export function useStyleComposition({
       selectedStyles: registeredStyleGenerationPlan?.recipeParams.selectedStyles ?? [],
       selectedStyleDraft: selectedStyles,
     });
-    updateConfig('recipeContext', '');
   }, [intentionalStylesV1, registeredStyleGenerationPlan, selectedStyles, updateConfig]);
 
   useEffect(() => {
@@ -177,7 +176,6 @@ export function useStyleComposition({
       setCompileIssues([]);
       updateConfig('recipeId', null);
       updateConfig('recipeParams', { selectedStyleDraft: selectedStyles });
-      updateConfig('recipeContext', '');
       return;
     }
     let cancelled = false;
@@ -217,7 +215,6 @@ export function useStyleComposition({
           ...compiled.recipeParams,
           selectedStyleDraft: selectedStyles,
         });
-        updateConfig('recipeContext', '');
       } catch (error) {
         if (cancelled) return;
         const issues =
@@ -247,7 +244,6 @@ export function useStyleComposition({
           ...(intentionalMode === 'generate' ? {} : { styleReferenceMode: intentionalMode }),
           intentionalCompileError: message,
         });
-        updateConfig('recipeContext', '');
       }
     })();
     return () => {
@@ -369,7 +365,6 @@ export function useStyleComposition({
       {
         recipeId: 'styles',
         recipeParams: { ...generationPlan.recipeParams, selectedStyleDraft: selectedStyles },
-        recipeContext: '',
         attachments: referenceImages,
         model: config.model,
         imageSize: config.imageSize,

@@ -16,7 +16,6 @@ import {
   buildGenerationVariationBrief,
   createGenerationVariationKey,
 } from '../lib/generationVariation';
-import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
 import {
   buildGenerationTaskSpecFromRecipe,
@@ -480,13 +479,12 @@ export async function runLocalGeneration({
       providerId: requestedProviderId,
       settings,
     });
-    const resolvedConfig = resolveGenerationConfig(config);
     const batchId = createLocalRunBatchId();
-    const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
+    const batchCount = inputImage ? 1 : config.batchCount || 1;
     const items = await Promise.all(
       Array.from({ length: batchCount }, (_, index) =>
         buildLocalJobRequest({
-          config: resolvedConfig,
+          config,
           batchId,
           batchIndex: index + 1,
           batchCount,
@@ -541,7 +539,7 @@ export async function runLocalGeneration({
       partial: Boolean(firstFailure) || batch?.status !== 'completed',
       batchId: accepted.id,
       workspaceId,
-      config: resolvedConfig,
+      config,
       images: batchImages,
       createdAt: Date.now(),
     };

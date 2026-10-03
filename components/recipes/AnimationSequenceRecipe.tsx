@@ -417,8 +417,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
   React.useEffect(() => {
     updateConfig('recipeId', 'animation-sequence');
-    if (config.recipeContext) updateConfig('recipeContext', '');
-  }, [config.recipeContext, updateConfig]);
+  }, [updateConfig]);
 
   React.useEffect(() => {
     let cancelled = false;

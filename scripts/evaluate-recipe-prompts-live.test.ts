@@ -20,35 +20,29 @@ function getRecipeModule(recipeId: string) {
 }
 
 describe('live recipe prompt quality evaluation', () => {
-  it('preserves recipe context while disabling directives for the legacy variant', () => {
+  it('disables directives only for the bare variant', () => {
     const spec = buildRecipeSpec(getRecipeModule('styles'));
-    const legacySpec = createLiveVariantSourceSpec(spec, 'legacy');
 
-    expect(typeof legacySpec.metadata.recipeContext).toBe('string');
-    expect(legacySpec.metadata.recipeProviderDirectives).toBeNull();
+    expect(createLiveVariantSourceSpec(spec, 'bare').metadata.recipeProviderDirectives).toBeNull();
+    expect(
+      createLiveVariantSourceSpec(spec, 'directives').metadata.recipeProviderDirectives,
+    ).toBeTruthy();
+    expect(spec.metadata).not.toHaveProperty('recipeContext');
   });
 
-  it('keeps both legacy metadata and compact directives for the directives variant', () => {
-    const spec = buildRecipeSpec(getRecipeModule('styles'));
-    const directivesSpec = createLiveVariantSourceSpec(spec, 'directives');
-
-    expect(typeof directivesSpec.metadata.recipeContext).toBe('string');
-    expect(directivesSpec.metadata.recipeProviderDirectives).toBeTruthy();
-  });
-
-  it('plans live comparisons with a smaller compiled directives prompt than legacy', () => {
+  it('plans live comparisons where directives add recipe text to the bare prompt', () => {
     const plan = createLiveRecipeEvaluationPlan({ moduleIds: ['styles'] });
     const pair = plan.pairs[0];
-    const legacy = pair.variants.find((variant) => variant.name === 'legacy');
+    const bare = pair.variants.find((variant) => variant.name === 'bare');
     const directives = pair.variants.find((variant) => variant.name === 'directives');
 
     expect(plan.pairs).toHaveLength(1);
-    expect(legacy).toBeTruthy();
+    expect(bare).toBeTruthy();
     expect(directives).toBeTruthy();
-    expect(directives!.compiledPromptChars).toBeLessThan(legacy!.compiledPromptChars);
+    expect(bare!.compiledPromptChars).toBeLessThan(directives!.compiledPromptChars);
   });
 
-  it('verifies a planned report when legacy remains larger than directives', () => {
+  it('verifies a planned report', () => {
     const plan = createLiveRecipeEvaluationPlan({ moduleIds: ['styles'] });
     const report = createLiveRecipeEvaluationReport(plan, {
       apiBase: 'http://127.0.0.1:17223',

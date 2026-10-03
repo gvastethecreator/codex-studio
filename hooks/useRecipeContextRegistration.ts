@@ -18,6 +18,5 @@ export function useRecipeContextRegistration(
   useEffect(() => {
     updateConfig('recipeId', recipeId);
     updateConfig('recipeParams', params);
-    updateConfig('recipeContext', '');
   }, [paramsKey, params, recipeId, updateConfig]);
 }

@@ -34,7 +34,6 @@ const DEFAULT_BACKGROUND_CONFIG = {
 };
 export const DEFAULT_GENERATION_CONFIG = {
   prompt: '',
-  recipeContext: '',
   recipeId: null,
   recipeParams: null,
   attachments: [],

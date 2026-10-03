@@ -49,10 +49,11 @@ function normalizeExecutionSpeed(value: unknown): ImageGenerationConfig['executi
     : DEFAULT_GENERATION_CONFIG.executionSpeed;
 }
 
-function normalizeRecipeId(candidate: unknown, recipeContext: string): RecipeId {
+/** Old entries carry the recipe id only inside a stored or prompt-embedded recipe context. */
+function normalizeRecipeId(candidate: unknown, legacyRecipeContext: string): RecipeId {
   if (isRegisteredRecipeId(candidate)) return candidate;
 
-  return parseRecipeIdFromContext(recipeContext);
+  return parseRecipeIdFromContext(legacyRecipeContext);
 }
 
 /** Source and reference assets saved with the job, so Regenerate replays the same inputs. */
@@ -91,10 +92,12 @@ export function getCatalogRegenerateIssue(config: ImageGenerationConfig) {
 export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): ImageGenerationConfig {
   const storedConfig = isRecordLike(asset.generationConfig) ? asset.generationConfig : null;
   const parsedPrompt = parsePromptTransport(asset.prompt);
-  const recipeContext = readString(storedConfig, 'recipeContext') || parsedPrompt.recipeContext;
   const recipeIdCandidate =
     readString(storedConfig, 'recipeId') || asset.recipeId || parsedPrompt.recipeId;
-  const recipeId = normalizeRecipeId(recipeIdCandidate, recipeContext);
+  const recipeId = normalizeRecipeId(
+    recipeIdCandidate,
+    readString(storedConfig, 'recipeContext') || parsedPrompt.recipeContext,
+  );
   const prompt = readString(storedConfig, 'prompt') || parsedPrompt.prompt || asset.prompt || '';
   const negativePrompt =
     readString(storedConfig, 'negativePrompt') ||
@@ -121,7 +124,6 @@ export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): Imag
     ...DEFAULT_GENERATION_CONFIG,
     outputBackground: storedConfig?.outputBackground === 'transparent' ? 'transparent' : 'workflow',
     prompt,
-    recipeContext,
     recipeId,
     recipeParams: readRecipeParams(storedConfig),
     attachments: readSourceAttachments(storedConfig, asset.id),

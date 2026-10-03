@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
 
 import catalogJson from '../../packages/shared/src/styles/intentional-v1/catalog.fixture.json';
-import { RECIPE_CONTEXT_BUILDERS } from '../../lib/recipeContextBuilders';
+import { getRecipeModule } from '../../lib/recipeModules';
+import { buildRecipeProviderDirectives } from '../../lib/recipeProviderDirectives';
+import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import { compileIntentionalStylePlan } from './intentionalStyleCompile';
 import type { SelectedStyleSlot } from './styleLayerComposer';
 
@@ -200,15 +202,18 @@ describe('intentionalStyleCompile', () => {
     ).rejects.toMatchObject({ name: 'CompilationBlocked' });
   });
 
-  it('keeps compiled request context free of style names and restage rules', () => {
-    const context = RECIPE_CONTEXT_BUILDERS.styles.buildContext({
-      effectivePrompt: 'Apply charcoal editorial ink. Keep the pitcher identity.',
-      styleRequestHash: 'a'.repeat(64),
-      presetName: 'Katana Zero Neo-Noir Sideview',
-      roleInstruction: 'Re-stage the subject with a different gesture.',
-      creativeBrief: 'strict side-on action sprite',
-    });
-    expect(context).toContain('INTENTIONAL STYLE REQUEST');
+  it('keeps compiled provider directives free of style names and restage rules', () => {
+    const context = JSON.stringify(
+      buildRecipeProviderDirectives(getRecipeModule('styles')!, {
+        compilerVersion: Intentional.CORE_VERSION,
+        effectivePrompt: 'Apply charcoal editorial ink. Keep the pitcher identity.',
+        styleRequestHash: 'a'.repeat(64),
+        presetName: 'Katana Zero Neo-Noir Sideview',
+        roleInstruction: 'Re-stage the subject with a different gesture.',
+        creativeBrief: 'strict side-on action sprite',
+      }),
+    );
+    expect(context).toContain('Intentional Style Plan');
     expect(context).toContain('Apply charcoal editorial ink');
     expect(context).not.toContain('Katana');
     expect(context).not.toContain('Re-stage the subject');

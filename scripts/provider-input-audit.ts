@@ -42,14 +42,12 @@ export interface ProviderInputAuditRow {
   assetRefCount: number;
   inlineAssetBytesPresent: boolean;
   providerSessionContractId: string | null;
-  legacyRecipeContextChars: number;
   recipeProviderDirectivesChars: number;
   hasRecipeProviderDirectives: boolean;
   omittedStableInstructions: boolean;
   compact: boolean;
   inlineDataLeak: boolean;
   secretLikeLeak: boolean;
-  notes: string[];
 }
 
 export interface ProviderInputAuditReport {
@@ -61,7 +59,6 @@ export interface ProviderInputAuditReport {
     externalFixtureRows: number;
     providers: GenerationProviderId[];
     failures: string[];
-    warnings: string[];
   };
 }
 
@@ -223,20 +220,6 @@ function createAuditRow({
   const serializedDirectives = isRecipeProviderDirectives(recipeProviderDirectives)
     ? serializeRecipeProviderDirectives(recipeProviderDirectives)
     : '';
-  const legacyRecipeContext =
-    typeof sourceSpec.metadata.recipeContext === 'string' ? sourceSpec.metadata.recipeContext : '';
-  const notes: string[] = [];
-
-  if (serializedDirectives && compiled.audit.estimatedPromptChars !== null) {
-    const legacyPromptChars =
-      sourceSpec.prompt.length +
-      legacyRecipeContext.length +
-      (sourceSpec.negativePrompt?.length ?? 0);
-    if (legacyPromptChars > 0 && compiled.audit.estimatedPromptChars < legacyPromptChars) {
-      const saved = legacyPromptChars - compiled.audit.estimatedPromptChars;
-      notes.push(`prompt_delta=-${saved}`);
-    }
-  }
 
   return {
     id: `${kind}:${providerId}:${sourceSpec.recipeId ?? sourceSpec.task}`,
@@ -252,14 +235,12 @@ function createAuditRow({
     assetRefCount: metrics.assetRefCount,
     inlineAssetBytesPresent: metrics.inlineAssetBytesPresent,
     providerSessionContractId: metrics.providerSessionContractId,
-    legacyRecipeContextChars: legacyRecipeContext.length,
     recipeProviderDirectivesChars: serializedDirectives.length,
     hasRecipeProviderDirectives: Boolean(serializedDirectives),
     omittedStableInstructions: compiled.audit.omittedStableInstructions,
     compact: compiled.audit.compact,
     inlineDataLeak: /data:image\/[^;]+;base64/i.test(compiledJson),
     secretLikeLeak: SECRET_LIKE_PATTERN.test(payloadJson),
-    notes,
   };
 }
 
@@ -278,7 +259,6 @@ export function createProviderInputAuditReport(
 ): ProviderInputAuditReport {
   const rows: ProviderInputAuditRow[] = [];
   const failures: string[] = [];
-  const warnings: string[] = [];
 
   for (const module of listRecipeModules()) {
     for (const providerId of module.supportedProviders) {
@@ -325,13 +305,6 @@ export function createProviderInputAuditReport(
     if (row.kind === 'recipe' && !row.hasRecipeProviderDirectives) {
       failures.push(`${row.id} has no Recipe Provider Directives.`);
     }
-    if (
-      row.kind === 'recipe' &&
-      row.legacyRecipeContextChars > 0 &&
-      row.recipeProviderDirectivesChars >= row.legacyRecipeContextChars
-    ) {
-      warnings.push(`${row.id} directives are not smaller than legacy Recipe Context.`);
-    }
   }
 
   const providers = [...new Set(rows.map((row) => row.providerId))];
@@ -345,7 +318,6 @@ export function createProviderInputAuditReport(
       externalFixtureRows: rows.filter((row) => row.kind === 'external_fixture').length,
       providers,
       failures,
-      warnings,
     },
   };
 }

@@ -76,6 +76,5 @@ describe('optional Default styles', () => {
     act(() => result.current.removeSelectedStyle('glass'));
     expect(result.current.config.recipeId).toBeNull();
     expect(result.current.config.recipeParams?.selectedStyles).toEqual([]);
-    expect(result.current.config.recipeContext).toBe('');
   });
 });

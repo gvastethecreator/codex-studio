@@ -75,7 +75,6 @@ export function buildEditGenerationConfig({
     prompt: trimmedPrompt,
     recipeId: null,
     recipeParams: null,
-    recipeContext: '',
     batchCount: 1,
     attachments: maskAttachments,
   };

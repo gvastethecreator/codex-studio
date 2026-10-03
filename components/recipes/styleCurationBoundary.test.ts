@@ -1,6 +1,7 @@
 import { createStyleBrowserProcessedData } from './styleBrowserRenderPlan';
 import { describe, expect, it } from 'vitest';
-import { stylesRecipeContextBuilder } from '../../lib/recipeContextBuilders/styles';
+import { getRecipeModule } from '../../lib/recipeModules';
+import { buildRecipeProviderDirectives } from '../../lib/recipeProviderDirectives';
 import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import { compileIntentionalStylePlan } from './intentionalStyleCompile';
 import { buildStylePromptText } from './stylePromptText';
@@ -39,14 +40,26 @@ const slot: SelectedStyleSlot = {
   strength: 0.75,
 };
 
-function context(value: SelectedStyleSlot, hasReferenceImages = false) {
-  const plan = createSelectedStylesGenerationPlan({ slots: [value], hasReferenceImages });
+function providerDirectives(recipeParams: Record<string, unknown>) {
+  return buildRecipeProviderDirectives(getRecipeModule('styles')!, recipeParams)!;
+}
+
+function providerText(recipeParams: Record<string, unknown>) {
+  return JSON.stringify(providerDirectives(recipeParams));
+}
+
+function visualDna(value: SelectedStyleSlot) {
+  const plan = createSelectedStylesGenerationPlan({ slots: [value], hasReferenceImages: false });
   if (!plan) throw new Error('Fixture should have active fields');
-  return stylesRecipeContextBuilder.buildContext(plan.recipeParams);
+  return JSON.stringify(
+    providerDirectives(plan.recipeParams).sections.find(
+      (section) => section.title === 'Visual DNA',
+    ),
+  );
 }
 
 describe('curation end-to-end boundaries', () => {
-  it('is invariant under renaming and catalogue relocation at the final recipe boundary', () => {
+  it('keeps provider Visual DNA invariant under renaming and catalogue relocation', () => {
     const renamed = {
       ...slot,
       packName: 'Other metadata',
@@ -58,9 +71,8 @@ describe('curation end-to-end boundaries', () => {
         styleAnchors: ['Other alias'],
       },
     };
-    expect(context(slot)).toBe(context(renamed));
-    expect(context(slot, true)).not.toContain('Forbidden');
-    expect(context(slot)).toContain('Forbidden overhead camera'); // Active DNA is not silently rewritten.
+    expect(visualDna(slot)).toBe(visualDna(renamed));
+    expect(visualDna(slot)).toContain('Forbidden overhead camera'); // Active DNA is not silently rewritten.
   });
 
   it('keeps camera in explicit reinterpretation, without mutating saved masks', () => {
@@ -75,12 +87,8 @@ describe('curation end-to-end boundaries', () => {
       hasReferenceImages: true,
       referenceMode: 'reinterpret',
     });
-    expect(stylesRecipeContextBuilder.buildContext(preserved!.recipeParams)).not.toContain(
-      'Forbidden overhead camera',
-    );
-    expect(stylesRecipeContextBuilder.buildContext(reinterpreted!.recipeParams)).toContain(
-      'Forbidden overhead camera',
-    );
+    expect(providerText(preserved!.recipeParams)).not.toContain('Forbidden overhead camera');
+    expect(providerText(reinterpreted!.recipeParams)).toContain('Forbidden overhead camera');
     expect(JSON.stringify(source)).toBe(before);
   });
 

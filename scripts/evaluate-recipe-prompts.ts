@@ -33,17 +33,15 @@ export interface EvaluationPair {
 }
 
 export interface EvaluationVariant {
-  name: 'legacy' | 'directives' | 'bare';
+  name: 'directives' | 'bare';
   promptText: string;
   promptChars: number;
-  recipeContextChars: number;
   recipeDirectivesChars: number;
   metadata: EvaluationVariantMetadata;
 }
 
 export interface EvaluationVariantMetadata {
   notes: string[];
-  usesLegacyContext: boolean;
   usesProviderDirectives: boolean;
   hasStableInstructions: boolean;
 }
@@ -56,7 +54,6 @@ export interface EvaluationSession {
 
 export interface EvaluationSummary {
   totalPairs: number;
-  minDirectiveSavingsPercent: number;
   failures: string[];
 }
 
@@ -74,42 +71,9 @@ export function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
     name: 'bare',
     promptText: parts.join('\n'),
     promptChars: parts.join('\n').length,
-    recipeContextChars: 0,
     recipeDirectivesChars: 0,
     metadata: {
       notes: ['No recipe enrichment — baseline for quality comparison.'],
-      usesLegacyContext: false,
-      usesProviderDirectives: false,
-      hasStableInstructions: false,
-    },
-  };
-}
-
-export function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant {
-  const recipeContext =
-    typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
-  const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
-  const qualitySections = composeGenerationQualityPromptSections(spec);
-  if (qualitySections.length > 0) parts.push('', ...qualitySections);
-  if (recipeContext) parts.push('', 'Recipe instructions:', recipeContext.trim());
-  if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
-  if (spec.recipeId) parts.push('', `Recipe: ${spec.recipeId}`);
-  if (spec.stylePresetId) parts.push(`Style preset: ${spec.stylePresetId}`);
-  if (spec.output.imageSize) parts.push(`Image size: ${spec.output.imageSize}`);
-  if (spec.output.aspectRatio) parts.push(`Aspect ratio: ${spec.output.aspectRatio}`);
-
-  return {
-    name: 'legacy',
-    promptText: parts.join('\n'),
-    promptChars: parts.join('\n').length,
-    recipeContextChars: recipeContext.length,
-    recipeDirectivesChars: 0,
-    metadata: {
-      notes: [
-        'Uses legacy CODEX RECIPE CONTEXT envelope with full JSON schema.',
-        'This is the current fallback when Recipe Provider Directives are absent.',
-      ],
-      usesLegacyContext: true,
       usesProviderDirectives: false,
       hasStableInstructions: false,
     },
@@ -118,8 +82,6 @@ export function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant
 
 export function createDirectivesVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const directives = spec.metadata.recipeProviderDirectives;
-  const recipeContext =
-    typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
   const serialized = isRecipeProviderDirectives(directives)
     ? serializeRecipeProviderDirectives(directives)
     : '';
@@ -137,14 +99,12 @@ export function createDirectivesVariant(spec: GenerationTaskSpec): EvaluationVar
     name: 'directives',
     promptText: parts.join('\n'),
     promptChars: parts.join('\n').length,
-    recipeContextChars: recipeContext.length,
     recipeDirectivesChars: serialized.length,
     metadata: {
       notes: [
         'Uses structured Recipe Provider Directives — compact, machine-readable key-value format.',
-        'This is the new primary path when Recipe Provider Directives are present.',
+        'They are the only recipe text sent to providers.',
       ],
-      usesLegacyContext: false,
       usesProviderDirectives: true,
       hasStableInstructions: false,
     },
@@ -188,7 +148,6 @@ export function buildRecipeSpec(module: RecipeModule): GenerationTaskSpec {
     throw new Error(`Recipe ${module.id} does not support task ${task}`);
   }
 
-  const recipeContext = module.buildContext ? module.buildContext(params) : '';
   const recipeProviderDirectives = buildRecipeProviderDirectives(module, params);
 
   return createGenerationTaskSpec({
@@ -228,7 +187,6 @@ export function buildRecipeSpec(module: RecipeModule): GenerationTaskSpec {
       requiresCatalogEntry: false,
     },
     metadata: {
-      recipeContext,
       recipeProviderDirectives,
       recipeModule: {
         id: module.id,
@@ -258,7 +216,6 @@ export function evaluateRecipePrompts(moduleIds?: string[]): EvaluationSession {
     try {
       const spec = buildRecipeSpec(module);
       const bare = createBareVariant(spec);
-      const legacy = createLegacyVariant(spec);
       const directives = createDirectivesVariant(spec);
 
       pairs.push({
@@ -270,7 +227,7 @@ export function evaluateRecipePrompts(moduleIds?: string[]): EvaluationSession {
         stylePresetId: spec.stylePresetId,
         outputSize: spec.output.imageSize ?? '',
         aspectRatio: spec.output.aspectRatio ?? '',
-        variants: [bare, legacy, directives],
+        variants: [bare, directives],
       });
     } catch (err) {
       console.error(
@@ -287,10 +244,7 @@ export function evaluateRecipePrompts(moduleIds?: string[]): EvaluationSession {
   };
 }
 
-export function createEvaluationSummary(
-  session: EvaluationSession,
-  { minDirectiveSavingsPercent = 30 } = {},
-): EvaluationSummary {
+export function createEvaluationSummary(session: EvaluationSession): EvaluationSummary {
   const failures: string[] = [];
 
   if (session.pairs.length === 0) {
@@ -300,39 +254,22 @@ export function createEvaluationSummary(
   for (const pair of session.pairs) {
     const variantsByName = new Map(pair.variants.map((variant) => [variant.name, variant]));
     const bare = variantsByName.get('bare');
-    const legacy = variantsByName.get('legacy');
     const directives = variantsByName.get('directives');
 
-    if (!bare || !legacy || !directives) {
-      failures.push(`${pair.recipeId} missing bare/legacy/directives variants.`);
+    if (!bare || !directives) {
+      failures.push(`${pair.recipeId} missing bare/directives variants.`);
       continue;
-    }
-    if (!legacy.metadata.usesLegacyContext || legacy.recipeContextChars <= 0) {
-      failures.push(`${pair.recipeId} legacy variant missing Recipe Context.`);
     }
     if (!directives.metadata.usesProviderDirectives || directives.recipeDirectivesChars <= 0) {
       failures.push(`${pair.recipeId} directives variant missing Recipe Provider Directives.`);
     }
-    if (directives.promptChars >= legacy.promptChars) {
-      failures.push(`${pair.recipeId} directives prompt is not smaller than legacy prompt.`);
-      continue;
-    }
     if (bare.promptChars >= directives.promptChars) {
       failures.push(`${pair.recipeId} bare prompt is not smaller than directives prompt.`);
-    }
-
-    const savingsPercent =
-      ((legacy.promptChars - directives.promptChars) / legacy.promptChars) * 100;
-    if (savingsPercent < minDirectiveSavingsPercent) {
-      failures.push(
-        `${pair.recipeId} directives savings ${savingsPercent.toFixed(1)}% < ${minDirectiveSavingsPercent}%.`,
-      );
     }
   }
 
   return {
     totalPairs: session.pairs.length,
-    minDirectiveSavingsPercent,
     failures,
   };
 }
@@ -348,15 +285,11 @@ export function writeEvaluationReport(session: EvaluationSession, outputDir: str
   for (const pair of session.pairs) {
     const variantsByName = new Map(pair.variants.map((v) => [v.name, v]));
     const dirSize = variantsByName.get('directives')?.promptChars ?? 0;
-    const legacySize = variantsByName.get('legacy')?.promptChars ?? 0;
     const bareSize = variantsByName.get('bare')?.promptChars ?? 0;
-    const savings = legacySize > 0 ? legacySize - dirSize : 0;
-    const savingsPct = legacySize > 0 ? ((savings / legacySize) * 100).toFixed(1) : '0';
 
     console.log(
       `  ${pair.recipeId} (${pair.recipeTitle})` +
-        ` bare=${bareSize} legacy=${legacySize} directives=${dirSize}` +
-        ` savings=${savings} (${savingsPct}%)`,
+        ` bare=${bareSize} directives=${dirSize} recipeText=${dirSize - bareSize}`,
     );
   }
 }
@@ -380,9 +313,7 @@ if (import.meta.main) {
   }
 
   if (shouldVerify) {
-    console.log(
-      `[eval] verify pairs=${summary.totalPairs} minSavings=${summary.minDirectiveSavingsPercent}% failures=${summary.failures.length}`,
-    );
+    console.log(`[eval] verify pairs=${summary.totalPairs} failures=${summary.failures.length}`);
     for (const failure of summary.failures) console.error(`- ${failure}`);
     if (summary.failures.length > 0) process.exitCode = 1;
   }

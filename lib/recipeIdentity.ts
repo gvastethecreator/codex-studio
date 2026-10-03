@@ -1,5 +1,4 @@
 import type { ImageGenerationConfig } from '../types';
-import { extractRecipeIdFromRecipeContext } from '../packages/shared/src/promptTransport';
 import { isRegisteredRecipeId, type RegisteredRecipeId } from './recipeIds';
 
 export type { RegisteredRecipeId } from './recipeIds';
@@ -7,7 +6,6 @@ export type { RegisteredRecipeId } from './recipeIds';
 export interface RecipeIdentity {
   recipeId: RegisteredRecipeId;
   recipeParams: Record<string, unknown>;
-  recipeContext: string;
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -15,12 +13,9 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 export function resolveRecipeIdentity(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
 ): RecipeIdentity | null {
-  const recipeId = isRegisteredRecipeId(config.recipeId)
-    ? config.recipeId
-    : extractRecipeIdFromRecipeContext(config.recipeContext);
-
+  const recipeId = config.recipeId;
   if (!isRegisteredRecipeId(recipeId)) {
     return null;
   }
@@ -28,26 +23,25 @@ export function resolveRecipeIdentity(
   return {
     recipeId,
     recipeParams: isRecord(config.recipeParams) ? config.recipeParams : {},
-    recipeContext: config.recipeContext ?? '',
   };
 }
 
 export function hasRecipeIdentity(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
   recipeId: RegisteredRecipeId,
 ) {
   return resolveRecipeIdentity(config)?.recipeId === recipeId;
 }
 
 function getRecipeParam(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
   key: string,
 ) {
   return resolveRecipeIdentity(config)?.recipeParams[key];
 }
 
 export function getRecipeStringParam(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
   key: string,
   fallback = '',
 ) {
@@ -56,7 +50,7 @@ export function getRecipeStringParam(
 }
 
 export function getRecipeNumberParam(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
   key: string,
   fallback = 0,
 ) {
@@ -65,7 +59,7 @@ export function getRecipeNumberParam(
 }
 
 function hasSelectedStylePresetId(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
   presetId: string,
 ) {
   const selectedStyles = getRecipeParam(config, 'selectedStyles');
@@ -81,7 +75,7 @@ function hasSelectedStylePresetId(
 }
 
 export function hasStylePresetIdentity(
-  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
   presetId: string,
 ) {
   return (

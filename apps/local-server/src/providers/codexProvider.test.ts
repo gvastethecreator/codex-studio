@@ -116,6 +116,20 @@ describe('codex generation provider', () => {
     expect(compiled.payload.text).toContain('Recipe directives:');
     expect(compiled.payload.text).toContain('- Core Aesthetic: polished glass');
     expect(compiled.payload.text).not.toContain('legacy context should stay out');
+
+    // A stored spec from before directives existed still replays its Recipe Context.
+    const legacy = compileCodexImagegenInput({
+      id: 'job-style-legacy',
+      workspaceId: 'workspace-1',
+      prompt: 'unused fallback prompt',
+      execution: null,
+      sourceSpec: {
+        ...sourceSpec,
+        metadata: { recipeContext: '--- CODEX RECIPE CONTEXT ---\nrecipe: styles' },
+      },
+    });
+    expect(legacy.payload.text).toContain('Recipe instructions:\n--- CODEX RECIPE CONTEXT ---');
+    expect(legacy.payload.text).not.toContain('Recipe directives:');
   });
 
   it('passes the compiled Intentional style plan into a new ChatGPT HTTP job', () => {

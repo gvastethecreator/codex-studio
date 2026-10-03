@@ -31,11 +31,7 @@ describe('recipeModules', () => {
         config,
       });
       expect(spec.output).toMatchObject({ background: 'transparent', mimeType: 'image/png' });
-      const instructions = JSON.stringify([
-        spec.metadata.recipeContext,
-        spec.metadata.recipeProviderDirectives,
-        spec.quality,
-      ]);
+      const instructions = JSON.stringify([spec.metadata.recipeProviderDirectives, spec.quality]);
       expect(instructions).not.toMatch(
         /NEUTRAL_STUDIO_WHITE_OR_GREY|SOLID_GREEN_|Legacy key color/,
       );
@@ -73,11 +69,7 @@ describe('recipeModules', () => {
         );
       }
       expect(
-        JSON.stringify([
-          maintained.metadata.recipeContext,
-          maintained.metadata.recipeProviderDirectives,
-          maintained.quality,
-        ]),
+        JSON.stringify([maintained.metadata.recipeProviderDirectives, maintained.quality]),
       ).not.toMatch(
         /NEUTRAL_STUDIO_WHITE_OR_GREY|SOLID_GREEN_|Legacy key color|NATIVE_TRANSPARENT_ALPHA/,
       );
@@ -262,7 +254,6 @@ describe('recipeModules', () => {
         },
       },
     });
-    expect(spec.metadata.recipeContext).toContain('STYLE TRANSFER PROTOCOL');
     expect(spec.metadata.recipeProviderDirectives).toMatchObject({
       protocol: 'recipe-provider-directives/v1',
       recipeId: 'styles',
@@ -306,7 +297,6 @@ describe('recipeModules', () => {
         requiresCatalogEntry: true,
       },
     });
-    expect(spec.metadata.recipeContext).toContain('recipe: camera');
     expect(spec.metadata.recipeProviderDirectives).toMatchObject({
       protocol: 'recipe-provider-directives/v1',
       recipeId: 'camera',
@@ -350,7 +340,7 @@ describe('recipeModules', () => {
     expect(wide4k.output.imageSize).toBe('3840x2160');
   });
 
-  it('adds compact provider directives for style preset specs without dropping legacy context', () => {
+  it('sends only compact provider directives for style preset specs', () => {
     const spec = buildGenerationTaskSpecFromRecipe({
       id: 'spec-style',
       providerId: 'codex',
@@ -369,7 +359,7 @@ describe('recipeModules', () => {
       task: 'style_preset_card',
     });
 
-    expect(spec.metadata.recipeContext).toContain('STYLE TRANSFER PROTOCOL');
+    expect(spec.metadata).not.toHaveProperty('recipeContext');
     expect(spec.metadata.recipeProviderDirectives).toMatchObject({
       protocol: 'recipe-provider-directives/v1',
       recipeId: 'styles',
@@ -510,7 +500,6 @@ describe('recipeModules', () => {
     expect(
       (spec.metadata.spriteAtlas as { rows: Array<{ id: string; frames: number }> }).rows,
     ).toContainEqual(expect.objectContaining({ id: 'idle', frames: 6 }));
-    expect(spec.metadata.recipeContext).toContain('SPRITE ATLAS WORKFLOW');
     expect(spec.metadata.recipeProviderDirectives).toMatchObject({
       recipeId: 'sprite-atlas',
       title: 'Sprite Atlas',
@@ -555,7 +544,6 @@ describe('recipeModules', () => {
         ordinal: 3,
       },
     });
-    expect(spec.metadata.recipeContext).toContain('ANIMATION SEQUENCE FRAME PROMPT');
     expect(spec.metadata.recipeProviderDirectives).toMatchObject({
       recipeId: 'animation-sequence',
       title: 'Animation Sequence',
@@ -612,7 +600,6 @@ describe('recipeModules', () => {
       'Use as the primary character identity source.',
       'Style, detail, or accessory reference for the same character.',
     ]);
-    expect(spec.metadata.recipeContext).toContain('recipe: character-lab');
     expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain('spritesheets:walk');
   });
 

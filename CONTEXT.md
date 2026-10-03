@@ -96,8 +96,9 @@ _Avoid_: route-owned job creation, provider-named task intake, ad-hoc enqueue pa
 
 **Recipe Provider Directives**:
 Compact provider-ready directive snapshot derived from Recipe Module Generation Task Spec metadata.
-Use them when the recipe has enough structured data to avoid sending the full Recipe Context.
-_Avoid_: recipeContext replacement for every recipe, hidden prompt copy, lossy summary
+They are the only recipe text that new jobs send to providers.
+Old stored specs without directives still replay their stored Recipe Context through a provider compiler fallback.
+_Avoid_: recipeContext, hidden prompt copy, lossy summary
 
 **Codex Product Runtime**:
 Interactive Codex integration powered by `codex app-server` for local jobs, events, sessions, readiness, and lifecycle supervision.

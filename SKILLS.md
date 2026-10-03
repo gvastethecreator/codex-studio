@@ -71,13 +71,12 @@ Use provider-agnostic Generation Tasks plus provider settings.
 2. Define parameter schema details there too: group, control, default, options, min/max/step, and required flags.
 3. Build a provider-independent Generation Task Spec.
 4. Put provider-independent derived params in tested helpers instead of React surfaces.
-5. Put provider-independent prompt fragments in tested helpers before changing the shared Recipe Context envelope.
-6. Put Recipe Context builders in `lib/recipeContextBuilders/<recipe>.ts` and register them in `lib/recipeContextBuilders/index.ts`.
-7. Add Recipe Provider Directives only when the Recipe Module has enough structured data or tested derived params to compile safely without the legacy Recipe Context.
-8. Avoid putting provider-ready prompt text inside React components.
-9. Keep UI as parameter collection and preview.
-10. Let providers compile task specs into their own payloads.
-11. Store rich task spec for traceability.
+5. Put provider-independent prompt fragments in tested helpers.
+6. Add the recipe's Recipe Provider Directives in `lib/recipeProviderDirectives.ts`. They are the only recipe text sent to providers.
+7. Avoid putting provider-ready prompt text inside React components.
+8. Keep UI as parameter collection and preview.
+9. Let providers compile task specs into their own payloads.
+10. Store rich task spec for traceability.
     Send compact provider input for execution.
 
 A Recipe Module is not a React page.
@@ -93,7 +92,7 @@ It reports provider-independent examples, React surface boundaries, and prompt e
 Run `bun run recipes:examples:verify` when changing future asset-task blueprints.
 Examples must stay `example_only`, provider-independent, and Codex-first (`codex`, `dry_run`) until UI, builders, and adapters are explicit.
 Run `bun run recipes:source:verify` when changing recipe UI or module plumbing.
-It blocks React recipe surfaces from importing task-spec builders, Recipe Context builders, Recipe Provider Directives, or provider compilers.
+It blocks React recipe surfaces from importing task-spec builders, Recipe Provider Directives, or provider compilers.
 Run `bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-quality` to plan a live Codex quality comparison without creating jobs.
 Add `--execute` to queue real legacy-vs-directives jobs through the local backend.
 Record JSON plus Markdown review templates.
@@ -117,7 +116,7 @@ Keep only job or catalog refs plus transcript paths in the repo-local report.
 Focused validation:
 
 ```bash
-bun run test -- packages/shared/src/animationSequenceContracts.test.ts lib/recipeModules.test.ts lib/recipeContextBuilders/index.test.ts lib/recipeDerivedParams.test.ts lib/recipePromptFragments.test.ts lib/recipeProviderDirectives.test.ts apps/local-server/src/animationGifEncoder.test.ts apps/local-server/src/animationSequenceRoutes.test.ts
+bun run test -- packages/shared/src/animationSequenceContracts.test.ts lib/recipeModules.test.ts lib/recipeDerivedParams.test.ts lib/recipePromptFragments.test.ts lib/recipeProviderDirectives.test.ts apps/local-server/src/animationGifEncoder.test.ts apps/local-server/src/animationSequenceRoutes.test.ts
 bun run recipes:catalog -- --query=animation --limit=20
 bun run recipes:verify
 bun run recipes:source:verify
@@ -162,7 +161,7 @@ Run `bun run styles:render:verify` after changing Styles UI grouping or virtuali
 5. Log or expose compact input only when safe and useful for debugging.
 6. Keep Codex imagegen stable instructions in `apps/local-server/src/codex/imagegenContract.ts`.
    Provider compilers and Codex threads must reuse that contract instead of copying boilerplate.
-7. Prefer Recipe Provider Directives over legacy Recipe Context only after a focused test proves the compact payload still carries required task detail.
+7. Change Recipe Provider Directives only after a focused test proves the compact payload still carries required task detail.
 8. Prefer filtered tooling commands (`bun run test -- <file>`, `bun run check -- <file>`) while iterating so broad gates run only at closeout.
 9. Use `createProviderInputMetrics()` when adding token or size diagnostics.
    Keep source spec size, compiled input size, compiled payload size, asset count, inline-asset state, and Provider Session Contract id consistent.
@@ -173,7 +172,7 @@ Token savings must come from better compilation, not weaker recipes.
 
 Run `bun run providers:audit` to inspect Recipe Module and provider conformance rows.
 The report includes source spec size, compiled payload size, prompt estimates, Recipe Provider Directives coverage, and inline-data or secret leak checks.
-Run `bun run providers:verify` before changing provider compilers or removing legacy Recipe Context metadata.
+Run `bun run providers:verify` before changing provider compilers or the legacy Recipe Context fallback for old stored specs.
 Run `bun run providers:source:verify` after backend route, worker, or provider-boundary changes.
 It blocks route handlers and non-provider backend modules from importing provider compilers, shared hosted result internals, or concrete hosted or local executors.
 Run `bun run providers:preflight` before external adapter work.
