@@ -67,12 +67,12 @@ Use provider-agnostic Generation Tasks plus provider settings.
 
 ## Add Or Change A Recipe Module
 
-1. Update `lib/recipeModules.ts` metadata: title, description, parameter descriptors, default task, supported tasks, and supported providers.
-2. Define parameter schema details there too: group, control, default, options, min/max/step, and required flags.
-3. Build a provider-independent Generation Task Spec.
-4. Put provider-independent derived params in tested helpers instead of React surfaces.
-5. Put provider-independent prompt fragments in tested helpers.
-6. Add the recipe's Recipe Provider Directives in `lib/recipeProviderDirectives.ts`. They are the only recipe text sent to providers.
+1. Each recipe has one file, `lib/recipeModules/<id>.ts`. It holds the metadata (title, description, default task, supported tasks and providers) and the parameter schema (group, control, default, options, min/max/step, required flags).
+2. The same file owns the recipe behavior: task choice, reference roles and instructions, variation scope, derived params, prompt fragments, and Recipe Provider Directives. Directives are the only recipe text sent to providers.
+3. Register the recipe in `lib/recipeModules/registry.ts`. The spec builder in `taskSpec.ts` is generic; do not add recipe switches there.
+4. Put form requirements and output summaries in `packages/shared/src/recipePolicies/<id>.ts`. The server checks them too.
+5. Put startup rules (output background, reference limits) in `lib/recipeModules/composerRules.ts`. Keep that file light: the entry chunk loads it.
+6. Workflows with runs (Animation Sequence, Sprite Atlas) reconcile on the server through a workflow run participant. The browser only shows run state.
 7. Avoid putting provider-ready prompt text inside React components.
 8. Keep UI as parameter collection and preview.
 9. Let providers compile task specs into their own payloads.
@@ -116,7 +116,7 @@ Keep only job or catalog refs plus transcript paths in the repo-local report.
 Focused validation:
 
 ```bash
-bun run test -- packages/shared/src/animationSequenceContracts.test.ts lib/recipeModules.test.ts lib/recipeDerivedParams.test.ts lib/recipePromptFragments.test.ts lib/recipeProviderDirectives.test.ts apps/local-server/src/animationGifEncoder.test.ts apps/local-server/src/animationSequenceRoutes.test.ts
+bun run test -- packages/shared/src/animationSequenceContracts.test.ts lib/recipeModules apps/local-server/src/animationGifEncoder.test.ts apps/local-server/src/animationSequenceRoutes.test.ts apps/local-server/src/animationSequenceRunReconciler.test.ts
 bun run recipes:catalog -- --query=animation --limit=20
 bun run recipes:verify
 bun run recipes:source:verify

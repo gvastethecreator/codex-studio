@@ -57,7 +57,7 @@ UI-compiled jobs:
 
 Direct agent requests without UI:
 
-- If the user names a Cozy Studio recipe, inspect `lib/recipeModules.ts`
+- If the user names a Cozy Studio recipe, inspect `lib/recipeModules/<id>.ts`
   instead of inventing a free-form prompt path.
 - For any recipe, identify: recipe id, intended Generation Task, useful
   recipe params, attachments/reference roles, aspect ratio or output format, and
