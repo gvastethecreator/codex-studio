@@ -20,6 +20,11 @@ describe('catalog-first source audit', () => {
   it('passes when Catalog View stays independent from retired browser batch state', async () => {
     const rootDir = path.join(tmpdir(), `catalog-first-ok-${Date.now()}`);
     await writePassingFixtures(rootDir);
+    await writeRepoFile(
+      rootDir,
+      '.scratch/catalog-experiment.ts',
+      'type HistoricalFixture = GenerationBatch;',
+    );
 
     const report = await createCatalogFirstSourceAuditReport(rootDir);
 

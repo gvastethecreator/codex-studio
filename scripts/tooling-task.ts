@@ -176,9 +176,9 @@ const TASKS: Record<string, TaskDefinition> = {
     description: 'Main PR quality gate: architecture, check, test, build.',
     steps: [
       {
-        label: 'Architecture Verify',
+        label: 'Architecture Source Verify',
         command: 'bun',
-        args: ['run', 'architecture:verify'],
+        args: ['run', 'architecture:source:verify'],
       },
       { label: 'Check', command: 'vp', args: ['check'] },
       {
@@ -186,14 +186,17 @@ const TASKS: Record<string, TaskDefinition> = {
         command: 'bun',
         args: ['run', 'typecheck:environments'],
       },
-      { label: 'Test', command: 'bunx', args: ['vitest', 'run'] },
+      {
+        label: 'Test',
+        command: 'bunx',
+        args: ['vitest', 'run', '--maxWorkers', String(TEST_WORKERS)],
+      },
       { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
       {
         label: 'UI Chunk Verify',
         command: 'bun',
         args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
       },
-      { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
   'validate:full': {

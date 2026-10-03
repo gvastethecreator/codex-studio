@@ -59,6 +59,7 @@ async function collectSourceFiles(rootDir: string, relativeDir = ''): Promise<st
       entry.name === 'node_modules' ||
       entry.name === 'dist' ||
       entry.name === '.git' ||
+      entry.name === '.scratch' ||
       entry.name === 'logs'
     ) {
       continue;

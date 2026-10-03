@@ -15,7 +15,7 @@ export default defineConfig({
     watch: {
       // Local runtime state and logs are not app source. Watching them pinned the dev server
       // during extension builds.
-      ignored: ['**/.local/**', '**/.scratch/**', '**/logs/**'],
+      ignored: ['**/.local/**', '**/.scratch/**', '**/.tmp/**', '**/tmp/**', '**/logs/**'],
     },
   },
   preview: {

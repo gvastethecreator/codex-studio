@@ -44,7 +44,7 @@ You need:
 
 **Portable zip.** Double-click `Cozy Studio.bat` on Windows or `Cozy Studio.command` on macOS, then read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Cozy Studio Library` beside the unpacked folder. Linux is best-effort.
 
-**From a checkout.**
+**From a checkout.** Development also requires Node.js 22 (22.18 or newer), 24 (24.11 or newer), or 26+, as required by Vite+.
 
 ```bash
 bun install
@@ -183,7 +183,7 @@ bun run validate
 bun run validate:release
 ```
 
-In VS Code, run the same commands from **Terminal -> Run Task**. Daily tasks start with `🚀 dev`, `🧪 test`, `🔍 check`, and `🏗 build`. Setup and infrequent tasks (`🧱 init`, `📦 deps`, `🛡 release`, `🔌 providers`) sit later in the list.
+In VS Code, use **Terminal → Run Task**. Daily tasks are Dev, Test, Check, Format and Build. Provider status, Runtime, Styles, Docs and Logs follow them. Each task runs the same Bun script shown above.
 
 Maintenance:
 

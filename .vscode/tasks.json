@@ -29,6 +29,13 @@
       "group": "test"
     },
     {
+      "label": "🎨 Format",
+      "type": "shell",
+      "command": "bun run fmt",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
       "label": "🏗️ Build",
       "type": "shell",
       "command": "bun run build",
