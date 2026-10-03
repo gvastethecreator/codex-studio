@@ -803,6 +803,7 @@ describe('createStudioApp', () => {
       recordDispatch: async () => {},
       settle,
       recover: async () => {},
+      reconcileRun: async () => null,
     }));
     const worker = createWorkerDependency();
     const studio = await createStudioApp({

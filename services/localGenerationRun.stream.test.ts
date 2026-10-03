@@ -13,6 +13,7 @@ const mocks = vi.hoisted(() => {
     onJobUpdate: vi.fn(),
     onAssetAdded: vi.fn(),
     onCatalogChanged: vi.fn(),
+    onWorkflowRunUpdated: vi.fn(),
     onLogAdded: vi.fn(),
     onOnboardingStage: vi.fn(),
     onOnboardingProbe: vi.fn(),
