@@ -23,7 +23,7 @@ describe('onboarding docs contract', () => {
     expect(readme).toContain('bun run studio:onboard --setup');
     expect(readme).toContain('Start app-server');
     expect(readme).toContain('Open Studio');
-    expect(readme).toContain('{date}_{style}_{prompt}');
+    expect(readme).toContain('{timestampUtc}_{generation}_{style}_{prompt}');
     expect(readme).not.toMatch(/as `AI-Studio-Library`/);
   });
 

@@ -2,6 +2,7 @@ import { Hono } from 'hono';
 import { Exit, Schema } from 'effect';
 import type { registerLibrary, listLibraries, removeLibrary, setDefaultLibrary } from './libraries';
 import type { publishEvent } from './events';
+import { isAbsolutePlatformPath } from './platformHome';
 
 export interface LibrariesRoutesDependencies {
   listLibraries: typeof listLibraries;
@@ -32,7 +33,7 @@ export function createLibrariesRoutes({
     const rawBody = await c.req
       .json()
       .catch(() => ({ __invalidJson: true }) as { __invalidJson: true });
-    if ('__invalidJson' in rawBody) {
+    if (rawBody && typeof rawBody === 'object' && '__invalidJson' in rawBody) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -56,6 +57,15 @@ export function createLibrariesRoutes({
     }
 
     const body = decodedBody.value;
+    if (!isAbsolutePlatformPath(body.path)) {
+      return c.json(
+        {
+          error: 'Choose an absolute library directory for this operating system.',
+          code: 'invalid_library_path',
+        },
+        400,
+      );
+    }
     const library = registerLibrary({
       name: body.name || 'Untitled Library',
       path: body.path,

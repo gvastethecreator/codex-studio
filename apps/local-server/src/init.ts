@@ -1,6 +1,6 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { getSettings, loadDotEnvLocal, resolveDefaultImagesDir } from './config';
+import { getSettings, loadDotEnvLocal, resolveDefaultImagesDir, serializeEnvPath } from './config';
 import { getSettingValue, setSettingValue } from './db/settings';
 import { EDITABLE_STUDIO_SETTINGS_KEY, updateEditableStudioSettings } from './studioSettingsStore';
 import { migrateDb } from './db/migrations';
@@ -23,7 +23,7 @@ export function initStudio() {
     writeFileSync(
       envPath,
       [
-        `STUDIO_LIBRARY_DIR=${settings.libraryDir}`,
+        `STUDIO_LIBRARY_DIR=${serializeEnvPath(settings.libraryDir)}`,
         `STUDIO_SERVER_PORT=${settings.serverPort}`,
         `STUDIO_CODEX_WS_PORT=${settings.codexWsPort}`,
         `VITE_STUDIO_API_BASE=http://127.0.0.1:${settings.serverPort}`,

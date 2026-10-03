@@ -4,6 +4,7 @@ import path from 'node:path';
 import { getSettings } from './config';
 import { getDb } from './db/connection';
 import { LIBRARY_FOLDERS, resolveLibraryPathFromRoot, resolvePublicLibraryPath } from './library';
+import { isAbsolutePlatformPath } from './platformHome';
 
 export interface StudioLibrary {
   kind?: 'library' | 'output';
@@ -60,6 +61,9 @@ export function registerLibrary(input: {
   isDefault?: boolean;
   outputOnly?: boolean;
 }) {
+  if (!isAbsolutePlatformPath(input.path)) {
+    throw new Error('Choose an absolute library directory for this operating system.');
+  }
   const database = getDb();
   const absolutePath = path.resolve(input.path);
   if (input.outputOnly) mkdirSync(absolutePath, { recursive: true });
@@ -92,10 +96,10 @@ export function listLibraries() {
 
 /** Register a write destination without creating database or cache folders inside it. */
 export function registerOutputDirectory(directory: string) {
-  if (!path.isAbsolute(directory)) throw new Error('Choose an absolute output directory.');
+  if (!isAbsolutePlatformPath(directory)) throw new Error('Choose an absolute output directory.');
   const absolutePath = path.resolve(directory);
   const existing = listLibraries().find(
-    (library) => path.resolve(library.path).toLowerCase() === absolutePath.toLowerCase(),
+    (library) => path.relative(path.resolve(library.path), absolutePath) === '',
   );
   return (
     existing ??

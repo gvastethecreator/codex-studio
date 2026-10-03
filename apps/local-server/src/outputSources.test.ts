@@ -117,14 +117,60 @@ describe('outputSources', () => {
     expect(storage.getSetting(EXTERNAL_OUTPUT_SOURCES_KEY)).toContain('Comfy final renders');
   });
 
+  it('keeps colliding folder names separate and preserves an existing source identity', () => {
+    const storage = createMemoryStorage();
+    const libraryDir = path.resolve('tmp', 'output-source-library');
+    const firstPath = path.resolve('tmp', 'output-a');
+    const secondPath = path.resolve('tmp', 'output_a');
+    const register = (sourcePath: string) =>
+      registerExternalOutputSource({
+        storage,
+        libraryDir,
+        input: { path: sourcePath },
+        pathExists: () => true,
+      });
+    const first = register(firstPath);
+    if (!first.ok) throw new Error(first.reason);
+    const registry = readExternalOutputSourceRegistry(storage);
+    registry.sources[0].id = 'existing-source-id';
+    storage.setSetting(EXTERNAL_OUTPUT_SOURCES_KEY, JSON.stringify(registry), 'now');
+    const second = register(secondPath);
+    if (!second.ok) throw new Error(second.reason);
+    expect(second.source.id).not.toBe('existing-source-id');
+    expect(register(`${firstPath}${path.sep}`)).toMatchObject({
+      ok: true,
+      source: { id: 'existing-source-id', path: firstPath },
+    });
+    expect(readExternalOutputSourceRegistry(storage).sources).toHaveLength(2);
+    const candidates = detectExternalOutputSourceCandidates({
+      libraryDir,
+      settings: settings({ preferredOutputPath: firstPath }),
+      env: { STUDIO_EXTERNAL_OUTPUT_SOURCES: secondPath },
+      pathExists: () => true,
+    });
+    expect(candidates.filter((item) => [firstPath, secondPath].includes(item.path))).toHaveLength(
+      2,
+    );
+  });
+
   it('rejects registration for unmanaged missing paths and Studio Library paths', () => {
     const storage = createMemoryStorage();
+    const libraryDir = path.resolve('tmp', 'library');
 
     expect(
       registerExternalOutputSource({
         storage,
-        libraryDir: 'D:/library',
-        input: { path: 'D:/missing/output' },
+        libraryDir,
+        input: { path: 'relative/output' },
+        pathExists: () => true,
+      }),
+    ).toEqual({ ok: false, reason: 'path_must_be_absolute' });
+
+    expect(
+      registerExternalOutputSource({
+        storage,
+        libraryDir,
+        input: { path: path.resolve('tmp', 'missing', 'output') },
         pathExists: () => false,
       }),
     ).toEqual({ ok: false, reason: 'path_not_found' });
@@ -132,8 +178,8 @@ describe('outputSources', () => {
     expect(
       registerExternalOutputSource({
         storage,
-        libraryDir: 'D:/library',
-        input: { path: 'D:/library/assets' },
+        libraryDir,
+        input: { path: path.join(libraryDir, 'assets') },
         pathExists: () => true,
       }),
     ).toEqual({ ok: false, reason: 'inside_studio_library' });
@@ -179,8 +225,8 @@ describe('outputSources', () => {
     const storage = createMemoryStorage();
     const registration = registerExternalOutputSource({
       storage,
-      libraryDir: 'D:/library',
-      input: { path: 'D:/ComfyUI/output', providerId: 'comfy' },
+      libraryDir: path.resolve('tmp', 'library'),
+      input: { path: path.resolve('tmp', 'ComfyUI', 'output'), providerId: 'comfy' },
       pathExists: () => true,
     });
     if (!registration.ok) throw new Error(registration.reason);

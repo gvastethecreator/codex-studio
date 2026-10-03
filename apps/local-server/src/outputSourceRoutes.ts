@@ -107,7 +107,7 @@ export function createOutputSourceRoutes({
     const rawBody = await c.req
       .json()
       .catch(() => ({ __invalidJson: true }) as { __invalidJson: true });
-    if ('__invalidJson' in rawBody) {
+    if (rawBody && typeof rawBody === 'object' && '__invalidJson' in rawBody) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -159,7 +159,7 @@ export function createOutputSourceRoutes({
     const rawBody = await c.req
       .json()
       .catch(() => ({ __invalidJson: true }) as { __invalidJson: true });
-    if ('__invalidJson' in rawBody) {
+    if (rawBody && typeof rawBody === 'object' && '__invalidJson' in rawBody) {
       return c.json(
         {
           error: 'Invalid request body',

@@ -94,7 +94,9 @@ Cozy Studio keeps its own data apart from your images.
 
 Settings, Output can add subfolders and change the file name. File name tokens are `{date}`, `{time}`, `{timestamp}`, `{style}`, `{prompt}`, `{workspace}`, `{workflow}`, `{provider}`, `{model}`, `{job}`, `{jobId}` and `{recipe}`. `{prompt}` keeps the first meaningful words of your prompt; `{style}` keeps the style name, or the names of a style mix joined with `+`. Empty tokens drop their separator. Folder levels can use workspace, date, workflow, provider, model and recipe. Changes apply to new jobs; running jobs keep the destination they captured. Existing files stay in place and remain in the catalog. Registered roots, safe Windows names and numeric suffixes prevent path escape and overwriting existing outputs.
 
-To choose another library folder, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`. `STUDIO_IMAGES_DIR` sets the default images folder for a new library. An existing `STUDIO_LIBRARY_DIR` is kept, and the app does not auto-migrate an older library.
+Studio detects the Pictures folder configured by your OS: the Windows Known Folder (including redirected locations), `~/Pictures` on macOS, and `XDG_PICTURES_DIR` from the environment or `user-dirs.dirs` on Linux. Onboarding shows the actual images destination. Linux uses `~/Pictures` when no user directory is configured; if Pictures is disabled in XDG, choose an explicit `STUDIO_IMAGES_DIR`.
+
+To choose another library folder, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`. `STUDIO_IMAGES_DIR` sets the default images folder for a new library. Paths must be absolute for the OS running the server. An existing images destination or `STUDIO_LIBRARY_DIR` is kept, and the app does not auto-migrate an older library. Changing the images destination in Settings affects new jobs; it does not move existing files.
 
 ```env
 # Windows

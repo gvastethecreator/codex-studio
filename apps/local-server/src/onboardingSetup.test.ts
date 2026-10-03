@@ -1,8 +1,12 @@
 import { describe, expect, it } from 'vitest';
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 import {
   applyOnboardingSetup,
   OnboardingSetupError,
+  readStudioLibraryDirFromEnv,
   upsertStudioLibraryDir,
 } from './onboardingSetup';
 import { resolveDefaultImagesDir, resolveStudioDataRoot } from './config';
@@ -24,7 +28,18 @@ describe('onboardingSetup', () => {
     );
     const imagesDir = path.resolve('/art/cozy');
     expect(resolveDefaultImagesDir({ STUDIO_IMAGES_DIR: imagesDir })).toBe(imagesDir);
-    expect(path.basename(resolveDefaultImagesDir({}))).toBe('Cozy Studio');
+    expect(resolveDefaultImagesDir({ HOME: '/Users/a' }, 'darwin')).toBe(
+      '/Users/a/Pictures/Cozy Studio',
+    );
+    expect(resolveStudioDataRoot({ LOCALAPPDATA: '\\AppData' }, 'win32', 'C:\\Users\\a')).toBe(
+      'C:\\Users\\a\\AppData\\Local\\Cozy Studio',
+    );
+    expect(resolveStudioDataRoot({ XDG_DATA_HOME: 'relative' }, 'linux', '/home/a')).toBe(
+      '/home/a/.local/share/cozy-studio',
+    );
+    expect(() =>
+      resolveDefaultImagesDir({ STUDIO_IMAGES_DIR: 'C:\\Images' }, 'linux', '/home/a'),
+    ).toThrow('absolute path for this operating system');
   });
 
   it('rejects mutating Setup without consent and does not write', () => {
@@ -86,6 +101,35 @@ describe('onboardingSetup', () => {
     );
     expect(next).toContain('STUDIO_LIBRARY_DIR=D:/existing-library');
     expect(next).toContain('STUDIO_SERVER_PORT=17223');
+  });
+
+  it('keeps literal paths with comments and variables intact when Bun restarts', () => {
+    const root = mkdtempSync(path.join(tmpdir(), 'cozy-bootstrap-path-'));
+    const env = { ...process.env };
+    delete env.STUDIO_LIBRARY_DIR;
+    try {
+      for (const libraryPath of [
+        String.raw`D:\new\#OUTPUTS\Cozy Studio`,
+        '/home/artist/$HOME #pictures',
+        String.raw`D:\Jos\u00e9's #pictures\$drafts`,
+      ]) {
+        const contents = upsertStudioLibraryDir(
+          'export STUDIO_LIBRARY_DIR = /old\nSTUDIO_SERVER_PORT=17223\n',
+          libraryPath,
+        );
+        expect(contents.match(/STUDIO_LIBRARY_DIR/g)).toHaveLength(1);
+        expect(readStudioLibraryDirFromEnv(contents)).toBe(libraryPath);
+        writeFileSync(path.join(root, '.env'), contents);
+        const actual = execFileSync(
+          'bun',
+          ['-e', 'console.log(JSON.stringify(process.env.STUDIO_LIBRARY_DIR))'],
+          { cwd: root, env, encoding: 'utf8', timeout: 10_000, windowsHide: true },
+        );
+        expect(JSON.parse(actual)).toBe(libraryPath);
+      }
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
   });
 
   it('requires confirm before writing a OneDrive-like path, then proceeds', () => {

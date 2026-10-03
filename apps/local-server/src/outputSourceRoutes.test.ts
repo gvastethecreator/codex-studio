@@ -322,6 +322,19 @@ describe('outputSourceRoutes', () => {
       });
       expect(invalidImport.status).toBe(400);
       await expect(invalidImport.json()).resolves.toMatchObject({ code: 'invalid_request_body' });
+      publishEvent.mockClear();
+      for (const endpoint of ['/', `/${created.id}/import`]) {
+        for (const body of ['null', '42']) {
+          const response = await routes.request(endpoint, {
+            method: 'POST',
+            body,
+            headers: { 'Content-Type': 'application/json' },
+          });
+          expect(response.status).toBe(400);
+          await expect(response.json()).resolves.toMatchObject({ code: 'invalid_request_body' });
+        }
+      }
+      expect(publishEvent).not.toHaveBeenCalled();
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

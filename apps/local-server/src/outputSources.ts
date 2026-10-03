@@ -19,6 +19,7 @@ import {
 import { resolveLibraryPathFromRoot } from './library';
 import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
 import type { StudioSettingsStorage } from './studioSettingsStore';
+import { isAbsolutePlatformPath } from './platformHome';
 
 export const EXTERNAL_OUTPUT_SOURCES_KEY = 'external_output_sources';
 
@@ -70,12 +71,8 @@ export interface ImportExternalOutputSourceFilesDependencies {
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 
 function toStableId(sourcePath: string) {
-  return sourcePath
-    .replace(/^[A-Za-z]:/, (drive) => drive.toLowerCase())
-    .replace(/\\/g, '/')
-    .replace(/[^a-zA-Z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .toLowerCase();
+  const canonicalPath = process.platform === 'win32' ? sourcePath.toLowerCase() : sourcePath;
+  return `source-${createHash('sha256').update(canonicalPath).digest('hex').slice(0, 24)}`;
 }
 
 function normalizePath(sourcePath: string) {
@@ -204,6 +201,7 @@ export function detectExternalOutputSourceCandidates({
   const candidates: ExternalOutputSourceCandidate[] = [];
 
   for (const sourcePath of candidatePaths) {
+    if (!isAbsolutePlatformPath(sourcePath)) continue;
     const normalizedPath = normalizePath(sourcePath);
     const id = toStableId(normalizedPath);
     if (seen.has(id)) continue;
@@ -243,10 +241,10 @@ export function registerExternalOutputSource({
     return { ok: false as const, reason: 'path_required' as const };
   }
 
-  const normalizedPath = normalizePath(sanitized.path);
-  if (!path.isAbsolute(normalizedPath)) {
+  if (!isAbsolutePlatformPath(sanitized.path)) {
     return { ok: false as const, reason: 'path_must_be_absolute' as const };
   }
+  const normalizedPath = normalizePath(sanitized.path);
   if (isInside(normalizePath(libraryDir), normalizedPath)) {
     return { ok: false as const, reason: 'inside_studio_library' as const };
   }
@@ -256,8 +254,10 @@ export function registerExternalOutputSource({
 
   const registry = readExternalOutputSourceRegistry(storage);
   const providerId = sanitized.providerId ?? inferProviderId(normalizedPath);
-  const id = toStableId(normalizedPath);
-  const existing = registry.sources.find((source) => source.id === id);
+  const existing = registry.sources.find(
+    (source) => path.relative(normalizePath(source.path), normalizedPath) === '',
+  );
+  const id = existing?.id ?? toStableId(normalizedPath);
   const source = {
     id,
     label: sanitized.label ?? existing?.label ?? inferLabel(normalizedPath, providerId),

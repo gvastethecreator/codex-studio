@@ -1,10 +1,12 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
+import { parseEnv } from 'node:util';
 import type { StudioSettings } from '../../../packages/shared/src';
 import { BUILT_IN_GENERATION_PROVIDERS } from '../../../packages/shared/src/generationContracts';
 import { validateWorkerLimits } from '../../../packages/shared/src/workerContracts';
 import { DEFAULT_STUDIO_IMAGES_FOLDER_NAME } from '../../../packages/shared/src/onboardingContracts';
-import { resolveUserHome } from './platformHome';
+import { isAbsolutePlatformPath, resolveUserHome } from './platformHome';
+import { resolvePicturesDir } from './platformDirectories';
 
 const DEFAULT_SERVER_PORT = 17223;
 const DEFAULT_CODEX_WS_PORT = 17224;
@@ -19,9 +21,9 @@ export function getEnvLocalPath() {
   return path.resolve(process.cwd(), '.env.local');
 }
 
-function absoluteEnvPath(value: string | undefined, pathApi: typeof path.win32) {
+function absoluteEnvPath(value: string | undefined, platform: NodeJS.Platform) {
   const trimmed = value?.trim();
-  return trimmed && pathApi.isAbsolute(trimmed) ? trimmed : null;
+  return trimmed && isAbsolutePlatformPath(trimmed, platform) ? trimmed : null;
 }
 
 /**
@@ -35,13 +37,13 @@ export function resolveStudioDataRoot(
 ) {
   if (platform === 'win32')
     return path.win32.join(
-      absoluteEnvPath(env.LOCALAPPDATA, path.win32) ?? path.win32.join(home, 'AppData', 'Local'),
+      absoluteEnvPath(env.LOCALAPPDATA, platform) ?? path.win32.join(home, 'AppData', 'Local'),
       'Cozy Studio',
     );
   if (platform === 'darwin')
     return path.posix.join(home, 'Library', 'Application Support', 'Cozy Studio');
   return path.posix.join(
-    absoluteEnvPath(env.XDG_DATA_HOME, path.posix) ?? path.posix.join(home, '.local', 'share'),
+    absoluteEnvPath(env.XDG_DATA_HOME, platform) ?? path.posix.join(home, '.local', 'share'),
     'cozy-studio',
   );
 }
@@ -50,15 +52,44 @@ export function resolveDefaultLibraryDir() {
   return path.join(resolveStudioDataRoot(), 'Library');
 }
 
-/** Where generated images go by default: `STUDIO_IMAGES_DIR`, else Pictures/Cozy Studio. */
-export function resolveDefaultImagesDir(env: Record<string, string | undefined> = process.env) {
+/** Where generated images go by default: `STUDIO_IMAGES_DIR`, else the OS Pictures directory. */
+export function resolveDefaultImagesDir(
+  env: NodeJS.ProcessEnv = process.env,
+  platform: NodeJS.Platform = process.platform,
+  home?: string,
+) {
   const configured = env.STUDIO_IMAGES_DIR?.trim();
-  if (configured && path.isAbsolute(configured)) return configured;
-  return path.join(resolveUserHome(), 'Pictures', DEFAULT_STUDIO_IMAGES_FOLDER_NAME);
+  if (configured) {
+    if (!isAbsolutePlatformPath(configured, platform)) {
+      throw new Error('STUDIO_IMAGES_DIR must be an absolute path for this operating system.');
+    }
+    return configured;
+  }
+  const pathApi = platform === 'win32' ? path.win32 : path.posix;
+  return pathApi.join(resolvePicturesDir(env, platform, home), DEFAULT_STUDIO_IMAGES_FOLDER_NAME);
 }
 
 export function hasEnvLocalFile() {
   return existsSync(getEnvLocalPath());
+}
+
+/** Bun expands dollar signs even in quoted dotenv values. Keep filesystem paths literal. */
+export function serializeEnvPath(value: string) {
+  if (/[\0\r\n]/.test(value)) throw new Error('A bootstrap path must fit on one line.');
+  if (!/[#$]/.test(value)) return value;
+  const quote = ["'", '`', '"'].find(
+    (candidate) => !value.includes(candidate) && (candidate !== '"' || !/\\[nr]/.test(value)),
+  );
+  if (!quote) throw new Error('This path cannot be quoted safely in .env.local.');
+  return `${quote}${value.replaceAll('$', '\\$')}${quote}`;
+}
+
+export function readBootstrapEnv(contents: string) {
+  return Object.fromEntries(
+    Object.entries(parseEnv(contents)).flatMap(([key, value]) =>
+      value === undefined ? [] : [[key, value.replaceAll('\\$', '$')]],
+    ),
+  );
 }
 
 export function loadDotEnvLocal() {
@@ -68,18 +99,7 @@ export function loadDotEnvLocal() {
   const envPath = getEnvLocalPath();
   if (!existsSync(envPath)) return;
 
-  const lines = readFileSync(envPath, 'utf8').split(/\r?\n/);
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith('#')) continue;
-    const separatorMatch = /=/.exec(trimmed);
-    if (!separatorMatch) continue;
-    const separator = separatorMatch.index;
-    const key = trimmed.slice(0, separator).trim();
-    const value = trimmed
-      .slice(separator + 1)
-      .trim()
-      .replace(/^["']|["']$/g, '');
+  for (const [key, value] of Object.entries(readBootstrapEnv(readFileSync(envPath, 'utf8')))) {
     if (!(key in process.env)) {
       process.env[key] = value;
     }
@@ -100,6 +120,15 @@ function warnInvalidSetting(
 function readStringSetting(key: string, fallback: string) {
   const value = process.env[key]?.trim();
   return value ? value : fallback;
+}
+
+function readLibraryDirSetting() {
+  const configured = process.env.STUDIO_LIBRARY_DIR?.trim();
+  if (!configured) return resolveDefaultLibraryDir();
+  if (!isAbsolutePlatformPath(configured)) {
+    throw new Error('STUDIO_LIBRARY_DIR must be an absolute path for this operating system.');
+  }
+  return configured;
 }
 
 function readPositiveIntSetting(key: string, fallback: number) {
@@ -139,7 +168,7 @@ export function getSettings(): StudioSettings {
   loadDotEnvLocal();
 
   return {
-    libraryDir: readStringSetting('STUDIO_LIBRARY_DIR', resolveDefaultLibraryDir()),
+    libraryDir: readLibraryDirSetting(),
     serverPort: readPositiveIntSetting('STUDIO_SERVER_PORT', DEFAULT_SERVER_PORT),
     codexWsPort: readPositiveIntSetting('STUDIO_CODEX_WS_PORT', DEFAULT_CODEX_WS_PORT),
     codexImagegenModel: readStringSetting('CODEX_IMAGEGEN_MODEL', DEFAULT_CODEX_IMAGEGEN_MODEL),

@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
+import path from 'node:path';
 import type { StudioLibrary } from './libraries';
 import { createLibrariesRoutes } from './librariesRoutes';
 
@@ -36,7 +37,11 @@ describe('librariesRoutes', () => {
 
     const createResponse = await routes.request('/', {
       method: 'POST',
-      body: JSON.stringify({ name: 'New Library', path: 'D:/new-library', isDefault: false }),
+      body: JSON.stringify({
+        name: 'New Library',
+        path: path.resolve('tmp', 'new-library'),
+        isDefault: false,
+      }),
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -44,7 +49,7 @@ describe('librariesRoutes', () => {
     await expect(createResponse.json()).resolves.toEqual(created);
     expect(registerLibrary).toHaveBeenCalledWith({
       name: 'New Library',
-      path: 'D:/new-library',
+      path: path.resolve('tmp', 'new-library'),
       isDefault: false,
     });
     expect(publishEvent).toHaveBeenCalledWith('library.created', created);
@@ -123,6 +128,25 @@ describe('librariesRoutes', () => {
     });
     expect(invalid.status).toBe(400);
     await expect(invalid.json()).resolves.toMatchObject({ code: 'invalid_request_body' });
+    const nullBody = await routes.request('/', {
+      method: 'POST',
+      body: 'null',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    expect(nullBody.status).toBe(400);
+    for (const invalidPath of [
+      '',
+      'relative/library',
+      process.platform === 'win32' ? '/home/library' : 'C:\\Library',
+    ]) {
+      const response = await routes.request('/', {
+        method: 'POST',
+        body: JSON.stringify({ name: 'x', path: invalidPath }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      expect(response.status).toBe(400);
+      await expect(response.json()).resolves.toMatchObject({ code: 'invalid_library_path' });
+    }
     expect(registerLibrary).not.toHaveBeenCalled();
   });
 });

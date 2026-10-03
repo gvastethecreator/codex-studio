@@ -150,7 +150,7 @@ function CheckRow({
   );
 }
 
-/** Where generated images land; a new Studio uses Pictures/Cozy Studio until the user picks. */
+/** Shows the registered destination, including the Pictures folder detected during setup. */
 function ImagesFolderRow({ isOpen }: { isOpen: boolean }) {
   const [folder, setFolder] = React.useState<string | null | undefined>(undefined);
   const [draft, setDraft] = React.useState('');
@@ -161,12 +161,16 @@ function ImagesFolderRow({ isOpen }: { isOpen: boolean }) {
   React.useEffect(() => {
     if (!isOpen) return;
     let cancelled = false;
+    setError(null);
+    setFolder(undefined);
     getEditableStudioSettings()
       .then((settings) => {
         if (!cancelled) setFolder(settings.outputDirectory);
       })
-      .catch(() => {
-        if (!cancelled) setFolder(null);
+      .catch((reason: unknown) => {
+        if (!cancelled) {
+          setError(reason instanceof Error ? reason.message : 'Could not read the images folder.');
+        }
       });
     return () => {
       cancelled = true;
@@ -208,7 +212,9 @@ function ImagesFolderRow({ isOpen }: { isOpen: boolean }) {
         ) : (
           <p className="break-all font-mono">
             {folder === undefined
-              ? 'Checking…'
+              ? error
+                ? 'Images folder unavailable.'
+                : 'Checking…'
               : (folder ?? 'Inside the Studio Library, in its outputs folder.')}
           </p>
         )}
@@ -245,7 +251,7 @@ function ImagesFolderRow({ isOpen }: { isOpen: boolean }) {
             setDraft(folder ?? '');
             setEditing(true);
           }}
-          disabled={folder === undefined}
+          disabled={folder === undefined && !error}
         >
           Change
         </button>
@@ -438,7 +444,8 @@ function InAppSetupForm({
       </p>
       <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1  ">
         Choose an absolute folder. By default the library lives in Cozy Studio's private app-data
-        folder, and images go to Pictures/Cozy Studio.
+        folder. Images use the Pictures folder configured by your operating system. You can change
+        their destination under Images folder.
       </p>
       <label className="mt-3 block xl:mt-2">
         <span className="sr-only">Studio Library path</span>

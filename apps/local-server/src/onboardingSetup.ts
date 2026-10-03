@@ -9,8 +9,14 @@ import {
   type OnboardingSetupRequest,
   type OnboardingSetupResult,
 } from '../../../packages/shared/src';
-import { getEnvLocalPath, resolveDefaultLibraryDir } from './config';
+import {
+  getEnvLocalPath,
+  readBootstrapEnv,
+  resolveDefaultLibraryDir,
+  serializeEnvPath,
+} from './config';
 import { initStudio } from './init';
+import { isAbsolutePlatformPath } from './platformHome';
 
 export class OnboardingSetupError extends Error {
   readonly status: 400 | 409;
@@ -51,28 +57,18 @@ export function repoDepsNeedInstall(repoRoot: string) {
 
 export function readStudioLibraryDirFromEnv(contents: string | null): string | null {
   if (!contents) return null;
-  for (const line of contents.split(/\r?\n/)) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith('#')) continue;
-    if (!trimmed.startsWith('STUDIO_LIBRARY_DIR=')) continue;
-    const value = trimmed
-      .slice('STUDIO_LIBRARY_DIR='.length)
-      .trim()
-      .replace(/^["']|["']$/g, '');
-    return value || null;
-  }
-  return null;
+  return readBootstrapEnv(contents).STUDIO_LIBRARY_DIR?.trim() || null;
 }
 
 export function upsertStudioLibraryDir(envFileContents: string | null, libraryPath: string) {
-  const line = `STUDIO_LIBRARY_DIR=${libraryPath}`;
+  const line = `STUDIO_LIBRARY_DIR=${serializeEnvPath(libraryPath)}`;
   if (!envFileContents) {
     return `${line}\n`;
   }
   const lines = envFileContents.split(/\r?\n/);
   let replaced = false;
   const next = lines.map((current) => {
-    if (!current.startsWith('STUDIO_LIBRARY_DIR=')) return current;
+    if (!/^\s*(?:export\s+)?STUDIO_LIBRARY_DIR\s*=/.test(current)) return current;
     replaced = true;
     return line;
   });
@@ -113,7 +109,7 @@ export function applyOnboardingSetup(
 
   const resolveDefaultLibraryPath =
     dependencies.resolveDefaultLibraryPath ?? resolveDefaultLibraryDir;
-  const isAbsolutePath = dependencies.isAbsolutePath ?? path.isAbsolute;
+  const isAbsolutePath = dependencies.isAbsolutePath ?? isAbsolutePlatformPath;
   const envPath = dependencies.readEnvLocalPath?.() ?? getEnvLocalPath();
   const readFile = dependencies.readFile ?? defaultReadFile;
   const existingLibraryDir = dependencies.readExistingLibraryDir
