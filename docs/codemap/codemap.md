@@ -1,15 +1,15 @@
 # Code map: cozy-studio
 
-Generated: 2026-10-01T14:58:13Z | Commit: `655c46b39f24` | Schema: 2
-Generation: `a2b84f212ead9d6e3ddf45fdbfa6c9cf6c71e4f165022a0ffb6b9af5ac13ff53`
+Generated: 2026-10-02T23:23:33Z | Commit: `f05e19ded81d` | Schema: 2
+Generation: `4e6dad4b908a56601a90e50f3a01218da42930026e5fecc0a4c141bf5648145a`
 Scope: . | Inventory: working-tree
-Nodes: 1001 | Edges: 5968 | Flows: 5
+Nodes: 1005 | Edges: 6051 | Flows: 5
 
 ## Coverage
 
-- Analysis: **partial**; 922 analyzed of 934 included files.
+- Analysis: **partial**; 926 analyzed of 938 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3713.
+- Unresolved references and analysis limits: 3898.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
@@ -34,7 +34,7 @@ Nodes: 1001 | Edges: 5968 | Flows: 5
 - `apps/local-server/src/auth/controller.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/reset.ts | callees: apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/googleAuthorizationCode.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
 - `apps/local-server/src/auth/deviceCode.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/deviceCode.ts, external:javascript:vitest | tests: 0 | entry: none
 - `apps/local-server/src/auth/deviceCode.ts` | module | Repository | callers: apps/local-server/src/auth/controller.ts, apps/local-server/src/auth/deviceCode.test.ts, apps/local-server/src/auth/deviceCode.test.ts | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
-- Showing 20 of 1001 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
+- Showing 20 of 1005 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
 
 ## Edges
 
@@ -78,6 +78,7 @@ Nodes: 1001 | Edges: 5968 | Flows: 5
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/outputDestination.ts` | calls
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/outputDestination.ts` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/sharpAuthoringAdapter.ts` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:crypto` | calls
 - `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:crypto` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:fs` | calls
 - `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:fs` | imports
@@ -87,8 +88,7 @@ Nodes: 1001 | Edges: 5968 | Flows: 5
 - `apps/local-server/src/animationSequenceService.ts` -> `packages/shared/src/types.ts` | imports (type only)
 - `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | calls
 - `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | imports
-- `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | calls
-- Showing 50 of 5968 edges; JSON contains every edge and its evidence.
+- Showing 50 of 6051 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
@@ -100,10 +100,10 @@ Nodes: 1001 | Edges: 5968 | Flows: 5
 - `apps/local-server/src/animationSequenceRoutes.test.ts:66`: object-member-call-not-resolved (path)
 - `apps/local-server/src/animationSequenceRoutes.test.ts:99`: object-member-call-not-resolved (expect)
 - `apps/local-server/src/animationSequenceRoutes.test.ts:169`: object-member-call-not-resolved (expect)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:178`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:178`: object-member-call-not-resolved (os)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:204`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:204`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:180`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:181`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:194`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:194`: object-member-call-not-resolved (os)
 
 ## Flows
 
@@ -115,7 +115,7 @@ Nodes: 1001 | Edges: 5968 | Flows: 5
 
 ## Architecture changes
 
-- Nodes: +0 / -0; edges: +0 / -0.
+- Nodes: +1 / -0; edges: +53 / -7.
 - Boundary changes: 0; new cycles: 0.
 
 ## Read next
