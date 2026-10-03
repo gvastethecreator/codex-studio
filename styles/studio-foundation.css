@@ -419,36 +419,6 @@ react-scan-overlay,
       filter var(--panel-open-dur) var(--panel-ease);
   }
 
-  .t-dropdown {
-    transform: scale(var(--dropdown-pre-scale)) translateY(-4px);
-    transform-origin: top right;
-    opacity: 0;
-    pointer-events: none;
-    transition:
-      transform var(--dropdown-open-dur) var(--dropdown-ease),
-      opacity var(--dropdown-open-dur) var(--dropdown-ease);
-    will-change: transform, opacity;
-  }
-  .t-dropdown[data-origin='top-left'] {
-    transform-origin: top left;
-  }
-  .t-dropdown[data-origin='top-center'] {
-    transform-origin: top center;
-  }
-  .t-dropdown[data-open='true'] {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .t-dropdown[data-closing='true'] {
-    transform: scale(var(--dropdown-closing-scale)) translateY(-2px);
-    opacity: 0;
-    pointer-events: none;
-    transition:
-      transform var(--dropdown-close-dur) var(--dropdown-ease),
-      opacity var(--dropdown-close-dur) var(--dropdown-ease);
-  }
-
   .character-lab-panel {
     animation: character-lab-panel-enter 320ms var(--dropdown-ease) both;
   }
@@ -574,7 +544,6 @@ react-scan-overlay,
 
   @media (prefers-reduced-motion: reduce) {
     .t-panel-slide,
-    .t-dropdown,
     .character-lab-panel,
     .character-lab-preview-option,
     .studio-route-enter {

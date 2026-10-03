@@ -593,6 +593,9 @@
   font-size: 12px;
   overflow-wrap: anywhere;
 }
+.output-background-control small {
+  display: block;
+}
 .settings-output-preview small,
 .output-background-control small {
   color: var(--wb-muted);

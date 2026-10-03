@@ -1,8 +1,11 @@
 /** @vitest-environment jsdom */
-import { render, waitFor } from '@testing-library/react';
-import { beforeAll, describe, expect, it } from 'vitest';
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { useRef, useState } from 'react';
+import { afterEach, beforeAll, describe, expect, it } from 'vitest';
 
 import { GsapDropdown } from './GsapDropdown';
+
+afterEach(cleanup);
 
 beforeAll(() => {
   Object.defineProperty(window, 'matchMedia', {
@@ -42,5 +45,56 @@ describe('GsapDropdown Workbench Ambient', () => {
     await waitFor(() => expect((menu as HTMLElement).style.opacity).toBe('1'));
     expect(menu?.hasAttribute('inert')).toBe(false);
     expect(container.querySelector('[data-gsap-dropdown]')).toBe(menu);
+  });
+
+  it('keeps keyboard focus in the options, then returns it when the menu closes', async () => {
+    function Menu() {
+      const triggerRef = useRef<HTMLButtonElement>(null);
+      const [open, setOpen] = useState(false);
+      return (
+        <>
+          <button ref={triggerRef} aria-expanded={open} onClick={() => setOpen(!open)}>
+            Choose format
+          </button>
+          <GsapDropdown open={open} onOpenChange={setOpen} triggerRef={triggerRef} role="listbox">
+            <button role="option" aria-selected={false}>
+              Square
+            </button>
+            <button role="option" aria-selected={true}>
+              Portrait
+            </button>
+            <button role="option" aria-selected={false} onClick={() => setOpen(false)}>
+              Landscape
+            </button>
+          </GsapDropdown>
+        </>
+      );
+    }
+    render(<Menu />);
+    const trigger = screen.getByRole('button', { name: 'Choose format' });
+    trigger.focus();
+    fireEvent.keyDown(trigger, { key: 'Enter' });
+    fireEvent.click(trigger);
+    await waitFor(() =>
+      expect(document.activeElement).toBe(screen.getByRole('option', { name: 'Portrait' })),
+    );
+    fireEvent.keyDown(document.activeElement!, { key: 'End' });
+    expect(document.activeElement).toBe(screen.getByRole('option', { name: 'Landscape' }));
+    fireEvent.keyDown(document.activeElement!, { key: 'ArrowDown' });
+    expect(document.activeElement).toBe(screen.getByRole('option', { name: 'Square' }));
+    fireEvent.keyDown(document.activeElement!, { key: 'Escape' });
+    expect(document.activeElement).toBe(trigger);
+    expect(trigger.getAttribute('aria-expanded')).toBe('false');
+    fireEvent.click(trigger);
+    await waitFor(() =>
+      expect(document.activeElement).toBe(screen.getByRole('option', { name: 'Portrait' })),
+    );
+    fireEvent.click(screen.getByRole('option', { name: 'Landscape' }));
+    expect(document.activeElement).toBe(trigger);
+    fireEvent.pointerDown(trigger);
+    fireEvent.click(trigger);
+    const lastOption = await screen.findByRole('option', { name: 'Landscape' });
+    fireEvent.keyDown(trigger, { key: 'ArrowUp' });
+    expect(document.activeElement).toBe(lastOption);
   });
 });

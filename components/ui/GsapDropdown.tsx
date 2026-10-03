@@ -65,10 +65,11 @@ function resolvePortalStyle({
   portalZIndex: number;
 }): React.CSSProperties {
   const triggerRect = trigger.getBoundingClientRect();
-  const panelRect = panel.getBoundingClientRect();
+  panel.style.setProperty('--dropdown-trigger-width', `${triggerRect.width}px`);
   const viewportPadding = 8;
-  const panelWidth = panelRect.width || triggerRect.width;
-  const panelHeight = panelRect.height || 1;
+  // GSAP transforms affect client rects while a menu opens. Position from its layout size.
+  const panelWidth = panel.offsetWidth || triggerRect.width;
+  const panelHeight = panel.offsetHeight || 1;
   const desiredLeft = placement.endsWith('right')
     ? triggerRect.right - panelWidth
     : triggerRect.left;
@@ -84,6 +85,8 @@ function resolvePortalStyle({
 
   return {
     position: 'fixed',
+    margin: 0,
+    maxWidth: 'calc(100vw - 16px)',
     left: `${clamp(desiredLeft, viewportPadding, window.innerWidth - panelWidth - viewportPadding)}px`,
     top: `${clamp(desiredTop, viewportPadding, window.innerHeight - panelHeight - viewportPadding)}px`,
     right: 'auto',
@@ -151,14 +154,20 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         return;
       }
 
-      setPortalStyle(
-        resolvePortalStyle({
-          trigger: triggerRef.current,
-          panel: panelRef.current,
-          placement,
-          portalOffset,
-          portalZIndex,
-        }),
+      const nextStyle = resolvePortalStyle({
+        trigger: triggerRef.current,
+        panel: panelRef.current,
+        placement,
+        portalOffset,
+        portalZIndex,
+      });
+      setPortalStyle((current) =>
+        current &&
+        Object.entries(nextStyle).every(
+          ([key, value]) => current[key as keyof React.CSSProperties] === value,
+        )
+          ? current
+          : nextStyle,
       );
     }, [placement, portal, portalOffset, portalZIndex, triggerRef]);
 
@@ -169,9 +178,13 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
       }
 
       updatePortalPosition();
+      const observer = new ResizeObserver(updatePortalPosition);
+      if (panelRef.current) observer.observe(panelRef.current);
+      if (triggerRef?.current) observer.observe(triggerRef.current);
       window.addEventListener('resize', updatePortalPosition);
       window.addEventListener('scroll', updatePortalPosition, true);
       return () => {
+        observer.disconnect();
         window.removeEventListener('resize', updatePortalPosition);
         window.removeEventListener('scroll', updatePortalPosition, true);
       };
@@ -194,9 +207,46 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
       };
 
       const handleKeyDown = (event: KeyboardEvent) => {
-        if (event.key !== 'Escape') return;
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          event.stopPropagation();
+          closeFromDocument(true);
+          return;
+        }
+        if (role !== 'menu' && role !== 'listbox') return;
+        const target = event.target as Node | null;
+        const panel = panelRef.current;
+        if (
+          !target ||
+          !panel ||
+          (!panel.contains(target) && !triggerRef?.current?.contains(target))
+        )
+          return;
+        if (event.key === 'Tab') {
+          closeFromDocument(true);
+          return;
+        }
+        const items = Array.from(
+          panel.querySelectorAll<HTMLElement>('[role="option"], [role^="menuitem"]'),
+        ).filter((item) => !item.matches(':disabled, [aria-disabled="true"]'));
+        if (!items.length) return;
+        const index = items.indexOf(document.activeElement as HTMLElement);
+        const next =
+          event.key === 'Home'
+            ? 0
+            : event.key === 'End'
+              ? items.length - 1
+              : event.key === 'ArrowDown'
+                ? (index + 1) % items.length
+                : event.key === 'ArrowUp'
+                  ? index < 0
+                    ? items.length - 1
+                    : (index - 1 + items.length) % items.length
+                  : null;
+        if (next === null) return;
         event.preventDefault();
-        closeFromDocument(true);
+        event.stopPropagation();
+        items[next]?.focus();
       };
 
       document.addEventListener('pointerdown', handlePointerDown, true);
@@ -205,7 +255,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         document.removeEventListener('pointerdown', handlePointerDown, true);
         document.removeEventListener('keydown', handleKeyDown, true);
       };
-    }, [open, triggerRef]);
+    }, [open, role, triggerRef]);
 
     useGSAP(
       () => {
@@ -253,6 +303,21 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
       },
       { dependencies: [isMounted, open, placement], scope: panelRef },
     );
+
+    // Initialize animation styles before moving focus into the panel.
+    useLayoutEffect(() => {
+      const panel = panelRef.current;
+      if (!panel || !isMounted) return;
+      if (!open) {
+        if (panel.contains(document.activeElement)) triggerRef?.current?.focus();
+        return;
+      }
+      if (!keyboardInput.current || (role !== 'menu' && role !== 'listbox')) return;
+      const item = panel.querySelector<HTMLElement>(
+        '[role="option"][aria-selected="true"], [role^="menuitem"][aria-checked="true"]',
+      );
+      (item ?? panel.querySelector<HTMLElement>('[role="option"], [role^="menuitem"]'))?.focus();
+    }, [isMounted, open, role, triggerRef]);
 
     if (!isMounted) return null;
 

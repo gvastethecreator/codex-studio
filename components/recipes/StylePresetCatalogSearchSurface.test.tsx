@@ -54,6 +54,14 @@ const mount = () =>
 const ready = () => waitFor(() => expect(screen.queryByText('Loading catalog…')).toBeNull());
 
 beforeEach(() => {
+  vi.stubGlobal(
+    'ResizeObserver',
+    class {
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    },
+  );
   vi.stubGlobal('matchMedia', () => ({
     matches: true,
     addEventListener() {},
