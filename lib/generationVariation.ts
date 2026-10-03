@@ -1,7 +1,16 @@
+/**
+ * How far sibling or repeated results may drift from the brief.
+ * `open`: composition may change. `details`: the workflow fixes layout, framing, camera and
+ * identity, so only small details vary between siblings. `none`: every result must follow the
+ * workflow contract exactly, so no brief is sent.
+ */
+export type GenerationVariationScope = 'open' | 'details' | 'none';
+
 export interface GenerationVariationArgs {
   batchIndex?: number;
   batchCount?: number;
   variationKey?: string | null;
+  scope?: GenerationVariationScope;
 }
 
 const VARIATION_FOCUS_SEQUENCE = [
@@ -27,9 +36,22 @@ export function buildGenerationVariationBrief({
   batchIndex = 1,
   batchCount = 1,
   variationKey = null,
+  scope = 'open',
 }: GenerationVariationArgs = {}) {
   const normalizedBatchCount = coercePositiveInt(batchCount, 1);
   const normalizedBatchIndex = Math.min(normalizedBatchCount, coercePositiveInt(batchIndex, 1));
+  if (scope === 'none') return null;
+  if (scope === 'details') {
+    if (normalizedBatchCount === 1) return null;
+    return [
+      `This is variation ${normalizedBatchIndex} of ${normalizedBatchCount}.`,
+      'Keep the layout, framing, camera, identity and palette that the workflow sets.',
+      'Vary only small details such as expression nuance, secondary accents, or texture detail.',
+      variationKey ? `Variation key: ${variationKey}.` : null,
+    ]
+      .filter((line): line is string => Boolean(line))
+      .join('\n');
+  }
   const focus =
     VARIATION_FOCUS_SEQUENCE[(normalizedBatchIndex - 1) % VARIATION_FOCUS_SEQUENCE.length];
 

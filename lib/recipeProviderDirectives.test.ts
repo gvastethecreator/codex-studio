@@ -139,9 +139,9 @@ describe('recipeProviderDirectives', () => {
       recipeId: 'camera',
       title: 'Camera View',
     });
-    expect(serialized).toContain('- Azimuth: 80 degrees');
-    expect(serialized).toContain('- Horizontal Position: RIGHT PROFILE (Side View)');
-    expect(serialized).toContain('- Has Reference: yes');
+    expect(serialized).toContain('- Goal: Re-render the same subject from the reference image');
+    expect(serialized).toContain('- Orbit: 80 degrees');
+    expect(serialized).toContain('- Zoom: 140%');
   });
 
   it('builds compact provider directives for character params', () => {
@@ -168,6 +168,8 @@ describe('recipeProviderDirectives', () => {
     expect(serialized).toContain('- Layout: Dynamic Sheet');
     expect(serialized).toContain('main, full-body dynamic action pose');
     expect(serialized).toContain('- Style: Concept Art (Digital)');
+    expect(serialized).toContain('No text, labels, captions, arrows, or watermarks.');
+    expect(serialized).toContain('- Design Focus: Give extra detail to Weapons/Gear.');
   });
 
   it('builds compact provider directives for cinematic params', () => {
@@ -184,6 +186,7 @@ describe('recipeProviderDirectives', () => {
         frameShots: {
           0: 'Wide',
           1: 'Close-Up',
+          7: 'Over the Shoulder',
         },
         genre: 'Noir',
         tone: 'High Contrast',
@@ -200,8 +203,11 @@ describe('recipeProviderDirectives', () => {
       title: 'Cinematic Storyboard',
     });
     expect(serialized).toContain('Create a 6-frame storyboard grid');
-    expect(serialized).toContain('- Frame 2: Close-Up Shot');
+    expect(serialized).toContain('Frame 1: Wide Shot; Frame 2: Close-Up Shot');
+    expect(serialized).not.toContain('Frame 8');
+    expect(serialized).toContain('- Panel Shape: Each panel is about 1.19:1 (landscape).');
     expect(serialized).toContain('- Genre: Noir');
+    expect(serialized).not.toContain('Auto-Detect');
   });
 
   it('builds compact provider directives for remaster params', () => {
@@ -227,9 +233,10 @@ describe('recipeProviderDirectives', () => {
       recipeId: 'remaster',
       title: 'Remaster',
     });
-    expect(serialized).toContain('- Style Interpretation: Oil Detail');
-    expect(serialized).toContain('- Adherence To Original Composition: 0.80');
-    expect(serialized).toContain('- Creative Enhancement Freedom: 0.20');
+    expect(serialized).toContain('- Goal: Restore and remaster the input image');
+    expect(serialized).toContain('- Finish: Oil Detail');
+    expect(serialized).toContain('- Text: Remove text and lettering');
+    expect(serialized).toContain('- Fidelity: 80/100. Stay very close to the source');
   });
 
   it('builds compact provider directives for spritesheet params', () => {
@@ -257,8 +264,8 @@ describe('recipeProviderDirectives', () => {
       recipeId: 'spritesheet',
       title: 'Sprite Sheet',
     });
-    expect(serialized).toContain('- Columns: 4');
-    expect(serialized).toContain('- Cell Separation: VISIBLE_BLUE_LINES');
+    expect(serialized).toContain('a grid of 4 columns by 2 rows, 8 equal cells');
+    expect(serialized).toContain('- Cell Separation: Thin blue divider lines between cells.');
     expect(serialized).toContain('- Background: SOLID_GREEN_#00FF00');
     expect(serialized).toContain('Cell 2: first run step');
   });
@@ -269,15 +276,19 @@ describe('recipeProviderDirectives', () => {
 
     const directives =
       timeline &&
-      buildRecipeProviderDirectives(timeline, {
-        nextIndex: 4,
-        direction: 'backward',
-        timeDeltaLabel: 'Minutes',
-        cameraMode: 'dynamic',
-        motionAmount: 'High Action',
-        lightingMode: 'Evolving',
-        isAnchored: true,
-      });
+      buildRecipeProviderDirectives(
+        timeline,
+        {
+          nextIndex: 4,
+          direction: 'backward',
+          timeDeltaLabel: 'Minutes',
+          cameraMode: 'dynamic',
+          motionAmount: 'High Action',
+          lightingMode: 'Evolving',
+          isAnchored: true,
+        },
+        { referenceCount: 2 },
+      );
 
     const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
 
@@ -286,9 +297,11 @@ describe('recipeProviderDirectives', () => {
       recipeId: 'timeline',
       title: 'Timeline Frame',
     });
-    expect(serialized).toContain('- Direction Prompt: Generate a plausible past state.');
-    expect(serialized).toContain('- Time Delta Value: MEDIUM_TERM_PROGRESSION');
-    expect(serialized).toContain('- Anchored Identity: yes');
+    expect(serialized).toContain(
+      '- Goal: Create the previous frame of the same scene: the same moment seen a few minutes earlier.',
+    );
+    expect(serialized).toContain('The Anchor image sets identity and style only.');
+    expect(serialized).toContain('- Camera: The camera may move a little to follow the action.');
   });
 
   it('builds compact provider directives for animation sequence frames', () => {
@@ -314,10 +327,9 @@ describe('recipeProviderDirectives', () => {
       recipeId: 'animation-sequence',
       title: 'Animation Sequence',
     });
-    expect(serialized).toContain('- Frame Count: 5');
-    expect(serialized).toContain('- Frame: frame-0003 (3/5)');
-    expect(serialized).toContain('single image frame');
-    expect(serialized).toContain('- Video Generation: not used');
+    expect(serialized).toContain('- Goal: Draw frame 3 of 5');
+    expect(serialized).toContain('Generate only frame-0003 (3/5) as one finished animation frame.');
+    expect(serialized).not.toContain('anim-1');
   });
 
   it('returns empty but valid directives when a registered recipe has only defaults', () => {

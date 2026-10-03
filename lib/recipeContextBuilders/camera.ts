@@ -7,16 +7,22 @@ import {
   type RecipeContextBuilder,
   type RecipeContextParams,
 } from './shared';
+import {
+  getCameraDirectorInstructions,
+  getCameraGeometryConstraints,
+} from '../recipeDerivedParams';
 
 function buildCameraContext(params: RecipeContextParams) {
   const azimuth = Math.round(getNumber(params, 'azimuth', 0));
   const elevation = Math.round(getNumber(params, 'elevation', 0));
   const distance = Math.round(getNumber(params, 'distance', 100));
   const hasReference = getBoolean(params, 'hasReference');
-  const hPos = getString(params, 'hPos', 'FRONT CENTER (0°)');
-  const vPos = getString(params, 'vPos', 'EYE-LEVEL');
-  const framing = getString(params, 'framing', 'MEDIUM SHOT');
-  const geometryConstraints = getString(params, 'geometryConstraints');
+  const director = getCameraDirectorInstructions(azimuth, elevation, distance);
+  const hPos = getString(params, 'hPos') || director.hPos;
+  const vPos = getString(params, 'vPos') || director.vPos;
+  const framing = getString(params, 'framing') || director.framing;
+  const geometryConstraints =
+    getString(params, 'geometryConstraints') || getCameraGeometryConstraints(azimuth, elevation);
 
   return recipeDocument(
     'camera',

@@ -24,7 +24,7 @@ function buildSpritesheetContext(params: RecipeContextParams) {
   const { gridCols, gridRows } = parseSpritesheetGrid(grid);
   const { hasDividers, dividerColor, cellSeparation } = getSpritesheetDividerState(dividers);
   const bgDirective = getSpritesheetBackgroundDirective(background, customColor);
-  const cellDirectives = createSpritesheetCellDirectives(cellPrompts);
+  const cellDirectives = createSpritesheetCellDirectives(cellPrompts, gridCols * gridRows);
 
   const recipeSchema = {
     task_id: 'SPRITESHEET_GENERATION',

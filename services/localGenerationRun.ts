@@ -18,7 +18,11 @@ import {
 } from '../lib/generationVariation';
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
-import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
+import {
+  buildGenerationTaskSpecFromRecipe,
+  resolveRecipeAttachmentRole,
+  resolveRecipeVariationScope,
+} from '../lib/recipeModules';
 import {
   cancelStudioJob,
   createStudioJobBatch,
@@ -283,13 +287,12 @@ function getQueuedAttachmentAssetRole({
   attachment,
   index,
 }: {
-  config: Pick<ImageGenerationConfig, 'recipeId'>;
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>;
   attachment: ImageGenerationConfig['attachments'][number];
   index: number;
 }): GenerationTaskAssetRef['role'] {
   if (attachment.id.startsWith('mask-')) return 'mask';
-  if (config.recipeId === 'character-lab' && index === 0) return 'input';
-  return 'reference';
+  return resolveRecipeAttachmentRole(config, index);
 }
 
 export function buildLocalGenerationTaskPrompt({
@@ -306,9 +309,10 @@ export function buildLocalGenerationTaskPrompt({
   if (prompt) return prompt;
 
   if (config.attachments.length > 0) {
-    return config.recipeId === 'styles'
-      ? 'Apply the selected style using the provided reference image.'
-      : 'Generate from the provided reference image.';
+    if (config.recipeId === 'styles')
+      return 'Apply the selected style using the provided reference image.';
+    if (config.recipeId === 'remaster') return 'Restore and remaster the provided image.';
+    return 'Generate from the provided reference image.';
   }
 
   return 'Generate a high-quality image.';
@@ -345,6 +349,7 @@ async function buildLocalJobRequest({
         batchIndex,
         batchCount,
         variationKey,
+        scope: resolveRecipeVariationScope(config),
       });
   const sourceSpec = buildGenerationTaskSpecFromRecipe({
     id: createLocalRunTaskSpecId({ batchId, batchIndex }),

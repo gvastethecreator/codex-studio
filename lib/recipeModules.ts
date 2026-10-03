@@ -28,6 +28,7 @@ import {
   projectGenerationBackgroundParams,
   resolveGenerationBackground,
 } from './generationBackground';
+import type { GenerationVariationScope } from './generationVariation';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { type RegisteredRecipeId } from './recipeIds';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
@@ -86,6 +87,8 @@ export interface RecipeModule {
   defaultTask: GenerationTaskKind;
   supportedTasks: GenerationTaskKind[];
   supportedProviders: GenerationProviderId[];
+  /** How far repeated or sibling results may drift from the workflow contract. */
+  variation: GenerationVariationScope;
   parameters: RecipeParameterDescriptor[];
   buildContext(params: RecipeContextParams | null | undefined): string;
 }
@@ -168,7 +171,7 @@ const SPRITESHEET_OPTIONS = {
     'Low Poly 3D',
   ],
   grid: ['2x2', '3x3', '4x2', '4x4', '5x5', '6x4', '8x8', '1x6 Strip'],
-  background: ['Dark Grey', 'Black', 'Chroma Green', 'White', 'Checkerboard', 'Custom'],
+  background: ['Dark Grey', 'Black', 'Chroma Green', 'White', 'Custom'],
   dividers: ['No Dividers', 'Red Lines', 'Blue Lines', 'Black Lines', 'White Lines'],
 } as const;
 
@@ -393,6 +396,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     description:
       'Plan and generate frame-by-frame image animations with correction flow and GIF export.',
     defaultTask: 'image_generate',
+    variation: 'none',
     supportedTasks: ['image_generate', 'image_edit'],
     parameters: [
       {
@@ -545,6 +549,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Remaster',
     description: 'Restore or reinterpret a reference image with controlled fidelity.',
     defaultTask: 'image_generate',
+    variation: 'none',
     supportedTasks: ['image_generate', 'image_edit'],
     parameters: [
       {
@@ -619,6 +624,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Sprite Sheet',
     description: 'Generate one sprite-sheet image from text and references.',
     defaultTask: 'sprite_sheet',
+    variation: 'details',
     supportedTasks: ['sprite_sheet', 'image_generate', 'image_edit'],
     parameters: [
       {
@@ -690,6 +696,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     description:
       'Prepare runtime-ready sprite atlases with row prompts, layout guides, handoff, extraction, manifest, and QA.',
     defaultTask: 'sprite_sheet',
+    variation: 'none',
     supportedTasks: ['sprite_sheet', 'texture_generate', 'image_generate'],
     parameters: [
       {
@@ -809,6 +816,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Cinematic Storyboard',
     description: 'Build storyboard grids with shot, lens, tone, and continuity controls.',
     defaultTask: 'image_generate',
+    variation: 'details',
     supportedTasks: ['image_generate', 'image_edit'],
     parameters: [
       {
@@ -905,6 +913,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Character Lab',
     description: `Produce character poses, sheets, scenes, sprites, effects, and gated profile/motion workflows from ${CHARACTER_LAB_OPTIONS.totalActions} ported actions.`,
     defaultTask: 'image_generate',
+    variation: 'details',
     supportedTasks: ['image_generate', 'image_edit', 'sprite_sheet'],
     parameters: [
       {
@@ -1018,6 +1027,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Character Sheet',
     description: 'Generate character reference sheets with layout, shot, and style controls.',
     defaultTask: 'image_generate',
+    variation: 'details',
     supportedTasks: ['image_generate', 'image_edit'],
     parameters: [
       {
@@ -1071,6 +1081,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Styles',
     description: 'Browse and apply styles, or generate style-card assets.',
     defaultTask: 'image_generate',
+    variation: 'open',
     supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
     supportedProviders: ['codex', 'chatgpt', 'grok', 'google', 'antigravity', 'dry_run'],
     parameters: [
@@ -1189,6 +1200,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Camera View',
     description: 'Generate alternate camera views from orbit, pitch, zoom, and framing.',
     defaultTask: 'image_generate',
+    variation: 'none',
     supportedTasks: ['image_generate', 'image_edit'],
     parameters: [
       {
@@ -1255,6 +1267,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     title: 'Timeline Frame',
     description: 'Generate neighboring storyboard frames with motion and continuity controls.',
     defaultTask: 'image_generate',
+    variation: 'none',
     supportedTasks: ['image_generate', 'image_edit'],
     parameters: [
       {
@@ -1331,6 +1344,19 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
 
 export function getRecipeModule(recipeId: RegisteredRecipeId | null | undefined) {
   return recipeId ? RECIPE_MODULES[recipeId] : null;
+}
+
+/** Styles that keep the reference subject and framing vary like a fixed-layout workflow. */
+export function resolveRecipeVariationScope(
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
+): GenerationVariationScope {
+  const module = getRecipeModule(config.recipeId ?? null);
+  if (!module) return 'open';
+  if (module.id === 'styles') {
+    const mode = config.recipeParams?.styleReferenceMode ?? config.recipeParams?.mode;
+    if (mode === 'preserve' || mode === 'PRESERVE_REFERENCE') return 'details';
+  }
+  return module.variation;
 }
 
 export function listRecipeModules() {
@@ -1460,6 +1486,68 @@ function stylesReferenceInstruction(
   return 'Use as source/reference material while applying the selected style layers.';
 }
 
+/**
+ * The first attachment is the image being edited, or the identity source, for these recipes.
+ * An Animation Sequence correction puts the frame it corrects first.
+ */
+export function resolveRecipeAttachmentRole(
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
+  index: number,
+) {
+  if (index !== 0) return 'reference' as const;
+  if (config.recipeId === 'character-lab' || config.recipeId === 'remaster')
+    return 'input' as const;
+  return config.recipeId === 'animation-sequence' && config.recipeParams?.correctionMode === true
+    ? ('input' as const)
+    : ('reference' as const);
+}
+
+function recipeReferenceInstruction(
+  config: Pick<ImageGenerationConfig, 'recipeId' | 'recipeParams'>,
+  attachment: Attachment,
+  index: number,
+) {
+  switch (config.recipeId) {
+    case 'styles':
+      return stylesReferenceInstruction(config.recipeParams, index);
+    case 'remaster':
+      return index === 0
+        ? 'The image to restore. Output this same picture, restored.'
+        : 'Extra detail reference only. Do not merge it into the picture.';
+    case 'camera':
+      return index === 0
+        ? 'The subject to re-render from the new camera position.'
+        : 'Extra view of the same subject.';
+    case 'timeline':
+      return attachment.name.includes('(Anchor)')
+        ? 'Anchor: identity and style only. Do not copy its pose or moment.'
+        : 'Ref: the current state of the scene to continue from.';
+    case 'character-lab':
+      if (index === 0) return 'Use as the primary character identity source.';
+      return config.recipeParams?.isCouplesPose === true
+        ? `Identity source for character ${String.fromCharCode(65 + index)}, a separate person in the same image.`
+        : 'Style, detail, or accessory reference for the same character.';
+    case 'character':
+      return index === 0
+        ? 'Identity source for the character on the sheet.'
+        : 'Extra detail reference for the same character.';
+    case 'cinematic':
+      return 'Cast, setting, and look reference for every panel.';
+    case 'spritesheet':
+      return 'Identity reference for the character or asset in every cell. Do not copy its background or framing.';
+    case 'sprite-atlas':
+      return index === 0
+        ? 'Identity anchor: match this character or asset in every frame.'
+        : 'Extra identity reference for the same character or asset.';
+    case 'animation-sequence':
+      return index === 0 && config.recipeParams?.correctionMode === true
+        ? 'The frame to correct. Keep what already works and fix it to fit its neighbours.'
+        : 'Frame or reference of this animation. Keep identity, palette, and camera continuous.';
+    default:
+      return 'Use as visual reference according to the requested generation task.';
+  }
+}
+
 export function buildGenerationTaskSpecFromRecipe({
   id,
   providerId = null,
@@ -1472,7 +1560,9 @@ export function buildGenerationTaskSpecFromRecipe({
   const contextParams = animationSequenceParams ?? effectiveConfig.recipeParams ?? null;
   const recipeContext = module?.buildContext(contextParams) || config.recipeContext || '';
   const recipeProviderDirectives = module
-    ? buildRecipeProviderDirectives(module, contextParams)
+    ? buildRecipeProviderDirectives(module, contextParams, {
+        referenceCount: config.attachments.length,
+      })
     : null;
   const spriteAtlasContract =
     module?.id === 'sprite-atlas'
@@ -1498,11 +1588,18 @@ export function buildGenerationTaskSpecFromRecipe({
     typeof config.recipeParams?.task === 'string'
       ? (config.recipeParams.task as GenerationTaskKind)
       : null;
+  const recipeTaskKind =
+    module?.id === 'remaster' && config.attachments.length > 0
+      ? 'image_edit'
+      : module && requestedTask && isRecipeTaskSupported(module, requestedTask)
+        ? requestedTask
+        : (module?.defaultTask ?? 'image_generate');
+  // An edit needs an image to edit. Without one the request is a generation.
   const taskKind =
     task ??
-    (module && requestedTask && isRecipeTaskSupported(module, requestedTask)
-      ? requestedTask
-      : (module?.defaultTask ?? 'image_generate'));
+    (recipeTaskKind === 'image_edit' && config.attachments.length === 0
+      ? 'image_generate'
+      : recipeTaskKind);
   const resolvedImageSize = config.aspectRatio
     ? resolveCodexHttpImageSize({
         aspectRatio: config.aspectRatio,
@@ -1547,20 +1644,14 @@ export function buildGenerationTaskSpecFromRecipe({
         ? config.recipeParams.presetId
         : null,
     assets: config.attachments.map((attachment, index) => ({
-      role:
-        config.recipeId === 'character-lab' && index === 0
-          ? ('input' as const)
-          : ('reference' as const),
+      role: resolveRecipeAttachmentRole(config, index),
       name: attachment.name,
       ...resolveRecipeAttachmentAssetLocation(attachment),
       strength: attachment.strength,
     })),
     quality: {
       qualityPresetId,
-      subject:
-        config.recipeId === 'character-lab' && typeof config.recipeParams?.subject === 'string'
-          ? config.recipeParams.subject
-          : null,
+      subject: null,
       composition: null,
       style:
         config.recipeId === 'sprite-atlas' && spriteAtlasContract
@@ -1571,21 +1662,14 @@ export function buildGenerationTaskSpecFromRecipe({
               : 'Animation frame sequence'
             : config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
               ? config.recipeParams.presetName
-              : config.recipeId === 'character-lab' &&
-                  typeof config.recipeParams?.style === 'string'
-                ? config.recipeParams.style
-                : null,
+              : null,
       lighting: null,
       color:
         config.recipeId === 'sprite-atlas' && spriteAtlasContract?.backgroundRemoval === 'chroma'
           ? spriteAtlasContract.chromaKey
           : typeof config.recipeParams?.colorTone === 'string'
             ? config.recipeParams.colorTone
-            : resolveGenerationBackground(config) !== 'transparent' &&
-                config.recipeId === 'character-lab' &&
-                typeof effectiveConfig.recipeParams?.backgroundColor === 'string'
-              ? effectiveConfig.recipeParams.backgroundColor
-              : null,
+            : null,
       materials:
         config.recipeId === 'sprite-atlas' && spriteAtlasContract
           ? spriteAtlasContract.assetKind
@@ -1594,13 +1678,9 @@ export function buildGenerationTaskSpecFromRecipe({
         backgroundInstruction,
         ...(spriteAtlasContract
           ? [
-              `Generate one row strip per state for ${spriteAtlasContract.presetId}.`,
-              !spriteAtlasContract.transparent
-                ? backgroundInstruction
-                : spriteAtlasContract.backgroundRemoval === 'chroma'
-                  ? `Legacy key color ${spriteAtlasContract.chromaKey}. This is a key color for a later import, not transparent pixels.`
-                  : 'Use native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
-              'Do not create guide marks, labels, or merged atlas pages as row art.',
+              typeof config.recipeParams?.rowId === 'string' && config.recipeParams.rowId
+                ? `Generate only the ${config.recipeParams.rowId} row strip.`
+                : `Generate one row strip per state for ${spriteAtlasContract.presetId}.`,
             ]
           : animationSequenceContract
             ? [
@@ -1622,19 +1702,9 @@ export function buildGenerationTaskSpecFromRecipe({
           ? ['video controls', 'captions', 'watermarks', 'contact sheet', 'multi-panel grid']
           : [],
       referenceRoles: config.attachments.map((attachment, index) => ({
-        role:
-          config.recipeId === 'character-lab' && index === 0
-            ? ('input' as const)
-            : ('reference' as const),
+        role: resolveRecipeAttachmentRole(config, index),
         assetName: attachment.name,
-        instruction:
-          config.recipeId === 'sprite-atlas' && index === 0
-            ? 'Use as the identity anchor for sprite atlas row consistency.'
-            : config.recipeId === 'character-lab' && index === 0
-              ? 'Use as the primary character identity source.'
-              : config.recipeId === 'styles'
-                ? stylesReferenceInstruction(config.recipeParams, index)
-                : 'Use as visual reference according to the requested generation task.',
+        instruction: recipeReferenceInstruction(config, attachment, index),
       })),
     },
     output: {

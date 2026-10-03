@@ -22,32 +22,42 @@ export function getCharacterLayoutInstruction(layout: string) {
   );
 }
 
-export function getCharacterStyleInstruction(style: string) {
-  return style === 'Preserve Source Style'
+export function getCharacterStyleInstruction(style: string, hasReference: boolean) {
+  if (style !== 'Preserve Source Style')
+    return `RENDER STYLE: ${style.toUpperCase()}. Ignore reference image style if it conflicts.`;
+  return hasReference
     ? "Use the reference image's art style (line weight, shading, color palette) as the main style guide."
-    : `RENDER STYLE: ${style.toUpperCase()}. Ignore reference image style if it conflicts.`;
+    : 'Choose one cohesive art style that fits the prompt and keep it identical in every view.';
 }
 
 export function createCinematicLayoutInstruction(frames: number, rows: number, cols: number) {
   const layoutDescription = `${rows} rows by ${cols} columns`;
   if (frames === 3) return `Create a cinematic triptych (${layoutDescription}).`;
   if (frames === 6) return `Create a 6-frame storyboard grid (${layoutDescription}).`;
-  return 'Create a 9-frame storyboard contact sheet (3x3 grid).';
+  return `Create a ${frames}-frame storyboard contact sheet (${layoutDescription}).`;
 }
 
-export function createCinematicFrameDirectives(frameShots: RecipeParamRecord) {
+/** Shot picks for visible panels only, in panel order. */
+export function createCinematicFrameDirectives(frameShots: RecipeParamRecord, frames: number) {
   return Object.entries(frameShots)
-    .map(([index, shot]) =>
-      typeof shot === 'string' && shot !== 'Auto'
-        ? `- Frame ${Number(index) + 1}: ${shot} Shot`
-        : null,
+    .map(([index, shot]) => ({ index: Number(index), shot }))
+    .filter(
+      (entry): entry is { index: number; shot: string } =>
+        Number.isInteger(entry.index) &&
+        entry.index >= 0 &&
+        entry.index < frames &&
+        typeof entry.shot === 'string' &&
+        entry.shot !== 'Auto',
     )
-    .filter((directive): directive is string => Boolean(directive));
+    .sort((left, right) => left.index - right.index)
+    .map(({ index, shot }) => `Frame ${index + 1}: ${shot} Shot`);
 }
 
-export function createCinematicFrameInstructions(frameShots: RecipeParamRecord) {
-  const frameDirectives = createCinematicFrameDirectives(frameShots);
-  return frameDirectives.length > 0 ? `\nSPECIFIC FRAME SHOTS:\n${frameDirectives.join('\n')}` : '';
+export function createCinematicFrameInstructions(frameShots: RecipeParamRecord, frames: number) {
+  const frameDirectives = createCinematicFrameDirectives(frameShots, frames);
+  return frameDirectives.length > 0
+    ? `\nSPECIFIC FRAME SHOTS:\n${frameDirectives.map((line) => `- ${line}`).join('\n')}`
+    : '';
 }
 
 export function parseSpritesheetGrid(grid: string) {
@@ -81,13 +91,23 @@ export function getSpritesheetBackgroundDirective(background: string, customColo
   return background.toUpperCase();
 }
 
-export function createSpritesheetCellDirectives(cellPrompts: RecipeParamRecord) {
-  return Object.entries(cellPrompts).reduce<string[]>((acc, [index, prompt]) => {
-    if (typeof prompt === 'string' && prompt.trim() !== '') {
-      acc.push(`Cell ${Number(index) + 1}: ${String(prompt)}`);
-    }
-    return acc;
-  }, []);
+/** Cell prompts inside the current grid, in reading order. */
+export function createSpritesheetCellDirectives(
+  cellPrompts: RecipeParamRecord,
+  totalCells: number,
+) {
+  return Object.entries(cellPrompts)
+    .map(([index, prompt]) => ({ index: Number(index), prompt }))
+    .filter(
+      (entry): entry is { index: number; prompt: string } =>
+        Number.isInteger(entry.index) &&
+        entry.index >= 0 &&
+        entry.index < totalCells &&
+        typeof entry.prompt === 'string' &&
+        entry.prompt.trim() !== '',
+    )
+    .sort((left, right) => left.index - right.index)
+    .map(({ index, prompt }) => `Cell ${index + 1}: ${prompt.trim()}`);
 }
 
 export function createAnimationSequenceReferenceDirective(referenceFrameIds: string[]) {

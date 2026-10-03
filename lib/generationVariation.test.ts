@@ -26,6 +26,20 @@ describe('generationVariation', () => {
     expect(brief).not.toContain('variation 1 of 1');
   });
 
+  it('keeps workflow contracts fixed outside open variation', () => {
+    expect(buildGenerationVariationBrief({ batchIndex: 2, batchCount: 4, scope: 'none' })).toBe(
+      null,
+    );
+    expect(buildGenerationVariationBrief({ batchCount: 1, scope: 'details' })).toBe(null);
+    const details = buildGenerationVariationBrief({
+      batchIndex: 2,
+      batchCount: 4,
+      scope: 'details',
+    });
+    expect(details).toContain('variation 2 of 4');
+    expect(details).not.toContain('camera framing');
+  });
+
   it('generates unique variation keys with the requested prefix', () => {
     const first = createGenerationVariationKey('retry');
     const second = createGenerationVariationKey('retry');

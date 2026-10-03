@@ -123,6 +123,8 @@ vi.mock('../lib/recipeModules', () => ({
     config,
     metadata: {},
   })),
+  resolveRecipeAttachmentRole: vi.fn(() => 'reference'),
+  resolveRecipeVariationScope: vi.fn(() => 'open'),
 }));
 
 describe('accepted batch observation', () => {

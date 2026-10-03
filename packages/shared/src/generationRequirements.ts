@@ -70,6 +70,15 @@ export function getGenerationRequirement(
   ) {
     return { field: 'source', message: 'Add an image to preserve.' };
   }
+  if (input.recipeId === 'timeline' && params.nextIndex === null) {
+    return {
+      field: 'source',
+      message: 'Wait for the selected frame to load, or pick a frame in the film strip.',
+    };
+  }
+  if (input.recipeId === 'character-lab' && params.mode === 'effects' && !hasSource) {
+    return { field: 'source', message: 'Add a source image to apply this transform.' };
+  }
   if (input.recipeId === 'animation-sequence' && !prompt) {
     return { field: 'prompt', message: 'Add a motion prompt.' };
   }

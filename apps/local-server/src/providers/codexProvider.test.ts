@@ -152,6 +152,31 @@ describe('codex generation provider', () => {
     expect(compiled.payload.text).not.toContain('Style Slot 1');
   });
 
+  it('leaves out the Codex denoise where it fights the requested detail', () => {
+    const compile = (prompt: string, recipeId: 'remaster' | null) =>
+      compileCodexImagegenInput({
+        id: 'job-denoise',
+        workspaceId: 'workspace-1',
+        prompt,
+        execution: null,
+        sourceSpec: createGenerationTaskSpec({
+          id: 'spec-denoise',
+          task: 'image_generate',
+          providerId: 'codex',
+          prompt,
+          recipeId,
+        }),
+      }).payload.text;
+
+    expect(compile('a quiet harbor at dawn', null)).toContain(CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
+    expect(compile('a harbor shot on grainy 35mm film', null)).not.toContain(
+      CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
+    );
+    expect(compile('Restore and remaster the provided image.', 'remaster')).not.toContain(
+      CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
+    );
+  });
+
   it('keeps image-guided style transfer prompts compact and free of legacy recipe context', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-style-ref',
@@ -231,6 +256,20 @@ describe('codex generation provider', () => {
         path: 'D:/AI-Studio-Library/references/job-1/download.jpg',
       },
     ]);
+
+    // ChatGPT receives the image itself. Its text names the image by order, not by local path.
+    const chatgpt = compileChatgptImageInput({
+      id: 'job-style-ref-chatgpt',
+      workspaceId: 'workspace-1',
+      prompt: 'Image-guided generation',
+      execution: null,
+      sourceSpec,
+    });
+    expect(chatgpt.payload.text).toContain(
+      'Attached images, in order:\n1. download.jpg (reference)',
+    );
+    expect(chatgpt.payload.text).not.toContain('D:/AI-Studio-Library');
+    expect(chatgpt.payload.imageInputs).toEqual(compiled.payload.imageInputs);
   });
 
   it('includes persisted local asset paths from the durable Generation Task Spec', () => {

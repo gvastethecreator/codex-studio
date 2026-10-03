@@ -1,18 +1,10 @@
 import {
-  CHARACTER_LAB_ACTION_PRIORITY,
-  resolveCharacterLabControls,
-} from './characterLabWorkflows';
-import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
 } from '../packages/shared/src/animationSequenceContracts';
 import { createRecipeProviderDirectives } from '../packages/shared/src/recipeProviderDirectives';
 import { createSpriteAtlasContract } from '../packages/shared/src/spriteAtlasContracts';
-import {
-  getCameraDirectorInstructions,
-  getCameraGeometryConstraints,
-  getTimelineTimeDeltaValue,
-} from './recipeDerivedParams';
+import { getCameraDirectorInstructions, getCameraGeometryConstraints } from './recipeDerivedParams';
 import {
   createCinematicFrameDirectives,
   createCinematicLayoutInstruction,
@@ -62,6 +54,22 @@ function directive(label: string, value: string | number | boolean | null | unde
 
 function paramDirective(params: Record<string, unknown>, key: string, label: string) {
   return directive(label, getString(params, key));
+}
+
+/** Empty for "let the model decide" choices, so they don't reach the provider as noise. */
+function chosenOption(params: Record<string, unknown>, key: string) {
+  const value = getString(params, key);
+  return value === 'Auto-Detect' || value === 'Auto' ? '' : value;
+}
+
+function describePanelAspect(sheetAspect: string, rows: number, cols: number) {
+  const [width, height] = sheetAspect.split(':').map(Number);
+  if (!width || !height) return '';
+  const ratio = ((width / height) * rows) / cols;
+  if (Math.abs(ratio - 1) < 0.05) return 'Each panel is about square.';
+  return ratio > 1
+    ? `Each panel is about ${ratio.toFixed(2)}:1 (landscape).`
+    : `Each panel is about 1:${(1 / ratio).toFixed(2)} (portrait).`;
 }
 
 function getSelectedStyleLayerDirectives(params: Record<string, unknown>) {
@@ -118,51 +126,69 @@ function buildCharacterProviderDirectives(module: RecipeModule, params: Record<s
   const shot = getString(params, 'shot') || 'Full Body';
   const focus = getString(params, 'focus') || 'General Design';
   const hasReference = getBoolean(params, 'hasReference');
+  const keepsRequestedBackground =
+    getBoolean(params, 'transparentBackground') || getBoolean(params, 'preserveBackground');
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
+        title: 'Objective',
+        directives: [
+          directive(
+            'Goal',
+            `One clean character reference sheet: ${getCharacterLayoutInstruction(layout)}`,
+          ),
+          directive(
+            'Identity',
+            hasReference
+              ? 'The reference image shows the character. Keep costume, physique, colors, and facial features in every view.'
+              : 'Design one original, cohesive character from the prompt.',
+          ),
+          directive(
+            'Consistency',
+            'Same design, proportions, colors, and scale in every view or panel.',
+          ),
+          directive('Rules', 'No text, labels, captions, arrows, or watermarks.'),
+        ],
+      },
+      {
         title: 'Sheet Layout',
         directives: [
           directive('Layout', layout),
-          directive('Layout Instruction', getCharacterLayoutInstruction(layout)),
-          directive('Shot Framing', shot),
-          directive('Design Focus', focus),
+          directive('Shot Framing', `${shot}. Use this crop for every view.`),
+          directive(
+            'Design Focus',
+            focus === 'General Design'
+              ? 'Balanced detail across the whole design.'
+              : `Give extra detail to ${focus}.`,
+          ),
+          directive(
+            'Background',
+            keepsRequestedBackground
+              ? ''
+              : 'Neutral studio white or light grey, unless the prompt asks for another background.',
+          ),
         ],
       },
       {
         title: 'Art Direction',
         directives: [
-          directive('Style', style),
-          directive('Style Instruction', getCharacterStyleInstruction(style)),
-          directive('Has Reference', hasReference ? 'yes' : 'no'),
-          directive(
-            'Identity Guidance',
-            hasReference
-              ? 'Preserve costume, physique, colors, and facial features from the reference.'
-              : 'Design a unique, cohesive character based on the prompt.',
-          ),
+          directive('Style', style === 'Preserve Source Style' && !hasReference ? '' : style),
+          directive('Style Instruction', getCharacterStyleInstruction(style, hasReference)),
         ],
       },
     ],
   });
 }
 
+/** The Lab prompt already carries the action, controls, and identity contract. */
 function buildCharacterLabProviderDirectives(
   module: RecipeModule,
   params: Record<string, unknown>,
 ) {
-  const controls = resolveCharacterLabControls(params);
-  const actionLabel = getString(params, 'actionLabel') || 'Front View';
-  const actionPrompt = getString(params, 'actionPrompt') || 'Generate a clean character asset.';
-  const mode = getString(params, 'mode') || 'poses';
-  const mediaType = getString(params, 'mediaType') || 'image';
-  const capability = getString(params, 'capability') || 'ready';
   const frames = getNumber(params, 'frames', 0);
-  const referencesCount = getNumber(params, 'referencesCount', 0);
-  const hasSource = getBoolean(params, 'hasSource');
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
@@ -171,47 +197,16 @@ function buildCharacterLabProviderDirectives(
       {
         title: 'Character Lab Action',
         directives: [
-          directive('Mode', mode),
-          directive('Category', getString(params, 'category') || 'Standard Views'),
-          directive('Action', actionLabel),
+          directive('Mode', getString(params, 'mode') || 'poses'),
+          directive('Action', getString(params, 'actionLabel')),
           directive('Action ID', getString(params, 'actionId')),
-          directive('Recommended Task', getString(params, 'task') || module.defaultTask),
-          directive('Media Type', mediaType),
-          directive('Capability', capability),
-          directive('Action Prompt', actionPrompt),
-          directive('Action Priority', CHARACTER_LAB_ACTION_PRIORITY),
-          directive('Additional Instructions', getString(params, 'additionalPrompt')),
-          directive('Frames', frames > 0 ? frames : 'not specified'),
-          directive('Couples Or Group Pose', getBoolean(params, 'isCouplesPose') ? 'yes' : 'no'),
-        ],
-      },
-      {
-        title: 'Identity And References',
-        directives: [
-          directive('Subject / Key Details', getString(params, 'subject')),
-          directive('Has Source Image', hasSource ? 'yes' : 'no'),
-          directive('Extra References', referencesCount),
+          directive('Frames', frames > 0 ? frames : ''),
           directive(
-            'Identity Contract',
-            hasSource
-              ? 'Treat the first attachment as the identity source; use later attachments as references.'
-              : 'Create a cohesive original character from the prompt and recipe controls.',
+            'Couples Or Group Pose',
+            getBoolean(params, 'isCouplesPose')
+              ? 'yes: every attached character image is a separate person in the same image.'
+              : '',
           ),
-        ],
-      },
-      {
-        title: 'Character Controls',
-        directives: [
-          ...Object.entries({
-            Style: controls.style,
-            Clothing: controls.clothing,
-            'Body Type': controls.bodyType,
-            Expression: controls.expression,
-            'Background Color': controls.backgroundColor,
-            'Requested Aspect Ratio': controls.labAspectRatio,
-          })
-            .filter(([, value]) => value)
-            .map(([label, value]) => directive(label, value)),
         ],
       },
     ],
@@ -229,27 +224,35 @@ function buildCameraProviderDirectives(module: RecipeModule, params: Record<stri
   const geometryConstraints =
     getString(params, 'geometryConstraints') || getCameraGeometryConstraints(azimuth, elevation);
 
+  const hasReference = getBoolean(params, 'hasReference');
+
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
+        title: 'Objective',
+        directives: [
+          directive(
+            'Goal',
+            hasReference
+              ? 'Re-render the same subject from the reference image as seen from the camera position below. Keep identity, outfit, materials, palette, and lighting. Invent only what the new angle reveals.'
+              : 'Render the subject from the prompt as seen from the camera position below.',
+          ),
+          directive('Rules', 'One image from one camera. No split views, grids, labels, or text.'),
+        ],
+      },
+      {
         title: 'Camera Transform',
         directives: [
-          directive('Azimuth', `${azimuth} degrees`),
-          directive('Elevation', `${elevation} degrees`),
-          directive('Distance', `${distance}%`),
-          directive('Horizontal Position', hPos),
-          directive('Vertical Position', vPos),
-          directive('Framing', framing),
+          directive('Orbit', `${azimuth} degrees (${hPos})`),
+          directive('Pitch', `${elevation} degrees (${vPos})`),
+          directive('Zoom', `${distance}% (${framing}). 100% is a medium shot; higher is closer.`),
         ],
       },
       {
         title: 'Visual Guidance',
-        directives: [
-          directive('Has Reference', getBoolean(params, 'hasReference') ? 'yes' : 'no'),
-          directive('Geometry Constraints', geometryConstraints),
-        ],
+        directives: [directive('Geometry Constraints', geometryConstraints)],
       },
     ],
   });
@@ -259,78 +262,136 @@ function buildCinematicProviderDirectives(module: RecipeModule, params: Record<s
   const frames = Math.max(1, getNumber(params, 'frames', 9));
   const rows = Math.max(1, getNumber(params, 'rows', 3));
   const cols = Math.max(1, getNumber(params, 'cols', 3));
-  const frameDirectives = createCinematicFrameDirectives(getRecord(params, 'frameShots'));
+  const frameDirectives = createCinematicFrameDirectives(getRecord(params, 'frameShots'), frames);
+  const sheetAspect = getString(params, 'aspectRatio') || '1:1';
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
+        title: 'Objective',
+        directives: [
+          directive(
+            'Goal',
+            `One single image laid out as a storyboard of ${frames} panels in ${rows} rows by ${cols} columns, read left to right, top to bottom.`,
+          ),
+          directive(
+            'Story',
+            'The panels show one short beat in order: setup, action, reaction. Keep the same cast, wardrobe, setting, and light direction in every panel.',
+          ),
+          directive(
+            'Rules',
+            'Thin, even gutters between panels. No captions, panel numbers, speech bubbles, UI, or watermarks.',
+          ),
+        ],
+      },
+      {
         title: 'Storyboard Layout',
         directives: [
-          directive('Frames', frames),
-          directive('Rows', rows),
-          directive('Columns', cols),
-          directive('Aspect Ratio', getString(params, 'aspectRatio') || '1:1'),
           directive('Layout Instruction', createCinematicLayoutInstruction(frames, rows, cols)),
+          directive('Sheet Aspect Ratio', `${sheetAspect} for the whole image`),
+          directive('Panel Shape', describePanelAspect(sheetAspect, rows, cols)),
           directive(
             'Frame Shots',
-            frameDirectives.length > 0 ? frameDirectives.join('; ') : 'Auto-detect shot variety.',
+            frameDirectives.length > 0
+              ? frameDirectives.join('; ')
+              : 'Vary the shot sizes so the beat reads clearly.',
           ),
         ],
       },
       {
         title: 'Cinematic Direction',
         directives: [
-          directive('Genre', getString(params, 'genre') || 'Auto-Detect'),
-          directive('Tone', getString(params, 'tone') || 'Auto-Detect'),
-          directive('Lighting', getString(params, 'lighting') || 'Auto-Detect'),
-          directive('Time', getString(params, 'time') || 'Auto-Detect'),
-          directive('Weather', getString(params, 'weather') || 'Auto-Detect'),
-          directive('Camera Movement', getString(params, 'movement') || 'Auto-Detect'),
-          directive('Lens', getString(params, 'lens') || 'Auto-Detect'),
+          directive('Genre', chosenOption(params, 'genre')),
+          directive('Tone', chosenOption(params, 'tone')),
+          directive('Lighting', chosenOption(params, 'lighting')),
+          directive('Time', chosenOption(params, 'time')),
+          directive('Weather', chosenOption(params, 'weather')),
+          directive('Camera Movement', chosenOption(params, 'movement')),
+          directive('Lens', chosenOption(params, 'lens')),
         ],
       },
     ],
   });
 }
 
+const REMASTER_KEEP_INSTRUCTIONS: Record<string, string> = {
+  'Preserve Lighting': 'Keep the original lighting. Do not relight.',
+  'Preserve Detail': 'Keep the framing and the existing detail.',
+  'Preserve Geometry and Identity':
+    'Keep geometry, faces, and identity exactly. Do not reconstruct anatomy.',
+  'Keep Original': 'Keep existing text and lettering as they are.',
+  'Remove Text': 'Remove text and lettering, and fill the area naturally.',
+  'Rewrite Logically': 'Rewrite damaged text so it reads correctly in the same lettering style.',
+  'Preserve Colors': 'Keep the original colors. Do not apply a new grade.',
+};
+
+function remasterInstruction(params: Record<string, unknown>, key: string, fallback: string) {
+  const value = getString(params, key) || fallback;
+  return REMASTER_KEEP_INSTRUCTIONS[value] ?? `${value}.`;
+}
+
+function describeRemasterFidelity(fidelity: number) {
+  if (fidelity >= 80)
+    return 'Stay very close to the source: same composition, framing, subject, pose, and proportions. Only repair and refine.';
+  if (fidelity >= 50)
+    return 'Keep the composition and subject. Moderate enhancement of rendering and detail is allowed.';
+  return 'Keep the subject recognizable. Free reinterpretation of rendering and missing detail is allowed.';
+}
+
 function buildRemasterProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
   const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 100)));
-  const adherence = fidelity / 100;
-  const creativity = (100 - fidelity) / 100;
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
+        title: 'Objective',
+        directives: [
+          directive(
+            'Goal',
+            'Restore and remaster the input image into one clean, polished version of the same picture.',
+          ),
+          directive(
+            'Rules',
+            fidelity >= 50
+              ? 'Keep the full frame. Do not crop, extend, or reframe. No watermarks or added text.'
+              : 'No watermarks or added text.',
+          ),
+        ],
+      },
+      {
         title: 'Restoration Goals',
         directives: [
-          directive('Style Interpretation', getString(params, 'style') || 'Archive Restoration'),
-          directive('Lighting Correction', getString(params, 'lighting') || 'Preserve Lighting'),
-          directive('Lens And Detail', getString(params, 'camera') || 'Preserve Detail'),
+          directive('Finish', getString(params, 'style') || 'Archive Restoration'),
+          directive('Lighting', remasterInstruction(params, 'lighting', 'Preserve Lighting')),
+          directive('Lens And Detail', remasterInstruction(params, 'camera', 'Preserve Detail')),
           directive(
-            'Anatomy Handling',
-            getString(params, 'anatomy') || 'Preserve Geometry and Identity',
+            'Anatomy',
+            remasterInstruction(params, 'anatomy', 'Preserve Geometry and Identity'),
           ),
-          directive('Text Handling', getString(params, 'text') || 'Keep Original'),
-          directive('Color Grading', getString(params, 'color') || 'Preserve Colors'),
+          directive('Text', remasterInstruction(params, 'text', 'Keep Original')),
+          directive('Color', remasterInstruction(params, 'color', 'Preserve Colors')),
         ],
       },
       {
         title: 'Fidelity Control',
         directives: [
-          directive('Fidelity', fidelity),
-          directive('Adherence To Original Composition', adherence.toFixed(2)),
-          directive('Creative Enhancement Freedom', creativity.toFixed(2)),
+          directive('Fidelity', `${fidelity}/100. ${describeRemasterFidelity(fidelity)}`),
         ],
       },
     ],
   });
 }
 
-function buildSpritesheetProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
+function buildSpritesheetProviderDirectives(
+  module: RecipeModule,
+  params: Record<string, unknown>,
+  context: RecipeDirectiveContext,
+) {
+  const hasReference = context.referenceCount > 0;
   const view = getString(params, 'view') || 'Match Source';
   const style = getString(params, 'style') || 'Preserve Style';
   const grid = getString(params, 'grid') || '2x2';
@@ -338,28 +399,64 @@ function buildSpritesheetProviderDirectives(module: RecipeModule, params: Record
   const dividers = getString(params, 'dividers') || 'No Dividers';
   const customColor = getString(params, 'customColor') || '#3f3f46';
   const { gridCols, gridRows } = parseSpritesheetGrid(grid);
-  const { hasDividers, dividerColor, cellSeparation } = getSpritesheetDividerState(dividers);
-  const cellDirectives = createSpritesheetCellDirectives(getRecord(params, 'cellPrompts'));
+  const { hasDividers, dividerColor } = getSpritesheetDividerState(dividers);
+  const totalCells = gridCols * gridRows;
+  const cellDirectives = createSpritesheetCellDirectives(
+    getRecord(params, 'cellPrompts'),
+    totalCells,
+  );
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
+        title: 'Objective',
+        directives: [
+          directive(
+            'Goal',
+            `One sprite sheet image: a grid of ${gridCols} columns by ${gridRows} rows, ${totalCells} equal cells, read left to right, top to bottom.`,
+          ),
+          directive(
+            'Consistency',
+            'The same character or asset in every cell, at the same scale, facing, and baseline, centered in its cell.',
+          ),
+          directive(
+            'Rules',
+            'No text, labels, cell numbers, or watermarks. Nothing crosses a cell edge.',
+          ),
+        ],
+      },
+      {
         title: 'Grid Layout',
         directives: [
-          directive('Columns', gridCols),
-          directive('Rows', gridRows),
-          directive('Total Cells', gridCols * gridRows),
-          directive('Cell Separation', cellSeparation),
-          directive('Divider Color', hasDividers ? dividerColor : 'none'),
+          directive(
+            'Cell Separation',
+            hasDividers
+              ? `Thin ${dividerColor.toLowerCase()} divider lines between cells.`
+              : 'No grid lines. Leave clear empty space between cells.',
+          ),
         ],
       },
       {
         title: 'Visual Style',
         directives: [
-          directive('Perspective', view === 'Match Source' ? 'infer from source image' : view),
-          directive('Rendering', style === 'Preserve Style' ? 'source consistent' : style),
+          directive(
+            'Perspective',
+            view !== 'Match Source'
+              ? view
+              : hasReference
+                ? 'Match the reference image.'
+                : 'Pick one camera angle that suits the subject and keep it in every cell.',
+          ),
+          directive(
+            'Rendering',
+            style !== 'Preserve Style'
+              ? style
+              : hasReference
+                ? 'Match the reference image style.'
+                : 'Pick one style that suits the prompt and keep it in every cell.',
+          ),
           directive('Background', getSpritesheetBackgroundDirective(background, customColor)),
         ],
       },
@@ -370,65 +467,85 @@ function buildSpritesheetProviderDirectives(module: RecipeModule, params: Record
             'Cell Prompts',
             cellDirectives.length > 0
               ? cellDirectives.join('; ')
-              : 'Suggest readable poses or animation states.',
+              : 'Fill the cells in order with readable poses or animation states.',
           ),
         ],
       },
     ],
   });
+}
+
+const SPRITE_ATLAS_FRAME_MEANING = {
+  temporal: 'Frames are consecutive moments of one motion, in time order.',
+  tiles: 'Frames are separate tiles that share projection, scale, and matching edges.',
+  variants: 'Frames are separate variants. Do not imply motion between them.',
+  items: 'Frames are separate items. Do not imply motion between them.',
+} as const;
+
+function describeSpriteAtlasRow(row: {
+  id: string;
+  frames: number;
+  loop: boolean;
+  action: string;
+}) {
+  const action = row.action ? `: ${row.action}` : '';
+  return `${row.id}${action} (${row.frames} frames, ${row.loop ? 'loops back to frame 1' : 'plays once'})`;
 }
 
 function buildSpriteAtlasProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
   const contract = createSpriteAtlasContract(params);
-  const rowSummary =
-    contract.rows.length > 0
-      ? contract.rows
-          .map((row) => `${row.id} (${row.frames} frames, ${row.loop ? 'loop' : 'once'})`)
-          .join('; ')
-      : 'Custom rows required before generation.';
+  const rowId = getString(params, 'rowId');
+  const row = rowId ? contract.rows.find((item) => item.id === rowId) : undefined;
+  const cellAspect = `${contract.cell.width}:${contract.cell.height}`;
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
+        title: 'Objective',
+        directives: [
+          directive(
+            'Goal',
+            row
+              ? `One horizontal strip of exactly ${row.frames} equal frames for the "${row.id}" row, side by side from left to right. Each frame has a ${cellAspect} shape. No gaps, extra rows, or labels.`
+              : `Sprite atlas rows for ${contract.presetId}. Each row is one horizontal strip of equal ${cellAspect} frames.`,
+          ),
+          directive('Frame Meaning', SPRITE_ATLAS_FRAME_MEANING[contract.frameSemantics]),
+          directive(
+            'Consistency',
+            'Keep the same identity, scale, baseline, outline weight, and palette in every frame. Keep each frame upright and inside its slot with a small margin.',
+          ),
+          directive('Rules', 'No text, labels, guide marks, watermarks, or merged atlas pages.'),
+        ],
+      },
+      {
         title: 'Atlas Contract',
         directives: [
-          directive('Preset', contract.presetId),
           directive('Asset Kind', contract.assetKind),
-          directive('Extraction Mode', contract.extractionMode),
-          directive('Workflow Lane', contract.workflowLane),
-          directive('Frame Semantics', contract.frameSemantics),
           directive('Camera', contract.camera),
           directive('Style', contract.customStyle || contract.stylePreset),
-          directive('Frame Budget', contract.frameBudget),
-          directive('QA Mode', contract.qaMode),
-        ],
-      },
-      {
-        title: 'Layout And Background',
-        directives: [
-          directive('Columns', contract.columns),
-          directive('Cell Size', `${contract.cell.width}x${contract.cell.height}`),
-          directive('Safe Margin X', contract.cell.safeMarginX),
-          directive('Safe Margin Y', contract.cell.safeMarginY),
-          directive('Transparent Output', contract.transparent ? 'yes' : 'no'),
-          directive('Background Removal', contract.backgroundRemoval),
-          ...(contract.backgroundRemoval === 'chroma'
-            ? [directive('Chroma Key', contract.chromaKey)]
-            : []),
-        ],
-      },
-      {
-        title: 'Rows',
-        directives: [
-          directive('Row Handoff', 'Generate one row strip per state before extraction.'),
-          directive('Rows', rowSummary),
+          directive('Row', row ? describeSpriteAtlasRow(row) : ''),
           directive(
-            'Runtime Output',
-            contract.transparent
-              ? 'Transparent frames, atlas PNG, and manifest.json.frame_layout.'
-              : 'Frames with the requested background, atlas PNG, and manifest.json.frame_layout.',
+            'Rows',
+            row
+              ? ''
+              : contract.rows.length > 0
+                ? contract.rows.map(describeSpriteAtlasRow).join('; ')
+                : 'Custom rows required before generation.',
+          ),
+        ],
+      },
+      {
+        title: 'Background',
+        directives: [
+          directive(
+            'Background',
+            !contract.transparent
+              ? 'Keep the background the prompt or preset asks for.'
+              : contract.backgroundRemoval === 'chroma'
+                ? `Flat ${contract.chromaKey} key color. This is a key color for a later import, not transparent pixels.`
+                : 'Native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
           ),
         ],
       },
@@ -436,37 +553,70 @@ function buildSpriteAtlasProviderDirectives(module: RecipeModule, params: Record
   });
 }
 
-function buildTimelineProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
-  const direction = getString(params, 'direction') || 'forward';
+const TIMELINE_ELAPSED_TIME: Record<string, string> = {
+  'Split Second': 'a split second',
+  Seconds: 'a few seconds',
+  Minutes: 'a few minutes',
+  Hours: 'a few hours',
+  Years: 'several years',
+};
+
+const TIMELINE_LIGHTING: Record<string, string> = {
+  Locked: 'Keep the light direction, color, and intensity unchanged.',
+  Evolving: 'Let the light change naturally with the elapsed time.',
+  Flickering: 'Add a brief light flicker while keeping the light sources in place.',
+};
+
+function buildTimelineProviderDirectives(
+  module: RecipeModule,
+  params: Record<string, unknown>,
+  context: RecipeDirectiveContext,
+) {
+  const forward = (getString(params, 'direction') || 'forward') === 'forward';
   const timeDeltaLabel = getString(params, 'timeDeltaLabel') || 'Seconds';
-  const timeDeltaValue =
-    getString(params, 'timeDeltaValue') || getTimelineTimeDeltaValue(timeDeltaLabel);
-  const directionPrompt =
-    direction === 'forward'
-      ? 'Generate a plausible future state.'
-      : 'Generate a plausible past state.';
+  const elapsed = TIMELINE_ELAPSED_TIME[timeDeltaLabel] ?? timeDeltaLabel.toLowerCase();
+  const lightingMode = getString(params, 'lightingMode') || 'Locked';
+  const isAnchored = getBoolean(params, 'isAnchored');
 
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
     sections: [
       {
-        title: 'Sequence',
+        title: 'Objective',
         directives: [
-          directive('Frame Index', getNumber(params, 'nextIndex', 1)),
-          directive('Direction', direction),
-          directive('Direction Prompt', directionPrompt),
-          directive('Time Delta Label', timeDeltaLabel),
-          directive('Time Delta Value', timeDeltaValue),
+          directive(
+            'Goal',
+            context.referenceCount > 0
+              ? `Create the ${forward ? 'next' : 'previous'} frame of the same scene: the same moment seen ${elapsed} ${forward ? 'later' : 'earlier'}.`
+              : `Create one storyboard frame of the scene in the prompt, as it looks ${elapsed} ${forward ? 'later' : 'earlier'} than its opening moment.`,
+          ),
+          directive(
+            'Images',
+            context.referenceCount === 0
+              ? ''
+              : isAnchored
+                ? 'The Ref image is the current state: pose, position, props, and light. The Anchor image sets identity and style only. Do not copy its pose or moment.'
+                : 'The reference image is the current state. Keep identity and style from it.',
+          ),
+          directive('Rules', 'One frame, not a grid or sequence. No text, UI, or watermarks.'),
         ],
       },
       {
         title: 'Continuity',
         directives: [
-          directive('Camera Mode', getString(params, 'cameraMode') || 'locked'),
-          directive('Motion Amount', getString(params, 'motionAmount') || 'Subtle'),
-          directive('Lighting Mode', getString(params, 'lightingMode') || 'Locked'),
-          directive('Anchored Identity', getBoolean(params, 'isAnchored') ? 'yes' : 'no'),
+          directive('Sequence Position', getNumber(params, 'nextIndex', 1)),
+          directive(
+            'Camera',
+            getString(params, 'cameraMode') === 'dynamic'
+              ? 'The camera may move a little to follow the action.'
+              : 'Keep the same camera position, lens, and framing.',
+          ),
+          directive(
+            'Motion',
+            `${getString(params, 'motionAmount') || 'Subtle'} change in pose, position, or state.`,
+          ),
+          directive('Lighting', TIMELINE_LIGHTING[lightingMode] ?? lightingMode),
         ],
       },
     ],
@@ -494,32 +644,19 @@ function buildAnimationSequenceProviderDirectives(
     title: module.title,
     sections: [
       {
-        title: 'Animation Sequence',
+        title: 'Objective',
         directives: [
-          directive('Mode', correctionMode ? 'selected-frame correction' : 'frame generation'),
-          directive('Run ID', getString(params, 'runId') || 'unprepared-run'),
-          directive('Frame Count', contract.frameCount),
-          directive('FPS', contract.fps),
-          directive('Method', contract.method),
-          directive('Looping GIF', contract.cyclic ? 'yes' : 'no'),
-          directive('Continuity', contract.continuity),
-          directive('Style Lock', contract.styleLock ? 'yes' : 'no'),
-          directive('Identity Anchor', contract.identityAnchor),
-          directive('Motion Driver', contract.motionDriver),
-        ],
-      },
-      {
-        title: 'Frame Target',
-        directives: [
-          directive('Frame', `${frame.id} (${frame.ordinal}/${contract.frameCount})`),
-          directive('Generation Order', frame.generationOrder),
-          directive('Strategy', frame.strategy),
-          directive('Semantic Phase', frame.semanticPhase),
           directive(
-            'References',
-            createAnimationSequenceReferenceDirective(
-              hasExecutableReferences ? executableReferences : frame.referenceFrameIds,
-            ),
+            'Goal',
+            correctionMode
+              ? `Correct frame ${frame.ordinal} of ${contract.frameCount} of ${contract.cyclic ? 'a looping' : 'an'} animation. Fix it so it fits between its neighbours; keep everything else.`
+              : `Draw frame ${frame.ordinal} of ${contract.frameCount} of ${contract.cyclic ? 'a looping' : 'an'} animation as one finished still image.`,
+          ),
+          directive(
+            'Consistency',
+            contract.styleLock
+              ? 'Same character, camera, framing, palette, and lighting as the other frames. Only the motion changes.'
+              : 'Same character and camera as the other frames. Only the motion changes.',
           ),
           directive(
             'Output',
@@ -528,14 +665,26 @@ function buildAnimationSequenceProviderDirectives(
         ],
       },
       {
-        title: 'Packaging Boundary',
+        title: 'Animation Sequence',
         directives: [
-          directive('Provider Output', 'single image frame'),
+          directive('FPS', contract.fps),
+          directive('Method', contract.method),
+          directive('Continuity', contract.continuity),
+          directive('Identity Anchor', contract.identityAnchor),
+          directive('Motion Driver', contract.motionDriver),
+        ],
+      },
+      {
+        title: 'Frame Target',
+        directives: [
+          directive('Strategy', frame.strategy),
+          directive('Semantic Phase', frame.semanticPhase),
           directive(
-            'Studio Export',
-            'Cozy Studio assembles generated frames into GIF after export',
+            'References',
+            createAnimationSequenceReferenceDirective(
+              hasExecutableReferences ? executableReferences : frame.referenceFrameIds,
+            ),
           ),
-          directive('Video Generation', 'not used'),
         ],
       },
     ],
@@ -608,9 +757,15 @@ function buildStylesProviderDirectives(module: RecipeModule, params: Record<stri
   });
 }
 
+export interface RecipeDirectiveContext {
+  /** Attached images, including the source image. */
+  referenceCount: number;
+}
+
 export function buildRecipeProviderDirectives(
   module: RecipeModule,
   params: Record<string, unknown> | null | undefined,
+  context: RecipeDirectiveContext = { referenceCount: 0 },
 ) {
   const input = params ?? {};
 
@@ -622,8 +777,9 @@ export function buildRecipeProviderDirectives(
   if (module.id === 'cinematic') return buildCinematicProviderDirectives(module, input);
   if (module.id === 'remaster') return buildRemasterProviderDirectives(module, input);
   if (module.id === 'sprite-atlas') return buildSpriteAtlasProviderDirectives(module, input);
-  if (module.id === 'spritesheet') return buildSpritesheetProviderDirectives(module, input);
-  if (module.id === 'timeline') return buildTimelineProviderDirectives(module, input);
+  if (module.id === 'spritesheet')
+    return buildSpritesheetProviderDirectives(module, input, context);
+  if (module.id === 'timeline') return buildTimelineProviderDirectives(module, input, context);
   if (module.id === 'styles') return buildStylesProviderDirectives(module, input);
 
   return null;

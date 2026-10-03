@@ -27,7 +27,7 @@ function buildCinematicContext(params: RecipeContextParams) {
   const lens = getString(params, 'lens', 'Auto-Detect');
 
   const layoutInstruction = createCinematicLayoutInstruction(frames, rows, cols);
-  const frameInstructions = createCinematicFrameInstructions(frameShots);
+  const frameInstructions = createCinematicFrameInstructions(frameShots, frames);
 
   return recipeDocument(
     'cinematic',

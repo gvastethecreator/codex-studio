@@ -127,6 +127,17 @@ function buildCodexAssetLines(sourceSpec: GenerationTaskSpec) {
   });
 }
 
+/** ChatGPT receives the images themselves, so the text names them by order, never by local path. */
+function buildAttachedImageLines(sourceSpec: GenerationTaskSpec) {
+  return sourceSpec.assets
+    .filter((asset) => isSentImageAsset(asset))
+    .map((asset, index) => `${index + 1}. ${asset.name || 'image'} (${asset.role})`);
+}
+
+function isSentImageAsset(asset: GenerationTaskSpec['assets'][number]) {
+  return Boolean(asset.localPath?.trim()) || /^https?:\/\//i.test(asset.sourceUrl?.trim() ?? '');
+}
+
 function buildCodexPromptText(sourceSpec: GenerationTaskSpec, providerId: 'codex' | 'chatgpt') {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
   const backgroundInstruction = buildGenerationBackgroundInstruction(
@@ -145,7 +156,8 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec, providerId: 'codex
     typeof sourceSpec.metadata.variationBrief === 'string'
       ? sourceSpec.metadata.variationBrief.trim()
       : '';
-  const assetLines = buildCodexAssetLines(sourceSpec);
+  const assetLines =
+    providerId === 'codex' ? buildCodexAssetLines(sourceSpec) : buildAttachedImageLines(sourceSpec);
 
   if (qualitySections.length > 0) {
     parts.push('', ...qualitySections);
@@ -170,7 +182,11 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec, providerId: 'codex
   }
 
   if (assetLines.length > 0) {
-    parts.push('', 'Local assets:', ...assetLines);
+    parts.push(
+      '',
+      providerId === 'codex' ? 'Local assets:' : 'Attached images, in order:',
+      ...assetLines,
+    );
   }
 
   if (sourceSpec.output.imageSize) {
@@ -181,7 +197,24 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec, providerId: 'codex
     parts.push(`Aspect ratio: ${sourceSpec.output.aspectRatio}`);
   }
 
-  if (providerId === 'codex') parts.push('', CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
+  if (providerId === 'codex' && shouldAddCodexDenoise(sourceSpec, parts.join('\n')))
+    parts.push('', CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
 
   return parts.join('\n');
+}
+
+// Workflows that keep source detail or exact pixels, and requests that ask for texture.
+const DENOISE_CONFLICT_RECIPES = new Set([
+  'remaster',
+  'spritesheet',
+  'sprite-atlas',
+  'animation-sequence',
+]);
+const DENOISE_CONFLICT_TERMS =
+  /\b(grain|grainy|noise|noisy|film|analog|pixel|dither\w*|halftone|risograph|vhs|crt|scanlines?|texture)\b/i;
+
+function shouldAddCodexDenoise(sourceSpec: GenerationTaskSpec, promptText: string) {
+  if (sourceSpec.task === 'sprite_sheet') return false;
+  if (sourceSpec.recipeId && DENOISE_CONFLICT_RECIPES.has(sourceSpec.recipeId)) return false;
+  return !DENOISE_CONFLICT_TERMS.test(promptText);
 }

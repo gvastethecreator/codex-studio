@@ -1,5 +1,18 @@
 import type { ImageGenerationConfig } from '../types';
 import type { GenerationOutputContract } from '../packages/shared/src/generationContracts';
+import { createSpriteAtlasContract } from '../packages/shared/src/spriteAtlasContracts';
+
+/** Sprite sheets use their chosen sheet fill. A reference sets identity, not the backdrop. */
+function usesSheetFill(config: ImageGenerationConfig) {
+  if (config.recipeId === 'spritesheet') return true;
+  const params = config.recipeParams ?? {};
+  return (
+    config.recipeId === 'character-lab' &&
+    params.mode === 'spritesheets' &&
+    typeof params.backgroundColor === 'string' &&
+    params.backgroundColor.trim() !== ''
+  );
+}
 
 export function resolveGenerationBackground(
   config: ImageGenerationConfig,
@@ -11,9 +24,10 @@ export function resolveGenerationBackground(
     if (!config.outputBackground && params.background === 'transparent') return 'transparent';
   }
   if (config.recipeId === 'sprite-atlas' && !config.outputBackground) {
-    if (params.transparent === false) return 'auto';
+    if (!createSpriteAtlasContract(params).transparent) return 'auto';
     return params.backgroundRemoval === 'chroma' ? 'opaque' : 'transparent';
   }
+  if (usesSheetFill(config)) return 'opaque';
   return 'auto';
 }
 
@@ -30,7 +44,7 @@ export function projectGenerationBackgroundParams(config: ImageGenerationConfig)
       transparent: true,
     };
   }
-  const preserveSource = config.attachments.length > 0;
+  const preserveSource = config.attachments.length > 0 && !usesSheetFill(config);
   return {
     ...params,
     preserveBackground: preserveSource,

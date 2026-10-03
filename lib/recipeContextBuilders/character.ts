@@ -18,7 +18,7 @@ function buildCharacterContext(params: RecipeContextParams) {
   const focus = getString(params, 'focus', 'General Design');
   const hasReference = getBoolean(params, 'hasReference');
   const layoutInstruction = getCharacterLayoutInstruction(layout);
-  const styleInstruction = getCharacterStyleInstruction(style);
+  const styleInstruction = getCharacterStyleInstruction(style, hasReference);
 
   const recipeSchema = {
     task_id: 'CHARACTER_DESIGN_SHEET',

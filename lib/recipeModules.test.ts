@@ -57,13 +57,21 @@ describe('recipeModules', () => {
           ],
         },
       });
-      expect(maintained.output.background).toBe('auto');
-      expect(maintained.quality?.constraints.join(' ')).toContain(
-        'maintain the primary input background',
-      );
-      expect(maintained.quality?.constraints.join(' ')).toContain(
-        'Follow explicit background or environment changes',
-      );
+      if (recipeId === 'spritesheet') {
+        // A sprite sheet keeps its chosen sheet fill. The reference sets identity only.
+        expect(maintained.output.background).toBe('opaque');
+        expect(maintained.quality?.constraints.join(' ')).toContain(
+          'use the explicitly selected solid background',
+        );
+      } else {
+        expect(maintained.output.background).toBe('auto');
+        expect(maintained.quality?.constraints.join(' ')).toContain(
+          'maintain the primary input background',
+        );
+        expect(maintained.quality?.constraints.join(' ')).toContain(
+          'Follow explicit background or environment changes',
+        );
+      }
       expect(
         JSON.stringify([
           maintained.metadata.recipeContext,
@@ -80,10 +88,12 @@ describe('recipeModules', () => {
         providerId: 'chatgpt',
         config: { ...config, outputBackground: 'workflow', prompt: 'A castle on a moonlit hill' },
       });
-      expect(textOnly.output.background).toBe('auto');
-      expect(textOnly.quality?.constraints.join(' ')).toContain(
-        'follow the background or environment described in the user request',
-      );
+      if (recipeId !== 'spritesheet') {
+        expect(textOnly.output.background).toBe('auto');
+        expect(textOnly.quality?.constraints.join(' ')).toContain(
+          'follow the background or environment described in the user request',
+        );
+      }
       expect(config).toEqual(saved);
     }
     const edit = buildGenerationTaskSpecFromRecipe({
@@ -591,16 +601,19 @@ describe('recipeModules', () => {
 
     expect(spec.task).toBe('sprite_sheet');
     expect(spec.assets.map((asset) => asset.role)).toEqual(['input', 'reference']);
+    // The Lab prompt carries subject, style, and color once; quality intent does not repeat them.
     expect(spec.quality).toMatchObject({
       qualityPresetId: 'sprite_sheet',
-      subject: 'compact courier',
-      style: 'Pixel Art (16-bit): Retro console style, limited palette.',
+      subject: null,
+      style: null,
       color: null,
     });
+    expect(spec.quality?.referenceRoles.map((role) => role.instruction)).toEqual([
+      'Use as the primary character identity source.',
+      'Style, detail, or accessory reference for the same character.',
+    ]);
     expect(spec.metadata.recipeContext).toContain('recipe: character-lab');
-    expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain(
-      'Subject / Key Details',
-    );
+    expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain('spritesheets:walk');
   });
 
   it('rejects unsupported provider pairings before provider compilation', () => {

@@ -276,4 +276,17 @@ describe('generationContracts', () => {
     });
     expect(presetCard).toBeNull();
   });
+
+  it('asks for a source image before a Character Lab transform', () => {
+    const input = {
+      recipeId: 'character-lab',
+      prompt: 'a courier',
+      recipeParams: { mode: 'effects' },
+    };
+    expect(getGenerationRequirement({ ...input, referenceCount: 0 })).toEqual({
+      field: 'source',
+      message: 'Add a source image to apply this transform.',
+    });
+    expect(getGenerationRequirement({ ...input, referenceCount: 1 })).toBeNull();
+  });
 });

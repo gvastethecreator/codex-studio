@@ -18,21 +18,21 @@ describe('recipePromptFragments', () => {
   it('resolves Character prompt fragments from stable layout and style terms', () => {
     expect(getCharacterLayoutInstruction('Expression Sheet')).toContain('2x3 grid');
     expect(getCharacterLayoutInstruction('unknown')).toContain('turnaround reference sheet');
-    expect(getCharacterStyleInstruction('Preserve Source Style')).toContain(
+    expect(getCharacterStyleInstruction('Preserve Source Style', true)).toContain(
       "reference image's art style",
     );
-    expect(getCharacterStyleInstruction('Cyberpunk Neon')).toContain('CYBERPUNK NEON');
+    expect(getCharacterStyleInstruction('Preserve Source Style', false)).not.toContain('reference');
+    expect(getCharacterStyleInstruction('Cyberpunk Neon', true)).toContain('CYBERPUNK NEON');
   });
 
   it('creates Cinematic layout and frame-shot fragments', () => {
     expect(createCinematicLayoutInstruction(6, 2, 3)).toBe(
       'Create a 6-frame storyboard grid (2 rows by 3 columns).',
     );
-    expect(createCinematicFrameDirectives({ 0: 'Wide', 1: 'Auto', 2: 'Close-Up' })).toEqual([
-      '- Frame 1: Wide Shot',
-      '- Frame 3: Close-Up Shot',
-    ]);
-    expect(createCinematicFrameInstructions({ 0: 'Wide' })).toContain('SPECIFIC FRAME SHOTS');
+    expect(
+      createCinematicFrameDirectives({ 6: 'Wide', 0: 'Wide', 1: 'Auto', 2: 'Close-Up' }, 3),
+    ).toEqual(['Frame 1: Wide Shot', 'Frame 3: Close-Up Shot']);
+    expect(createCinematicFrameInstructions({ 0: 'Wide' }, 3)).toContain('SPECIFIC FRAME SHOTS');
   });
 
   it('creates Spritesheet layout and visual fragments', () => {
@@ -44,10 +44,9 @@ describe('recipePromptFragments', () => {
       cellSeparation: 'VISIBLE_RED_LINES',
     });
     expect(getSpritesheetBackgroundDirective('Custom', '#abc123')).toBe('SOLID_COLOR_#ABC123');
-    expect(createSpritesheetCellDirectives({ 0: 'idle', 2: 'run', 3: '' })).toEqual([
-      'Cell 1: idle',
-      'Cell 3: run',
-    ]);
+    expect(
+      createSpritesheetCellDirectives({ 9: 'stale kick', 0: 'idle', 2: 'run', 3: '' }, 4),
+    ).toEqual(['Cell 1: idle', 'Cell 3: run']);
   });
 
   it('creates animation sequence frame fragments without video language', () => {
