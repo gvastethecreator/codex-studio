@@ -11,8 +11,10 @@ import {
   createSpriteAtlasService,
   spriteAtlasFramePath,
   SpriteAtlasActionError,
+  type SpriteAtlasJobLookup,
   type SpriteAtlasService,
 } from './spriteAtlasService';
+import { createSpriteAtlasRunParticipant } from './spriteAtlasRunReconciler';
 
 export interface SpriteAtlasRoutesDependencies {
   readLibraryDir: () => string;
@@ -21,6 +23,8 @@ export interface SpriteAtlasRoutesDependencies {
   ) => import('../../../packages/shared/src/types').JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   service?: SpriteAtlasService;
+  /** Stored job and Catalog reads for manual Sync. Defaults to the Studio database. */
+  jobLookup?: SpriteAtlasJobLookup;
 }
 
 async function readJsonBody(c: Context) {
@@ -39,10 +43,12 @@ export function createSpriteAtlasRoutes({
   readOutputContext,
   getCatalogImage,
   service,
+  jobLookup,
 }: SpriteAtlasRoutesDependencies) {
   const routes = new Hono();
   const spriteAtlas =
     service ?? createSpriteAtlasService({ readLibraryDir, readOutputContext, getCatalogImage });
+  const reconciler = createSpriteAtlasRunParticipant(spriteAtlas, jobLookup);
 
   routes.get('/presets', (c) => c.json({ presets: spriteAtlas.listPresets() }));
 
@@ -174,23 +180,10 @@ export function createSpriteAtlasRoutes({
     return c.json(run);
   });
 
-  routes.post('/runs/:id/row-dispatch', async (c) => {
-    const body = await readJsonBody(c);
-    if ('__invalidJson' in body) {
-      return c.json({ error: 'Invalid request body', code: 'invalid_json' }, 400);
-    }
-    const rowId = typeof body.rowId === 'string' ? body.rowId : '';
-    const jobId = typeof body.jobId === 'string' ? body.jobId : '';
-    if (!rowId || !jobId) {
-      return c.json({ error: 'rowId and jobId are required', code: 'invalid_request_body' }, 400);
-    }
-    try {
-      const run = await spriteAtlas.recordRowDispatch(c.req.param('id'), rowId, jobId);
-      if (!run) return c.json({ error: 'Sprite Atlas row not found' }, 404);
-      return c.json(run);
-    } catch (error) {
-      return c.json(actionError(error), 409);
-    }
+  routes.post('/runs/:id/reconcile', async (c) => {
+    const run = await reconciler.reconcileRun(c.req.param('id'));
+    if (!run) return c.json({ error: 'Sprite Atlas run not found' }, 404);
+    return c.json(run);
   });
 
   routes.get('/runs/:id/files/frame/:rowId/:frame', async (c) => {

@@ -3,10 +3,28 @@ import React from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { DEFAULT_GENERATION_CONFIG } from '../../constants';
-import { createSpriteAtlasContract, type SpriteAtlasRun } from '../../packages/shared/src';
+import {
+  createSpriteAtlasContract,
+  type SpriteAtlasRun,
+  type WorkflowRunUpdatedEventPayload,
+} from '../../packages/shared/src';
 import * as atlasApi from '../../services/studio-api/spriteAtlas';
 import { SpriteAtlasRecipe } from './SpriteAtlasRecipe';
 import { RecipeWorkbenchContext } from './RecipeWorkbenchContext';
+
+const workflowRunListeners = new Set<(payload: WorkflowRunUpdatedEventPayload) => void>();
+
+vi.mock('../../services/studioEventSource', () => ({
+  createStudioEventStream: () => ({
+    onWorkflowRunUpdated: (listener: (payload: WorkflowRunUpdatedEventPayload) => void) => {
+      workflowRunListeners.add(listener);
+      return () => workflowRunListeners.delete(listener);
+    },
+    onConnectionChange: () => () => undefined,
+    onRevisionGap: () => () => undefined,
+    close: () => undefined,
+  }),
+}));
 
 afterEach(() => {
   cleanup();
@@ -56,6 +74,7 @@ describe('SpriteAtlasRecipe', () => {
       catalogImageId,
       normalization: null,
       jobId: null,
+      dispatch: null,
       blocked: null,
       updatedAt: '2026-10-02T12:00:00Z',
     });
@@ -206,5 +225,49 @@ describe('SpriteAtlasRecipe', () => {
     listRuns.mockResolvedValue({ runs: [{ ...run, status: 'composed' }] });
     fireEvent.click(screen.getByRole('button', { name: 'Refresh' }));
     await waitFor(() => expect(review.hasAttribute('disabled')).toBe(false));
+  });
+
+  it('refetches the run when the backend reconciles it and syncs on request', async () => {
+    const contract = createSpriteAtlasContract({ presetId: 'platformer-character' });
+    const run: SpriteAtlasRun = {
+      id: 'atlas-live',
+      title: 'Live atlas',
+      status: 'waiting_for_rows',
+      createdAt: '2026-10-02T12:00:00Z',
+      updatedAt: '2026-10-02T12:00:00Z',
+      contract,
+      paths: {} as SpriteAtlasRun['paths'],
+      rows: [],
+      qa: null,
+      visualReview: { status: 'pending', acceptedAt: null },
+      anchor: null,
+    };
+    vi.spyOn(atlasApi, 'listSpriteAtlasPresets').mockResolvedValue({ presets: [] });
+    vi.spyOn(atlasApi, 'listSpriteAtlasRuns').mockResolvedValue({ runs: [run] });
+    const getRun = vi
+      .spyOn(atlasApi, 'getSpriteAtlasRun')
+      .mockResolvedValue({ ...run, title: 'Reconciled atlas' });
+    const reconcile = vi.spyOn(atlasApi, 'reconcileSpriteAtlasRun').mockResolvedValue(run);
+    render(
+      <SpriteAtlasRecipe
+        config={DEFAULT_GENERATION_CONFIG}
+        updateConfig={() => {}}
+        onGenerate={() => {}}
+        isGenerating={false}
+      />,
+    );
+    await screen.findByRole('heading', { name: 'Live atlas' });
+
+    const emit = (payload: WorkflowRunUpdatedEventPayload) =>
+      workflowRunListeners.forEach((listener) => listener(payload));
+    emit({ recipeId: 'sprite-atlas', runId: 'another-run' });
+    emit({ recipeId: 'animation-sequence', runId: 'atlas-live' });
+    expect(getRun).not.toHaveBeenCalled();
+    emit({ recipeId: 'sprite-atlas', runId: 'atlas-live' });
+    await screen.findByRole('heading', { name: 'Reconciled atlas' });
+    expect(getRun).toHaveBeenCalledWith('atlas-live');
+
+    fireEvent.click(screen.getByRole('button', { name: 'Sync' }));
+    await waitFor(() => expect(reconcile).toHaveBeenCalledWith('atlas-live'));
   });
 });

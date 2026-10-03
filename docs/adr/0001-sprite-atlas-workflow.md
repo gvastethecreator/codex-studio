@@ -27,6 +27,15 @@ The UI must expose the workflow as a recoverable production workbench:
 
 Bring a repo-local `skills/sprite-atlas-builder` skill into Cozy Studio so agents can run the pipeline without an external checkout.
 
+The backend owns row progress. When the job queue accepts a row job, the backend records the job set on the row and marks the row as generating. When a job settles, the backend reconciles the row:
+
+- The first finished image of the set is imported and normalized per ADR 0010. Later images stay in the Catalog for a manual import.
+- A job that is not in the row's current set is ignored.
+- A failed, cancelled, or needs-review job blocks the row only when no other job of the set is still pending or has an image. A blocked row still accepts a later image of the set.
+- Startup recovery and the Sync action read the stored jobs again and apply the same rules.
+
+The browser does not coordinate rows. It shows the run, refetches it when the backend reports a change, and keeps a manual import for an image that the user chooses.
+
 New run state, handoff inputs, and extracted working frames live in `.studio/state/sprite-atlas/<runId>`. The atlas PNG and manifest use the output directory and layout captured when the run starts. Older runs remain readable at their stored paths. The shared background choice resolves the run contract: native transparency disables chroma instructions and keeps alpha through atlas composition.
 
 ## Consequences

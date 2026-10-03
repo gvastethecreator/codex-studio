@@ -22,7 +22,7 @@ import {
   type SpriteAtlasRun,
   type SpriteAtlasRunPaths,
 } from '../../../packages/shared/src/spriteAtlasContracts';
-import type { JobLibraryContext, CatalogImage } from '../../../packages/shared/src/types';
+import type { CatalogImage, Job, JobLibraryContext } from '../../../packages/shared/src/types';
 import { resolveLibraryPathFromRoot } from './library';
 
 export class SpriteAtlasActionError extends Error {
@@ -48,8 +48,37 @@ export interface SpriteAtlasService {
   compose(runId: string): Promise<SpriteAtlasRun | null>;
   composeFixture(runId: string): Promise<SpriteAtlasRun | null>;
   runQa(runId: string): Promise<SpriteAtlasRun | null>;
-  recordRowDispatch(runId: string, rowId: string, jobId: string): Promise<SpriteAtlasRun | null>;
   acceptVisualReview(runId: string): Promise<SpriteAtlasRun | null>;
+  /** Checks a provider job for a run row before it is committed. Null accepts it. */
+  validateRowDispatch(runId: string, rowId: string): Promise<SpriteAtlasDispatchIssue | null>;
+  /**
+   * Records accepted provider jobs on a row. A new set replaces the previous one. A retry of
+   * jobs already in the set only puts an awaiting row back to generating.
+   */
+  recordRowDispatch(runId: string, rowId: string, jobIds: string[]): Promise<SpriteAtlasRun | null>;
+  /** Folds one job of the row's dispatch set into the row. True when the run changed. */
+  settleRowJob(
+    runId: string,
+    rowId: string,
+    job: Job,
+    lookup: SpriteAtlasJobLookup,
+  ): Promise<boolean>;
+  /** Settles the dispatch sets of awaiting rows from the stored jobs. */
+  reconcileRun(
+    runId: string,
+    lookup: SpriteAtlasJobLookup,
+  ): Promise<{ run: SpriteAtlasRun; changed: boolean } | null>;
+}
+
+export interface SpriteAtlasDispatchIssue {
+  code: string;
+  message: string;
+}
+
+/** Stored job and Catalog reads that backend reconciliation needs. */
+export interface SpriteAtlasJobLookup {
+  getJob(jobId: string): Job | null;
+  getCatalogImageByJobId(jobId: string): Pick<CatalogImage, 'id'> | null;
 }
 
 export interface CreateSpriteAtlasServiceOptions {
@@ -214,9 +243,17 @@ async function readJson<T>(filePath: string): Promise<T | null> {
   }
 }
 
+/** Writes a temp file and renames it, so a reader never sees a partial JSON file. */
 async function writeJson(filePath: string, value: unknown) {
   await mkdir(path.dirname(filePath), { recursive: true });
-  await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+  const tempPath = `${filePath}.${randomUUID()}.tmp`;
+  try {
+    await writeFile(tempPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+    await rename(tempPath, filePath);
+  } catch (error) {
+    await rm(tempPath, { force: true });
+    throw error;
+  }
 }
 
 /**
@@ -411,6 +448,7 @@ function createRows(run: Pick<SpriteAtlasRun, 'contract' | 'paths'>, timestamp: 
       catalogImageId: null,
       normalization: null,
       jobId: null,
+      dispatch: null,
       blocked: null,
       updatedAt: timestamp,
     };
@@ -511,8 +549,51 @@ function normalizeRun(run: SpriteAtlasRun): SpriteAtlasRun {
       sourceSha256: row.sourceSha256 ?? null,
       catalogImageId: row.catalogImageId ?? null,
       normalization: row.normalization ?? null,
+      // Older runs kept the one dispatched job id on a generating row.
+      dispatch:
+        row.dispatch ??
+        (row.status === 'generating' && row.jobId
+          ? { jobIds: [row.jobId], dispatchedAt: row.updatedAt }
+          : null),
     })),
   };
+}
+
+const PENDING_JOB_STATUSES = new Set<Job['status']>(['queued', 'running']);
+
+function isAwaitingRow(row: SpriteAtlasRowState) {
+  return row.status === 'generating' || row.status === 'blocked';
+}
+
+function jobBlockedReason(rowId: string, jobId: string, job: Job | null) {
+  const retry = `Queue ${rowId} again, or import a finished image by hand.`;
+  if (!job) {
+    return blockedReason('no_image_returned', `The ${rowId} job ${jobId} no longer exists.`, retry);
+  }
+  const detail = job.error ? ` ${job.error}` : '';
+  if (job.status === 'failed') {
+    return blockedReason('runner_failed', `The ${rowId} job failed.${detail}`, retry);
+  }
+  if (job.status === 'cancelled') {
+    return blockedReason('runner_failed', `The ${rowId} job was cancelled.`, retry);
+  }
+  if (job.status === 'needs_review') {
+    return blockedReason(
+      'runner_failed',
+      `The ${rowId} job needs review.${detail}`,
+      `Resolve it in Queue, or queue ${rowId} again.`,
+    );
+  }
+  return blockedReason('no_image_returned', `The ${rowId} job finished without an image.`, retry);
+}
+
+/** Run state without timestamps, so a settle that changes nothing is not saved. */
+function runFingerprint(run: SpriteAtlasRun) {
+  return JSON.stringify({
+    ...run,
+    updatedAt: null,
+    rows: run.rows.map((row) => ({ ...row, updatedAt: null })),
+  });
 }
 
 export function createSpriteAtlasService({
@@ -522,6 +603,20 @@ export function createSpriteAtlasService({
   createId = randomUUID,
   now = () => new Date().toISOString(),
 }: CreateSpriteAtlasServiceOptions): SpriteAtlasService {
+  const runLocks = new Map<string, Promise<unknown>>();
+
+  /** Serializes every read-modify-write of one run's status.json. */
+  function withRunLock<T>(runId: string, work: () => Promise<T>): Promise<T> {
+    const key = safeSegment(runId);
+    const result = (runLocks.get(key) ?? Promise.resolve()).then(work);
+    const tail = result.catch(() => undefined);
+    runLocks.set(key, tail);
+    void tail.then(() => {
+      if (runLocks.get(key) === tail) runLocks.delete(key);
+    });
+    return result;
+  }
+
   async function saveRun(run: SpriteAtlasRun) {
     const updated = {
       ...run,
@@ -568,6 +663,7 @@ export function createSpriteAtlasService({
     await writeJson(path.join(run.paths.handoffInboxDir, `${jobId}.json`), job);
     row.status = 'handoff_ready';
     row.jobId = jobId;
+    row.dispatch = null;
     row.blocked = null;
     row.updatedAt = timestamp;
     return job;
@@ -608,6 +704,139 @@ export function createSpriteAtlasService({
       jobs,
       run: await saveRun(run),
     };
+  }
+
+  /** Imports an image into a row in memory and on disk. The caller saves the run. */
+  async function importRowInRun(
+    run: SpriteAtlasRun,
+    row: SpriteAtlasRowState,
+    input: ImportSpriteAtlasRowRequest,
+  ) {
+    const timestamp = now();
+    if (isSafeBlockedReason(input.blocked)) {
+      const jobId = row.jobId || safeSegment(`blocked-${row.id}-${createId()}`);
+      await writeJson(
+        path.join(run.paths.handoffOutboxDir, `${jobId}-blocked.json`),
+        input.blocked,
+      );
+      row.status = 'blocked';
+      row.blocked = input.blocked;
+      row.updatedAt = timestamp;
+      return;
+    }
+
+    const resolved = await resolveImportSource({
+      input,
+      libraryDir: readLibraryDir(),
+      libraryContext: readOutputContext?.(),
+      getCatalogImage,
+    });
+    const rejectImport = (failure: SpriteAtlasBlockedReason) => {
+      if (row.rawPath && (row.status === 'raw_imported' || row.status === 'extracted')) {
+        throw new SpriteAtlasActionError(
+          failure.reasonKind,
+          `${failure.userMessage} ${failure.suggestion} ${row.id} keeps its previous import.`,
+        );
+      }
+      row.status = 'blocked';
+      row.blocked = failure;
+      row.updatedAt = timestamp;
+    };
+    if (resolved.kind === 'rejected') {
+      return rejectImport(
+        blockedReason(
+          'path_rejected',
+          'That image is outside the Studio Library.',
+          'Import the image through Settings → Library & imports, then choose it here.',
+        ),
+      );
+    }
+    if (resolved.kind === 'missing') {
+      return rejectImport(
+        blockedReason(
+          'no_image_returned',
+          'No source row image was available to import.',
+          'Generate or select a real row strip, then import it into this row.',
+        ),
+      );
+    }
+    const rowName = safeSegment(row.id);
+    const sourceExtension = path.extname(resolved.sourcePath) || '.png';
+    const normalizedPath = path.join(run.paths.rawDir, `${rowName}.png`);
+    const strip = await normalizeRowStrip(run, row, resolved.sourcePath, normalizedPath);
+    if (strip.kind === 'blocked') return rejectImport(strip.blocked);
+
+    let outputPath = normalizedPath;
+    let originalPath = normalizedPath;
+    if (strip.normalized) {
+      originalPath = path.join(run.paths.rawDir, `${rowName}.source${sourceExtension}`);
+      await copyFile(resolved.sourcePath, originalPath);
+    } else {
+      outputPath = path.join(run.paths.rawDir, `${rowName}${sourceExtension}`);
+      originalPath = outputPath;
+      await copyFile(resolved.sourcePath, outputPath);
+    }
+    const digest = await sha256File(outputPath);
+    row.rawPath = outputPath;
+    row.sourceSha256 = digest;
+    row.normalization = {
+      normalized: strip.normalized,
+      sourceSize: strip.sourceSize,
+      kernel: strip.kernel,
+      fit: strip.fit,
+      sourcePath: originalPath,
+      sourceSha256: strip.normalized ? await sha256File(originalPath) : digest,
+    };
+    row.catalogImageId = resolved.catalogImageId;
+    row.status = 'raw_imported';
+    row.blocked = null;
+    row.updatedAt = timestamp;
+    if (isSpriteAtlasIdleRow(row.id) && (!run.anchor || run.anchor.rowId === row.id)) {
+      run.anchor = { rowId: row.id, sha256: digest };
+    }
+    run.qa = null;
+    run.visualReview = { status: 'pending', acceptedAt: null };
+    run.status = 'ready_to_extract';
+  }
+
+  /**
+   * Folds one dispatched job into its row. A job outside the row's current set is stale. The
+   * first finished image of the set is imported; later siblings stay in the Catalog. A failure
+   * blocks the row only when no sibling is still pending or holds an image.
+   */
+  async function settleRowJobInRun(
+    run: SpriteAtlasRun,
+    row: SpriteAtlasRowState,
+    jobId: string,
+    job: Job | null,
+    lookup: SpriteAtlasJobLookup,
+  ) {
+    const dispatch = row.dispatch;
+    if (!dispatch?.jobIds.includes(jobId) || !isAwaitingRow(row)) return;
+    if (job && PENDING_JOB_STATUSES.has(job.status)) {
+      if (row.status !== 'blocked') return;
+      row.status = 'generating';
+      row.blocked = null;
+      row.updatedAt = now();
+      return;
+    }
+    const image = job?.status === 'completed' ? lookup.getCatalogImageByJobId(jobId) : null;
+    if (image) {
+      await importRowInRun(run, row, { rowId: row.id, catalogImageId: image.id });
+      return;
+    }
+    if (row.status === 'blocked') return;
+    const siblingAlive = dispatch.jobIds.some((siblingId) => {
+      if (siblingId === jobId) return false;
+      const sibling = lookup.getJob(siblingId);
+      if (!sibling) return false;
+      if (PENDING_JOB_STATUSES.has(sibling.status)) return true;
+      return sibling.status === 'completed' && Boolean(lookup.getCatalogImageByJobId(siblingId));
+    });
+    if (siblingAlive) return;
+    row.status = 'blocked';
+    row.blocked = jobBlockedReason(row.id, jobId, job);
+    row.updatedAt = now();
   }
 
   return {
@@ -683,18 +912,22 @@ export function createSpriteAtlasService({
       );
       return saveRun(run);
     },
-    async createRowJob(runId, rowId) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      const row = run.rows.find((item) => item.id === rowId);
-      if (!row) return null;
-      const result = await createRowJobsForRun(run, [rowId], { force: true });
-      return result.jobs[0] ?? null;
+    createRowJob(runId, rowId) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        const row = run.rows.find((item) => item.id === rowId);
+        if (!row) return null;
+        const result = await createRowJobsForRun(run, [rowId], { force: true });
+        return result.jobs[0] ?? null;
+      });
     },
-    async createRowJobs(runId, rowIds) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      return createRowJobsForRun(run, rowIds, { force: false });
+    createRowJobs(runId, rowIds) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        return createRowJobsForRun(run, rowIds, { force: false });
+      });
     },
     async readRowPrompt(runId, rowId) {
       const run = await getRun(runId);
@@ -709,264 +942,187 @@ export function createSpriteAtlasService({
         promptPath: row.promptPath,
       };
     },
-    async importRow(runId, input) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      const row = run.rows.find((item) => item.id === input.rowId);
-      if (!row) return null;
-
-      const timestamp = now();
-      if (isSafeBlockedReason(input.blocked)) {
-        const jobId = row.jobId || safeSegment(`blocked-${row.id}-${createId()}`);
-        await writeJson(
-          path.join(run.paths.handoffOutboxDir, `${jobId}-blocked.json`),
-          input.blocked,
-        );
-        row.status = 'blocked';
-        row.blocked = input.blocked;
-        row.updatedAt = timestamp;
+    importRow(runId, input) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        const row = run.rows.find((item) => item.id === input.rowId);
+        if (!row) return null;
+        await importRowInRun(run, row, input);
         return saveRun(run);
-      }
-
-      const resolved = await resolveImportSource({
-        input,
-        libraryDir: readLibraryDir(),
-        libraryContext: readOutputContext?.(),
-        getCatalogImage,
       });
-      const rejectImport = (failure: SpriteAtlasBlockedReason) => {
-        if (row.rawPath && (row.status === 'raw_imported' || row.status === 'extracted')) {
-          throw new SpriteAtlasActionError(
-            failure.reasonKind,
-            `${failure.userMessage} ${failure.suggestion} ${row.id} keeps its previous import.`,
-          );
-        }
-        row.status = 'blocked';
-        row.blocked = failure;
-        row.updatedAt = timestamp;
-        return saveRun(run);
-      };
-      if (resolved.kind === 'rejected') {
-        return rejectImport(
-          blockedReason(
-            'path_rejected',
-            'That image is outside the Studio Library.',
-            'Import the image through Settings → Library & imports, then choose it here.',
-          ),
-        );
-      }
-      if (resolved.kind === 'missing') {
-        return rejectImport(
-          blockedReason(
-            'no_image_returned',
-            'No source row image was available to import.',
-            'Generate or select a real row strip, then import it into this row.',
-          ),
-        );
-      }
-      const rowName = safeSegment(row.id);
-      const sourceExtension = path.extname(resolved.sourcePath) || '.png';
-      const normalizedPath = path.join(run.paths.rawDir, `${rowName}.png`);
-      const strip = await normalizeRowStrip(run, row, resolved.sourcePath, normalizedPath);
-      if (strip.kind === 'blocked') return rejectImport(strip.blocked);
-
-      let outputPath = normalizedPath;
-      let originalPath = normalizedPath;
-      if (strip.normalized) {
-        originalPath = path.join(run.paths.rawDir, `${rowName}.source${sourceExtension}`);
-        await copyFile(resolved.sourcePath, originalPath);
-      } else {
-        outputPath = path.join(run.paths.rawDir, `${rowName}${sourceExtension}`);
-        originalPath = outputPath;
-        await copyFile(resolved.sourcePath, outputPath);
-      }
-      const digest = await sha256File(outputPath);
-      row.rawPath = outputPath;
-      row.sourceSha256 = digest;
-      row.normalization = {
-        normalized: strip.normalized,
-        sourceSize: strip.sourceSize,
-        kernel: strip.kernel,
-        fit: strip.fit,
-        sourcePath: originalPath,
-        sourceSha256: strip.normalized ? await sha256File(originalPath) : digest,
-      };
-      row.catalogImageId = resolved.catalogImageId;
-      row.status = 'raw_imported';
-      row.blocked = null;
-      row.updatedAt = timestamp;
-      if (isSpriteAtlasIdleRow(row.id) && (!run.anchor || run.anchor.rowId === row.id)) {
-        run.anchor = { rowId: row.id, sha256: digest };
-      }
-      run.qa = null;
-      run.visualReview = { status: 'pending', acceptedAt: null };
-      run.status = 'ready_to_extract';
-      return saveRun(run);
     },
-    async compose(runId) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      if (run.contract.workflowLane === 'static-items') {
-        throw new SpriteAtlasActionError(
-          'static_items_blocked',
-          'Irregular item sheets stay in spritesheet-expert. Run run_item_atlas_workflow.py on the source sheet.',
-        );
-      }
-      const missingRows = run.rows.filter(
-        (row) => !row.rawPath || !(row.status === 'raw_imported' || row.status === 'extracted'),
-      );
-      if (missingRows.length > 0) {
-        throw new SpriteAtlasActionError(
-          'rows_missing',
-          `Import every row before composing: ${missingRows.map((row) => row.id).join(', ')}`,
-        );
-      }
-
-      const measured = await Promise.all(
-        run.rows.map(async (row) => {
-          const mismatch = await checkRowStripGeometry(run, row, row.rawPath!);
-          return mismatch ? [{ row, mismatch }] : [];
-        }),
-      );
-      const mismatched = measured.flat();
-      if (mismatched.length > 0) {
-        const timestamp = now();
-        for (const { row, mismatch } of mismatched) {
-          row.status = 'blocked';
-          row.blocked = {
-            ...mismatch,
-            suggestion: `${mismatch.suggestion} The previous atlas was left in place.`,
-          };
-          row.updatedAt = timestamp;
-        }
-        await saveRun(run);
-        throw new SpriteAtlasActionError(
-          'geometry_mismatch',
-          `Row strip size does not match the contract: ${mismatched.map((item) => item.row.id).join(', ')}.`,
-        );
-      }
-
-      const columns = Math.max(1, run.contract.columns);
-      const cellWidth = run.contract.cell.width;
-      const cellHeight = run.contract.cell.height;
-      const rowOffsets = new Map<string, number>();
-      let atlasRowCount = 0;
-      for (const row of run.rows) {
-        rowOffsets.set(row.id, atlasRowCount);
-        atlasRowCount += Math.ceil(row.frames / columns);
-      }
-      const width = columns * cellWidth;
-      const height = Math.max(1, atlasRowCount) * cellHeight;
-      const stagingDir = path.join(run.paths.runDir, '.compose-staging');
-      const stagingFramesDir = path.join(stagingDir, 'frames');
-      await rm(stagingDir, { recursive: true, force: true });
-      await mkdir(stagingFramesDir, { recursive: true });
-      const rowSpecs = new Map(run.contract.rows.map((row) => [row.id, row]));
-      const origin = frameOrigin(run);
-      const composites: Array<{ input: string; left: number; top: number }> = [];
-      const frameLayout: Array<{
-        id: string;
-        fps: number;
-        loop: boolean;
-        normalized: boolean;
-        sourceSize?: { w: number; h: number };
-        kernel?: SpriteAtlasRowNormalization['kernel'];
-        fit?: SpriteAtlasRowNormalization['fit'];
-        frames: Array<{
-          source: string;
-          x: number;
-          y: number;
-          width: number;
-          height: number;
-          origin: { x: number; y: number };
-        }>;
-      }> = [];
-
-      for (const row of run.rows) {
-        const rawPath = row.rawPath!;
-        const baseRow = rowOffsets.get(row.id) ?? 0;
-        const frames = [];
-        for (let frameIndex = 0; frameIndex < row.frames; frameIndex += 1) {
-          const framePath = path.join(
-            stagingFramesDir,
-            `${safeSegment(row.id)}-${String(frameIndex + 1).padStart(2, '0')}.png`,
+    compose(runId) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        if (run.contract.workflowLane === 'static-items') {
+          throw new SpriteAtlasActionError(
+            'static_items_blocked',
+            'Irregular item sheets stay in spritesheet-expert. Run run_item_atlas_workflow.py on the source sheet.',
           );
-          await authoringSharp(rawPath)
-            .extract({ left: frameIndex * cellWidth, top: 0, width: cellWidth, height: cellHeight })
-            .png()
-            .toFile(framePath);
-          const x = (frameIndex % columns) * cellWidth;
-          const y = (baseRow + Math.floor(frameIndex / columns)) * cellHeight;
-          composites.push({ input: framePath, left: x, top: y });
-          frames.push({
-            source: path.basename(framePath),
-            x,
-            y,
-            width: cellWidth,
-            height: cellHeight,
-            origin,
+        }
+        const missingRows = run.rows.filter(
+          (row) => !row.rawPath || !(row.status === 'raw_imported' || row.status === 'extracted'),
+        );
+        if (missingRows.length > 0) {
+          throw new SpriteAtlasActionError(
+            'rows_missing',
+            `Import every row before composing: ${missingRows.map((row) => row.id).join(', ')}`,
+          );
+        }
+
+        const measured = await Promise.all(
+          run.rows.map(async (row) => {
+            const mismatch = await checkRowStripGeometry(run, row, row.rawPath!);
+            return mismatch ? [{ row, mismatch }] : [];
+          }),
+        );
+        const mismatched = measured.flat();
+        if (mismatched.length > 0) {
+          const timestamp = now();
+          for (const { row, mismatch } of mismatched) {
+            row.status = 'blocked';
+            row.blocked = {
+              ...mismatch,
+              suggestion: `${mismatch.suggestion} The previous atlas was left in place.`,
+            };
+            row.updatedAt = timestamp;
+          }
+          await saveRun(run);
+          throw new SpriteAtlasActionError(
+            'geometry_mismatch',
+            `Row strip size does not match the contract: ${mismatched.map((item) => item.row.id).join(', ')}.`,
+          );
+        }
+
+        const columns = Math.max(1, run.contract.columns);
+        const cellWidth = run.contract.cell.width;
+        const cellHeight = run.contract.cell.height;
+        const rowOffsets = new Map<string, number>();
+        let atlasRowCount = 0;
+        for (const row of run.rows) {
+          rowOffsets.set(row.id, atlasRowCount);
+          atlasRowCount += Math.ceil(row.frames / columns);
+        }
+        const width = columns * cellWidth;
+        const height = Math.max(1, atlasRowCount) * cellHeight;
+        const stagingDir = path.join(run.paths.runDir, '.compose-staging');
+        const stagingFramesDir = path.join(stagingDir, 'frames');
+        await rm(stagingDir, { recursive: true, force: true });
+        await mkdir(stagingFramesDir, { recursive: true });
+        const rowSpecs = new Map(run.contract.rows.map((row) => [row.id, row]));
+        const origin = frameOrigin(run);
+        const composites: Array<{ input: string; left: number; top: number }> = [];
+        const frameLayout: Array<{
+          id: string;
+          fps: number;
+          loop: boolean;
+          normalized: boolean;
+          sourceSize?: { w: number; h: number };
+          kernel?: SpriteAtlasRowNormalization['kernel'];
+          fit?: SpriteAtlasRowNormalization['fit'];
+          frames: Array<{
+            source: string;
+            x: number;
+            y: number;
+            width: number;
+            height: number;
+            origin: { x: number; y: number };
+          }>;
+        }> = [];
+
+        for (const row of run.rows) {
+          const rawPath = row.rawPath!;
+          const baseRow = rowOffsets.get(row.id) ?? 0;
+          const frames = [];
+          for (let frameIndex = 0; frameIndex < row.frames; frameIndex += 1) {
+            const framePath = path.join(
+              stagingFramesDir,
+              `${safeSegment(row.id)}-${String(frameIndex + 1).padStart(2, '0')}.png`,
+            );
+            await authoringSharp(rawPath)
+              .extract({
+                left: frameIndex * cellWidth,
+                top: 0,
+                width: cellWidth,
+                height: cellHeight,
+              })
+              .png()
+              .toFile(framePath);
+            const x = (frameIndex % columns) * cellWidth;
+            const y = (baseRow + Math.floor(frameIndex / columns)) * cellHeight;
+            composites.push({ input: framePath, left: x, top: y });
+            frames.push({
+              source: path.basename(framePath),
+              x,
+              y,
+              width: cellWidth,
+              height: cellHeight,
+              origin,
+            });
+          }
+          const rowSpec = rowSpecs.get(row.id);
+          const normalization = row.normalization;
+          frameLayout.push({
+            id: row.id,
+            fps: rowSpec?.fps ?? 1,
+            loop: rowSpec?.loop ?? false,
+            ...(normalization?.normalized
+              ? {
+                  normalized: true,
+                  sourceSize: normalization.sourceSize,
+                  kernel: normalization.kernel,
+                  fit: normalization.fit,
+                }
+              : { normalized: false }),
+            frames,
           });
         }
-        const rowSpec = rowSpecs.get(row.id);
-        const normalization = row.normalization;
-        frameLayout.push({
-          id: row.id,
-          fps: rowSpec?.fps ?? 1,
-          loop: rowSpec?.loop ?? false,
-          ...(normalization?.normalized
-            ? {
-                normalized: true,
-                sourceSize: normalization.sourceSize,
-                kernel: normalization.kernel,
-                fit: normalization.fit,
-              }
-            : { normalized: false }),
-          frames,
-        });
-      }
 
-      const stagingAtlasPath = path.join(stagingDir, 'atlas.png');
-      const stagingManifestPath = path.join(stagingDir, 'manifest.json');
-      await authoringSharp({
-        create: {
-          width,
-          height,
-          channels: 4,
-          background: { r: 0, g: 0, b: 0, alpha: 0 },
-        },
-      })
-        .composite(composites)
-        .png()
-        .toFile(stagingAtlasPath);
-      await writeJson(stagingManifestPath, {
-        version: 1,
-        mode: 'generated_art',
-        workflow_lane: run.contract.workflowLane,
-        frame_semantics: run.contract.frameSemantics,
-        atlas: { file: path.basename(run.paths.atlasPath), width, height },
-        cell: run.contract.cell,
-        columns,
-        frame_layout: frameLayout,
+        const stagingAtlasPath = path.join(stagingDir, 'atlas.png');
+        const stagingManifestPath = path.join(stagingDir, 'manifest.json');
+        await authoringSharp({
+          create: {
+            width,
+            height,
+            channels: 4,
+            background: { r: 0, g: 0, b: 0, alpha: 0 },
+          },
+        })
+          .composite(composites)
+          .png()
+          .toFile(stagingAtlasPath);
+        await writeJson(stagingManifestPath, {
+          version: 1,
+          mode: 'generated_art',
+          workflow_lane: run.contract.workflowLane,
+          frame_semantics: run.contract.frameSemantics,
+          atlas: { file: path.basename(run.paths.atlasPath), width, height },
+          cell: run.contract.cell,
+          columns,
+          frame_layout: frameLayout,
+        });
+        await publishStagedCompose({
+          framesDir: run.paths.framesDir,
+          atlasPath: run.paths.atlasPath,
+          manifestPath: run.paths.manifestPath,
+          stagingFramesDir,
+          stagingAtlasPath,
+          stagingManifestPath,
+        });
+        await rm(stagingDir, { recursive: true, force: true });
+        const extractedAt = now();
+        for (const row of run.rows) {
+          row.status = 'extracted';
+          row.blocked = null;
+          row.updatedAt = extractedAt;
+        }
+        run.qa = null;
+        run.visualReview = { status: 'pending', acceptedAt: null };
+        run.status = 'composed';
+        return saveRun(run);
       });
-      await publishStagedCompose({
-        framesDir: run.paths.framesDir,
-        atlasPath: run.paths.atlasPath,
-        manifestPath: run.paths.manifestPath,
-        stagingFramesDir,
-        stagingAtlasPath,
-        stagingManifestPath,
-      });
-      await rm(stagingDir, { recursive: true, force: true });
-      const extractedAt = now();
-      for (const row of run.rows) {
-        row.status = 'extracted';
-        row.blocked = null;
-        row.updatedAt = extractedAt;
-      }
-      run.qa = null;
-      run.visualReview = { status: 'pending', acceptedAt: null };
-      run.status = 'composed';
-      return saveRun(run);
     },
     async composeFixture(runId) {
       const run = await getRun(runId);
@@ -1019,174 +1175,204 @@ export function createSpriteAtlasService({
 
       return run;
     },
-    async runQa(runId) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      const issues: string[] = [];
-      const manifest = await readFile(run.paths.manifestPath, 'utf8')
-        .then((contents) => JSON.parse(contents) as { mode?: string })
-        .catch(() => null);
-      const mode: SpriteAtlasQaReport['mode'] =
-        manifest?.mode === 'generated_art' ? 'generated_art' : 'fixture_smoke';
-      if (!manifest || !['generated_art', 'fixture_smoke'].includes(manifest.mode ?? ''))
-        issues.push('The atlas manifest does not identify a valid composition mode.');
-      const checks = await Promise.all([
-        fileExists(run.paths.requestPath),
-        fileExists(run.paths.atlasPath),
-        fileExists(run.paths.manifestPath),
-        ...run.rows.map((row) => fileExists(row.promptPath)),
-        ...run.rows.map((row) => fileExists(row.layoutGuidePath)),
-      ]);
-      if (!checks[0]) issues.push('sprite-request.json is missing.');
-      if (!checks[1]) issues.push('atlas.png is missing.');
-      if (!checks[2]) issues.push('manifest.json is missing.');
-      if (checks.slice(3).some((ok) => !ok))
-        issues.push('One or more prompts or layout guides are missing.');
-      const filesReady = checks.every(Boolean) && Boolean(manifest);
+    runQa(runId) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        const issues: string[] = [];
+        const manifest = await readFile(run.paths.manifestPath, 'utf8')
+          .then((contents) => JSON.parse(contents) as { mode?: string })
+          .catch(() => null);
+        const mode: SpriteAtlasQaReport['mode'] =
+          manifest?.mode === 'generated_art' ? 'generated_art' : 'fixture_smoke';
+        if (!manifest || !['generated_art', 'fixture_smoke'].includes(manifest.mode ?? ''))
+          issues.push('The atlas manifest does not identify a valid composition mode.');
+        const checks = await Promise.all([
+          fileExists(run.paths.requestPath),
+          fileExists(run.paths.atlasPath),
+          fileExists(run.paths.manifestPath),
+          ...run.rows.map((row) => fileExists(row.promptPath)),
+          ...run.rows.map((row) => fileExists(row.layoutGuidePath)),
+        ]);
+        if (!checks[0]) issues.push('sprite-request.json is missing.');
+        if (!checks[1]) issues.push('atlas.png is missing.');
+        if (!checks[2]) issues.push('manifest.json is missing.');
+        if (checks.slice(3).some((ok) => !ok))
+          issues.push('One or more prompts or layout guides are missing.');
+        const filesReady = checks.every(Boolean) && Boolean(manifest);
 
-      if (mode === 'generated_art') {
-        for (const row of run.rows) {
-          if (!row.rawPath || !row.sourceSha256 || !(await fileExists(row.rawPath))) {
-            issues.push(`${row.id} has no hashed source strip.`);
-            continue;
-          }
-          const digest = await sha256File(row.rawPath);
-          if (digest !== row.sourceSha256)
-            issues.push(`${row.id} source hash does not match the import.`);
-          const original = row.normalization?.normalized ? row.normalization : null;
-          if (
-            original &&
-            (!(await fileExists(original.sourcePath)) ||
-              (await sha256File(original.sourcePath)) !== original.sourceSha256)
-          ) {
-            issues.push(`${row.id} provider image hash does not match the import.`);
-          }
-          const metadata = await authoringSharp(row.rawPath).metadata();
-          if (
-            metadata.width !== run.contract.cell.width * row.frames ||
-            metadata.height !== run.contract.cell.height
-          ) {
-            issues.push(`${row.id} strip size does not match the contract.`);
-          }
-          const framePaths = Array.from({ length: row.frames }, (_, index) =>
-            path.join(
-              run.paths.framesDir,
-              `${safeSegment(row.id)}-${String(index + 1).padStart(2, '0')}.png`,
-            ),
-          );
-          const frameChecks = await Promise.all(
-            framePaths.map((framePath) => fileExists(framePath)),
-          );
-          if (frameChecks.some((exists) => !exists))
-            issues.push(`${row.id} is missing an extracted frame.`);
-        }
-        if (run.contract.workflowLane === 'animation' && !run.anchor) {
-          issues.push('Import an idle row before a technical pass.');
-        }
-        if (run.contract.workflowLane === 'tileset') {
-          for (const spec of run.contract.rows) {
-            if (!spec.repeatMode) {
-              issues.push(`${spec.id} needs repeat mode self, adjacency, or overlay.`);
+        if (mode === 'generated_art') {
+          for (const row of run.rows) {
+            if (!row.rawPath || !row.sourceSha256 || !(await fileExists(row.rawPath))) {
+              issues.push(`${row.id} has no hashed source strip.`);
               continue;
             }
-            if (spec.repeatMode === 'adjacency' && !spec.tileRole?.trim()) {
-              issues.push(`${spec.id} needs a tile role.`);
+            const digest = await sha256File(row.rawPath);
+            if (digest !== row.sourceSha256)
+              issues.push(`${row.id} source hash does not match the import.`);
+            const original = row.normalization?.normalized ? row.normalization : null;
+            if (
+              original &&
+              (!(await fileExists(original.sourcePath)) ||
+                (await sha256File(original.sourcePath)) !== original.sourceSha256)
+            ) {
+              issues.push(`${row.id} provider image hash does not match the import.`);
             }
-            if (spec.repeatMode === 'self') {
-              const previewPath = path.join(
-                path.dirname(run.paths.qaReportPath),
-                `${safeSegment(spec.id)}-repeat-3x3.png`,
-              );
-              const framePath = path.join(run.paths.framesDir, `${safeSegment(spec.id)}-01.png`);
-              if (await fileExists(framePath)) {
-                await writeRepeatPreview(framePath, previewPath);
+            const metadata = await authoringSharp(row.rawPath).metadata();
+            if (
+              metadata.width !== run.contract.cell.width * row.frames ||
+              metadata.height !== run.contract.cell.height
+            ) {
+              issues.push(`${row.id} strip size does not match the contract.`);
+            }
+            const framePaths = Array.from({ length: row.frames }, (_, index) =>
+              path.join(
+                run.paths.framesDir,
+                `${safeSegment(row.id)}-${String(index + 1).padStart(2, '0')}.png`,
+              ),
+            );
+            const frameChecks = await Promise.all(
+              framePaths.map((framePath) => fileExists(framePath)),
+            );
+            if (frameChecks.some((exists) => !exists))
+              issues.push(`${row.id} is missing an extracted frame.`);
+          }
+          if (run.contract.workflowLane === 'animation' && !run.anchor) {
+            issues.push('Import an idle row before a technical pass.');
+          }
+          if (run.contract.workflowLane === 'tileset') {
+            for (const spec of run.contract.rows) {
+              if (!spec.repeatMode) {
+                issues.push(`${spec.id} needs repeat mode self, adjacency, or overlay.`);
+                continue;
               }
-              if (!(await fileExists(previewPath))) {
-                issues.push(`${spec.id} is missing its 3×3 repeat preview.`);
+              if (spec.repeatMode === 'adjacency' && !spec.tileRole?.trim()) {
+                issues.push(`${spec.id} needs a tile role.`);
+              }
+              if (spec.repeatMode === 'self') {
+                const previewPath = path.join(
+                  path.dirname(run.paths.qaReportPath),
+                  `${safeSegment(spec.id)}-repeat-3x3.png`,
+                );
+                const framePath = path.join(run.paths.framesDir, `${safeSegment(spec.id)}-01.png`);
+                if (await fileExists(framePath)) {
+                  await writeRepeatPreview(framePath, previewPath);
+                }
+                if (!(await fileExists(previewPath))) {
+                  issues.push(`${spec.id} is missing its 3×3 repeat preview.`);
+                }
               }
             }
           }
+          if (run.contract.workflowLane === 'static-items') {
+            issues.push('Irregular item sheets are not a technical pass in this app.');
+          }
+        } else {
+          issues.push('The composed atlas is test art. This is not a technical pass.');
         }
-        if (run.contract.workflowLane === 'static-items') {
-          issues.push('Irregular item sheets are not a technical pass in this app.');
-        }
-      } else {
-        issues.push('The composed atlas is test art. This is not a technical pass.');
-      }
 
-      const representative = mode === 'generated_art';
-      const technical = {
-        status: issues.length === 0 ? ('pass' as const) : ('fail' as const),
-        representative: representative && issues.length === 0,
-        issues,
-      };
-      const report: SpriteAtlasQaReport = {
-        ok: technical.status === 'pass' && technical.representative,
-        filesReady,
-        mode,
-        checkedAt: now(),
-        issues,
-        technical,
-        summary:
-          mode === 'generated_art'
-            ? technical.status === 'pass'
-              ? 'Technical check passed for representative row art.'
-              : 'Technical check failed for representative row art.'
-            : 'Fixture art can exercise the route. It is not a technical pass.',
-      };
-      run.qa = report;
-      await writeJson(run.paths.qaReportPath, report);
-      return saveRun(run);
+        const representative = mode === 'generated_art';
+        const technical = {
+          status: issues.length === 0 ? ('pass' as const) : ('fail' as const),
+          representative: representative && issues.length === 0,
+          issues,
+        };
+        const report: SpriteAtlasQaReport = {
+          ok: technical.status === 'pass' && technical.representative,
+          filesReady,
+          mode,
+          checkedAt: now(),
+          issues,
+          technical,
+          summary:
+            mode === 'generated_art'
+              ? technical.status === 'pass'
+                ? 'Technical check passed for representative row art.'
+                : 'Technical check failed for representative row art.'
+              : 'Fixture art can exercise the route. It is not a technical pass.',
+        };
+        run.qa = report;
+        await writeJson(run.paths.qaReportPath, report);
+        return saveRun(run);
+      });
     },
-    async recordRowDispatch(runId, rowId, jobId) {
+    acceptVisualReview(runId) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        run.visualReview = { status: 'accepted', acceptedAt: now() };
+        return saveRun(run);
+      });
+    },
+    async validateRowDispatch(runId, rowId) {
       const run = await getRun(runId);
-      if (!run) return null;
+      if (!run) {
+        return { code: 'run_not_found', message: `Sprite Atlas run ${runId} was not found.` };
+      }
       const row = run.rows.find((item) => item.id === rowId);
-      if (!row) return null;
-      const persistentJobId = jobId.trim();
-      if (!persistentJobId) {
-        throw new SpriteAtlasActionError('job_missing', 'Queue needs a provider job id.');
+      if (!row) {
+        return { code: 'row_not_found', message: `${run.title} has no row named ${rowId}.` };
       }
       if (
         run.contract.workflowLane === 'animation' &&
         !isSpriteAtlasIdleRow(row.id) &&
         !run.anchor
       ) {
-        throw new SpriteAtlasActionError(
-          'anchor_required',
-          `Import an idle row before queueing ${row.id}.`,
-        );
+        return {
+          code: 'anchor_required',
+          message: `Import an idle row before queueing ${row.id}.`,
+        };
       }
-      const timestamp = now();
-      const job: SpriteAtlasRowHandoffJob = {
-        jobId: persistentJobId,
-        runId: run.id,
-        rowId: row.id,
-        status: 'ready',
-        requestPath: run.paths.requestPath,
-        promptPath: row.promptPath,
-        layoutGuidePath: row.layoutGuidePath,
-        identityAnchorPath: run.rows.find((item) => item.id === run.anchor?.rowId)?.rawPath ?? null,
-        expectedOutputPath: path.join(run.paths.rawDir, `${safeSegment(row.id)}.png`),
-        outboxPattern: `${safeSegment(persistentJobId)}-${safeSegment(row.id)}.png`,
-        createdAt: timestamp,
-      };
-      await writeJson(
-        path.join(run.paths.handoffInboxDir, `${safeSegment(persistentJobId)}.json`),
-        job,
-      );
-      row.jobId = persistentJobId;
-      row.status = 'generating';
-      row.blocked = null;
-      row.updatedAt = timestamp;
-      reopenRunForRows(run);
-      return saveRun(run);
+      return null;
     },
-    async acceptVisualReview(runId) {
-      const run = await getRun(runId);
-      if (!run) return null;
-      run.visualReview = { status: 'accepted', acceptedAt: now() };
-      return saveRun(run);
+    recordRowDispatch(runId, rowId, jobIds) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        const row = run?.rows.find((item) => item.id === rowId);
+        if (!run || !row) return null;
+        const ids = [...new Set(jobIds.map((jobId) => jobId.trim()).filter(Boolean))];
+        if (ids.length === 0) return run;
+        const timestamp = now();
+        const isRetry = ids.every((jobId) => row.dispatch?.jobIds.includes(jobId));
+        if (isRetry) {
+          // An imported row keeps its strip. A retried sibling stays in the Catalog.
+          if (!isAwaitingRow(row) || row.status === 'generating') return run;
+        } else {
+          row.dispatch = { jobIds: ids, dispatchedAt: timestamp };
+          row.jobId = ids[0]!;
+          reopenRunForRows(run);
+        }
+        row.status = 'generating';
+        row.blocked = null;
+        row.updatedAt = timestamp;
+        return saveRun(run);
+      });
+    },
+    settleRowJob(runId, rowId, job, lookup) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        const row = run?.rows.find((item) => item.id === rowId);
+        if (!run || !row) return false;
+        const before = runFingerprint(run);
+        await settleRowJobInRun(run, row, job.id, job, lookup);
+        if (runFingerprint(run) === before) return false;
+        await saveRun(run);
+        return true;
+      });
+    },
+    reconcileRun(runId, lookup) {
+      return withRunLock(runId, async () => {
+        const run = await getRun(runId);
+        if (!run) return null;
+        const before = runFingerprint(run);
+        for (const row of run.rows) {
+          for (const jobId of row.dispatch?.jobIds ?? []) {
+            await settleRowJobInRun(run, row, jobId, lookup.getJob(jobId), lookup);
+          }
+        }
+        if (runFingerprint(run) === before) return { run, changed: false };
+        return { run: await saveRun(run), changed: true };
+      });
     },
   };
 }

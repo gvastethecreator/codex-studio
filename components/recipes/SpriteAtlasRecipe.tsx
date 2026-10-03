@@ -5,6 +5,7 @@ import React from 'react';
 import {
   WarningTriangle as AlertTriangle,
   Check,
+  DataTransferBoth,
   NavArrowDown as ChevronDown,
   List as ClipboardList,
   Import as FileImport,
@@ -39,15 +40,14 @@ import {
   getSpriteAtlasFrameUrl,
   getSpriteAtlasLayoutGuideUrl,
   getSpriteAtlasRowPrompt,
+  getSpriteAtlasRun,
   importSpriteAtlasRow,
   listSpriteAtlasPresets,
   listSpriteAtlasRuns,
+  reconcileSpriteAtlasRun,
   runSpriteAtlasQa,
 } from '../../services/studio-api/spriteAtlas';
-import {
-  spriteAtlasRunCoordinator,
-  type SpriteAtlasReadyImport,
-} from '../../services/spriteAtlasRunCoordinator';
+import { createStudioEventStream } from '../../services/studioEventSource';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface SpriteAtlasRecipeProps {
@@ -284,7 +284,6 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     'checker',
   );
   const [playbackFrame, setPlaybackFrame] = React.useState(1);
-  const [readyImports, setReadyImports] = React.useState<SpriteAtlasReadyImport[]>([]);
   const [assetKindFilter, setAssetKindFilter] = React.useState<AssetKindFilter>('all');
   const [rowQuery, setRowQuery] = React.useState('');
   const [rowStatusFilter, setRowStatusFilter] =
@@ -421,41 +420,41 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     };
   }, [selectedRowKey, selectedRunId]);
 
-  let generatingKey = '';
-  if (activeRun) {
-    const jobIds: string[] = [];
-    for (const row of activeRun.rows) {
-      if (row.status === 'generating' && row.jobId) jobIds.push(row.jobId);
-    }
-    generatingKey = jobIds.join(',');
-  }
+  const applyRun = React.useCallback((run: SpriteAtlasRun) => {
+    setActiveRun((current) => (current?.id === run.id ? run : current));
+    setRuns((current) => current.map((item) => (item.id === run.id ? run : item)));
+  }, []);
 
-  const catalogSignature = images.map((image) => image.id).join(',');
+  const refetchRun = React.useCallback(
+    async (runId: string) => {
+      try {
+        applyRun(await getSpriteAtlasRun(runId));
+      } catch (err) {
+        setError(err instanceof Error ? err.message : String(err));
+      }
+    },
+    [applyRun],
+  );
 
+  // The backend reconciles rows. The view refetches when it reports a change or may have missed one.
   React.useEffect(() => {
-    if (!activeRun || !generatingKey) {
-      setReadyImports([]);
-      return;
-    }
-    let cancelled = false;
-    void spriteAtlasRunCoordinator
-      .reconcile(activeRun)
-      .then((result) => {
-        if (cancelled) return;
-        setReadyImports(result.ready);
-        if (result.run !== activeRun) {
-          setActiveRun(result.run);
-          setRuns((current) => current.map((run) => (run.id === result.run.id ? result.run : run)));
-        }
-      })
-      .catch((err) => {
-        if (!cancelled) setError(err instanceof Error ? err.message : String(err));
-      });
+    if (!selectedRunId) return;
+    const runId = selectedRunId;
+    const stream = createStudioEventStream();
+    const unsubscribers = [
+      stream.onWorkflowRunUpdated((payload) => {
+        if (payload.recipeId === 'sprite-atlas' && payload.runId === runId) void refetchRun(runId);
+      }),
+      stream.onConnectionChange((connected) => {
+        if (connected) void refetchRun(runId);
+      }),
+      stream.onRevisionGap?.(() => void refetchRun(runId)),
+    ];
     return () => {
-      cancelled = true;
+      for (const unsubscribe of unsubscribers) unsubscribe?.();
+      stream.close();
     };
-    // isGenerating settles when a job ends, including failed jobs that add no catalog image.
-  }, [activeRun, generatingKey, catalogSignature, isGenerating]);
+  }, [refetchRun, selectedRunId]);
 
   React.useEffect(() => {
     setPlaybackFrame(1);
@@ -525,14 +524,6 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
       setError('Choose a provider before queueing this row.');
       return;
     }
-    if (
-      activeRun.contract.workflowLane === 'animation' &&
-      !isSpriteAtlasIdleRow(selectedRow.id) &&
-      !activeRun.anchor
-    ) {
-      setError(`Import an idle row before queueing ${selectedRow.id}.`);
-      return;
-    }
     if (!selectedPrompt || promptError) {
       setError(`The ${selectedRow.id} prompt is not loaded.`);
       return;
@@ -583,14 +574,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
               ? `${rowId} queued with Codex.`
               : `${rowId} queued with ${job.providerId ?? 'the selected provider'}.`,
           );
-          void spriteAtlasRunCoordinator
-            .recordDispatch(runId, rowId, job.id)
-            .then((run) => setActiveRun(run))
-            .catch((dispatchError) =>
-              setError(
-                dispatchError instanceof Error ? dispatchError.message : String(dispatchError),
-              ),
-            );
+          // The backend recorded the job on the row before it answered.
+          void refetchRun(runId);
         },
       },
     );
@@ -608,17 +593,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     );
   };
 
-  const handleConfirmReadyImport = (ready: SpriteAtlasReadyImport) => {
+  const handleSyncRun = () => {
     if (!activeRun) return;
-    void runAction(
-      () =>
-        importSpriteAtlasRow(activeRun.id, {
-          rowId: ready.rowId,
-          catalogImageId: ready.catalogImageId,
-        }),
-      'Row imported.',
-    );
-    setReadyImports((current) => current.filter((item) => item.rowId !== ready.rowId));
+    void runAction(() => reconcileSpriteAtlasRun(activeRun.id), 'Rows synced with their jobs.');
   };
 
   const handleBlockRow = () => {
@@ -1025,6 +1002,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                 >
                   <RefreshCw width={14} height={14} />
                 </IconButton>
+                <IconButton label="Sync" onClick={handleSyncRun} disabled={busy || !activeRun}>
+                  <DataTransferBoth width={14} height={14} />
+                </IconButton>
                 <IconButton
                   label={
                     activeProviderId
@@ -1187,20 +1167,6 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         </button>
                       ))}
                     </div>
-                    {readyImports.length > 0 && (
-                      <div className="grid gap-2">
-                        {readyImports.map((ready) => (
-                          <button
-                            key={ready.rowId}
-                            type="button"
-                            onClick={() => handleConfirmReadyImport(ready)}
-                            className="min-h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-3 text-left text-xs"
-                          >
-                            Import {ready.rowId} from the finished image
-                          </button>
-                        ))}
-                      </div>
-                    )}
                     {selectedRow &&
                     (selectedRow.status === 'extracted' || activeRun.status === 'qa_passed') ? (
                       <div

@@ -82,11 +82,11 @@ export async function acceptSpriteAtlasVisualReview(runId: string) {
   );
 }
 
-export async function recordSpriteAtlasRowDispatch(runId: string, rowId: string, jobId: string) {
-  return request<SpriteAtlasRun>(
-    `/api/sprite-atlas/runs/${encodeURIComponent(runId)}/row-dispatch`,
-    { method: 'POST', body: JSON.stringify({ rowId, jobId }) },
-  );
+/** Settles the run's dispatched rows from stored job state. */
+export async function reconcileSpriteAtlasRun(runId: string) {
+  return request<SpriteAtlasRun>(`/api/sprite-atlas/runs/${encodeURIComponent(runId)}/reconcile`, {
+    method: 'POST',
+  });
 }
 
 export function getSpriteAtlasLayoutGuideUrl(runId: string, rowId: string) {

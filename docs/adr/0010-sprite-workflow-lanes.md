@@ -14,6 +14,8 @@ Sprite Atlas import keeps a row strip untouched when it already matches the decl
 - The import is blocked when a slot is under 8 px, or when the art would fill less than half of the cell on one side.
 - The original provider image and its hash are kept. The row state and `manifest.json` record `normalized`, the source size, the kernel, and the fit.
 
+The backend auto-import of a finished row job uses the same normalization.
+
 Compose uses the stored strips as they are. `qa_passed` means a representative technical check passed. A fixture and a visual accept stay separate facts.
 
 New atlas runs ask for native transparency. `static-items` is not packed in the app. That lane stays with `spritesheet-expert`.

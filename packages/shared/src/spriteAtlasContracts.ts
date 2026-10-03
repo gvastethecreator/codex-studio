@@ -177,9 +177,17 @@ export interface SpriteAtlasRowState {
   sourceSha256: string | null;
   normalization: SpriteAtlasRowNormalization | null;
   catalogImageId: string | null;
+  /** The primary job of the current dispatch, or the handoff job id. Display only. */
   jobId: string | null;
+  /** Provider jobs the backend reconciles into this row. A new batch replaces the set. */
+  dispatch: SpriteAtlasRowDispatch | null;
   blocked: SpriteAtlasBlockedReason | null;
   updatedAt: string;
+}
+
+export interface SpriteAtlasRowDispatch {
+  jobIds: string[];
+  dispatchedAt: string;
 }
 
 export interface SpriteAtlasTechnicalCheck {

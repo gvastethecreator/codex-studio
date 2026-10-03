@@ -4,7 +4,9 @@ import path from 'node:path';
 import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 
+import { createGenerationTaskSpec, type Job } from '../../../packages/shared/src';
 import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
+import { createSpriteAtlasService } from './spriteAtlasService';
 
 async function writeStrip(filePath: string, frames: number, cellWidth: number, cellHeight: number) {
   await sharp({
@@ -248,7 +250,16 @@ describe('spriteAtlasRoutes', () => {
     const root = mkdtempSync(path.join(os.tmpdir(), 'sprite-atlas-exact-'));
     const outsideRoot = mkdtempSync(path.join(os.tmpdir(), 'sprite-atlas-outside-'));
     try {
-      const routes = createSpriteAtlasRoutes({ readLibraryDir: () => root });
+      const service = createSpriteAtlasService({ readLibraryDir: () => root });
+      const storedJobs = new Map<string, Job>();
+      const routes = createSpriteAtlasRoutes({
+        readLibraryDir: () => root,
+        service,
+        jobLookup: {
+          getJob: (jobId) => storedJobs.get(jobId) ?? null,
+          getCatalogImageByJobId: () => null,
+        },
+      });
       const createResponse = await routes.request('/runs', {
         method: 'POST',
         body: JSON.stringify({
@@ -364,12 +375,7 @@ describe('spriteAtlasRoutes', () => {
 
       // Re-queueing a row leaves the composed and accepted state.
       await routes.request(`/runs/${run.id}/visual-review`, { method: 'POST' });
-      const redispatch = await routes.request(`/runs/${run.id}/row-dispatch`, {
-        method: 'POST',
-        body: JSON.stringify({ rowId: 'run', jobId: 'job-retry' }),
-        headers: json,
-      });
-      await expect(redispatch.json()).resolves.toMatchObject({
+      await expect(service.recordRowDispatch(run.id, 'run', ['job-retry'])).resolves.toMatchObject({
         status: 'waiting_for_rows',
         qa: null,
         visualReview: { status: 'pending' },
@@ -378,6 +384,37 @@ describe('spriteAtlasRoutes', () => {
           expect.objectContaining({ id: 'run', status: 'generating', jobId: 'job-retry' }),
         ]),
       });
+
+      // Sync settles the row from the stored job.
+      storedJobs.set('job-retry', {
+        id: 'job-retry',
+        status: 'failed',
+        error: 'Provider error.',
+        sourceSpec: createGenerationTaskSpec({
+          id: 'spec-retry',
+          task: 'image_generate',
+          prompt: 'run',
+          recipeId: 'sprite-atlas',
+          recipeParams: { runId: run.id, rowId: 'run' },
+        }),
+      } as Job);
+      const synced = await routes.request(`/runs/${run.id}/reconcile`, { method: 'POST' });
+      await expect(synced.json()).resolves.toMatchObject({
+        status: 'blocked',
+        rows: expect.arrayContaining([
+          expect.objectContaining({
+            id: 'run',
+            status: 'blocked',
+            blocked: expect.objectContaining({
+              reasonKind: 'runner_failed',
+              userMessage: 'The run job failed. Provider error.',
+            }),
+          }),
+        ]),
+      });
+      expect((await routes.request('/runs/missing/reconcile', { method: 'POST' })).status).toBe(
+        404,
+      );
 
       // Compose still rejects a strip that changed size after import.
       const reimported = await routes.request(`/runs/${run.id}/import-row`, {
