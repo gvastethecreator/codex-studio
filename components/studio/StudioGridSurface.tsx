@@ -2,7 +2,9 @@ import type { LibraryFilters } from '../../hooks/useLibraryUrlState';
 import React, { useCallback } from 'react';
 
 import type { AspectRatio, GeneratedImage, GeneratedImageWithConfig } from '../../types';
+import { getCatalogRegenerateIssue } from '../../utils/catalogImageGenerationConfig';
 import { downloadMultipleImagesAsZip } from '../../utils/fileUtils';
+import { useToastUi } from '../../contexts/GlobalContext';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { FormatPreview } from '../FormatPreview';
 import { ImageGrid } from '../ImageGrid';
@@ -77,14 +79,18 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
   generation,
   catalog,
 }) => {
+  const { addToast } = useToastUi();
+  // Regenerate reuses the result's own saved sources, never the composer's current references.
   const handleGridRegenerate = useCallback(
     (config: GeneratedImageWithConfig['config']) => {
-      handleGenerate(config.prompt, config, {
-        preventModal: true,
-        useCurrentAttachments: true,
-      });
+      const issue = getCatalogRegenerateIssue(config);
+      if (issue) {
+        addToast(issue, 'info');
+        return;
+      }
+      handleGenerate(config.prompt, config, { preventModal: true });
     },
-    [handleGenerate],
+    [addToast, handleGenerate],
   );
 
   const handleGridSelectAll = useCallback(

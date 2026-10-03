@@ -1,3 +1,4 @@
+import { resolveProviderSupportsTransparentBackground } from '../../lib/composerProviderProjection';
 import { resolveGenerationBackground } from '../../lib/generationBackground';
 import type { ImageGenerationConfig } from '../../types';
 
@@ -11,8 +12,8 @@ export function OutputBackgroundControl({
   transport?: string;
   onChange: (value: 'workflow' | 'transparent') => void;
 }) {
-  const supported = providerId === 'chatgpt';
-  const removing = resolveGenerationBackground(config) === 'transparent';
+  const supported = resolveProviderSupportsTransparentBackground(providerId);
+  const removing = supported && resolveGenerationBackground(config) === 'transparent';
   const hasSource = config.attachments.length > 0;
   return (
     <label className="create-field output-background-control">

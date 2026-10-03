@@ -1,7 +1,8 @@
 import type { CatalogImage } from '../packages/shared/src/types';
 import { parsePromptTransport } from '../packages/shared/src/promptTransport';
+import { getGenerationRequirement } from '../packages/shared/src/generationRequirements';
 import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
-import type { ImageGenerationConfig, ImageSize, RecipeId } from '../types';
+import type { Attachment, ImageGenerationConfig, ImageSize, RecipeId } from '../types';
 import { normalizeImageGenRatio } from './imageGenSizing';
 import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
 import { isRegisteredRecipeId } from '../lib/recipeIds';
@@ -54,6 +55,39 @@ function normalizeRecipeId(candidate: unknown, recipeContext: string): RecipeId 
   return parseRecipeIdFromContext(recipeContext);
 }
 
+/** Source and reference assets saved with the job, so Regenerate replays the same inputs. */
+function readSourceAttachments(record: RecordLike | null, catalogId: string): Attachment[] {
+  const assets = Array.isArray(record?.attachments) ? record.attachments : [];
+  return assets.flatMap((asset, index) => {
+    if (!isRecordLike(asset) || (asset.role !== 'input' && asset.role !== 'reference')) return [];
+    const localPath = readString(asset, 'localPath').trim();
+    const sourceUrl = readString(asset, 'sourceUrl').trim();
+    const dataUrl = readString(asset, 'dataUrl').trim();
+    if (!localPath && !sourceUrl && !dataUrl) return [];
+    return [
+      {
+        id: `source-${catalogId}-${index}`,
+        name: readString(asset, 'name') || `source-${index + 1}`,
+        dataUrl: dataUrl || sourceUrl,
+        ...(localPath ? { localPath } : {}),
+        ...(sourceUrl ? { sourceUrl } : {}),
+        strength: readNumber(asset, 'strength') ?? 0.5,
+      },
+    ];
+  });
+}
+
+/** Regenerate never borrows composer references; a missing required source stops it. */
+export function getCatalogRegenerateIssue(config: ImageGenerationConfig) {
+  const requirement = getGenerationRequirement({
+    ...config,
+    referenceCount: config.attachments.length,
+  });
+  return requirement?.field === 'source'
+    ? 'The source image for this result is no longer available. Add it again to regenerate.'
+    : null;
+}
+
 export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): ImageGenerationConfig {
   const storedConfig = isRecordLike(asset.generationConfig) ? asset.generationConfig : null;
   const parsedPrompt = parsePromptTransport(asset.prompt);
@@ -90,7 +124,7 @@ export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): Imag
     recipeContext,
     recipeId,
     recipeParams: readRecipeParams(storedConfig),
-    attachments: [],
+    attachments: readSourceAttachments(storedConfig, asset.id),
     aspectRatio,
     imageSize: normalizeImageSize(
       readString(storedConfig, 'imageSize') || asset.imageSize || parsedPrompt.imageSize,

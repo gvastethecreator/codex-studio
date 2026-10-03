@@ -19,6 +19,28 @@ type GenerateOptions = {
   onJobCreated?: (job: StudioJob) => void;
 };
 
+const QUALITY_NOTES_HEADING = 'Quality notes:';
+const QUALITY_NOTE =
+  'Preserve the requested subject, composition, lighting, material detail, and aspect ratio.';
+
+/**
+ * Add one bullet under a heading block in the prompt. No model is called.
+ * Returns the prompt unchanged when the bullet is already there.
+ */
+export function addPromptNote(prompt: string, heading: string, note: string) {
+  const lines = prompt.trim().split('\n');
+  const bullet = `- ${note.trim()}`;
+  const headingIndex = lines.indexOf(heading);
+  if (headingIndex < 0) return [prompt.trim(), '', heading, bullet].join('\n').trim();
+  let end = headingIndex + 1;
+  while (end < lines.length && lines[end]!.startsWith('- ')) {
+    if (lines[end] === bullet) return prompt.trim();
+    end += 1;
+  }
+  lines.splice(end, 0, bullet);
+  return lines.join('\n');
+}
+
 function cloneGenerationAttachments(attachments: Attachment[]): Attachment[] {
   return attachments.map((attachment) => ({ ...attachment }));
 }
@@ -181,23 +203,19 @@ export function useStudioGenerationActions({
     try {
       const currentPrompt = (generationConfigRef.current.prompt ?? '').trim();
       if (!currentPrompt) {
-        addToast('Type a prompt before refining it', 'info');
+        addToast('Type a prompt before adding quality notes', 'info');
         return;
       }
 
-      updateGenerationConfig(
-        'prompt',
-        [
-          currentPrompt,
-          '',
-          'Refinement notes:',
-          '- High-quality local image generation through Codex ImageGen.',
-          '- Preserve the requested subject, composition, lighting, material detail, and aspect ratio.',
-        ].join('\n'),
-      );
-      addToast('Prompt prepared for Codex ImageGen', 'success');
+      const nextPrompt = addPromptNote(currentPrompt, QUALITY_NOTES_HEADING, QUALITY_NOTE);
+      if (nextPrompt === currentPrompt) {
+        addToast('Quality notes are already in the prompt', 'info');
+        return;
+      }
+      updateGenerationConfig('prompt', nextPrompt);
+      addToast('Quality notes added to the prompt', 'success');
     } catch (error) {
-      addToast(error instanceof Error ? error.message : 'Prompt refinement failed', 'error');
+      addToast(error instanceof Error ? error.message : 'Could not add quality notes', 'error');
     } finally {
       setIsEnhancingPrompt(false);
     }

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { CODEX_HTTP_MODEL } from '../packages/shared/src/codexExecutionContract';
 import {
   buildComposerProviderProjection,
+  resolveProviderImageSize,
   resolveProviderMaxInputImages,
 } from './composerProviderProjection';
 
@@ -139,6 +140,29 @@ describe('composerProviderProjection', () => {
       buildComposerProviderProjection({ ...input, codexAvailableTransports: ['codex_app_server'] })
         .generateBlock?.code,
     ).toBe('codex_transport_unavailable');
+  });
+
+  it('blocks Generate before the job when the recipe does not run on the provider', () => {
+    const input = {
+      providerId: 'fal' as const,
+      recipeId: 'styles' as const,
+      aspectRatio: '1:1' as const,
+      attachments: emptyAttachments,
+      grokCanExecute: false,
+      codexModelCatalog: null,
+      executionModel: 'gpt-5.4-mini',
+      executionReasoningEffort: 'low',
+      executionSpeed: 'standard' as const,
+      catalogError: null,
+    };
+    expect(buildComposerProviderProjection(input).generateBlock).toEqual({
+      code: 'unsupported_recipe_provider',
+      message:
+        'Styles does not run on fal.ai. Switch provider to Codex, ChatGPT, Grok, Google or Antigravity.',
+    });
+    expect(buildComposerProviderProjection({ ...input, recipeId: null }).generateBlock).toBeNull();
+    expect(resolveProviderImageSize('codex', '4K')).toBe('1K');
+    expect(resolveProviderImageSize('chatgpt', '4K')).toBe('4K');
   });
 
   it('caps fal output count at 4 and google at 1', () => {

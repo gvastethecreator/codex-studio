@@ -41,7 +41,10 @@ interface CodexModelCatalogState {
 const LEGACY_DEFAULT_CODEX_EXECUTION_MODEL = 'gpt-5.4-mini';
 
 export function buildGeneratedImageContextAttachment(
-  image: Pick<GeneratedImageWithConfig, 'id' | 'src' | 'localPath' | 'sourceUrl'>,
+  image: Pick<
+    GeneratedImageWithConfig,
+    'id' | 'src' | 'localPath' | 'sourceUrl' | 'width' | 'height'
+  >,
   now = Date.now,
 ): Attachment {
   const isAbsoluteOrData = image.src.startsWith('data:') || /^https?:\/\//i.test(image.src);
@@ -54,6 +57,7 @@ export function buildGeneratedImageContextAttachment(
     localPath,
     sourceUrl: image.sourceUrl?.trim() || dataUrl,
     strength: 0.5,
+    ...(image.width && image.height ? { width: image.width, height: image.height } : {}),
   };
 }
 const LEGACY_DEFAULT_CODEX_EXECUTION_REASONING_EFFORT = 'low';
@@ -342,6 +346,9 @@ export const useGenerationConfig = ({
               name: attachmentName,
               dataUrl,
               strength: 0.5,
+              ...(contextImage.width && contextImage.height
+                ? { width: contextImage.width, height: contextImage.height }
+                : {}),
             };
 
             if (isInlineImageDataUrl(dataUrl)) {
@@ -377,7 +384,12 @@ export const useGenerationConfig = ({
               ...prev,
               attachments: prev.attachments.map((current) =>
                 current.id === attachment.id
-                  ? { ...attachment, strength: current.strength }
+                  ? {
+                      ...attachment,
+                      name:
+                        current.name === pendingAttachment.name ? attachment.name : current.name,
+                      strength: current.strength,
+                    }
                   : current,
               ),
             }));

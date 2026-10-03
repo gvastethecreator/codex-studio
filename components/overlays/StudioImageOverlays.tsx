@@ -1,6 +1,8 @@
 import { useGenerationDraft } from '../../contexts/GenerationContext';
+import { useToastUi } from '../../contexts/GlobalContext';
 import { OutputBackgroundControl } from '../create/OutputBackgroundControl';
 import type { Attachment } from '../../types';
+import { getCatalogRegenerateIssue } from '../../utils/catalogImageGenerationConfig';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { Suspense } from 'react';
 
@@ -44,6 +46,7 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps & { provider
   imageEditNotice,
   requireMask = true,
 }) => {
+  const { addToast } = useToastUi();
   return (
     <>
       {modalImage && (
@@ -53,12 +56,14 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps & { provider
           activeGenerationConfig={activeGenerationConfig}
           onClose={closeModal}
           onDelete={handleDelete}
-          onRegenerate={(config) =>
-            handleGenerate(config.prompt, config, {
-              preventModal: true,
-              useCurrentAttachments: true,
-            })
-          }
+          onRegenerate={(config) => {
+            const issue = getCatalogRegenerateIssue(config);
+            if (issue) {
+              addToast(issue, 'info');
+              return;
+            }
+            handleGenerate(config.prompt, config, { preventModal: true });
+          }}
           onAddToContext={(image) => {
             handleAddToContext(image);
             closeModal();

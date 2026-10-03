@@ -25,7 +25,6 @@ import {
   Plus,
   Crop as Ratio,
   Square as RectangleHorizontal,
-  ScanBarcode as Scan,
   ControlSlider as SlidersHorizontal,
   SendDiagonal as Send,
   ShieldAlert,
@@ -44,7 +43,13 @@ import {
   normalizeCodexReasoningEffort,
   normalizeCodexSpeed,
 } from '../lib/codexExecution';
-import { buildComposerProviderProjection } from '../lib/composerProviderProjection';
+import {
+  buildComposerProviderProjection,
+  resolveProviderImageSize,
+  resolveProviderSupportsTransparentBackground,
+} from '../lib/composerProviderProjection';
+import { resolveGenerationBackground } from '../lib/generationBackground';
+import { addPromptNote } from '../hooks/useStudioGenerationActions';
 import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
 import type {
   CodexModel,
@@ -187,6 +192,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
   }) => {
     const { addToast } = useToastUi();
     const containerRef = useRef<HTMLDivElement>(null);
+    const toolScrollRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+      if (toolScrollRef.current) toolScrollRef.current.scrollTop = 0;
+    }, [interactionScope, layout]);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const textareaRef = useRef<HTMLTextAreaElement>(null);
     const negativeButtonRef = useRef<HTMLButtonElement>(null);
@@ -393,12 +402,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     }, [generationConfig.batchCount, maxOutputCount, updateConfig]);
 
+    const removesBackground =
+      resolveGenerationBackground({ ...generationConfig, recipeId: activeRecipe }) ===
+      'transparent';
+    const canRemoveBackground = resolveProviderSupportsTransparentBackground(activeProviderId);
     useEffect(() => {
-      if (selectedCodexTransport === 'subscription_http') return;
-      if (generationConfig.imageSize === '2K' || generationConfig.imageSize === '4K') {
-        updateConfig('imageSize', '1K');
-      }
-    }, [generationConfig.imageSize, selectedCodexTransport, updateConfig]);
+      if (canRemoveBackground || !removesBackground) return;
+      updateConfig('outputBackground', 'workflow');
+      addToast('Remove background needs ChatGPT. Background set to Maintain background.', 'info');
+    }, [addToast, canRemoveBackground, removesBackground, updateConfig]);
 
     const requirement = getGenerationRequirement({
       ...generationConfig,
@@ -435,7 +447,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       updateConfig('prompt', localPrompt);
       onGenerate(
         trimmedPrompt,
-        { recipeId: activeRecipe, codexTransport: selectedCodexTransport },
+        {
+          recipeId: activeRecipe,
+          codexTransport: selectedCodexTransport,
+          imageSize: resolveProviderImageSize(activeProviderId, generationConfig.imageSize),
+        },
         { preventModal: true },
       );
 
@@ -447,6 +463,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       localPrompt,
       requirement,
       activeRecipe,
+      activeProviderId,
+      generationConfig.imageSize,
       generationConfig.recipeParams,
       updateConfig,
       onGenerate,
@@ -457,53 +475,24 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     ]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
-      if (layout === 'rail') {
-        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) e.preventDefault();
-        return;
-      }
+      if (layout === 'rail') return;
       if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
         handleTriggerGenerate();
       }
     };
 
-    const handleAnalyzeReferences = () => {
-      if (generationConfig.attachments.length === 0) {
-        addToast('Add an image reference before analyzing attachments', 'info');
-        return;
-      }
-      const notes = [
-        'Reference notes:',
-        ...generationConfig.attachments.map(
-          (attachment, index) =>
-            `- ${index === 0 ? 'Source image' : `Detail reference ${index}`}: ${attachment.name}. Preserve identity, clothing, and palette.`,
-        ),
-        'Use the attached images as the visual source of truth.',
-      ].join('\n');
-      const nextPrompt = [localPrompt.trim(), notes].filter(Boolean).join('\n\n');
-      setLocalPrompt(nextPrompt);
-      updateConfig('prompt', nextPrompt);
-      addToast('Reference notes added to the prompt', 'success');
-    };
-
     const handleMagicEdit = async () => {
       if (!magicInstruction.trim() || isRefactoring) return;
       setIsRefactoring(true);
       try {
-        const newPrompt = [
-          localPrompt.trim(),
-          '',
-          `Codex refinement: ${magicInstruction.trim()}`,
-          'Keep the original intent and apply this refinement in the next local image generation.',
-        ]
-          .filter(Boolean)
-          .join('\n');
+        const newPrompt = addPromptNote(localPrompt, 'Refine notes:', magicInstruction);
         setLocalPrompt(newPrompt);
         updateConfig('prompt', newPrompt);
         setMagicInstruction('');
         setIsRefineOpen(false);
       } catch (e) {
-        addToast(e instanceof Error ? e.message : 'Prompt refinement failed', 'error');
+        addToast(e instanceof Error ? e.message : 'Could not add the refine note', 'error');
       } finally {
         setIsRefactoring(false);
       }
@@ -524,12 +513,18 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         if (document.querySelector('[aria-modal="true"]')) return;
         if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
           event.preventDefault();
-          handleTriggerGenerate();
+          if (mode === 'context-only') {
+            containerRef.current
+              ?.querySelector<HTMLButtonElement>('.recipe-primary-action button')
+              ?.click();
+          } else {
+            handleTriggerGenerate();
+          }
         }
       };
       document.addEventListener('keydown', handleGlobalGenerate);
       return () => document.removeEventListener('keydown', handleGlobalGenerate);
-    }, [handleTriggerGenerate, layout]);
+    }, [handleTriggerGenerate, layout, mode]);
 
     const currentSizes = executionImageSizeOptions;
 
@@ -722,7 +717,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           {fileInput}
 
           {isRail ? (
-            <div className="create-tool-scroll min-h-0 flex-1" onScroll={() => closeAllMenus()}>
+            <div ref={toolScrollRef} className="create-tool-scroll min-h-0 flex-1">
               {!sourceFirst || isContextOnly ? railTools : null}
               {isContextOnly ? (
                 <>
@@ -797,18 +792,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <div className="create-section-header">
                       <label htmlFor="create-prompt-input">Prompt</label>
                       <div className="create-prompt-tools">
-                        <Tooltip content="Analyze references">
-                          <button
-                            type="button"
-                            onClick={handleAnalyzeReferences}
-                            aria-label="Analyze references"
-                            className="create-icon-button"
-                          >
-                            <Scan width={16} height={16} />
-                          </button>
-                        </Tooltip>
                         <div className="relative">
-                          <Tooltip content="Edit with AI (Refine)">
+                          <Tooltip content="Add refine notes">
                             <button
                               ref={refineButtonRef}
                               type="button"
@@ -816,7 +801,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                 setIsRefineOpen(!isRefineOpen);
                                 setIsNegativeOpen(false);
                               }}
-                              aria-label="Open edit instructions"
+                              aria-label="Add refine notes"
                               aria-haspopup="dialog"
                               aria-expanded={isRefineOpen}
                               className={`create-icon-button ${isRefineOpen ? 'is-active' : ''}`}
@@ -832,14 +817,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             triggerRef={refineButtonRef}
                             placement="bottom-right"
                             role="dialog"
-                            aria-label="Edit instructions"
+                            aria-label="Refine notes"
                             className="studio-mobile-popover z-[100] w-72 p-3"
                           >
                             <label
                               htmlFor="rail-magic-edit-input"
                               className="mb-2 block text-[length:var(--wbp-label)] font-bold tracking-normal text-zinc-500"
                             >
-                              Instructions to Edit
+                              Refine note
                             </label>
                             <div className="flex gap-2">
                               <input
@@ -850,14 +835,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                 placeholder="e.g. Make it cyberpunk style..."
                                 autoComplete="off"
                                 onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
-                                aria-label="Edit instructions"
+                                aria-label="Refine note"
                                 className="h-10 flex-1 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
                               />
                               <button
                                 type="button"
                                 onClick={handleMagicEdit}
                                 disabled={isRefactoring}
-                                aria-label="Apply edit instructions"
+                                aria-label="Add refine note"
                                 className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                               >
                                 {isRefactoring ? (
@@ -869,12 +854,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             </div>
                           </DemandMountedGsapDropdown>
                         </div>
-                        <Tooltip content="Auto Enhance Prompt">
+                        <Tooltip content="Add quality notes">
                           <button
                             type="button"
                             onClick={onEnhancePrompt}
                             disabled={isEnhancingPrompt}
-                            aria-label="Enhance prompt"
+                            aria-label="Add quality notes"
                             className={`create-icon-button ${isEnhancingPrompt ? 'is-active' : ''}`}
                           >
                             {isEnhancingPrompt ? (
@@ -1342,9 +1327,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
                   {!isContextOnly ? (
                     <>
-                      {/* 2. REFINE (Edit with AI) */}
+                      {/* 2. Refine notes */}
                       <div className="relative">
-                        <Tooltip content="Edit with AI (Refine)">
+                        <Tooltip content="Add refine notes">
                           <button
                             ref={refineButtonRef}
                             type="button"
@@ -1352,7 +1337,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               setIsRefineOpen(!isRefineOpen);
                               setIsNegativeOpen(false);
                             }}
-                            aria-label="Open edit instructions"
+                            aria-label="Add refine notes"
                             aria-haspopup="dialog"
                             aria-expanded={isRefineOpen}
                             className={`${iconBtnClass} ${isRefineOpen ? activeIconBtnClass : ''}`}
@@ -1368,14 +1353,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           triggerRef={refineButtonRef}
                           placement="top-right"
                           role="dialog"
-                          aria-label="Edit instructions"
+                          aria-label="Refine notes"
                           className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-72 p-3"
                         >
                           <label
                             htmlFor="magic-edit-input"
                             className="text-[length:var(--wbp-label)] font-bold text-zinc-500 tracking-normal block mb-2"
                           >
-                            Instructions to Edit
+                            Refine note
                           </label>
                           <div className="flex gap-2">
                             <input
@@ -1387,14 +1372,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               autoComplete="off"
                               ref={(el) => el?.focus()}
                               onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
-                              aria-label="Edit instructions"
+                              aria-label="Refine note"
                               className="h-10 flex-1 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
                             />
                             <button
                               type="button"
                               onClick={handleMagicEdit}
                               disabled={isRefactoring}
-                              aria-label="Apply edit instructions"
+                              aria-label="Add refine note"
                               className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                             >
                               {isRefactoring ? (
@@ -1407,13 +1392,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </DemandMountedGsapDropdown>
                       </div>
 
-                      {/* 3. ENHANCE (Action) */}
-                      <Tooltip content="Auto Enhance Prompt">
+                      {/* 3. Quality notes */}
+                      <Tooltip content="Add quality notes">
                         <button
                           type="button"
                           onClick={onEnhancePrompt}
                           disabled={isEnhancingPrompt}
-                          aria-label="Enhance prompt"
+                          aria-label="Add quality notes"
                           className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
                         >
                           {isEnhancingPrompt ? (
@@ -1532,14 +1517,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         placeholder="Make it sharper, warmer, cinematic..."
                         autoComplete="off"
                         onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
-                        aria-label="Edit instructions"
+                        aria-label="Refine note"
                         className="h-10 min-w-0 flex-1 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
                       />
                       <button
                         type="button"
                         onClick={handleMagicEdit}
                         disabled={isRefactoring}
-                        aria-label="Apply edit instructions"
+                        aria-label="Add refine note"
                         className="flex size-10 items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
                       >
                         {isRefactoring ? <CozyLoader size={18} /> : <Send width={12} height={12} />}
@@ -1551,7 +1536,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       type="button"
                       onClick={onEnhancePrompt}
                       disabled={isEnhancingPrompt}
-                      aria-label="Enhance prompt"
+                      aria-label="Add quality notes"
                       className="flex h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-white/2 bg-white/5 text-[length:var(--wbp-label)] font-semibold leading-none tracking-normal text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
                     >
                       {isEnhancingPrompt ? (
@@ -1559,7 +1544,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       ) : (
                         <Wand2 width={14} height={14} />
                       )}
-                      Enhance
+                      Quality notes
                     </button>
                   </div>
                 </div>
@@ -2061,7 +2046,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 </button>
               </Tooltip>
             ) : null}
-            {isRail ? (
+            {isRail && !isContextOnly ? (
               <div className="create-footer-meta">
                 <span className="create-local-status">
                   <span className="create-status-dot" aria-hidden="true" />

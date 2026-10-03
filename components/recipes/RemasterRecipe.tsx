@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo } from 'react';
 import {
   SunLight as Sun,
   Camera,
@@ -7,7 +7,8 @@ import {
   Fingerprint,
   Text as TextIcon,
 } from 'iconoir-react';
-import type { ImageGenerationConfig } from '../../types';
+import { RATIO_MAP } from '../../constants';
+import type { AspectRatio, ImageGenerationConfig } from '../../types';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { RecipeResults } from './RecipeWorkbenchContext';
@@ -52,41 +53,90 @@ const DEFAULT_PARAMS = {
   fidelity: getRecipeNumberDefault(REMASTER_DEFAULTS, 'fidelity', 100),
 };
 
+type RemasterParams = typeof DEFAULT_PARAMS;
+
+/** Reinterpret releases each preserve control to its correction counterpart. */
+const REINTERPRET_PARAMS: Partial<RemasterParams> = {
+  style: 'Realistic Reconstruction',
+  lighting: 'Lighting Correction',
+  camera: 'Texture Enhancement',
+  anatomy: 'Fix Anatomy',
+  color: 'Color Correction',
+  fidelity: 35,
+};
+
+/** Sources whose ratio was already applied, so a later manual ratio survives remounts. */
+const ratioAppliedSources = new Set<string>();
+
+function nearestAspectRatio(width: number, height: number): AspectRatio {
+  const target = Math.log(width / height);
+  const distance = (ratio: AspectRatio) => Math.abs(Math.log(RATIO_MAP[ratio]) - target);
+  return (Object.keys(RATIO_MAP) as AspectRatio[]).reduce((best, ratio) =>
+    distance(ratio) < distance(best) ? ratio : best,
+  );
+}
+
+function readRemasterParams(config: ImageGenerationConfig): RemasterParams {
+  const stored = config.recipeId === 'remaster' ? (config.recipeParams ?? {}) : {};
+  const text = (key: Exclude<keyof RemasterParams, 'fidelity'>) => {
+    const value = stored[key];
+    return typeof value === 'string' ? value : DEFAULT_PARAMS[key];
+  };
+  return {
+    style: text('style'),
+    lighting: text('lighting'),
+    camera: text('camera'),
+    anatomy: text('anatomy'),
+    text: text('text'),
+    color: text('color'),
+    fidelity: typeof stored.fidelity === 'number' ? stored.fidelity : DEFAULT_PARAMS.fidelity,
+  };
+}
+
 export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   config,
   updateConfig,
   isGenerating,
 }) => {
-  const [params, setParams] = useState(
-    () =>
-      ({
-        ...DEFAULT_PARAMS,
-        ...(config.recipeId === 'remaster' ? config.recipeParams : {}),
-      }) as typeof DEFAULT_PARAMS,
-  );
+  const stored = readRemasterParams(config);
+  const source = config.attachments[0];
+  const sourceId = source?.id;
+  const sourceRatio =
+    source?.width && source.height ? nearestAspectRatio(source.width, source.height) : null;
 
-  const recipeParams = useMemo(
+  useEffect(() => {
+    if (!sourceId || !sourceRatio || ratioAppliedSources.has(sourceId)) return;
+    ratioAppliedSources.add(sourceId);
+    updateConfig('aspectRatio', sourceRatio);
+  }, [sourceId, sourceRatio, updateConfig]);
+
+  const params = useMemo(
     () => ({
-      style: params.style,
-      lighting: params.lighting,
-      camera: params.camera,
-      anatomy: params.anatomy,
-      text: params.text,
-      color: params.color,
-      fidelity: params.fidelity,
+      style: stored.style,
+      lighting: stored.lighting,
+      camera: stored.camera,
+      anatomy: stored.anatomy,
+      text: stored.text,
+      color: stored.color,
+      fidelity: stored.fidelity,
     }),
     [
-      params.anatomy,
-      params.camera,
-      params.color,
-      params.fidelity,
-      params.lighting,
-      params.style,
-      params.text,
+      stored.anatomy,
+      stored.camera,
+      stored.color,
+      stored.fidelity,
+      stored.lighting,
+      stored.style,
+      stored.text,
     ],
   );
 
-  useRecipeContextRegistration(updateConfig, 'remaster', recipeParams);
+  useRecipeContextRegistration(updateConfig, 'remaster', params);
+
+  const setParams = useCallback(
+    (patch: Partial<RemasterParams>) => updateConfig('recipeParams', { ...params, ...patch }),
+    [params, updateConfig],
+  );
 
   const BottomDock = useMemo(
     () => (
@@ -96,16 +146,14 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             <button
               type="button"
               className="studio-ghost-control px-3 py-2"
-              onClick={() => setParams({ ...DEFAULT_PARAMS })}
+              onClick={() => setParams(DEFAULT_PARAMS)}
             >
               Restore safely
             </button>
             <button
               type="button"
               className="studio-ghost-control px-3 py-2"
-              onClick={() =>
-                setParams((p) => ({ ...p, style: 'Realistic Reconstruction', fidelity: 35 }))
-              }
+              onClick={() => setParams(REINTERPRET_PARAMS)}
             >
               Reinterpret
             </button>
@@ -130,10 +178,9 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
               aria-label="Fidelity value"
               value={params.fidelity}
               onChange={(event) =>
-                setParams((p) => ({
-                  ...p,
+                setParams({
                   fidelity: Math.max(0, Math.min(100, Number(event.target.value) || 0)),
-                }))
+                })
               }
               className="w-16 rounded border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-1"
             />
@@ -144,7 +191,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             max={FIDELITY_RANGE.max}
             step={FIDELITY_RANGE.step}
             value={params.fidelity}
-            onChange={(e) => setParams((p) => ({ ...p, fidelity: parseInt(e.target.value) }))}
+            onChange={(e) => setParams({ fidelity: parseInt(e.target.value) })}
             aria-label="Fidelity"
             className="w-full h-1 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-accent-500"
           />
@@ -155,7 +202,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             icon={<MonitorPlay width={14} height={14} />}
             label={params.style}
             options={CONTROL_OPTIONS.style}
-            onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
+            onSelect={(v) => setParams({ style: v })}
           />
         </div>
         <details className="recipe-advanced">
@@ -167,41 +214,41 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
               icon={<Sun width={14} height={14} />}
               label={params.lighting}
               options={CONTROL_OPTIONS.lighting}
-              onSelect={(v) => setParams((p) => ({ ...p, lighting: v }))}
+              onSelect={(v) => setParams({ lighting: v })}
             />
             <ControlDropdown
               title="Correction"
               icon={<Fingerprint width={14} height={14} />}
               label={params.anatomy}
               options={CONTROL_OPTIONS.anatomy}
-              onSelect={(v) => setParams((p) => ({ ...p, anatomy: v }))}
+              onSelect={(v) => setParams({ anatomy: v })}
             />
             <ControlDropdown
               title="Text Handling"
               icon={<TextIcon width={14} height={14} />}
               label={params.text}
               options={CONTROL_OPTIONS.text}
-              onSelect={(v) => setParams((p) => ({ ...p, text: v }))}
+              onSelect={(v) => setParams({ text: v })}
             />
             <ControlDropdown
               title="Color Grading"
               icon={<Palette width={14} height={14} />}
               label={params.color}
               options={CONTROL_OPTIONS.color}
-              onSelect={(v) => setParams((p) => ({ ...p, color: v }))}
+              onSelect={(v) => setParams({ color: v })}
             />
             <ControlDropdown
               title="Lens Details"
               icon={<Camera width={14} height={14} />}
               label={params.camera}
               options={CONTROL_OPTIONS.camera}
-              onSelect={(v) => setParams((p) => ({ ...p, camera: v }))}
+              onSelect={(v) => setParams({ camera: v })}
             />
           </div>
         </details>
       </>
     ),
-    [params],
+    [params, setParams],
   );
 
   return (

@@ -78,6 +78,14 @@ describe('reference upload lifecycle', () => {
       ),
     );
     await waitFor(() => expect(createReferenceHandoff).toHaveBeenCalledTimes(2));
+    expect(vi.mocked(createReferenceHandoff).mock.calls[1]![0].references[0]!.name).toBe(
+      'replacement.webp',
+    );
+    act(() =>
+      result.current.updateAttachment(result.current.generationConfig.attachments[0]!.id, {
+        name: 'Frame 0 (Anchor)',
+      }),
+    );
     expect(result.current.generationConfig.attachments).toHaveLength(2);
     expect(prepareGenerationConfigForPersist(result.current.generationConfig).attachments).toEqual([
       detail,
@@ -112,10 +120,12 @@ describe('reference upload lifecycle', () => {
     });
     expect(result.current.generationConfig.attachments).toEqual([
       expect.objectContaining({
-        name: 'replacement.webp',
+        name: 'Frame 0 (Anchor)',
         strength: 0.8,
         localPath: 'D:/library/replacement.webp',
         sourceUrl: expect.stringContaining('/library/replacement.webp'),
+        width: 1,
+        height: 1,
       }),
       detail,
     ]);
@@ -141,7 +151,7 @@ describe('reference upload lifecycle', () => {
     });
     expect(
       result.current.generationConfig.attachments.map((attachment) => attachment.name),
-    ).toEqual(['replacement.webp', 'detail.webp']);
+    ).toEqual(['Frame 0 (Anchor)', 'detail.webp']);
     unmount();
   });
 });
@@ -155,6 +165,8 @@ describe('buildGeneratedImageContextAttachment', () => {
           src: 'http://127.0.0.1:17223/library/outputs/boat.png',
           localPath: 'D:/AI-Studio-Library/outputs/boat.png',
           sourceUrl: 'http://127.0.0.1:17223/library/outputs/boat.png',
+          width: 1536,
+          height: 1024,
         },
         () => 100,
       ),
@@ -165,6 +177,8 @@ describe('buildGeneratedImageContextAttachment', () => {
       localPath: 'D:/AI-Studio-Library/outputs/boat.png',
       sourceUrl: 'http://127.0.0.1:17223/library/outputs/boat.png',
       strength: 0.5,
+      width: 1536,
+      height: 1024,
     });
   });
 });

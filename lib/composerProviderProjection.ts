@@ -15,8 +15,10 @@ import type {
   CodexModelCatalogResponse,
   GenerationProviderId,
 } from '../packages/shared/src';
-import type { AspectRatio, Attachment, ImageGenerationConfig, RecipeId } from '../types';
+import type { AspectRatio, Attachment, ImageGenerationConfig, ImageSize, RecipeId } from '../types';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
+import { providerBrandChipLabel } from './providerBrand';
+import { getRecipeModule, isRecipeProviderSupported } from './recipeModules';
 import {
   CODEX_HTTP_IMAGE_MODELS,
   CODEX_HTTP_MAX_INPUT_IMAGES,
@@ -50,6 +52,37 @@ export function resolveProviderMaxInputImages(providerId: GenerationProviderId):
   if (providerId === 'google' || providerId === 'antigravity') return STUDIO_MAX_INPUT_IMAGES;
   if (providerId === 'codex') return Math.min(STUDIO_MAX_INPUT_IMAGES, CODEX_HTTP_MAX_INPUT_IMAGES);
   return STUDIO_MAX_INPUT_IMAGES;
+}
+
+/** Native transparent output exists only on the ChatGPT HTTP route. */
+export function resolveProviderSupportsTransparentBackground(providerId?: string | null) {
+  return providerId === 'chatgpt';
+}
+
+/** Only ChatGPT HTTP offers 2K and 4K. Other providers run the saved choice at 1K. */
+export function resolveProviderImageSize(
+  providerId: GenerationProviderId,
+  imageSize: ImageSize | undefined,
+): ImageSize | undefined {
+  if (providerId === 'chatgpt') return imageSize;
+  return imageSize === '2K' || imageSize === '4K' ? '1K' : imageSize;
+}
+
+export function resolveRecipeProviderBlock(
+  providerId: GenerationProviderId,
+  recipeId: RecipeId,
+): GrokImagineGenerateBlock | null {
+  const recipeModule = getRecipeModule(recipeId);
+  if (!recipeModule || isRecipeProviderSupported(recipeModule, providerId)) return null;
+  const choices = recipeModule.supportedProviders
+    .filter((id) => id !== 'dry_run')
+    .map(providerBrandChipLabel);
+  const choiceList =
+    choices.length > 1 ? `${choices.slice(0, -1).join(', ')} or ${choices.at(-1)}` : choices[0];
+  return {
+    code: 'unsupported_recipe_provider',
+    message: `${recipeModule.title} does not run on ${providerBrandChipLabel(providerId)}. Switch provider to ${choiceList}.`,
+  };
 }
 
 export interface ComposerProviderProjection {
@@ -243,7 +276,8 @@ export function buildComposerProviderProjection({
         canExecute: grokCanExecute,
         status: grokStatus,
         diagnostics: grokDiagnostics,
-      }),
+      }) ??
+      resolveRecipeProviderBlock(providerId, recipeId),
     execution: {
       models,
       selectedModel,

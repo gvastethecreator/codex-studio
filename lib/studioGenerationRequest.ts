@@ -1,7 +1,11 @@
 import type { GenerationProviderId } from '../packages/shared/src/generationContracts';
 import type { CodexExecutionTransport } from '../packages/shared/src/codexExecutionContract';
 import type { ImageGenerationConfig } from '../types';
-import { resolveProviderMaxInputImages } from './composerProviderProjection';
+import {
+  resolveProviderImageSize,
+  resolveProviderMaxInputImages,
+  resolveRecipeProviderBlock,
+} from './composerProviderProjection';
 import { resolveGrokImagineGenerateBlock } from './grokImagineUiPolicy';
 
 function withoutCharacterLabDraft<T extends Partial<ImageGenerationConfig>>(config: T) {
@@ -96,6 +100,10 @@ export function prepareStudioGenerationRequest({
   if (grokBlock) {
     return { ok: false, message: grokBlock.message };
   }
+  const recipeProviderBlock = resolveRecipeProviderBlock(providerId, effectiveRecipeId ?? null);
+  if (recipeProviderBlock) {
+    return { ok: false, message: recipeProviderBlock.message };
+  }
 
   return {
     ok: true,
@@ -109,6 +117,10 @@ export function prepareStudioGenerationRequest({
         strength: effectiveRecipeId === 'styles' ? stylesReferenceStrength : attachment.strength,
       })),
       prompt: finalPrompt,
+      imageSize: resolveProviderImageSize(
+        providerId,
+        configOverrides?.imageSize ?? generationConfig.imageSize,
+      ),
     },
     shouldClearComposerAttachments: false,
   };

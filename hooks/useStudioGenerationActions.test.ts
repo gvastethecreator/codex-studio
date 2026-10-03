@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
 import {
+  addPromptNote,
   buildGenerateOverridesWithCurrentAttachments,
   buildRecipeRestoreConfig,
 } from './useStudioGenerationActions';
@@ -169,6 +170,17 @@ describe('prepareStudioGenerationRequest', () => {
       ok: false,
       message: 'Type a prompt before generating',
     });
+  });
+});
+
+describe('addPromptNote', () => {
+  it('adds a note block once and appends new notes inside it', () => {
+    const once = addPromptNote('A lantern', 'Quality notes:', 'Keep the aspect ratio.');
+    expect(once).toBe('A lantern\n\nQuality notes:\n- Keep the aspect ratio.');
+    expect(addPromptNote(once, 'Quality notes:', 'Keep the aspect ratio.')).toBe(once);
+    expect(addPromptNote(`${once}\n\nMore text`, 'Quality notes:', 'Sharp detail')).toBe(
+      'A lantern\n\nQuality notes:\n- Keep the aspect ratio.\n- Sharp detail\n\nMore text',
+    );
   });
 });
 

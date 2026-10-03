@@ -847,8 +847,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
     );
   };
 
-  const hasReference =
-    currentImage?.config.attachments && currentImage.config.attachments.length > 0;
+  // Saved sources may carry only a local path. Compare needs an image the browser can show.
+  const hasReference = Boolean(currentImage?.config.attachments?.[0]?.dataUrl);
 
   if (!currentImage) return null;
 

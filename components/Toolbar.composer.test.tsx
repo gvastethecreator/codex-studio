@@ -119,10 +119,18 @@ function renderToolbar(overrides: Partial<ToolbarProps> = {}) {
     layout: 'rail',
     ...overrides,
   };
-  return render(<Toolbar {...props} />);
+  return { ...render(<Toolbar {...props} />), props };
 }
 
 describe('Toolbar composer chrome', () => {
+  it('opens a different workflow at the start of the tool rail', () => {
+    const view = renderToolbar({ interactionScope: 'recipes:character-sheet' });
+    const rail = view.container.querySelector<HTMLElement>('.create-tool-scroll')!;
+    rail.scrollTop = 400;
+    view.rerender(<Toolbar {...view.props} interactionScope="recipes:character-lab" />);
+    expect(rail.scrollTop).toBe(0);
+  });
+
   it('projects the active atlas background before the draft has a recipe id', () => {
     const updateConfig = vi.fn();
     const view = renderToolbar({
@@ -151,6 +159,22 @@ describe('Toolbar composer chrome', () => {
     );
   });
 
+  it('resets Remove background when the provider has no native transparency', () => {
+    const updateConfig = vi.fn();
+    renderToolbar({
+      activeProviderId: 'codex',
+      generationConfig: config({ outputBackground: 'transparent' }),
+      updateConfig,
+    });
+    const background = screen.getByRole('combobox', { name: 'Output background' });
+    expect(background).toHaveProperty('value', 'workflow');
+    expect(screen.getByRole('option', { name: 'Remove background' })).toHaveProperty(
+      'disabled',
+      true,
+    );
+    expect(updateConfig).toHaveBeenCalledWith('outputBackground', 'workflow');
+  });
+
   it('blocks Remaster click and shortcut until a source is attached', () => {
     const onGenerate = vi.fn();
     const view = renderToolbar({
@@ -162,7 +186,10 @@ describe('Toolbar composer chrome', () => {
       onGenerate,
     });
     fireEvent.click(screen.getByRole('button', { name: /generate 4 images/i }));
-    fireEvent.keyDown(document, { key: 'Enter', ctrlKey: true });
+    fireEvent.keyDown(screen.getByRole('textbox', { name: 'Prompt input' }), {
+      key: 'Enter',
+      ctrlKey: true,
+    });
     expect(onGenerate).not.toHaveBeenCalled();
     expect(screen.getAllByText('Add a source image to restore.').length).toBeGreaterThan(0);
     view.unmount();
@@ -186,6 +213,33 @@ describe('Toolbar composer chrome', () => {
     });
     fireEvent.click(screen.getByRole('button', { name: /generate 4 images/i }));
     expect(onGenerate).toHaveBeenCalledOnce();
+    fireEvent.keyDown(screen.getByRole('textbox', { name: 'Prompt input' }), {
+      key: 'Enter',
+      ctrlKey: true,
+    });
+    expect(onGenerate).toHaveBeenCalledTimes(2);
+  });
+
+  it('uses the workflow action for the shortcut in context-only mode', () => {
+    const onGenerate = vi.fn();
+    const onPrepare = vi.fn();
+    const { container } = renderToolbar({
+      mode: 'context-only',
+      generationConfig: config({ prompt: '' }),
+      onGenerate,
+      railAction: (
+        <div className="recipe-primary-action">
+          <button onClick={onPrepare}>Prepare Run</button>
+        </div>
+      ),
+    });
+    expect(container.querySelector('.create-footer-meta')).toBeNull();
+    fireEvent.keyDown(document, { key: 'Enter', ctrlKey: true });
+    expect(onPrepare).toHaveBeenCalledOnce();
+    expect(onGenerate).not.toHaveBeenCalled();
+    screen.getByRole('button', { name: 'Prepare Run' }).setAttribute('disabled', '');
+    fireEvent.keyDown(document, { key: 'Enter', ctrlKey: true });
+    expect(onPrepare).toHaveBeenCalledOnce();
   });
 
   it('shows one generate requirement next to Generate and keeps the action usable', () => {
@@ -277,6 +331,25 @@ describe('Toolbar composer chrome', () => {
     expect(screen.queryByRole('dialog', { name: 'Edit prompt' })).toBeNull();
   });
 
+  it('adds each prompt note once, without provider names', () => {
+    const updateConfig = vi.fn();
+    renderToolbar({ updateConfig });
+    const addRefineNote = (note: string) => {
+      fireEvent.click(screen.getByRole('button', { name: 'Add refine notes' }));
+      fireEvent.change(screen.getByRole('textbox', { name: 'Refine note' }), {
+        target: { value: note },
+      });
+      fireEvent.click(screen.getByRole('button', { name: 'Add refine note' }));
+    };
+    addRefineNote('Warmer light');
+    addRefineNote('Warmer light');
+    addRefineNote('Sharper eyes');
+    expect(updateConfig).toHaveBeenLastCalledWith(
+      'prompt',
+      'A lantern\n\nRefine notes:\n- Warmer light\n- Sharper eyes',
+    );
+  });
+
   it('can remove a reference thumbnail from the Create rail', () => {
     const onRemoveAttachment = vi.fn();
     renderToolbar({
@@ -314,9 +387,9 @@ describe('Toolbar composer chrome', () => {
       'disabled',
       true,
     );
-    expect(screen.getByRole('button', { name: 'Analyze references' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'Open edit instructions' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'Enhance prompt' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: 'Analyze references' })).toBeNull();
+    expect(screen.getByRole('button', { name: 'Add refine notes' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Add quality notes' })).toBeTruthy();
     expect(updateConfig).toHaveBeenCalledWith('batchCount', 1);
   });
 
@@ -337,7 +410,9 @@ describe('Toolbar composer chrome', () => {
       updateConfig,
     });
 
-    fireEvent.click(screen.getByRole('button', { name: 'Image size: 1K' }));
+    const sizeTrigger = screen.getByRole('button', { name: 'Image size: 1K' });
+    fireEvent.click(sizeTrigger);
+    fireEvent.scroll(sizeTrigger.closest('.create-tool-scroll')!);
     fireEvent.click(screen.getByRole('option', { name: '4K: 3840×2160' }));
     expect(updateConfig).toHaveBeenCalledWith('imageSize', '4K');
 
@@ -351,6 +426,25 @@ describe('Toolbar composer chrome', () => {
     expect(screen.getByRole('button', { name: '2K: 2048×1152' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Close generation settings' }));
     expect(screen.queryByRole('dialog', { name: 'Image generation settings' })).toBeNull();
+  });
+
+  it('keeps a saved ChatGPT size and sends 1K to other providers', () => {
+    const updateConfig = vi.fn();
+    const onGenerate = vi.fn();
+    renderToolbar({
+      activeProviderId: 'grok',
+      grokCanExecute: true,
+      generationConfig: config({ imageSize: '4K', batchCount: 1 }),
+      updateConfig,
+      onGenerate,
+    });
+    fireEvent.click(screen.getByRole('button', { name: /generate 1 image/i }));
+    expect(updateConfig).not.toHaveBeenCalledWith('imageSize', expect.anything());
+    expect(onGenerate).toHaveBeenCalledWith(
+      'A lantern',
+      expect.objectContaining({ imageSize: '1K' }),
+      { preventModal: true },
+    );
   });
 
   it('hides ChatGPT size choices on Codex app-server', () => {

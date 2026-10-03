@@ -15,6 +15,8 @@ export interface Attachment {
   sourceUrl?: string;
   isProcessing?: boolean;
   strength: number; // Value from 0 to 1
+  width?: number;
+  height?: number;
 }
 
 export type GenerationModel = (typeof MODELS)[keyof typeof MODELS];
