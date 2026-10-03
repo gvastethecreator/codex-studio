@@ -62,6 +62,8 @@ if (import.meta.main) {
   }
 
   const recoverableJobs = listRecoverableJobs();
+  // Runs repair from durable job state before any recovered job can settle.
+  await studio.reconcileWorkflowRuns(recoverableJobs);
   const recovery = scheduleRecoverableJobs(
     recoverableJobs,
     (job) => studio.workerController.enqueueJob(job),

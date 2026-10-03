@@ -83,7 +83,7 @@ export function createJobBatchRoutes({
     }
     const result = store.createJobBatch(body.requestId, hash, prepared);
     // SQLite commits every member before the first worker can start.
-    if (result.created) intake.dispatchJobs(result.batch.jobs);
+    if (result.created) await intake.dispatchJobs(result.batch.jobs);
     return c.json(result.batch, result.created ? 201 : 200);
   });
   routes.post('/:id/retry', async (c) => {
@@ -126,7 +126,7 @@ export function createJobBatchRoutes({
     }
     const result = store.retryFailedJobBatch(id, request, requestHash(request.items));
     if (!result) return c.json({ error: 'Batch not found' }, 404);
-    intake.dispatchJobs(result.queued);
+    await intake.dispatchJobs(result.queued);
     return c.json(result.batch);
   });
   return routes;

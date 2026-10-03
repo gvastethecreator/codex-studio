@@ -57,9 +57,13 @@ describe('persistentJobIntake', () => {
   });
 
   it('creates, publishes, and enqueues normalized jobs behind one intake seam', async () => {
+    const order: string[] = [];
     const publishEvent = vi.fn();
     const logJobCreated = vi.fn();
-    const enqueueJob = vi.fn();
+    const enqueueJob = vi.fn((job: Job) => order.push(`enqueue:${job.id}`));
+    const onJobsAccepted = vi.fn(async (jobs: Job[]) => {
+      order.push(`record:${jobs.map((job) => job.id).join(',')}`);
+    });
     const createJobFn = vi.fn((input: CreateJobInput) =>
       createJob({
         id: input.id,
@@ -83,6 +87,7 @@ describe('persistentJobIntake', () => {
       publishEvent,
       logJobCreated,
       enqueueJob,
+      onJobsAccepted,
     });
 
     const result = await intake.createJob({ kind: 'codex_imagegen', prompt: 'draw' });
@@ -101,17 +106,22 @@ describe('persistentJobIntake', () => {
     );
     expect(logJobCreated).toHaveBeenCalledWith('image_generate', 'job-new');
     expect(enqueueJob).toHaveBeenCalledWith(expect.objectContaining({ id: 'job-new' }));
+    expect(order).toEqual(['record:job-new', 'enqueue:job-new']);
     const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
     try {
+      onJobsAccepted.mockRejectedValueOnce(new Error('Run store unavailable'));
       publishEvent.mockImplementationOnce(() => {
         throw new Error('Notification disconnected');
       });
-      intake.dispatchJobs([createJob({ id: 'accepted-one' }), createJob({ id: 'accepted-two' })]);
+      await intake.dispatchJobs([
+        createJob({ id: 'accepted-one' }),
+        createJob({ id: 'accepted-two' }),
+      ]);
       expect(enqueueJob.mock.calls.slice(-2).map(([job]) => job.id)).toEqual([
         'accepted-one',
         'accepted-two',
       ]);
-      expect(warn).toHaveBeenCalledOnce();
+      expect(warn).toHaveBeenCalledTimes(2);
     } finally {
       warn.mockRestore();
     }
@@ -413,6 +423,55 @@ describe('persistentJobIntake', () => {
       },
     });
     expect(processReferences).not.toHaveBeenCalled();
+  });
+
+  it('rejects a job its workflow run refuses before the job is committed', async () => {
+    const createJobFn = vi.fn(() => createJob());
+    const processReferences = vi.fn(async () => ({ augmentedPrompt: 'x', persistedRefs: [] }));
+    const validateDispatch = vi.fn(async (spec: GenerationTaskSpec) =>
+      spec.recipeId === 'timeline'
+        ? { code: 'workflow_run_closed', message: 'This run no longer accepts frames.' }
+        : null,
+    );
+    const intake = createPersistentJobIntake({
+      createJobId: () => 'job-new',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences,
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: () => ({ type: 'job.created', payload: {}, createdAt: '' }),
+      logJobCreated: () => {},
+      enqueueJob: () => {},
+      validateDispatch,
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_generate',
+      prompt: 'draw',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'timeline-frame',
+        task: 'image_generate',
+        prompt: 'draw the next frame',
+        recipeId: 'timeline',
+        recipeParams: { runId: 'run-1' },
+      }),
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: { error: 'This run no longer accepts frames.', code: 'workflow_run_closed' },
+      },
+    });
+    expect(validateDispatch).toHaveBeenCalledWith(
+      expect.objectContaining({ recipeParams: { runId: 'run-1' } }),
+    );
+    expect(processReferences).not.toHaveBeenCalled();
+    expect(createJobFn).not.toHaveBeenCalled();
   });
 
   it.each([

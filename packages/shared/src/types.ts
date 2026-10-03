@@ -486,6 +486,12 @@ export interface SystemLog {
   createdAt: string;
 }
 
+/** A backend-owned workflow run changed after one of its jobs settled. */
+export interface WorkflowRunUpdatedEventPayload {
+  recipeId: string;
+  runId: string;
+}
+
 export type StudioEvent =
   | {
       type: 'server.connected';
@@ -554,6 +560,12 @@ export type StudioEvent =
   | {
       type: 'auth.updated';
       payload: SubscriptionAuthUpdatedEventPayload;
+      createdAt: string;
+      revision?: number;
+    }
+  | {
+      type: 'workflow-run.updated';
+      payload: WorkflowRunUpdatedEventPayload;
       createdAt: string;
       revision?: number;
     };

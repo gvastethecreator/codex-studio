@@ -110,7 +110,12 @@ import {
   type ExtensionStore,
 } from './extensionStore';
 import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
+import { createSpriteAtlasService } from './spriteAtlasService';
+import { createSpriteAtlasRunParticipant } from './spriteAtlasRunReconciler';
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
+import { createAnimationSequenceService } from './animationSequenceService';
+import { createAnimationSequenceRunParticipant } from './animationSequenceRunReconciler';
+import { createWorkflowRunReconciler } from './workflowRunReconciler';
 import { createStudioReadinessLifecycle } from './studioReadinessLifecycle';
 import { createDefaultUserStyleStore } from './sqliteUserStyles';
 import type { UserStyleStore } from './userStyles';
@@ -119,6 +124,7 @@ import { createUiStaticHandler, resolveUiDistDir, uiDistIsReady } from './uiStat
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
+  Job,
   LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
 
@@ -128,6 +134,8 @@ export interface StudioAppInstance {
   initResult: ReturnType<typeof initStudio>;
   worker: WorkerStatus;
   workerController: WorkerController;
+  /** Repairs workflow runs at startup, before recoverable jobs are scheduled. */
+  reconcileWorkflowRuns(recoverableJobs: Job[]): Promise<void>;
   shutdown(): Promise<void>;
 }
 
@@ -404,22 +412,34 @@ export async function createStudioApp(
     return next();
   });
 
+  // One service per workflow: its run locks belong to that instance, so the
+  // routes and the run reconciler must share it.
+  const workflowServiceOptions = {
+    readLibraryDir: () => getDefaultLibrary().path,
+    readOutputContext: readLibraryContext,
+    getCatalogImage: (imageId: string) => catalogStore.getCatalogImage(imageId),
+  };
+  const spriteAtlasService = createSpriteAtlasService(workflowServiceOptions);
+  const animationSequenceService = createAnimationSequenceService(workflowServiceOptions);
+  const workflowRuns = createWorkflowRunReconciler({
+    participants: [
+      createSpriteAtlasRunParticipant(spriteAtlasService),
+      createAnimationSequenceRunParticipant(animationSequenceService),
+    ],
+    getJob: (jobId) => jobStore.getJob(jobId),
+    logger: appLogger,
+    publishEvent,
+  });
+  const unsubscribeWorkflowRuns = subscribeEvents(workflowRuns.onStudioEvent);
+
   app.route(
     '/api/sprite-atlas',
-    createSpriteAtlasRoutes({
-      readLibraryDir: () => getDefaultLibrary().path,
-      readOutputContext: readLibraryContext,
-      getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
-    }),
+    createSpriteAtlasRoutes({ ...workflowServiceOptions, service: spriteAtlasService }),
   );
 
   app.route(
     '/api/animation-sequence',
-    createAnimationSequenceRoutes({
-      readLibraryDir: () => getDefaultLibrary().path,
-      readOutputContext: readLibraryContext,
-      getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
-    }),
+    createAnimationSequenceRoutes({ ...workflowServiceOptions, service: animationSequenceService }),
   );
 
   app.route(
@@ -505,6 +525,8 @@ export async function createStudioApp(
       publishEvent,
       logJobCreated: (kind, jobId) => appLogger('info', 'api', `Job created: ${kind}`, jobId),
       enqueueJob: (job) => workerController.enqueueJob(job),
+      validateDispatch: (spec) => workflowRuns.validateDispatch(spec),
+      onJobsAccepted: (jobs) => workflowRuns.jobsAccepted(jobs),
     }),
   );
 
@@ -598,12 +620,16 @@ export async function createStudioApp(
     initResult: initResult ?? ({} as ReturnType<typeof initStudio>),
     worker: workerController.getWorkerStatus(),
     workerController,
+    reconcileWorkflowRuns: (recoverableJobs) => workflowRuns.recover(recoverableJobs),
     shutdown() {
       if (!shutdownPromise) {
         shutdownPromise = (async () => {
           readiness.dispose();
+          unsubscribeWorkflowRuns();
           const results = await Promise.allSettled([
-            Promise.resolve().then(() => workerController.shutdown()),
+            Promise.resolve()
+              .then(() => workerController.shutdown())
+              .finally(() => workflowRuns.drain()),
             Promise.resolve().then(() => stopLocalAppServer()),
           ]);
           const failures = results.flatMap((result) =>

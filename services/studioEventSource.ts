@@ -10,6 +10,7 @@ import type {
   SystemLog,
   SubscriptionAuthUpdatedEventPayload,
   UnknownStudioEvent,
+  WorkflowRunUpdatedEventPayload,
 } from '../packages/shared/src';
 import { getStudioApiBase } from './studio-api/http';
 import { getStudioJobStatus } from './studio-api/jobs';
@@ -120,6 +121,7 @@ export interface StudioEventStream {
   onOnboardingStage(callback: Listener<OnboardingStagePayload>): Unsubscribe;
   onOnboardingProbe(callback: Listener<OnboardingProbe>): Unsubscribe;
   onAuthUpdated(callback: Listener<SubscriptionAuthUpdatedEventPayload>): Unsubscribe;
+  onWorkflowRunUpdated(callback: Listener<WorkflowRunUpdatedEventPayload>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
   onRevisionGap?(callback: Listener<void>): Unsubscribe;
   close(): void;
@@ -141,6 +143,7 @@ class BrowserStudioEventStream implements StudioEventStream {
   private onboardingStageListeners = new Set<Listener<OnboardingStagePayload>>();
   private onboardingProbeListeners = new Set<Listener<OnboardingProbe>>();
   private authUpdatedListeners = new Set<Listener<SubscriptionAuthUpdatedEventPayload>>();
+  private workflowRunUpdatedListeners = new Set<Listener<WorkflowRunUpdatedEventPayload>>();
   private connectionListeners = new Set<Listener<boolean>>();
   private revisionGapListeners = new Set<Listener<void>>();
   private lastRevision = 0;
@@ -190,6 +193,11 @@ class BrowserStudioEventStream implements StudioEventStream {
   onAuthUpdated(callback: Listener<SubscriptionAuthUpdatedEventPayload>) {
     this.authUpdatedListeners.add(callback);
     return () => this.authUpdatedListeners.delete(callback);
+  }
+
+  onWorkflowRunUpdated(callback: Listener<WorkflowRunUpdatedEventPayload>) {
+    this.workflowRunUpdatedListeners.add(callback);
+    return () => this.workflowRunUpdatedListeners.delete(callback);
   }
 
   onConnectionChange(callback: Listener<boolean>) {
@@ -306,6 +314,10 @@ class BrowserStudioEventStream implements StudioEventStream {
       this.authUpdatedListeners.forEach((listener) =>
         notifyListener(listener, event.payload as SubscriptionAuthUpdatedEventPayload),
       );
+    } else if (event.type === 'workflow-run.updated') {
+      this.workflowRunUpdatedListeners.forEach((listener) =>
+        notifyListener(listener, event.payload as WorkflowRunUpdatedEventPayload),
+      );
     }
   }
 }
@@ -344,6 +356,10 @@ class StudioEventStreamLease implements StudioEventStream {
 
   onAuthUpdated(callback: Listener<SubscriptionAuthUpdatedEventPayload>) {
     return this.closed ? () => {} : this.stream.onAuthUpdated(callback);
+  }
+
+  onWorkflowRunUpdated(callback: Listener<WorkflowRunUpdatedEventPayload>) {
+    return this.closed ? () => {} : this.stream.onWorkflowRunUpdated(callback);
   }
 
   onConnectionChange(callback: Listener<boolean>) {

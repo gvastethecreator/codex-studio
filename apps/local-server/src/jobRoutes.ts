@@ -72,6 +72,8 @@ export function createJobRoutes({
   publishEvent,
   logJobCreated,
   enqueueJob,
+  validateDispatch,
+  onJobsAccepted,
 }: JobRoutesDependencies) {
   const routes = new Hono();
   const persistentJobIntake = createPersistentJobIntake({
@@ -94,6 +96,8 @@ export function createJobRoutes({
     publishEvent,
     logJobCreated,
     enqueueJob,
+    validateDispatch,
+    onJobsAccepted,
   });
 
   if (batchStore)

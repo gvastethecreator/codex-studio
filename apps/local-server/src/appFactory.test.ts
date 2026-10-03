@@ -3,12 +3,19 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
-import type {
-  CodexRuntimeDoctorReport,
-  CodexModelCatalogResponse,
-  LocalCodexSessionResponse,
+import {
+  createGenerationTaskSpec,
+  type CodexRuntimeDoctorReport,
+  type CodexModelCatalogResponse,
+  type Job,
+  type LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
 import type { StudioCatalogStore } from './catalogStore';
+import { createAnimationSequenceService } from './animationSequenceService';
+import { createAnimationSequenceRunParticipant } from './animationSequenceRunReconciler';
+import { publishEvent } from './events';
+import { createSpriteAtlasService } from './spriteAtlasService';
+import { createSpriteAtlasRunParticipant } from './spriteAtlasRunReconciler';
 import { readAntigravityRuntimeDoctor } from './antigravityRuntimeDoctor';
 import { readGrokRuntimeDoctor } from './grokRuntimeDoctor';
 import {
@@ -58,6 +65,31 @@ vi.mock('./db/workspaces', () => ({
 vi.mock('./logger', () => ({
   log: vi.fn(),
 }));
+
+vi.mock('./spriteAtlasService', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('./spriteAtlasService')>();
+  return { ...actual, createSpriteAtlasService: vi.fn(actual.createSpriteAtlasService) };
+});
+
+vi.mock('./animationSequenceService', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('./animationSequenceService')>();
+  return {
+    ...actual,
+    createAnimationSequenceService: vi.fn(actual.createAnimationSequenceService),
+  };
+});
+
+vi.mock('./spriteAtlasRunReconciler', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('./spriteAtlasRunReconciler')>();
+  return { createSpriteAtlasRunParticipant: vi.fn(actual.createSpriteAtlasRunParticipant) };
+});
+
+vi.mock('./animationSequenceRunReconciler', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('./animationSequenceRunReconciler')>();
+  return {
+    createAnimationSequenceRunParticipant: vi.fn(actual.createAnimationSequenceRunParticipant),
+  };
+});
 
 vi.mock('./grokRuntimeDoctor', () => ({
   readGrokRuntimeDoctor: vi.fn(() => ({
@@ -728,6 +760,96 @@ describe('createStudioApp', () => {
     );
     expect(readCodexRuntimeDoctor).toHaveBeenCalledTimes(probeCountAfterStartup);
     await studio.shutdown();
+  });
+
+  it('shares one service per workflow between its routes and its run participant', async () => {
+    vi.mocked(createSpriteAtlasService).mockClear();
+    vi.mocked(createAnimationSequenceService).mockClear();
+    vi.mocked(createSpriteAtlasRunParticipant).mockClear();
+    vi.mocked(createAnimationSequenceRunParticipant).mockClear();
+
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        ...createFakeStores(),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+      },
+    });
+    const presets = await studio.app.request('/api/sprite-atlas/presets');
+    await studio.shutdown();
+
+    expect(presets.status).toBe(200);
+    expect(createSpriteAtlasService).toHaveBeenCalledTimes(1);
+    expect(createAnimationSequenceService).toHaveBeenCalledTimes(1);
+    expect(createSpriteAtlasRunParticipant).toHaveBeenCalledWith(
+      vi.mocked(createSpriteAtlasService).mock.results[0]!.value,
+    );
+    expect(createAnimationSequenceRunParticipant).toHaveBeenCalledWith(
+      vi.mocked(createAnimationSequenceService).mock.results[0]!.value,
+    );
+  });
+
+  it('stops observing jobs on shutdown and drains run settles after the worker stops', async () => {
+    let releaseSettle!: () => void;
+    const settle = vi.fn(
+      () =>
+        new Promise<boolean>((resolve) => {
+          releaseSettle = () => resolve(false);
+        }),
+    );
+    vi.mocked(createSpriteAtlasRunParticipant).mockImplementationOnce(() => ({
+      recipeId: 'sprite-atlas',
+      recordDispatch: async () => {},
+      settle,
+      recover: async () => {},
+    }));
+    const worker = createWorkerDependency();
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        ...createFakeStores(),
+        catalogStore: createFakeCatalogStore(),
+        worker,
+      },
+    });
+    const job: Job = {
+      id: 'sprite-job',
+      workspaceId: 'default',
+      kind: 'image_generate',
+      providerId: 'chatgpt',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'sprite-spec',
+        task: 'image_generate',
+        prompt: 'walk cycle row',
+        recipeId: 'sprite-atlas',
+        recipeParams: { runId: 'run-1' },
+      }),
+      status: 'completed',
+      execution: null,
+      originalPrompt: 'walk cycle row',
+      expandedPrompt: null,
+      finalPromptUsed: 'walk cycle row',
+      error: null,
+      createdAt: '2026-10-02T00:00:00.000Z',
+      updatedAt: '2026-10-02T00:00:00.000Z',
+      completedAt: '2026-10-02T00:00:00.000Z',
+    };
+
+    publishEvent('job.completed', job);
+    await vi.waitFor(() => expect(settle).toHaveBeenCalledTimes(1));
+    let stopped = false;
+    const shutdown = studio.shutdown().then(() => {
+      stopped = true;
+    });
+    publishEvent('job.completed', { ...job, id: 'late-job' });
+    await vi.waitFor(() => expect(worker.shutdown).toHaveBeenCalledTimes(1));
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    expect(stopped).toBe(false);
+
+    releaseSettle();
+    await shutdown;
+    expect(settle).toHaveBeenCalledTimes(1);
   });
 
   it('stops the managed app-server once when shutdown is requested repeatedly', async () => {

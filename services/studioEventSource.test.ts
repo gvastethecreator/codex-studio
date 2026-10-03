@@ -76,6 +76,7 @@ function createWatchStream() {
     onOnboardingStage: () => () => {},
     onOnboardingProbe: () => () => {},
     onAuthUpdated: () => () => {},
+    onWorkflowRunUpdated: () => () => {},
     close: () => {},
   };
   return { stream, jobs, connections, gaps };
@@ -534,6 +535,10 @@ describe('studioEventSource', () => {
       stream.onAuthUpdated((payload) =>
         authUpdates.push(`${payload.providerId}:${payload.status}`),
       );
+      const runUpdates: string[] = [];
+      stream.onWorkflowRunUpdated((payload) =>
+        runUpdates.push(`${payload.recipeId}:${payload.runId}`),
+      );
       const send = (event: unknown) =>
         sources[0]?.onmessage?.({ data: JSON.stringify(event) } as MessageEvent);
 
@@ -584,6 +589,14 @@ describe('studioEventSource', () => {
       expect(logs).toEqual(['onboarding:Wrote STUDIO_LIBRARY_DIR into .env.local.']);
       expect(ctas).toEqual(['start_app_server']);
       expect(authUpdates).toEqual(['codex:logged_in']);
+
+      send({
+        type: 'workflow-run.updated',
+        payload: { recipeId: 'sprite-atlas', runId: 'run-1' },
+        revision: 5,
+        createdAt: '2026-08-26T00:00:04.000Z',
+      });
+      expect(runUpdates).toEqual(['sprite-atlas:run-1']);
       expect(JSON.stringify(authUpdates)).not.toMatch(/accessToken|refreshToken/);
       stream.close();
     } finally {
@@ -628,6 +641,7 @@ describe('studioEventSource', () => {
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
       onAuthUpdated: () => () => {},
+      onWorkflowRunUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -644,6 +658,7 @@ describe('studioEventSource', () => {
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
       onAuthUpdated: () => () => {},
+      onWorkflowRunUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -668,6 +683,7 @@ describe('studioEventSource', () => {
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
       onAuthUpdated: () => () => {},
+      onWorkflowRunUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -696,6 +712,7 @@ describe('studioEventSource', () => {
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
       onAuthUpdated: () => () => {},
+      onWorkflowRunUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -734,6 +751,7 @@ describe('studioEventSource', () => {
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
       onAuthUpdated: () => () => {},
+      onWorkflowRunUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };

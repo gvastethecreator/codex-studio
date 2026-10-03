@@ -22,6 +22,7 @@ import {
   withWorkspaceMetadata,
 } from '../../../packages/shared/src/workspaceContracts';
 import type { publishEvent } from './events';
+import type { WorkflowRunReconciler } from './workflowRunReconciler';
 import { validateManagedGenerationAssets } from './managedAssetPolicy';
 import { resolveEffectiveJobExecutionOptions } from './providerExecutionPolicy';
 import { resolveBootstrapProviderExecutionOptions } from './providers/providerExecutionDefaults';
@@ -78,6 +79,10 @@ export interface PersistentJobIntakeDependencies {
   publishEvent: typeof publishEvent;
   logJobCreated: (kind: string, jobId: string) => void;
   enqueueJob: (job: Job) => void;
+  /** Checks a workflow job against its run before the job is committed. */
+  validateDispatch?: WorkflowRunReconciler['validateDispatch'];
+  /** Records accepted jobs on their workflow runs before the worker sees them. */
+  onJobsAccepted?: (jobs: Job[]) => Promise<void>;
 }
 
 export type PersistentJobIntakeError = {
@@ -190,6 +195,8 @@ export function createPersistentJobIntake({
   publishEvent,
   logJobCreated,
   enqueueJob,
+  validateDispatch = async () => null,
+  onJobsAccepted = async () => {},
 }: PersistentJobIntakeDependencies) {
   async function prepareJob(request: CreateJobRequest): Promise<PreparedResult> {
     const workspaceId = normalizeWorkspaceId(
@@ -243,6 +250,14 @@ export function createPersistentJobIntake({
             moduleId: workflowModule.id,
           },
         },
+      };
+    }
+
+    const dispatchIssue = sourceSpec ? await validateDispatch(sourceSpec) : null;
+    if (dispatchIssue) {
+      return {
+        ok: false,
+        error: { status: 400, body: { error: dispatchIssue.message, code: dispatchIssue.code } },
       };
     }
 
@@ -431,8 +446,14 @@ export function createPersistentJobIntake({
       },
     };
   }
-  function dispatchJobs(jobs: Job[]) {
-    // Notifications and log I/O cannot strand already accepted members.
+  async function dispatchJobs(jobs: Job[]) {
+    // Runs record their jobs before a worker can settle them. A run, notification,
+    // or log failure cannot strand already accepted members.
+    try {
+      await onJobsAccepted(jobs);
+    } catch {
+      console.warn('Accepted jobs were queued, but their workflow runs could not record them.');
+    }
     for (const job of jobs) enqueueJob(job);
     for (const job of jobs) {
       try {
@@ -455,7 +476,7 @@ export function createPersistentJobIntake({
       const job = createJob(input);
       const queuedJob =
         finalPrompt === input.prompt ? job : (updateJobFinalPrompt(job.id, finalPrompt) ?? job);
-      dispatchJobs([queuedJob]);
+      await dispatchJobs([queuedJob]);
       return { ok: true, status: 201, job: queuedJob };
     },
   };
