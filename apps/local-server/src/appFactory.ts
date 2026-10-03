@@ -14,6 +14,7 @@ import {
 } from './antigravityRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
+import { createImageConversionRoutes } from './imageConversionRoutes';
 import { updateCatalogImageFileSize } from './catalog';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
 import { listAssets } from './db/assets';
@@ -603,6 +604,18 @@ export async function createStudioApp(
       embedMetadata,
       getJob,
       updateCatalogImageFileSize,
+    }),
+  );
+
+  app.route(
+    '/api/catalog',
+    createImageConversionRoutes({
+      catalogStore,
+      getLibrary,
+      getJob,
+      readLibraryContext,
+      readLibraryDir: () => getDefaultLibrary().path,
+      publishEvent,
     }),
   );
 

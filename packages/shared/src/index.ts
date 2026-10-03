@@ -22,3 +22,4 @@ export * from './workspaceContracts';
 export * from './studioApiSchemas';
 export * from './workerContracts';
 export * from './subscriptionHttpDiagnostic';
+export * from './imageConversion';

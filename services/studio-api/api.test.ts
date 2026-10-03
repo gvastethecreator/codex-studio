@@ -1,6 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { buildCatalogQuery } from './catalog';
+import { downloadConvertedCatalogImage } from './imageConversion';
+import { DEFAULT_IMAGE_CONVERSION_OPTIONS } from '../../packages/shared/src/imageConversion';
 import { readLocalStudioErrorMessage, request } from './http';
 import { getStudioRuntimeSnapshot, refreshStudioReadiness, runOnboardingSetup } from './runtime';
 
@@ -142,5 +144,45 @@ describe('runOnboardingSetup', () => {
     expect(String(setupCall?.[0] as string)).toContain('/api/onboarding/setup');
     expect(setupCall?.[1]).toMatchObject({ method: 'POST' });
     expect(fetchMock).toHaveBeenCalledTimes(3);
+  });
+});
+
+describe('image conversion download', () => {
+  it('reads converted bytes, saved filename and size, and surfaces server failures', async () => {
+    const fetchMock = vi
+      .fn<typeof fetch>()
+      .mockResolvedValueOnce(
+        new Response('converted pixels', {
+          headers: {
+            'Content-Type': 'image/webp',
+            'Content-Disposition':
+              "attachment; filename*=UTF-8''2026-10-03_000001_b%C3%BAho-converted.webp",
+            'X-Source-Bytes': '42',
+          },
+        }),
+      )
+      .mockResolvedValueOnce(
+        new Response(JSON.stringify({ error: 'Image file is missing.' }), { status: 404 }),
+      );
+    vi.stubGlobal('fetch', fetchMock);
+    const result = await downloadConvertedCatalogImage(
+      'image/one',
+      DEFAULT_IMAGE_CONVERSION_OPTIONS,
+    );
+    expect(result.filename).toBe('2026-10-03_000001_búho-converted.webp');
+    expect(result.sourceBytes).toBe(42);
+    expect(result.outputBytes).toBe(16);
+    expect(await result.blob.text()).toBe('converted pixels');
+    expect(fetchMock.mock.calls[0][0]).toContain('/api/catalog/image%2Fone/convert');
+    const body = fetchMock.mock.calls[0][1]?.body;
+    if (typeof body !== 'string') throw new Error('Expected a JSON request body');
+    expect(JSON.parse(body)).toMatchObject({
+      format: 'webp',
+      preserveMetadata: true,
+      destination: 'download',
+    });
+    await expect(
+      downloadConvertedCatalogImage('missing', DEFAULT_IMAGE_CONVERSION_OPTIONS),
+    ).rejects.toThrow('Image file is missing.');
   });
 });

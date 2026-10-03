@@ -10,12 +10,14 @@ import {
   Plus,
   Expand as OpenFull,
   Attachment as Paperclip,
+  MediaImage as Photo,
 } from 'iconoir-react';
 
 import { buildCarouselThumbnailWindow } from '../../lib/imageCarouselThumbnails';
 import { useImagePanZoom } from '../../lib/imagePanZoom';
 import { useHorizontalDragScroll } from '../../hooks/useHorizontalDragScroll';
 import { useToastUi } from '../../contexts/GlobalContext';
+import { useImageConversion } from '../../contexts/ImageConversionContext';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
 import { copyImageToClipboard, downloadImage, generateSmartFilename } from '../../utils/fileUtils';
 import Tooltip from '../Tooltip';
@@ -54,6 +56,7 @@ export function RecipeResultPreview({
   onSelectId?: (id: string) => void;
 }) {
   const { addToast } = useToastUi();
+  const openConversion = useImageConversion();
   const [localSelectedId, setLocalSelectedId] = useState<string | null>(null);
   const selectedId = externalSelectedId === undefined ? localSelectedId : externalSelectedId;
   const setSelectedId = onSelectId ?? setLocalSelectedId;
@@ -137,6 +140,7 @@ export function RecipeResultPreview({
             selected.config.aspectRatio,
             undefined,
             selected.mimeType,
+            selected.localPath,
           )
         : 'reference.png',
     );
@@ -233,6 +237,17 @@ export function RecipeResultPreview({
                   <Download width={14} height={14} />
                 </button>
               </Tooltip>
+              {openConversion && selected && !showReference && (
+                <Tooltip content="Convert or compress image">
+                  <button
+                    type="button"
+                    aria-label="Convert or compress image"
+                    onClick={() => openConversion([selected])}
+                  >
+                    <Photo width={14} height={14} />
+                  </button>
+                </Tooltip>
+              )}
               {onToggleFavorite ? (
                 <Tooltip
                   content={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}

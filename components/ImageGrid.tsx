@@ -32,6 +32,7 @@ import ActionButton from './ui/ActionButton';
 import { getCatalogImageDetail } from '../services/studio-api/catalog';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 import { useToastUi } from '../contexts/GlobalContext';
+import { useImageConversion } from '../contexts/ImageConversionContext';
 import { providerBrandChipLabel } from '../lib/providerBrand';
 import {
   shouldAlwaysShowCatalogCardActions,
@@ -142,6 +143,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
   }) => {
     const itemRef = useRef<HTMLDivElement>(null);
     const { addToast } = useToastUi();
+    const openConversion = useImageConversion();
     const [copiedPrompt, setCopiedPrompt] = useState(false);
     const [isActionSurfaceActive, setIsActionSurfaceActive] = useState(false);
     const [isActionSurfaceFocused, setIsActionSurfaceFocused] = useState(false);
@@ -378,6 +380,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 </button>
               </>
             ) : null}
+            {openConversion && (
+              <button type="button" onClick={() => openConversion([image])}>
+                <Photo width={14} height={14} /> Convert or compress
+              </button>
+            )}
             <button type="button" onClick={() => void withFullConfig(onLoadConfig)}>
               <History width={14} height={14} /> Load configuration
             </button>
@@ -689,6 +696,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     generationPlaceholders = EMPTY_GENERATION_PLACEHOLDERS,
   }) => {
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+    const openConversion = useImageConversion();
     const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
     const [viewMode, setViewMode] = useState<ImageGridViewMode>(DEFAULT_IMAGE_GRID_VIEW_MODE);
     const sortButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -1190,6 +1198,18 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                       label={`Download selected (${selectedImageCount})`}
                       tooltipPosition="bottom"
                     />
+                    {openConversion && (
+                      <ActionButton
+                        onClick={() =>
+                          openConversion(
+                            sortedImages.filter((image) => selectedImageIds.includes(image.id)),
+                          )
+                        }
+                        icon={<Photo width={16} height={16} />}
+                        label={`Convert selected (${selectedImageCount})`}
+                        tooltipPosition="bottom"
+                      />
+                    )}
                     <ActionButton
                       onClick={() => onDeleteSelected(sortedImages)}
                       icon={<Trash2 width={16} height={16} />}

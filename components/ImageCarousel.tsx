@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { useToastUi } from '../contexts/GlobalContext';
+import { useImageConversion } from '../contexts/ImageConversionContext';
 import {
   NavArrowLeft as ChevronLeft,
   NavArrowRight as ChevronRight,
@@ -19,6 +20,7 @@ import {
   Plus,
   Minus,
   Copy,
+  MediaImage as Photo,
 } from 'iconoir-react';
 import { AnimatePresence, MotionDiv, type Variants } from '../lib/gsapMotion';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
@@ -663,6 +665,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   transitionName,
 }) => {
   const { addToast } = useToastUi();
+  const openConversion = useImageConversion();
   const [controlsTarget, setControlsTarget] = useState<HTMLDivElement | null>(null);
   const { history } = React.useContext(RecipeWorkbenchContext);
   const activeIndex = useMemo(() => {
@@ -711,10 +714,22 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const isProcessingDownloadRef = useRef(false);
 
   const containerRef = useDialogFocus(Boolean(activeImage), () => {
-    if (document.fullscreenElement) void document.exitFullscreen();
+    if (document.fullscreenElement)
+      void document.exitFullscreen().catch(() => addToast('Could not exit fullscreen.', 'error'));
     else onClose();
   });
   const navScrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const syncFullscreen = () => {
+      const fullscreen = document.fullscreenElement === containerRef.current;
+      setCarouselState((current) =>
+        current.isFullscreen === fullscreen ? current : { ...current, isFullscreen: fullscreen },
+      );
+    };
+    document.addEventListener('fullscreenchange', syncFullscreen);
+    return () => document.removeEventListener('fullscreenchange', syncFullscreen);
+  }, [containerRef]);
 
   useEffect(() => {
     if (allImages.length === 0 && !history?.isLoading && !history?.error) {
@@ -782,13 +797,21 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const handleNextRef = useLatestRef(handleNext);
   const handlePrevRef = useLatestRef(handlePrev);
   const onCloseRef = useLatestRef(onClose);
-  const isFullscreenRef = useLatestRef(isFullscreen);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      const target = e.target instanceof Element ? e.target : null;
+      if (
+        e.defaultPrevented ||
+        containerRef.current?.closest('[inert]') ||
+        (target?.closest('[role="dialog"]') &&
+          target.closest('[role="dialog"]') !== containerRef.current) ||
+        target?.closest('input, textarea, select, [contenteditable="true"]')
+      )
+        return;
       if (e.key === 'ArrowRight') handleNextRef.current();
       if (e.key === 'ArrowLeft') handlePrevRef.current();
-      if (e.key === 'Escape' && !isFullscreenRef.current) onCloseRef.current();
+      if (e.key === 'Escape' && !document.fullscreenElement) onCloseRef.current();
       if (e.code === 'Space' && !e.repeat)
         setCarouselState((prev) => ({ ...prev, isComparing: true }));
     };
@@ -801,7 +824,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
     };
-  }, [handleNextRef, handlePrevRef, isFullscreenRef, onCloseRef]);
+  }, [handleNextRef, handlePrevRef, onCloseRef, containerRef]);
 
   const currentImage =
     activeIndex >= 0 && activeIndex < allImages.length ? allImages[activeIndex] : activeImage;
@@ -853,10 +876,13 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
 
   if (!currentImage) return null;
 
-  const handleToggleFullscreen = () => {
-    if (!document.fullscreenElement) void containerRef.current?.requestFullscreen();
-    else void document.exitFullscreen();
-    setCarouselState((prev) => ({ ...prev, isFullscreen: !prev.isFullscreen }));
+  const handleToggleFullscreen = async () => {
+    try {
+      if (!document.fullscreenElement) await containerRef.current?.requestFullscreen();
+      else await document.exitFullscreen();
+    } catch {
+      addToast('Could not change fullscreen mode.', 'error');
+    }
   };
 
   return (
@@ -889,6 +915,13 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               label="Download image"
               onClick={handleDownloadClick}
             />
+            {openConversion && (
+              <ActionButton
+                icon={<Photo width={16} height={16} />}
+                label="Convert or compress image"
+                onClick={() => openConversion([currentImage])}
+              />
+            )}
             <ActionButton
               icon={<Heart width={16} height={16} />}
               label={currentImage.isFavorite ? 'Remove from favorites' : 'Add to favorites'}

@@ -6,6 +6,10 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 vi.mock('../../contexts/GlobalContext', () => ({
   useToastUi: () => ({ addToast: vi.fn() }),
 }));
+const { openConversion } = vi.hoisted(() => ({ openConversion: vi.fn() }));
+vi.mock('../../contexts/ImageConversionContext', () => ({
+  useImageConversion: () => openConversion,
+}));
 
 import { MODELS } from '../../constants';
 import { RecipeResultPreview } from './RecipeResultPreview';
@@ -13,6 +17,7 @@ import type { Attachment, GeneratedImageWithConfig } from '../../types';
 
 afterEach(() => {
   cleanup();
+  openConversion.mockClear();
   vi.useRealTimers();
 });
 
@@ -201,6 +206,11 @@ describe('RecipeResultPreview', () => {
     expect(screen.getByText('A lantern')).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Copy image' })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Download image' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Convert or compress image' }));
+    expect(openConversion).toHaveBeenCalledWith([IMAGE]);
+    fireEvent.click(screen.getByRole('button', { name: 'Compare reference' }));
+    expect(screen.queryByRole('button', { name: 'Convert or compress image' })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Show result' }));
     expect(screen.getByRole('group', { name: 'Canvas background' })).toBeTruthy();
     const toolbar = screen.getByRole('toolbar', { name: 'Selected result actions' });
     expect(toolbar.contains(screen.getByRole('group', { name: 'Canvas background' }))).toBe(true);
