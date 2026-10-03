@@ -367,7 +367,7 @@ describe('recipeModules', () => {
     });
     expect(spec.quality).toMatchObject({
       qualityPresetId: 'product_or_ui_asset',
-      style: 'Glass Owl',
+      style: null,
       color: 'cool mineral blues',
     });
   });
@@ -413,7 +413,7 @@ describe('recipeModules', () => {
     expect(spec.assets).toHaveLength(2);
     expect(spec.quality).toMatchObject({
       qualityPresetId: 'style_reference',
-      style: 'Studio Headshot + Film Noir',
+      style: null,
     });
     expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain('Style Slot 2');
     expect(spec.quality!.referenceRoles[0]?.instruction).toBe(

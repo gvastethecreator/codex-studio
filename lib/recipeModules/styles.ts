@@ -147,9 +147,7 @@ function getSelectedStyleLayerDirectives(params: RecipeParams) {
     const presetName = getString(layer, 'presetName');
     if (!presetName) return [];
     const strength = getNumber(layer, 'strength', 0.75);
-    const packName = getString(layer, 'packName');
     const aesthetic = getString(layer, 'aesthetic');
-    const creativeBrief = getString(layer, 'creativeBrief');
     const enabled = getBoolean(layer, 'enabled', true);
     const avoidRulesMode = getString(layer, 'avoidRulesMode') || 'merge';
     const fields = getRecord(layer, 'fields');
@@ -168,15 +166,14 @@ function getSelectedStyleLayerDirectives(params: RecipeParams) {
     return [
       directive(
         `Style Slot ${index + 1}`,
+        // Names, packs and briefs are catalog labels, not style instructions. Renaming or moving a
+        // preset must not change what the provider receives.
         [
-          presetName,
-          packName ? `pack ${packName}` : '',
           enabled ? '' : 'disabled',
           `strength ${Math.max(0.1, Math.min(1, strength)).toFixed(2)}`,
           activeFields.length > 0 ? `active fields ${activeFields.join(', ')}` : '',
           `avoid rules ${avoidRulesMode}`,
           aesthetic ? `aesthetic ${aesthetic}` : '',
-          creativeBrief ? `brief ${creativeBrief}` : '',
         ]
           .filter(Boolean)
           .join('; '),
@@ -218,12 +215,10 @@ function buildStylesDirectives(params: RecipeParams) {
     {
       title: 'Application',
       directives: [
-        paramDirective(params, 'presetName', 'Target Style'),
         paramDirective(params, 'mode', 'Mode'),
         paramDirective(params, 'roleInstruction', 'Role Instruction'),
         paramDirective(params, 'compositionRule', 'Composition Rule'),
         paramDirective(params, 'styleEmphasis', 'Style Emphasis'),
-        paramDirective(params, 'creativeBrief', 'Creative Brief'),
         ...selectedStyleDirectives,
       ],
     },
@@ -272,9 +267,6 @@ export const stylesRecipe: RecipeDefinition = {
     const recipeParams = config.recipeParams;
     return {
       directives: buildStylesDirectives(params),
-      quality: {
-        style: typeof recipeParams?.presetName === 'string' ? recipeParams.presetName : null,
-      },
       negativePrompt:
         typeof recipeParams?.negativePrompt === 'string'
           ? recipeParams.negativePrompt.trim() || null

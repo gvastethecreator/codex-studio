@@ -25,7 +25,8 @@ describe('styles recipe', () => {
     });
     const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
 
-    expect(serialized).toContain('- Target Style: Glass Owl');
+    // Preset names are catalog labels; renaming a preset must not change provider text.
+    expect(serialized).not.toContain('Glass Owl');
     expect(serialized).toContain('- Core Aesthetic: polished glass object study');
     expect(serialized).not.toContain('Recipe Module');
     expect(serialized).not.toContain('Preset ID');
@@ -76,10 +77,10 @@ describe('styles recipe', () => {
     const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
 
     expect(serialized).toContain(
-      '- Style Slot 1: Studio Headshot; pack Photography & Realism; strength 0.70; avoid rules merge; aesthetic clean studio portrait',
+      '- Style Slot 1: strength 0.70; avoid rules merge; aesthetic clean studio portrait',
     );
     expect(serialized).toContain(
-      '- Style Slot 2: Film Noir; pack Cinematic & Media; strength 0.40; avoid rules merge; aesthetic hard shadow crime drama',
+      '- Style Slot 2: strength 0.40; avoid rules merge; aesthetic hard shadow crime drama',
     );
   });
 
@@ -111,10 +112,34 @@ describe('styles recipe', () => {
     const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
 
     expect(serialized).toContain(
-      '- Style Slot 1: Polished Glass; pack Texture & Materiality; strength 0.75; active fields Color, Texture 0.40; avoid rules strict',
+      '- Style Slot 1: strength 0.75; active fields Color, Texture 0.40; avoid rules strict',
     );
     expect(serialized).toContain('- Color And Tone: Polished Glass (0.75): cool mineral blues');
     expect(serialized).not.toContain('SP09-006');
     expect(serialized).not.toContain('Camera');
+  });
+
+  it('sends the same text when a preset is renamed, moved to another pack, or rebriefed', () => {
+    const styles = getRecipeModule('styles')!;
+    const layer = (presetName: string, packName: string, creativeBrief: string) => ({
+      presetId: 'SP01-001',
+      presetName,
+      packName,
+      creativeBrief,
+      strength: 0.7,
+      aesthetic: 'hard shadow crime drama',
+    });
+    const text = (presetName: string, packName: string, creativeBrief: string) =>
+      serializeRecipeProviderDirectives(
+        buildRecipeProviderDirectives(styles, {
+          presetName,
+          creativeBrief,
+          aesthetic: 'hard shadow crime drama',
+          selectedStyles: [layer(presetName, packName, creativeBrief)],
+        })!,
+      );
+    const original = text('Film Noir', 'Cinematic & Media', 'a detective in the rain');
+    expect(text('Night Detective', 'Essentials', 'a lighthouse at dusk')).toBe(original);
+    expect(original).not.toMatch(/Film Noir|Cinematic & Media|detective in the rain/);
   });
 });

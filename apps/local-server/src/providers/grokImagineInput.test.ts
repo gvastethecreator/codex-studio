@@ -134,8 +134,8 @@ describe('compileGrokImagineInput', () => {
       },
     });
     expect(compiled.payload.prompt).toContain('Recipe directives:');
-    expect(compiled.payload.prompt).toContain('Studio Headshot');
-    expect(compiled.payload.prompt).toContain('Film Noir');
+    expect(compiled.payload.prompt).not.toContain('Studio Headshot');
+    expect(compiled.payload.prompt).toContain('Style Slot 1');
     expect(compiled.payload.prompt).toContain('watermark, muddy shadows');
     expect(JSON.stringify(compiled.payload)).not.toContain(
       DEFAULT_GENERATION_CONFIG.executionModel,
