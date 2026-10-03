@@ -1,3 +1,9 @@
+import {
+  describeCodexHttpImageSize,
+  resolveCodexHttpImageSizeTier,
+  type CodexHttpImageSizeTier,
+} from './codexExecutionContract';
+
 export const ANIMATION_SEQUENCE_METHODS = ['recursive', 'sequential'] as const;
 
 export type AnimationSequenceMethod = (typeof ANIMATION_SEQUENCE_METHODS)[number];
@@ -17,6 +23,9 @@ export type AnimationSequenceBackground = (typeof ANIMATION_SEQUENCE_BACKGROUNDS
 export const ANIMATION_SEQUENCE_EXPORT_FORMATS = ['gif', 'zip', 'contact_sheet'] as const;
 
 export type AnimationSequenceExportFormat = (typeof ANIMATION_SEQUENCE_EXPORT_FORMATS)[number];
+
+/** Frame requests carry at most this many images: correction input, frame references, shared references. */
+export const ANIMATION_SEQUENCE_MAX_REQUEST_IMAGES = 4;
 
 const ANIMATION_SEQUENCE_RUN_STATUSES = [
   'draft',
@@ -68,6 +77,7 @@ export interface AnimationSequenceContract {
   frameCount: number;
   fps: number;
   aspectRatio: AnimationSequenceAspectRatio;
+  imageSize: CodexHttpImageSizeTier;
   dimensions: AnimationSequenceDimensions;
   method: AnimationSequenceMethod;
   cyclic: boolean;
@@ -195,6 +205,7 @@ export interface CreateAnimationSequenceRunRequest {
   frameCount?: number;
   fps?: number;
   aspectRatio?: AnimationSequenceAspectRatio;
+  imageSize?: CodexHttpImageSizeTier;
   method?: AnimationSequenceMethod;
   cyclic?: boolean;
   pinEdges?: boolean;
@@ -232,14 +243,6 @@ export interface ExportAnimationSequenceGifResponse {
 }
 
 const DEFAULT_PROMPT = 'Animate the scene as a readable sequence of consistent image frames.';
-
-const DIMENSIONS_BY_RATIO: Record<AnimationSequenceAspectRatio, AnimationSequenceDimensions> = {
-  '1:1': { width: 1024, height: 1024 },
-  '16:9': { width: 1280, height: 720 },
-  '9:16': { width: 720, height: 1280 },
-  '4:3': { width: 1024, height: 768 },
-  '3:4': { width: 768, height: 1024 },
-};
 
 function readString(params: Record<string, unknown>, key: string, fallback = '') {
   const value = params[key];
@@ -301,8 +304,17 @@ export function createAnimationSequenceFrameId(index: number) {
   return `frame-${String(index + 1).padStart(4, '0')}`;
 }
 
-function createRecursiveGenerationOrder(count: number) {
+/** A frame waits on its linked job until reconciliation attaches a result or blocks it. */
+export function isAnimationSequenceFrameAwaitingJob(
+  frame: Pick<AnimationSequenceFrameState, 'jobId' | 'status'>,
+) {
+  return Boolean(frame.jobId) && (frame.status === 'generating' || frame.status === 'correcting');
+}
+
+/** Bisection order; each in-between records the interval endpoints generated before it. */
+function createRecursiveGenerationPlan(count: number) {
   const order: number[] = [];
+  const brackets = new Map<number, [number, number]>();
   const push = (index: number) => {
     if (!order.includes(index)) order.push(index);
   };
@@ -310,6 +322,7 @@ function createRecursiveGenerationOrder(count: number) {
     if (end - start <= 1) return;
     const mid = Math.floor((start + end) / 2);
     push(mid);
+    brackets.set(mid, [start, end]);
     fill(start, mid);
     fill(mid, end);
   };
@@ -317,12 +330,21 @@ function createRecursiveGenerationOrder(count: number) {
   push(0);
   push(count - 1);
   fill(0, count - 1);
-  return order;
+  return { order, brackets };
+}
+
+// A cyclic sequence returns to frame 1 after the last frame, so the last frame stops short of 1.00.
+function getFrameProgress(
+  contract: Pick<AnimationSequenceContract, 'frameCount' | 'cyclic'>,
+  index: number,
+) {
+  if (contract.frameCount <= 1) return 0;
+  return index / (contract.cyclic ? contract.frameCount : contract.frameCount - 1);
 }
 
 function createFramePrompt(contract: AnimationSequenceContract, index: number) {
   const ordinal = index + 1;
-  const progress = contract.frameCount === 1 ? 0 : index / (contract.frameCount - 1);
+  const progress = getFrameProgress(contract, index);
   const loopHint = contract.cyclic
     ? 'Keep the sequence loopable; the final frame should flow back into the first frame.'
     : 'The sequence does not need to loop.';
@@ -357,22 +379,24 @@ function createSemanticPhase(
 ): AnimationSequenceFramePlanItem['semanticPhase'] {
   if (index === 0) return 'start';
   if (contract.cyclic && index === contract.frameCount - 1) return 'loop-return';
-  const progress = index / Math.max(1, contract.frameCount - 1);
+  const progress = getFrameProgress(contract, index);
   if (progress < 0.3) return 'anticipation';
   if (progress < 0.72) return 'action';
   return 'settle';
 }
 
-function createReferenceFrameIds(contract: AnimationSequenceContract, index: number) {
+// Frame 1 is the identity anchor (and the loop target of a cyclic last frame). Neighbours follow,
+// nearest first. One request slot stays free for a correction input.
+function createReferenceFrameIds(
+  contract: AnimationSequenceContract,
+  index: number,
+  brackets: ReadonlyMap<number, [number, number]>,
+) {
   if (index === 0) return [];
-  if (contract.method === 'sequential') return [createAnimationSequenceFrameId(index - 1)];
-
-  const refs: string[] = [];
-  if (index > 0) refs.push(createAnimationSequenceFrameId(index - 1));
-  if (index < contract.frameCount - 1) refs.push(createAnimationSequenceFrameId(index + 1));
-  if (contract.cyclic && index === contract.frameCount - 1)
-    refs.push(createAnimationSequenceFrameId(0));
-  return [...new Set(refs)];
+  const neighbours = contract.method === 'sequential' ? [index - 1] : (brackets.get(index) ?? []);
+  return [...new Set([0, ...neighbours])]
+    .slice(0, ANIMATION_SEQUENCE_MAX_REQUEST_IMAGES - 1)
+    .map(createAnimationSequenceFrameId);
 }
 
 export function createAnimationSequenceContract(
@@ -391,6 +415,9 @@ export function createAnimationSequenceContract(
     isAnimationSequenceExportFormat,
   );
   const aspectRatio = isAnimationSequenceAspectRatio(aspectRatioValue) ? aspectRatioValue : '1:1';
+  // Frames must match what the image provider returns; ADR 0010 forbids cropping or scaling them.
+  const imageSize = resolveCodexHttpImageSizeTier(readString(input, 'imageSize', '1K'));
+  const { width, height } = describeCodexHttpImageSize(aspectRatio, imageSize);
 
   return {
     prompt: readString(input, 'prompt', DEFAULT_PROMPT),
@@ -403,7 +430,8 @@ export function createAnimationSequenceContract(
     frameCount: clampInt(readNumber(input, 'frameCount', 8), 2, 48),
     fps: clampInt(readNumber(input, 'fps', 12), 1, 30),
     aspectRatio,
-    dimensions: DIMENSIONS_BY_RATIO[aspectRatio],
+    imageSize,
+    dimensions: { width, height },
     method: isAnimationSequenceMethod(methodValue) ? methodValue : 'recursive',
     cyclic: readBoolean(input, 'cyclic', true),
     pinEdges: readBoolean(input, 'pinEdges', true),
@@ -419,10 +447,13 @@ export function createAnimationSequenceContract(
 export function createAnimationSequenceFramePlan(
   contract: AnimationSequenceContract,
 ): AnimationSequenceFramePlan {
-  const order =
+  const { order, brackets } =
     contract.method === 'recursive'
-      ? createRecursiveGenerationOrder(contract.frameCount)
-      : Array.from({ length: contract.frameCount }, (_, index) => index);
+      ? createRecursiveGenerationPlan(contract.frameCount)
+      : {
+          order: Array.from({ length: contract.frameCount }, (_, index) => index),
+          brackets: new Map<number, [number, number]>(),
+        };
   const generationOrderByIndex = new Map(
     order.map((index, generationOrder) => [index, generationOrder]),
   );
@@ -442,7 +473,7 @@ export function createAnimationSequenceFramePlan(
         prompt: createFramePrompt(contract, index),
         isKeyframe,
         generationOrder: generationOrderByIndex.get(index) ?? index,
-        referenceFrameIds: createReferenceFrameIds(contract, index),
+        referenceFrameIds: createReferenceFrameIds(contract, index, brackets),
         strategy: isKeyframe
           ? 'anchor'
           : contract.method === 'recursive'

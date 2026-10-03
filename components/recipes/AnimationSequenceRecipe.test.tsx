@@ -53,6 +53,16 @@ describe('AnimationSequenceRecipe', () => {
     expect(parseBoundedNumberInput('1', 2, 48)).toBe(2);
     expect(parseBoundedNumberInput('24', 2, 48)).toBe(24);
     expect(parseBoundedNumberInput('80', 2, 48)).toBe(48);
+
+    // Typing does not clamp mid-edit; the field can be cleared and clamps on blur.
+    render(<AnimationFramePreview frames={[{ id: 'f1' }]} fps={12} />);
+    const input = screen.getByLabelText<HTMLInputElement>('Preview FPS');
+    fireEvent.change(input, { target: { value: '' } });
+    expect(input.value).toBe('');
+    fireEvent.change(input, { target: { value: '90' } });
+    expect(input.value).toBe('90');
+    fireEvent.blur(input);
+    expect(input.value).toBe('60');
   });
 
   it('keeps compact workbenches scrollable and explains the empty prompt state', () => {

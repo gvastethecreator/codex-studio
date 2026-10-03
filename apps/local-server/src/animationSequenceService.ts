@@ -2,7 +2,7 @@ import { isManagedGenerationAssetPath } from './managedAssetPolicy';
 import { captureWorkflowOutput } from './outputDestination';
 import { toPublicAssetUrl } from './library';
 import { randomUUID } from 'node:crypto';
-import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readFile, readdir, rename, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { authoringSharp } from './sharpAuthoringAdapter';
 import {
@@ -132,9 +132,12 @@ async function readJson<T>(filePath: string): Promise<T | null> {
   }
 }
 
+// Write beside the target and rename, so a crash never leaves a truncated run record.
 async function writeJson(filePath: string, value: unknown) {
   await mkdir(path.dirname(filePath), { recursive: true });
-  await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+  const tempPath = `${filePath}.${randomUUID()}.tmp`;
+  await writeFile(tempPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+  await rename(tempPath, filePath);
 }
 
 function createFrameStates(
@@ -166,6 +169,7 @@ function resolveRunStatus(run: AnimationSequenceRun): AnimationSequenceRun['stat
     return 'ready_for_review';
   }
   if (run.frames.some((frame) => frame.status === 'generating')) return 'generating';
+  if (run.frames.some((frame) => frame.status === 'correcting')) return 'correcting';
   if (run.frames.some((frame) => frame.status === 'generated')) return 'waiting_for_frame';
   return 'planned';
 }
@@ -240,6 +244,22 @@ export function createAnimationSequenceService({
   createId = randomUUID,
   now = () => new Date().toISOString(),
 }: CreateAnimationSequenceServiceOptions): AnimationSequenceService {
+  const runLocks = new Map<string, Promise<void>>();
+
+  function withRunLock<T>(runId: string, task: () => Promise<T>) {
+    const key = safeSegment(runId);
+    const result = (runLocks.get(key) ?? Promise.resolve()).then(task);
+    const settled = result.then(
+      () => undefined,
+      () => undefined,
+    );
+    runLocks.set(key, settled);
+    void settled.then(() => {
+      if (runLocks.get(key) === settled) runLocks.delete(key);
+    });
+    return result;
+  }
+
   async function saveRun(run: AnimationSequenceRun) {
     const updated = {
       ...run,
@@ -267,7 +287,7 @@ export function createAnimationSequenceService({
     );
   }
 
-  return {
+  const service: AnimationSequenceService = {
     async listRuns() {
       const roots = ['state', 'outputs'].map((section) =>
         resolveLibraryPathFromRoot(readLibraryDir(), section, 'animation-sequence'),
@@ -412,7 +432,7 @@ export function createAnimationSequenceService({
           reasonKind: 'geometry_mismatch',
           userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height}.`,
           suggestion:
-            'Attach an image that already matches the frame size. This workflow does not crop or scale it.',
+            'Select Retry to generate the frame at the run size. This workflow does not crop or scale frames.',
         };
         frame.updatedAt = timestamp;
         return saveRun(run);
@@ -559,5 +579,13 @@ export function createAnimationSequenceService({
       await writeJson(run.paths.qaReportPath, report);
       return saveRun(run);
     },
+  };
+
+  // Every read-modify-write of one run record runs alone, so concurrent writers cannot drop updates.
+  return {
+    ...service,
+    attachFrame: (runId, input) => withRunLock(runId, () => service.attachFrame(runId, input)),
+    exportGif: (runId, input) => withRunLock(runId, () => service.exportGif(runId, input)),
+    runQa: (runId) => withRunLock(runId, () => service.runQa(runId)),
   };
 }

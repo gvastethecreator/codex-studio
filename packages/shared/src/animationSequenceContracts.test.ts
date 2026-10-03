@@ -27,10 +27,16 @@ describe('animationSequenceContracts', () => {
       frameCount: 48,
       fps: 1,
       aspectRatio: '16:9',
-      dimensions: { width: 1280, height: 720 },
+      imageSize: '1K',
+      dimensions: { width: 1536, height: 864 },
       method: 'recursive',
       continuity: 'strict',
       outputFormats: ['gif'],
+    });
+    // Frame size follows the provider's size for the same ratio and tier.
+    expect(createAnimationSequenceContract({ aspectRatio: '1:1', imageSize: '2K' })).toMatchObject({
+      imageSize: '2K',
+      dimensions: { width: 2048, height: 2048 },
     });
   });
 
@@ -56,9 +62,29 @@ describe('animationSequenceContracts', () => {
     expect(plan.frames[5]).toMatchObject({
       id: 'frame-0006',
       isKeyframe: true,
-      referenceFrameIds: ['frame-0005', 'frame-0001'],
+      referenceFrameIds: ['frame-0001'],
       semanticPhase: 'loop-return',
     });
+    // The loop seam must not repeat frame 1.
+    expect(plan.frames[5]?.prompt).toContain('Sequence progress: 0.83.');
+  });
+
+  it('references the identity anchor and the bisection bracket of each in-between', () => {
+    const plan = createAnimationSequenceFramePlan(
+      createAnimationSequenceContract({ frameCount: 8, method: 'recursive', cyclic: false }),
+    );
+
+    expect(plan.frames.map((frame) => frame.referenceFrameIds)).toEqual([
+      [],
+      ['frame-0001', 'frame-0004'],
+      ['frame-0001', 'frame-0002', 'frame-0004'],
+      ['frame-0001', 'frame-0008'],
+      ['frame-0001', 'frame-0004', 'frame-0006'],
+      ['frame-0001', 'frame-0004', 'frame-0008'],
+      ['frame-0001', 'frame-0006', 'frame-0008'],
+      ['frame-0001'],
+    ]);
+    expect(plan.frames[7]?.prompt).toContain('Sequence progress: 1.00.');
   });
 
   it('creates sequential plans with previous-frame references', () => {
@@ -75,7 +101,7 @@ describe('animationSequenceContracts', () => {
     expect(plan.frames[2]).toMatchObject({
       id: 'frame-0003',
       strategy: 'sequential_followup',
-      referenceFrameIds: ['frame-0002'],
+      referenceFrameIds: ['frame-0001', 'frame-0002'],
     });
     expect(plan.frames[2]?.prompt).toContain('Animation frame 3 of 4.');
   });

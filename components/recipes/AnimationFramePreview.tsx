@@ -1,42 +1,23 @@
 import { useEffect, useState } from 'react';
-import { getCatalogImageDetail } from '../../services/studio-api/catalog';
-import { resolveCatalogEntryPreviewUrl } from '../../lib/studioCatalogImageAdapter';
+import { useBoundedNumberInput } from './animationSequenceNumberInput';
 
 interface PreviewFrame {
   id: string;
   catalogImageId?: string | null;
   src?: string;
+  unavailable?: boolean;
 }
 
-/** Playback is opt-in and includes gaps; exporting still uses the run's full-frame gate. */
+/**
+ * Playback is opt-in and includes gaps; exporting still uses the run's full-frame gate.
+ * The caller resolves `src` from the run's attached Catalog Entries.
+ */
 export function AnimationFramePreview({ frames, fps }: { frames: PreviewFrame[]; fps: number }) {
   const [playing, setPlaying] = useState(false);
   const [previewFps, setPreviewFps] = useState(fps);
+  const previewFpsInput = useBoundedNumberInput(previewFps, 1, 60, setPreviewFps);
   const [loop, setLoop] = useState(true);
   const [index, setIndex] = useState(0);
-  const [sources, setSources] = useState<Record<string, string>>({});
-  const missingIds = frames
-    .filter((frame) => !frame.src && frame.catalogImageId)
-    .map((frame) => frame.catalogImageId!)
-    .join('|');
-  useEffect(() => {
-    let cancelled = false;
-    const ids = missingIds ? missingIds.split('|') : [];
-    void Promise.all(
-      ids.map(async (id) => {
-        try {
-          return [id, resolveCatalogEntryPreviewUrl(await getCatalogImageDetail(id))] as const;
-        } catch {
-          return [id, ''] as const;
-        }
-      }),
-    ).then((entries) => {
-      if (!cancelled) setSources(Object.fromEntries(entries));
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [missingIds]);
   useEffect(() => {
     if (!playing || frames.length < 2) return;
     const timer = window.setTimeout(
@@ -50,8 +31,8 @@ export function AnimationFramePreview({ frames, fps }: { frames: PreviewFrame[];
   }, [playing, frames.length, previewFps, loop, index]);
   const currentIndex = Math.min(index, Math.max(0, frames.length - 1));
   const frame = frames[currentIndex];
-  const src = frame?.src || sources[frame?.catalogImageId ?? ''];
-  const available = frames.filter((item) => item.src || sources[item.catalogImageId ?? '']).length;
+  const src = frame?.src;
+  const available = frames.filter((item) => item.src).length;
   return (
     <section
       aria-label="Animation preview"
@@ -67,7 +48,11 @@ export function AnimationFramePreview({ frames, fps }: { frames: PreviewFrame[];
         ) : (
           <p className="p-4 text-center text-sm">
             Frame {currentIndex + 1} ·{' '}
-            {frame?.catalogImageId ? 'Image unavailable' : 'Not generated yet'}
+            {frame?.catalogImageId
+              ? frame.unavailable
+                ? 'Image unavailable'
+                : 'Loading image'
+              : 'Not generated yet'}
           </p>
         )}
       </div>
@@ -79,10 +64,7 @@ export function AnimationFramePreview({ frames, fps }: { frames: PreviewFrame[];
             type="number"
             min={1}
             max={60}
-            value={previewFps}
-            onChange={(event) =>
-              setPreviewFps(Math.max(1, Math.min(60, Number(event.target.value) || 1)))
-            }
+            {...previewFpsInput}
             className="w-14 bg-[color:var(--wb-well)] p-1"
           />
         </label>

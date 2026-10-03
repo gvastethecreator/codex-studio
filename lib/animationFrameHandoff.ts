@@ -74,6 +74,7 @@ export function createAnimationFrameHandoff({
     frameCount: contract.frameCount,
     fps: contract.fps,
     aspectRatio: contract.aspectRatio,
+    imageSize: contract.imageSize,
     method: contract.method,
     cyclic: contract.cyclic,
     pinEdges: contract.pinEdges,

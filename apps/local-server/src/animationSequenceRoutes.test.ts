@@ -169,6 +169,22 @@ describe('animationSequenceRoutes', () => {
           issues: expect.arrayContaining(['GIF export is missing or stale.']),
         },
       });
+
+      const correctionResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
+        method: 'POST',
+        body: JSON.stringify({ frameId: 'frame-0001', jobId: 'job-correction' }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      await expect(correctionResponse.json()).resolves.toMatchObject({
+        status: 'correcting',
+        frames: expect.arrayContaining([
+          expect.objectContaining({
+            id: 'frame-0001',
+            status: 'correcting',
+            jobId: 'job-correction',
+          }),
+        ]),
+      });
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -223,40 +239,28 @@ describe('animationSequenceRoutes', () => {
       });
       const run = (await createResponse.json()) as { id: string };
 
-      const managedResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
-        method: 'POST',
-        body: JSON.stringify({ frameIndex: 0, catalogImageId: 'managed' }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-      expect(managedResponse.status).toBe(200);
-      await expect(managedResponse.json()).resolves.toMatchObject({
-        frames: expect.arrayContaining([
-          expect.objectContaining({
-            id: 'frame-0001',
-            status: 'generated',
-            catalogImageId: 'managed',
+      // Concurrent attaches to one run must both persist.
+      const [managedResponse, outsideResponse] = await Promise.all(
+        [
+          { frameIndex: 0, catalogImageId: 'managed' },
+          { frameIndex: 1, catalogImageId: 'outside' },
+        ].map(async (body) =>
+          routes.request(`/runs/${run.id}/attach-frame`, {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: { 'Content-Type': 'application/json' },
           }),
-        ]),
-      });
-
-      const outsideResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
-        method: 'POST',
-        body: JSON.stringify({ frameIndex: 1, catalogImageId: 'outside' }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-      expect(outsideResponse.status).toBe(200);
-      const outsidePayload = (await outsideResponse.json()) as {
-        frames: Array<{
-          id: string;
-          status: string;
-          blocked: { reasonKind: string } | null;
-        }>;
+        ),
+      );
+      expect(managedResponse!.status).toBe(200);
+      expect(outsideResponse!.status).toBe(200);
+      const savedRun = (await (await routes.request(`/runs/${run.id}`)).json()) as {
+        frames: Array<{ id: string; status: string; catalogImageId: string | null }>;
       };
-      expect(outsidePayload.frames.find((frame) => frame.id === 'frame-0002')).toMatchObject({
-        id: 'frame-0002',
-        status: 'blocked',
-        blocked: { reasonKind: 'source_missing' },
-      });
+      expect(savedRun.frames).toMatchObject([
+        { id: 'frame-0001', status: 'generated', catalogImageId: 'managed' },
+        { id: 'frame-0002', status: 'blocked', blocked: { reasonKind: 'source_missing' } },
+      ]);
     } finally {
       rmSync(root, { recursive: true, force: true });
       rmSync(outsideRoot, { recursive: true, force: true });

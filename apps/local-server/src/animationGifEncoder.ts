@@ -22,41 +22,153 @@ function parseHexColor(value: string | null | undefined) {
   };
 }
 
-function buildPalette() {
-  const palette: number[] = [];
-  for (let index = 0; index < 256; index += 1) {
-    const r = (index >> 5) & 0x07;
-    const g = (index >> 2) & 0x07;
-    const b = index & 0x03;
-    palette.push(Math.round((r / 7) * 255));
-    palette.push(Math.round((g / 7) * 255));
-    palette.push(Math.round((b / 3) * 255));
-  }
-  return palette;
+interface Rgb {
+  r: number;
+  g: number;
+  b: number;
 }
 
-function quantizeFrame(
+// Colors are counted in 5-bit-per-channel bins; each bin keeps exact channel sums for its average.
+const BIN_BITS = 5;
+const BIN_COUNT = 1 << (BIN_BITS * 3);
+
+function binOf(r: number, g: number, b: number) {
+  return ((r >> 3) << 10) | ((g >> 3) << 5) | (b >> 3);
+}
+
+/** Returns packed RGB, or -1 for a pixel that GIF transparency drops (alpha below 128). */
+function readPixel(rgba: Uint8Array, offset: number, matte: Rgb, transparent: boolean) {
+  const alpha = rgba[offset + 3]!;
+  if (transparent && alpha < 128) return -1;
+  const r = rgba[offset]!;
+  const g = rgba[offset + 1]!;
+  const b = rgba[offset + 2]!;
+  if (transparent || alpha === 255) return (r << 16) | (g << 8) | b;
+  const weight = alpha / 255;
+  return (
+    (Math.round(r * weight + matte.r * (1 - weight)) << 16) |
+    (Math.round(g * weight + matte.g * (1 - weight)) << 8) |
+    Math.round(b * weight + matte.b * (1 - weight))
+  );
+}
+
+function buildHistogram(frames: GifRgbaFrame[], matte: Rgb, transparent: boolean) {
+  const counts = new Float64Array(BIN_COUNT);
+  const sums = new Float64Array(BIN_COUNT * 3);
+  let hasTransparentPixels = false;
+  for (const frame of frames) {
+    for (let offset = 0; offset < frame.rgba.length; offset += 4) {
+      const rgb = readPixel(frame.rgba, offset, matte, transparent);
+      if (rgb < 0) {
+        hasTransparentPixels = true;
+        continue;
+      }
+      const r = rgb >> 16;
+      const g = (rgb >> 8) & 0xff;
+      const b = rgb & 0xff;
+      const bin = binOf(r, g, b);
+      counts[bin] += 1;
+      sums[bin * 3] += r;
+      sums[bin * 3 + 1] += g;
+      sums[bin * 3 + 2] += b;
+    }
+  }
+  return { counts, sums, hasTransparentPixels };
+}
+
+/** Median cut over the color bins. Images with few colors keep every color exactly. */
+function medianCut(counts: Float64Array, sums: Float64Array, maxColors: number): Rgb[] {
+  const channelOf = (bin: number, channel: number) => (bin >> ((2 - channel) * BIN_BITS)) & 31;
+  const measure = (bins: number[]) => {
+    let count = 0;
+    let channel = 0;
+    let range = 0;
+    for (const bin of bins) count += counts[bin]!;
+    for (let candidate = 0; candidate < 3; candidate += 1) {
+      let min = 31;
+      let max = 0;
+      for (const bin of bins) {
+        const value = channelOf(bin, candidate);
+        if (value < min) min = value;
+        if (value > max) max = value;
+      }
+      if (max - min > range) {
+        range = max - min;
+        channel = candidate;
+      }
+    }
+    return { bins, count, channel, score: bins.length > 1 ? count * range : 0 };
+  };
+
+  const used: number[] = [];
+  for (let bin = 0; bin < BIN_COUNT; bin += 1) if (counts[bin]! > 0) used.push(bin);
+  if (used.length === 0) return [];
+  const boxes = [measure(used)];
+  while (boxes.length < maxColors) {
+    let target = 0;
+    for (let index = 1; index < boxes.length; index += 1) {
+      if (boxes[index]!.score > boxes[target]!.score) target = index;
+    }
+    const box = boxes[target]!;
+    if (box.score === 0) break;
+    const sorted = box.bins.toSorted(
+      (left, right) => channelOf(left, box.channel) - channelOf(right, box.channel),
+    );
+    let split = 1;
+    for (let seen = counts[sorted[0]!]!; split < sorted.length - 1; split += 1) {
+      if (seen >= box.count / 2) break;
+      seen += counts[sorted[split]!]!;
+    }
+    boxes.splice(target, 1, measure(sorted.slice(0, split)), measure(sorted.slice(split)));
+  }
+
+  return boxes.map(({ bins, count }) => {
+    let r = 0;
+    let g = 0;
+    let b = 0;
+    for (const bin of bins) {
+      r += sums[bin * 3]!;
+      g += sums[bin * 3 + 1]!;
+      b += sums[bin * 3 + 2]!;
+    }
+    return { r: Math.round(r / count), g: Math.round(g / count), b: Math.round(b / count) };
+  });
+}
+
+function mapBinsToPalette(counts: Float64Array, sums: Float64Array, colors: Rgb[]) {
+  const lookup = new Uint8Array(BIN_COUNT);
+  for (let bin = 0; bin < BIN_COUNT; bin += 1) {
+    const count = counts[bin]!;
+    if (count === 0) continue;
+    const r = sums[bin * 3]! / count;
+    const g = sums[bin * 3 + 1]! / count;
+    const b = sums[bin * 3 + 2]! / count;
+    let best = 0;
+    let bestDistance = Infinity;
+    for (const [index, color] of colors.entries()) {
+      const distance = (color.r - r) ** 2 + (color.g - g) ** 2 + (color.b - b) ** 2;
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = index;
+      }
+    }
+    lookup[bin] = best;
+  }
+  return lookup;
+}
+
+function indexFrame(
   frame: GifRgbaFrame,
-  matteColor: string | null | undefined,
-  transparent = false,
+  matte: Rgb,
+  transparent: boolean,
+  lookup: Uint8Array,
+  paletteOffset: number,
 ) {
-  const matte = parseHexColor(matteColor);
   const indexes = new Uint8Array(frame.rgba.length / 4);
   for (let source = 0, target = 0; source < frame.rgba.length; source += 4, target += 1) {
-    if (transparent && frame.rgba[source + 3] < 128) {
-      indexes[target] = 0;
-      continue;
-    }
-    const alpha = transparent ? 1 : frame.rgba[source + 3] / 255;
-    const r = Math.round(frame.rgba[source] * alpha + matte.r * (1 - alpha));
-    const g = Math.round(frame.rgba[source + 1] * alpha + matte.g * (1 - alpha));
-    const b = Math.round(frame.rgba[source + 2] * alpha + matte.b * (1 - alpha));
-    const r3 = Math.round((r / 255) * 7) & 0x07;
-    const g3 = Math.round((g / 255) * 7) & 0x07;
-    const b2 = Math.round((b / 255) * 3) & 0x03;
-    const colorIndex = (r3 << 5) | (g3 << 2) | b2;
-    // Index zero is reserved for transparent pixels. Index four is near-black.
-    indexes[target] = transparent && colorIndex === 0 ? 4 : colorIndex;
+    const rgb = readPixel(frame.rgba, source, matte, transparent);
+    indexes[target] =
+      rgb < 0 ? 0 : paletteOffset + lookup[binOf(rgb >> 16, (rgb >> 8) & 0xff, rgb & 0xff)]!;
   }
   return indexes;
 }
@@ -164,12 +276,24 @@ export function encodeGif({
     }
   }
 
+  const matte = parseHexColor(matteColor);
+  const { counts, sums, hasTransparentPixels } = buildHistogram(frames, matte, transparent);
+  // Transparency gets its own palette slot, and only when a frame actually has a dropped pixel.
+  const useTransparency = transparent && hasTransparentPixels;
+  const paletteOffset = useTransparency ? 1 : 0;
+  const colors = medianCut(counts, sums, 256 - paletteOffset);
+  const lookup = mapBinsToPalette(counts, sums, colors);
+  const palette = new Array<number>(256 * 3).fill(0);
+  for (const [index, color] of colors.entries()) {
+    palette.splice((index + paletteOffset) * 3, 3, color.r, color.g, color.b);
+  }
+
   const bytes: number[] = [];
   pushAscii(bytes, 'GIF89a');
   pushU16(bytes, width);
   pushU16(bytes, height);
   bytes.push(0xf7, 0x00, 0x00);
-  bytes.push(...buildPalette());
+  bytes.push(...palette);
 
   if (loop) {
     bytes.push(0x21, 0xff, 0x0b);
@@ -180,7 +304,7 @@ export function encodeGif({
   }
 
   for (const frame of frames) {
-    bytes.push(0x21, 0xf9, 0x04, transparent ? 0x09 : 0x00);
+    bytes.push(0x21, 0xf9, 0x04, useTransparency ? 0x09 : 0x00);
     pushU16(bytes, Math.max(1, Math.round(frame.delayCentiseconds)));
     bytes.push(0x00, 0x00);
     bytes.push(0x2c);
@@ -190,7 +314,10 @@ export function encodeGif({
     pushU16(bytes, height);
     bytes.push(0x00);
     bytes.push(0x08);
-    pushSubBlocks(bytes, lzwEncode(quantizeFrame(frame, matteColor, transparent), 8));
+    pushSubBlocks(
+      bytes,
+      lzwEncode(indexFrame(frame, matte, transparent, lookup, paletteOffset), 8),
+    );
   }
 
   bytes.push(0x3b);

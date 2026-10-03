@@ -14,8 +14,10 @@ import {
   Sparks as Sparkles,
 } from 'iconoir-react';
 import {
+  ANIMATION_SEQUENCE_MAX_REQUEST_IMAGES,
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
+  isAnimationSequenceFrameAwaitingJob,
   type AnimationSequenceFramePlanItem,
   type AnimationSequenceFrameState,
   type AnimationSequenceRunView as AnimationSequenceRun,
@@ -23,6 +25,8 @@ import {
 import type { Job as StudioJob } from '../../packages/shared/src/types';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import { createAnimationFrameHandoff } from '../../lib/animationFrameHandoff';
+import { materializeCatalogEntryImageWithConfig } from '../../lib/studioCatalogImageAdapter';
+import { getCatalogImageDetail } from '../../services/studio-api/catalog';
 import { animationSequenceRunCoordinator } from '../../services/animationSequenceRunCoordinator';
 import { hasRecipeIdentity } from '../../lib/recipeIdentity';
 import {
@@ -40,7 +44,7 @@ import {
   listAnimationSequenceRuns,
   runAnimationSequenceQa,
 } from '../../services/studio-api/animationSequences';
-import { parseBoundedNumberInput } from './animationSequenceNumberInput';
+import { useBoundedNumberInput } from './animationSequenceNumberInput';
 
 interface AnimationSequenceRecipeProps {
   workspaceId?: string;
@@ -138,6 +142,49 @@ function findGeneratedFrameImage(
   return images.find((image) => frameMatchesRun(image, runId, frameId)) ?? null;
 }
 
+// Only generated frames (and frames correcting from a generated image) hold an accepted image.
+function hasAcceptedFrameImage(
+  frame: Pick<AnimationSequenceFrameState, 'catalogImageId' | 'status'>,
+) {
+  return (
+    Boolean(frame.catalogImageId) && (frame.status === 'generated' || frame.status === 'correcting')
+  );
+}
+
+/** The run's attached Catalog Entries are frame truth; the loaded catalog page is only a cache. */
+function useFrameCatalogImages(catalogImageIds: string[], images: GeneratedImageWithConfig[]) {
+  const [fetched, setFetched] = React.useState<Record<string, GeneratedImageWithConfig | null>>({});
+  const loaded = React.useMemo(() => new Map(images.map((image) => [image.id, image])), [images]);
+  const missingKey = [...new Set(catalogImageIds)]
+    .filter((id) => !loaded.has(id) && !(id in fetched))
+    .sort()
+    .join('|');
+  React.useEffect(() => {
+    if (!missingKey) return;
+    let cancelled = false;
+    void Promise.all(
+      missingKey.split('|').map(async (id) => {
+        try {
+          const entry = await getCatalogImageDetail(id);
+          return [id, materializeCatalogEntryImageWithConfig(entry)] as const;
+        } catch {
+          return [id, null] as const;
+        }
+      }),
+    ).then((entries) => {
+      if (!cancelled) setFetched((current) => ({ ...current, ...Object.fromEntries(entries) }));
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [missingKey]);
+  // undefined while loading, null when the Catalog Entry is unavailable.
+  return React.useCallback(
+    (id: string | null | undefined) => (id ? (loaded.get(id) ?? fetched[id]) : null),
+    [loaded, fetched],
+  );
+}
+
 function getFrameDisplayLabel(ordinal: number) {
   return `Frame ${String(ordinal).padStart(2, '0')}`;
 }
@@ -162,6 +209,7 @@ function NumberField({
   max: number;
   onChange: (value: number) => void;
 }) {
+  const input = useBoundedNumberInput(value, min, max, onChange);
   return (
     <label className="grid gap-1.5">
       <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
@@ -171,11 +219,7 @@ function NumberField({
         type="number"
         min={min}
         max={max}
-        value={value}
-        onChange={(event) => {
-          const nextValue = parseBoundedNumberInput(event.target.value, min, max);
-          if (nextValue !== null) onChange(nextValue);
-        }}
+        {...input}
         className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
       />
     </label>
@@ -304,6 +348,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           recipeId: 'animation-sequence',
           recipeParams: params,
         }),
+        imageSize: config.imageSize,
         prompt,
       }),
     [params, prompt, config],
@@ -346,7 +391,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       .length ?? 0;
   const nextFrameId = framePlan.generationOrder.find((frameId) => {
     const frame = activeRun?.frames.find((candidate) => candidate.id === frameId);
-    return frame && frame.status !== 'generated' && !frame.jobId;
+    return frame && frame.status !== 'generated' && !isAnimationSequenceFrameAwaitingJob(frame);
   });
   const gifExport = activeRun?.exports.find((item) => item.format === 'gif') ?? null;
   const busy = isBusy || isGenerating;
@@ -398,18 +443,27 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
   const linkedJobs = useLinkedJobStatuses(
     activeRun?.frames.flatMap((frame) => (frame.jobId ? [frame.jobId] : [])) ?? [],
   );
-  const completedJobKey =
+  const resolveFrameImage = useFrameCatalogImages(
+    activeRun?.frames.flatMap((frame) => (frame.catalogImageId ? [frame.catalogImageId] : [])) ??
+      [],
+    images,
+  );
+  // Settled jobs reconcile once: results attach, failures block the frame with a Retry path.
+  const settledJobKey =
     activeRun?.frames
-      .filter(
-        (frame) => frame.jobId && !frame.catalogImageId && linkedJobs[frame.jobId] === 'completed',
-      )
-      .map((frame) => frame.jobId)
+      .flatMap((frame) => {
+        const jobStatus = frame.jobId ? linkedJobs[frame.jobId] : undefined;
+        const settled = isAnimationSequenceFrameAwaitingJob(frame)
+          ? jobStatus !== undefined && jobStatus !== 'queued' && jobStatus !== 'running'
+          : frame.status === 'blocked' && jobStatus === 'completed';
+        return settled ? [`${frame.jobId}:${jobStatus}`] : [];
+      })
       .sort()
       .join('|') ?? '';
   const autoSyncKeyRef = React.useRef('');
   React.useEffect(() => {
-    if (!activeRun || !completedJobKey || autoSyncKeyRef.current === completedJobKey) return;
-    autoSyncKeyRef.current = completedJobKey;
+    if (!activeRun || !settledJobKey || autoSyncKeyRef.current === settledJobKey) return;
+    autoSyncKeyRef.current = settledJobKey;
     let cancelled = false;
     void animationSequenceRunCoordinator
       .reconcile(activeRun)
@@ -423,18 +477,58 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
     return () => {
       cancelled = true;
     };
-  }, [activeRun, completedJobKey]);
+  }, [activeRun, settledJobKey]);
   const executionLabel = activeRun?.frames.some(
     (frame) => frame.jobId && ['queued', 'running'].includes(linkedJobs[frame.jobId]),
   )
     ? 'Generating frames'
-    : activeRun?.frames.some((frame) => frame.jobId && !frame.catalogImageId)
+    : activeRun?.frames.some(isAnimationSequenceFrameAwaitingJob)
       ? 'Review frame results'
       : activeRun
         ? STATUS_LABELS[activeRun.status]
         : 'Draft';
   const activeRunId = activeRun?.id ?? null;
   const resolvedSelectedFrameId = selectedFrame?.id ?? null;
+  const selectedJobStatus = selectedFrame?.jobId ? linkedJobs[selectedFrame.jobId] : undefined;
+  // A frame whose job may still run cannot be queued again; that would spend twice.
+  const isSelectedFrameJobActive = Boolean(
+    selectedFrame &&
+    isAnimationSequenceFrameAwaitingJob(selectedFrame) &&
+    (selectedJobStatus === undefined ||
+      selectedJobStatus === 'queued' ||
+      selectedJobStatus === 'running'),
+  );
+  const selectedFrameImage = resolveFrameImage(selectedFrame?.catalogImageId);
+  const selectedCatalogMatch =
+    activeRun && selectedFrame && !selectedFrame.catalogImageId
+      ? findGeneratedFrameImage(images, activeRun.id, selectedFrame.id)
+      : null;
+  const frameAssets = (activeRun?.frames ?? []).flatMap((frame) => {
+    const image = resolveFrameImage(frame.catalogImageId);
+    if (!image || !frame.catalogImageId) return [];
+    // The selected frame is its own correction input; other frames must hold an accepted image.
+    if (frame.id !== selectedFrame?.id && !hasAcceptedFrameImage(frame)) return [];
+    return [{ frameId: frame.id, catalogId: frame.catalogImageId, sourceUrl: image.src }];
+  });
+  const selectedFrameReferenceCount = selectedPlanFrame
+    ? createAnimationFrameHandoff({
+        contract: activeRun?.contract ?? contract,
+        frame: selectedPlanFrame,
+      }).recipeParams.executableReferenceFrameIds.length
+    : 0;
+  const sharedReferenceCount = config.attachments.length;
+  // Frame references go first in the request; shared references fill what is left.
+  const sentSharedReferenceCount = Math.min(
+    sharedReferenceCount,
+    Math.max(0, ANIMATION_SEQUENCE_MAX_REQUEST_IMAGES - selectedFrameReferenceCount),
+  );
+  const pluralize = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;
+  const sharedReferenceNote =
+    sharedReferenceCount === 0
+      ? 'Add a shared reference to anchor identity, camera, palette, and scale across frames.'
+      : sentSharedReferenceCount === sharedReferenceCount
+        ? `${selectedPlanFrame?.id ?? 'Each frame'} sends ${pluralize(sharedReferenceCount, 'shared reference')} with ${pluralize(selectedFrameReferenceCount, 'frame reference')}.`
+        : `${selectedPlanFrame?.id ?? 'Each frame'}: only ${sentSharedReferenceCount} of ${sharedReferenceCount} shared references fit. A request sends up to ${ANIMATION_SEQUENCE_MAX_REQUEST_IMAGES} images and ${pluralize(selectedFrameReferenceCount, 'frame reference')} go first, so ${sharedReferenceCount - sentSharedReferenceCount} will be dropped.`;
 
   React.useEffect(() => {
     if (!activeRunId || !resolvedSelectedFrameId) {
@@ -513,6 +607,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           frameCount: contract.frameCount,
           fps: contract.fps,
           aspectRatio: contract.aspectRatio,
+          imageSize: contract.imageSize,
           method: contract.method,
           cyclic: contract.cyclic,
           pinEdges: contract.pinEdges,
@@ -527,10 +622,12 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
     );
 
   const generateFrame = (correctionMode: boolean) => {
-    if (!activeRun || !selectedPlanFrame || !isSelectedPromptReady) return;
+    if (!activeRun || !selectedPlanFrame || !isSelectedPromptReady || isSelectedFrameJobActive) {
+      return;
+    }
     if (
       selectedPlanFrame.index > 0 &&
-      !activeRun.frames.some((frame) => frame.index === 0 && frame.catalogImageId)
+      !activeRun.frames.some((frame) => frame.index === 0 && hasAcceptedFrameImage(frame))
     ) {
       setError('Attach the first frame from the library before queueing the next frame.');
       return;
@@ -540,20 +637,17 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       contract: activeRun.contract,
       frame: selectedPlanFrame,
       correctionMode,
-      availableFrames: images.flatMap((image) => {
-        const params = image.config.recipeParams ?? {};
-        if (params.runId !== activeRun.id || typeof params.frameId !== 'string') return [];
-        return [
-          {
-            frameId: params.frameId,
-            catalogId: image.id,
-            sourceUrl: image.src,
-          },
-        ];
-      }),
+      availableFrames: frameAssets,
     });
     if (!handoff.ready) {
-      setError(handoff.blockingReason);
+      const isLoadingFrameImage = activeRun.frames.some(
+        (frame) => frame.catalogImageId && resolveFrameImage(frame.catalogImageId) === undefined,
+      );
+      setError(
+        isLoadingFrameImage
+          ? 'Frame images are still loading. Try again in a moment.'
+          : handoff.blockingReason,
+      );
       return;
     }
     const frameAttachments = [
@@ -570,7 +664,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         (attachment, index, attachments) =>
           attachments.findIndex((candidate) => candidate.id === attachment.id) === index,
       )
-      .slice(0, 10);
+      .slice(0, ANIMATION_SEQUENCE_MAX_REQUEST_IMAGES);
     onGenerate(
       selectedPrompt || selectedPlanFrame.prompt,
       {
@@ -579,6 +673,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           activeRun.contract.background === 'transparent' ? 'transparent' : 'workflow',
         recipeParams: handoff.recipeParams,
         aspectRatio: activeRun.contract.aspectRatio,
+        imageSize: activeRun.contract.imageSize,
         batchCount: handoff.outputCount,
         attachments: frameAttachments,
       },
@@ -606,7 +701,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         await animationSequenceRunCoordinator.reconcile(activeRun);
       // Catalog image attachments target one run record and must serialize.
       for (const frame of updated.frames) {
-        if (frame.catalogImageId) continue;
+        if (frame.catalogImageId || isAnimationSequenceFrameAwaitingJob(frame)) continue;
         const image = findGeneratedFrameImage(images, activeRun.id, frame.id);
         if (!image) continue;
         // react-doctor-disable-next-line react-doctor/async-await-in-loop
@@ -622,7 +717,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
   const attachSelectedGeneratedFrame = () => {
     if (!activeRun || !selectedFrame) return;
-    const image = findGeneratedFrameImage(images, activeRun.id, selectedFrame.id);
+    const image = selectedCatalogMatch;
     if (!image) {
       setError('No matching generated catalog image found for the selected frame.');
       return;
@@ -702,23 +797,48 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 </div>
               ) : null}
 
+              {selectedFrame?.blocked ? (
+                <div
+                  role="status"
+                  className="mt-2 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 p-2 text-xs text-[color:var(--wb-danger)] "
+                >
+                  <div className="font-semibold">{selectedFrame.blocked.userMessage}</div>
+                  <div className="mt-1">{selectedFrame.blocked.suggestion}</div>
+                </div>
+              ) : null}
+
               <div className="mt-3 grid gap-2">
                 <ActionButton
                   tone="primary"
                   onClick={() => generateFrame(false)}
-                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
+                  disabled={
+                    !activeRun ||
+                    !selectedPlanFrame ||
+                    !isSelectedPromptReady ||
+                    isSelectedFrameJobActive ||
+                    busy
+                  }
                 >
                   <Play width={13} height={13} />
-                  Generate
+                  {selectedFrame?.status === 'blocked' ? 'Retry' : 'Generate'}
                 </ActionButton>
                 <ActionButton
                   onClick={() => generateFrame(true)}
-                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
+                  disabled={
+                    !activeRun ||
+                    !selectedPlanFrame ||
+                    !isSelectedPromptReady ||
+                    isSelectedFrameJobActive ||
+                    busy
+                  }
                 >
                   <Sparkles width={13} height={13} />
                   Correct
                 </ActionButton>
-                <ActionButton onClick={attachSelectedGeneratedFrame} disabled={!activeRun || busy}>
+                <ActionButton
+                  onClick={attachSelectedGeneratedFrame}
+                  disabled={!selectedCatalogMatch || busy}
+                >
                   <RefreshCw width={13} height={13} />
                   Attach
                 </ActionButton>
@@ -740,15 +860,10 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       {selectedFrame.catalogImageId ?? 'none'}
                     </span>
                   </div>
-                  {selectedFrame.catalogImageId && onSelectImage ? (
+                  {selectedFrameImage && onSelectImage ? (
                     <button
                       type="button"
-                      onClick={() => {
-                        const image = images.find(
-                          (item) => item.id === selectedFrame.catalogImageId,
-                        );
-                        if (image) onSelectImage(image);
-                      }}
+                      onClick={() => onSelectImage(selectedFrameImage)}
                       className="mt-2 h-8 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]"
                     >
                       Preview
@@ -773,7 +888,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       Frame Sequence
                     </h2>
                     <p className="mt-1 truncate text-xs text-[color:var(--wb-muted)]">
-                      {contract.frameCount} frames / {contract.fps} fps / GIF
+                      {contract.frameCount} frames / {contract.fps} fps /{' '}
+                      {contract.dimensions.width}×{contract.dimensions.height} GIF
                     </p>
                   </div>
                   <span className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/10 text-[color:var(--wb-warning)] ">
@@ -802,7 +918,11 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     Identity anchor
                   </span>
                   <input
-                    value={contract.identityAnchor}
+                    value={
+                      typeof params.identityAnchor === 'string'
+                        ? params.identityAnchor
+                        : contract.identityAnchor
+                    }
                     onChange={(event) => setParam('identityAnchor', event.target.value)}
                     placeholder="What must remain identical across every frame?"
                     className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
@@ -813,7 +933,11 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     Motion driver
                   </span>
                   <input
-                    value={contract.motionDriver}
+                    value={
+                      typeof params.motionDriver === 'string'
+                        ? params.motionDriver
+                        : contract.motionDriver
+                    }
                     onChange={(event) => setParam('motionDriver', event.target.value)}
                     placeholder="The force or action that drives the motion"
                     className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
@@ -821,9 +945,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 </label>
 
                 <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2 text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
-                  {config.attachments.length > 0
-                    ? `${config.attachments.length} shared workspace reference${config.attachments.length === 1 ? '' : 's'} will anchor the sequence.`
-                    : 'Add a shared reference to anchor identity, camera, palette, and scale across frames.'}
+                  {sharedReferenceNote}
                 </div>
 
                 {selectedFrame?.warning && (
@@ -1056,14 +1178,18 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
               <AnimationFramePreview
                 key={activeRun?.id ?? 'draft'}
                 fps={activeRun?.contract.fps ?? contract.fps}
-                frames={framePlan.frames.map((frame) => ({
-                  id: frame.id,
-                  catalogImageId: activeRun?.frames.find((item) => item.id === frame.id)
-                    ?.catalogImageId,
-                  src: activeRun
-                    ? findGeneratedFrameImage(images, activeRun.id, frame.id)?.src
-                    : undefined,
-                }))}
+                frames={framePlan.frames.map((frame) => {
+                  const catalogImageId = activeRun?.frames.find(
+                    (item) => item.id === frame.id,
+                  )?.catalogImageId;
+                  const image = resolveFrameImage(catalogImageId);
+                  return {
+                    id: frame.id,
+                    catalogImageId,
+                    src: image ? (image.preview ?? image.src) : undefined,
+                    unavailable: image === null,
+                  };
+                })}
               />
               {activeRun && gifExport ? (
                 <a
@@ -1079,22 +1205,20 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 {framePlan.frames.map((planFrame) => {
                   const state =
                     activeRun?.frames.find((frame) => frame.id === planFrame.id) ?? null;
-                  const generatedImage = activeRun
-                    ? findGeneratedFrameImage(images, activeRun.id, planFrame.id)
-                    : null;
+                  const generatedImage = resolveFrameImage(state?.catalogImageId);
                   const selected = selectedFrameKey === planFrame.id;
                   const frameLabel = getFrameDisplayLabel(planFrame.ordinal);
-                  const frameStatus = state?.jobId
-                    ? state.catalogImageId
-                      ? 'Image attached'
-                      : `Job ${linkedJobs[state.jobId] ?? 'checking'} · image pending`
-                    : getFrameDisplayStatus(planFrame, state);
+                  const frameStatus =
+                    state && isAnimationSequenceFrameAwaitingJob(state)
+                      ? `Job ${linkedJobs[state.jobId!] ?? 'checking'} · image pending`
+                      : getFrameDisplayStatus(planFrame, state);
+                  const blockedNote = state?.blocked ? `: ${state.blocked.userMessage}` : '';
                   return (
                     <button
                       key={planFrame.id}
                       type="button"
                       onClick={() => setSelectedFrameId(planFrame.id)}
-                      aria-label={`Select ${frameLabel}, ${frameStatus}`}
+                      aria-label={`Select ${frameLabel}, ${frameStatus}${blockedNote}`}
                       aria-pressed={selected}
                       className={`group min-h-28 overflow-hidden rounded-[var(--wb-radius)] border text-left transition-colors ${
                         selected ? 'border-amber-400/2 bg-amber-500/10' : getFrameTone(state)
@@ -1122,7 +1246,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                         <div className="font-mono text-[length:var(--wbp-label)] font-semibold">
                           {frameLabel}
                         </div>
-                        <div className="mt-0.5 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal opacity-70">
+                        <div className="mt-0.5 break-words text-[length:var(--wbp-label)] font-semibold tracking-normal opacity-70">
                           {planFrame.semanticPhase} · {frameStatus}
                         </div>
                       </div>

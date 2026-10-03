@@ -40,6 +40,20 @@ describe('animationGifEncoder', () => {
     ]);
   });
 
+  it('keeps black and neutral grey exact when transparency has its own slot', async () => {
+    const frame = new Uint8Array([0, 0, 0, 255, 128, 128, 128, 255, 255, 255, 255, 0]);
+    const gif = encodeGif({
+      width: 3,
+      height: 1,
+      transparent: true,
+      loop: false,
+      frames: [{ rgba: frame, delayCentiseconds: 10 }],
+    });
+    const { data } = await sharp(gif).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    expect([...data.subarray(0, 8)]).toEqual([0, 0, 0, 255, 128, 128, 128, 255]);
+    expect(data[11]).toBe(0);
+  });
+
   it('encodes multiple RGBA frames into a GIF89a buffer', () => {
     const red = new Uint8Array([255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255]);
     const blue = new Uint8Array([0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255]);
