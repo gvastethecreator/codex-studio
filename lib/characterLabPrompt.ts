@@ -3,6 +3,7 @@ import type { CharacterLabAction } from './characterLabCatalog.generated';
 import {
   CHARACTER_LAB_ACTION_PRIORITY,
   resolveCharacterLabControls,
+  resolveCharacterLabOutputBackground,
 } from './characterLabWorkflows';
 
 export interface CharacterLabPromptOptions {
@@ -42,34 +43,61 @@ function getModeInstruction(action: CharacterLabAction) {
 
   if (action.mode === 'effects') {
     return [
-      'Apply this transformation to the current image or generated character.',
+      'Apply this transformation to the source image.',
       action.prompt,
       'Preserve the main subject identity and intent unless the selected effect explicitly changes camera, canvas, lighting, or background.',
     ].join('\n');
   }
 
+  // Catalog pose and variant prompts are sentence tails ("in a full-body shot…", "a tarot card…").
+  if (action.mode === 'special') {
+    if (/^(a|an|the)\s/i.test(action.prompt)) return `Create ${action.prompt}`;
+    if (/^by\s/i.test(action.prompt)) return `Create a new character ${action.prompt}`;
+    return `Show the character ${action.prompt}`;
+  }
+  if (action.mode === 'poses' && !action.isCouplesPose)
+    return `Show the character ${action.prompt}`;
   return action.prompt;
+}
+
+function getReferenceLine(action: CharacterLabAction, referencesCount: number) {
+  if (referencesCount === 0) return 'No additional reference images supplied.';
+  if (!action.isCouplesPose) {
+    return `Use ${referencesCount} additional reference image(s) for style, detail, or accessory guidance.`;
+  }
+  return [
+    'Treat the second image as the identity source for Character B.',
+    referencesCount > 1 ? 'Treat the third image as the identity source for Character C.' : '',
+    referencesCount > 2
+      ? `Use the remaining ${referencesCount - 2} reference image(s) for style, detail, or accessory guidance.`
+      : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
 }
 
 export function buildCharacterLabPrompt(
   action: CharacterLabAction,
   options: CharacterLabPromptOptions,
 ) {
+  const outputBackground = resolveCharacterLabOutputBackground(action.id, options.outputBackground);
+  // Sprite sheets need a clean extraction backdrop even when a source image is attached.
+  const keepsBackgroundColor = action.mode === 'spritesheets' || !options.hasSource;
   const controls = resolveCharacterLabControls({
     ...options,
     backgroundColor:
-      options.outputBackground === 'transparent' || options.hasSource
-        ? ''
-        : options.backgroundColor,
+      outputBackground === 'transparent' || !keepsBackgroundColor ? '' : options.backgroundColor,
     mode: action.mode,
     category: action.category,
     actionId: action.id,
   });
   const sourceMode = options.hasSource ? 'source-image guided' : 'prompt guided';
-  const referenceLine =
-    options.referencesCount > 0
-      ? `Use ${options.referencesCount} additional reference image(s) for style, detail, or accessory guidance.`
-      : 'No additional reference images supplied.';
+  const background =
+    outputBackground === 'transparent'
+      ? 'transparent'
+      : action.mode === 'spritesheets' && controls.backgroundColor
+        ? 'opaque'
+        : 'auto';
 
   return [
     'Character Lab generation request.',
@@ -82,9 +110,9 @@ export function buildCharacterLabPrompt(
     '',
     'Character identity contract:',
     options.hasSource
-      ? 'Treat the first image as the primary identity source. Preserve the recognizable identity; the selected action may change body proportions, costume, or surroundings.'
+      ? `Treat the first image as the primary identity source${action.isCouplesPose ? ' for Character A' : ''}. Preserve the recognizable identity; the selected action may change body proportions, costume, or surroundings.`
       : 'Create one cohesive original character from the subject description and keep all generated details internally consistent.',
-    referenceLine,
+    getReferenceLine(action, options.referencesCount),
     'Do not add text, captions, watermarks, UI chrome, labels, or unrelated extra characters unless the selected action explicitly asks for them.',
     '',
     'Global character options:',
@@ -101,10 +129,7 @@ export function buildCharacterLabPrompt(
     '',
     'Selected action instructions:',
     getModeInstruction(action),
-    buildGenerationBackgroundInstruction(
-      options.outputBackground === 'transparent' ? 'transparent' : 'auto',
-      options.hasSource,
-    ),
+    buildGenerationBackgroundInstruction(background, options.hasSource),
     CHARACTER_LAB_ACTION_PRIORITY,
     ...(options.additionalPrompt?.trim()
       ? ['', 'Additional instructions:', options.additionalPrompt.trim()]

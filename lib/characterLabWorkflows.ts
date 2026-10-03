@@ -16,6 +16,8 @@ export interface CharacterLabWorkflow {
   expression: string;
   output: string;
   primaryControls: CharacterLabControl[];
+  /** Edits an existing image; prompt-only runs have nothing to transform. */
+  requiresSource: boolean;
 }
 
 export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWorkflow> = {
@@ -24,9 +26,10 @@ export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWor
     actionId: 'poses:front',
     aspectRatio: '2:3',
     backgroundColor: '#FFFFFF',
-    expression: 'Neutral',
+    expression: '',
     output: 'One full-body character pose.',
     primaryControls: ['expression', 'labAspectRatio'],
+    requiresSource: false,
   },
   spritesheets: {
     title: 'Character Sprites',
@@ -36,6 +39,7 @@ export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWor
     expression: '',
     output: 'One sprite-sheet image. Frames are defined by the selected action.',
     primaryControls: ['labAspectRatio', 'backgroundColor'],
+    requiresSource: false,
   },
   scenes: {
     title: 'Character Scenes',
@@ -45,15 +49,17 @@ export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWor
     expression: '',
     output: 'One character integrated into the selected scene.',
     primaryControls: ['style', 'labAspectRatio'],
+    requiresSource: false,
   },
   special: {
     title: 'Character Variants',
     actionId: 'special:outfit_variations',
     aspectRatio: '3:2',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '',
     expression: '',
     output: 'One image with the variants or assets requested by the action.',
     primaryControls: ['style', 'labAspectRatio'],
+    requiresSource: false,
   },
   effects: {
     title: 'Character Transforms',
@@ -63,6 +69,7 @@ export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWor
     expression: '',
     output: 'One transformed image preserving the character identity.',
     primaryControls: ['labAspectRatio'],
+    requiresSource: true,
   },
   motion: {
     title: 'Character Motion',
@@ -72,6 +79,7 @@ export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWor
     expression: '',
     output: 'Video generation is not yet available.',
     primaryControls: ['labAspectRatio'],
+    requiresSource: false,
   },
   profile: {
     title: 'Character Profile',
@@ -81,6 +89,7 @@ export const CHARACTER_LAB_WORKFLOWS: Record<CharacterLabModeId, CharacterLabWor
     expression: '',
     output: 'Character analysis is not yet available.',
     primaryControls: [],
+    requiresSource: false,
   },
 };
 
@@ -110,19 +119,37 @@ export function getCharacterLabControls(params: Record<string, unknown>): Charac
     excluded.add('bodyType');
     excluded.add('clothing');
   }
-  if (params.category === 'Reactions & Emotions') excluded.add('expression');
+  if (params.category === 'Reactions & Emotions' || params.actionId === 'poses:expressions') {
+    excluded.add('expression');
+  }
   return controls.filter((control) => !excluded.has(control));
+}
+
+/** Categories whose actions replace the rendering style, so "keep the source style" conflicts. */
+const CHARACTER_LAB_RESTYLE_CATEGORIES = new Set(['Creative & Fun', 'Image Quality & Style']);
+
+/** Remove Background asks for alpha output; the workflow background would contradict it. */
+export function resolveCharacterLabOutputBackground(
+  actionId: string,
+  outputBackground: 'workflow' | 'transparent' | undefined,
+): 'workflow' | 'transparent' {
+  return actionId === 'effects:bg_remove' ? 'transparent' : (outputBackground ?? 'workflow');
 }
 
 /** The same effective controls feed the preview, context, and provider directives. */
 export function resolveCharacterLabControls(params: Record<string, unknown>) {
   const allowed = getCharacterLabControls(params);
+  const restyles = CHARACTER_LAB_RESTYLE_CATEGORIES.has(String(params.category));
   return Object.fromEntries(
     (
       ['style', 'clothing', 'bodyType', 'expression', 'backgroundColor', 'labAspectRatio'] as const
-    ).map((key) => [
-      key,
-      allowed.includes(key) && typeof params[key] === 'string' ? params[key] : '',
-    ]),
+    ).map((key) => {
+      const raw = params[key];
+      const value = allowed.includes(key) && typeof raw === 'string' ? raw : '';
+      const nothingToPreserve =
+        value.startsWith('Preserve Original') &&
+        (params.hasSource !== true || (key === 'style' && restyles));
+      return [key, nothingToPreserve ? '' : value];
+    }),
   ) as Record<CharacterLabControl, string>;
 }

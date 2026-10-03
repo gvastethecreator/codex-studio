@@ -51,11 +51,22 @@ function savedMode(params: ImageGenerationConfig['recipeParams']): CharacterLabM
   );
 }
 
-function readSavedView(config: ImageGenerationConfig, mode: CharacterLabModeId) {
-  const view = createCharacterLabViewDraft(mode);
+function isModeAction(mode: CharacterLabModeId, actionId: unknown) {
+  return CHARACTER_LAB_ACTIONS.some((action) => action.id === actionId && action.mode === mode);
+}
+
+/**
+ * Saved params hold effective values, so controls the action excluded arrive empty.
+ * Empty values keep the base view's choice instead of wiping it.
+ */
+function readSavedView(
+  config: ImageGenerationConfig,
+  mode: CharacterLabModeId,
+  base: CharacterLabViewDraft = createCharacterLabViewDraft(mode),
+) {
+  const view = { ...base };
   const params = config.recipeParams ?? {};
   for (const key of [
-    'actionId',
     'style',
     'clothing',
     'bodyType',
@@ -63,13 +74,10 @@ function readSavedView(config: ImageGenerationConfig, mode: CharacterLabModeId) 
     'backgroundColor',
     'labAspectRatio',
   ] as const) {
-    if (typeof params[key] === 'string') view[key] = params[key];
+    const value = params[key];
+    if (typeof value === 'string' && value) view[key] = value;
   }
-  if (
-    !CHARACTER_LAB_ACTIONS.some((action) => action.id === view.actionId && action.mode === mode)
-  ) {
-    view.actionId = CHARACTER_LAB_WORKFLOWS[mode].actionId;
-  }
+  if (isModeAction(mode, params.actionId)) view.actionId = params.actionId as string;
   view.prompt =
     typeof params.additionalPrompt === 'string' ? params.additionalPrompt : (config.prompt ?? '');
   view.batchCount = config.batchCount;
@@ -78,14 +86,35 @@ function readSavedView(config: ImageGenerationConfig, mode: CharacterLabModeId) 
   return view;
 }
 
-export function readCharacterLabDraft(config: ImageGenerationConfig): CharacterLabDraft {
-  if (config.characterLabDraft) return config.characterLabDraft;
+function readSavedDraft(
+  config: ImageGenerationConfig,
+  views: CharacterLabDraft['views'] = {},
+): CharacterLabDraft {
   const mode = savedMode(config.recipeParams);
   return {
     subject: typeof config.recipeParams?.subject === 'string' ? config.recipeParams.subject : '',
     activeMode: mode ?? 'poses',
-    views: mode ? { [mode]: readSavedView(config, mode) } : {},
+    views: mode ? { ...views, [mode]: readSavedView(config, mode, views[mode]) } : views,
   };
+}
+
+/** Persisted drafts can outlive catalog actions; those views fall back to the mode default. */
+function withCatalogActions(draft: CharacterLabDraft): CharacterLabDraft {
+  const views = { ...draft.views };
+  let changed = false;
+  for (const mode of Object.keys(views) as CharacterLabModeId[]) {
+    const view = views[mode];
+    if (!view || isModeAction(mode, view.actionId)) continue;
+    views[mode] = { ...view, actionId: CHARACTER_LAB_WORKFLOWS[mode].actionId };
+    changed = true;
+  }
+  return changed ? { ...draft, views } : draft;
+}
+
+export function readCharacterLabDraft(config: ImageGenerationConfig): CharacterLabDraft {
+  return config.characterLabDraft
+    ? withCatalogActions(config.characterLabDraft)
+    : readSavedDraft(config);
 }
 
 export function getCharacterLabView(config: ImageGenerationConfig, mode?: CharacterLabModeId) {
@@ -108,21 +137,28 @@ export function buildCharacterLabParams(
     (item) => item.id === view.actionId && item.mode === mode,
   );
   if (!action) throw new Error(`Unknown Character Lab action: ${view.actionId}`);
+  const hasSource = attachmentCount > 0;
   return {
     mode: action.mode,
     actionId: action.id,
     actionLabel: action.label,
     category: action.category,
     actionPrompt: action.prompt,
-    task: action.task,
+    // Without a source there is no image to edit; the action describes a new image.
+    task: action.task === 'image_edit' && !hasSource ? 'image_generate' : action.task,
     mediaType: action.mediaType,
     frames: action.frames ?? 0,
     isCouplesPose: action.isCouplesPose,
     capability: action.capability,
     subject,
     additionalPrompt: view.prompt,
-    ...resolveCharacterLabControls({ ...view, mode: action.mode, category: action.category }),
-    hasSource: attachmentCount > 0,
+    ...resolveCharacterLabControls({
+      ...view,
+      mode: action.mode,
+      category: action.category,
+      hasSource,
+    }),
+    hasSource,
     referencesCount: Math.min(3, Math.max(0, attachmentCount - 1)),
   };
 }
@@ -174,10 +210,8 @@ export function restoreCharacterLabDraft(
   current: ImageGenerationConfig,
   restored: ImageGenerationConfig,
 ) {
-  const incoming = readCharacterLabDraft({ ...restored, characterLabDraft: undefined });
-  const previous = readCharacterLabDraft(current);
-  return projectCharacterLabConfig(restored, {
-    ...incoming,
-    views: { ...previous.views, ...incoming.views },
-  });
+  return projectCharacterLabConfig(
+    restored,
+    readSavedDraft(restored, readCharacterLabDraft(current).views),
+  );
 }

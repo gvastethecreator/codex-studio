@@ -1,13 +1,5 @@
 import { CozyLoader as Loader2 } from '../CozyMascot';
-import React, {
-  useCallback,
-  useEffect,
-  useEffectEvent,
-  useId,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import {
   Check,
   NavArrowDown as ChevronDown,
@@ -31,6 +23,7 @@ import {
 import {
   CHARACTER_LAB_WORKFLOWS,
   getCharacterLabControls,
+  resolveCharacterLabOutputBackground,
   type CharacterLabControl,
 } from '../../lib/characterLabWorkflows';
 import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
@@ -179,6 +172,8 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
 const ATLAS_WIDTH = characterLabIconAtlasSize.width;
 const ATLAS_HEIGHT = characterLabIconAtlasSize.height;
 const FIRST_READY_ACTION = getFirstReadyCharacterLabAction();
+const SOURCE_REQUIRED_MESSAGE =
+  'Transforms edit an existing image. Add a source image to continue.';
 
 function getAccent(accent: string) {
   return ACCENT_CLASSES[accent] ?? ACCENT_CLASSES.zinc;
@@ -434,7 +429,6 @@ function SelectField({
     options.findIndex((option) => option === value),
   );
   const [activeIndex, setActiveIndex] = useState(selectedIndex);
-  const rootRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const labelId = useId();
   const listboxId = useId();
@@ -450,60 +444,20 @@ function SelectField({
   const closeDropdown = useCallback(() => {
     setIsOpen(false);
   }, []);
-  const closeDropdownFromDocument = useEffectEvent(closeDropdown);
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const onPointerDown = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) closeDropdownFromDocument();
-    };
-    const onEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') closeDropdownFromDocument();
-    };
-
-    document.addEventListener('pointerdown', onPointerDown);
-    document.addEventListener('keydown', onEscape);
-    return () => {
-      document.removeEventListener('pointerdown', onPointerDown);
-      document.removeEventListener('keydown', onEscape);
-    };
-  }, [isOpen]);
-
   const chooseOption = (option: string) => {
     onChange(option);
     closeDropdown();
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
-    if (event.key === 'ArrowDown') {
+    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
       event.preventDefault();
-      if (!isOpen) {
-        openDropdown();
-        return;
-      }
-      setActiveIndex((index) => Math.min(options.length - 1, index + 1));
-    } else if (event.key === 'ArrowUp') {
-      event.preventDefault();
-      if (!isOpen) {
-        openDropdown();
-        return;
-      }
-      setActiveIndex((index) => Math.max(0, index - 1));
-    } else if (event.key === 'Home' && isOpen) {
-      event.preventDefault();
-      setActiveIndex(0);
-    } else if (event.key === 'End' && isOpen) {
-      event.preventDefault();
-      setActiveIndex(options.length - 1);
-    } else if ((event.key === 'Enter' || event.key === ' ') && isOpen) {
-      event.preventDefault();
-      chooseOption(options[activeIndex] ?? value);
+      openDropdown();
     }
   };
 
   return (
-    <div ref={rootRef} className={`relative flex min-w-0 flex-col gap-1.5 ${className}`}>
+    <div className={`relative flex min-w-0 flex-col gap-1.5 ${className}`}>
       <span
         id={labelId}
         className="text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]"
@@ -552,6 +506,7 @@ function SelectField({
       </button>
 
       <DemandMountedGsapDropdown
+        portal
         id={listboxId}
         open={isOpen}
         onOpenChange={(nextOpen) => {
@@ -562,9 +517,7 @@ function SelectField({
         placement="bottom-left"
         role="listbox"
         aria-labelledby={labelId}
-        aria-activedescendant={`${listboxId}-${activeIndex}`}
-        className="t-dropdown custom-scrollbar absolute left-0 right-0 top-full z-50 mt-2 max-h-64 overflow-y-auto rounded-[var(--wb-radius)] p-1.5"
-        data-origin="top-right"
+        className="custom-scrollbar w-[var(--dropdown-trigger-width)] min-w-[280px] max-h-64 overflow-y-auto rounded-[var(--wb-radius)] p-1.5"
       >
         {options.map((option, index) => {
           const selected = option === value;
@@ -581,6 +534,7 @@ function SelectField({
               aria-selected={selected}
               data-dropdown-item
               onMouseEnter={() => setActiveIndex(index)}
+              onFocus={() => setActiveIndex(index)}
               onClick={() => chooseOption(option)}
               className={`flex min-h-12 w-full min-w-0 items-center gap-3 rounded-[var(--wb-radius)] px-2 py-2 text-left transition-[background-color,color,transform] duration-150 ${
                 selected
@@ -808,7 +762,11 @@ function ActionButton({
         <span
           className={`mt-0.5 block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal ${selected ? accent.text : 'text-[color:var(--wb-dim)]'}`}
         >
-          {action.capability === 'ready' ? 'Prompt or reference' : 'Not yet available'}
+          {action.capability !== 'ready'
+            ? 'Not yet available'
+            : CHARACTER_LAB_WORKFLOWS[action.mode].requiresSource
+              ? 'Source image required'
+              : 'Prompt or reference'}
         </span>
       </span>
       {locked && (
@@ -859,17 +817,26 @@ const CharacterLabRecipeSession: React.FC<
     (action) => action.capability === 'ready',
   );
   const hasCharacterBrief = subject.trim().length > 0;
-  const sourceLabel = source ? 'Source locked' : 'Prompt guided';
+  const sourceRequired = workflow.requiresSource && !source;
+  const sourceLabel = source
+    ? 'Source locked'
+    : sourceRequired
+      ? 'Source required'
+      : 'Prompt guided';
   const workflowStateTitle = source
     ? 'Reference attached'
-    : hasCharacterBrief
-      ? 'Brief Ready'
-      : 'Start With Source Or Brief';
+    : sourceRequired
+      ? 'Source Image Required'
+      : hasCharacterBrief
+        ? 'Brief Ready'
+        : 'Start With Source Or Brief';
   const workflowStateCopy = source
     ? 'Identity source is loaded for the selected action.'
-    : hasCharacterBrief
-      ? 'Prompt-guided generation will use your character brief.'
-      : 'Prompt-guided works now; a source image improves identity consistency.';
+    : sourceRequired
+      ? SOURCE_REQUIRED_MESSAGE
+      : hasCharacterBrief
+        ? 'Prompt-guided generation will use your character brief.'
+        : 'Prompt-guided works now; a source image improves identity consistency.';
 
   const promptOptions = useMemo(
     () => ({
@@ -900,18 +867,13 @@ const CharacterLabRecipeSession: React.FC<
     ],
   );
 
-  const buildRecipeParamsForAction = (
-    action: CharacterLabAction,
-    paramsOverride: Record<string, unknown> = {},
-  ) => ({
-    ...buildCharacterLabParams(
+  const buildRecipeParamsForAction = (action: CharacterLabAction) =>
+    buildCharacterLabParams(
       action.mode,
       { ...view, actionId: action.id },
       subject,
       config.attachments.length,
-    ),
-    ...paramsOverride,
-  });
+    );
 
   const selectedPrompt = useMemo(
     () => buildCharacterLabPrompt(selectedAction, promptOptions),
@@ -938,6 +900,14 @@ const CharacterLabRecipeSession: React.FC<
         : selectedAction.capability === 'planned-live'
           ? 'Live planned'
           : 'Analysis planned';
+  const unavailableMessage =
+    selectedAction.capability === 'ready'
+      ? ''
+      : selectedAction.capability === 'planned-video'
+        ? 'Video generation is not yet available. Choose an image action to generate.'
+        : selectedAction.capability === 'planned-live'
+          ? 'Live interviews are not yet available. Choose an image action to generate.'
+          : 'Character analysis is not yet available. Choose an image action to generate.';
   const previewControlItems = useMemo(
     () =>
       (
@@ -1011,62 +981,58 @@ const CharacterLabRecipeSession: React.FC<
       ...references.filter((_, i) => i !== index),
     ]);
 
-  const runAction = (
-    action: CharacterLabAction,
-    promptOverride?: string,
-    paramsOverride: Record<string, unknown> = {},
-    batchCount = config.batchCount,
-  ) => {
-    setAction(action);
-    if (action.capability !== 'ready') {
-      setCapabilityNotice(
-        action.capability === 'planned-video'
-          ? 'Motion generation is queued for a future video-capable provider.'
-          : 'Profile and Live Interview actions require structured analysis/live provider support.',
-      );
-      return;
+  const getBlockedNotice = (action: CharacterLabAction) => {
+    if (action.capability === 'planned-video') {
+      return 'Motion generation is queued for a future video-capable provider.';
     }
+    if (action.capability !== 'ready') {
+      return 'Profile and Live Interview actions require structured analysis/live provider support.';
+    }
+    return CHARACTER_LAB_WORKFLOWS[action.mode].requiresSource && !source
+      ? SOURCE_REQUIRED_MESSAGE
+      : '';
+  };
 
-    const prompt = promptOverride ?? buildCharacterLabPrompt(action, promptOptions);
-    const nextRecipeParams = buildRecipeParamsForAction(action, paramsOverride);
-
+  const dispatchAction = (action: CharacterLabAction, batchCount: number) => {
+    const prompt = buildCharacterLabPrompt(action, promptOptions);
     onGenerate(
       prompt,
       {
         recipeId: 'character-lab',
-        recipeParams: nextRecipeParams,
+        recipeParams: buildRecipeParamsForAction(action),
         prompt,
         batchCount,
         aspectRatio: normalizeImageGenRatio(labAspectRatio),
+        outputBackground: resolveCharacterLabOutputBackground(action.id, config.outputBackground),
         attachments: config.attachments.slice(0, 4),
       },
       { preventModal: true, useCurrentAttachments: true },
     );
   };
 
-  const runCategoryBatch = (actions: CharacterLabAction[]) => {
-    const readyActions = actions.filter((action) => action.capability === 'ready');
-    const batchActions = readyActions.filter((action) => action.batchRecommended).slice(0, 8);
-    const selected = batchActions[0] ?? actions[0];
-    if (!selected) return;
-    const actionList = batchActions.length > 0 ? batchActions : [selected];
-    const basePrompt = buildCharacterLabPrompt(selected, promptOptions);
-    const prompt = [
-      basePrompt,
-      '',
-      `Batch request: generate ${actionList.length} separate Character Lab results, one for each action below while preserving identity and settings.`,
-      ...actionList.map((action, index) => `${index + 1}. ${action.label}: ${action.prompt}`),
-    ].join('\n');
+  const runAction = (action: CharacterLabAction) => {
+    setAction(action);
+    const notice = getBlockedNotice(action);
+    if (notice) {
+      setCapabilityNotice(notice);
+      return;
+    }
+    dispatchAction(action, config.batchCount);
+  };
 
-    runAction(
-      selected,
-      prompt,
-      {
-        batchActionIds: actionList.map((action) => action.id),
-        batchActionLabels: actionList.map((action) => action.label),
-      },
-      Math.max(1, Math.min(actionList.length, 8)),
-    );
+  /** One job per action, so each result carries its own action prompt and catalog params. */
+  const runCategoryBatch = (actions: CharacterLabAction[]) => {
+    const batchActions = actions
+      .filter((action) => action.capability === 'ready' && action.batchRecommended)
+      .slice(0, 8);
+    if (!batchActions[0]) return;
+    setAction(batchActions[0]);
+    const notice = getBlockedNotice(batchActions[0]);
+    if (notice) {
+      setCapabilityNotice(notice);
+      return;
+    }
+    for (const action of batchActions) dispatchAction(action, 1);
   };
 
   const allowedControls = getCharacterLabControls({
@@ -1078,13 +1044,20 @@ const CharacterLabRecipeSession: React.FC<
     allowedControls.includes(control),
   );
   const secondaryControls = allowedControls.filter((control) => !primaryControls.includes(control));
-  const renderControl = (control: CharacterLabControl) => {
+  const renderControl = (
+    control: CharacterLabControl,
+    _index: number,
+    controls: CharacterLabControl[],
+  ) => {
     if (control === 'backgroundColor')
       return (
         <fieldset
           key={control}
           className="col-span-2 disabled:opacity-50"
-          disabled={config.outputBackground === 'transparent' || Boolean(source)}
+          disabled={
+            config.outputBackground === 'transparent' ||
+            (Boolean(source) && selectedMode !== 'spritesheets')
+          }
         >
           <legend className="mb-1.5 text-xs font-semibold text-[color:var(--wb-muted)]">
             Background Color
@@ -1148,7 +1121,11 @@ const CharacterLabRecipeSession: React.FC<
         value={view[control]}
         onChange={(value) => patchView({ [control]: value })}
         className={
-          control === 'style' || control === 'clothing' || control === 'bodyType'
+          control === 'style' ||
+          control === 'clothing' ||
+          control === 'bodyType' ||
+          controls.filter((field) => field === 'expression' || field === 'labAspectRatio')
+            .length === 1
             ? 'col-span-2'
             : undefined
         }
@@ -1176,6 +1153,7 @@ const CharacterLabRecipeSession: React.FC<
                       <button
                         key={mode.id}
                         type="button"
+                        aria-pressed={active}
                         data-tooltip={mode.description}
                         onClick={() => {
                           setConfig((current) => activateCharacterLabView(current, mode.id));
@@ -1418,9 +1396,24 @@ const CharacterLabRecipeSession: React.FC<
             </div>
 
             <RecipePrimaryAction>
+              {(unavailableMessage || sourceRequired) && (
+                <p className="mb-2 text-xs leading-relaxed text-[color:var(--wb-muted)]">
+                  {unavailableMessage || SOURCE_REQUIRED_MESSAGE}
+                </p>
+              )}
+              {!unavailableMessage &&
+                !sourceRequired &&
+                config.outputBackground !== 'transparent' &&
+                resolveCharacterLabOutputBackground(selectedAction.id, config.outputBackground) ===
+                  'transparent' && (
+                  <p className="mb-2 text-xs leading-relaxed text-[color:var(--wb-muted)]">
+                    Exports a transparent PNG. Native transparency needs the ChatGPT provider.
+                  </p>
+                )}
               <button
                 type="button"
                 onClick={() => runAction(selectedAction)}
+                disabled={selectedAction.capability !== 'ready' || sourceRequired}
                 data-character-lab-generate-button
                 data-generate-active={isGenerating ? 'true' : 'false'}
                 className="studio-primary-control group relative min-h-11 w-full gap-2 py-2 text-left"
@@ -1434,7 +1427,14 @@ const CharacterLabRecipeSession: React.FC<
                 </span>
                 <span className="min-w-0">
                   <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
-                    {isGenerating ? 'Queue' : 'Generate'} {selectedAction.label}
+                    {unavailableMessage
+                      ? 'Unavailable:'
+                      : sourceRequired
+                        ? 'Needs source:'
+                        : isGenerating
+                          ? 'Queue'
+                          : 'Generate'}{' '}
+                    {selectedAction.label}
                   </span>
                   <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-on-fill)]">
                     {workflow.title}
